@@ -38,7 +38,7 @@ class HighJumpVis {
             .attr('height', 3)
             .attr('width', vis.width)
             .attr('x', 0)
-            .style('fill','blue');
+            .style('fill','red');
 
         // add "posts" on each side
         vis.leftRect = vis.svg.append('rect')
@@ -72,7 +72,7 @@ class HighJumpVis {
         vis.jumpData = [];
 
         // get only high jump results
-        vis.resultsData.forEach((element, index) => {
+        vis.resultsData.forEach((element) => {
             if(element.Event === 'High Jump'){
                 vis.jumpData.push(element);
             }})
