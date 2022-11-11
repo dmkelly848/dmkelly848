@@ -1,0 +1,2352 @@
+,Gender,Event,Location,Year,Medal,Name,Nationality,Result,Type,Clean_Result
+2344,M,10000M,Stockholm,1912,G,Hannes KOLEHMAINEN,FIN,31:20.8,seconds,1880.8
+2349,M,10000M,Stockholm,1912,S,Lewis TEWANIMA,USA,32:06.6,seconds,1926.6
+2350,M,10000M,Stockholm,1912,B,Albin STENROOS,FIN,32:21.8,seconds,1941.8
+2346,M,10000M,Antwerp,1920,G,Paavo NURMI,FIN,31:45.8,seconds,1905.8
+2347,M,10000M,Antwerp,1920,S,Joseph GUILLEMOT,FRA,31:47.2,seconds,1907.2
+2348,M,10000M,Antwerp,1920,B,James WILSON,GBR,31:50.8,seconds,1910.8
+2338,M,10000M,Paris,1924,G,Ville RITOLA,FIN,30:23.2,seconds,1823.2
+2342,M,10000M,Paris,1924,S,Edvin WIDE,SWE,30:55.2,seconds,1855.2
+2345,M,10000M,Paris,1924,B,Eero BERG,FIN,31:43.0,seconds,1903.0
+2335,M,10000M,Amsterdam,1928,G,Paavo NURMI,FIN,30:18.8,seconds,1818.8
+2336,M,10000M,Amsterdam,1928,S,Ville RITOLA,FIN,30:19.4,seconds,1819.4
+2343,M,10000M,Amsterdam,1928,B,Edvin WIDE,SWE,31:00.8,seconds,1860.8
+2331,M,10000M,Los Angeles,1932,G,Janusz KUSOCINSKI,POL,30:11.4,seconds,1811.4
+2332,M,10000M,Los Angeles,1932,S,Volmari ISO-HOLLO,FIN,30:12.6,seconds,1812.6
+2339,M,10000M,Los Angeles,1932,B,Lauri VIRTANEN,FIN,30:35.0,seconds,1835.0
+2333,M,10000M,Berlin,1936,G,Ilmari SALMINEN,FIN,30:15.4,seconds,1815.4
+2334,M,10000M,Berlin,1936,S,Arvo ASKOLA,FIN,30:15.6,seconds,1815.6
+2337,M,10000M,Berlin,1936,B,Volmari ISO-HOLLO,FIN,30:20.2,seconds,1820.2
+2330,M,10000M,London,1948,G,Emil Z√É¬ÅTOPEK,TCH,29:59.6,seconds,1799.6
+2340,M,10000M,London,1948,S,Alain MIMOUN,FRA,30:47.4,seconds,1847.4
+2341,M,10000M,London,1948,B,Bertil ALBERTSSON,SWE,30:53.6,seconds,1853.6
+2324,M,10000M,Helsinki,1952,G,Emil Z√É¬ÅTOPEK,TCH,29:17.0,seconds,1757.0
+2327,M,10000M,Helsinki,1952,S,Alain MIMOUN,FRA,29:32.8,seconds,1772.8
+2329,M,10000M,Helsinki,1952,B,Aleksandr ANUFRIYEV,URS,29:48.2,seconds,1788.2
+2321,M,10000M,Melbourne / Stockholm,1956,G,Vladimir KUTS,URS,28:45.6,seconds,1725.6
+2322,M,10000M,Melbourne / Stockholm,1956,S,J√É¬≥zsef KOV√É¬ÅCS,HUN,28:52.4,seconds,1732.4
+2323,M,10000M,Melbourne / Stockholm,1956,B,Allan LAWRENCE,AUS,28:53.6,seconds,1733.6
+2318,M,10000M,Rome,1960,G,Pyotr BOLOTNIKOV,URS,28:32.2,seconds,1712.2
+2319,M,10000M,Rome,1960,S,Hans GRODOTZKI,EUA,28:37.0,seconds,1717.0
+2320,M,10000M,Rome,1960,B,David POWER,AUS,28:38.2,seconds,1718.2
+2315,M,10000M,Tokyo,1964,G,Billy MILLS,USA,28:24.4,seconds,1704.4
+2316,M,10000M,Tokyo,1964,S,Mohamed GAMMOUDI,TUN,28:24.8,seconds,1704.8
+2317,M,10000M,Tokyo,1964,B,Ron CLARKE,AUS,28:25.8,seconds,1705.8
+2325,M,10000M,Mexico,1968,G,Naftali TEMU,KEN,29:27.4,seconds,1767.4
+2326,M,10000M,Mexico,1968,S,Mamo WOLDE,ETH,29:28.0,seconds,1768.0
+2328,M,10000M,Mexico,1968,B,Mohamed GAMMOUDI,TUN,29:34.2,seconds,1774.2
+2300,M,10000M,Munich,1972,G,Lasse VIREN,FIN,27:38.4,seconds,1658.4
+2301,M,10000M,Munich,1972,S,Emiel PUTTEMANS,BEL,27:39.6,seconds,1659.6
+2303,M,10000M,Munich,1972,B,Miruts YIFTER,ETH,27:41.0,seconds,1661.0
+2302,M,10000M,Montreal,1976,G,Lasse VIREN,FIN,27:40.4,seconds,1660.4
+2307,M,10000M,Montreal,1976,S,Carlos LOPES,POR,27:45.2,seconds,1665.2
+2311,M,10000M,Montreal,1976,B,Brendan FOSTER,GBR,27:54.9,seconds,1674.9
+2304,M,10000M,Moscow,1980,G,Miruts YIFTER,ETH,27:42.7,seconds,1662.7
+2305,M,10000M,Moscow,1980,S,Kaarlo MAANINKA,FIN,27:44.3,seconds,1664.3
+2306,M,10000M,Moscow,1980,B,Mohammed KEDIR,ETH,27:44.7,seconds,1664.7
+2309,M,10000M,Los Angeles,1984,G,Alberto COVA,ITA,27:47.5,seconds,1667.5
+2313,M,10000M,Los Angeles,1984,S,Michael MCLEOD,GBR,28:06.2,seconds,1686.2
+2314,M,10000M,Los Angeles,1984,B,Michael MUSYOKI,KEN,28:06.5,seconds,1686.5
+2278,W,10000M,Barcelona,1992,G,Derartu TULU,ETH,31:06.0,seconds,1866.0
+2280,W,10000M,Barcelona,1992,S,Elana MEYER,RSA,31:11.7,seconds,1871.7
+2281,W,10000M,Barcelona,1992,B,Lynn JENNINGS,USA,31:19.9,seconds,1879.9
+2308,M,10000M,Barcelona,1992,G,Khalid SKAH,MAR,27:46.7,seconds,1666.7
+2310,M,10000M,Barcelona,1992,S,Richard CHELIMO,KEN,27:47.7,seconds,1667.7
+2312,M,10000M,Barcelona,1992,B,Addis ABEBE,ETH,28:00.1,seconds,1680.1
+2276,W,10000M,Atlanta,1996,G,Fernanda RIBEIRO,POR,31:01.6,seconds,1861.6
+2277,W,10000M,Atlanta,1996,S,Junxia WANG,CHN,31:02.6,seconds,1862.6
+2279,W,10000M,Atlanta,1996,B,Gete WAMI,ETH,31:06.6,seconds,1866.6
+2289,M,10000M,Atlanta,1996,G,Haile GEBRSELASSIE,ETH,27:07.3,seconds,1627.3
+2290,M,10000M,Atlanta,1996,S,Paul TERGAT,KEN,27:08.2,seconds,1628.2
+2296,M,10000M,Atlanta,1996,B,Salah HISSOU,MAR,27:24.7,seconds,1644.7
+2266,W,10000M,Sydney,2000,G,Derartu TULU,ETH,30:17.5,seconds,1817.5
+2269,W,10000M,Sydney,2000,S,Gete WAMI,ETH,30:22.5,seconds,1822.5
+2270,W,10000M,Sydney,2000,B,Fernanda RIBEIRO,POR,30:22.9,seconds,1822.9
+2292,M,10000M,Sydney,2000,G,Haile GEBRSELASSIE,ETH,27:18.2,seconds,1638.2
+2293,M,10000M,Sydney,2000,S,Paul TERGAT,KEN,27:18.3,seconds,1638.3
+2294,M,10000M,Sydney,2000,B,Assefa MEZGEBU,ETH,27:19.7,seconds,1639.7
+2271,W,10000M,Athens,2004,G,Huina XING,CHN,30:24.4,seconds,1824.4
+2272,W,10000M,Athens,2004,S,Ejegayehu DIBABA,ETH,30:25.0,seconds,1825.0
+2274,W,10000M,Athens,2004,B,Derartu TULU,ETH,30:26.4,seconds,1826.4
+2286,M,10000M,Athens,2004,G,Kenenisa BEKELE,ETH,27:05.1,seconds,1625.1
+2291,M,10000M,Athens,2004,S,Sileshi SIHINE,ETH,27:09.4,seconds,1629.4
+2295,M,10000M,Athens,2004,B,Zersenay TADESE,ERI,27:22.6,seconds,1642.6
+2264,W,10000M,Beijing,2008,G,Tirunesh DIBABA,ETH,29:54.7,seconds,1794.7
+2265,W,10000M,Beijing,2008,S,Elvan ABEYLEGESSE,TUR,29:56.3,seconds,1796.3
+2268,W,10000M,Beijing,2008,B,Shalane FLANAGAN,USA,30:22.2,seconds,1822.2
+2283,M,10000M,Beijing,2008,G,Kenenisa BEKELE,ETH,27:01.2,seconds,1621.2
+2284,M,10000M,Beijing,2008,S,Sileshi SIHINE,ETH,27:02.8,seconds,1622.8
+2285,M,10000M,Beijing,2008,B,Micah KOGO,KEN,27:04.1,seconds,1624.1
+2267,W,10000M,London,2012,G,Tirunesh DIBABA,ETH,30:20.8,seconds,1820.8
+2273,W,10000M,London,2012,S,Sally Jepkosgei KIPYEGO,KEN,30:26.4,seconds,1826.4
+2275,W,10000M,London,2012,B,Vivian Jepkemoi CHERUIYOT,KEN,30:30.4,seconds,1830.4
+2297,M,10000M,London,2012,G,Mohamed FARAH,GBR,27:30.4,seconds,1650.4
+2298,M,10000M,London,2012,S,Galen RUPP,USA,27:30.9,seconds,1650.9
+2299,M,10000M,London,2012,B,Tariku BEKELE,ETH,27:31.4,seconds,1651.4
+2261,W,10000M,Rio,2016,G,Almaz AYANA,ETH,29:17.4,seconds,1757.4
+2262,W,10000M,Rio,2016,S,Vivian Jepkemoi CHERUIYOT,KEN,29:32.5,seconds,1772.5
+2263,W,10000M,Rio,2016,B,Tirunesh DIBABA,ETH,29:42.6,seconds,1782.6
+2282,M,10000M,Rio,2016,G,Mohamed FARAH,USA,25:05.2,seconds,1505.2
+2287,M,10000M,Rio,2016,S,Paul Kipngetich TANUI,KEN,27:05.6,seconds,1625.6
+2288,M,10000M,Rio,2016,B,Tamirat TOLA,ETH,27:06.3,seconds,1626.3
+2223,M,100M,Athens,1896,G,Thomas BURKE,USA,12,seconds,12.0
+2224,M,100M,Athens,1896,S,Fritz HOFMANN,GER,12.2,seconds,12.2
+2225,M,100M,Athens,1896,B,Alajos SZOKOLYI,HUN,12.6,seconds,12.6
+2226,M,100M,Athens,1896,B,Francis LANE,USA,12.6,seconds,12.6
+2217,M,100M,Paris,1900,G,Frank JARVIS,USA,11,seconds,11.0
+2219,M,100M,Paris,1900,S,Walter TEWKSBURY,USA,11.1,seconds,11.1
+2220,M,100M,Paris,1900,B,Stanley ROWLEY,AUS,11.2,seconds,11.2
+2218,M,100M,St Louis,1904,G,Archie HAHN,USA,11,seconds,11.0
+2221,M,100M,St Louis,1904,S,Nate CARTMELL,USA,11.2,seconds,11.2
+2222,M,100M,St Louis,1904,B,William HOGENSON,USA,11.2,seconds,11.2
+2209,M,100M,London,1908,G,Reggie WALKER,RSA,10.8,seconds,10.8
+2211,M,100M,Stockholm,1912,G,Ralph CRAIG,USA,10.8,seconds,10.8
+2215,M,100M,Stockholm,1912,S,Alvah MEYER,USA,10.9,seconds,10.9
+2216,M,100M,Stockholm,1912,B,Donald LIPPINCOTT,USA,10.9,seconds,10.9
+2207,M,100M,Antwerp,1920,G,Charles PADDOCK,USA,10.8,seconds,10.8
+2208,M,100M,Antwerp,1920,S,Morris KIRKSEY,USA,10.8,seconds,10.8
+2214,M,100M,Antwerp,1920,B,Harry EDWARD,GBR,10.9,seconds,10.9
+2204,M,100M,Paris,1924,G,Harold ABRAHAMS,GBR,10.6,seconds,10.6
+2205,M,100M,Paris,1924,S,Jackson SCHOLZ,USA,10.7,seconds,10.7
+2210,M,100M,Paris,1924,B,Arthur PORRITT,NZL,10.8,seconds,10.8
+2144,W,100M,Amsterdam,1928,G,Elizabeth ROBINSON,USA,12.2,seconds,12.2
+2206,M,100M,Amsterdam,1928,G,Percy WILLIAMS,CAN,10.8,seconds,10.8
+2212,M,100M,Amsterdam,1928,S,Jack LONDON,GBR,10.9,seconds,10.9
+2213,M,100M,Amsterdam,1928,B,Georg LAMMERS,GER,10.9,seconds,10.9
+2141,W,100M,Los Angeles,1932,G,Stanislawa WALASIEWICZ,POL,11.9,seconds,11.9
+2142,W,100M,Los Angeles,1932,S,Hilda STRIKE,CAN,11.9,seconds,11.9
+2143,W,100M,Los Angeles,1932,B,Wilhelmina VON BREMEN,USA,12,seconds,12.0
+2189,M,100M,Los Angeles,1932,G,Eddie TOLAN,USA,10.3,seconds,10.3
+2190,M,100M,Los Angeles,1932,S,Ralph METCALFE,USA,10.3,seconds,10.3
+2198,M,100M,Los Angeles,1932,B,Arthur JONATH,GER,10.4,seconds,10.4
+2130,W,100M,Berlin,1936,G,Helen STEPHENS,USA,11.5,seconds,11.5
+2134,W,100M,Berlin,1936,S,Stanislawa WALASIEWICZ,POL,11.7,seconds,11.7
+2139,W,100M,Berlin,1936,B,K√É¬§the KRAUSS,GER,11.9,seconds,11.9
+2187,M,100M,Berlin,1936,G,Jesse OWENS,USA,10.3,seconds,10.3
+2196,M,100M,Berlin,1936,S,Ralph METCALFE,USA,10.4,seconds,10.4
+2199,M,100M,Berlin,1936,B,Martinus OSENDARP,NED,10.5,seconds,10.5
+2140,W,100M,London,1948,G,Fanny BLANKERS-KOEN,NED,11.9,seconds,11.9
+2145,W,100M,London,1948,S,Dorothy HALL,GBR,12.2,seconds,12.2
+2146,W,100M,London,1948,B,Shirley STRICKLAND,AUS,12.2,seconds,12.2
+2188,M,100M,London,1948,G,Harrison DILLARD,USA,10.3,seconds,10.3
+2197,M,100M,London,1948,S,Barney EWELL,USA,10.4,seconds,10.4
+2203,M,100M,London,1948,B,Lloyd LABEACH,PAN,10.6,seconds,10.6
+2129,W,100M,Helsinki,1952,G,Marjorie JACKSON,AUS,11.5,seconds,11.5
+2137,W,100M,Helsinki,1952,S,Daphne HASENJAGER,RSA,11.8,seconds,11.8
+2138,W,100M,Helsinki,1952,B,Shirley STRICKLAND,AUS,11.9,seconds,11.9
+2193,M,100M,Helsinki,1952,G,Lindy REMIGINO,USA,10.4,seconds,10.4
+2194,M,100M,Helsinki,1952,S,Herbert MCKENLEY,JAM,10.4,seconds,10.4
+2195,M,100M,Helsinki,1952,B,Emmanuel McDONALD BAILEY,GBR,10.4,seconds,10.4
+2131,W,100M,Melbourne / Stockholm,1956,G,Betty CUTHBERT,AUS,11.5,seconds,11.5
+2135,W,100M,Melbourne / Stockholm,1956,S,Christa STUBNICK,EUA,11.7,seconds,11.7
+2136,W,100M,Melbourne / Stockholm,1956,B,Marlene MATHEWS-WILLARD,AUS,11.7,seconds,11.7
+2200,M,100M,Melbourne / Stockholm,1956,G,Bobby MORROW,USA,10.5,seconds,10.5
+2201,M,100M,Melbourne / Stockholm,1956,S,Thane BAKER,USA,10.5,seconds,10.5
+2202,M,100M,Melbourne / Stockholm,1956,B,Hector HOGAN,AUS,10.6,seconds,10.6
+2109,W,100M,Rome,1960,G,Wilma RUDOLPH,USA,11,seconds,11.0
+2126,W,100M,Rome,1960,S,Dorothy HYMAN,GBR,11.3,seconds,11.3
+2127,W,100M,Rome,1960,B,Giuseppina LEONE,ITA,11.3,seconds,11.3
+2178,M,100M,Rome,1960,G,Armin HARY,EUA,10.2,seconds,10.2
+2179,M,100M,Rome,1960,S,Dave SIME,USA,10.2,seconds,10.2
+2186,M,100M,Rome,1960,B,Peter RADFORD,GBR,10.3,seconds,10.3
+2128,W,100M,Tokyo,1964,G,Wyomia TYUS,USA,11.4,seconds,11.4
+2132,W,100M,Tokyo,1964,S,Edith MCGUIRE,USA,11.6,seconds,11.6
+2133,W,100M,Tokyo,1964,B,Ewa KLOBUKOWSKA,POL,11.6,seconds,11.6
+2169,M,100M,Tokyo,1964,G,Bob HAYES,USA,10,seconds,10.0
+2180,M,100M,Tokyo,1964,S,Enrique FIGUEROLA,CUB,10.2,seconds,10.2
+2181,M,100M,Tokyo,1964,B,Harry JEROME,CAN,10.2,seconds,10.2
+2108,W,100M,Mexico,1968,G,Wyomia TYUS,USA,11,seconds,11.0
+2114,W,100M,Mexico,1968,S,Barbara FERRELL,USA,11.1,seconds,11.1
+2115,W,100M,Mexico,1968,B,Irena KIRSZENSTEIN,POL,11.1,seconds,11.1
+2160,M,100M,Mexico,1968,G,Jim HINES,USA,9.9,seconds,9.9
+2167,M,100M,Mexico,1968,S,Lennox MILLER,JAM,10,seconds,10.0
+2168,M,100M,Mexico,1968,B,Charlie GREENE,USA,10,seconds,10.0
+2112,W,100M,Munich,1972,G,Renate STECHER,GDR,11.07,seconds,11.07
+2124,W,100M,Munich,1972,S,Raelene Ann BOYLE,AUS,11.23,seconds,11.23
+2125,W,100M,Munich,1972,B,Silvia CHIVAS BARO,CUB,11.24,seconds,11.24
+2176,M,100M,Munich,1972,G,Valery BORZOV,URS,10.14,seconds,10.14
+2183,M,100M,Munich,1972,S,Robert TAYLOR,USA,10.24,seconds,10.24
+2191,M,100M,Munich,1972,B,Lennox MILLER,JAM,10.33,seconds,10.33
+2113,W,100M,Montreal,1976,G,Annegret RICHTER-IRRGANG,FRG,11.08,seconds,11.08
+2118,W,100M,Montreal,1976,S,Renate STECHER,GDR,11.13,seconds,11.13
+2121,W,100M,Montreal,1976,B,Inge HELTEN,FRG,11.17,seconds,11.17
+2173,M,100M,Montreal,1976,G,Hasely CRAWFORD,TTO,10.06,seconds,10.06
+2174,M,100M,Montreal,1976,S,Donald QUARRIE,JAM,10.08,seconds,10.08
+2175,M,100M,Montreal,1976,B,Valery BORZOV,URS,10.14,seconds,10.14
+2110,W,100M,Moscow,1980,G,Lyudmila KONDRATYEVA,URS,11.06,seconds,11.06
+2111,W,100M,Moscow,1980,S,Marlies OELSNER-G√É¬ñHR,GDR,11.07,seconds,11.07
+2119,W,100M,Moscow,1980,B,Ingrid AUERSWALD-LANGE,GDR,11.14,seconds,11.14
+2184,M,100M,Moscow,1980,G,Allan WELLS,GBR,10.25,seconds,10.25
+2185,M,100M,Moscow,1980,S,Silvio LEONARD SARRIA,CUB,10.25,seconds,10.25
+2192,M,100M,Moscow,1980,B,Peter PETROV,BUL,10.39,seconds,10.39
+2104,W,100M,Los Angeles,1984,G,Evelyn ASHFORD,USA,10.97,seconds,10.97
+2117,W,100M,Los Angeles,1984,S,Alice BROWN,USA,11.13,seconds,11.13
+2120,W,100M,Los Angeles,1984,B,Merlene OTTEY,JAM,11.16,seconds,11.16
+2166,M,100M,Los Angeles,1984,G,Carl LEWIS,USA,9.99,seconds,9.99
+2177,M,100M,Los Angeles,1984,S,Sam GRADDY,USA,10.19,seconds,10.19
+2182,M,100M,Los Angeles,1984,B,Ben JOHNSON,CAN,10.22,seconds,10.22
+2094,W,100M,Barcelona,1992,G,Gail DEVERS,USA,10.82,seconds,10.82
+2096,W,100M,Barcelona,1992,S,Juliet CUTHBERT,JAM,10.83,seconds,10.83
+2097,W,100M,Barcelona,1992,B,Irina PRIVALOVA,EUN,10.84,seconds,10.84
+2164,M,100M,Barcelona,1992,G,Linford CHRISTIE,GBR,9.96,seconds,9.96
+2170,M,100M,Barcelona,1992,S,Frank FREDERICKS,NAM,10.02,seconds,10.02
+2172,M,100M,Barcelona,1992,B,Dennis MITCHELL,USA,10.04,seconds,10.04
+2100,W,100M,Atlanta,1996,G,Gail DEVERS,USA,10.94,seconds,10.94
+2101,W,100M,Atlanta,1996,S,Merlene OTTEY,JAM,10.94,seconds,10.94
+2103,W,100M,Atlanta,1996,B,Gwen TORRENCE,USA,10.96,seconds,10.96
+2152,M,100M,Atlanta,1996,G,Donovan BAILEY,CAN,9.84,seconds,9.84
+2159,M,100M,Atlanta,1996,S,Frank FREDERICKS,NAM,9.89,seconds,9.89
+2161,M,100M,Atlanta,1996,B,Ato BOLDON,TTO,9.9,seconds,9.9
+2116,W,100M,Sydney,2000,S,Ekaterini THANOU,GRE,11.12,seconds,11.12
+2122,W,100M,Sydney,2000,S,Tanya LAWRENCE,JAM,11.18,seconds,11.18
+2123,W,100M,Sydney,2000,B,Merlene OTTEY,JAM,11.19,seconds,11.19
+2155,M,100M,Sydney,2000,G,Maurice GREENE,USA,9.87,seconds,9.87
+2165,M,100M,Sydney,2000,S,Ato BOLDON,TTO,9.99,seconds,9.99
+2171,M,100M,Sydney,2000,B,Obadele THOMPSON,BAR,10.04,seconds,10.04
+2099,W,100M,Athens,2004,G,Yuliya NESTSIARENKA,BLR,10.93,seconds,10.93
+2102,W,100M,Athens,2004,S,Lauryn WILLIAMS,USA,10.96,seconds,10.96
+2105,W,100M,Athens,2004,B,Veronica CAMPBELL-BROWN,JAM,10.97,seconds,10.97
+2153,M,100M,Athens,2004,G,Justin GATLIN,USA,9.85,seconds,9.85
+2154,M,100M,Athens,2004,S,Francis OBIKWELU,POR,9.86,seconds,9.86
+2156,M,100M,Athens,2004,B,Maurice GREENE,USA,9.87,seconds,9.87
+2091,W,100M,Beijing,2008,G,Shelly-Ann FRASER-PRYCE,JAM,10.78,seconds,10.78
+2106,W,100M,Beijing,2008,S,Sherone SIMPSON,JAM,10.98,seconds,10.98
+2107,W,100M,Beijing,2008,S,Kerron STEWART,JAM,10.98,seconds,10.98
+2148,M,100M,Beijing,2008,G,Usain BOLT,JAM,9.69,seconds,9.69
+2158,M,100M,Beijing,2008,S,Richard THOMPSON,TTO,9.89,seconds,9.89
+2163,M,100M,Beijing,2008,B,Walter DIX,USA,9.91,seconds,9.91
+2090,W,100M,London,2012,G,Shelly-Ann FRASER-PRYCE,JAM,10.75,seconds,10.75
+2092,W,100M,London,2012,S,Carmelita JETER,USA,10.78,seconds,10.78
+2093,W,100M,London,2012,B,Veronica CAMPBELL-BROWN,JAM,10.81,seconds,10.81
+2147,M,100M,London,2012,G,Usain BOLT,JAM,9.63,seconds,9.63
+2149,M,100M,London,2012,S,Yohan BLAKE,JAM,9.75,seconds,9.75
+2150,M,100M,London,2012,B,Justin GATLIN,USA,9.79,seconds,9.79
+2089,W,100M,Rio,2016,G,Elaine THOMPSON,JAM,10.71,seconds,10.71
+2095,W,100M,Rio,2016,S,Tori BOWIE,USA,10.83,seconds,10.83
+2098,W,100M,Rio,2016,B,Shelly-Ann FRASER-PRYCE,JAM,10.86,seconds,10.86
+2151,M,100M,Rio,2016,G,Usain BOLT,JAM,9.81,seconds,9.81
+2157,M,100M,Rio,2016,S,Justin GATLIN,USA,9.89,seconds,9.89
+2162,M,100M,Rio,2016,B,Andre DE GRASSE,CAN,9.91,seconds,9.91
+2239,W,100M Hurdles,Munich,1972,G,Annelie EHRHARDT,GDR,12.59,meters,12.59
+2256,W,100M Hurdles,Munich,1972,S,Valeria BUFANU,ROU,12.84,meters,12.84
+2258,W,100M Hurdles,Munich,1972,B,Karin RICHERT-BALZER,GDR,12.9,meters,12.9
+2252,W,100M Hurdles,Montreal,1976,G,Johanna SCHALLER-KLIER,GDR,12.77,meters,12.77
+2253,W,100M Hurdles,Montreal,1976,S,Tatiana ANISIMOVA,URS,12.78,meters,12.78
+2254,W,100M Hurdles,Montreal,1976,B,Natalya LEBEDEVA,URS,12.8,meters,12.8
+2235,W,100M Hurdles,Moscow,1980,G,Vera KOMISOVA,URS,12.56,meters,12.56
+2241,W,100M Hurdles,Moscow,1980,S,Johanna SCHALLER-KLIER,GDR,12.63,meters,12.63
+2247,W,100M Hurdles,Moscow,1980,B,Lucyna LANGER,POL,12.65,meters,12.65
+2255,W,100M Hurdles,Los Angeles,1984,G,Benita FITZGERALD-BROWN,USA,12.84,meters,12.84
+2257,W,100M Hurdles,Los Angeles,1984,S,Shirley STRONG,GBR,12.88,meters,12.88
+2259,W,100M Hurdles,Los Angeles,1984,B,Mich√É¬®le CHARDONNET,FRA,13.06,meters,13.06
+2260,W,100M Hurdles,Los Angeles,1984,B,Kim TURNER,USA,13.06,meters,13.06
+2244,W,100M Hurdles,Barcelona,1992,G,Voula PATOULIDOU,GRE,12.64,meters,12.64
+2249,W,100M Hurdles,Barcelona,1992,S,LaVonna MARTIN,USA,12.69,meters,12.69
+2250,W,100M Hurdles,Barcelona,1992,B,Yordanka DONKOVA,BUL,12.7,meters,12.7
+2236,W,100M Hurdles,Atlanta,1996,G,Ludmila ENGQUIST,SWE,12.58,meters,12.58
+2238,W,100M Hurdles,Atlanta,1996,S,Brigita BUKOVEC,SLO,12.59,meters,12.59
+2246,W,100M Hurdles,Atlanta,1996,B,Patricia GIRARD,FRA,12.65,meters,12.65
+2245,W,100M Hurdles,Sydney,2000,G,Olga SHISHIGINA,KAZ,12.65,meters,12.65
+2248,W,100M Hurdles,Sydney,2000,S,Gloria ALOZIE,NGR,12.68,meters,12.68
+2251,W,100M Hurdles,Sydney,2000,B,Melissa MORRISON,USA,12.76,meters,12.76
+2229,W,100M Hurdles,Athens,2004,G,Joanna HAYES,USA,12.37,meters,12.37
+2230,W,100M Hurdles,Athens,2004,S,Olena KRASOVSKA,UKR,12.45,meters,12.45
+2234,W,100M Hurdles,Athens,2004,B,Melissa MORRISON,USA,12.56,meters,12.56
+2233,W,100M Hurdles,Beijing,2008,G,Dawn HARPER,USA,12.54,meters,12.54
+2242,W,100M Hurdles,Beijing,2008,S,Sally PEARSON,AUS,12.64,meters,12.64
+2243,W,100M Hurdles,Beijing,2008,B,Priscilla LOPES-SCHLIEP,CAN,12.64,meters,12.64
+2227,W,100M Hurdles,London,2012,G,Sally PEARSON,AUS,12.35,meters,12.35
+2228,W,100M Hurdles,London,2012,S,Dawn HARPER,USA,12.37,meters,12.37
+2232,W,100M Hurdles,London,2012,B,Kellie WELLS,USA,12.48,meters,12.48
+2231,W,100M Hurdles,Rio,2016,G,Brianna ROLLINS,USA,12.48,meters,12.48
+2237,W,100M Hurdles,Rio,2016,S,Nia ALI,USA,12.59,meters,12.59
+2240,W,100M Hurdles,Rio,2016,B,Kristi CASTLIN,USA,12.61,meters,12.61
+2087,M,110M Hurdles,Athens,1896,G,Thomas CURTIS,USA,17.6,seconds,17.6
+2088,M,110M Hurdles,Athens,1896,S,Grantley GOULDING,GBR,17.7,seconds,17.7
+2079,M,110M Hurdles,Paris,1900,G,Alvin KRAENZLEIN,USA,15.4,seconds,15.4
+2081,M,110M Hurdles,Paris,1900,S,John MCLEAN,USA,15.5,seconds,15.5
+2082,M,110M Hurdles,Paris,1900,B,Frederick MOLONEY,USA,15.6,seconds,15.6
+2084,M,110M Hurdles,St Louis,1904,G,Frederick SCHULE,USA,16,seconds,16.0
+2085,M,110M Hurdles,St Louis,1904,S,Thaddeus SHIDELER,USA,16.3,seconds,16.3
+2086,M,110M Hurdles,St Louis,1904,B,Lesley ASHBURNER,USA,16.4,seconds,16.4
+2071,M,110M Hurdles,London,1908,G,Forrest SMITHSON,USA,15,seconds,15.0
+2083,M,110M Hurdles,London,1908,S,John GARRELLS,USA,15.7,seconds,15.7
+2076,M,110M Hurdles,Stockholm,1912,G,Frederick KELLY,USA,15.1,seconds,15.1
+2077,M,110M Hurdles,Stockholm,1912,S,James WENDELL,USA,15.2,seconds,15.2
+2078,M,110M Hurdles,Stockholm,1912,B,Martin HAWKINS,USA,15.3,seconds,15.3
+2068,M,110M Hurdles,Antwerp,1920,G,Earl THOMSON,CAN,14.8,seconds,14.8
+2074,M,110M Hurdles,Antwerp,1920,S,Harold BARRON,USA,15.1,seconds,15.1
+2075,M,110M Hurdles,Antwerp,1920,B,Frederick MURRAY,USA,15.1,seconds,15.1
+2072,M,110M Hurdles,Paris,1924,G,Daniel KINSEY,USA,15,seconds,15.0
+2073,M,110M Hurdles,Paris,1924,S,Sidney ATKINSON,RSA,15,seconds,15.0
+2080,M,110M Hurdles,Paris,1924,B,Sten PETTERSSON,SWE,15.4,seconds,15.4
+2066,M,110M Hurdles,Amsterdam,1928,G,Sidney ATKINSON,RSA,14.8,seconds,14.8
+2067,M,110M Hurdles,Amsterdam,1928,S,Steve ANDERSON,USA,14.8,seconds,14.8
+2070,M,110M Hurdles,Amsterdam,1928,B,John COLLIER,USA,14.9,seconds,14.9
+2064,M,110M Hurdles,Los Angeles,1932,G,George SALING,USA,14.6,seconds,14.6
+2065,M,110M Hurdles,Los Angeles,1932,S,Percy BEARD,USA,14.7,seconds,14.7
+2069,M,110M Hurdles,Los Angeles,1932,B,Donald FINLAY,GBR,14.8,seconds,14.8
+2061,M,110M Hurdles,Berlin,1936,G,Forrest TOWNS,USA,14.2,seconds,14.2
+2062,M,110M Hurdles,Berlin,1936,S,Donald FINLAY,GBR,14.4,seconds,14.4
+2063,M,110M Hurdles,Berlin,1936,B,Fritz POLLARD,USA,14.4,seconds,14.4
+2055,M,110M Hurdles,London,1948,G,Bill PORTER,USA,13.9,seconds,13.9
+2059,M,110M Hurdles,London,1948,S,Clyde SCOTT,USA,14.1,seconds,14.1
+2060,M,110M Hurdles,London,1948,B,Craig DIXON,USA,14.1,seconds,14.1
+2049,M,110M Hurdles,Helsinki,1952,G,Harrison DILLARD,USA,13.7,seconds,13.7
+2050,M,110M Hurdles,Helsinki,1952,S,Jack DAVIS,USA,13.7,seconds,13.7
+2057,M,110M Hurdles,Helsinki,1952,B,Arthur BARNARD,USA,14.1,seconds,14.1
+2046,M,110M Hurdles,Melbourne / Stockholm,1956,G,Lee CALHOUN,USA,13.5,seconds,13.5
+2047,M,110M Hurdles,Melbourne / Stockholm,1956,S,Jack DAVIS,USA,13.5,seconds,13.5
+2058,M,110M Hurdles,Melbourne / Stockholm,1956,B,Joel SHANKLE,USA,14.1,seconds,14.1
+2053,M,110M Hurdles,Rome,1960,G,Lee CALHOUN,USA,13.8,seconds,13.8
+2054,M,110M Hurdles,Rome,1960,S,Willie MAY,USA,13.8,seconds,13.8
+2056,M,110M Hurdles,Rome,1960,B,Hayes JONES,USA,14,seconds,14.0
+2048,M,110M Hurdles,Tokyo,1964,G,Hayes JONES,USA,13.6,seconds,13.6
+2051,M,110M Hurdles,Tokyo,1964,S,Blaine LINDGREN,USA,13.7,seconds,13.7
+2052,M,110M Hurdles,Tokyo,1964,B,Anatoly MIKHAYLOV,URS,13.7,seconds,13.7
+2035,M,110M Hurdles,Mexico,1968,G,Willie DAVENPORT,USA,13.3,seconds,13.3
+2041,M,110M Hurdles,Mexico,1968,S,Ervin HALL,USA,13.4,seconds,13.4
+2042,M,110M Hurdles,Mexico,1968,B,Eddy OTTOZ,ITA,13.4,seconds,13.4
+2032,M,110M Hurdles,Munich,1972,G,Rod MILBURN,USA,13.24,seconds,13.24
+2037,M,110M Hurdles,Munich,1972,S,Guy DRUT,FRA,13.34,seconds,13.34
+2045,M,110M Hurdles,Munich,1972,B,Thomas HILL,USA,13.48,seconds,13.48
+2034,M,110M Hurdles,Montreal,1976,G,Guy DRUT,FRA,13.3,seconds,13.3
+2036,M,110M Hurdles,Montreal,1976,S,Alejandro CASA√É¬ëAS,CUB,13.33,seconds,13.33
+2038,M,110M Hurdles,Montreal,1976,B,Willie DAVENPORT,USA,13.38,seconds,13.38
+2039,M,110M Hurdles,Moscow,1980,G,Thomas MUNKELT,GDR,13.39,seconds,13.39
+2043,M,110M Hurdles,Moscow,1980,S,Alejandro CASA√É¬ëAS,CUB,13.4,seconds,13.4
+2044,M,110M Hurdles,Moscow,1980,B,Aleksandr PUCHKOV,URS,13.44,seconds,13.44
+2026,M,110M Hurdles,Los Angeles,1984,G,Roger KINGDOM,USA,13.2,seconds,13.2
+2029,M,110M Hurdles,Los Angeles,1984,S,Greg FOSTER,USA,13.23,seconds,13.23
+2040,M,110M Hurdles,Los Angeles,1984,B,Arto BRYGGARE,FIN,13.4,seconds,13.4
+2018,M,110M Hurdles,Barcelona,1992,G,Mark MCKOY,CAN,13.12,seconds,13.12
+2031,M,110M Hurdles,Barcelona,1992,S,Tony DEES,USA,13.24,seconds,13.24
+2033,M,110M Hurdles,Barcelona,1992,B,Jack PIERCE,USA,13.26,seconds,13.26
+2013,M,110M Hurdles,Atlanta,1996,G,Allen JOHNSON,USA,12.95,seconds,12.95
+2017,M,110M Hurdles,Atlanta,1996,S,Mark CREAR,USA,13.09,seconds,13.09
+2023,M,110M Hurdles,Atlanta,1996,B,Florian SCHWARTHOFF,GER,13.17,seconds,13.17
+2014,M,110M Hurdles,Sydney,2000,G,Anier GARCIA,CUB,13,seconds,13.0
+2020,M,110M Hurdles,Sydney,2000,S,Terrence TRAMMELL,USA,13.16,seconds,13.16
+2028,M,110M Hurdles,Sydney,2000,B,Mark CREAR,USA,13.22,seconds,13.22
+2010,M,110M Hurdles,Athens,2004,G,Xiang LIU,CHN,12.91,seconds,12.91
+2025,M,110M Hurdles,Athens,2004,S,Terrence TRAMMELL,USA,13.18,seconds,13.18
+2027,M,110M Hurdles,Athens,2004,B,Anier GARCIA,CUB,13.2,seconds,13.2
+2012,M,110M Hurdles,Beijing,2008,G,Dayron ROBLES,CUB,12.93,seconds,12.93
+2022,M,110M Hurdles,Beijing,2008,S,David PAYNE,USA,13.17,seconds,13.17
+2024,M,110M Hurdles,Beijing,2008,B,David OLIVER,USA,13.18,seconds,13.18
+2011,M,110M Hurdles,London,2012,G,Aries MERRITT,USA,12.92,seconds,12.92
+2015,M,110M Hurdles,London,2012,S,Jason RICHARDSON,USA,13.04,seconds,13.04
+2019,M,110M Hurdles,London,2012,B,Hansle PARCHMENT,JAM,13.12,seconds,13.12
+2016,M,110M Hurdles,Rio,2016,G,Omar MCLEOD,JAM,13.05,seconds,13.05
+2021,M,110M Hurdles,Rio,2016,S,Orlando ORTEGA,ESP,13.17,seconds,13.17
+2030,M,110M Hurdles,Rio,2016,B,Dimitri BASCOU,FRA,13.24,seconds,13.24
+2007,M,1500M,Athens,1896,G,Edwin FLACK,AUS,04:33.2,seconds,273.2
+2008,M,1500M,Athens,1896,S,Arthur BLAKE,USA,04:34.0,seconds,274.0
+2009,M,1500M,Athens,1896,B,Albin LERMUSIAUX,FRA,04:36.0,seconds,276.0
+2003,M,1500M,Paris,1900,G,Charles BENNETT,GBR,04:06.2,seconds,246.2
+2004,M,1500M,Paris,1900,S,Henri DELOGE,FRA,04:06.6,seconds,246.6
+2006,M,1500M,Paris,1900,B,John BRAY,USA,04:07.2,seconds,247.2
+2002,M,1500M,St Louis,1904,G,James LIGHTBODY,USA,04:05.4,seconds,245.4
+2005,M,1500M,St Louis,1904,S,William VERNER,USA,04:06.8,seconds,246.8
+1999,M,1500M,London,1908,G,Melvin SHEPPARD,USA,04:03.4,seconds,243.4
+2000,M,1500M,London,1908,S,Harold WILSON,GBR,04:03.6,seconds,243.6
+2001,M,1500M,London,1908,B,Norman HALLOWS,GBR,04:04.0,seconds,244.0
+1993,M,1500M,Stockholm,1912,G,Arnold JACKSON,GBR,03:56.8,seconds,236.8
+1994,M,1500M,Stockholm,1912,S,Abel KIVIAT,USA,03:56.9,seconds,236.9
+1995,M,1500M,Stockholm,1912,B,Norman TABER,USA,03:56.9,seconds,236.9
+1996,M,1500M,Antwerp,1920,G,Albert HILL,GBR,04:01.8,seconds,241.8
+1997,M,1500M,Antwerp,1920,S,Philip BAKER,GBR,04:02.4,seconds,242.4
+1998,M,1500M,Antwerp,1920,B,Lawrence SHIELDS,USA,04:03.1,seconds,243.1
+1988,M,1500M,Paris,1924,G,Paavo NURMI,FIN,03:53.6,seconds,233.6
+1990,M,1500M,Paris,1924,S,Willy SCH√É¬ÑRER,SUI,03:55.0,seconds,235.0
+1991,M,1500M,Paris,1924,B,Henry STALLARD,GBR,03:55.6,seconds,235.6
+1987,M,1500M,Amsterdam,1928,G,Harri LARVA,FIN,03:53.2,seconds,233.2
+1989,M,1500M,Amsterdam,1928,S,Jules LADOUMEGUE,FRA,03:53.8,seconds,233.8
+1992,M,1500M,Amsterdam,1928,B,Eino PURJE,FIN,03:56.4,seconds,236.4
+1985,M,1500M,Los Angeles,1932,G,Luigi BECCALI,ITA,03:51.2,seconds,231.2
+1986,M,1500M,Los Angeles,1932,S,John CORNES,GBR,03:52.6,seconds,232.6
+1976,M,1500M,Berlin,1936,G,John LOVELOCK,NZL,03:47.8,seconds,227.8
+1977,M,1500M,Berlin,1936,S,Glenn CUNNINGHAM,USA,03:48.4,seconds,228.4
+1978,M,1500M,Berlin,1936,B,Luigi BECCALI,ITA,03:49.2,seconds,229.2
+1979,M,1500M,London,1948,G,Henry ERIKSSON,SWE,03:49.8,seconds,229.8
+1983,M,1500M,London,1948,S,Lennart STRAND,SWE,03:50.4,seconds,230.4
+1984,M,1500M,London,1948,B,Willem SLIJKHUIS,NED,03:50.4,seconds,230.4
+1973,M,1500M,Helsinki,1952,G,Joseph BARTHEL,LUX,03:45.2,seconds,225.2
+1974,M,1500M,Helsinki,1952,S,Robert MCMILLEN,USA,03:45.2,seconds,225.2
+1975,M,1500M,Helsinki,1952,B,Werner LUEG,GER,03:45.4,seconds,225.4
+1970,M,1500M,Melbourne / Stockholm,1956,G,Ron DELANY,IRL,03:41.2,seconds,221.2
+1971,M,1500M,Melbourne / Stockholm,1956,S,Klaus RICHTZENHAIN,EUA,03:42.0,seconds,222.0
+1972,M,1500M,Melbourne / Stockholm,1956,B,John LANDY,AUS,03:42.0,seconds,222.0
+1947,M,1500M,Rome,1960,G,Herb ELLIOTT,AUS,03:35.6,seconds,215.6
+1956,M,1500M,Rome,1960,S,Michel JAZY,FRA,03:38.4,seconds,218.4
+1962,M,1500M,Rome,1960,B,Istv√É¬°n R√É¬ìZSAV√É¬ñLGYI,HUN,03:39.2,seconds,219.2
+1955,M,1500M,Tokyo,1964,G,Peter SNELL,NZL,03:38.1,seconds,218.1
+1965,M,1500M,Tokyo,1964,S,Josef ODLOZIL,TCH,03:39.6,seconds,219.6
+1966,M,1500M,Tokyo,1964,B,John DAVIES,NZL,03:39.6,seconds,219.6
+1945,M,1500M,Mexico,1968,G,Kip KEINO,KEN,03:34.9,seconds,214.9
+1954,M,1500M,Mexico,1968,S,Jim RYUN,USA,03:37.8,seconds,217.8
+1959,M,1500M,Mexico,1968,B,Bodo T√É¬úMMLER,FRG,03:39.0,seconds,219.0
+1910,W,1500M,Munich,1972,G,Lyudmila BRAGINA,URS,04:01.4,seconds,241.4
+1914,W,1500M,Munich,1972,S,Gunhild HOFFMEISTER,GDR,04:02.8,seconds,242.8
+1915,W,1500M,Munich,1972,B,Paola PIGNI-CACCHI,ITA,04:02.9,seconds,242.9
+1949,M,1500M,Munich,1972,G,Pekka VASALA,FIN,03:36.3,seconds,216.3
+1952,M,1500M,Munich,1972,S,Kip KEINO,KEN,03:36.8,seconds,216.8
+1953,M,1500M,Munich,1972,B,Rodney DIXON,NZL,03:37.5,seconds,217.5
+1923,W,1500M,Montreal,1976,G,Tatiana KAZANKINA,URS,04:05.5,seconds,245.5
+1924,W,1500M,Montreal,1976,S,Gunhild HOFFMEISTER,GDR,04:06.0,seconds,246.0
+1925,W,1500M,Montreal,1976,B,Ulrike KLAPEZYNSKI-BRUNS,GDR,04:06.1,seconds,246.1
+1961,M,1500M,Montreal,1976,G,John George WALKER,NZL,03:39.2,seconds,219.2
+1963,M,1500M,Montreal,1976,S,Ivo VAN DAMME,BEL,03:39.3,seconds,219.3
+1964,M,1500M,Montreal,1976,B,Paul-Heinz WELLMANN,FRG,03:39.3,seconds,219.3
+1900,W,1500M,Moscow,1980,G,Tatiana KAZANKINA,URS,03:56.6,seconds,236.6
+1903,W,1500M,Moscow,1980,S,Christiane STOLL-WARTENBERG,GDR,03:57.8,seconds,237.8
+1907,W,1500M,Moscow,1980,B,Nadezhda OLIZARENKO,URS,03:59.6,seconds,239.6
+1957,M,1500M,Moscow,1980,G,Sebastian COE,GBR,03:38.4,seconds,218.4
+1958,M,1500M,Moscow,1980,S,J√É¬ºrgen STRAUB,GDR,03:38.8,seconds,218.8
+1960,M,1500M,Moscow,1980,B,Steve OVETT,GBR,03:39.0,seconds,219.0
+1917,W,1500M,Los Angeles,1984,G,Gabriella DORIO,ITA,04:03.2,seconds,243.2
+1918,W,1500M,Los Angeles,1984,S,Doina MELINTE,ROU,04:03.8,seconds,243.8
+1919,W,1500M,Los Angeles,1984,B,Maricica PUICA,ROU,04:04.1,seconds,244.1
+1934,M,1500M,Los Angeles,1984,G,Sebastian COE,GBR,03:32.5,seconds,212.5
+1936,M,1500M,Los Angeles,1984,S,Steve CRAM,GBR,03:33.4,seconds,213.4
+1941,M,1500M,Los Angeles,1984,B,Jos√É¬© Manuel ABASCAL,ESP,03:34.3,seconds,214.3
+1899,W,1500M,Barcelona,1992,G,Hassiba BOULMERKA,ALG,03:55.3,seconds,235.3
+1901,W,1500M,Barcelona,1992,S,Lyudmila ROGACHOVA,EUN,03:56.9,seconds,236.9
+1902,W,1500M,Barcelona,1992,B,Yunxia QU,CHN,03:57.1,seconds,237.1
+1967,M,1500M,Barcelona,1992,G,Fermin CACHO RUIZ,ESP,03:40.1,seconds,220.1
+1968,M,1500M,Barcelona,1992,S,Rachid EL BASIR,MAR,03:40.6,seconds,220.6
+1969,M,1500M,Barcelona,1992,B,Mohamed Ahmed SULAIMAN,QAT,03:40.7,seconds,220.7
+1909,W,1500M,Atlanta,1996,G,Svetlana MASTERKOVA,RUS,04:00.8,seconds,240.8
+1911,W,1500M,Atlanta,1996,S,Gabriela SZABO,ROU,04:01.5,seconds,241.5
+1916,W,1500M,Atlanta,1996,B,Theresia KIESL,AUT,04:03.0,seconds,243.0
+1948,M,1500M,Atlanta,1996,G,Noureddine MORCELI,ALG,03:35.8,seconds,215.8
+1950,M,1500M,Atlanta,1996,S,Fermin CACHO RUIZ,ESP,03:36.4,seconds,216.4
+1951,M,1500M,Atlanta,1996,B,Stephen KIPKORIR,KEN,03:36.7,seconds,216.7
+1920,W,1500M,Sydney,2000,G,Nouria MERAH-BENIDA,ALG,04:05.1,seconds,245.1
+1921,W,1500M,Sydney,2000,S,Violeta SZEKELY,ROU,04:05.2,seconds,245.2
+1922,W,1500M,Sydney,2000,B,Gabriela SZABO,ROU,04:05.3,seconds,245.3
+1931,M,1500M,Sydney,2000,G,Noah Kiprono NGENYI,KEN,03:32.1,seconds,212.1
+1932,M,1500M,Sydney,2000,S,Hicham EL GUERROUJ,MAR,03:32.3,seconds,212.3
+1933,M,1500M,Sydney,2000,B,Bernard LAGAT,KEN,03:32.4,seconds,212.4
+1904,W,1500M,Athens,2004,G,Kelly HOLMES,GBR,03:57.9,seconds,237.9
+1905,W,1500M,Athens,2004,S,Tatyana TOMASHOVA,RUS,03:58.1,seconds,238.1
+1906,W,1500M,Athens,2004,B,Maria CIONCAN,ROU,03:58.4,seconds,238.4
+1939,M,1500M,Athens,2004,G,Hicham EL GUERROUJ,MAR,03:34.2,seconds,214.2
+1942,M,1500M,Athens,2004,S,Bernard LAGAT,KEN,03:34.3,seconds,214.3
+1943,M,1500M,Athens,2004,B,Rui SILVA,POR,03:34.7,seconds,214.7
+1908,W,1500M,Beijing,2008,G,Nancy Jebet LAGAT,KEN,04:00.2,seconds,240.2
+1912,W,1500M,Beijing,2008,S,Iryna LISHCHYNSKA,UKR,04:01.6,seconds,241.6
+1913,W,1500M,Beijing,2008,B,Nataliya TOBIAS,UKR,04:01.8,seconds,241.8
+1935,M,1500M,Beijing,2008,G,Asbel Kipruto KIPROP,KEN,03:33.1,seconds,213.1
+1938,M,1500M,Beijing,2008,S,Nicholas WILLIS,NZL,03:34.2,seconds,214.2
+1940,M,1500M,Beijing,2008,B,Medhi BAALA,FRA,03:34.2,seconds,214.2
+1928,W,1500M,London,2012,S,Gamze BULUT,TUR,04:10.4,seconds,250.4
+1930,W,1500M,London,2012,B,Maryam Yusuf JAMAL,BRN,04:10.7,seconds,250.7
+1937,M,1500M,London,2012,G,Taoufik MAKHLOUFI,ALG,03:34.1,seconds,214.1
+1944,M,1500M,London,2012,S,Leonel MANZANO,USA,03:34.8,seconds,214.8
+1946,M,1500M,London,2012,B,Abdalaati IGUIDER,MAR,03:35.1,seconds,215.1
+1926,W,1500M,Rio,2016,G,Faith Chepngetich KIPYEGON,KEN,04:08.9,seconds,248.9
+1927,W,1500M,Rio,2016,S,Genzebe DIBABA,ETH,04:10.3,seconds,250.3
+1929,W,1500M,Rio,2016,B,Jennifer SIMPSON,USA,04:10.5,seconds,250.5
+1980,M,1500M,Rio,2016,G,Matthew CENTROWITZ,USA,03:50.0,seconds,230.0
+1981,M,1500M,Rio,2016,S,Taoufik MAKHLOUFI,ALG,03:50.1,seconds,230.1
+1982,M,1500M,Rio,2016,B,Nicholas WILLIS,NZL,03:50.2,seconds,230.2
+1895,M,200M,Paris,1900,G,Walter TEWKSBURY,USA,22.2,seconds,22.2
+1897,M,200M,Paris,1900,S,Norman PRITCHARD,IND,22.8,seconds,22.8
+1898,M,200M,Paris,1900,B,Stanley ROWLEY,AUS,22.9,seconds,22.9
+1882,M,200M,St Louis,1904,G,Archie HAHN,USA,21.6,seconds,21.6
+1890,M,200M,St Louis,1904,S,Nate CARTMELL,USA,21.9,seconds,21.9
+1896,M,200M,London,1908,G,Robert KERR,CAN,22.6,seconds,22.6
+1884,M,200M,Stockholm,1912,G,Ralph CRAIG,USA,21.7,seconds,21.7
+1886,M,200M,Stockholm,1912,S,Donald LIPPINCOTT,USA,21.8,seconds,21.8
+1892,M,200M,Stockholm,1912,B,William APPLEGARTH,GBR,22,seconds,22.0
+1891,M,200M,Antwerp,1920,G,Allen WOODRING,USA,22,seconds,22.0
+1893,M,200M,Antwerp,1920,S,Charles PADDOCK,USA,22.1,seconds,22.1
+1894,M,200M,Antwerp,1920,B,Harry EDWARD,GBR,22.2,seconds,22.2
+1881,M,200M,Paris,1924,G,Jackson SCHOLZ,USA,21.6,seconds,21.6
+1883,M,200M,Paris,1924,S,Charles PADDOCK,USA,21.7,seconds,21.7
+1889,M,200M,Paris,1924,B,Eric LIDDELL,GBR,21.9,seconds,21.9
+1885,M,200M,Amsterdam,1928,G,Percy WILLIAMS,CAN,21.8,seconds,21.8
+1887,M,200M,Amsterdam,1928,S,Walter RANGELEY,GBR,21.9,seconds,21.9
+1888,M,200M,Amsterdam,1928,B,Helmut K√É¬ñRNIG,GER,21.9,seconds,21.9
+1877,M,200M,Los Angeles,1932,G,Eddie TOLAN,USA,21.2,seconds,21.2
+1879,M,200M,Los Angeles,1932,S,George SIMPSON,USA,21.4,seconds,21.4
+1880,M,200M,Los Angeles,1932,B,Ralph METCALFE,USA,21.5,seconds,21.5
+1868,M,200M,Berlin,1936,G,Jesse OWENS,USA,20.7,seconds,20.7
+1873,M,200M,Berlin,1936,S,Matthew Mackenzie ROBINSON,USA,21.1,seconds,21.1
+1878,M,200M,Berlin,1936,B,Martinus OSENDARP,NED,21.3,seconds,21.3
+1820,W,200M,London,1948,G,Fanny BLANKERS-KOEN,NED,24.4,seconds,24.4
+1822,W,200M,London,1948,S,Audrey WILLIAMSON,GBR,25.1,seconds,25.1
+1823,W,200M,London,1948,B,Audrey PATTERSON,USA,25.2,seconds,25.2
+1874,M,200M,London,1948,G,Mel PATTON,USA,21.1,seconds,21.1
+1875,M,200M,London,1948,S,Barney EWELL,USA,21.1,seconds,21.1
+1876,M,200M,London,1948,B,Lloyd LABEACH,PAN,21.2,seconds,21.2
+1813,W,200M,Helsinki,1952,G,Marjorie JACKSON,AUS,23.7,seconds,23.7
+1817,W,200M,Helsinki,1952,S,Bertha BROUWER,NED,24.2,seconds,24.2
+1818,W,200M,Helsinki,1952,B,Nadezhda KHNYKINA,URS,24.2,seconds,24.2
+1867,M,200M,Helsinki,1952,G,Andy STANFIELD,USA,20.7,seconds,20.7
+1870,M,200M,Helsinki,1952,S,Thane BAKER,USA,20.8,seconds,20.8
+1871,M,200M,Helsinki,1952,B,James GATHERS,USA,20.8,seconds,20.8
+1812,W,200M,Melbourne / Stockholm,1956,G,Betty CUTHBERT,AUS,23.4,seconds,23.4
+1814,W,200M,Melbourne / Stockholm,1956,S,Christa STUBNICK,EUA,23.7,seconds,23.7
+1815,W,200M,Melbourne / Stockholm,1956,B,Marlene MATHEWS-WILLARD,AUS,23.8,seconds,23.8
+1865,M,200M,Melbourne / Stockholm,1956,G,Bobby MORROW,USA,20.6,seconds,20.6
+1869,M,200M,Melbourne / Stockholm,1956,S,Andy STANFIELD,USA,20.7,seconds,20.7
+1872,M,200M,Melbourne / Stockholm,1956,B,Thane BAKER,USA,20.9,seconds,20.9
+1816,W,200M,Rome,1960,G,Wilma RUDOLPH,USA,24,seconds,24.0
+1819,W,200M,Rome,1960,S,Jutta HEINE,EUA,24.4,seconds,24.4
+1821,W,200M,Rome,1960,B,Dorothy HYMAN,GBR,24.7,seconds,24.7
+1861,M,200M,Rome,1960,G,Livio BERRUTI,ITA,20.5,seconds,20.5
+1863,M,200M,Rome,1960,S,Lester Nelson CARNEY,USA,20.6,seconds,20.6
+1866,M,200M,Rome,1960,B,Abdoulaye SEYE,FRA,20.7,seconds,20.7
+1809,W,200M,Tokyo,1964,G,Edith MCGUIRE,USA,23,seconds,23.0
+1810,W,200M,Tokyo,1964,S,Irena KIRSZENSTEIN,POL,23.1,seconds,23.1
+1811,W,200M,Tokyo,1964,B,Marilyn BLACK,AUS,23.1,seconds,23.1
+1858,M,200M,Tokyo,1964,G,Henry CARR,USA,20.3,seconds,20.3
+1862,M,200M,Tokyo,1964,S,Paul DRAYTON,USA,20.5,seconds,20.5
+1864,M,200M,Tokyo,1964,B,Edwin ROBERTS,TTO,20.6,seconds,20.6
+1805,W,200M,Mexico,1968,G,Irena KIRSZENSTEIN,POL,22.5,seconds,22.5
+1806,W,200M,Mexico,1968,S,Raelene Ann BOYLE,AUS,22.7,seconds,22.7
+1808,W,200M,Mexico,1968,B,Jennifer LAMY,AUS,22.8,seconds,22.8
+1832,M,200M,Mexico,1968,G,Tommie SMITH,USA,19.8,seconds,19.8
+1838,M,200M,Mexico,1968,S,Peter NORMAN,AUS,20,seconds,20.0
+1839,M,200M,Mexico,1968,B,John CARLOS,USA,20,seconds,20.0
+1802,W,200M,Munich,1972,G,Renate STECHER,GDR,22.4,seconds,22.4
+1803,W,200M,Munich,1972,S,Raelene Ann BOYLE,AUS,22.45,seconds,22.45
+1807,W,200M,Munich,1972,B,Irena KIRSZENSTEIN,POL,22.74,seconds,22.74
+1840,M,200M,Munich,1972,G,Valery BORZOV,URS,20,seconds,20.0
+1850,M,200M,Munich,1972,S,Larry BLACK,USA,20.19,seconds,20.19
+1857,M,200M,Munich,1972,B,Pietro MENNEA,ITA,20.3,seconds,20.3
+1799,W,200M,Montreal,1976,G,B√É¬§rbel ECKERT-W√É¬ñCKEL,GDR,22.37,seconds,22.37
+1801,W,200M,Montreal,1976,S,Annegret RICHTER-IRRGANG,FRG,22.39,seconds,22.39
+1804,W,200M,Montreal,1976,B,Renate STECHER,GDR,22.47,seconds,22.47
+1853,M,200M,Montreal,1976,G,Donald QUARRIE,JAM,20.23,seconds,20.23
+1855,M,200M,Montreal,1976,S,Millard Frank Jr. HAMPTON,USA,20.29,seconds,20.29
+1860,M,200M,Montreal,1976,B,Dwayne Eugene EVANS,USA,20.43,seconds,20.43
+1782,W,200M,Moscow,1980,G,B√É¬§rbel ECKERT-W√É¬ñCKEL,GDR,22.03,seconds,22.03
+1792,W,200M,Moscow,1980,S,Natalia BOCHINA,URS,22.19,seconds,22.19
+1793,W,200M,Moscow,1980,B,Merlene OTTEY,JAM,22.2,seconds,22.2
+1849,M,200M,Moscow,1980,G,Pietro MENNEA,ITA,20.19,seconds,20.19
+1852,M,200M,Moscow,1980,S,Allan WELLS,GBR,20.21,seconds,20.21
+1856,M,200M,Moscow,1980,B,Donald QUARRIE,JAM,20.29,seconds,20.29
+1776,W,200M,Los Angeles,1984,G,Valerie BRISCO,USA,21.81,seconds,21.81
+1783,W,200M,Los Angeles,1984,S,Florence GRIFFITH JOYNER,USA,22.04,seconds,22.04
+1786,W,200M,Los Angeles,1984,B,Merlene OTTEY,JAM,22.09,seconds,22.09
+1831,M,200M,Los Angeles,1984,G,Carl LEWIS,USA,19.8,seconds,19.8
+1836,M,200M,Los Angeles,1984,S,Kirk BAPTISTE,USA,19.96,seconds,19.96
+1854,M,200M,Los Angeles,1984,B,Thomas JEFFERSON,USA,20.26,seconds,20.26
+1775,W,200M,Barcelona,1992,G,Gwen TORRENCE,USA,21.81,seconds,21.81
+1781,W,200M,Barcelona,1992,S,Juliet CUTHBERT,JAM,22.02,seconds,22.02
+1785,W,200M,Barcelona,1992,B,Merlene OTTEY,JAM,22.09,seconds,22.09
+1841,M,200M,Barcelona,1992,G,Michael MARSH,USA,20.01,seconds,20.01
+1847,M,200M,Barcelona,1992,S,Frank FREDERICKS,NAM,20.13,seconds,20.13
+1859,M,200M,Barcelona,1992,B,Michael BATES,USA,20.38,seconds,20.38
+1788,W,200M,Atlanta,1996,G,Marie-Jos√É¬© P√É¬âREC,FRA,22.12,seconds,22.12
+1794,W,200M,Atlanta,1996,S,Merlene OTTEY,JAM,22.24,seconds,22.24
+1800,W,200M,Atlanta,1996,B,Mary ONYALI,NGR,22.38,seconds,22.38
+1826,M,200M,Atlanta,1996,G,Michael JOHNSON,USA,19.32,seconds,19.32
+1828,M,200M,Atlanta,1996,S,Frank FREDERICKS,NAM,19.68,seconds,19.68
+1833,M,200M,Atlanta,1996,B,Ato BOLDON,TTO,19.8,seconds,19.8
+1795,W,200M,Sydney,2000,G,Pauline DAVIS,BAH,22.27,seconds,22.27
+1796,W,200M,Sydney,2000,S,Susanthika JAYASINGHE,SRI,22.28,seconds,22.28
+1798,W,200M,Sydney,2000,B,Beverly MCDONALD,JAM,22.35,seconds,22.35
+1845,M,200M,Sydney,2000,G,Kostas KENTERIS,GRE,20.09,seconds,20.09
+1848,M,200M,Sydney,2000,S,Darren CAMPBELL,GBR,20.14,seconds,20.14
+1851,M,200M,Sydney,2000,B,Ato BOLDON,TTO,20.2,seconds,20.2
+1784,W,200M,Athens,2004,G,Veronica CAMPBELL-BROWN,JAM,22.05,seconds,22.05
+1791,W,200M,Athens,2004,S,Allyson FELIX,USA,22.18,seconds,22.18
+1797,W,200M,Athens,2004,B,Debbie FERGUSON-MCKENZIE,BAH,22.3,seconds,22.3
+1830,M,200M,Athens,2004,G,Shawn CRAWFORD,USA,19.79,seconds,19.79
+1842,M,200M,Athens,2004,S,Bernard WILLIAMS III,USA,20.01,seconds,20.01
+1844,M,200M,Athens,2004,B,Justin GATLIN,USA,20.03,seconds,20.03
+1773,W,200M,Beijing,2008,G,Veronica CAMPBELL-BROWN,JAM,21.74,seconds,21.74
+1779,W,200M,Beijing,2008,S,Allyson FELIX,USA,21.93,seconds,21.93
+1780,W,200M,Beijing,2008,B,Kerron STEWART,JAM,22,seconds,22.0
+1824,M,200M,Beijing,2008,G,Usain BOLT,JAM,19.3,seconds,19.3
+1835,M,200M,Beijing,2008,S,Shawn CRAWFORD,USA,19.96,seconds,19.96
+1837,M,200M,Beijing,2008,B,Walter DIX,USA,19.98,seconds,19.98
+1778,W,200M,London,2012,G,Allyson FELIX,USA,21.88,seconds,21.88
+1787,W,200M,London,2012,S,Shelly-Ann FRASER-PRYCE,JAM,22.09,seconds,22.09
+1789,W,200M,London,2012,B,Carmelita JETER,USA,22.14,seconds,22.14
+1825,M,200M,London,2012,G,Usain BOLT,JAM,19.32,seconds,19.32
+1827,M,200M,London,2012,S,Yohan BLAKE,JAM,19.44,seconds,19.44
+1834,M,200M,London,2012,B,Warren WEIR,JAM,19.84,seconds,19.84
+1774,W,200M,Rio,2016,G,Elaine THOMPSON,JAM,21.78,seconds,21.78
+1777,W,200M,Rio,2016,S,Dafne SCHIPPERS,NED,21.88,seconds,21.88
+1790,W,200M,Rio,2016,B,Tori BOWIE,USA,22.15,seconds,22.15
+1829,M,200M,Rio,2016,G,Usain BOLT,JAM,19.78,seconds,19.78
+1843,M,200M,Rio,2016,S,Andre DE GRASSE,CAN,20.02,seconds,20.02
+1846,M,200M,Rio,2016,B,Christophe LEMAITRE,FRA,20.12,seconds,20.12
+1763,M,20Km Race Walk,Melbourne / Stockholm,1956,G,Leonid SPIRIN,URS,1:31:27.4,seconds,5487.4
+1765,M,20Km Race Walk,Melbourne / Stockholm,1956,S,Antanas MIKENAS,URS,1:32:03.0,seconds,5523.0
+1766,M,20Km Race Walk,Melbourne / Stockholm,1956,B,Bruno JUNK,URS,1:32:12.0,seconds,5532.0
+1770,M,20Km Race Walk,Rome,1960,G,Vladimir GOLUBNICHY,URS,1:34:07.2,seconds,5647.2
+1771,M,20Km Race Walk,Rome,1960,S,Noel FREEMAN,AUS,1:34:16.4,seconds,5656.4
+1772,M,20Km Race Walk,Rome,1960,B,Stanley Frank VICKERS,GBR,1:34:56.4,seconds,5696.4
+1761,M,20Km Race Walk,Tokyo,1964,G,Kenneth Joseph MATTHEWS,GBR,1:29:34.0,seconds,5374.0
+1762,M,20Km Race Walk,Tokyo,1964,S,Dieter LINDNER,EUA,1:31:13.2,seconds,5473.2
+1764,M,20Km Race Walk,Tokyo,1964,B,Vladimir GOLUBNICHY,URS,1:31:59.4,seconds,5519.4
+1767,M,20Km Race Walk,Mexico,1968,G,Vladimir GOLUBNICHY,URS,1:33:58.4,seconds,5638.4
+1768,M,20Km Race Walk,Mexico,1968,S,Jos√É¬© PEDRAZA,MEX,1:34:00.0,seconds,5640.0
+1769,M,20Km Race Walk,Mexico,1968,B,Nikolay SMAGA,URS,1:34:03.4,seconds,5643.4
+1758,M,20Km Race Walk,Munich,1972,G,Peter FRENKEL,GDR,1:26:42.4,seconds,5202.4
+1759,M,20Km Race Walk,Munich,1972,S,Vladimir GOLUBNICHY,URS,1:26:55.2,seconds,5215.2
+1760,M,20Km Race Walk,Munich,1972,B,Hans REIMANN,GDR,1:27:16.6,seconds,5236.6
+1753,M,20Km Race Walk,Montreal,1976,G,Daniel BAUTISTA ROCHA,MEX,1:24:40.6,seconds,5080.6
+1755,M,20Km Race Walk,Montreal,1976,S,Hans REIMANN,GDR,1:25:13.8,seconds,5113.8
+1756,M,20Km Race Walk,Montreal,1976,B,Peter FRENKEL,GDR,1:25:29.4,seconds,5129.4
+1752,M,20Km Race Walk,Moscow,1980,G,Maurizio DAMILANO,ITA,1:23:35.5,seconds,5015.5
+1754,M,20Km Race Walk,Moscow,1980,S,Piotr POCHINCHUK,URS,1:24:45.4,seconds,5085.4
+1757,M,20Km Race Walk,Moscow,1980,B,Roland WIESER,GDR,1:25:58.2,seconds,5158.2
+1749,M,20Km Race Walk,Los Angeles,1984,G,Ernesto CANTO,MEX,1:23:13,seconds,4993.0
+1750,M,20Km Race Walk,Los Angeles,1984,S,Ra√É¬∫l GONZ√É¬ÅLEZ,MEX,1:23:20,seconds,5000.0
+1751,M,20Km Race Walk,Los Angeles,1984,B,Maurizio DAMILANO,ITA,1:23:26,seconds,5006.0
+1739,M,20Km Race Walk,Seoul,1988,G,Jozef PRIBILINEC,TCH,1:19:57,seconds,4797.0
+1740,M,20Km Race Walk,Seoul,1988,S,Ronald WEIGEL,GDR,1:20:00,seconds,4800.0
+1743,M,20Km Race Walk,Seoul,1988,B,Maurizio DAMILANO,ITA,1:20:14,seconds,4814.0
+1746,M,20Km Race Walk,Barcelona,1992,G,Daniel PLAZA,ESP,1:21:45,seconds,4905.0
+1747,M,20Km Race Walk,Barcelona,1992,S,Guillaume LEBLANC,CAN,1:22:25,seconds,4945.0
+1748,M,20Km Race Walk,Barcelona,1992,B,Giovanni DE BENEDICTIS,ITA,1:23:11,seconds,4991.0
+1742,M,20Km Race Walk,Atlanta,1996,G,Jefferson PEREZ,ECU,1:20:07,seconds,4807.0
+1744,M,20Km Race Walk,Atlanta,1996,S,Ilya MARKOV,RUS,1:20:16,seconds,4816.0
+1745,M,20Km Race Walk,Atlanta,1996,B,Bernardo SEGURA,MEX,1:20:23,seconds,4823.0
+1718,W,20Km Race Walk,Sydney,2000,G,Liping WANG,CHN,1:29:05,seconds,5345.0
+1719,W,20Km Race Walk,Sydney,2000,G,Liping WANG,CHN,1:29:05,seconds,5345.0
+1723,W,20Km Race Walk,Sydney,2000,S,Kjersti PLAETZER,NOR,1:29:33,seconds,5373.0
+1724,W,20Km Race Walk,Sydney,2000,B,Maria VASCO,ESP,1:30:23,seconds,5423.0
+1727,M,20Km Race Walk,Sydney,2000,G,Robert KORZENIOWSKI,POL,1:18:59,seconds,4739.0
+1729,M,20Km Race Walk,Sydney,2000,S,Noe HERNANDEZ,MEX,1:19:03,seconds,4743.0
+1734,M,20Km Race Walk,Sydney,2000,B,Vladimir ANDREYEV,RUS,1:19:27,seconds,4767.0
+1720,W,20Km Race Walk,Athens,2004,G,Athanasia TSOUMELEKA,GRE,1:29:12,seconds,5352.0
+1721,W,20Km Race Walk,Athens,2004,S,Olimpiada IVANOVA,RUS,1:29:16,seconds,5356.0
+1722,W,20Km Race Walk,Athens,2004,B,Jane SAVILLE,AUS,1:29:25,seconds,5365.0
+1736,M,20Km Race Walk,Athens,2004,G,Ivano BRUGNETTI,ITA,1:19:40,seconds,4780.0
+1738,M,20Km Race Walk,Athens,2004,S,Francisco Javier FERNANDEZ,ESP,1:19:45,seconds,4785.0
+1741,M,20Km Race Walk,Athens,2004,B,Nathan DEAKES,AUS,1:20:02,seconds,4802.0
+1712,W,20Km Race Walk,Beijing,2008,G,Olga KANISKINA,RUS,1:26:31,seconds,5191.0
+1713,W,20Km Race Walk,Beijing,2008,S,Kjersti PLAETZER,NOR,1:27:07,seconds,5227.0
+1714,W,20Km Race Walk,Beijing,2008,B,Elisa RIGAUDO,ITA,1:27:12,seconds,5232.0
+1728,M,20Km Race Walk,Beijing,2008,G,Valeriy BORCHIN,RUS,1:19:01,seconds,4741.0
+1731,M,20Km Race Walk,Beijing,2008,S,Jefferson PEREZ,ECU,1:19:15,seconds,4755.0
+1737,M,20Km Race Walk,Beijing,2008,B,Jared TALLENT,AUS,1:19:42,seconds,4782.0
+1710,W,20Km Race Walk,London,2012,G,Elena LASHMANOVA,RUS,1:25:02,seconds,5102.0
+1711,W,20Km Race Walk,London,2012,B,Shenjie QIEYANG,CHN,1:25:16,seconds,5116.0
+1725,M,20Km Race Walk,London,2012,G,Ding CHEN,CHN,1:18:46,seconds,4726.0
+1726,M,20Km Race Walk,London,2012,S,Erick BARRONDO,GUA,1:18:57,seconds,4737.0
+1732,M,20Km Race Walk,London,2012,B,Zhen WANG,CHN,1:19:25,seconds,4765.0
+1715,W,20Km Race Walk,Rio,2016,G,Hong LIU,CHN,1:28:35,seconds,5315.0
+1716,W,20Km Race Walk,Rio,2016,S,Maria Guadalupe GONZALEZ,MEX,1:28:37,seconds,5317.0
+1717,W,20Km Race Walk,Rio,2016,B,Xiuzhi LU,CHN,1:28:42,seconds,5322.0
+1730,M,20Km Race Walk,Rio,2016,G,Zhen WANG,CHN,1:19:14,seconds,4754.0
+1733,M,20Km Race Walk,Rio,2016,S,Zelin CAI,CHN,1:19:26,seconds,4766.0
+1735,M,20Km Race Walk,Rio,2016,B,Dane BIRD-SMITH,AUS,1:19:37,seconds,4777.0
+1642,M,3000M Steeplechase,Paris,1900,G,George ORTON,CAN,07:34.4,seconds,454.4
+1643,M,3000M Steeplechase,Paris,1900,S,Sidney ROBINSON,GBR,07:38.0,seconds,458.0
+1644,M,3000M Steeplechase,St Louis,1904,G,James LIGHTBODY,USA,07:39.6,seconds,459.6
+1645,M,3000M Steeplechase,St Louis,1904,S,John DALY,GBR,07:40.6,seconds,460.6
+1706,M,3000M Steeplechase,Antwerp,1920,G,Percy HODGE,GBR,10:00.4,seconds,600.4
+1702,M,3000M Steeplechase,Paris,1924,G,Ville RITOLA,FIN,09:33.6,seconds,573.6
+1704,M,3000M Steeplechase,Paris,1924,S,Elias KATZ,FIN,09:44.0,seconds,584.0
+1705,M,3000M Steeplechase,Paris,1924,B,Paul BONTEMPS,FRA,09:45.2,seconds,585.2
+1700,M,3000M Steeplechase,Amsterdam,1928,G,Toivo LOUKOLA,FIN,09:21.8,seconds,561.8
+1701,M,3000M Steeplechase,Amsterdam,1928,S,Paavo NURMI,FIN,09:31.2,seconds,571.2
+1703,M,3000M Steeplechase,Amsterdam,1928,B,Ove ANDERSEN,FIN,09:35.6,seconds,575.6
+1707,M,3000M Steeplechase,Los Angeles,1932,G,Volmari ISO-HOLLO,FIN,10:33.4,seconds,633.4
+1708,M,3000M Steeplechase,Los Angeles,1932,S,Thomas EVENSON,GBR,10:46.0,seconds,646.0
+1709,M,3000M Steeplechase,Los Angeles,1932,B,Joseph MCCLUSKEY,USA,10:46.2,seconds,646.2
+1694,M,3000M Steeplechase,Berlin,1936,G,Volmari ISO-HOLLO,FIN,09:03.8,seconds,543.8
+1696,M,3000M Steeplechase,Berlin,1936,S,Kaarlo Jalmari TUOMINEN,FIN,09:06.8,seconds,546.8
+1697,M,3000M Steeplechase,Berlin,1936,B,Alfred DOMPERT,GER,09:07.2,seconds,547.2
+1695,M,3000M Steeplechase,London,1948,G,Tore SJ√É¬ñSTRAND,SWE,09:04.6,seconds,544.6
+1698,M,3000M Steeplechase,London,1948,S,Fritz Erik ELMS√É¬É?TER,SWE,09:08.2,seconds,548.2
+1699,M,3000M Steeplechase,London,1948,B,Gote Ernst HAGSTROM,SWE,09:11.8,seconds,551.8
+1688,M,3000M Steeplechase,Helsinki,1952,G,Horace ASHENFELTER,USA,08:45.4,seconds,525.4
+1691,M,3000M Steeplechase,Helsinki,1952,S,Vladimir KAZANTSEV,URS,08:51.6,seconds,531.6
+1693,M,3000M Steeplechase,Helsinki,1952,B,John DISLEY,GBR,08:51.8,seconds,531.8
+1684,M,3000M Steeplechase,Melbourne / Stockholm,1956,G,Christopher William BRASHER,GBR,08:41.2,seconds,521.2
+1686,M,3000M Steeplechase,Melbourne / Stockholm,1956,S,S√É¬É√Ç¬°ndor ROZSNY√É¬É?I,HUN,08:43.6,seconds,523.6
+1687,M,3000M Steeplechase,Melbourne / Stockholm,1956,B,Ernst LARSEN,NOR,08:44.0,seconds,524.0
+1682,M,3000M Steeplechase,Rome,1960,G,Zdzislaw KRZYSZKOWIAK,POL,08:34.2,seconds,514.2
+1683,M,3000M Steeplechase,Rome,1960,S,Nikolay SOKOLOV,URS,08:36.4,seconds,516.4
+1685,M,3000M Steeplechase,Rome,1960,B,Semyon RZISHCHIN,URS,08:42.2,seconds,522.2
+1679,M,3000M Steeplechase,Tokyo,1964,G,Gaston ROELANTS,BEL,08:30.8,seconds,510.8
+1680,M,3000M Steeplechase,Tokyo,1964,S,Maurice HERRIOTT,GBR,08:32.4,seconds,512.4
+1681,M,3000M Steeplechase,Tokyo,1964,B,Ivan BELYAEV,URS,08:33.8,seconds,513.8
+1689,M,3000M Steeplechase,Mexico,1968,G,Amos BIWOTT,KEN,08:51.0,seconds,531.0
+1690,M,3000M Steeplechase,Mexico,1968,S,Benjamin KOGO,KEN,08:51.6,seconds,531.6
+1692,M,3000M Steeplechase,Mexico,1968,B,George YOUNG,USA,08:51.8,seconds,531.8
+1676,M,3000M Steeplechase,Munich,1972,G,Kip KEINO,KEN,08:23.6,seconds,503.6
+1677,M,3000M Steeplechase,Munich,1972,S,Ben JIPCHO,KEN,08:24.6,seconds,504.6
+1678,M,3000M Steeplechase,Munich,1972,B,Tapio KANTANEN,FIN,08:24.7,seconds,504.7
+1652,M,3000M Steeplechase,Montreal,1976,G,Anders GARDERUD,SWE,08:08.0,seconds,488.0
+1655,M,3000M Steeplechase,Montreal,1976,S,Bronislaw MALINOWSKI,POL,08:09.1,seconds,489.1
+1659,M,3000M Steeplechase,Montreal,1976,B,Frank BAUMGARTL,GDR,08:10.4,seconds,490.4
+1657,M,3000M Steeplechase,Moscow,1980,G,Bronislaw MALINOWSKI,POL,08:09.7,seconds,489.7
+1666,M,3000M Steeplechase,Moscow,1980,S,Filbert BAYI,TAN,08:12.5,seconds,492.5
+1668,M,3000M Steeplechase,Moscow,1980,B,Eshetu TURA,ETH,08:13.6,seconds,493.6
+1665,M,3000M Steeplechase,Los Angeles,1984,G,Julius KORIR,KEN,08:11.8,seconds,491.8
+1667,M,3000M Steeplechase,Los Angeles,1984,S,Joseph MAHMOUD,FRA,08:13.3,seconds,493.3
+1669,M,3000M Steeplechase,Los Angeles,1984,B,Brian Lee DIEMER,USA,08:14.1,seconds,494.1
+1654,M,3000M Steeplechase,Barcelona,1992,G,Matthew BIRIR,KEN,08:08.8,seconds,488.8
+1656,M,3000M Steeplechase,Barcelona,1992,S,Patrick SANG,KEN,08:09.6,seconds,489.6
+1661,M,3000M Steeplechase,Barcelona,1992,B,William MUTWOL,KEN,08:10.7,seconds,490.7
+1651,M,3000M Steeplechase,Atlanta,1996,G,Joseph KETER,KEN,08:07.1,seconds,487.1
+1653,M,3000M Steeplechase,Atlanta,1996,S,Moses KIPTANUI,KEN,08:08.3,seconds,488.3
+1663,M,3000M Steeplechase,Atlanta,1996,B,Alessandro LAMBRUSCHINI,ITA,08:11.3,seconds,491.3
+1673,M,3000M Steeplechase,Sydney,2000,G,Reuben KOSGEI,KEN,08:21.4,seconds,501.4
+1674,M,3000M Steeplechase,Sydney,2000,S,Wilson Boit KIPKETER,KEN,08:21.8,seconds,501.8
+1675,M,3000M Steeplechase,Sydney,2000,B,Ali EZZINE,MAR,08:22.2,seconds,502.2
+1648,M,3000M Steeplechase,Athens,2004,G,Ezekiel KEMBOI,KEN,08:05.8,seconds,485.8
+1649,M,3000M Steeplechase,Athens,2004,S,Brimin Kiprop KIPRUTO,KEN,08:06.1,seconds,486.1
+1650,M,3000M Steeplechase,Athens,2004,B,Paul Kipsiele KOECH,KEN,08:06.6,seconds,486.6
+1634,W,3000M Steeplechase,Beijing,2008,G,Gulnara SAMITOVA,RUS,08:58.8,seconds,538.8
+1637,W,3000M Steeplechase,Beijing,2008,S,Eunice JEPKORIR,KEN,09:07.4,seconds,547.4
+1658,M,3000M Steeplechase,Beijing,2008,G,Brimin Kiprop KIPRUTO,KEN,08:10.3,seconds,490.3
+1660,M,3000M Steeplechase,Beijing,2008,S,Mahiedine MEKHISSI-BENABBAD,FRA,08:10.5,seconds,490.5
+1662,M,3000M Steeplechase,Beijing,2008,B,Richard Kipkemboi MATEELONG,KEN,08:11.0,seconds,491.0
+1639,W,3000M Steeplechase,London,2012,G,Habiba GHRIBI,TUN,09:08.4,seconds,548.4
+1640,W,3000M Steeplechase,London,2012,S,Sofia ASSEFA,ETH,09:09.8,seconds,549.8
+1641,W,3000M Steeplechase,London,2012,B,Milcah Chemos CHEYWA,KEN,09:09.9,seconds,549.9
+1670,M,3000M Steeplechase,London,2012,G,Ezekiel KEMBOI,KEN,08:18.6,seconds,498.6
+1671,M,3000M Steeplechase,London,2012,S,Mahiedine MEKHISSI-BENABBAD,FRA,08:19.1,seconds,499.1
+1672,M,3000M Steeplechase,London,2012,B,Abel Kiprop MUTAI,KEN,08:19.7,seconds,499.7
+1635,W,3000M Steeplechase,Rio,2016,G,Ruth JEBET,BRN,08:59.8,seconds,539.8
+1636,W,3000M Steeplechase,Rio,2016,S,Hyvin Kiyeng JEPKEMOI,KEN,09:07.1,seconds,547.1
+1638,W,3000M Steeplechase,Rio,2016,B,Emma COBURN,USA,09:07.6,seconds,547.6
+1646,M,3000M Steeplechase,Rio,2016,G,Conseslus KIPRUTO,KEN,08:03.3,seconds,483.3
+1647,M,3000M Steeplechase,Rio,2016,S,Evan JAGER,USA,08:04.3,seconds,484.3
+1664,M,3000M Steeplechase,Rio,2016,B,Mahiedine MEKHISSI,FRA,08:11.5,seconds,491.5
+1536,M,400M,Athens,1896,G,Thomas BURKE,USA,54.2,seconds,54.2
+1537,M,400M,Athens,1896,S,Herbert JAMISON,USA,55.2,seconds,55.2
+1538,M,400M,Athens,1896,B,Charles GMELIN,GBR,55.6,seconds,55.6
+1531,M,400M,Paris,1900,G,Maxwell Warburn LONG,USA,49.4,seconds,49.4
+1532,M,400M,Paris,1900,S,William HOLLAND,USA,49.6,seconds,49.6
+1530,M,400M,St Louis,1904,G,Harry HILLMAN,USA,49.2,seconds,49.2
+1533,M,400M,St Louis,1904,S,Frank WALLER,USA,49.9,seconds,49.9
+1535,M,400M,St Louis,1904,B,Herman GROMAN,USA,50,seconds,50.0
+1534,M,400M,London,1908,G,Wyndham HALSWELLE,GBR,50,seconds,50.0
+1460,M,400M,Stockholm,1912,G,Charles REIDPATH,USA,00:48.2,seconds,48.2
+1461,M,400M,Stockholm,1912,S,Hanns BRAUN,GER,00:48.3,seconds,48.3
+1462,M,400M,Stockholm,1912,B,Edward LINDBERG,USA,00:48.4,seconds,48.4
+1463,M,400M,Antwerp,1920,G,Bevil RUDD,RSA,00:49.6,seconds,49.6
+1464,M,400M,Antwerp,1920,S,Guy BUTLER,GBR,00:49.9,seconds,49.9
+1465,M,400M,Antwerp,1920,B,Nils ENGDAHL,SWE,00:50.0,seconds,50.0
+1524,M,400M,Paris,1924,G,Eric LIDDELL,GBR,47.6,seconds,47.6
+1528,M,400M,Paris,1924,S,Horatio FITCH,USA,48.4,seconds,48.4
+1529,M,400M,Paris,1924,B,Guy BUTLER,GBR,48.6,seconds,48.6
+1525,M,400M,Amsterdam,1928,G,Raymond James BARBUTI,USA,47.8,seconds,47.8
+1526,M,400M,Amsterdam,1928,S,James BALL,CAN,48,seconds,48.0
+1527,M,400M,Amsterdam,1928,B,Joachim B√É¬úCHNER,GER,48.2,seconds,48.2
+1511,M,400M,Los Angeles,1932,G,William Arthur CARR,USA,46.2,seconds,46.2
+1513,M,400M,Los Angeles,1932,S,Benjamin Bangs EASTMAN,USA,46.4,seconds,46.4
+1523,M,400M,Los Angeles,1932,B,Alex WILSON,CAN,47.4,seconds,47.4
+1514,M,400M,Berlin,1936,G,Archibald Franklin WILLIAMS,USA,46.5,seconds,46.5
+1515,M,400M,Berlin,1936,S,Godfrey BROWN,GBR,46.7,seconds,46.7
+1518,M,400M,Berlin,1936,B,James Ellis LU VALLE,USA,46.8,seconds,46.8
+1510,M,400M,London,1948,G,Arthur WINT,JAM,46.2,seconds,46.2
+1512,M,400M,London,1948,S,Herbert MCKENLEY,JAM,46.4,seconds,46.4
+1520,M,400M,London,1948,B,Mal WHITFIELD,USA,46.9,seconds,46.9
+1508,M,400M,Helsinki,1952,G,George RHODEN,JAM,45.9,seconds,45.9
+1509,M,400M,Helsinki,1952,S,Herbert MCKENLEY,JAM,45.9,seconds,45.9
+1517,M,400M,Helsinki,1952,B,Ollie MATSON,USA,46.8,seconds,46.8
+1516,M,400M,Melbourne / Stockholm,1956,G,Charles JENKINS,USA,46.7,seconds,46.7
+1519,M,400M,Melbourne / Stockholm,1956,S,Karl-Friedrich HAAS,EUA,46.8,seconds,46.8
+1521,M,400M,Melbourne / Stockholm,1956,B,Voitto HELLSTEN,FIN,47,seconds,47.0
+1522,M,400M,Melbourne / Stockholm,1956,B,Ardalion IGNATYEV,URS,47,seconds,47.0
+1500,M,400M,Rome,1960,G,Otis DAVIS,USA,44.9,seconds,44.9
+1501,M,400M,Rome,1960,S,Carl KAUFMANN,EUA,44.9,seconds,44.9
+1506,M,400M,Rome,1960,B,Malcolm SPENCE,RSA,45.5,seconds,45.5
+1455,W,400M,Tokyo,1964,G,Betty CUTHBERT,AUS,52,seconds,52.0
+1458,W,400M,Tokyo,1964,S,Ann PACKER,GBR,52.2,seconds,52.2
+1459,W,400M,Tokyo,1964,B,Judith Florence AMOORE-POLLOCK,AUS,53.4,seconds,53.4
+1504,M,400M,Tokyo,1964,G,Mike LARRABEE,USA,45.1,seconds,45.1
+1505,M,400M,Tokyo,1964,S,Wendell MOTTLEY,TTO,45.2,seconds,45.2
+1507,M,400M,Tokyo,1964,B,Andrzej BADENSKI,POL,45.6,seconds,45.6
+1454,W,400M,Mexico,1968,G,Colette BESSON,FRA,52,seconds,52.0
+1456,W,400M,Mexico,1968,S,Lillian BOARD,GBR,52.1,seconds,52.1
+1457,W,400M,Mexico,1968,B,Natalya CHISTYAKOVA,URS,52.2,seconds,52.2
+1471,M,400M,Mexico,1968,G,Lee EVANS,USA,43.8,seconds,43.8
+1474,M,400M,Mexico,1968,S,Larry JAMES,USA,43.9,seconds,43.9
+1484,M,400M,Mexico,1968,B,Ron FREEMAN,USA,44.4,seconds,44.4
+1451,W,400M,Munich,1972,G,Monika ZEHRT,GDR,51.08,seconds,51.08
+1452,W,400M,Munich,1972,S,Rita JAHN,FRG,51.21,seconds,51.21
+1453,W,400M,Munich,1972,B,Kathleen HAMMOND,USA,51.64,seconds,51.64
+1492,M,400M,Munich,1972,G,Vince MATTHEWS,USA,44.66,seconds,44.66
+1497,M,400M,Munich,1972,S,Wayne COLLETT,USA,44.8,seconds,44.8
+1502,M,400M,Munich,1972,B,Julius SANG,KEN,44.92,seconds,44.92
+1430,W,400M,Montreal,1976,G,Irena KIRSZENSTEIN,POL,49.29,seconds,49.29
+1449,W,400M,Montreal,1976,S,Christina BREHMER-LATHAN,GDR,50.51,seconds,50.51
+1450,W,400M,Montreal,1976,B,Ellen STROPAHL-STREIDT,GDR,50.55,seconds,50.55
+1480,M,400M,Montreal,1976,G,Alberto JUANTORENA,CUB,44.26,seconds,44.26
+1483,M,400M,Montreal,1976,S,Frederick Vaughn NEWHOUSE,USA,44.4,seconds,44.4
+1503,M,400M,Montreal,1976,B,Herman Ronald FRAZIER,USA,44.95,seconds,44.95
+1425,W,400M,Moscow,1980,G,Marita KOCH,GDR,48.88,seconds,48.88
+1434,W,400M,Moscow,1980,S,Jarmila KRATOHVILOVA,TCH,49.46,seconds,49.46
+1441,W,400M,Moscow,1980,B,Christina BREHMER-LATHAN,GDR,49.66,seconds,49.66
+1491,M,400M,Moscow,1980,G,Viktor MARKIN,URS,44.6,seconds,44.6
+1498,M,400M,Moscow,1980,S,Rick MITCHELL,AUS,44.84,seconds,44.84
+1499,M,400M,Moscow,1980,B,Frank SCHAFFER,GDR,44.87,seconds,44.87
+1424,W,400M,Los Angeles,1984,G,Valerie BRISCO,USA,48.83,seconds,48.83
+1427,W,400M,Los Angeles,1984,S,Chandra CHEESEBOROUGH,USA,49.05,seconds,49.05
+1432,W,400M,Los Angeles,1984,B,Kathryn SMALLWOOD-COOK,GBR,49.42,seconds,49.42
+1481,M,400M,Los Angeles,1984,G,Alonzo BABERS,USA,44.27,seconds,44.27
+1490,M,400M,Los Angeles,1984,S,Gabriel TIACOH,CIV,44.54,seconds,44.54
+1494,M,400M,Los Angeles,1984,B,Antonio MCKAY,USA,44.71,seconds,44.71
+1423,W,400M,Barcelona,1992,G,Marie-Jos√É¬© P√É¬âREC,FRA,48.83,seconds,48.83
+1426,W,400M,Barcelona,1992,S,Olga BRYZGINA,EUN,49.05,seconds,49.05
+1440,W,400M,Barcelona,1992,B,Ximena RESTREPO,COL,49.64,seconds,49.64
+1468,M,400M,Barcelona,1992,G,Quincy WATTS,USA,43.5,seconds,43.5
+1478,M,400M,Barcelona,1992,S,Steve LEWIS,USA,44.21,seconds,44.21
+1479,M,400M,Barcelona,1992,B,Samson KITUR,KEN,44.24,seconds,44.24
+1421,W,400M,Atlanta,1996,G,Marie-Jos√É¬© P√É¬âREC,FRA,48.25,seconds,48.25
+1422,W,400M,Atlanta,1996,S,Cathy FREEMAN,AUS,48.63,seconds,48.63
+1428,W,400M,Atlanta,1996,B,Falilat OGUNKOYA,NGR,49.1,seconds,49.1
+1467,M,400M,Atlanta,1996,G,Michael JOHNSON,USA,43.49,seconds,43.49
+1485,M,400M,Atlanta,1996,S,Roger BLACK,GBR,44.41,seconds,44.41
+1489,M,400M,Atlanta,1996,B,Davis KAMOGA,UGA,44.53,seconds,44.53
+1429,W,400M,Sydney,2000,G,Cathy FREEMAN,AUS,49.11,seconds,49.11
+1438,W,400M,Sydney,2000,S,Lorraine FENTON,JAM,49.58,seconds,49.58
+1444,W,400M,Sydney,2000,B,Katharine MERRY,GBR,49.72,seconds,49.72
+1472,M,400M,Sydney,2000,G,Michael JOHNSON,USA,43.84,seconds,43.84
+1482,M,400M,Sydney,2000,S,Alvin HARRISON,USA,44.4,seconds,44.4
+1493,M,400M,Sydney,2000,B,Greg HAUGHTON,JAM,44.7,seconds,44.7
+1431,W,400M,Athens,2004,G,Tonique WILLIAMS-DARLING,BAH,49.41,seconds,49.41
+1437,W,400M,Athens,2004,S,Ana GUEVARA,MEX,49.56,seconds,49.56
+1447,W,400M,Athens,2004,B,Natalya ANTYUKH,RUS,49.89,seconds,49.89
+1476,M,400M,Athens,2004,G,Jeremy WARINER,USA,44,seconds,44.0
+1477,M,400M,Athens,2004,S,Otis HARRIS,USA,44.16,seconds,44.16
+1486,M,400M,Athens,2004,B,Derrick BREW,USA,44.42,seconds,44.42
+1439,W,400M,Beijing,2008,G,Christine OHURUOGU,GBR,49.62,seconds,49.62
+1442,W,400M,Beijing,2008,S,Shericka WILLIAMS,JAM,49.69,seconds,49.69
+1448,W,400M,Beijing,2008,B,Sanya RICHARDS-ROSS,USA,49.93,seconds,49.93
+1469,M,400M,Beijing,2008,G,Lashawn MERRITT,USA,43.75,seconds,43.75
+1495,M,400M,Beijing,2008,S,Jeremy WARINER,USA,44.74,seconds,44.74
+1496,M,400M,Beijing,2008,B,David NEVILLE,USA,44.8,seconds,44.8
+1436,W,400M,London,2012,G,Sanya RICHARDS-ROSS,USA,49.55,seconds,49.55
+1443,W,400M,London,2012,S,Christine OHURUOGU,GBR,49.7,seconds,49.7
+1445,W,400M,London,2012,B,DeeDee TROTTER,USA,49.72,seconds,49.72
+1475,M,400M,London,2012,G,Kirani JAMES,GRN,43.94,seconds,43.94
+1487,M,400M,London,2012,S,Luguelin SANTOS,DOM,44.46,seconds,44.46
+1488,M,400M,London,2012,B,Lalonde GORDON,TTO,44.52,seconds,44.52
+1433,W,400M,Rio,2016,G,Shaunae MILLER,BAH,49.44,seconds,49.44
+1435,W,400M,Rio,2016,S,Allyson FELIX,USA,49.51,seconds,49.51
+1446,W,400M,Rio,2016,B,Shericka JACKSON,JAM,49.85,seconds,49.85
+1466,M,400M,Rio,2016,G,Wayde VAN NIEKERK,RSA,43.03,seconds,43.03
+1470,M,400M,Rio,2016,S,Kirani JAMES,GRN,43.76,seconds,43.76
+1473,M,400M,Rio,2016,B,Lashawn MERRITT,USA,43.85,seconds,43.85
+1632,M,400M Hurdles,Paris,1900,G,Walter TEWKSBURY,USA,57.6,seconds,57.6
+1633,M,400M Hurdles,Paris,1900,S,Henri TAUZIN,FRA,58.3,seconds,58.3
+1622,M,400M Hurdles,St Louis,1904,G,Harry HILLMAN,USA,53,seconds,53.0
+1623,M,400M Hurdles,St Louis,1904,S,Frank WALLER,USA,53.2,seconds,53.2
+1631,M,400M Hurdles,London,1908,G,Charles BACON,USA,55,seconds,55.0
+1563,M,400M Hurdles,Antwerp,1920,G,Frank LOOMIS,USA,00:54.0,seconds,54.0
+1629,M,400M Hurdles,Antwerp,1920,S,John NORTON,USA,54.6,seconds,54.6
+1630,M,400M Hurdles,Antwerp,1920,B,August DESCH,USA,54.7,seconds,54.7
+1619,M,400M Hurdles,Paris,1924,G,Morgan TAYLOR,USA,52.6,seconds,52.6
+1627,M,400M Hurdles,Paris,1924,S,Erkka WILEN,FIN,53.8,seconds,53.8
+1628,M,400M Hurdles,Paris,1924,B,Ivan RILEY,USA,54.2,seconds,54.2
+1624,M,400M Hurdles,Amsterdam,1928,G,David George BURGHLEY,GBR,53.4,seconds,53.4
+1625,M,400M Hurdles,Amsterdam,1928,S,Frank CUHEL,USA,53.6,seconds,53.6
+1626,M,400M Hurdles,Amsterdam,1928,B,Morgan TAYLOR,USA,53.6,seconds,53.6
+1613,M,400M Hurdles,Los Angeles,1932,G,Robert Morton Newburgh TISDALL,IRL,51.8,seconds,51.8
+1614,M,400M Hurdles,Los Angeles,1932,S,Glenn HARDIN,USA,51.9,seconds,51.9
+1615,M,400M Hurdles,Los Angeles,1932,B,Morgan TAYLOR,USA,52,seconds,52.0
+1618,M,400M Hurdles,Berlin,1936,G,Glenn HARDIN,USA,52.4,seconds,52.4
+1620,M,400M Hurdles,Berlin,1936,S,John LOARING,CAN,52.7,seconds,52.7
+1621,M,400M Hurdles,Berlin,1936,B,Miguel WHITE,PHI,52.8,seconds,52.8
+1609,M,400M Hurdles,London,1948,G,Roy Braxton COCHRAN,USA,51.1,seconds,51.1
+1612,M,400M Hurdles,London,1948,S,Duncan WHITE,SRI,51.8,seconds,51.8
+1617,M,400M Hurdles,London,1948,B,Rune LARSSON,SWE,52.2,seconds,52.2
+1607,M,400M Hurdles,Helsinki,1952,G,Charles Hewes Jr. MOORE,USA,50.8,seconds,50.8
+1610,M,400M Hurdles,Helsinki,1952,S,Yury Nikolayevich LITUYEV,URS,51.3,seconds,51.3
+1616,M,400M Hurdles,Helsinki,1952,B,John Macfarlane HOLLAND,NZL,52.2,seconds,52.2
+1606,M,400M Hurdles,Melbourne / Stockholm,1956,G,Glenn DAVIS,USA,50.1,seconds,50.1
+1608,M,400M Hurdles,Melbourne / Stockholm,1956,S,Eddie SOUTHERN,USA,50.8,seconds,50.8
+1611,M,400M Hurdles,Melbourne / Stockholm,1956,B,Josh CULBREATH,USA,51.6,seconds,51.6
+1599,M,400M Hurdles,Rome,1960,G,Glenn DAVIS,USA,49.3,seconds,49.3
+1601,M,400M Hurdles,Rome,1960,S,Clifton Emmett CUSHMAN,USA,49.6,seconds,49.6
+1603,M,400M Hurdles,Rome,1960,B,Richard HOWARD,USA,49.7,seconds,49.7
+1602,M,400M Hurdles,Tokyo,1964,G,Warren (Rex) Jay CAWLEY,USA,49.6,seconds,49.6
+1604,M,400M Hurdles,Tokyo,1964,S,John COOPER,GBR,50.1,seconds,50.1
+1605,M,400M Hurdles,Tokyo,1964,B,Salvatore MORALE,ITA,50.1,seconds,50.1
+1585,M,400M Hurdles,Mexico,1968,G,David HEMERY,GBR,48.1,seconds,48.1
+1596,M,400M Hurdles,Mexico,1968,S,Gerhard HENNIGE,FRG,49,seconds,49.0
+1597,M,400M Hurdles,Mexico,1968,B,John SHERWOOD,GBR,49,seconds,49.0
+1579,M,400M Hurdles,Munich,1972,G,John AKII-BUA,UGA,47.82,seconds,47.82
+1591,M,400M Hurdles,Munich,1972,S,Ralph MANN,USA,48.51,seconds,48.51
+1592,M,400M Hurdles,Munich,1972,B,David HEMERY,GBR,48.52,seconds,48.52
+1571,M,400M Hurdles,Montreal,1976,G,Edwin MOSES,USA,47.64,seconds,47.64
+1593,M,400M Hurdles,Montreal,1976,S,Michael Lyle SHINE,USA,48.69,seconds,48.69
+1600,M,400M Hurdles,Montreal,1976,B,Yevgeni GAVRILENKO,URS,49.45,seconds,49.45
+1594,M,400M Hurdles,Moscow,1980,G,Volker BECK,GDR,48.7,seconds,48.7
+1595,M,400M Hurdles,Moscow,1980,S,Vasili ARKHIPENKO,URS,48.86,seconds,48.86
+1598,M,400M Hurdles,Moscow,1980,B,Gary OAKES,GBR,49.11,seconds,49.11
+1560,W,400M Hurdles,Los Angeles,1984,G,Nawal EL MOUTAWAKEL,MAR,54.61,seconds,54.61
+1561,W,400M Hurdles,Los Angeles,1984,S,Judi BROWN,USA,55.2,seconds,55.2
+1562,W,400M Hurdles,Los Angeles,1984,B,Cristina COJOCARU,ROU,55.41,seconds,55.41
+1574,M,400M Hurdles,Los Angeles,1984,G,Edwin MOSES,USA,47.75,seconds,47.75
+1588,M,400M Hurdles,Los Angeles,1984,S,Danny HARRIS,USA,48.13,seconds,48.13
+1589,M,400M Hurdles,Los Angeles,1984,B,Harald SCHMID,FRG,48.19,seconds,48.19
+1548,W,400M Hurdles,Barcelona,1992,G,Sally GUNNELL,GBR,53.23,seconds,53.23
+1555,W,400M Hurdles,Barcelona,1992,S,Sandra FARMER-PATRICK,USA,53.69,seconds,53.69
+1559,W,400M Hurdles,Barcelona,1992,B,Janeene VICKERS,USA,54.31,seconds,54.31
+1564,M,400M Hurdles,Barcelona,1992,G,Kevin YOUNG,USA,46.78,seconds,46.78
+1572,M,400M Hurdles,Barcelona,1992,S,Winthrop GRAHAM,JAM,47.66,seconds,47.66
+1578,M,400M Hurdles,Barcelona,1992,B,Kriss AKABUSI,GBR,47.82,seconds,47.82
+1543,W,400M Hurdles,Atlanta,1996,G,Deon Marie HEMMINGS,JAM,52.82,seconds,52.82
+1545,W,400M Hurdles,Atlanta,1996,S,Kim BATTEN,USA,53.08,seconds,53.08
+1547,W,400M Hurdles,Atlanta,1996,B,Tonja BUFORD-BAILEY,USA,53.22,seconds,53.22
+1568,M,400M Hurdles,Atlanta,1996,G,Derrick ADKINS,USA,47.54,seconds,47.54
+1576,M,400M Hurdles,Atlanta,1996,S,Samuel MATETE,ZAM,47.78,seconds,47.78
+1582,M,400M Hurdles,Atlanta,1996,B,Calvin DAVIS,USA,47.96,seconds,47.96
+1544,W,400M Hurdles,Sydney,2000,G,Irina PRIVALOVA,RUS,53.02,seconds,53.02
+1552,W,400M Hurdles,Sydney,2000,S,Deon Marie HEMMINGS,JAM,53.45,seconds,53.45
+1554,W,400M Hurdles,Sydney,2000,B,Nezha BIDOUANE,MAR,53.57,seconds,53.57
+1566,M,400M Hurdles,Sydney,2000,G,Angelo TAYLOR,USA,47.5,seconds,47.5
+1567,M,400M Hurdles,Sydney,2000,S,Hadi Soua An AL SOMAILY,KSA,47.53,seconds,47.53
+1577,M,400M Hurdles,Sydney,2000,B,Llewellyn HERBERT,RSA,47.81,seconds,47.81
+1542,W,400M Hurdles,Athens,2004,G,Fani KHALKIA,GRE,52.82,seconds,52.82
+1550,W,400M Hurdles,Athens,2004,S,Ionela TIRLEA,ROU,53.38,seconds,53.38
+1551,W,400M Hurdles,Athens,2004,B,Tetyana TERESHCHUK,UKR,53.44,seconds,53.44
+1570,M,400M Hurdles,Athens,2004,G,Felix SANCHEZ,DOM,47.63,seconds,47.63
+1587,M,400M Hurdles,Athens,2004,S,Danny MCFARLANE,JAM,48.11,seconds,48.11
+1590,M,400M Hurdles,Athens,2004,B,Naman KEITA,FRA,48.26,seconds,48.26
+1539,W,400M Hurdles,Beijing,2008,G,Melaine WALKER,JAM,52.64,seconds,52.64
+1556,W,400M Hurdles,Beijing,2008,S,Sheena TOSTA,USA,53.7,seconds,53.7
+1558,W,400M Hurdles,Beijing,2008,B,Natasha DANVERS,GBR,53.84,seconds,53.84
+1565,M,400M Hurdles,Beijing,2008,G,Angelo TAYLOR,USA,47.25,seconds,47.25
+1583,M,400M Hurdles,Beijing,2008,S,Kerron CLEMENT,USA,47.98,seconds,47.98
+1584,M,400M Hurdles,Beijing,2008,B,Bershawn JACKSON,USA,48.06,seconds,48.06
+1540,W,400M Hurdles,London,2012,G,Natalya ANTYUKH,RUS,52.7,seconds,52.7
+1541,W,400M Hurdles,London,2012,S,Lashinda DEMUS,USA,52.77,seconds,52.77
+1549,W,400M Hurdles,London,2012,B,Zuzana HEJNOVA,CZE,53.38,seconds,53.38
+1569,M,400M Hurdles,London,2012,G,Felix SANCHEZ,DOM,47.63,seconds,47.63
+1580,M,400M Hurdles,London,2012,S,Michael TINSLEY,USA,47.91,seconds,47.91
+1586,M,400M Hurdles,London,2012,B,Javier CULSON,PUR,48.1,seconds,48.1
+1546,W,400M Hurdles,Rio,2016,G,Dalilah MUHAMMAD,USA,53.13,seconds,53.13
+1553,W,400M Hurdles,Rio,2016,S,Sara Slott PETERSEN,DEN,53.55,seconds,53.55
+1557,W,400M Hurdles,Rio,2016,B,Ashley SPENCER,USA,53.72,seconds,53.72
+1573,M,400M Hurdles,Rio,2016,G,Kerron CLEMENT,USA,47.73,seconds,47.73
+1575,M,400M Hurdles,Rio,2016,S,Boniface MUCHERU,KEN,47.78,seconds,47.78
+1581,M,400M Hurdles,Rio,2016,B,Yasmani COPELLO,TUR,47.92,seconds,47.92
+1357,M,4X100M Relay,Stockholm,1912,G,,GBR,00:42.4,seconds,42.4
+1359,M,4X100M Relay,Stockholm,1912,S,,SWE,00:42.6,seconds,42.6
+1356,M,4X100M Relay,Antwerp,1920,G,,USA,00:42.2,seconds,42.2
+1358,M,4X100M Relay,Antwerp,1920,S,,FRA,00:42.6,seconds,42.6
+1360,M,4X100M Relay,Antwerp,1920,B,,SWE,00:42.9,seconds,42.9
+1413,M,4X100M Relay,Paris,1924,G,,USA,41,seconds,41.0
+1417,M,4X100M Relay,Paris,1924,S,,GBR,41.2,seconds,41.2
+1420,M,4X100M Relay,Paris,1924,B,,NED,41.8,seconds,41.8
+1355,W,4X100M Relay,Amsterdam,1928,G,,CAN,48.4,seconds,48.4
+1412,M,4X100M Relay,Amsterdam,1928,G,,USA,41,seconds,41.0
+1347,W,4X100M Relay,Los Angeles,1932,G,,USA,47,seconds,47.0
+1348,W,4X100M Relay,Los Angeles,1932,S,,CAN,47,seconds,47.0
+1352,W,4X100M Relay,Los Angeles,1932,B,,GBR,47.6,seconds,47.6
+1403,M,4X100M Relay,Los Angeles,1932,G,,USA,40,seconds,40.0
+1411,M,4X100M Relay,Los Angeles,1932,S,,GER,40.9,seconds,40.9
+1416,M,4X100M Relay,Los Angeles,1932,B,,ITA,41.2,seconds,41.2
+1346,W,4X100M Relay,Berlin,1936,G,,USA,46.9,seconds,46.9
+1350,W,4X100M Relay,Berlin,1936,S,,GBR,47.6,seconds,47.6
+1353,W,4X100M Relay,Berlin,1936,B,,CAN,47.8,seconds,47.8
+1401,M,4X100M Relay,Berlin,1936,G,,USA,39.8,seconds,39.8
+1414,M,4X100M Relay,Berlin,1936,S,,ITA,41.1,seconds,41.1
+1415,M,4X100M Relay,Berlin,1936,B,,GER,41.2,seconds,41.2
+1349,W,4X100M Relay,London,1948,G,,NED,47.5,seconds,47.5
+1351,W,4X100M Relay,London,1948,S,,AUS,47.6,seconds,47.6
+1354,W,4X100M Relay,London,1948,B,,CAN,47.8,seconds,47.8
+1410,M,4X100M Relay,London,1948,G,,USA,40.6,seconds,40.6
+1418,M,4X100M Relay,London,1948,S,,GBR,41.3,seconds,41.3
+1419,M,4X100M Relay,London,1948,B,,ITA,41.5,seconds,41.5
+1343,W,4X100M Relay,Helsinki,1952,G,,USA,45.9,seconds,45.9
+1344,W,4X100M Relay,Helsinki,1952,S,,GER,45.9,seconds,45.9
+1345,W,4X100M Relay,Helsinki,1952,B,,GBR,46.2,seconds,46.2
+1405,M,4X100M Relay,Helsinki,1952,G,,USA,40.1,seconds,40.1
+1407,M,4X100M Relay,Helsinki,1952,S,,URS,40.3,seconds,40.3
+1409,M,4X100M Relay,Helsinki,1952,B,,HUN,40.5,seconds,40.5
+1338,W,4X100M Relay,Melbourne / Stockholm,1956,G,,AUS,44.5,seconds,44.5
+1339,W,4X100M Relay,Melbourne / Stockholm,1956,S,,GBR,44.7,seconds,44.7
+1341,W,4X100M Relay,Melbourne / Stockholm,1956,B,,USA,44.9,seconds,44.9
+1400,M,4X100M Relay,Melbourne / Stockholm,1956,G,,USA,39.5,seconds,39.5
+1402,M,4X100M Relay,Melbourne / Stockholm,1956,S,,URS,39.8,seconds,39.8
+1408,M,4X100M Relay,Melbourne / Stockholm,1956,B,,EUA,40.3,seconds,40.3
+1337,W,4X100M Relay,Rome,1960,G,,USA,44.5,seconds,44.5
+1340,W,4X100M Relay,Rome,1960,S,,EUA,44.8,seconds,44.8
+1342,W,4X100M Relay,Rome,1960,B,,POL,45,seconds,45.0
+1399,M,4X100M Relay,Rome,1960,G,,EUA,39.5,seconds,39.5
+1404,M,4X100M Relay,Rome,1960,S,,URS,40.1,seconds,40.1
+1406,M,4X100M Relay,Rome,1960,B,,GBR,40.2,seconds,40.2
+1334,W,4X100M Relay,Tokyo,1964,G,,POL,43.6,seconds,43.6
+1335,W,4X100M Relay,Tokyo,1964,S,,USA,43.9,seconds,43.9
+1336,W,4X100M Relay,Tokyo,1964,B,,GBR,44,seconds,44.0
+1396,M,4X100M Relay,Tokyo,1964,G,,USA,39,seconds,39.0
+1397,M,4X100M Relay,Tokyo,1964,S,,POL,39.3,seconds,39.3
+1398,M,4X100M Relay,Tokyo,1964,B,,FRA,39.3,seconds,39.3
+1323,W,4X100M Relay,Mexico,1968,G,,USA,42.8,seconds,42.8
+1331,W,4X100M Relay,Mexico,1968,S,,CUB,43.3,seconds,43.3
+1333,W,4X100M Relay,Mexico,1968,B,,URS,43.4,seconds,43.4
+1381,M,4X100M Relay,Mexico,1968,G,,USA,38.2,seconds,38.2
+1384,M,4X100M Relay,Mexico,1968,S,,CUB,38.3,seconds,38.3
+1387,M,4X100M Relay,Mexico,1968,B,,FRA,38.4,seconds,38.4
+1325,W,4X100M Relay,Munich,1972,G,,FRG,42.81,seconds,42.81
+1326,W,4X100M Relay,Munich,1972,S,,GDR,42.95,seconds,42.95
+1332,W,4X100M Relay,Munich,1972,B,,CUB,43.36,seconds,43.36
+1380,M,4X100M Relay,Munich,1972,G,,USA,38.19,seconds,38.19
+1389,M,4X100M Relay,Munich,1972,S,,URS,38.5,seconds,38.5
+1395,M,4X100M Relay,Munich,1972,B,,FRG,38.79,seconds,38.79
+1320,W,4X100M Relay,Montreal,1976,G,,GDR,42.55,seconds,42.55
+1321,W,4X100M Relay,Montreal,1976,S,,FRG,42.59,seconds,42.59
+1328,W,4X100M Relay,Montreal,1976,B,,URS,43.09,seconds,43.09
+1385,M,4X100M Relay,Montreal,1976,G,,USA,38.33,seconds,38.33
+1392,M,4X100M Relay,Montreal,1976,S,,GDR,38.66,seconds,38.66
+1394,M,4X100M Relay,Montreal,1976,B,,URS,38.78,seconds,38.78
+1302,W,4X100M Relay,Moscow,1980,G,,GDR,41.6,seconds,41.6
+1309,W,4X100M Relay,Moscow,1980,S,,URS,42.1,seconds,42.1
+1317,W,4X100M Relay,Moscow,1980,B,,GBR,42.43,seconds,42.43
+1383,M,4X100M Relay,Moscow,1980,G,,URS,38.26,seconds,38.26
+1386,M,4X100M Relay,Moscow,1980,S,,POL,38.33,seconds,38.33
+1390,M,4X100M Relay,Moscow,1980,B,,FRA,38.53,seconds,38.53
+1303,W,4X100M Relay,Los Angeles,1984,G,,USA,41.65,seconds,41.65
+1322,W,4X100M Relay,Los Angeles,1984,S,,CAN,42.77,seconds,42.77
+1329,W,4X100M Relay,Los Angeles,1984,B,,GBR,43.11,seconds,43.11
+1368,M,4X100M Relay,Los Angeles,1984,G,,USA,37.83,seconds,37.83
+1391,M,4X100M Relay,Los Angeles,1984,S,,JAM,38.62,seconds,38.62
+1393,M,4X100M Relay,Los Angeles,1984,B,,CAN,38.7,seconds,38.7
+1310,W,4X100M Relay,Barcelona,1992,G,,USA,42.11,seconds,42.11
+1313,W,4X100M Relay,Barcelona,1992,S,,EUN,42.16,seconds,42.16
+1324,W,4X100M Relay,Barcelona,1992,B,,NGR,42.81,seconds,42.81
+1363,M,4X100M Relay,Barcelona,1992,G,,USA,37.4,seconds,37.4
+1370,M,4X100M Relay,Barcelona,1992,S,,NGR,37.98,seconds,37.98
+1371,M,4X100M Relay,Barcelona,1992,B,,CUB,38,seconds,38.0
+1307,W,4X100M Relay,Atlanta,1996,G,,USA,41.95,seconds,41.95
+1312,W,4X100M Relay,Atlanta,1996,S,,BAH,42.14,seconds,42.14
+1315,W,4X100M Relay,Atlanta,1996,B,,JAM,42.24,seconds,42.24
+1367,M,4X100M Relay,Atlanta,1996,G,,CAN,37.69,seconds,37.69
+1373,M,4X100M Relay,Atlanta,1996,S,,USA,38.05,seconds,38.05
+1388,M,4X100M Relay,Atlanta,1996,B,,BRA,38.41,seconds,38.41
+1306,W,4X100M Relay,Sydney,2000,G,,BAH,41.95,seconds,41.95
+1311,W,4X100M Relay,Sydney,2000,S,,JAM,42.13,seconds,42.13
+1314,W,4X100M Relay,Sydney,2000,B,,USA,42.2,seconds,42.2
+1365,M,4X100M Relay,Sydney,2000,G,,USA,37.61,seconds,37.61
+1369,M,4X100M Relay,Sydney,2000,S,,BRA,37.9,seconds,37.9
+1372,M,4X100M Relay,Sydney,2000,B,,CUB,38.04,seconds,38.04
+1304,W,4X100M Relay,Athens,2004,G,,JAM,41.73,seconds,41.73
+1316,W,4X100M Relay,Athens,2004,S,,RUS,42.27,seconds,42.27
+1319,W,4X100M Relay,Athens,2004,B,,FRA,42.54,seconds,42.54
+1375,M,4X100M Relay,Athens,2004,G,,GBR,38.07,seconds,38.07
+1376,M,4X100M Relay,Athens,2004,S,,USA,38.08,seconds,38.08
+1382,M,4X100M Relay,Athens,2004,B,,NGR,38.23,seconds,38.23
+1318,W,4X100M Relay,Beijing,2008,G,,BEL,42.54,seconds,42.54
+1327,W,4X100M Relay,Beijing,2008,S,,NGR,43.04,seconds,43.04
+1330,W,4X100M Relay,Beijing,2008,B,,BRA,43.14,seconds,43.14
+1374,M,4X100M Relay,Beijing,2008,S,,TTO,38.06,seconds,38.06
+1378,M,4X100M Relay,Beijing,2008,B,,JPN,38.15,seconds,38.15
+1298,W,4X100M Relay,London,2012,G,,USA,40.82,seconds,40.82
+1301,W,4X100M Relay,London,2012,S,,JAM,41.41,seconds,41.41
+1308,W,4X100M Relay,London,2012,B,,UKR,42.04,seconds,42.04
+1361,M,4X100M Relay,London,2012,G,,JAM,36.84,seconds,36.84
+1377,M,4X100M Relay,London,2012,S,,TTO,38.12,seconds,38.12
+1379,M,4X100M Relay,London,2012,B,,FRA,38.16,seconds,38.16
+1299,W,4X100M Relay,Rio,2016,G,,USA,41.01,seconds,41.01
+1300,W,4X100M Relay,Rio,2016,S,,JAM,41.36,seconds,41.36
+1305,W,4X100M Relay,Rio,2016,B,,GBR,41.77,seconds,41.77
+1362,M,4X100M Relay,Rio,2016,G,,JAM,37.27,seconds,37.27
+1364,M,4X100M Relay,Rio,2016,S,,JPN,37.6,seconds,37.6
+1366,M,4X100M Relay,Rio,2016,B,,CAN,37.64,seconds,37.64
+1297,M,4X400M Relay,London,1908,G,,USA,03:29.4,seconds,209.4
+1289,M,4X400M Relay,Stockholm,1912,G,,USA,03:16.6,seconds,196.6
+1292,M,4X400M Relay,Stockholm,1912,S,,FRA,03:20.7,seconds,200.7
+1295,M,4X400M Relay,Stockholm,1912,B,,GBR,03:23.2,seconds,203.2
+1293,M,4X400M Relay,Antwerp,1920,G,,GBR,03:22.2,seconds,202.2
+1294,M,4X400M Relay,Antwerp,1920,S,,RSA,03:23.0,seconds,203.0
+1296,M,4X400M Relay,Antwerp,1920,B,,FRA,03:23.5,seconds,203.5
+1288,M,4X400M Relay,Paris,1924,G,,USA,03:16.0,seconds,196.0
+1290,M,4X400M Relay,Paris,1924,S,,SWE,03:17.0,seconds,197.0
+1291,M,4X400M Relay,Paris,1924,B,,GBR,03:17.4,seconds,197.4
+1285,M,4X400M Relay,Amsterdam,1928,G,,USA,03:14.2,seconds,194.2
+1278,M,4X400M Relay,Los Angeles,1932,G,,USA,03:08.2,seconds,188.2
+1282,M,4X400M Relay,Los Angeles,1932,S,,GBR,03:11.2,seconds,191.2
+1284,M,4X400M Relay,Los Angeles,1932,B,,CAN,03:12.8,seconds,192.8
+1279,M,4X400M Relay,Berlin,1936,G,,GBR,03:09.0,seconds,189.0
+1281,M,4X400M Relay,Berlin,1936,S,,USA,03:11.0,seconds,191.0
+1283,M,4X400M Relay,Berlin,1936,B,,GER,03:11.8,seconds,191.8
+1280,M,4X400M Relay,London,1948,G,,USA,03:10.4,seconds,190.4
+1286,M,4X400M Relay,London,1948,S,,FRA,03:14.8,seconds,194.8
+1287,M,4X400M Relay,London,1948,B,,SWE,03:16.0,seconds,196.0
+1270,M,4X400M Relay,Helsinki,1952,G,,JAM,03:03.9,seconds,183.9
+1272,M,4X400M Relay,Helsinki,1952,S,,USA,03:04.0,seconds,184.0
+1276,M,4X400M Relay,Helsinki,1952,B,,GER,03:06.6,seconds,186.6
+1274,M,4X400M Relay,Melbourne / Stockholm,1956,G,,USA,03:04.8,seconds,184.8
+1275,M,4X400M Relay,Melbourne / Stockholm,1956,S,,AUS,03:06.2,seconds,186.2
+1277,M,4X400M Relay,Melbourne / Stockholm,1956,B,,GBR,03:07.2,seconds,187.2
+1268,M,4X400M Relay,Rome,1960,G,,USA,03:02.2,seconds,182.2
+1269,M,4X400M Relay,Rome,1960,S,,EUA,03:02.7,seconds,182.7
+1271,M,4X400M Relay,Rome,1960,B,,BWI,03:04.0,seconds,184.0
+1260,M,4X400M Relay,Tokyo,1964,G,,USA,03:00.7,seconds,180.7
+1265,M,4X400M Relay,Tokyo,1964,S,,GBR,03:01.6,seconds,181.6
+1266,M,4X400M Relay,Tokyo,1964,B,,TTO,03:01.7,seconds,181.7
+1238,M,4X400M Relay,Mexico,1968,G,,USA,02:56.1,seconds,176.1
+1253,M,4X400M Relay,Mexico,1968,S,,KEN,02:59.6,seconds,179.6
+1256,M,4X400M Relay,Mexico,1968,B,,FRG,03:00.5,seconds,180.5
+1225,W,4X400M Relay,Munich,1972,G,,GDR,03:23.0,seconds,203.0
+1231,W,4X400M Relay,Munich,1972,S,,USA,03:25.2,seconds,205.2
+1232,W,4X400M Relay,Munich,1972,B,,FRG,03:26.5,seconds,206.5
+1255,M,4X400M Relay,Munich,1972,G,,KEN,02:59.8,seconds,179.8
+1257,M,4X400M Relay,Munich,1972,S,,GBR,03:00.5,seconds,180.5
+1259,M,4X400M Relay,Munich,1972,B,,FRA,03:00.7,seconds,180.7
+1209,W,4X400M Relay,Montreal,1976,G,,GDR,03:19.2,seconds,199.2
+1223,W,4X400M Relay,Montreal,1976,S,,USA,03:22.8,seconds,202.8
+1230,W,4X400M Relay,Montreal,1976,B,,URS,03:24.2,seconds,204.2
+1244,M,4X400M Relay,Montreal,1976,G,,USA,02:58.6,seconds,178.6
+1264,M,4X400M Relay,Montreal,1976,S,,POL,03:01.4,seconds,181.4
+1267,M,4X400M Relay,Montreal,1976,B,,FRG,03:02.0,seconds,182.0
+1212,W,4X400M Relay,Moscow,1980,G,,URS,03:20.2,seconds,200.2
+1214,W,4X400M Relay,Moscow,1980,S,,GDR,03:20.4,seconds,200.4
+1233,W,4X400M Relay,Moscow,1980,B,,GBR,03:27.5,seconds,207.5
+1262,M,4X400M Relay,Moscow,1980,G,,URS,03:01.1,seconds,181.1
+1263,M,4X400M Relay,Moscow,1980,S,,GDR,03:01.3,seconds,181.3
+1273,M,4X400M Relay,Moscow,1980,B,,ITA,03:04.3,seconds,184.3
+1206,W,4X400M Relay,Los Angeles,1984,G,,USA,03:18.3,seconds,198.3
+1220,W,4X400M Relay,Los Angeles,1984,S,,CAN,03:21.2,seconds,201.2
+1224,W,4X400M Relay,Los Angeles,1984,B,,FRG,03:23.0,seconds,203.0
+1242,M,4X400M Relay,Los Angeles,1984,G,,USA,02:57.9,seconds,177.9
+1247,M,4X400M Relay,Los Angeles,1984,S,,GBR,02:59.1,seconds,179.1
+1249,M,4X400M Relay,Los Angeles,1984,B,,NGR,02:59.3,seconds,179.3
+1211,W,4X400M Relay,Barcelona,1992,G,,EUN,03:20.2,seconds,200.2
+1216,W,4X400M Relay,Barcelona,1992,S,,USA,03:20.9,seconds,200.9
+1229,W,4X400M Relay,Barcelona,1992,B,,GBR,03:24.2,seconds,204.2
+1235,M,4X400M Relay,Barcelona,1992,G,,USA,02:55.7,seconds,175.7
+1252,M,4X400M Relay,Barcelona,1992,S,,CUB,02:59.5,seconds,179.5
+1254,M,4X400M Relay,Barcelona,1992,B,,GBR,02:59.7,seconds,179.7
+1215,W,4X400M Relay,Atlanta,1996,G,,USA,03:20.9,seconds,200.9
+1218,W,4X400M Relay,Atlanta,1996,S,,NGR,03:21.0,seconds,201.0
+1219,W,4X400M Relay,Atlanta,1996,B,,GER,03:21.1,seconds,201.1
+1237,M,4X400M Relay,Atlanta,1996,G,,USA,02:56.0,seconds,176.0
+1239,M,4X400M Relay,Atlanta,1996,S,,GBR,02:56.6,seconds,176.6
+1251,M,4X400M Relay,Atlanta,1996,B,,JAM,02:59.4,seconds,179.4
+1222,W,4X400M Relay,Sydney,2000,G,,USA,03:22.6,seconds,202.6
+1226,W,4X400M Relay,Sydney,2000,S,,JAM,03:23.3,seconds,203.3
+1227,W,4X400M Relay,Sydney,2000,B,,RUS,03:23.5,seconds,203.5
+1245,M,4X400M Relay,Sydney,2000,G,,NGR,02:58.7,seconds,178.7
+1246,M,4X400M Relay,Sydney,2000,S,,JAM,02:58.8,seconds,178.8
+1248,M,4X400M Relay,Sydney,2000,B,,BAH,02:59.2,seconds,179.2
+1208,W,4X400M Relay,Athens,2004,G,,USA,03:19.0,seconds,199.0
+1210,W,4X400M Relay,Athens,2004,S,,RUS,03:20.2,seconds,200.2
+1221,W,4X400M Relay,Athens,2004,B,,JAM,03:22.0,seconds,202.0
+1236,M,4X400M Relay,Athens,2004,G,,USA,02:55.9,seconds,175.9
+1258,M,4X400M Relay,Athens,2004,S,,AUS,03:00.6,seconds,180.6
+1261,M,4X400M Relay,Athens,2004,B,,NGR,03:00.9,seconds,180.9
+1207,W,4X400M Relay,Beijing,2008,G,,USA,03:18.5,seconds,198.5
+1213,W,4X400M Relay,Beijing,2008,B,,JAM,03:20.4,seconds,200.4
+1234,M,4X400M Relay,Beijing,2008,G,,USA,02:55.4,seconds,175.4
+1243,M,4X400M Relay,Beijing,2008,S,,BAH,02:58.0,seconds,178.0
+1205,W,4X400M Relay,London,2012,G,,USA,03:16.9,seconds,196.9
+1217,W,4X400M Relay,London,2012,S,,JAM,03:21.0,seconds,201.0
+1228,W,4X400M Relay,London,2012,B,,UKR,03:23.6,seconds,203.6
+1240,M,4X400M Relay,London,2012,G,,BAH,02:56.7,seconds,176.7
+1241,M,4X400M Relay,London,2012,S,,USA,02:57.1,seconds,177.1
+1250,M,4X400M Relay,London,2012,B,,TTO,02:59.4,seconds,179.4
+1194,M,5000M,Stockholm,1912,G,Hannes KOLEHMAINEN,FIN,14:36.6,seconds,876.6
+1195,M,5000M,Stockholm,1912,S,Jean BOUIN,FRA,14:36.7,seconds,876.7
+1203,M,5000M,Stockholm,1912,B,George HUTSON,GBR,15:07.6,seconds,907.6
+1200,M,5000M,Antwerp,1920,G,Joseph GUILLEMOT,FRA,14:55.6,seconds,895.6
+1201,M,5000M,Antwerp,1920,S,Paavo NURMI,FIN,15:00.0,seconds,900.0
+1204,M,5000M,Antwerp,1920,B,Eric BACKMAN,SWE,15:13.0,seconds,913.0
+1192,M,5000M,Paris,1924,G,Paavo NURMI,FIN,14:31.2,seconds,871.2
+1193,M,5000M,Paris,1924,S,Ville RITOLA,FIN,14:31.4,seconds,871.4
+1202,M,5000M,Paris,1924,B,Edvin WIDE,SWE,15:01.8,seconds,901.8
+1196,M,5000M,Amsterdam,1928,G,Ville RITOLA,FIN,14:38.0,seconds,878.0
+1197,M,5000M,Amsterdam,1928,S,Paavo NURMI,FIN,14:40.0,seconds,880.0
+1198,M,5000M,Amsterdam,1928,B,Edvin WIDE,SWE,14:41.2,seconds,881.2
+1190,M,5000M,Los Angeles,1932,G,Lauri LEHTINEN,FIN,14:30.0,seconds,870.0
+1191,M,5000M,Los Angeles,1932,S,Ralph HILL,USA,14:30.0,seconds,870.0
+1199,M,5000M,Los Angeles,1932,B,Lauri VIRTANEN,FIN,14:44.0,seconds,884.0
+1186,M,5000M,Berlin,1936,G,Gunnar H√É¬ñCKERT,FIN,14:22.2,seconds,862.2
+1187,M,5000M,Berlin,1936,S,Lauri LEHTINEN,FIN,14:25.8,seconds,865.8
+1189,M,5000M,Berlin,1936,B,Henry JONSSON-K√É¬ÑLARNE,SWE,14:29.0,seconds,869.0
+1184,M,5000M,London,1948,G,Gaston REIFF,BEL,14:17.6,seconds,857.6
+1185,M,5000M,London,1948,S,Emil Z√É¬ÅTOPEK,TCH,14:17.8,seconds,857.8
+1188,M,5000M,London,1948,B,Willem SLIJKHUIS,NED,14:26.8,seconds,866.8
+1181,M,5000M,Helsinki,1952,G,Emil Z√É¬ÅTOPEK,TCH,14:06.6,seconds,846.6
+1182,M,5000M,Helsinki,1952,S,Alain MIMOUN,FRA,14:07.4,seconds,847.4
+1183,M,5000M,Helsinki,1952,B,Herbert SCHADE,GER,14:08.6,seconds,848.6
+1166,M,5000M,Melbourne / Stockholm,1956,G,Vladimir KUTS,URS,13:39.6,seconds,819.6
+1176,M,5000M,Melbourne / Stockholm,1956,S,Gordon PIRIE,GBR,13:50.6,seconds,830.6
+1177,M,5000M,Melbourne / Stockholm,1956,B,Derek IBBOTSON,GBR,13:54.4,seconds,834.4
+1170,M,5000M,Rome,1960,G,Murray HALBERG,NZL,13:43.4,seconds,823.4
+1171,M,5000M,Rome,1960,S,Hans GRODOTZKI,EUA,13:44.6,seconds,824.6
+1172,M,5000M,Rome,1960,B,Kazimierz ZIMNY,POL,13:44.8,seconds,824.8
+1173,M,5000M,Tokyo,1964,G,Robert Keyser SCHUL,USA,13:48.8,seconds,828.8
+1174,M,5000M,Tokyo,1964,S,Harald NORPOTH,EUA,13:49.6,seconds,829.6
+1175,M,5000M,Tokyo,1964,B,Bill DELLINGER,USA,13:49.8,seconds,829.8
+1178,M,5000M,Mexico,1968,G,Mohamed GAMMOUDI,TUN,14:05.0,seconds,845.0
+1179,M,5000M,Mexico,1968,S,Kip KEINO,KEN,14:05.2,seconds,845.2
+1180,M,5000M,Mexico,1968,B,Naftali TEMU,KEN,14:06.4,seconds,846.4
+1160,M,5000M,Munich,1972,G,Lasse VIREN,FIN,13:26.4,seconds,806.4
+1161,M,5000M,Munich,1972,S,Mohamed GAMMOUDI,TUN,13:27.3,seconds,807.3
+1162,M,5000M,Munich,1972,B,Ian STEWART,GBR,13:27.6,seconds,807.6
+1157,M,5000M,Montreal,1976,G,Lasse VIREN,FIN,13:24.8,seconds,804.8
+1158,M,5000M,Montreal,1976,S,Dick Theodorus QUAX,NZL,13:25.2,seconds,805.2
+1159,M,5000M,Montreal,1976,B,Klaus-Peter HILDENBRAND,FRG,13:25.4,seconds,805.4
+1154,M,5000M,Moscow,1980,G,Miruts YIFTER,ETH,13:21.0,seconds,801.0
+1155,M,5000M,Moscow,1980,S,Suleiman NYAMBUI,TAN,13:21.6,seconds,801.6
+1156,M,5000M,Moscow,1980,B,Kaarlo MAANINKA,FIN,13:22.0,seconds,802.0
+1141,M,5000M,Los Angeles,1984,G,Sa√É¬Ød AOUITA,MAR,13:05.6,seconds,785.6
+1143,M,5000M,Los Angeles,1984,S,Markus RYFFEL,SUI,13:07.5,seconds,787.5
+1147,M,5000M,Los Angeles,1984,B,Ant√É¬≥nio LEIT√É¬ÉO,POR,13:09.2,seconds,789.2
+1148,M,5000M,Barcelona,1992,G,Dieter BAUMANN,GER,13:12.5,seconds,792.5
+1149,M,5000M,Barcelona,1992,S,Paul BITOK,KEN,13:12.7,seconds,792.7
+1150,M,5000M,Barcelona,1992,B,Fita BAYISSA,ETH,13:13.0,seconds,793.0
+1127,W,5000M,Atlanta,1996,G,Junxia WANG,CHN,14:59.9,seconds,899.9
+1128,W,5000M,Atlanta,1996,S,Pauline KONGA,KEN,15:03.5,seconds,903.5
+1132,W,5000M,Atlanta,1996,B,Roberta BRUNET,ITA,15:07.5,seconds,907.5
+1144,M,5000M,Atlanta,1996,G,Venuste NIYONGABO,BDI,13:08.0,seconds,788.0
+1145,M,5000M,Atlanta,1996,S,Paul BITOK,KEN,13:08.2,seconds,788.2
+1146,M,5000M,Atlanta,1996,B,Khalid BOULAMI,MAR,13:08.4,seconds,788.4
+1121,W,5000M,Sydney,2000,G,Gabriela SZABO,ROU,14:40.8,seconds,880.8
+1122,W,5000M,Sydney,2000,S,Sonia O'SULLIVAN,IRL,14:41.0,seconds,881.0
+1123,W,5000M,Sydney,2000,B,Gete WAMI,ETH,14:42.2,seconds,882.2
+1163,M,5000M,Sydney,2000,G,Millon WOLDE,ETH,13:35.5,seconds,815.5
+1164,M,5000M,Sydney,2000,S,Ali SAIDI-SIEF,ALG,13:36.2,seconds,816.2
+1165,M,5000M,Sydney,2000,B,Brahim LAHLAFI,MAR,13:36.5,seconds,816.5
+1124,W,5000M,Athens,2004,G,Meseret DEFAR,ETH,14:45.7,seconds,885.7
+1125,W,5000M,Athens,2004,S,Isabella OCHICHI,KEN,14:48.2,seconds,888.2
+1126,W,5000M,Athens,2004,B,Tirunesh DIBABA,ETH,14:51.8,seconds,891.8
+1151,M,5000M,Athens,2004,G,Hicham EL GUERROUJ,MAR,13:14.4,seconds,794.4
+1152,M,5000M,Athens,2004,S,Kenenisa BEKELE,ETH,13:14.6,seconds,794.6
+1153,M,5000M,Athens,2004,B,Eliud Kipchoge ROTICH,KEN,13:15.1,seconds,795.1
+1133,W,5000M,Beijing,2008,G,Tirunesh DIBABA,ETH,15:41.4,seconds,941.4
+1134,W,5000M,Beijing,2008,S,Elvan ABEYLEGESSE,TUR,15:42.7,seconds,942.7
+1135,W,5000M,Beijing,2008,B,Meseret DEFAR,ETH,15:44.1,seconds,944.1
+1136,M,5000M,Beijing,2008,G,Kenenisa BEKELE,ETH,12:57.8,seconds,777.8
+1137,M,5000M,Beijing,2008,S,Eliud Kipchoge ROTICH,KEN,13:02.8,seconds,782.8
+1142,M,5000M,Beijing,2008,B,Edwin Cheruiyot SOI,KEN,13:06.2,seconds,786.2
+1129,W,5000M,London,2012,G,Meseret DEFAR,ETH,15:04.3,seconds,904.3
+1130,W,5000M,London,2012,S,Vivian Jepkemoi CHERUIYOT,KEN,15:04.7,seconds,904.7
+1131,W,5000M,London,2012,B,Tirunesh DIBABA,ETH,15:05.2,seconds,905.2
+1167,M,5000M,London,2012,G,Mohamed FARAH,GBR,13:41.7,seconds,821.7
+1168,M,5000M,London,2012,S,Dejen GEBREMESKEL,ETH,13:42.0,seconds,822.0
+1169,M,5000M,London,2012,B,Thomas Pkemei LONGOSIWA,KEN,13:42.4,seconds,822.4
+1118,W,5000M,Rio,2016,G,Vivian Jepkemoi CHERUIYOT,KEN,14:26.2,seconds,866.2
+1119,W,5000M,Rio,2016,S,Hellen Onsando OBIRI,KEN,14:29.8,seconds,869.8
+1120,W,5000M,Rio,2016,B,Almaz AYANA,ETH,14:33.6,seconds,873.6
+1138,M,5000M,Rio,2016,G,Mohamed FARAH,GBR,13:03.3,seconds,783.3
+1139,M,5000M,Rio,2016,S,Paul Kipkemoi CHELIMO,USA,13:03.9,seconds,783.9
+1140,M,5000M,Rio,2016,B,Hagos GEBRHIWET,ETH,13:04.3,seconds,784.3
+1115,M,50Km Race Walk,Los Angeles,1932,G,Thomas William GREEN,GBR,4:50:10,seconds,17410.0
+1116,M,50Km Race Walk,Los Angeles,1932,S,Janis DALINS,LAT,4:57:20,seconds,17840.0
+1117,M,50Km Race Walk,Los Angeles,1932,B,Ugo FRIGERIO,ITA,4:59:06,seconds,17946.0
+1104,M,50Km Race Walk,Berlin,1936,G,Harold WHITLOCK,GBR,4:30:41.4,seconds,16241.4
+1108,M,50Km Race Walk,Berlin,1936,S,Arthur SCHWAB,SUI,4:32:09.2,seconds,16329.2
+1109,M,50Km Race Walk,Berlin,1936,B,Adalberts BUBENKO,LAT,4:32:42.2,seconds,16362.2
+1112,M,50Km Race Walk,London,1948,G,John LJUNGGREN,SWE,4:41:52,seconds,16912.0
+1113,M,50Km Race Walk,London,1948,S,Gaston GODEL,SUI,4:48:17,seconds,17297.0
+1114,M,50Km Race Walk,London,1948,B,Terence Lloyd JOHNSON,GBR,4:48:31,seconds,17311.0
+1101,M,50Km Race Walk,Helsinki,1952,G,Giuseppe DORDONI,ITA,4:28:07.8,seconds,16087.8
+1103,M,50Km Race Walk,Helsinki,1952,S,Josef DOLEZAL,TCH,4:30:17.8,seconds,16217.8
+1106,M,50Km Race Walk,Helsinki,1952,B,Antal R√É¬ìKA,HUN,4:31:27.2,seconds,16287.2
+1105,M,50Km Race Walk,Melbourne / Stockholm,1956,G,Norman READ,NZL,4:30:42.8,seconds,16242.8
+1110,M,50Km Race Walk,Melbourne / Stockholm,1956,S,Yevgeni MASKINSKOV,URS,4:32:57.0,seconds,16377.0
+1111,M,50Km Race Walk,Melbourne / Stockholm,1956,B,John LJUNGGREN,SWE,4:35:02.0,seconds,16502.0
+1098,M,50Km Race Walk,Rome,1960,G,Donald James THOMPSON,GBR,4:25:30.0,seconds,15930.0
+1099,M,50Km Race Walk,Rome,1960,S,John LJUNGGREN,SWE,4:25:47.0,seconds,15947.0
+1100,M,50Km Race Walk,Rome,1960,B,Abdon PAMICH,ITA,4:27:55.4,seconds,16075.4
+1094,M,50Km Race Walk,Tokyo,1964,G,Abdon PAMICH,ITA,4:11:12.4,seconds,15072.4
+1095,M,50Km Race Walk,Tokyo,1964,S,Paul Vincent NIHILL,GBR,4:11:31.2,seconds,15091.2
+1096,M,50Km Race Walk,Tokyo,1964,B,Ingvar PETTERSSON,SWE,4:14:17.4,seconds,15257.4
+1097,M,50Km Race Walk,Mexico,1968,G,Christoph H√É¬ñHNE,GDR,4:20:13.6,seconds,15613.6
+1102,M,50Km Race Walk,Mexico,1968,S,Antal KISS,HUN,4:30:17.0,seconds,16217.0
+1107,M,50Km Race Walk,Mexico,1968,B,Larry YOUNG,USA,4:31:55.4,seconds,16315.4
+1090,M,50Km Race Walk,Munich,1972,G,Bernd KANNENBERG,FRG,3:56:11.6,seconds,14171.6
+1092,M,50Km Race Walk,Munich,1972,S,Veniamin SOLDATENKO,URS,3:58:24.0,seconds,14304.0
+1093,M,50Km Race Walk,Munich,1972,B,Larry YOUNG,USA,4:00:46.0,seconds,14446.0
+1083,M,50Km Race Walk,Moscow,1980,G,Hartwig GAUDER,GDR,3:49:24.0,seconds,13764.0
+1085,M,50Km Race Walk,Moscow,1980,S,Jorge LLOPART,ESP,3:51:25.0,seconds,13885.0
+1091,M,50Km Race Walk,Moscow,1980,B,Yevgeny Mikhaylovich IVCHENKO,URS,3:56:32.0,seconds,14192.0
+1082,M,50Km Race Walk,Los Angeles,1984,G,Ra√É¬∫l GONZ√É¬ÅLEZ,MEX,3:47:26,seconds,13646.0
+1087,M,50Km Race Walk,Los Angeles,1984,S,Bo GUSTAFSSON,SWE,3:53:19,seconds,13999.0
+1089,M,50Km Race Walk,Los Angeles,1984,B,Sandro BELLUCCI,ITA,3:53:45,seconds,14025.0
+1065,M,50Km Race Walk,Seoul,1988,G,Vyacheslav IVANENKO,URS,3:38:29,seconds,13109.0
+1067,M,50Km Race Walk,Seoul,1988,S,Ronald WEIGEL,GDR,3:38:56,seconds,13136.0
+1069,M,50Km Race Walk,Seoul,1988,B,Hartwig GAUDER,GDR,3:39:45,seconds,13185.0
+1084,M,50Km Race Walk,Barcelona,1992,G,Andrey PERLOV,EUN,3:50:13,seconds,13813.0
+1086,M,50Km Race Walk,Barcelona,1992,S,Carlos MERCENARIO,MEX,3:52:09,seconds,13929.0
+1088,M,50Km Race Walk,Barcelona,1992,B,Ronald WEIGEL,GER,3:53:45,seconds,14025.0
+1076,M,50Km Race Walk,Atlanta,1996,G,Robert KORZENIOWSKI,POL,3:43:30,seconds,13410.0
+1079,M,50Km Race Walk,Atlanta,1996,S,Mikhail SHCHENNIKOV,RUS,3:43:46,seconds,13426.0
+1080,M,50Km Race Walk,Atlanta,1996,B,Valentin MASSANA,ESP,3:44:19,seconds,13459.0
+1074,M,50Km Race Walk,Sydney,2000,G,Robert KORZENIOWSKI,POL,3:42:22,seconds,13342.0
+1078,M,50Km Race Walk,Sydney,2000,S,Aigars FADEJEVS,LAT,3:43:40,seconds,13420.0
+1081,M,50Km Race Walk,Sydney,2000,B,Joel SANCHEZ GUERRERO,MEX,3:44:36,seconds,13476.0
+1066,M,50Km Race Walk,Athens,2004,G,Robert KORZENIOWSKI,POL,3:38:46,seconds,13126.0
+1075,M,50Km Race Walk,Athens,2004,S,Denis NIZHEGORODOV,RUS,3:42:50,seconds,13370.0
+1077,M,50Km Race Walk,Athens,2004,B,Aleksey VOYEVODIN,RUS,3:43:34,seconds,13414.0
+1062,M,50Km Race Walk,Beijing,2008,G,Alex SCHWAZER,ITA,3:37:09,seconds,13029.0
+1068,M,50Km Race Walk,Beijing,2008,S,Jared TALLENT,AUS,3:39:27,seconds,13167.0
+1070,M,50Km Race Walk,Beijing,2008,B,Denis NIZHEGORODOV,RUS,3:40:14,seconds,13214.0
+1061,M,50Km Race Walk,London,2012,G,Jared TALLENT,AUS,3:36:53,seconds,13013.0
+1063,M,50Km Race Walk,London,2012,S,Tianfeng SI,CHN,3:37:16,seconds,13036.0
+1064,M,50Km Race Walk,London,2012,B,Robert HEFFERNAN,IRL,3:37:54,seconds,13074.0
+1071,M,50Km Race Walk,Rio,2016,G,Matej TOTH,SVK,3:40:58,seconds,13258.0
+1072,M,50Km Race Walk,Rio,2016,S,Jared TALLENT,AUS,3:41:16,seconds,13276.0
+1073,M,50Km Race Walk,Rio,2016,B,Hirooki ARAI,JPN,3:41:24,seconds,13284.0
+1058,M,800M,Athens,1896,G,Edwin FLACK,AUS,02:11.0,seconds,131.0
+1059,M,800M,Athens,1896,S,N√É¬°ndor D√É¬ÅNI,HUN,02:11.8,seconds,131.8
+1060,M,800M,Athens,1896,B,Dimitrios GOLEMIS,GRE,02:28.0,seconds,148.0
+1056,M,800M,Paris,1900,G,Alfred TYSOE,GBR,02:01.2,seconds,121.2
+1057,M,800M,Paris,1900,S,John CREGAN,USA,02:01.6,seconds,121.6
+1053,M,800M,St Louis,1904,G,James LIGHTBODY,USA,01:56.0,seconds,116.0
+1054,M,800M,St Louis,1904,S,Howard VALENTINE,USA,01:56.3,seconds,116.3
+1055,M,800M,St Louis,1904,B,Emil BREITKREUTZ,USA,01:56.4,seconds,116.4
+1042,M,800M,London,1908,G,Melvin SHEPPARD,USA,01:52.8,seconds,112.8
+1051,M,800M,London,1908,S,Emilio LUNGHI,ITA,01:54.2,seconds,114.2
+1052,M,800M,London,1908,B,Hanns BRAUN,GER,01:55.2,seconds,115.2
+1036,M,800M,Stockholm,1912,G,James Edwin MEREDITH,USA,01:51.9,seconds,111.9
+1037,M,800M,Stockholm,1912,S,Melvin SHEPPARD,USA,01:52.0,seconds,112.0
+1038,M,800M,Stockholm,1912,B,Ira DAVENPORT,USA,01:52.0,seconds,112.0
+1047,M,800M,Antwerp,1920,G,Albert HILL,GBR,01:53.4,seconds,113.4
+1049,M,800M,Antwerp,1920,S,Earl EBY,USA,01:53.6,seconds,113.6
+1050,M,800M,Antwerp,1920,B,Bevil RUDD,RSA,01:54.0,seconds,114.0
+1039,M,800M,Paris,1924,G,Douglas LOWE,GBR,01:52.4,seconds,112.4
+1040,M,800M,Paris,1924,S,Paul MARTIN,SUI,01:52.6,seconds,112.6
+1044,M,800M,Paris,1924,B,Schuyler ENCK,USA,01:53.0,seconds,113.0
+981,W,800M,Amsterdam,1928,G,"Karoline ""Lina"" RADKE",GER,02:16.8,seconds,136.8
+1035,M,800M,Amsterdam,1928,G,Douglas LOWE,GBR,01:51.8,seconds,111.8
+1041,M,800M,Amsterdam,1928,S,Erik BYL√É¬âHN,SWE,01:52.8,seconds,112.8
+1045,M,800M,Amsterdam,1928,B,Hermann ENGELHARD,GER,01:53.2,seconds,113.2
+1033,M,800M,Los Angeles,1932,G,Thomas HAMPSON,GBR,01:49.8,seconds,109.8
+1034,M,800M,Los Angeles,1932,S,Alex WILSON,CAN,01:49.9,seconds,109.9
+1043,M,800M,Berlin,1936,G,John WOODRUFF,USA,01:52.9,seconds,112.9
+1046,M,800M,Berlin,1936,S,Mario LANZI,ITA,01:53.3,seconds,113.3
+1048,M,800M,Berlin,1936,B,Philip EDWARDS,CAN,01:53.6,seconds,113.6
+1028,M,800M,London,1948,G,Mal WHITFIELD,USA,01:49.2,seconds,109.2
+1030,M,800M,London,1948,S,Arthur WINT,JAM,01:49.5,seconds,109.5
+1032,M,800M,London,1948,B,Marcel HANSENNE,FRA,01:49.8,seconds,109.8
+1027,M,800M,Helsinki,1952,G,Mal WHITFIELD,USA,01:49.2,seconds,109.2
+1029,M,800M,Helsinki,1952,S,Arthur WINT,JAM,01:49.4,seconds,109.4
+1031,M,800M,Helsinki,1952,B,Heinz ULZHEIMER,GER,01:49.7,seconds,109.7
+1024,M,800M,Melbourne / Stockholm,1956,G,Thomas COURTNEY,USA,01:47.7,seconds,107.7
+1025,M,800M,Melbourne / Stockholm,1956,S,Derek JOHNSON,GBR,01:47.8,seconds,107.8
+1026,M,800M,Melbourne / Stockholm,1956,B,Audun BOYSEN,NOR,01:48.1,seconds,108.1
+978,W,800M,Rome,1960,G,Lyudmila SHEVTSOVA,URS,02:04.3,seconds,124.3
+979,W,800M,Rome,1960,S,Brenda JONES,AUS,02:04.4,seconds,124.4
+980,W,800M,Rome,1960,B,Ursula DONATH,EUA,02:05.6,seconds,125.6
+1021,M,800M,Rome,1960,G,Peter SNELL,NZL,01:46.3,seconds,106.3
+1022,M,800M,Rome,1960,S,Roger MOENS,BEL,01:46.5,seconds,106.5
+1023,M,800M,Rome,1960,B,George KERR,BWI,01:47.1,seconds,107.1
+973,W,800M,Tokyo,1964,G,Ann PACKER,GBR,02:01.1,seconds,121.1
+974,W,800M,Tokyo,1964,S,Maryvonne DUPUREUR,FRA,02:01.9,seconds,121.9
+977,W,800M,Tokyo,1964,B,Ann Marise CHAMBERLAIN,NZL,02:02.8,seconds,122.8
+1009,M,800M,Tokyo,1964,G,Peter SNELL,NZL,01:45.1,seconds,105.1
+1014,M,800M,Tokyo,1964,S,William CROTHERS,CAN,01:45.6,seconds,105.6
+1018,M,800M,Tokyo,1964,B,Wilson KIPRUGUT,KEN,01:45.9,seconds,105.9
+972,W,800M,Mexico,1968,G,Madeline MANNING-JACKSON,USA,02:00.9,seconds,120.9
+975,W,800M,Mexico,1968,S,Ileana SILAI,ROU,02:02.5,seconds,122.5
+976,W,800M,Mexico,1968,B,Maria GOMMERS,NED,02:02.6,seconds,122.6
+1000,M,800M,Mexico,1968,G,Ralph DOUBELL,AUS,01:44.3,seconds,104.3
+1002,M,800M,Mexico,1968,S,Wilson KIPRUGUT,KEN,01:44.5,seconds,104.5
+1012,M,800M,Mexico,1968,B,Thomas Francis FARRELL,USA,01:45.4,seconds,105.4
+966,W,800M,Munich,1972,G,Hildegard FALCK,FRG,01:58.5,seconds,118.5
+968,W,800M,Munich,1972,S,Niole SABAITE,URS,01:58.6,seconds,118.6
+971,W,800M,Munich,1972,B,Gunhild HOFFMEISTER,GDR,01:59.2,seconds,119.2
+1015,M,800M,Munich,1972,G,David James WOTTLE,USA,01:45.9,seconds,105.9
+1016,M,800M,Munich,1972,S,Yevgeni ARZHANOV,URS,01:45.9,seconds,105.9
+1020,M,800M,Munich,1972,B,Mike BOIT,KEN,01:46.0,seconds,106.0
+942,W,800M,Montreal,1976,G,Tatiana KAZANKINA,URS,01:54.9,seconds,114.9
+944,W,800M,Montreal,1976,S,Nikolina CHTEREVA,BUL,01:55.4,seconds,115.4
+947,W,800M,Montreal,1976,B,Elfi ZINN,GDR,01:55.6,seconds,115.6
+992,M,800M,Montreal,1976,G,Alberto JUANTORENA,CUB,01:43.5,seconds,103.5
+997,M,800M,Montreal,1976,S,Ivo VAN DAMME,BEL,01:43.9,seconds,103.9
+999,M,800M,Montreal,1976,B,Richard Charles WOHLHUTER,USA,01:44.1,seconds,104.1
+939,W,800M,Moscow,1980,G,Nadezhda OLIZARENKO,URS,01:53.5,seconds,113.5
+941,W,800M,Moscow,1980,S,Olga MINEEVA,URS,01:54.9,seconds,114.9
+945,W,800M,Moscow,1980,B,Tatiana PROVIDOKHINA,URS,01:55.5,seconds,115.5
+1013,M,800M,Moscow,1980,G,Steve OVETT,GBR,01:45.4,seconds,105.4
+1017,M,800M,Moscow,1980,S,Sebastian COE,GBR,01:45.9,seconds,105.9
+1019,M,800M,Moscow,1980,B,Nikolai KIROV,URS,01:46.0,seconds,106.0
+963,W,800M,Los Angeles,1984,G,Doina MELINTE,ROU,01:57.6,seconds,117.6
+967,W,800M,Los Angeles,1984,S,Kim GALLAGHER,USA,01:58.6,seconds,118.6
+970,W,800M,Los Angeles,1984,B,Fita LOVIN,ROU,01:58.8,seconds,118.8
+991,M,800M,Los Angeles,1984,G,Joaquim CRUZ,BRA,01:43.0,seconds,103.0
+993,M,800M,Los Angeles,1984,S,Sebastian COE,GBR,01:43.6,seconds,103.6
+996,M,800M,Los Angeles,1984,B,Earl JONES,USA,01:43.8,seconds,103.8
+946,W,800M,Barcelona,1992,G,Ellen VAN LANGEN,NED,01:55.5,seconds,115.5
+948,W,800M,Barcelona,1992,S,Liliya NURUTDINOVA,EUN,01:56.0,seconds,116.0
+959,W,800M,Barcelona,1992,B,Ana Fidelia QUIROT,CUB,01:56.8,seconds,116.8
+994,M,800M,Barcelona,1992,G,William TANUI,KEN,01:43.7,seconds,103.7
+995,M,800M,Barcelona,1992,S,Nixon KIPROTICH,KEN,01:43.7,seconds,103.7
+998,M,800M,Barcelona,1992,B,Johnny GRAY,USA,01:44.0,seconds,104.0
+964,W,800M,Atlanta,1996,G,Svetlana MASTERKOVA,RUS,01:57.7,seconds,117.7
+965,W,800M,Atlanta,1996,S,Ana Fidelia QUIROT,CUB,01:58.1,seconds,118.1
+969,W,800M,Atlanta,1996,B,Maria MUTOLA,MOZ,01:58.7,seconds,118.7
+986,M,800M,Atlanta,1996,G,Vebj√É¬∏rn RODAL,NOR,01:42.6,seconds,102.6
+988,M,800M,Atlanta,1996,S,Hezekiel SEPENG,RSA,01:42.7,seconds,102.7
+989,M,800M,Atlanta,1996,B,Fred ONYANCHA,KEN,01:42.8,seconds,102.8
+950,W,800M,Sydney,2000,G,Maria MUTOLA,MOZ,01:56.2,seconds,116.2
+956,W,800M,Sydney,2000,S,Stephanie GRAF,AUT,01:56.6,seconds,116.6
+958,W,800M,Sydney,2000,B,Kelly HOLMES,GBR,01:56.8,seconds,116.8
+1008,M,800M,Sydney,2000,G,Nils SCHUMANN,GER,01:45.1,seconds,105.1
+1010,M,800M,Sydney,2000,S,Wilson KIPKETER,DEN,01:45.1,seconds,105.1
+1011,M,800M,Sydney,2000,B,Djabir SAID GUERNI,ALG,01:45.2,seconds,105.2
+952,W,800M,Athens,2004,G,Kelly HOLMES,GBR,01:56.4,seconds,116.4
+953,W,800M,Athens,2004,S,Hasna BENHASSI,MAR,01:56.4,seconds,116.4
+954,W,800M,Athens,2004,B,Jolanda CEPLAK,SLO,01:56.4,seconds,116.4
+1001,M,800M,Athens,2004,G,Yuriy BORZAKOVSKIY,RUS,01:44.5,seconds,104.5
+1003,M,800M,Athens,2004,S,Mbulaeni MULAUDZI,RSA,01:44.6,seconds,104.6
+1005,M,800M,Athens,2004,B,Wilson KIPKETER,DEN,01:44.7,seconds,104.7
+940,W,800M,Beijing,2008,G,Pamela JELIMO,KEN,01:54.9,seconds,114.9
+949,W,800M,Beijing,2008,S,Janeth Jepkosgei BUSIENEI,KEN,01:56.1,seconds,116.1
+957,W,800M,Beijing,2008,B,Hasna BENHASSI,MAR,01:56.7,seconds,116.7
+1004,M,800M,Beijing,2008,G,Wilfred BUNGEI,KEN,01:44.7,seconds,104.7
+1006,M,800M,Beijing,2008,S,Ismail Ahmed ISMAIL,SUD,01:44.7,seconds,104.7
+1007,M,800M,Beijing,2008,B,Alfred Kirwa YEGO,KEN,01:44.8,seconds,104.8
+951,W,800M,London,2012,G,Mariya SAVINOVA,RUS,01:56.2,seconds,116.2
+961,W,800M,London,2012,S,Caster SEMENYA,RSA,01:57.2,seconds,117.2
+962,W,800M,London,2012,B,Ekaterina POISTOGOVA,RUS,01:57.5,seconds,117.5
+982,M,800M,London,2012,G,David Lekuta RUDISHA,KEN,01:40.9,seconds,100.9
+983,M,800M,London,2012,S,Nijel AMOS,BOT,01:41.7,seconds,101.7
+985,M,800M,London,2012,B,Timothy KITUM,KEN,01:42.5,seconds,102.5
+943,W,800M,Rio,2016,G,Caster SEMENYA,RSA,01:55.3,seconds,115.3
+955,W,800M,Rio,2016,S,Francine NIYONSABA,BDI,01:56.5,seconds,116.5
+960,W,800M,Rio,2016,B,Margaret Nyairera WAMBUI,KEN,01:56.9,seconds,116.9
+984,M,800M,Rio,2016,G,David Lekuta RUDISHA,KEN,01:42.2,seconds,102.2
+987,M,800M,Rio,2016,S,Taoufik MAKHLOUFI,ALG,01:42.6,seconds,102.6
+990,M,800M,Rio,2016,B,Clayton MURPHY,USA,01:42.9,seconds,102.9
+863,M,Decathlon,St Louis,1904,B,Truxtun HARE,USA,5813,points,5813
+864,M,Decathlon,St Louis,1904,S,Adam GUNN,USA,5907,points,5907
+865,M,Decathlon,St Louis,1904,G,Thomas Francis KIELY,GBR,6036,points,6036
+876,M,Decathlon,Stockholm,1912,B,G√É¬∂sta HOLMER,SWE,7347.855,points,7347.855
+878,M,Decathlon,Stockholm,1912,S,Charles LOMBERG,SWE,7413.51,points,7413.51
+883,M,Decathlon,Stockholm,1912,G,Hugo WIESLANDER,SWE,7724.495,points,7724.495
+912,M,Decathlon,Stockholm,1912,G,Jim THORPE,USA,8412.955,points,8412.955
+866,M,Decathlon,Antwerp,1920,B,Bertil OHLSON,SWE,6580.03,points,6580.03
+867,M,Decathlon,Antwerp,1920,S,Brutus HAMILTON,USA,6771.085,points,6771.085
+869,M,Decathlon,Antwerp,1920,G,Helge L√É¬ñVLAND,NOR,6803.355,points,6803.355
+875,M,Decathlon,Paris,1924,B,Alexander KLUMBERG-KOLMPERE,EST,7329.33,points,7329.33
+877,M,Decathlon,Paris,1924,S,Emerson NORTON,USA,7350.895,points,7350.895
+884,M,Decathlon,Paris,1924,G,Harold OSBORN,USA,7740.775,points,7740.775
+882,M,Decathlon,Amsterdam,1928,B,John Kenneth DOHERTY,USA,7706.65,points,7706.65
+891,M,Decathlon,Amsterdam,1928,S,Aki J√É¬ÑRVINEN,FIN,7931.5,points,7931.5
+896,M,Decathlon,Amsterdam,1928,G,Paavo YRJ√É¬ñL√É¬Ñ,FIN,8053.29,points,8053.29
+894,M,Decathlon,Los Angeles,1932,B,Wolrad EBERLE,GER,8030.805,points,8030.805
+901,M,Decathlon,Los Angeles,1932,S,Aki J√É¬ÑRVINEN,FIN,8292.48,points,8292.48
+914,M,Decathlon,Los Angeles,1932,G,Jim BAUSCH,USA,8462.235,points,8462.235
+874,M,Decathlon,Berlin,1936,B,Jack PARKER,USA,7275,points,7275
+881,M,Decathlon,Berlin,1936,S,Robert Hyatt CLARK,USA,7601,points,7601
+890,M,Decathlon,Berlin,1936,G,Glenn MORRIS,USA,7900,points,7900
+870,M,Decathlon,London,1948,B,Floyd SIMMONS,USA,6950,points,6950
+871,M,Decathlon,London,1948,S,Ignace HEINRICH,FRA,6974,points,6974
+873,M,Decathlon,London,1948,G,Bob MATHIAS,USA,7139,points,7139
+868,M,Decathlon,Helsinki,1952,B,Floyd SIMMONS,USA,6788,points,6788
+872,M,Decathlon,Helsinki,1952,S,Milton Gray CAMPBELL,USA,6975,points,6975
+888,M,Decathlon,Helsinki,1952,G,Bob MATHIAS,USA,7887,points,7887
+879,M,Decathlon,Melbourne / Stockholm,1956,B,Vasily KUZNETSOV,URS,7465,points,7465
+880,M,Decathlon,Melbourne / Stockholm,1956,S,Rafer JOHNSON,USA,7587,points,7587
+892,M,Decathlon,Melbourne / Stockholm,1956,G,Milton Gray CAMPBELL,USA,7937,points,7937
+885,M,Decathlon,Rome,1960,B,Vasily KUZNETSOV,URS,7809,points,7809
+905,M,Decathlon,Rome,1960,S,Chuan-Kwang YANG,TPE,8334,points,8334
+907,M,Decathlon,Rome,1960,G,Rafer JOHNSON,USA,8392,points,8392
+886,M,Decathlon,Tokyo,1964,B,Hans-Joachim WALDE,EUA,7809,points,7809
+887,M,Decathlon,Tokyo,1964,S,Rein AUN,URS,7842,points,7842
+889,M,Decathlon,Tokyo,1964,G,Willi HOLDORF,EUA,7887,points,7887
+897,M,Decathlon,Mexico,1968,B,Kurt BENDLIN,FRG,8064,points,8064
+898,M,Decathlon,Mexico,1968,S,Hans-Joachim WALDE,FRG,8111,points,8111
+900,M,Decathlon,Mexico,1968,G,Bill TOOMEY,USA,8193,points,8193
+893,M,Decathlon,Munich,1972,B,Ryszard KATUS,POL,7984,points,7984
+895,M,Decathlon,Munich,1972,S,Leonid LITVINENKO,URS,8035,points,8035
+913,M,Decathlon,Munich,1972,G,Nikolay AVILOV,URS,8454,points,8454
+906,M,Decathlon,Montreal,1976,B,Nikolay AVILOV,URS,8369,points,8369
+909,M,Decathlon,Montreal,1976,S,Guido KRATSCHMER,FRG,8411,points,8411
+923,M,Decathlon,Montreal,1976,G,Bruce JENNER,USA,8618,points,8618
+899,M,Decathlon,Moscow,1980,B,Sergei ZHELANOV,URS,8135,points,8135
+904,M,Decathlon,Moscow,1980,S,Yuri KUTSENKO,URS,8331,points,8331
+916,M,Decathlon,Moscow,1980,G,Daley THOMPSON,GBR,8495,points,8495
+911,M,Decathlon,Los Angeles,1984,B,Siegfried WENTZ,FRG,8412,points,8412
+928,M,Decathlon,Los Angeles,1984,S,J√É¬ºrgen HINGSEN,FRG,8673,points,8673
+932,M,Decathlon,Los Angeles,1984,G,Daley THOMPSON,GBR,8798,points,8798
+903,M,Decathlon,Seoul,1988,B,Dave STEEN,CAN,8328,points,8328
+908,M,Decathlon,Seoul,1988,S,Torsten VOSS,GDR,8399,points,8399
+915,M,Decathlon,Seoul,1988,G,Christian SCHENK,GDR,8488,points,8488
+902,M,Decathlon,Barcelona,1992,B,Dave JOHNSON,USA,8309,points,8309
+910,M,Decathlon,Barcelona,1992,S,Antonio PENALVER ASENSIO,ESP,8412,points,8412
+922,M,Decathlon,Barcelona,1992,G,Robert ZMEL√É¬çK,TCH,8611,points,8611
+925,M,Decathlon,Atlanta,1996,B,Tom√É¬°? DVOR√É¬ÅK,CZE,8664,points,8664
+929,M,Decathlon,Atlanta,1996,S,Frank BUSEMANN,GER,8706,points,8706
+934,M,Decathlon,Atlanta,1996,G,Dan O'BRIEN,USA,8824,points,8824
+920,M,Decathlon,Sydney,2000,B,Chris HUFFINS,USA,8595,points,8595
+921,M,Decathlon,Sydney,2000,S,Roman SEBRLE,CZE,8606,points,8606
+924,M,Decathlon,Sydney,2000,G,Erki NOOL,EST,8641,points,8641
+930,M,Decathlon,Athens,2004,B,Dmitriy KARPOV,KAZ,8725,points,8725
+933,M,Decathlon,Athens,2004,S,Bryan CLAY,USA,8820,points,8820
+938,M,Decathlon,Athens,2004,G,Roman SEBRLE,CZE,8893,points,8893
+918,M,Decathlon,Beijing,2008,B,Leonel SUAREZ,CUB,8527,points,8527
+919,M,Decathlon,Beijing,2008,S,Andrei KRAUCHANKA,BLR,8551,points,8551
+931,M,Decathlon,Beijing,2008,G,Bryan CLAY,USA,8791,points,8791
+917,M,Decathlon,London,2012,B,Leonel SUAREZ,CUB,8523,points,8523
+927,M,Decathlon,London,2012,S,Trey HARDEE,USA,8671,points,8671
+936,M,Decathlon,London,2012,G,Ashton EATON,USA,8869,points,8869
+926,M,Decathlon,Rio,2016,B,Damian WARNER,CAN,8666,points,8666
+935,M,Decathlon,Rio,2016,S,Kevin MAYER,FRA,8834,points,8834
+937,M,Decathlon,Rio,2016,G,Ashton EATON,USA,8893,points,8893
+803,M,Discus Throw,Athens,1896,B,Sotirios VERSIS,GRE,28.78,meters,28.78
+804,M,Discus Throw,Athens,1896,S,Panagiotis PARASKEVOPOULOS,GRE,28.95,meters,28.95
+805,M,Discus Throw,Athens,1896,G,Robert GARRETT,USA,29.15,meters,29.15
+806,M,Discus Throw,St Louis,1904,B,Nikolaos GEORGANTAS,GRE,37.68,meters,37.68
+807,M,Discus Throw,St Louis,1904,G,Martin SHERIDAN,USA,39.28,meters,39.28
+808,M,Discus Throw,St Louis,1904,S,Ralph ROSE,USA,39.28,meters,39.28
+809,M,Discus Throw,London,1908,B,Marquis Franklin HORR,USA,39.45,meters,39.45
+810,M,Discus Throw,London,1908,S,Merritt GIFFIN,USA,40.7,meters,40.7
+811,M,Discus Throw,London,1908,G,Martin SHERIDAN,USA,40.89,meters,40.89
+812,M,Discus Throw,Stockholm,1912,B,James DUNCAN,USA,42.28,meters,42.28
+813,M,Discus Throw,Stockholm,1912,S,Richard Leslie BYRD,USA,42.32,meters,42.32
+816,M,Discus Throw,Stockholm,1912,G,Armas TAIPALE,FIN,45.21,meters,45.21
+814,M,Discus Throw,Paris,1924,B,Thomas LIEB,USA,44.83,meters,44.83
+815,M,Discus Throw,Paris,1924,S,Vilho Aleksander NIITTYMAA,FIN,44.95,meters,44.95
+817,M,Discus Throw,Paris,1924,G,Bud HOUSER,USA,46.155,meters,46.155
+750,W,Discus Throw,Amsterdam,1928,B,Ruth SVEDBERG,SWE,35.92,meters,35.92
+751,W,Discus Throw,Amsterdam,1928,S,Lillian COPELAND,USA,37.08,meters,37.08
+753,W,Discus Throw,Amsterdam,1928,G,Halina KONOPACKA,POL,39.62,meters,39.62
+752,W,Discus Throw,Los Angeles,1932,B,Jadwiga WAJS,POL,38.74,meters,38.74
+755,W,Discus Throw,Los Angeles,1932,S,Ruth OSBURN,USA,40.12,meters,40.12
+757,W,Discus Throw,Los Angeles,1932,G,Lillian COPELAND,USA,40.58,meters,40.58
+818,M,Discus Throw,Los Angeles,1932,B,Paul WINTER,FRA,47.85,meters,47.85
+819,M,Discus Throw,Los Angeles,1932,S,Henri LABORDE,USA,48.47,meters,48.47
+820,M,Discus Throw,Los Angeles,1932,G,John ANDERSON,USA,49.49,meters,49.49
+754,W,Discus Throw,Berlin,1936,B,Paula MOLLENHAUER,GER,39.8,meters,39.8
+760,W,Discus Throw,Berlin,1936,S,Jadwiga WAJS,POL,46.22,meters,46.22
+763,W,Discus Throw,Berlin,1936,G,Gisela MAUERMAYER,GER,47.63,meters,47.63
+756,W,Discus Throw,London,1948,B,Jacqueline MAZEAS,FRA,40.47,meters,40.47
+758,W,Discus Throw,London,1948,S,Edera CORDIALE-GENTILE,ITA,41.17,meters,41.17
+759,W,Discus Throw,London,1948,G,Micheline OSTERMEYER,FRA,41.92,meters,41.92
+761,W,Discus Throw,Helsinki,1952,B,Nina DUMBADZE,URS,46.29,meters,46.29
+762,W,Discus Throw,Helsinki,1952,S,Yelizaveta BAGRYANTSEVA,URS,47.08,meters,47.08
+764,W,Discus Throw,Helsinki,1952,G,Nina ROMASHKOVA,URS,51.42,meters,51.42
+821,M,Discus Throw,Helsinki,1952,B,James DILLION,USA,53.28,meters,53.28
+822,M,Discus Throw,Helsinki,1952,S,Adolfo CONSOLINI,ITA,53.78,meters,53.78
+823,M,Discus Throw,Helsinki,1952,G,Sim INESS,USA,55.03,meters,55.03
+765,W,Discus Throw,Rome,1960,B,Lia MANOLIU,ROU,52.36,meters,52.36
+766,W,Discus Throw,Rome,1960,S,Tamara PRESS,URS,52.59,meters,52.59
+768,W,Discus Throw,Rome,1960,G,Nina ROMASHKOVA,URS,55.1,meters,55.1
+824,M,Discus Throw,Rome,1960,B,Richard COCHRAN,USA,57.16,meters,57.16
+825,M,Discus Throw,Rome,1960,S,Rink BABKA,USA,58.02,meters,58.02
+826,M,Discus Throw,Rome,1960,G,Al OERTER,USA,59.18,meters,59.18
+769,W,Discus Throw,Tokyo,1964,B,Lia MANOLIU,ROU,56.97,meters,56.97
+770,W,Discus Throw,Tokyo,1964,S,Ingrid LOTZ,EUA,57.21,meters,57.21
+771,W,Discus Throw,Tokyo,1964,G,Tamara PRESS,URS,57.27,meters,57.27
+827,M,Discus Throw,Tokyo,1964,B,David Lawson WEILL,USA,59.49,meters,59.49
+828,M,Discus Throw,Tokyo,1964,S,Ludv√É¬≠k DANEK,TCH,60.52,meters,60.52
+829,M,Discus Throw,Tokyo,1964,G,Al OERTER,USA,61,meters,61
+767,W,Discus Throw,Mexico,1968,B,Jolan KLEIBER-KONTSEK,HUN,54.9,meters,54.9
+772,W,Discus Throw,Mexico,1968,S,Liesel WESTERMANN,FRG,57.76,meters,57.76
+773,W,Discus Throw,Mexico,1968,G,Lia MANOLIU,ROU,58.28,meters,58.28
+830,M,Discus Throw,Mexico,1968,B,Ludv√É¬≠k DANEK,TCH,62.92,meters,62.92
+831,M,Discus Throw,Mexico,1968,S,Lothar MILDE,GDR,63.08,meters,63.08
+833,M,Discus Throw,Mexico,1968,G,Al OERTER,USA,64.78,meters,64.78
+776,W,Discus Throw,Munich,1972,B,Vassilka STOEVA,BUL,64.34,meters,64.34
+779,W,Discus Throw,Munich,1972,S,Argentina MENIS,ROU,65.06,meters,65.06
+789,W,Discus Throw,Munich,1972,G,Faina MELNIK,URS,66.62,meters,66.62
+837,M,Discus Throw,Montreal,1976,B,John POWELL,USA,65.7,meters,65.7
+839,M,Discus Throw,Montreal,1976,S,Wolfgang SCHMIDT,GDR,66.22,meters,66.22
+849,M,Discus Throw,Montreal,1976,G,Mac WILKINS,USA,67.5,meters,67.5
+794,W,Discus Throw,Moscow,1980,B,Tatiana LESOVAIA,URS,67.4,meters,67.4
+796,W,Discus Throw,Moscow,1980,S,Maria VERGOVA-PETKOVA,BUL,67.9,meters,67.9
+801,W,Discus Throw,Moscow,1980,G,Evelin SCHLAAK-JAHL,GDR,69.96,meters,69.96
+841,M,Discus Throw,Moscow,1980,B,Luis DELIS,CUB,66.32,meters,66.32
+842,M,Discus Throw,Moscow,1980,S,Imrich BUG√É¬ÅR,TCH,66.38,meters,66.38
+845,M,Discus Throw,Moscow,1980,G,Viktor RASHCHUPKIN,URS,66.64,meters,66.64
+775,W,Discus Throw,Los Angeles,1984,B,Florenta CRACIUNESCU,ROU,63.64,meters,63.64
+778,W,Discus Throw,Los Angeles,1984,S,Leslie DENIZ,USA,64.86,meters,64.86
+782,W,Discus Throw,Los Angeles,1984,G,Ria STALMAN,NED,65.36,meters,65.36
+836,M,Discus Throw,Los Angeles,1984,B,John POWELL,USA,65.46,meters,65.46
+840,M,Discus Throw,Los Angeles,1984,S,Mac WILKINS,USA,66.3,meters,66.3
+843,M,Discus Throw,Los Angeles,1984,G,Rolf DANNEBERG,FRG,66.6,meters,66.6
+786,W,Discus Throw,Barcelona,1992,B,Daniela COSTIAN,AUS,66.24,meters,66.24
+795,W,Discus Throw,Barcelona,1992,S,Tsvetanka KHRISTOVA,BUL,67.78,meters,67.78
+802,W,Discus Throw,Barcelona,1992,G,Maritza MARTEN,CUB,70.06,meters,70.06
+832,M,Discus Throw,Barcelona,1992,B,Roberto MOYA,CUB,64.12,meters,64.12
+834,M,Discus Throw,Barcelona,1992,S,J√É¬ºrgen SCHULT,GER,64.94,meters,64.94
+835,M,Discus Throw,Barcelona,1992,G,Romas UBARTAS,LTU,65.12,meters,65.12
+783,W,Discus Throw,Atlanta,1996,B,Ellina ZVEREVA,BLR,65.64,meters,65.64
+788,W,Discus Throw,Atlanta,1996,S,Natalya SADOVA,RUS,66.48,meters,66.48
+800,W,Discus Throw,Atlanta,1996,G,Ilke WYLUDDA,GER,69.66,meters,69.66
+838,M,Discus Throw,Atlanta,1996,B,Vasiliy KAPTYUKH,BLR,65.8,meters,65.8
+844,M,Discus Throw,Atlanta,1996,S,Vladimir DUBROVSHCHIK,BLR,66.6,meters,66.6
+861,M,Discus Throw,Atlanta,1996,G,Lars RIEDEL,GER,69.4,meters,69.4
+780,W,Discus Throw,Sydney,2000,B,Iryna YATCHENKO,BLR,65.2,meters,65.2
+784,W,Discus Throw,Sydney,2000,S,Anastasia KELESIDOU,GRE,65.71,meters,65.71
+797,W,Discus Throw,Sydney,2000,G,Ellina ZVEREVA,BLR,68.4,meters,68.4
+855,M,Discus Throw,Sydney,2000,B,Frantz KRUGER,RSA,68.19,meters,68.19
+858,M,Discus Throw,Sydney,2000,S,Lars RIEDEL,GER,68.5,meters,68.5
+860,M,Discus Throw,Sydney,2000,G,Virgilijus ALEKNA,LTU,69.3,meters,69.3
+785,W,Discus Throw,Athens,2004,B,Vera POSPISILOVA-CECHLOVA,CZE,66.08,meters,66.08
+790,W,Discus Throw,Athens,2004,S,Anastasia KELESIDOU,GRE,66.68,meters,66.68
+792,W,Discus Throw,Athens,2004,G,Natalya SADOVA,RUS,67.02,meters,67.02
+846,M,Discus Throw,Athens,2004,B,Aleksander TAMMERT,EST,66.66,meters,66.66
+847,M,Discus Throw,Athens,2004,S,Zoltan KOVAGO,HUN,67.04,meters,67.04
+862,M,Discus Throw,Athens,2004,G,Virgilijus ALEKNA,LTU,69.89,meters,69.89
+774,W,Discus Throw,Beijing,2008,B,Olena ANTONOVA,UKR,62.59,meters,62.59
+777,W,Discus Throw,Beijing,2008,G,Stephanie BROWN TRAFTON,USA,64.74,meters,64.74
+851,M,Discus Throw,Beijing,2008,B,Virgilijus ALEKNA,LTU,67.79,meters,67.79
+852,M,Discus Throw,Beijing,2008,S,Piotr MALACHOWSKI,POL,67.82,meters,67.82
+859,M,Discus Throw,Beijing,2008,G,Gerd KANTER,EST,68.82,meters,68.82
+787,W,Discus Throw,London,2012,B,Yarelys BARRIOS,CUB,66.38,meters,66.38
+793,W,Discus Throw,London,2012,S,Yanfeng LI,CHN,67.22,meters,67.22
+798,W,Discus Throw,London,2012,G,Sandra PERKOVIC,CRO,69.11,meters,69.11
+853,M,Discus Throw,London,2012,B,Gerd KANTER,EST,68.03,meters,68.03
+854,M,Discus Throw,London,2012,S,Ehsan HADADI,IRI,68.18,meters,68.18
+856,M,Discus Throw,London,2012,G,Robert HARTING,GER,68.27,meters,68.27
+781,W,Discus Throw,Rio,2016,B,Denia CABALLERO,CUB,65.34,meters,65.34
+791,W,Discus Throw,Rio,2016,S,Melina ROBERT-MICHON,FRA,66.73,meters,66.73
+799,W,Discus Throw,Rio,2016,G,Sandra PERKOVIC,CRO,69.21,meters,69.21
+848,M,Discus Throw,Rio,2016,B,Daniel JASINSKI,GER,67.05,meters,67.05
+850,M,Discus Throw,Rio,2016,S,Piotr MALACHOWSKI,POL,67.55,meters,67.55
+857,M,Discus Throw,Rio,2016,G,Christoph HARTING,GER,68.37,meters,68.37
+696,M,Hammer Throw,Paris,1900,B,Josiah MCCRACKEN,USA,43.58,meters,43.58
+698,M,Hammer Throw,Paris,1900,S,Truxtun HARE,USA,46.26,meters,46.26
+706,M,Hammer Throw,Paris,1900,G,John FLANAGAN,USA,51.01,meters,51.01
+697,M,Hammer Throw,St Louis,1904,B,Ralph ROSE,USA,45.73,meters,45.73
+703,M,Hammer Throw,St Louis,1904,S,John DEWITT,USA,50.26,meters,50.26
+708,M,Hammer Throw,St Louis,1904,G,John FLANAGAN,USA,51.23,meters,51.23
+701,M,Hammer Throw,London,1908,B,Cornelius WALSH,CAN,48.51,meters,48.51
+707,M,Hammer Throw,London,1908,S,Matt MCGRATH,USA,51.18,meters,51.18
+709,M,Hammer Throw,London,1908,G,John FLANAGAN,USA,51.92,meters,51.92
+699,M,Hammer Throw,Stockholm,1912,B,Clarence CHILDS,USA,48.17,meters,48.17
+700,M,Hammer Throw,Stockholm,1912,S,Duncan GILLIS,CAN,48.39,meters,48.39
+713,M,Hammer Throw,Stockholm,1912,G,Matt MCGRATH,USA,54.74,meters,54.74
+702,M,Hammer Throw,Paris,1924,B,Malcolm NOKES,GBR,48.875,meters,48.875
+705,M,Hammer Throw,Paris,1924,S,Matt MCGRATH,USA,50.84,meters,50.84
+711,M,Hammer Throw,Paris,1924,G,Fred TOOTELL,USA,53.295,meters,53.295
+704,M,Hammer Throw,Los Angeles,1932,B,Peter ZAREMBA,USA,50.33,meters,50.33
+710,M,Hammer Throw,Los Angeles,1932,S,Ville P√É¬ñRH√É¬ñL√É¬Ñ,FIN,52.27,meters,52.27
+712,M,Hammer Throw,Los Angeles,1932,G,Patrick O'CALLAGHAN,IRL,53.92,meters,53.92
+714,M,Hammer Throw,Helsinki,1952,B,Imre N√É¬âMETH,HUN,57.74,meters,57.74
+715,M,Hammer Throw,Helsinki,1952,S,Karl STORCH,GER,58.86,meters,58.86
+716,M,Hammer Throw,Helsinki,1952,G,J√É¬≥zsef CSERM√É¬ÅK,HUN,60.34,meters,60.34
+717,M,Hammer Throw,Rome,1960,B,Tadeusz RUT,POL,65.64,meters,65.64
+718,M,Hammer Throw,Rome,1960,S,Gyula ZSIV√É¬ìTZKY,HUN,65.79,meters,65.79
+719,M,Hammer Throw,Rome,1960,G,Vasili RUDENKOV,URS,67.1,meters,67.1
+720,M,Hammer Throw,Tokyo,1964,B,Uwe BEYER,EUA,68.09,meters,68.09
+721,M,Hammer Throw,Tokyo,1964,S,Gyula ZSIV√É¬ìTZKY,HUN,69.09,meters,69.09
+722,M,Hammer Throw,Tokyo,1964,G,Romuald KLIM,URS,69.74,meters,69.74
+723,M,Hammer Throw,Montreal,1976,B,Anatoli BONDARCHUK,URS,75.48,meters,75.48
+724,M,Hammer Throw,Montreal,1976,S,Aleksei SPIRIDONOV,URS,76.08,meters,76.08
+725,M,Hammer Throw,Montreal,1976,G,Yuri SEDYKH,URS,77.52,meters,77.52
+730,M,Hammer Throw,Moscow,1980,B,Yuri TAMM,URS,78.96,meters,78.96
+739,M,Hammer Throw,Moscow,1980,S,Sergey LITVINOV,URS,80.64,meters,80.64
+745,M,Hammer Throw,Moscow,1980,G,Yuri SEDYKH,URS,81.8,meters,81.8
+742,M,Hammer Throw,Barcelona,1992,B,Igor NIKULIN,EUN,81.38,meters,81.38
+746,M,Hammer Throw,Barcelona,1992,S,Igor ASTAPKOVICH,EUN,81.96,meters,81.96
+748,M,Hammer Throw,Barcelona,1992,G,Andrey ABDUVALIEV,EUN,82.54,meters,82.54
+736,M,Hammer Throw,Atlanta,1996,B,Oleksiy KRYKUN,UKR,80.02,meters,80.02
+737,M,Hammer Throw,Atlanta,1996,B,Oleksandr KRYKUN,UKR,80.02,meters,80.02
+740,M,Hammer Throw,Atlanta,1996,S,Lance Earl DEAL,USA,81.12,meters,81.12
+741,M,Hammer Throw,Atlanta,1996,G,Bal√É¬°zs KISS,HUN,81.24,meters,81.24
+682,W,Hammer Throw,Sydney,2000,B,Kirsten M√É¬úNCHOW,GER,69.28,meters,69.28
+683,W,Hammer Throw,Sydney,2000,S,Olga KUZENKOVA,RUS,69.77,meters,69.77
+684,W,Hammer Throw,Sydney,2000,G,Kamila SKOLIMOWSKA,POL,71.16,meters,71.16
+731,M,Hammer Throw,Sydney,2000,B,Igor ASTAPKOVICH,BLR,79.17,meters,79.17
+734,M,Hammer Throw,Sydney,2000,S,Nicola VIZZONI,ITA,79.64,meters,79.64
+735,M,Hammer Throw,Sydney,2000,G,Szymon ZIOLKOWSKI,POL,80.02,meters,80.02
+686,W,Hammer Throw,Athens,2004,B,Yunaika CRAWFORD,CUB,73.16,meters,73.16
+687,W,Hammer Throw,Athens,2004,S,Yipsi MORENO,CUB,73.36,meters,73.36
+690,W,Hammer Throw,Athens,2004,G,Olga KUZENKOVA,RUS,75.02,meters,75.02
+733,M,Hammer Throw,Athens,2004,B,Esref APAK,TUR,79.51,meters,79.51
+749,M,Hammer Throw,Athens,2004,G,Koji MUROFUSHI,JPN,82.91,meters,82.91
+685,W,Hammer Throw,Beijing,2008,B,Manuela MONTEBRUN,FRA,72.54,meters,72.54
+688,W,Hammer Throw,Beijing,2008,S,Wenxiu ZHANG,CHN,74.32,meters,74.32
+691,W,Hammer Throw,Beijing,2008,G,Yipsi MORENO,CUB,75.2,meters,75.2
+743,M,Hammer Throw,Beijing,2008,B,Ivan TSIKHAN,BLR,81.51,meters,81.51
+744,M,Hammer Throw,Beijing,2008,S,Vadim DEVYATOVSKIY,BLR,81.61,meters,81.61
+747,M,Hammer Throw,Beijing,2008,G,Primoz KOZMUS,SLO,82.02,meters,82.02
+693,W,Hammer Throw,London,2012,B,Betty HEIDLER,GER,77.13,meters,77.13
+694,W,Hammer Throw,London,2012,S,Anita WLODARCZYK,POL,77.6,meters,77.6
+729,M,Hammer Throw,London,2012,B,Koji MUROFUSHI,JPN,78.71,meters,78.71
+732,M,Hammer Throw,London,2012,S,Primoz KOZMUS,SLO,79.36,meters,79.36
+738,M,Hammer Throw,London,2012,G,Krisztian PARS,HUN,80.59,meters,80.59
+689,W,Hammer Throw,Rio,2016,B,Sophie HITCHON,GBR,74.54,meters,74.54
+692,W,Hammer Throw,Rio,2016,S,Wenxiu ZHANG,CHN,76.75,meters,76.75
+695,W,Hammer Throw,Rio,2016,G,Anita WLODARCZYK,POL,82.29,meters,82.29
+726,M,Hammer Throw,Rio,2016,B,Wojciech NOWICKI,POL,77.73,meters,77.73
+727,M,Hammer Throw,Rio,2016,S,Ivan TSIKHAN,BLR,77.79,meters,77.79
+728,M,Hammer Throw,Rio,2016,G,Dilshod NAZAROV,TJK,78.68,meters,78.68
+655,W,Heptathlon,Los Angeles,1984,B,Sabine EVERTS,FRG,6363,meters,6363
+656,W,Heptathlon,Los Angeles,1984,S,Jackie JOYNER,USA,6385,meters,6385
+657,W,Heptathlon,Los Angeles,1984,G,Glynis NUNN,AUS,6390,meters,6390
+676,W,Heptathlon,Seoul,1988,B,Anke BEHMER,GDR,6858,meters,6858
+677,W,Heptathlon,Seoul,1988,S,Sabine JOHN,GDR,6897,meters,6897
+681,W,Heptathlon,Seoul,1988,G,Jackie JOYNER,USA,7291,meters,7291
+668,W,Heptathlon,Barcelona,1992,B,Sabine BRAUN,GER,6649,meters,6649
+675,W,Heptathlon,Barcelona,1992,S,Irina BELOVA,EUN,6845,meters,6845
+680,W,Heptathlon,Barcelona,1992,G,Jackie JOYNER,USA,7044,meters,7044
+660,W,Heptathlon,Atlanta,1996,B,Denise LEWIS,GBR,6489,meters,6489
+663,W,Heptathlon,Atlanta,1996,S,Natalya SAZANOVICH,BLR,6563,meters,6563
+673,W,Heptathlon,Atlanta,1996,G,Ghada SHOUAA,SYR,6780,meters,6780
+661,W,Heptathlon,Sydney,2000,B,Natalya SAZANOVICH,BLR,6527,meters,6527
+662,W,Heptathlon,Sydney,2000,S,Yelena PROKHOROVA,RUS,6531,meters,6531
+664,W,Heptathlon,Sydney,2000,G,Denise LEWIS,GBR,6584,meters,6584
+658,W,Heptathlon,Athens,2004,B,Kelly SOTHERTON,GBR,6424,meters,6424
+659,W,Heptathlon,Athens,2004,S,Austra SKUJYTE,LTU,6435,meters,6435
+678,W,Heptathlon,Athens,2004,G,Carolina KLUFT,SWE,6952,meters,6952
+665,W,Heptathlon,Beijing,2008,B,Tatyana CHERNOVA,RUS,6591,meters,6591
+666,W,Heptathlon,Beijing,2008,S,Hyleas FOUNTAIN,USA,6619,meters,6619
+671,W,Heptathlon,Beijing,2008,G,Natallia DOBRYNSKA,UKR,6733,meters,6733
+667,W,Heptathlon,London,2012,B,Tatyana CHERNOVA,RUS,6628,meters,6628
+669,W,Heptathlon,London,2012,S,Lilli SCHWARZKOPF,GER,6649,meters,6649
+679,W,Heptathlon,London,2012,G,Jessica ENNIS HILL,GBR,6955,meters,6955
+670,W,Heptathlon,Rio,2016,B,Brianne THEISEN EATON,CAN,6653,meters,6653
+672,W,Heptathlon,Rio,2016,S,Jessica ENNIS HILL,GBR,6775,meters,6775
+674,W,Heptathlon,Rio,2016,G,Nafissatou THIAM,BEL,6810,meters,6810
+593,M,High Jump,Athens,1896,S,Robert GARRETT,USA,1.65,meters,1.65
+594,M,High Jump,Athens,1896,S,James CONNOLLY,USA,1.65,meters,1.65
+600,M,High Jump,Athens,1896,G,Ellery CLARK,USA,1.81,meters,1.81
+595,M,High Jump,Paris,1900,B,Lajos G√É¬ñNCZY,HUN,1.75,meters,1.75
+598,M,High Jump,Paris,1900,S,Patrick LEAHY,GBR,1.78,meters,1.78
+606,M,High Jump,Paris,1900,G,Irving BAXTER,USA,1.9,meters,1.9
+596,M,High Jump,St Louis,1904,S,Garrett SERVISS,USA,1.77,meters,1.77
+597,M,High Jump,St Louis,1904,B,Paul WEINSTEIN,GER,1.77,meters,1.77
+599,M,High Jump,St Louis,1904,G,Samuel JONES,USA,1.8,meters,1.8
+601,M,High Jump,London,1908,S,Istv√É¬°n SOMODI,HUN,1.88,meters,1.88
+602,M,High Jump,London,1908,S,Cornelius LEAHY,GBR,1.88,meters,1.88
+603,M,High Jump,London,1908,S,Georges ANDRE,FRA,1.88,meters,1.88
+605,M,High Jump,London,1908,G,Harry PORTER,USA,1.9,meters,1.9
+604,M,High Jump,Stockholm,1912,B,George HORINE,USA,1.89,meters,1.89
+607,M,High Jump,Stockholm,1912,S,Hans LIESCHE,GER,1.91,meters,1.91
+609,M,High Jump,Stockholm,1912,G,Alma RICHARDS,USA,1.93,meters,1.93
+608,M,High Jump,Paris,1924,B,Pierre LEWDEN,FRA,1.92,meters,1.92
+610,M,High Jump,Paris,1924,S,Leroy BROWN,USA,1.95,meters,1.95
+615,M,High Jump,Paris,1924,G,Harold OSBORN,USA,1.98,meters,1.98
+554,W,High Jump,Los Angeles,1932,B,Eva DAWES,CAN,1.6,meters,1.6
+558,W,High Jump,Los Angeles,1932,G,Jean SHILEY,USA,1.65,meters,1.65
+559,W,High Jump,Los Angeles,1932,S,Mildred DIDRIKSON,USA,1.65,meters,1.65
+611,M,High Jump,Los Angeles,1932,G,Duncan MCNAUGHTON,CAN,1.97,meters,1.97
+612,M,High Jump,Los Angeles,1932,S,Robert VAN OSDEL,USA,1.97,meters,1.97
+613,M,High Jump,Los Angeles,1932,B,Simeon TORIBIO,PHI,1.97,meters,1.97
+551,W,High Jump,Berlin,1936,G,Ibolya CS√É¬ÅK,HUN,1.6,meters,1.6
+552,W,High Jump,Berlin,1936,S,Dorothy ODAM,GBR,1.6,meters,1.6
+553,W,High Jump,Berlin,1936,B,Elfriede KAUN,GER,1.6,meters,1.6
+555,W,High Jump,London,1948,B,Micheline OSTERMEYER,FRA,1.61,meters,1.61
+561,W,High Jump,London,1948,G,Alice COACHMAN,USA,1.68,meters,1.68
+562,W,High Jump,London,1948,S,Dorothy ODAM,GBR,1.68,meters,1.68
+556,W,High Jump,Helsinki,1952,B,Aleksandra CHUDINA,URS,1.63,meters,1.63
+557,W,High Jump,Helsinki,1952,S,Sheila LERWILL,GBR,1.65,meters,1.65
+560,W,High Jump,Helsinki,1952,G,Esther BRAND,RSA,1.67,meters,1.67
+614,M,High Jump,Helsinki,1952,B,Jose TELLES DA CONCEICAO,BRA,1.98,meters,1.98
+616,M,High Jump,Helsinki,1952,S,Kenneth WIESNER,USA,2.01,meters,2.01
+617,M,High Jump,Helsinki,1952,G,Walt DAVIS,USA,2.04,meters,2.04
+563,W,High Jump,Rome,1960,S,Dorothy SHIRLEY,GBR,1.71,meters,1.71
+564,W,High Jump,Rome,1960,S,Jaroslawa J√É¬ìZWIAKOWSKA,POL,1.71,meters,1.71
+567,W,High Jump,Rome,1960,G,Iolanda BALAS,ROU,1.85,meters,1.85
+618,M,High Jump,Rome,1960,B,John THOMAS,USA,2.14,meters,2.14
+619,M,High Jump,Rome,1960,G,Robert SHAVLAKADZE,URS,2.16,meters,2.16
+620,M,High Jump,Rome,1960,S,Valeri BRUMEL,URS,2.16,meters,2.16
+565,W,High Jump,Tokyo,1964,B,Taisiya CHENCHIK,URS,1.78,meters,1.78
+566,W,High Jump,Tokyo,1964,S,Michele BROWN,AUS,1.8,meters,1.8
+568,W,High Jump,Tokyo,1964,G,Iolanda BALAS,ROU,1.9,meters,1.9
+621,M,High Jump,Tokyo,1964,B,John RAMBO,USA,2.16,meters,2.16
+622,M,High Jump,Tokyo,1964,G,Valeri BRUMEL,URS,2.18,meters,2.18
+623,M,High Jump,Tokyo,1964,S,John THOMAS,USA,2.18,meters,2.18
+569,W,High Jump,Montreal,1976,S,Sara SIMEONI,ITA,1.91,meters,1.91
+570,W,High Jump,Montreal,1976,B,Yordanka BLAGOEVA-DIMITROVA,BUL,1.91,meters,1.91
+571,W,High Jump,Montreal,1976,G,Rosemarie WITSCHAS-ACKERMANN,GDR,1.93,meters,1.93
+624,M,High Jump,Montreal,1976,B,Dwight STONES,USA,2.21,meters,2.21
+625,M,High Jump,Montreal,1976,S,Greg JOY,CAN,2.23,meters,2.23
+626,M,High Jump,Montreal,1976,G,Jacek WSZOLA,POL,2.25,meters,2.25
+572,W,High Jump,Moscow,1980,S,Urszula KIELAN,POL,1.94,meters,1.94
+573,W,High Jump,Moscow,1980,B,Jutta KIRST,GDR,1.94,meters,1.94
+575,W,High Jump,Moscow,1980,G,Sara SIMEONI,ITA,1.97,meters,1.97
+630,M,High Jump,Moscow,1980,S,Jacek WSZOLA,POL,2.31,meters,2.31
+631,M,High Jump,Moscow,1980,B,J√É¬∂rg FREIMUTH,GDR,2.31,meters,2.31
+650,M,High Jump,Moscow,1980,G,Gerd WESSIG,GDR,2.36,meters,2.36
+574,W,High Jump,Barcelona,1992,B,Joanet QUINTERO,CUB,1.97,meters,1.97
+578,W,High Jump,Barcelona,1992,S,Galina ASTAFEI,ROU,2,meters,2
+582,W,High Jump,Barcelona,1992,G,Heike HENKEL,GER,2.02,meters,2.02
+638,M,High Jump,Barcelona,1992,G,Javier SOTOMAYOR,CUB,2.34,meters,2.34
+639,M,High Jump,Barcelona,1992,S,Patrik SJ√É¬ñBERG,SWE,2.34,meters,2.34
+640,M,High Jump,Barcelona,1992,B,Tim FORSYTH,AUS,2.34,meters,2.34
+641,M,High Jump,Barcelona,1992,B,Artur PARTYKA,POL,2.34,meters,2.34
+642,M,High Jump,Barcelona,1992,B,Hollis CONWAY,USA,2.34,meters,2.34
+581,W,High Jump,Atlanta,1996,B,Inha BABAKOVA,UKR,2.01,meters,2.01
+587,W,High Jump,Atlanta,1996,S,Niki BAKOGIANNI,GRE,2.03,meters,2.03
+591,W,High Jump,Atlanta,1996,G,Stefka KOSTADINOVA,BUL,2.05,meters,2.05
+646,M,High Jump,Atlanta,1996,B,Steve SMITH,GBR,2.35,meters,2.35
+651,M,High Jump,Atlanta,1996,S,Artur PARTYKA,POL,2.37,meters,2.37
+654,M,High Jump,Atlanta,1996,G,Charles AUSTIN,USA,2.39,meters,2.39
+576,W,High Jump,Sydney,2000,B,Kajsa BERGQVIST,SWE,1.99,meters,1.99
+577,W,High Jump,Sydney,2000,B,Oana PANTELIMON,ROU,1.99,meters,1.99
+579,W,High Jump,Sydney,2000,G,Yelena YELESINA,RUS,2.01,meters,2.01
+580,W,High Jump,Sydney,2000,S,Hestrie CLOETE,RSA,2.01,meters,2.01
+632,M,High Jump,Sydney,2000,S,Javier SOTOMAYOR,CUB,2.32,meters,2.32
+633,M,High Jump,Sydney,2000,B,Abderrahmane HAMMAD,ALG,2.32,meters,2.32
+645,M,High Jump,Sydney,2000,G,Sergey KLYUGIN,RUS,2.35,meters,2.35
+583,W,High Jump,Athens,2004,S,Hestrie CLOETE,RSA,2.02,meters,2.02
+584,W,High Jump,Athens,2004,B,Vita STYOPINA,UKR,2.02,meters,2.02
+592,W,High Jump,Athens,2004,G,Elena SLESARENKO,RUS,2.06,meters,2.06
+643,M,High Jump,Athens,2004,S,Matt HEMINGWAY,USA,2.34,meters,2.34
+644,M,High Jump,Athens,2004,B,Jaroslav BABA,CZE,2.34,meters,2.34
+649,M,High Jump,Athens,2004,G,Stefan HOLM,SWE,2.36,meters,2.36
+588,W,High Jump,Beijing,2008,G,Tia HELLEBAUT,BEL,2.05,meters,2.05
+589,W,High Jump,Beijing,2008,S,Blanka VLASIC,CRO,2.05,meters,2.05
+636,M,High Jump,Beijing,2008,S,Germaine MASON,GBR,2.34,meters,2.34
+637,M,High Jump,Beijing,2008,B,Yaroslav RYBAKOV,RUS,2.34,meters,2.34
+648,M,High Jump,Beijing,2008,G,Andrey SILNOV,RUS,2.36,meters,2.36
+585,W,High Jump,London,2012,S,Brigetta BARRETT,USA,2.03,meters,2.03
+586,W,High Jump,London,2012,B,Svetlana SHKOLINA,RUS,2.03,meters,2.03
+590,W,High Jump,London,2012,G,Anna CHICHEROVA,RUS,2.05,meters,2.05
+627,M,High Jump,London,2012,B,Derek DROUIN,CAN,2.29,meters,2.29
+628,M,High Jump,London,2012,B,Mutaz Essa BARSHIM,QAT,2.29,meters,2.29
+629,M,High Jump,London,2012,B,Robert GRABARZ,GBR,2.29,meters,2.29
+635,M,High Jump,London,2012,S,Erik KYNARD,USA,2.33,meters,2.33
+653,M,High Jump,London,2012,G,Ivan UKHOV,RUS,2.38,meters,2.38
+634,M,High Jump,Rio,2016,B,Bohdan BONDARENKO,UKR,2.33,meters,2.33
+647,M,High Jump,Rio,2016,S,Mutaz Essa BARSHIM,QAT,2.36,meters,2.36
+652,M,High Jump,Rio,2016,G,Derek DROUIN,CAN,2.38,meters,2.38
+504,M,Javelin Throw,London,1908,B,Otto NILSSON,SWE,47.11,meters,47.11
+505,M,Javelin Throw,London,1908,S,Arne HALSE,NOR,50.57,meters,50.57
+506,M,Javelin Throw,London,1908,G,Eric LEMMING,SWE,54.83,meters,54.83
+507,M,Javelin Throw,Stockholm,1912,B,Mor KOVACS,HUN,55.5,meters,55.5
+509,M,Javelin Throw,Stockholm,1912,S,Juho Julius SAARISTO,FIN,58.66,meters,58.66
+510,M,Javelin Throw,Stockholm,1912,G,Eric LEMMING,SWE,60.64,meters,60.64
+508,M,Javelin Throw,Paris,1924,B,Eugene OBERST,USA,58.35,meters,58.35
+511,M,Javelin Throw,Paris,1924,S,Gunnar LINDSTR√É¬ñM,SWE,60.92,meters,60.92
+512,M,Javelin Throw,Paris,1924,G,Jonni MYYR√É¬Ñ,FIN,62.96,meters,62.96
+456,W,Javelin Throw,Los Angeles,1932,B,Tilly FLEISCHER,GER,43,meters,43
+458,W,Javelin Throw,Los Angeles,1932,S,Ellen BRAUM√É¬úLLER,GER,43.49,meters,43.49
+459,W,Javelin Throw,Los Angeles,1932,G,Mildred DIDRIKSON,USA,43.68,meters,43.68
+513,M,Javelin Throw,Los Angeles,1932,B,Eino PENTTIL√É¬Ñ,FIN,68.7,meters,68.7
+514,M,Javelin Throw,Los Angeles,1932,S,Matti SIPPALA,FIN,69.8,meters,69.8
+517,M,Javelin Throw,Los Angeles,1932,G,Matti J√É¬ÑRVINEN,FIN,72.71,meters,72.71
+454,W,Javelin Throw,Berlin,1936,B,Maria KWASNIEWSKA,POL,41.8,meters,41.8
+457,W,Javelin Throw,Berlin,1936,S,Luise KR√É¬úGER,GER,43.29,meters,43.29
+461,W,Javelin Throw,Berlin,1936,G,Tilly FLEISCHER,GER,45.18,meters,45.18
+455,W,Javelin Throw,London,1948,B,Lily CARLSTEDT,DEN,42.08,meters,42.08
+460,W,Javelin Throw,London,1948,S,Kaisa PARVIAINEN,FIN,43.79,meters,43.79
+462,W,Javelin Throw,London,1948,G,Herma BAUMA,AUT,45.57,meters,45.57
+463,W,Javelin Throw,Helsinki,1952,B,Yelena GORCHAKOVA,URS,49.76,meters,49.76
+464,W,Javelin Throw,Helsinki,1952,S,Aleksandra CHUDINA,URS,50.01,meters,50.01
+465,W,Javelin Throw,Helsinki,1952,G,Dana INGROVA-ZATOPKOVA,TCH,50.47,meters,50.47
+515,M,Javelin Throw,Helsinki,1952,B,Toivo HYYTI√É¬ÑINEN,FIN,71.89,meters,71.89
+516,M,Javelin Throw,Helsinki,1952,S,William Preston MILLER,USA,72.46,meters,72.46
+518,M,Javelin Throw,Helsinki,1952,G,Cy YOUNG,USA,73.78,meters,73.78
+466,W,Javelin Throw,Rome,1960,B,Birute KALEDIENE,URS,53.45,meters,53.45
+467,W,Javelin Throw,Rome,1960,S,Dana INGROVA-ZATOPKOVA,TCH,53.78,meters,53.78
+468,W,Javelin Throw,Rome,1960,G,Elvira OZOLINA,URS,55.98,meters,55.98
+519,M,Javelin Throw,Rome,1960,B,Gergely KULCS√É¬ÅR,HUN,78.57,meters,78.57
+520,M,Javelin Throw,Rome,1960,S,Walter KR√É¬úGER,EUA,79.36,meters,79.36
+528,M,Javelin Throw,Rome,1960,G,Viktor TSYBULENKO,URS,84.64,meters,84.64
+469,W,Javelin Throw,Tokyo,1964,B,Yelena GORCHAKOVA,URS,57.06,meters,57.06
+471,W,Javelin Throw,Tokyo,1964,S,Marta ANTAL-RUDAS,HUN,58.27,meters,58.27
+475,W,Javelin Throw,Tokyo,1964,G,Mihaela PENES,ROU,60.54,meters,60.54
+521,M,Javelin Throw,Tokyo,1964,B,Yanis LUSIS,URS,80.57,meters,80.57
+522,M,Javelin Throw,Tokyo,1964,S,Gergely KULCS√É¬ÅR,HUN,82.32,meters,82.32
+523,M,Javelin Throw,Tokyo,1964,G,Pauli NEVALA,FIN,82.66,meters,82.66
+470,W,Javelin Throw,Mexico,1968,B,Eva JANKO-EGGER,AUT,58.04,meters,58.04
+472,W,Javelin Throw,Mexico,1968,S,Mihaela PENES,ROU,59.92,meters,59.92
+474,W,Javelin Throw,Mexico,1968,G,Angela NEMETH,HUN,60.36,meters,60.36
+473,W,Javelin Throw,Munich,1972,B,Kathryn Joan SCHMIDT,USA,59.94,meters,59.94
+476,W,Javelin Throw,Munich,1972,S,Jacqueline TODTEN,GDR,62.54,meters,62.54
+477,W,Javelin Throw,Munich,1972,G,Ruth FUCHS,GDR,63.88,meters,63.88
+478,W,Javelin Throw,Montreal,1976,B,Kathryn Joan SCHMIDT,USA,63.96,meters,63.96
+480,W,Javelin Throw,Montreal,1976,S,Marion BECKER-STEINER,FRG,64.7,meters,64.7
+488,W,Javelin Throw,Montreal,1976,G,Ruth FUCHS,GDR,65.94,meters,65.94
+539,M,Javelin Throw,Montreal,1976,B,Gheorghe MEGELEA,ROU,87.16,meters,87.16
+541,M,Javelin Throw,Montreal,1976,S,Hannu Juhani SIITONEN,FIN,87.92,meters,87.92
+550,M,Javelin Throw,Montreal,1976,G,Miklos NEMETH,HUN,94.58,meters,94.58
+492,W,Javelin Throw,Moscow,1980,B,Ute HOMMOLA,GDR,66.56,meters,66.56
+495,W,Javelin Throw,Moscow,1980,S,Saida GUNBA,URS,67.76,meters,67.76
+499,W,Javelin Throw,Moscow,1980,G,Maria COLON,CUB,68.4,meters,68.4
+536,M,Javelin Throw,Moscow,1980,B,Wolfgang HANISCH,GDR,86.72,meters,86.72
+544,M,Javelin Throw,Moscow,1980,S,Aleksandr MAKAROV,URS,89.64,meters,89.64
+549,M,Javelin Throw,Moscow,1980,G,Dainis KULA,URS,91.2,meters,91.2
+525,M,Javelin Throw,Los Angeles,1984,B,Kenth ELDEBRINK,SWE,83.72,meters,83.72
+531,M,Javelin Throw,Los Angeles,1984,S,David OTTLEY,GBR,85.74,meters,85.74
+537,M,Javelin Throw,Los Angeles,1984,G,Arto H√É¬ÑRK√É¬ñNEN,FIN,86.76,meters,86.76
+493,W,Javelin Throw,Barcelona,1992,B,Karen FORKEL,GER,66.86,meters,66.86
+497,W,Javelin Throw,Barcelona,1992,S,Natalia SHIKOLENKO,EUN,68.26,meters,68.26
+498,W,Javelin Throw,Barcelona,1992,G,Silke RENK,GER,68.34,meters,68.34
+524,M,Javelin Throw,Barcelona,1992,B,Steve BACKLEY,GBR,83.38,meters,83.38
+534,M,Javelin Throw,Barcelona,1992,S,Seppo R√É¬ÑTY,FIN,86.6,meters,86.6
+545,M,Javelin Throw,Barcelona,1992,G,Jan √Ö¬ΩELEZN√É¬ù,TCH,89.66,meters,89.66
+484,W,Javelin Throw,Atlanta,1996,B,Trine HATTESTAD,NOR,64.98,meters,64.98
+486,W,Javelin Throw,Atlanta,1996,S,Louise MCPAUL,AUS,65.54,meters,65.54
+496,W,Javelin Throw,Atlanta,1996,G,Heli RANTANEN,FIN,67.94,meters,67.94
+538,M,Javelin Throw,Atlanta,1996,B,Seppo R√É¬ÑTY,FIN,86.98,meters,86.98
+540,M,Javelin Throw,Atlanta,1996,S,Steve BACKLEY,GBR,87.44,meters,87.44
+542,M,Javelin Throw,Atlanta,1996,G,Jan √Ö¬ΩELEZN√É¬ù,CZE,88.16,meters,88.16
+491,W,Javelin Throw,Sydney,2000,B,Osleidys MEN√É¬âNDEZ,CUB,66.18,meters,66.18
+494,W,Javelin Throw,Sydney,2000,S,Mirela MANIANI,GRE,67.51,meters,67.51
+500,W,Javelin Throw,Sydney,2000,G,Trine HATTESTAD,NOR,68.91,meters,68.91
+543,M,Javelin Throw,Sydney,2000,B,Sergey MAKAROV,RUS,88.67,meters,88.67
+546,M,Javelin Throw,Sydney,2000,S,Steve BACKLEY,GBR,89.85,meters,89.85
+547,M,Javelin Throw,Sydney,2000,G,Jan √Ö¬ΩELEZN√É¬ù,CZE,90.17,meters,90.17
+479,W,Javelin Throw,Athens,2004,B,Mirela MANIANI,GRE,64.29,meters,64.29
+487,W,Javelin Throw,Athens,2004,S,Steffi NERIUS,GER,65.82,meters,65.82
+503,W,Javelin Throw,Athens,2004,G,Osleidys MEN√É¬âNDEZ,CUB,71.53,meters,71.53
+529,M,Javelin Throw,Athens,2004,B,Sergey MAKAROV,RUS,84.84,meters,84.84
+530,M,Javelin Throw,Athens,2004,S,Vadims VASILEVSKIS,LAT,84.95,meters,84.95
+533,M,Javelin Throw,Athens,2004,G,Andreas THORKILDSEN,NOR,86.5,meters,86.5
+489,W,Javelin Throw,Beijing,2008,B,Christina OBERGFOLL,GER,66.13,meters,66.13
+502,W,Javelin Throw,Beijing,2008,G,Barbora SPOTAKOVA,CZE,71.42,meters,71.42
+532,M,Javelin Throw,Beijing,2008,B,Tero PITKAMAKI,FIN,86.16,meters,86.16
+535,M,Javelin Throw,Beijing,2008,S,Ainars KOVALS,LAT,86.64,meters,86.64
+548,M,Javelin Throw,Beijing,2008,G,Andreas THORKILDSEN,NOR,90.57,meters,90.57
+482,W,Javelin Throw,London,2012,B,Linda STAHL,GER,64.91,meters,64.91
+485,W,Javelin Throw,London,2012,S,Christina OBERGFOLL,GER,65.16,meters,65.16
+501,W,Javelin Throw,London,2012,G,Barbora SPOTAKOVA,CZE,69.55,meters,69.55
+526,M,Javelin Throw,London,2012,B,Antti RUUSKANEN,FIN,84.12,meters,84.12
+527,M,Javelin Throw,London,2012,G,Keshorn WALCOTT,TTO,84.58,meters,84.58
+481,W,Javelin Throw,Rio,2016,B,Barbora SPOTAKOVA,CZE,64.8,meters,64.8
+483,W,Javelin Throw,Rio,2016,S,Sunette VILJOEN,RSA,64.92,meters,64.92
+490,W,Javelin Throw,Rio,2016,G,Sara KOLAK,CRO,66.18,meters,66.18
+391,M,Long Jump,Athens,1896,B,James CONNOLLY,USA,6.11,meters,6.11
+392,M,Long Jump,Athens,1896,S,Robert GARRETT,USA,6.18,meters,6.18
+393,M,Long Jump,Athens,1896,G,Ellery CLARK,USA,6.35,meters,6.35
+396,M,Long Jump,Paris,1900,B,Patrick LEAHY,GBR,6.95,meters,6.95
+399,M,Long Jump,Paris,1900,S,Meyer PRINSTEIN,USA,7.175,meters,7.175
+401,M,Long Jump,Paris,1900,G,Alvin KRAENZLEIN,USA,7.185,meters,7.185
+394,M,Long Jump,St Louis,1904,B,Robert STANGLAND,USA,6.88,meters,6.88
+395,M,Long Jump,St Louis,1904,S,Daniel FRANK,USA,6.89,meters,6.89
+406,M,Long Jump,St Louis,1904,G,Meyer PRINSTEIN,USA,7.34,meters,7.34
+397,M,Long Jump,London,1908,B,Calvin BRICKER,CAN,7.08,meters,7.08
+398,M,Long Jump,London,1908,S,Daniel KELLY,USA,7.09,meters,7.09
+410,M,Long Jump,London,1908,G,Frank IRONS,USA,7.48,meters,7.48
+400,M,Long Jump,Stockholm,1912,B,Georg ABERG,SWE,7.18,meters,7.18
+402,M,Long Jump,Stockholm,1912,S,Calvin BRICKER,CAN,7.21,meters,7.21
+415,M,Long Jump,Stockholm,1912,G,Albert GUTTERSON,USA,7.6,meters,7.6
+403,M,Long Jump,Paris,1924,B,Sverre HANSEN,NOR,7.26,meters,7.26
+404,M,Long Jump,Paris,1924,S,Edward Orval GOURDIN,USA,7.275,meters,7.275
+408,M,Long Jump,Paris,1924,G,William De Hart HUBBARD,USA,7.445,meters,7.445
+407,M,Long Jump,Amsterdam,1928,B,Al BATES,USA,7.4,meters,7.4
+413,M,Long Jump,Amsterdam,1928,S,Sylvio CATOR,HAI,7.58,meters,7.58
+417,M,Long Jump,Amsterdam,1928,G,Edward Barton HAMM,USA,7.73,meters,7.73
+409,M,Long Jump,Los Angeles,1932,B,Chuhei NAMBU,JPN,7.45,meters,7.45
+414,M,Long Jump,Los Angeles,1932,S,Lambert REDD,USA,7.6,meters,7.6
+416,M,Long Jump,Los Angeles,1932,G,Edward Lansing GORDON,USA,7.64,meters,7.64
+418,M,Long Jump,Berlin,1936,B,Naoto TAJIMA,JPN,7.74,meters,7.74
+419,M,Long Jump,Berlin,1936,S,Luz LONG,GER,7.87,meters,7.87
+424,M,Long Jump,Berlin,1936,G,Jesse OWENS,USA,8.06,meters,8.06
+356,W,Long Jump,Helsinki,1952,B,Shirley CAWLEY,GBR,5.92,meters,5.92
+357,W,Long Jump,Helsinki,1952,S,Aleksandra CHUDINA,URS,6.14,meters,6.14
+359,W,Long Jump,Helsinki,1952,G,Yvette WILLIAMS,NZL,6.24,meters,6.24
+405,M,Long Jump,Helsinki,1952,B,√É¬É√¢¬Ä¬ìd√É¬É√Ç¬∂n F√É¬É√¢¬Ä¬ìLDESSY,HUN,7.3,meters,7.3
+411,M,Long Jump,Helsinki,1952,S,Meredith GOURDINE,USA,7.53,meters,7.53
+412,M,Long Jump,Helsinki,1952,G,Jerome BIFFLE,USA,7.57,meters,7.57
+358,W,Long Jump,Rome,1960,B,Hildrun CLAUS,EUA,6.21,meters,6.21
+360,W,Long Jump,Rome,1960,S,Elzbieta KRZESINSKA,POL,6.27,meters,6.27
+361,W,Long Jump,Rome,1960,G,Vera KOLASHNIKOVA-KREPKINA,URS,6.37,meters,6.37
+423,M,Long Jump,Rome,1960,B,Igor TER-OVANESYAN,URS,8.04,meters,8.04
+427,M,Long Jump,Rome,1960,S,Irvin ROBERSON,USA,8.11,meters,8.11
+428,M,Long Jump,Rome,1960,G,Ralph BOSTON,USA,8.12,meters,8.12
+362,W,Long Jump,Tokyo,1964,B,Tatyana SHCHELKANOVA,URS,6.42,meters,6.42
+364,W,Long Jump,Tokyo,1964,S,Irena KIRSZENSTEIN,POL,6.6,meters,6.6
+367,W,Long Jump,Tokyo,1964,G,Mary RAND,GBR,6.76,meters,6.76
+420,M,Long Jump,Tokyo,1964,B,Igor TER-OVANESYAN,URS,7.99,meters,7.99
+422,M,Long Jump,Tokyo,1964,S,Ralph BOSTON,USA,8.03,meters,8.03
+425,M,Long Jump,Tokyo,1964,G,Lynn DAVIES,GBR,8.07,meters,8.07
+363,W,Long Jump,Montreal,1976,B,Lidia ALFEEVA,URS,6.6,meters,6.6
+365,W,Long Jump,Montreal,1976,S,Catherine Laverne MCMILLAN,USA,6.66,meters,6.66
+366,W,Long Jump,Montreal,1976,G,Angela VOIGT,GDR,6.72,meters,6.72
+421,M,Long Jump,Montreal,1976,B,Frank WARTENBERG,GDR,8.02,meters,8.02
+426,M,Long Jump,Montreal,1976,S,Randel Luvelle WILLIAMS,USA,8.11,meters,8.11
+443,M,Long Jump,Montreal,1976,G,Arnie ROBINSON,USA,8.35,meters,8.35
+374,W,Long Jump,Moscow,1980,B,Tatiana SKACHKO,URS,7.01,meters,7.01
+377,W,Long Jump,Moscow,1980,S,Brigitte WUJAK,GDR,7.04,meters,7.04
+380,W,Long Jump,Moscow,1980,G,Tatiana KOLPAKOVA,URS,7.06,meters,7.06
+431,M,Long Jump,Moscow,1980,B,Valeri PODLUZHNYI,URS,8.18,meters,8.18
+433,M,Long Jump,Moscow,1980,S,Frank PASCHEK,GDR,8.21,meters,8.21
+449,M,Long Jump,Moscow,1980,G,Lutz DOMBROWSKI,GDR,8.54,meters,8.54
+381,W,Long Jump,Barcelona,1992,B,Jackie JOYNER,USA,7.07,meters,7.07
+385,W,Long Jump,Barcelona,1992,S,Inessa KRAVETS,EUN,7.12,meters,7.12
+388,W,Long Jump,Barcelona,1992,G,Heike DRECHSLER,GER,7.14,meters,7.14
+442,M,Long Jump,Barcelona,1992,B,Joe GREENE,USA,8.34,meters,8.34
+452,M,Long Jump,Barcelona,1992,S,Mike POWELL,USA,8.64,meters,8.64
+453,M,Long Jump,Barcelona,1992,G,Carl LEWIS,USA,8.67,meters,8.67
+373,W,Long Jump,Atlanta,1996,B,Jackie JOYNER,USA,7,meters,7
+375,W,Long Jump,Atlanta,1996,S,Fiona MAY,ITA,7.02,meters,7.02
+387,W,Long Jump,Atlanta,1996,G,Chioma AJUNWA,NGR,7.12,meters,7.12
+435,M,Long Jump,Atlanta,1996,B,Joe GREENE,USA,8.24,meters,8.24
+437,M,Long Jump,Atlanta,1996,S,James BECKFORD,JAM,8.29,meters,8.29
+448,M,Long Jump,Atlanta,1996,G,Carl LEWIS,USA,8.5,meters,8.5
+368,W,Long Jump,Sydney,2000,B,Tatyana KOTOVA,RUS,6.83,meters,6.83
+371,W,Long Jump,Sydney,2000,S,Fiona MAY,ITA,6.92,meters,6.92
+372,W,Long Jump,Sydney,2000,G,Heike DRECHSLER,GER,6.99,meters,6.99
+438,M,Long Jump,Sydney,2000,B,Roman SCHURENKO,UKR,8.31,meters,8.31
+447,M,Long Jump,Sydney,2000,S,Jai TAURIMA,AUS,8.49,meters,8.49
+450,M,Long Jump,Sydney,2000,G,Ivan PEDROSO,CUB,8.55,meters,8.55
+378,W,Long Jump,Athens,2004,S,Irina SIMAGINA,RUS,7.05,meters,7.05
+379,W,Long Jump,Athens,2004,B,Tatyana KOTOVA,RUS,7.05,meters,7.05
+383,W,Long Jump,Athens,2004,G,Tatyana LEBEDEVA,RUS,7.07,meters,7.07
+440,M,Long Jump,Athens,2004,B,Joan Lino MARTINEZ,ESP,8.32,meters,8.32
+446,M,Long Jump,Athens,2004,S,John MOFFITT,USA,8.47,meters,8.47
+451,M,Long Jump,Athens,2004,G,Dwight PHILLIPS,USA,8.59,meters,8.59
+370,W,Long Jump,Beijing,2008,B,Blessing OKAGBARE,NGR,6.91,meters,6.91
+376,W,Long Jump,Beijing,2008,G,Maurren Higa MAGGI,BRA,7.04,meters,7.04
+432,M,Long Jump,Beijing,2008,B,Ibrahim CAMEJO,CUB,8.2,meters,8.2
+434,M,Long Jump,Beijing,2008,S,Godfrey Khotso MOKOENA,RSA,8.24,meters,8.24
+441,M,Long Jump,Beijing,2008,G,Irving SALADINO,PAN,8.34,meters,8.34
+369,W,Long Jump,London,2012,B,Janay DELOACH,USA,6.89,meters,6.89
+382,W,Long Jump,London,2012,S,Elena SOKOLOVA,RUS,7.07,meters,7.07
+386,W,Long Jump,London,2012,G,Brittney REESE,USA,7.12,meters,7.12
+429,M,Long Jump,London,2012,B,Will CLAYE,USA,8.12,meters,8.12
+430,M,Long Jump,London,2012,S,Mitchell WATT,AUS,8.16,meters,8.16
+439,M,Long Jump,London,2012,G,Greg RUTHERFORD,GBR,8.31,meters,8.31
+384,W,Long Jump,Rio,2016,B,Ivana SPANOVIC,SRB,7.08,meters,7.08
+389,W,Long Jump,Rio,2016,S,Brittney REESE,USA,7.15,meters,7.15
+390,W,Long Jump,Rio,2016,G,Tianna BARTOLETTA,USA,7.17,meters,7.17
+436,M,Long Jump,Rio,2016,B,Greg RUTHERFORD,GBR,8.29,meters,8.29
+444,M,Long Jump,Rio,2016,S,Luvo MANYONGA,RSA,8.37,meters,8.37
+445,M,Long Jump,Rio,2016,G,Jeff HENDERSON,USA,8.38,meters,8.38
+347,M,Marathon,Athens,1896,G,Spyridon LOUIS,GRE,2:58:50,seconds,10730.0
+350,M,Marathon,Athens,1896,S,Kharilaos VASILAKOS,GRE,3:06:03,seconds,11163.0
+351,M,Marathon,Athens,1896,B,Gyula KELLNER,HUN,3:06:35,seconds,11195.0
+348,M,Marathon,Paris,1900,G,Michel TH√É¬âATO,FRA,2:59:45.0,seconds,10785.0
+349,M,Marathon,Paris,1900,S,√É¬âmile CHAMPION,FRA,3:04:17.0,seconds,11057.0
+354,M,Marathon,Paris,1900,B,Ernst FAST,SWE,3:37:14.0,seconds,13034.0
+352,M,Marathon,St Louis,1904,G,Thomas HICKS,USA,3:28:53.0,seconds,12533.0
+353,M,Marathon,St Louis,1904,S,Albert CORAY,USA,3:34:52.0,seconds,12892.0
+355,M,Marathon,St Louis,1904,B,Arthur NEWTON,USA,3:47:33.0,seconds,13653.0
+344,M,Marathon,London,1908,G,John HAYES,USA,2:55:18.4,seconds,10518.4
+345,M,Marathon,London,1908,S,Charles HEFFERON,RSA,2:56:06.0,seconds,10566.0
+346,M,Marathon,London,1908,B,Joseph FORSHAW,USA,2:57:10.4,seconds,10630.4
+338,M,Marathon,Stockholm,1912,G,Kennedy Kane MCARTHUR,RSA,2:36:54.8,seconds,9414.8
+339,M,Marathon,Stockholm,1912,S,Christian W. GITSHAM,RSA,2:37:52.0,seconds,9472.0
+340,M,Marathon,Stockholm,1912,B,Gaston STROBINO,USA,2:38:42.4,seconds,9522.4
+332,M,Marathon,Antwerp,1920,G,Hannes KOLEHMAINEN,FIN,2:32:35.8,seconds,9155.8
+333,M,Marathon,Antwerp,1920,S,J√É¬ºri LOSSMANN,EST,2:32:48.6,seconds,9168.6
+337,M,Marathon,Antwerp,1920,B,Valerio ARRI,ITA,2:36:32.8,seconds,9392.8
+341,M,Marathon,Paris,1924,G,Albin STENROOS,FIN,2:41:22.6,seconds,9682.6
+342,M,Marathon,Paris,1924,S,Romeo BERTINI,ITA,2:47:19.6,seconds,10039.6
+343,M,Marathon,Paris,1924,B,Clarence DEMAR,USA,2:48:14.0,seconds,10094.0
+272,M,Marathon,Amsterdam,1928,G,Bough√É¬®ra EL OUAFI,FRA,2:32:57,seconds,9177.0
+273,M,Marathon,Amsterdam,1928,S,Manuel PLAZA,CHI,2:33:23,seconds,9203.0
+274,M,Marathon,Amsterdam,1928,B,Martti MARTTELIN,FIN,2:35:02,seconds,9302.0
+328,M,Marathon,Los Angeles,1932,G,Juan Carlos ZABALA,ARG,2:31:36,seconds,9096.0
+330,M,Marathon,Los Angeles,1932,S,Samuel FERRIS,GBR,2:31:55,seconds,9115.0
+331,M,Marathon,Los Angeles,1932,B,Armas TOIVONEN,FIN,2:32:12,seconds,9132.0
+326,M,Marathon,Berlin,1936,G,Kitei SON,JPN,2:29:19.2,seconds,8959.2
+327,M,Marathon,Berlin,1936,S,Ernest HARPER,GBR,2:31:23.2,seconds,9083.2
+329,M,Marathon,Berlin,1936,B,Shoryu NAN,JPN,2:31:42.0,seconds,9102.0
+334,M,Marathon,London,1948,G,Delfo CABRERA,ARG,2:34:51.6,seconds,9291.6
+335,M,Marathon,London,1948,S,Thomas John Henry RICHARDS,GBR,2:35:07.6,seconds,9307.6
+336,M,Marathon,London,1948,B,Etienne GAILLY,BEL,2:35:33.6,seconds,9333.6
+318,M,Marathon,Helsinki,1952,G,Emil Z√É¬ÅTOPEK,TCH,2:23:03.2,seconds,8583.2
+322,M,Marathon,Helsinki,1952,S,Reinaldo GORNO,ARG,2:25:35.0,seconds,8735.0
+323,M,Marathon,Helsinki,1952,B,Gustaf JANSSON,SWE,2:26:07.0,seconds,8767.0
+321,M,Marathon,Melbourne / Stockholm,1956,G,Alain MIMOUN,FRA,2:25:00,seconds,8700.0
+324,M,Marathon,Melbourne / Stockholm,1956,S,Franjo MIHALIC,YUG,2:26:32,seconds,8792.0
+325,M,Marathon,Melbourne / Stockholm,1956,B,Veikko KARVONEN,FIN,2:27:47,seconds,8867.0
+312,M,Marathon,Rome,1960,G,Abebe BIKILA,ETH,2:15:16.2,seconds,8116.2
+313,M,Marathon,Rome,1960,S,Abdesiem RHADI BEN ABDESSELEM,MAR,2:15:41.6,seconds,8141.6
+316,M,Marathon,Rome,1960,B,Barry MAGEE,NZL,2:17:18.2,seconds,8238.2
+302,M,Marathon,Tokyo,1964,G,Abebe BIKILA,ETH,2:12:11.2,seconds,7931.2
+314,M,Marathon,Tokyo,1964,S,Basil HEATLEY,GBR,2:16:19.2,seconds,8179.2
+315,M,Marathon,Tokyo,1964,B,Kokichi TSUBURAYA,JPN,2:16:22.8,seconds,8182.8
+317,M,Marathon,Mexico,1968,G,Mamo WOLDE,ETH,2:20:26.4,seconds,8426.4
+319,M,Marathon,Mexico,1968,S,Kenji KIMIHARA,JPN,2:23:31.0,seconds,8611.0
+320,M,Marathon,Mexico,1968,B,Mike RYAN,NZL,2:23:45.0,seconds,8625.0
+303,M,Marathon,Munich,1972,G,Frank Charles SHORTER,USA,2:12:19.8,seconds,7939.8
+310,M,Marathon,Munich,1972,S,Karel LISMONT,BEL,2:14:31.8,seconds,8071.8
+311,M,Marathon,Munich,1972,B,Mamo WOLDE,ETH,2:15:08.4,seconds,8108.4
+283,M,Marathon,Montreal,1976,G,Waldemar CIERPINSKI,GDR,2:09:55.0,seconds,7795.0
+291,M,Marathon,Montreal,1976,S,Frank Charles SHORTER,USA,2:10:45.8,seconds,7845.8
+297,M,Marathon,Montreal,1976,B,Karel LISMONT,BEL,2:11:12.6,seconds,7872.6
+295,M,Marathon,Moscow,1980,G,Waldemar CIERPINSKI,GDR,2:11:03.0,seconds,7863.0
+298,M,Marathon,Moscow,1980,S,Gerard NIJBOER,NED,2:11:20.0,seconds,7880.0
+300,M,Marathon,Moscow,1980,B,Setymkul DZHUMANAZAROV,URS,2:11:35.0,seconds,7895.0
+254,W,Marathon,Los Angeles,1984,G,Joan BENOIT,USA,2:24:52,seconds,8692.0
+258,W,Marathon,Los Angeles,1984,S,Grete ANDERSEN,NOR,2:26:18,seconds,8778.0
+263,W,Marathon,Los Angeles,1984,B,Rosa MOTA,POR,2:26:57,seconds,8817.0
+280,M,Marathon,Los Angeles,1984,G,Carlos LOPES,POR,2:09:21,seconds,7761.0
+284,M,Marathon,Los Angeles,1984,S,John TREACY,IRL,2:09:56,seconds,7796.0
+285,M,Marathon,Los Angeles,1984,B,Charles SPEDDING,GBR,2:09:58,seconds,7798.0
+255,W,Marathon,Seoul,1988,G,Rosa MOTA,POR,2:25:40,seconds,8740.0
+256,W,Marathon,Seoul,1988,S,Lisa ONDIEKI,AUS,2:25:53,seconds,8753.0
+260,W,Marathon,Seoul,1988,B,Katrin D√É¬ñRRE,GDR,2:26:21,seconds,8781.0
+290,M,Marathon,Seoul,1988,G,Gelindo BORDIN,ITA,2:10:32,seconds,7832.0
+292,M,Marathon,Seoul,1988,S,Douglas WAKIIHURI,KEN,2:10:47,seconds,7847.0
+294,M,Marathon,Seoul,1988,B,Hussein AHMED SALAH,DJI,2:10:59,seconds,7859.0
+269,W,Marathon,Barcelona,1992,G,Valentina YEGOROVA,EUN,2:32:41,seconds,9161.0
+270,W,Marathon,Barcelona,1992,S,Yuko ARIMORI,JPN,2:32:49,seconds,9169.0
+271,W,Marathon,Barcelona,1992,B,Lorraine MOLLER,NZL,2:33:59,seconds,9239.0
+307,M,Marathon,Barcelona,1992,G,Young-Cho HWANG,KOR,2:13:23,seconds,8003.0
+308,M,Marathon,Barcelona,1992,S,Koichi MORISHITA,JPN,2:13:45,seconds,8025.0
+309,M,Marathon,Barcelona,1992,B,Stephan FREIGANG,GER,2:14:00,seconds,8040.0
+257,W,Marathon,Atlanta,1996,G,Fatuma ROBA,ETH,2:26:05,seconds,8765.0
+267,W,Marathon,Atlanta,1996,S,Valentina YEGOROVA,RUS,2:28:05,seconds,8885.0
+268,W,Marathon,Atlanta,1996,B,Yuko ARIMORI,JPN,2:28:39,seconds,8919.0
+304,M,Marathon,Atlanta,1996,G,Josia THUGWANE,RSA,2:12:36,seconds,7956.0
+305,M,Marathon,Atlanta,1996,S,Bong Ju LEE,KOR,2:12:39,seconds,7959.0
+306,M,Marathon,Atlanta,1996,B,Erick WAINAINA,KEN,2:12:44,seconds,7964.0
+247,W,Marathon,Sydney,2000,G,Naoko TAKAHASHI,JPN,2:23:14,seconds,8594.0
+248,W,Marathon,Sydney,2000,S,Lidia SIMON,ROU,2:23:22,seconds,8602.0
+253,W,Marathon,Sydney,2000,B,Joyce CHEPCHUMBA,KEN,2:24:45,seconds,8685.0
+288,M,Marathon,Sydney,2000,G,Gezahegne ABERA,ETH,2:10:11,seconds,7811.0
+289,M,Marathon,Sydney,2000,S,Erick WAINAINA,KEN,2:10:31,seconds,7831.0
+296,M,Marathon,Sydney,2000,B,Tesfaye TOLA,ETH,2:11:10,seconds,7870.0
+259,W,Marathon,Athens,2004,G,Mizuki NOGUCHI,JPN,2:26:20,seconds,8780.0
+261,W,Marathon,Athens,2004,S,Catherine NDEREBA,KEN,2:26:32,seconds,8792.0
+266,W,Marathon,Athens,2004,B,Deena KASTOR,USA,2:27:20,seconds,8840.0
+293,M,Marathon,Athens,2004,G,Stefano BALDINI,ITA,2:10:55,seconds,7855.0
+299,M,Marathon,Athens,2004,S,Mebrahtom KEFLEZIGHI,USA,2:11:29,seconds,7889.0
+301,M,Marathon,Athens,2004,B,Vanderlei DE LIMA,BRA,2:12:11,seconds,7931.0
+262,W,Marathon,Beijing,2008,G,Constantina TOMESCU,ROU,2:26:44,seconds,8804.0
+264,W,Marathon,Beijing,2008,S,Catherine NDEREBA,KEN,2:27:06,seconds,8826.0
+265,W,Marathon,Beijing,2008,B,Chunxiu ZHOU,CHN,2:27:07,seconds,8827.0
+275,M,Marathon,Beijing,2008,G,Samuel Kamau WANJIRU,KEN,2:06:32,seconds,7592.0
+276,M,Marathon,Beijing,2008,S,Jaouad GHARIB,MAR,2:07:16,seconds,7636.0
+286,M,Marathon,Beijing,2008,B,Tsegay KEBEDE,ETH,2:10:00,seconds,7800.0
+245,W,Marathon,London,2012,G,Tiki GELANA,ETH,2:23:07,seconds,8587.0
+246,W,Marathon,London,2012,S,Priscah JEPTOO,KEN,2:23:12,seconds,8592.0
+249,W,Marathon,London,2012,B,Tatyana PETROVA ARKHIPOVA,RUS,2:23:29,seconds,8609.0
+277,M,Marathon,London,2012,G,Stephen KIPROTICH,UGA,2:08:01,seconds,7681.0
+278,M,Marathon,London,2012,S,Abel KIRUI,KEN,2:08:27,seconds,7707.0
+281,M,Marathon,London,2012,B,Wilson Kipsang KIPROTICH,KEN,2:09:37,seconds,7777.0
+250,W,Marathon,Rio,2016,G,Jemima Jelagat SUMGONG,KEN,2:24:04,seconds,8644.0
+251,W,Marathon,Rio,2016,S,Eunice Jepkirui KIRWA,BRN,2:24:13,seconds,8653.0
+252,W,Marathon,Rio,2016,B,Mare DIBABA,ETH,2:24:30,seconds,8670.0
+279,M,Marathon,Rio,2016,G,Eliud Kipchoge ROTICH,KEN,2:08:44,seconds,7724.0
+282,M,Marathon,Rio,2016,S,Feyisa LILESA,ETH,2:09:54,seconds,7794.0
+287,M,Marathon,Rio,2016,B,Galen RUPP,USA,2:10:05,seconds,7805.0
+186,M,Pole Vault,Athens,1896,B,Evangelos DAMASKOS,GRE,2.6,meters,2.6
+187,M,Pole Vault,Athens,1896,B,Ioannis THEODOROPOULOS,GRE,2.6,meters,2.6
+189,M,Pole Vault,Athens,1896,S,Albert TYLER,USA,3.2,meters,3.2
+192,M,Pole Vault,Athens,1896,G,William Welles HOYT,USA,3.3,meters,3.3
+188,M,Pole Vault,Paris,1900,B,Carl Albert ANDERSEN,NOR,3.2,meters,3.2
+190,M,Pole Vault,Paris,1900,S,Meredith COLKETT,USA,3.25,meters,3.25
+191,M,Pole Vault,Paris,1900,G,Irving BAXTER,USA,3.3,meters,3.3
+193,M,Pole Vault,St Louis,1904,S,Leroy SAMSE,USA,3.43,meters,3.43
+194,M,Pole Vault,St Louis,1904,B,Louis WILKINS,USA,3.43,meters,3.43
+195,M,Pole Vault,St Louis,1904,G,Charles DVORAK,USA,3.5,meters,3.5
+196,M,Pole Vault,London,1908,B,Edward ARCHIBALD,CAN,3.58,meters,3.58
+197,M,Pole Vault,London,1908,B,Charles JACOBS,USA,3.58,meters,3.58
+198,M,Pole Vault,London,1908,B,Bruno S√É¬ñDERSTR√É¬ñM,SWE,3.58,meters,3.58
+199,M,Pole Vault,London,1908,G,Alfred Carleten GILBERT,USA,3.71,meters,3.71
+200,M,Pole Vault,London,1908,G,Edward COOK,USA,3.71,meters,3.71
+201,M,Pole Vault,Stockholm,1912,B,William HAPPENNY,CAN,3.8,meters,3.8
+202,M,Pole Vault,Stockholm,1912,B,Bertil UGGLA,SWE,3.8,meters,3.8
+203,M,Pole Vault,Stockholm,1912,B,Frank MURPHY,USA,3.8,meters,3.8
+204,M,Pole Vault,Stockholm,1912,S,Frank NELSON,USA,3.85,meters,3.85
+205,M,Pole Vault,Stockholm,1912,S,Marc WRIGHT,USA,3.85,meters,3.85
+209,M,Pole Vault,Stockholm,1912,G,Harry Stoddard BABCOCK,USA,3.95,meters,3.95
+206,M,Pole Vault,Paris,1924,B,James BROOKER,USA,3.9,meters,3.9
+207,M,Pole Vault,Paris,1924,G,Lee BARNES,USA,3.95,meters,3.95
+208,M,Pole Vault,Paris,1924,S,Glenn GRAHAM,USA,3.95,meters,3.95
+210,M,Pole Vault,Los Angeles,1932,B,George JEFFERSON,USA,4.2,meters,4.2
+211,M,Pole Vault,Los Angeles,1932,S,Shuhei NISHIDA,JPN,4.3,meters,4.3
+212,M,Pole Vault,Los Angeles,1932,G,William Waring MILLER,USA,4.315,meters,4.315
+213,M,Pole Vault,Helsinki,1952,B,Ragnar Torsten LUNDBERG,SWE,4.4,meters,4.4
+214,M,Pole Vault,Helsinki,1952,S,Don LAZ,USA,4.5,meters,4.5
+216,M,Pole Vault,Helsinki,1952,G,Bob RICHARDS,USA,4.55,meters,4.55
+215,M,Pole Vault,Rome,1960,B,Eeles LANDSTR√É¬ñM,FIN,4.55,meters,4.55
+217,M,Pole Vault,Rome,1960,S,Ronald MORRIS,USA,4.6,meters,4.6
+218,M,Pole Vault,Rome,1960,G,Don BRAGG,USA,4.7,meters,4.7
+219,M,Pole Vault,Tokyo,1964,B,Klaus LEHNERTZ,EUA,5,meters,5
+220,M,Pole Vault,Tokyo,1964,S,Wolfgang REINHARDT,EUA,5.05,meters,5.05
+221,M,Pole Vault,Tokyo,1964,G,Fred HANSEN,USA,5.1,meters,5.1
+222,M,Pole Vault,Moscow,1980,S,Tadeusz SLUSARSKI,POL,5.65,meters,5.65
+223,M,Pole Vault,Moscow,1980,S,Konstantin VOLKOV,URS,5.65,meters,5.65
+225,M,Pole Vault,Moscow,1980,G,Wladyslaw KOZAKIEWICZ,POL,5.78,meters,5.78
+224,M,Pole Vault,Barcelona,1992,B,Javier GARC√É¬çA,ESP,5.75,meters,5.75
+226,M,Pole Vault,Barcelona,1992,G,Maksim TARASOV,EUN,5.8,meters,5.8
+227,M,Pole Vault,Barcelona,1992,S,Igor TRANDENKOV,EUN,5.8,meters,5.8
+237,M,Pole Vault,Atlanta,1996,G,Jean GALFIONE,FRA,5.92,meters,5.92
+238,M,Pole Vault,Atlanta,1996,S,Igor TRANDENKOV,RUS,5.92,meters,5.92
+239,M,Pole Vault,Atlanta,1996,B,Andrei TIVONTCHIK,GER,5.92,meters,5.92
+171,W,Pole Vault,Sydney,2000,B,Vala FLOSAD√É¬ìTTIR,ISL,4.5,meters,4.5
+172,W,Pole Vault,Sydney,2000,S,Tatiana GRIGORIEVA,AUS,4.55,meters,4.55
+173,W,Pole Vault,Sydney,2000,G,Stacy DRAGILA,USA,4.6,meters,4.6
+231,M,Pole Vault,Sydney,2000,G,Nick HYSONG,USA,5.9,meters,5.9
+232,M,Pole Vault,Sydney,2000,S,Lawrence JOHNSON,USA,5.9,meters,5.9
+233,M,Pole Vault,Sydney,2000,B,Maksim TARASOV,RUS,5.9,meters,5.9
+175,W,Pole Vault,Athens,2004,B,Anna ROGOWSKA,POL,4.7,meters,4.7
+179,W,Pole Vault,Athens,2004,S,Svetlana FEOFANOVA,RUS,4.75,meters,4.75
+184,W,Pole Vault,Athens,2004,G,Yelena ISINBAEVA,RUS,4.91,meters,4.91
+230,M,Pole Vault,Athens,2004,B,Giuseppe GIBILISCO,ITA,5.85,meters,5.85
+234,M,Pole Vault,Athens,2004,S,Toby STEVENSON,USA,5.9,meters,5.9
+240,M,Pole Vault,Athens,2004,G,Timothy MACK,USA,5.95,meters,5.95
+176,W,Pole Vault,Beijing,2008,B,Svetlana FEOFANOVA,RUS,4.75,meters,4.75
+181,W,Pole Vault,Beijing,2008,S,Jennifer SUHR,USA,4.8,meters,4.8
+185,W,Pole Vault,Beijing,2008,G,Yelena ISINBAEVA,RUS,5.05,meters,5.05
+229,M,Pole Vault,Beijing,2008,S,Evgeniy LUKYANENKO,RUS,5.85,meters,5.85
+241,M,Pole Vault,Beijing,2008,G,Steve HOOKER,AUS,5.96,meters,5.96
+174,W,Pole Vault,London,2012,B,Yelena ISINBAEVA,RUS,4.7,meters,4.7
+177,W,Pole Vault,London,2012,G,Jennifer SUHR,USA,4.75,meters,4.75
+178,W,Pole Vault,London,2012,S,Yarisley SILVA,CUB,4.75,meters,4.75
+235,M,Pole Vault,London,2012,S,Bjorn OTTO,GER,5.91,meters,5.91
+236,M,Pole Vault,London,2012,B,Raphael HOLZDEPPE,GER,5.91,meters,5.91
+242,M,Pole Vault,London,2012,G,Renaud LAVILLENIE,FRA,5.97,meters,5.97
+180,W,Pole Vault,Rio,2016,B,Eliza MCCARTNEY,NZL,4.8,meters,4.8
+182,W,Pole Vault,Rio,2016,G,Ekaterini STEFANIDI,GRE,4.85,meters,4.85
+183,W,Pole Vault,Rio,2016,S,Sandi MORRIS,USA,4.85,meters,4.85
+228,M,Pole Vault,Rio,2016,B,Sam KENDRICKS,USA,5.85,meters,5.85
+243,M,Pole Vault,Rio,2016,S,Renaud LAVILLENIE,FRA,5.98,meters,5.98
+244,M,Pole Vault,Rio,2016,G,Thiago Braz DA SILVA,BRA,6.03,meters,6.03
+111,M,Shot Put,Athens,1896,B,Georgios PAPASIDERIS,GRE,10.36,meters,10.36
+112,M,Shot Put,Athens,1896,S,Miltiadis GOUSKOS,GRE,11.2,meters,11.2
+113,M,Shot Put,Athens,1896,G,Robert GARRETT,USA,11.22,meters,11.22
+114,M,Shot Put,Paris,1900,B,Robert GARRETT,USA,12.35,meters,12.35
+115,M,Shot Put,Paris,1900,S,Josiah MCCRACKEN,USA,12.85,meters,12.85
+120,M,Shot Put,Paris,1900,G,Richard SHELDON,USA,14.1,meters,14.1
+117,M,Shot Put,St Louis,1904,B,Lawrence E. Joseph FEUERBACH,USA,13.37,meters,13.37
+122,M,Shot Put,St Louis,1904,S,Wesley COE,USA,14.4,meters,14.4
+124,M,Shot Put,St Louis,1904,G,Ralph ROSE,USA,14.81,meters,14.81
+116,M,Shot Put,London,1908,B,John GARRELLS,USA,13.18,meters,13.18
+118,M,Shot Put,London,1908,S,Denis HORGAN,GBR,13.62,meters,13.62
+121,M,Shot Put,London,1908,G,Ralph ROSE,USA,14.21,meters,14.21
+119,M,Shot Put,Stockholm,1912,B,Lawrence WHITNEY,USA,13.93,meters,13.93
+127,M,Shot Put,Stockholm,1912,S,Ralph ROSE,USA,15.25,meters,15.25
+128,M,Shot Put,Stockholm,1912,G,Patrick MCDONALD,USA,15.34,meters,15.34
+123,M,Shot Put,Paris,1924,B,Ralph HILLS,USA,14.64,meters,14.64
+125,M,Shot Put,Paris,1924,S,Glenn HARTRANFT,USA,14.895,meters,14.895
+126,M,Shot Put,Paris,1924,G,Bud HOUSER,USA,14.995,meters,14.995
+129,M,Shot Put,Los Angeles,1932,B,Franti?ek DOUDA,TCH,15.61,meters,15.61
+131,M,Shot Put,Los Angeles,1932,S,Harlow ROTHERT,USA,15.67,meters,15.67
+132,M,Shot Put,Los Angeles,1932,G,Leo SEXTON,USA,16,meters,16
+130,M,Shot Put,Berlin,1936,B,Gerhard ST√É¬ñCK,GER,15.66,meters,15.66
+133,M,Shot Put,Berlin,1936,S,Sulo B√É¬ÑRLUND,FIN,16.12,meters,16.12
+134,M,Shot Put,Berlin,1936,G,Hans WOELLKE,GER,16.2,meters,16.2
+70,W,Shot Put,Helsinki,1952,B,Klavdiya TOCHENOVA,URS,14.5,meters,14.5
+71,W,Shot Put,Helsinki,1952,S,Marianne WERNER,GER,14.57,meters,14.57
+72,W,Shot Put,Helsinki,1952,G,Galina ZYBINA,URS,15.28,meters,15.28
+135,M,Shot Put,Helsinki,1952,B,James FUCHS,USA,17.06,meters,17.06
+136,M,Shot Put,Helsinki,1952,S,Darrow Clarence HOOPER,USA,17.39,meters,17.39
+137,M,Shot Put,Helsinki,1952,G,Parry O'BRIEN,USA,17.41,meters,17.41
+73,W,Shot Put,Rome,1960,B,Earlene BROWN,USA,16.42,meters,16.42
+74,W,Shot Put,Rome,1960,S,Johanna L√É¬úTTGE,EUA,16.61,meters,16.61
+75,W,Shot Put,Rome,1960,G,Tamara PRESS,URS,17.32,meters,17.32
+138,M,Shot Put,Rome,1960,B,Dallas LONG,USA,19.01,meters,19.01
+139,M,Shot Put,Rome,1960,S,Parry O'BRIEN,USA,19.11,meters,19.11
+141,M,Shot Put,Rome,1960,G,William NIEDER,USA,19.68,meters,19.68
+76,W,Shot Put,Tokyo,1964,B,Galina ZYBINA,URS,17.45,meters,17.45
+77,W,Shot Put,Tokyo,1964,S,Renate GARISCH-CULMBERGER-BOY,EUA,17.61,meters,17.61
+78,W,Shot Put,Tokyo,1964,G,Tamara PRESS,URS,18.14,meters,18.14
+140,M,Shot Put,Tokyo,1964,B,Vilmos VARJU,HUN,19.39,meters,19.39
+142,M,Shot Put,Tokyo,1964,S,Randy MATSON,USA,20.2,meters,20.2
+143,M,Shot Put,Tokyo,1964,G,Dallas LONG,USA,20.33,meters,20.33
+79,W,Shot Put,Mexico,1968,B,Nadezhda CHIZHOVA,URS,18.19,meters,18.19
+80,W,Shot Put,Mexico,1968,S,Marita LANGE,GDR,18.78,meters,18.78
+86,W,Shot Put,Mexico,1968,G,Margitta HELMBOLD-GUMMEL,GDR,19.61,meters,19.61
+83,W,Shot Put,Munich,1972,B,Ivanka KHRISTOVA,BUL,19.35,meters,19.35
+93,W,Shot Put,Munich,1972,S,Margitta HELMBOLD-GUMMEL,GDR,20.22,meters,20.22
+105,W,Shot Put,Munich,1972,G,Nadezhda CHIZHOVA,URS,21.03,meters,21.03
+102,W,Shot Put,Montreal,1976,B,Helena FIBINGEROV√É¬Å,TCH,20.67,meters,20.67
+104,W,Shot Put,Montreal,1976,S,Nadezhda CHIZHOVA,URS,20.96,meters,20.96
+107,W,Shot Put,Montreal,1976,G,Ivanka KHRISTOVA,BUL,21.16,meters,21.16
+108,W,Shot Put,Moscow,1980,B,Margitta DROESE-PUFE,GDR,21.2,meters,21.2
+109,W,Shot Put,Moscow,1980,S,Esfira DOLCHENKO-KRACHEVSKAYA,URS,21.42,meters,21.42
+110,W,Shot Put,Moscow,1980,G,Ilona SCHOKNECHT-SLUPIANEK,GDR,22.41,meters,22.41
+151,M,Shot Put,Moscow,1980,B,Udo BEYER,GDR,21.06,meters,21.06
+153,M,Shot Put,Moscow,1980,S,Aleksandr BARYSHNIKOV,URS,21.08,meters,21.08
+162,M,Shot Put,Moscow,1980,G,Vladimir KISELEV,URS,21.35,meters,21.35
+81,W,Shot Put,Los Angeles,1984,B,Gael MARTIN,AUS,19.19,meters,19.19
+96,W,Shot Put,Los Angeles,1984,S,Mihaela LOGHIN,ROU,20.47,meters,20.47
+97,W,Shot Put,Los Angeles,1984,G,Claudia LOSCH,FRG,20.48,meters,20.48
+149,M,Shot Put,Los Angeles,1984,B,Dave LAUT,USA,20.97,meters,20.97
+155,M,Shot Put,Los Angeles,1984,S,Michael D'Andrea CARTER,USA,21.09,meters,21.09
+160,M,Shot Put,Los Angeles,1984,G,Alessandro ANDREI,ITA,21.26,meters,21.26
+88,W,Shot Put,Barcelona,1992,B,Kathrin NEIMKE,GER,19.78,meters,19.78
+95,W,Shot Put,Barcelona,1992,S,Zhihong HUANG,CHN,20.47,meters,20.47
+106,W,Shot Put,Barcelona,1992,G,Svetlana KRIVELYOVA,EUN,21.06,meters,21.06
+147,M,Shot Put,Barcelona,1992,B,Vyacheslav LYKHO,EUN,20.94,meters,20.94
+148,M,Shot Put,Barcelona,1992,S,Jim DOEHRING,USA,20.96,meters,20.96
+166,M,Shot Put,Barcelona,1992,G,Mike STULCE,USA,21.7,meters,21.7
+82,W,Shot Put,Atlanta,1996,B,Irina KHUDOROZHKINA,RUS,19.35,meters,19.35
+90,W,Shot Put,Atlanta,1996,S,Xinmei SUI,CHN,19.88,meters,19.88
+100,W,Shot Put,Atlanta,1996,G,Astrid KUMBERNUSS,GER,20.56,meters,20.56
+144,M,Shot Put,Atlanta,1996,B,Oleksandr BAGACH,UKR,20.75,meters,20.75
+145,M,Shot Put,Atlanta,1996,S,John GODINA,USA,20.79,meters,20.79
+165,M,Shot Put,Atlanta,1996,G,Randy BARNES,USA,21.62,meters,21.62
+87,W,Shot Put,Sydney,2000,B,Astrid KUMBERNUSS,GER,19.62,meters,19.62
+91,W,Shot Put,Sydney,2000,S,Larisa PELESHENKO,RUS,19.92,meters,19.92
+99,W,Shot Put,Sydney,2000,G,Yanina KAROLCHIK,BLR,20.56,meters,20.56
+157,M,Shot Put,Sydney,2000,B,John GODINA,USA,21.2,meters,21.2
+158,M,Shot Put,Sydney,2000,S,Adam NELSON,USA,21.21,meters,21.21
+161,M,Shot Put,Sydney,2000,G,Arsi HARJU,FIN,21.29,meters,21.29
+84,W,Shot Put,Athens,2004,S,Nadine KLEINERT-SCHMITT,GER,19.55,meters,19.55
+85,W,Shot Put,Athens,2004,G,Yumileidi CUMBA,CUB,19.59,meters,19.59
+146,M,Shot Put,Athens,2004,B,Manuel MARTINEZ,ESP,20.84,meters,20.84
+152,M,Shot Put,Athens,2004,S,Joachim Broechner OLSEN,DEN,21.07,meters,21.07
+156,M,Shot Put,Athens,2004,G,Adam NELSON,USA,21.16,meters,21.16
+98,W,Shot Put,Beijing,2008,G,Valerie ADAMS,NZL,20.56,meters,20.56
+150,M,Shot Put,Beijing,2008,B,Dylan ARMSTRONG,CAN,21.04,meters,21.04
+154,M,Shot Put,Beijing,2008,S,Christian CANTWELL,USA,21.09,meters,21.09
+164,M,Shot Put,Beijing,2008,G,Tomasz MAJEWSKI,POL,21.51,meters,21.51
+92,W,Shot Put,London,2012,B,Lijiao GONG,CHN,20.22,meters,20.22
+103,W,Shot Put,London,2012,G,Valerie ADAMS,NZL,20.7,meters,20.7
+159,M,Shot Put,London,2012,B,Reese HOFFA,USA,21.23,meters,21.23
+168,M,Shot Put,London,2012,S,David STORL,GER,21.86,meters,21.86
+169,M,Shot Put,London,2012,G,Tomasz MAJEWSKI,POL,21.89,meters,21.89
+89,W,Shot Put,Rio,2016,B,Anita MARTON,HUN,19.87,meters,19.87
+94,W,Shot Put,Rio,2016,S,Valerie ADAMS,NZL,20.42,meters,20.42
+101,W,Shot Put,Rio,2016,G,Michelle CARTER,USA,20.63,meters,20.63
+163,M,Shot Put,Rio,2016,B,Tomas WALSH,NZL,21.36,meters,21.36
+167,M,Shot Put,Rio,2016,S,Joe KOVACS,USA,21.78,meters,21.78
+170,M,Shot Put,Rio,2016,G,Ryan CROUSER,USA,22.52,meters,22.52
+16,M,Triple Jump,Athens,1896,B,Ioannis PERSAKIS,GRE,12.52,meters,12.52
+17,M,Triple Jump,Athens,1896,S,Alexandre TUFFERI,FRA,12.7,meters,12.7
+20,M,Triple Jump,Athens,1896,G,James CONNOLLY,USA,13.71,meters,13.71
+19,M,Triple Jump,Paris,1900,B,Lewis SHELDON,USA,13.64,meters,13.64
+22,M,Triple Jump,Paris,1900,S,James CONNOLLY,USA,13.97,meters,13.97
+26,M,Triple Jump,Paris,1900,G,Meyer PRINSTEIN,USA,14.47,meters,14.47
+18,M,Triple Jump,St Louis,1904,B,Robert STANGLAND,USA,13.36,meters,13.36
+21,M,Triple Jump,St Louis,1904,S,Fred ENGELHARDT,USA,13.9,meters,13.9
+24,M,Triple Jump,St Louis,1904,G,Meyer PRINSTEIN,USA,14.35,meters,14.35
+25,M,Triple Jump,London,1908,B,Edvard LARSEN,NOR,14.39,meters,14.39
+28,M,Triple Jump,London,1908,S,Garfield MACDONALD,CAN,14.76,meters,14.76
+30,M,Triple Jump,London,1908,G,Tim AHEARNE,GBR,14.92,meters,14.92
+23,M,Triple Jump,Stockholm,1912,B,Erik ALML√É¬ñF,SWE,14.17,meters,14.17
+27,M,Triple Jump,Stockholm,1912,S,Georg ABERG,SWE,14.51,meters,14.51
+29,M,Triple Jump,Stockholm,1912,G,Gustav LINDBLOM,SWE,14.76,meters,14.76
+33,M,Triple Jump,Paris,1924,B,Ville TUULOS,FIN,15.37,meters,15.37
+34,M,Triple Jump,Paris,1924,S,Luis BRUNETTO,ARG,15.425,meters,15.425
+36,M,Triple Jump,Paris,1924,G,Nick WINTER,AUS,15.525,meters,15.525
+31,M,Triple Jump,Los Angeles,1932,B,Kenkichi OSHIMA,JPN,15.12,meters,15.12
+32,M,Triple Jump,Los Angeles,1932,S,Eric SVENSSON,SWE,15.32,meters,15.32
+37,M,Triple Jump,Los Angeles,1932,G,Chuhei NAMBU,JPN,15.72,meters,15.72
+35,M,Triple Jump,Helsinki,1952,B,Arnoldo DEVONISH,VEN,15.52,meters,15.52
+38,M,Triple Jump,Helsinki,1952,S,Leonid SHCHERBAKOV,URS,15.98,meters,15.98
+39,M,Triple Jump,Helsinki,1952,G,Adhemar DA SILVA,BRA,16.22,meters,16.22
+40,M,Triple Jump,Rome,1960,B,Vitold KREYER,URS,16.43,meters,16.43
+43,M,Triple Jump,Rome,1960,S,Vladimir GORYAYEV,URS,16.63,meters,16.63
+44,M,Triple Jump,Rome,1960,G,Jozef SCHMIDT,POL,16.81,meters,16.81
+41,M,Triple Jump,Tokyo,1964,B,Viktor KRAVCHENKO,URS,16.57,meters,16.57
+42,M,Triple Jump,Tokyo,1964,S,Oleg Georgiyevich FEDOSEYEV,URS,16.58,meters,16.58
+45,M,Triple Jump,Tokyo,1964,G,Jozef SCHMIDT,POL,16.85,meters,16.85
+46,M,Triple Jump,Moscow,1980,B,Jo√É¬£o Carlos DE OLIVEIRA,BRA,17.22,meters,17.22
+47,M,Triple Jump,Moscow,1980,S,Viktor SANEYEV,URS,17.24,meters,17.24
+48,M,Triple Jump,Moscow,1980,G,Jaak UUDM√É¬ÑE,URS,17.35,meters,17.35
+49,M,Triple Jump,Barcelona,1992,B,Frank RUTHERFORD,BAH,17.36,meters,17.36
+58,M,Triple Jump,Barcelona,1992,S,Charles SIMPKINS,USA,17.6,meters,17.6
+69,M,Triple Jump,Barcelona,1992,G,Mike CONLEY,USA,18.17,meters,18.17
+6,W,Triple Jump,Atlanta,1996,S,Inna LASOVSKAYA,RUS,14.98,meters,14.98
+7,W,Triple Jump,Atlanta,1996,B,Sarka KASPARKOVA,CZE,14.98,meters,14.98
+14,W,Triple Jump,Atlanta,1996,G,Inessa KRAVETS,UKR,15.33,meters,15.33
+50,M,Triple Jump,Atlanta,1996,B,Yoelvis QUESADA,CUB,17.44,meters,17.44
+67,M,Triple Jump,Atlanta,1996,S,Jonathan EDWARDS,GBR,17.88,meters,17.88
+68,M,Triple Jump,Atlanta,1996,G,Kenny HARRISON,USA,18.09,meters,18.09
+3,W,Triple Jump,Sydney,2000,B,Olena HOVOROVA,UKR,14.96,meters,14.96
+8,W,Triple Jump,Sydney,2000,S,Tatyana LEBEDEVA,RUS,15,meters,15
+11,W,Triple Jump,Sydney,2000,G,Tereza MARINOVA,BUL,15.2,meters,15.2
+51,M,Triple Jump,Sydney,2000,B,Denis KAPUSTIN,RUS,17.46,meters,17.46
+52,M,Triple Jump,Sydney,2000,S,Yoel GARC√É¬çA,CUB,17.47,meters,17.47
+62,M,Triple Jump,Sydney,2000,G,Jonathan EDWARDS,GBR,17.71,meters,17.71
+9,W,Triple Jump,Athens,2004,B,Tatyana LEBEDEVA,RUS,15.14,meters,15.14
+12,W,Triple Jump,Athens,2004,S,Hrysopiyi DEVETZI,GRE,15.25,meters,15.25
+13,W,Triple Jump,Athens,2004,G,Francoise MBANGO ETONE,CMR,15.3,meters,15.3
+54,M,Triple Jump,Athens,2004,B,Daniil Sergeyevich BURKENYA,RUS,17.48,meters,17.48
+55,M,Triple Jump,Athens,2004,S,Marian OPREA,ROU,17.55,meters,17.55
+64,M,Triple Jump,Athens,2004,G,Christian OLSSON,SWE,17.79,meters,17.79
+15,W,Triple Jump,Beijing,2008,G,Francoise MBANGO ETONE,CMR,15.39,meters,15.39
+57,M,Triple Jump,Beijing,2008,B,Leevan SANDS,BAH,17.59,meters,17.59
+59,M,Triple Jump,Beijing,2008,S,Phillips IDOWU,GBR,17.62,meters,17.62
+61,M,Triple Jump,Beijing,2008,G,Nelson EVORA,POR,17.67,meters,17.67
+1,W,Triple Jump,London,2012,B,Olga SALADUKHA,UKR,14.79,meters,14.79
+2,W,Triple Jump,London,2012,S,Caterine IBARGUEN,COL,14.8,meters,14.8
+5,W,Triple Jump,London,2012,G,Olga RYPAKOVA,KAZ,14.98,meters,14.98
+53,M,Triple Jump,London,2012,B,Fabrizio DONATO,ITA,17.48,meters,17.48
+60,M,Triple Jump,London,2012,S,Will CLAYE,USA,17.62,meters,17.62
+65,M,Triple Jump,London,2012,G,Christian TAYLOR,USA,17.81,meters,17.81
+0,W,Triple Jump,Rio,2016,B,Olga RYPAKOVA,KAZ,14.74,meters,14.74
+4,W,Triple Jump,Rio,2016,S,Yulimar ROJAS,VEN,14.98,meters,14.98
+10,W,Triple Jump,Rio,2016,G,Caterine IBARGUEN,COL,15.17,meters,15.17
+56,M,Triple Jump,Rio,2016,B,Bin DONG,CHN,17.58,meters,17.58
+63,M,Triple Jump,Rio,2016,S,Will CLAYE,USA,17.76,meters,17.76
+66,M,Triple Jump,Rio,2016,G,Christian TAYLOR,USA,17.86,meters,17.86

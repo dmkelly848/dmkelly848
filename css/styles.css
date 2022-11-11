@@ -1,0 +1,32 @@
+.tooltip {
+    position: absolute;
+    text-align: center;
+    font: 12px sans-serif;
+    /*  pointer-events: none;	This line needs to be removed */
+}
+.tooltip h3,h4 {
+    text-align: left;
+}
+.tooltip h4 {
+    font: 14px sans-serif;
+}
+
+.connection {
+    stroke: black;
+    stroke-dasharray: 5;
+    stroke-width: 3px;
+    opacity: 0.7;
+}
+
+.name-label{
+    font-size: small;
+    text-anchor: end;
+}
+
+.xlab{
+    text-anchor: start;
+}
+
+.legend{
+    font-size: small;
+}
