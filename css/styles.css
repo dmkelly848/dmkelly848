@@ -173,3 +173,7 @@ h2{
 .legend{
     font-size: small;
 }
+
+#hurdleVis{
+    height: 40vh;
+}
