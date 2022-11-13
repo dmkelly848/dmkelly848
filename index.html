@@ -2,19 +2,134 @@
 <html>
 <head>
     <meta charset="utf-8">
-    <title>CS171 Final Project</title>
+    <title>CS 171 Final Project</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/noUiSlider/15.4.0/nouislider.css" integrity="sha512-DGB74Gyw93qON+V0QxSRs1er6sqoPyFoy23HBL5LN7MRJBcjeCU22zega+vOEGE0XQLoVrv4ExcaesSTwZQA2w==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
     <link rel="stylesheet" href="css/styles.css">
+
+    <!-- Custom font from Google fonts to resemble Olympics website-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
 
 </head>
 <body>
 
 <!-- WRAPPER -->
+
+<div class="row headDesign">
+    <div class="col blueBlock"></div>
+    <div class="col yellowBlock"></div>
+    <div class="col blackBlock"></div>
+    <div class="col greenBlock"></div>
+    <div class="col redBlock"></div>
+</div>
+
 <div class="container-fluid">
     <!-- HEADING -->
     <div class="row">
-        <h1 style="text-align: center">CS171 Final Project</h1>
+        <h1>Olympics Track and Field through History</h1>
+        <img id = "header_image" src = "img/rings.png">
+    </div>
+
+    <div class="container-fluid">
+        <div class="row phase1">
+            <div class="col-7 olympicBodyText phase1Left">
+                <h2 class = "olympicHeadText">Usain Bolt has...</h2>
+                <div class = "col-6 blueBlock underline"></div>
+                <div class="container" style = "padding-top: 20px">
+                    <div class="row">
+                        <div class="col-4"></div>
+                        <div class="col-8 hookText">
+                            TO-DO: Insert Usain Bolt stats/fun facts in bullet form
+                        </div>
+                    </div>
+                    <div class = "row blueText center">
+                        TO-DO: Click on track and field events to learn more!
+                    </div>
+
+                </div>
+            </div>
+            <div class="col-5 olympicBodyText">
+               TO-DO: Visualization where you click to learn about different events
+            </div>
+        </div>
+    </div>
+
+    <div class="row headDesign">
+        <div class="col blueBlock"></div>
+        <div class="col yellowBlock"></div>
+        <div class="col blackBlock"></div>
+        <div class="col greenBlock"></div>
+        <div class="col redBlock"></div>
+    </div>
+
+    <!--Part 2-->
+    <div class="container-fluid">
+        <div class="row phase2">
+            <h2 class = "olympicHeadText phaseHeader">Countries and their Medals</h2>
+                <div class = "col-4"></div>
+                <div class = "col-4 headDesign yellowBlock underline"></div>
+                <div class = "col-4"></div>
+            <div class = "row center olympicBodyText">
+                <div class  = "col dashcontain">
+                    <div id = "dashvis" ></div>
+                    TO-DO: INSERT DASHBOARD VISUALIZATION
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+
+    <div class="row headDesign">
+        <div class="col blueBlock"></div>
+        <div class="col yellowBlock"></div>
+        <div class="col blackBlock"></div>
+        <div class="col greenBlock"></div>
+        <div class="col redBlock"></div>
+    </div>
+
+    <!--Part 3-->
+
+    <div class="container-fluid">
+        <div class="row phase3">
+            <div class = "row phase31">
+                <div class="col-6 olympicBodyText">
+                    <h2 class = "olympicHeadText">Trends: Athletes are Running Faster</h2>
+                    <div class = "col-12 greenBlock underline"></div>
+                    <div class="container" style = "padding-top: 20px">
+                        <div class="row">
+                            <div class="col-1"></div>
+                            <div class="col-11 hookText">
+                                TO-DO: Insert key takeaways from moving flags visualization
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 olympicBodyText greenText phase31R">
+                    <div id = "runningVis"></div>
+                    TO-DO: Visualization with moving flags
+                </div>
+            </div>
+
+            <!-- second phase 3 visual-->
+            <div class = "row phase31" style = "padding-top: 20px">
+                <div class="col-6 olympicBodyText greenText phase31R">
+                    <div id = "hurdleVis"></div>
+                    TO-DO: Moving hurdle visualization
+                </div>
+                <div class="col-6 olympicBodyText phase32R">
+                    <h2 class = "olympicHeadText">... and are Jumping Higher</h2>
+                    <div class = "col-12 greenBlock underline"></div>
+                    TO-DO: Insert key takeaways from hurdle visualization
+                </div>
+            </div>
+        </div>
     </div>
 
     <!-- CONTENT -->
