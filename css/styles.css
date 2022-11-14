@@ -249,3 +249,7 @@ h2{
     font-size: small;
 
 }
+
+.year-label, .player-label{
+    font-size: 12px
+}
