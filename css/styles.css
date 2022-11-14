@@ -267,3 +267,7 @@ h2{
 .year-label, .player-label, .time-label{
     font-size: 12px
 }
+
+.running-bar{
+    fill: indianred;
+}

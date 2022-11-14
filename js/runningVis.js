@@ -60,7 +60,8 @@ class RunningVis {
     wrangleData() {
         let vis = this;
 
-        vis.selectedgender = d3.select("#100m-gender").property("value")
+        vis.selectedgender = d3.select("#running-gender").property("value")
+        console.log(vis.selectedgender)
 
         vis.displayData = vis.resultsData.filter((d) => {
             return (d.Event === '100M' && d.Medal === 'G' && d.Gender === vis.selectedgender);
@@ -90,10 +91,11 @@ class RunningVis {
         bars.exit().remove()
 
         bars.enter().append("rect")
-            .attr("class", "bar")
+            .attr("class", "running-bar")
             .merge(bars)
             .attr("x", 35)
             .attr("y", d => vis.y(d[""]))
+            .attr("width", 0)
             .attr("height", vis.y.bandwidth())
             .transition()
             // https://www.d3indepth.com/transitions/
@@ -101,7 +103,7 @@ class RunningVis {
             .duration(function(d) {
                 return 1000 * d.Clean_Result;
             })
-            .attr("width", d => vis.width - 100)
+            .attr("width", d => vis.width - 135)
             .attr("fill", "blue")
 
         let year_labels = vis.svg.selectAll(".year-label")
@@ -128,8 +130,9 @@ class RunningVis {
             .merge(time_labels)
             .attr("fill", "black")
             .attr("y", d => vis.y(d[""]) + 12)
-            .attr("x", vis.width - 60)
+            .attr("x", vis.width - 95)
             .attr("text-anchor","begin")
+            .text("")
             .transition()
             // https://www.d3indepth.com/transitions/
             .delay(function(d) {
@@ -147,8 +150,9 @@ class RunningVis {
             .merge(player_labels)
             .attr("fill", "black")
             .attr("y", d => vis.y(d[""]) + 12)
-            .attr("x", vis.width - 25)
+            .attr("x", vis.width - 60)
             .attr("text-anchor","begin")
+            .text("")
             .transition()
             // https://www.d3indepth.com/transitions/
             .delay(function(d) {

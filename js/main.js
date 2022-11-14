@@ -27,3 +27,7 @@ function highJumpGenderChange(){
     highJumpVis.updateSlider();
 }
 
+function runningGenderChange(){
+    runningVis.wrangleData()
+}
+
