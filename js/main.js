@@ -9,6 +9,10 @@ let promises = [
     d3.csv('data/clean_results.csv')
 ];
 
+let sprints = []
+let distance = []
+let
+
 d3.csv("data/clean_results.csv", (row) => {
     // convert string to numerical and date data types
     row.Clean_Result = +row.Clean_Result;
