@@ -36,21 +36,40 @@ class HighJumpVis {
 
         // add main bar
         vis.crossBar = vis.svg.append('rect')
-            .attr('height', 3)
+            .attr('height', 5)
             .attr('width', vis.width)
             .attr('x', 0)
-            .style('fill','red');
+            .style('fill','#F43200');
+
+
+        // add mat
+        vis.matFront = vis.svg.append('rect')
+            .attr('height', vis.height/3)
+            .attr('width', vis.width)
+            .attr('x', 0)
+            .attr('y', vis.height*2/3)
+            .style('fill', '#476442')
+
+        vis.matTop = vis.svg.append('rect')
+            .attr('height', vis.height/15)
+            .attr('width', vis.width)
+            .attr('x', 0)
+            .attr('y', vis.height*2/3)
+            .style('fill', '#89c689')
+            .style('stroke', 'black')
+
+
 
         // add "posts" on each side
         vis.leftRect = vis.svg.append('rect')
             .attr('height', vis.height)
-            .attr('width', 5)
+            .attr('width', 7)
             .attr('x', 0)
             .attr('y', 0)
         vis.rightRect = vis.svg.append('rect')
             .attr('height', vis.height)
-            .attr('width', 5)
-            .attr('x', vis.width-5)
+            .attr('width', 7)
+            .attr('x', vis.width-7)
             .attr('y', 0)
 
         // add scale + axis
@@ -99,7 +118,7 @@ class HighJumpVis {
         let vis = this;
 
         // Update y scale domain
-        vis.y.domain([0, d3.max(vis.jumpData, d => d.Clean_Result)]);
+        vis.y.domain([0, d3.max(vis.jumpData, d => d.Clean_Result)+0.5]);
         vis.svg.select(".y-axis").call(vis.yAxis);
 
         // update position of bar
@@ -115,7 +134,7 @@ class HighJumpVis {
     createSlider(){
         let vis = this;
         //slider code
-        vis.slider = document.getElementById("time-period-slider");
+        vis.slider = document.getElementById("slider-round");
         noUiSlider.create(vis.slider, {
             start: [d3.min(vis.jumpData, (d) => +vis.formatDate(d.Year))],// d3.max(vis.jumpData, (d) => +vis.formatDate(d.Year))],
             step: 4,
@@ -128,8 +147,14 @@ class HighJumpVis {
             format: {
                 from: d => d,
                 to: d => d
+            },
+            pips: {
+                mode: 'count',
+                values: 6,
+                density: 6
             }
         });
+        vis.slider.attr("id","slider-round");
 
         // create listener for sliders
         vis.slider.noUiSlider.on('slide', function (values) {

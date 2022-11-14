@@ -175,5 +175,24 @@ h2{
 }
 
 #hurdleVis{
+    margin-left: 5vh;
+    margin-right: 5vh;
     height: 40vh;
+}
+
+#slider-round {
+    height: 1vh;
+    margin-left: 10vh;
+    margin-right: 10vh;
+    margin-top: 5vh;
+    font-size: small;
+    background: grey;
+}
+
+#slider-round .noUi-handle {
+    height: 2vh;
+    width: 2vh;
+    top: -0.5vh;
+    right: -1vh; /* half the width */
+    border-radius: 1vh;
 }
