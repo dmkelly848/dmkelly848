@@ -72,7 +72,7 @@
 }
 
 .phase31R{
-    border: dashed #000000;
+    border: none;
 }
 
 .phase4{
@@ -220,7 +220,7 @@ h2{
     width: 60%;
     margin-top: 5vh;
     font-size: small;
-    background: #179a13;
+    background: darkgray;
     opacity: 0.9;
 }
 
@@ -234,4 +234,9 @@ h2{
 
 .axis{
     color: black;
+}
+
+#high-jump-gender{
+    background: #179a13;
+    font-size: smaller;
 }

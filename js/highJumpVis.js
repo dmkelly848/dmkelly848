@@ -16,7 +16,7 @@ class HighJumpVis {
     initVis() {
         let vis = this;
 
-        vis.margin = {top: 20, right: 20, bottom: 20, left: 20};
+        vis.margin = {top: 20, right: 20, bottom: 0, left: 20};
         vis.yAxisPad = 30;
         vis.xAxisPad = 30;
 
