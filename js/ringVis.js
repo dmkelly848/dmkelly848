@@ -51,7 +51,8 @@ class RingVis {
     wrangleData() {
         let vis = this;
 
-        vis.eventcategory = d3.select("#eventcategory").property("value")
+        vis.event = d3.select("#event").property("value")
+        vis.gender = d3.select("#gender").property("value")
 
         vis.updateVis()
     }
