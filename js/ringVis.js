@@ -2,7 +2,6 @@
 *          RingVis          *
 * * * * * * * * * * * * * */
 
-
 class RingVis {
 
     constructor(parentElement, resultsData) {
