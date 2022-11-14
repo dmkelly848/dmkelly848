@@ -1,8 +1,8 @@
 /* * * * * * * * * * * * * *
-*          RingVis          *
+*          RunningVis          *
 * * * * * * * * * * * * * */
 
-class RingVis {
+class RunningVis {
 
     constructor(parentElement, resultsData) {
         this.parentElement = parentElement;
