@@ -17,7 +17,7 @@ class RunningVis {
         let vis = this;
 
         // margin convention with static height and responsive/variable width
-        vis.margin = {top: 30, right: 100, bottom: 15, left: 100};
+        vis.margin = {top: 75, right: 100, bottom: 15, left: 100};
         vis.width = document.getElementById(vis.parentElement).getBoundingClientRect().width - vis.margin.left - vis.margin.right;
         // TODO: REVISIT HEIGHT WITH RESPONSIVE UNITS
         vis.height = 500 - vis.margin.top - vis.margin.bottom;
@@ -60,8 +60,10 @@ class RunningVis {
     wrangleData() {
         let vis = this;
 
+        vis.selectedgender = d3.select("#100m-gender").property("value")
+
         vis.displayData = vis.resultsData.filter((d) => {
-            return (d.Event === '100M' && d.Medal === 'G' && d.Gender === 'M');
+            return (d.Event === '100M' && d.Medal === 'G' && d.Gender === vis.selectedgender);
         })
 
         vis.displayData.sort((a,b)=> a.Year - b.Year);
@@ -99,7 +101,7 @@ class RunningVis {
             .duration(function(d) {
                 return 1000 * d.Clean_Result;
             })
-            .attr("width", d => vis.width - 200)
+            .attr("width", d => vis.width - 100)
             .attr("fill", "blue")
 
         let year_labels = vis.svg.selectAll(".year-label")
@@ -116,6 +118,25 @@ class RunningVis {
             .attr("text-anchor","begin")
             .text(d => vis.formatDate(d.Year))
 
+        let time_labels = vis.svg.selectAll(".time-label")
+            .data(vis.displayData)
+
+        time_labels.exit().remove()
+
+        time_labels.enter().append("text")
+            .attr("class","time-label")
+            .merge(time_labels)
+            .attr("fill", "black")
+            .attr("y", d => vis.y(d[""]) + 12)
+            .attr("x", vis.width - 60)
+            .attr("text-anchor","begin")
+            .transition()
+            // https://www.d3indepth.com/transitions/
+            .delay(function(d) {
+                return 1000 * d.Clean_Result;
+            })
+            .text(d => d.Clean_Result)
+
         let player_labels = vis.svg.selectAll(".player-label")
             .data(vis.displayData)
 
@@ -126,13 +147,13 @@ class RunningVis {
             .merge(player_labels)
             .attr("fill", "black")
             .attr("y", d => vis.y(d[""]) + 12)
-            .attr("x", vis.width - 165)
+            .attr("x", vis.width - 25)
             .attr("text-anchor","begin")
             .transition()
             // https://www.d3indepth.com/transitions/
             .delay(function(d) {
                 return 1000 * d.Clean_Result;
             })
-            .text(d => d.Clean_Result + " " + d.Name)
+            .text(d => d.Name)
     }
 }

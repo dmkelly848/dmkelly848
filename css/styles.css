@@ -236,7 +236,21 @@ h2{
     color: black;
 }
 
-#high-jump-gender{
+/*#high-jump-gender{*/
+/*    float: right;*/
+/*    margin-right: 8vh;*/
+/*    border-radius: 1vh;*/
+/*    padding-left: 0.5vh;*/
+/*    padding-bottom: 0.5vh;*/
+/*    padding-top: 0.5vh;*/
+/*    padding-right: 1vh;*/
+/*    background: grey;*/
+/*    color: white;*/
+/*    font-size: small;*/
+
+/*}*/
+
+.dropdown{
     float: right;
     margin-right: 8vh;
     border-radius: 1vh;
@@ -250,6 +264,6 @@ h2{
 
 }
 
-.year-label, .player-label{
+.year-label, .player-label, .time-label{
     font-size: 12px
 }
