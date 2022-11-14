@@ -43,13 +43,13 @@ class HighJumpVis {
             .attr('width', vis.width)
             .attr('x', 0)
             .style('fill','#F44200')
-            .style('stroke', '#555555');
+            .style('stroke', '#444444');
         // add tooltip
         vis.labelGroup = vis.crossBarGroup.append('g')
             .attr('class', 'jump-tooltip')
             .append('text')
             .attr('transform', `translate(${vis.width / 2}, ${-1*vis.height/20})`)
-            .style("font-size", 'smaller')
+            .style("font-size", 'medium')
             .attr('text-anchor', 'middle');
 
         // add mat
@@ -64,7 +64,7 @@ class HighJumpVis {
             .attr('width', vis.width)
             .attr('x', 0)
             .attr('y', vis.height*2/3)
-            .style('fill', '#999999')//69a669')
+            .style('fill', '#888888')//69a669')
             .style('stroke', 'black')
         vis.img = vis.svg.append('svg:image')
             .attr("xlink:href", function() {return "img/rings_white.png"})
@@ -79,23 +79,23 @@ class HighJumpVis {
             .attr('width', 7)
             .attr('x', 0)
             .attr('y', 0)
-            .style('fill', '#555555')
+            .style('fill', '#444444')
         vis.rightRect = vis.svg.append('rect')
             .attr('height', vis.height)
             .attr('width', 7)
             .attr('x', vis.width-7)
             .attr('y', 0)
-            .style('fill', '#555555')
+            .style('fill', '#444444')
         vis.triangleGroup = vis.svg.append('g')
             .attr("class", "triangle-group")
         vis.leftTriangle = vis.crossBarGroup.append('path')
             .attr("class", "left-triangle")
             .attr("d", 'M 0 -15 l 0 20 l 20 0 z')
-            .style('fill', '#555555')
+            .style('fill', '#444444')
         vis.rightTriangle = vis.crossBarGroup.append('path')
             .attr("class", "right-triangle")
             .attr("d", `M ${vis.width} -15 l 0 20 l -20 0 z`)
-            .style('fill', '#555555')
+            .style('fill', '#444444')
 
         // add scale + axis
         vis.y = d3.scaleLinear()
@@ -147,7 +147,7 @@ class HighJumpVis {
         vis.svg.select(".y-axis").call(vis.yAxis);
 
         // update text
-        vis.labelGroup.text(vis.displayData[0].Name + ": "+ " " + vis.displayData[0].Clean_Result+"m")
+        vis.labelGroup.text(vis.displayData[0].Name + " — " + vis.displayData[0].Clean_Result+"m")
 
         // update position of bar
         vis.crossBarGroup

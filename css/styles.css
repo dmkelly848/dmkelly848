@@ -218,10 +218,11 @@ h2{
     height: 1vh;
     margin: auto;
     width: 60%;
-    margin-top: 1vh;
+    margin-top: 3vh;
+    margin-bottom: 4vh;
     font-size: small;
-    background: darkgray;
-    opacity: 0.9;
+    background: grey;
+    border: grey;
 }
 
 #slider-round .noUi-handle {
@@ -235,20 +236,6 @@ h2{
 .axis{
     color: black;
 }
-
-/*#high-jump-gender{*/
-/*    float: right;*/
-/*    margin-right: 8vh;*/
-/*    border-radius: 1vh;*/
-/*    padding-left: 0.5vh;*/
-/*    padding-bottom: 0.5vh;*/
-/*    padding-top: 0.5vh;*/
-/*    padding-right: 1vh;*/
-/*    background: grey;*/
-/*    color: white;*/
-/*    font-size: small;*/
-
-/*}*/
 
 .dropdown{
     float: right;
@@ -280,5 +267,4 @@ h2{
     font-size: medium;
     margin-top: 3vh;
     margin-left:5vh;
-    margin-bottom:5vh;
 }
