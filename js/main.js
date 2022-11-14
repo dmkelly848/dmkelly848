@@ -23,7 +23,7 @@ d3.csv("data/clean_results.csv", (row) => {
 })
 
 function highJumpGenderChange(){
-    d3.select()
-    highJumpVis.initVis();
+    highJumpVis.wrangleData();
+    highJumpVis.updateSlider();
 }
 

@@ -21,12 +21,16 @@ class HighJumpVis {
         vis.yAxisPad = 30;
         vis.xAxisPad = 30;
         vis.unchanged = true;
-
+        if(document.getElementById('high-jump-gender').value === 'M'){
+            vis.chosenYear = 1896
+        }
+        else{
+            vis.chosenYear = 1932
+        }
 
         vis.width = document.getElementById(vis.parentElement).getBoundingClientRect().width - vis.margin.left - vis.margin.right;
         vis.height = document.getElementById(vis.parentElement).getBoundingClientRect().height - vis.margin.top - vis.margin.bottom;
-        // clear area
-        d3.select("#" + vis.parentElement).select('svg').remove()
+
 
         // init drawing area
         vis.draw = d3.select("#" + vis.parentElement).append("svg")
@@ -53,8 +57,6 @@ class HighJumpVis {
             .attr('transform', `translate(${vis.width / 2}, ${-1*vis.height/20})`)
             .style("font-size", 'smaller')
             .attr('text-anchor', 'middle');
-
-
 
         // add mat
         vis.matFront = vis.svg.append('rect')
@@ -132,13 +134,9 @@ class HighJumpVis {
         });
         vis.jumpData.sort((a,b) => {return a.Year - b.Year})
 
-        vis.baseYear = d3.min(vis.jumpData, d=>d.Year)
-        if(vis.unchanged) {
-            vis.chosenYear = vis.baseYear;
-        }
         // get datum from selected year
         vis.displayData = vis.jumpData.filter(function (d){
-            return (+vis.formatDate(d.Year) === +vis.formatDate(vis.chosenYear))
+            return (+vis.formatDate(d.Year) === vis.chosenYear)
         });
 
         vis.updateVis()
@@ -191,9 +189,18 @@ class HighJumpVis {
 
         // create listener for sliders
         vis.slider.noUiSlider.on('slide', function (values) {
-            vis.unchanged = false;
-            vis.chosenYear = vis.parseDate(values[0]);
+            vis.chosenYear = values[0];
             vis.wrangleData();
+        });
+    }
+
+    updateSlider(){
+        console.log('slide')
+        vis.slider.noUiSlider.updateOptions({
+            range: {
+                'min': d3.min(vis.jumpData, (d) => +vis.formatDate(d.Year)),
+                'max': d3.max(vis.jumpData, (d) => +vis.formatDate(d.Year))
+            }
         });
     }
 }
