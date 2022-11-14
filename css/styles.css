@@ -277,7 +277,8 @@ h2{
 }
 
 #slider-caption{
-    font-size: small;
+    font-size: medium;
     margin-top: 3vh;
     margin-left:5vh;
+    margin-bottom:5vh;
 }
