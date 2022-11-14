@@ -22,4 +22,8 @@ d3.csv("data/clean_results.csv", (row) => {
     runningVis = new RunningVis('runningVis', data)
 })
 
+function highJumpGenderChange(){
+    d3.select()
+    highJumpVis.initVis();
+}
 

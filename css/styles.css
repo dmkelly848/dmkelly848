@@ -237,8 +237,14 @@ h2{
 }
 
 #high-jump-gender{
-    margin: auto;
-    background: red;
+    float: right;
+    margin-right: 8vh;
+    border-radius: 1vh;
+    padding-left: 0.5vh;
+    padding-bottom: 0.5vh;
+    padding-top: 0.5vh;
+    padding-right: 1vh;
+    background: grey;
     color: white;
     font-size: small;
 
