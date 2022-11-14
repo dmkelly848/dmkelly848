@@ -19,6 +19,7 @@ d3.csv("data/clean_results.csv", (row) => {
     return row;
 }).then( (data) => {
     highJumpVis = new HighJumpVis('hurdleVis', data)
+    ringVis = new RingVis('ringVis', data)
 })
 
 
