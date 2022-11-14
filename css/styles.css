@@ -237,6 +237,9 @@ h2{
 }
 
 #high-jump-gender{
-    background: #179a13;
-    font-size: smaller;
+    margin: auto;
+    background: red;
+    color: white;
+    font-size: small;
+
 }
