@@ -17,16 +17,10 @@ class HighJumpVis {
     initVis() {
         let vis = this;
 
-        vis.margin = {top: 20, right: 20, bottom: 0, left: 20};
-        vis.yAxisPad = 30;
+        vis.margin = {top: 20, right: 20, bottom: 40, left: 20};
+        vis.yAxisPad = 50;
         vis.xAxisPad = 30;
         vis.unchanged = true;
-        if(document.getElementById('high-jump-gender').value === 'M'){
-            vis.chosenYear = 1896
-        }
-        else{
-            vis.chosenYear = 1932
-        }
 
         vis.width = document.getElementById(vis.parentElement).getBoundingClientRect().width - vis.margin.left - vis.margin.right;
         vis.height = document.getElementById(vis.parentElement).getBoundingClientRect().height - vis.margin.top - vis.margin.bottom;
@@ -109,12 +103,19 @@ class HighJumpVis {
         vis.yAxis = d3.axisLeft()
             .scale(vis.y)
         vis.svg.append("g")
-            .attr("class", "y-axis axis")
-            .attr("transform", `translate(0, 0)`);
-
+            .attr("class", "y-axis axis");
+        vis.ylabel = vis.svg.append("text")
+            .attr("class", "y-label")
+            .attr("text-anchor", "middle")
+            .attr("x", -1*vis.height/2)
+            .attr("y", -30)
+            .attr("transform", "rotate(-90)")
+            .style('font-size', 'x-small')
+            .text("Height (meters)");
 
         vis.wrangleData()
         vis.createSlider()
+
     }
 
 
@@ -122,26 +123,20 @@ class HighJumpVis {
     wrangleData() {
         let vis = this;
 
-        vis.jumpData = [];
-        // get only high jump results
-        vis.resultsData.forEach((element) => {
-            if(element.Event === 'High Jump'){
-                vis.jumpData.push(element);
-            }})
-        // filter and sort data
-        vis.jumpData = vis.jumpData.filter(function (d){
-            return (d.Medal === 'G') && (d.Gender === document.getElementById('high-jump-gender').value)
-        });
-        vis.jumpData.sort((a,b) => {return a.Year - b.Year})
+        vis.jumpData = vis.filtData();
+
+        vis.baseYear = d3.min(vis.jumpData, d=>d.Year)
+        console.log(vis.unchanged)
+        if(vis.unchanged){
+            vis.chosenYear = vis.baseYear;
+        }
 
         // get datum from selected year
         vis.displayData = vis.jumpData.filter(function (d){
-            return (+vis.formatDate(d.Year) === vis.chosenYear)
+            return (+vis.formatDate(d.Year) === +vis.formatDate(vis.chosenYear))
         });
-
         vis.updateVis()
     }
-
 
 
     updateVis() {
@@ -166,14 +161,16 @@ class HighJumpVis {
     createSlider(){
         let vis = this;
         //slider code
+        vis.slidData = vis.filtData();
+
         vis.slider = document.getElementById("slider-round");
         noUiSlider.create(vis.slider, {
-            start: [d3.min(vis.jumpData, (d) => +vis.formatDate(d.Year))],
+            start: [d3.min(vis.slidData, (d) => +vis.formatDate(d.Year))],
             step: 4,
             margin: 4,
             range: {
-                'min': d3.min(vis.jumpData, (d) => +vis.formatDate(d.Year)),
-                'max': d3.max(vis.jumpData, (d) => +vis.formatDate(d.Year))
+                'min': d3.min(vis.slidData, (d) => +vis.formatDate(d.Year)),
+                'max': d3.max(vis.slidData, (d) => +vis.formatDate(d.Year))
             },
             tooltips: [true],
             format: {
@@ -189,19 +186,38 @@ class HighJumpVis {
 
         // create listener for sliders
         vis.slider.noUiSlider.on('slide', function (values) {
-            vis.chosenYear = values[0];
+            vis.chosenYear = vis.parseDate(values[0]);
+            vis.unchanged = false;
             vis.wrangleData();
         });
     }
 
     updateSlider(){
+        let vis = this;
         console.log('slide')
-        vis.slider.noUiSlider.updateOptions({
-            range: {
-                'min': d3.min(vis.jumpData, (d) => +vis.formatDate(d.Year)),
-                'max': d3.max(vis.jumpData, (d) => +vis.formatDate(d.Year))
-            }
+        vis.unchanged = true;
+        vis.slider.noUiSlider.destroy()
+        vis.createSlider();
+    }
+
+    filtData(){
+        let vis = this;
+        let data = [];
+        let selectedGender = document.getElementById('high-jump-gender').value;
+        let selectedEvent = document.getElementById('pole-vault-select').value;
+
+        // get only high jump results
+        vis.resultsData.forEach((element) => {
+            if(element.Event === selectedEvent){
+                data.push(element);
+            }})
+        // filter and sort data
+        data = data.filter(function (d){
+            return (d.Medal === 'G') && (d.Gender === selectedGender)
         });
+        data.sort((a,b) => {return a.Year - b.Year})
+
+        return data;
     }
 }
 

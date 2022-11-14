@@ -218,7 +218,7 @@ h2{
     height: 1vh;
     margin: auto;
     width: 60%;
-    margin-top: 5vh;
+    margin-top: 1vh;
     font-size: small;
     background: darkgray;
     opacity: 0.9;
@@ -252,7 +252,7 @@ h2{
 
 .dropdown{
     float: right;
-    margin-right: 8vh;
+    margin-right: 6vh;
     border-radius: 1vh;
     padding-left: 0.5vh;
     padding-bottom: 0.5vh;
@@ -270,4 +270,14 @@ h2{
 
 .running-bar{
     fill: indianred;
+}
+
+#pole-vault-select{
+    margin-right:3vh;
+}
+
+#slider-caption{
+    font-size: small;
+    margin-top: 3vh;
+    margin-left:5vh;
 }
