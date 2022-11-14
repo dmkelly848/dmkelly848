@@ -90,24 +90,49 @@ class RunningVis {
         bars.enter().append("rect")
             .attr("class", "bar")
             .merge(bars)
-            .attr("x", 0)
+            .attr("x", 35)
             .attr("y", d => vis.y(d[""]))
             .attr("height", vis.y.bandwidth())
-            .attr("width", d => vis.x(vis.width))
+            .transition()
+            // https://www.d3indepth.com/transitions/
+            .ease(d3.easeLinear)
+            .duration(function(d) {
+                return 1000 * d.Clean_Result;
+            })
+            .attr("width", d => vis.width - 200)
             .attr("fill", "blue")
 
-        let labels = vis.svg.selectAll(".label")
+        let year_labels = vis.svg.selectAll(".year-label")
             .data(vis.displayData)
 
-        labels.exit().remove()
+        year_labels.exit().remove()
 
-        labels.enter().append("text")
-            .attr("class","label")
-            .merge(labels)
+        year_labels.enter().append("text")
+            .attr("class","year-label")
+            .merge(year_labels)
             .attr("fill", "black")
-            .attr("y", d => vis.y(d[""]))
-            .attr("x", d => vis.width)
+            .attr("y", d => vis.y(d[""]) + 12)
+            .attr("x", 0)
             .attr("text-anchor","begin")
-            .text("text")
+            .text(d => vis.formatDate(d.Year))
+
+        let player_labels = vis.svg.selectAll(".player-label")
+            .data(vis.displayData)
+
+        player_labels.exit().remove()
+
+        player_labels.enter().append("text")
+            .attr("class","player-label")
+            .merge(player_labels)
+            .attr("fill", "black")
+            .attr("y", d => vis.y(d[""]) + 12)
+            .attr("x", vis.width - 165)
+            .attr("text-anchor","begin")
+            .transition()
+            // https://www.d3indepth.com/transitions/
+            .delay(function(d) {
+                return 1000 * d.Clean_Result;
+            })
+            .text(d => d.Clean_Result + " " + d.Name)
     }
 }
