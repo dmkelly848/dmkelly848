@@ -101,7 +101,7 @@ h1{
     font-weight: 400;
     text-align: center;
     padding-top: 100px;
-    padding-bottom: 0px;
+    padding-bottom: 0;
 }
 
 #header_image{
@@ -182,11 +182,12 @@ h2{
 
 #slider-round {
     height: 1vh;
-    margin-left: 10vh;
-    margin-right: 10vh;
+    margin: auto;
+    width: 60%;
     margin-top: 5vh;
     font-size: small;
-    background: grey;
+    background: #179a13;
+    opacity: 0.9;
 }
 
 #slider-round .noUi-handle {
@@ -195,4 +196,8 @@ h2{
     top: -0.5vh;
     right: -1vh; /* half the width */
     border-radius: 1vh;
+}
+
+.axis{
+    color: black;
 }

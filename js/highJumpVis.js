@@ -9,7 +9,6 @@ class HighJumpVis {
         this.parentElement = parentElement;
         this.resultsData = resultsData;
         this.formatDate = d3.timeFormat("%Y");
-        this.parseDate = d3.timeParse("%Y");
 
         this.initVis()
     }
@@ -18,28 +17,40 @@ class HighJumpVis {
         let vis = this;
 
         vis.margin = {top: 20, right: 20, bottom: 20, left: 20};
+        vis.yAxisPad = 30;
+        vis.xAxisPad = 30;
+
         vis.width = document.getElementById(vis.parentElement).getBoundingClientRect().width - vis.margin.left - vis.margin.right;
         vis.height = document.getElementById(vis.parentElement).getBoundingClientRect().height - vis.margin.top - vis.margin.bottom;
-        console.log(vis.width)
-        console.log(vis.height)
-        vis.cellHeight = 20;
-        vis.cellWidth = 20;
-        vis.cellPadding = 20;
 
         vis.chosenYear = 1896;
 
         // init drawing area
-        vis.svg = d3.select("#" + vis.parentElement).append("svg")
+        vis.draw = d3.select("#" + vis.parentElement).append("svg")
             .attr("width", vis.width)
             .attr("height", vis.height)
             .attr('transform', `translate (${vis.margin.left}, ${vis.margin.top})`);
+        vis.svg = vis.draw.append('g')
+            .attr('transform', `translate (${vis.yAxisPad},0)`);
+
+        vis.width = vis.width - vis.yAxisPad;
 
         // add main bar
-        vis.crossBar = vis.svg.append('rect')
+        vis.crossBarGroup = vis.svg.append('g')
+        vis.crossBar = vis.crossBarGroup.append('rect')
             .attr('height', 5)
             .attr('width', vis.width)
             .attr('x', 0)
-            .style('fill','#F43200');
+            .style('fill','#F44200')
+            .style('stroke', '#555555');
+        // add tooltip
+        vis.labelGroup = vis.crossBarGroup.append('g')
+            .attr('class', 'jump-tooltip')
+            .append('text')
+            .attr('transform', `translate(${vis.width / 2}, ${-1*vis.height/20})`)
+            .style("font-size", 'smaller')
+            .attr('text-anchor', 'middle');
+
 
 
         // add mat
@@ -48,16 +59,19 @@ class HighJumpVis {
             .attr('width', vis.width)
             .attr('x', 0)
             .attr('y', vis.height*2/3)
-            .style('fill', '#476442')
-
+            .style('fill', '#666666')//'#476442')
         vis.matTop = vis.svg.append('rect')
             .attr('height', vis.height/15)
             .attr('width', vis.width)
             .attr('x', 0)
             .attr('y', vis.height*2/3)
-            .style('fill', '#89c689')
+            .style('fill', '#999999')//69a669')
             .style('stroke', 'black')
-
+        vis.img = vis.svg.append('svg:image')
+            .attr("xlink:href", function() {return "img/rings_white.png"})
+            .attr('x', vis.width/2-vis.width/10)
+            .attr('y', vis.height*7/9)
+            .attr('width', vis.width/5)
 
 
         // add "posts" on each side
@@ -66,19 +80,34 @@ class HighJumpVis {
             .attr('width', 7)
             .attr('x', 0)
             .attr('y', 0)
+            .style('fill', '#555555')
         vis.rightRect = vis.svg.append('rect')
             .attr('height', vis.height)
             .attr('width', 7)
             .attr('x', vis.width-7)
             .attr('y', 0)
+            .style('fill', '#555555')
+        vis.triangleGroup = vis.svg.append('g')
+            .attr("class", "triangle-group")
+        vis.leftTriangle = vis.crossBarGroup.append('path')
+            .attr("class", "left-triangle")
+            .attr("d", 'M 0 -15 l 0 20 l 20 0 z')
+            .style('fill', '#555555')
+        vis.rightTriangle = vis.crossBarGroup.append('path')
+            .attr("class", "right-triangle")
+            .attr("d", `M ${vis.width} -15 l 0 20 l -20 0 z`)
+            .style('fill', '#555555')
 
         // add scale + axis
         vis.y = d3.scaleLinear()
             .range([vis.height,0]);
         vis.yAxis = d3.axisLeft()
-            .scale(vis.y);
+            .scale(vis.y)
+            //.tickValues([0.8,1,1.2,1.4,1.6,1.8,2,2.2,2.4,2.6]);
         vis.svg.append("g")
-            .attr("class", "y-axis axis");
+            .attr("class", "y-axis axis")
+            .attr("transform", `translate(0, 0)`);
+
 
         vis.wrangleData()
         vis.createSlider()
@@ -121,11 +150,16 @@ class HighJumpVis {
         vis.y.domain([0, d3.max(vis.jumpData, d => d.Clean_Result)+0.5]);
         vis.svg.select(".y-axis").call(vis.yAxis);
 
+        // update text
+        console.log(vis.displayData[0])
+        vis.labelGroup.text(vis.displayData[0].Name + ": "+ " " + vis.displayData[0].Clean_Result+"m")
+
         // update position of bar
-        vis.crossBar
+        vis.crossBarGroup
             .transition()
-            .duration(100)
-            .attr("y", vis.y(vis.displayData[0].Clean_Result));
+            .duration(500)
+            .attr("transform", `translate(0, ${vis.y(vis.displayData[0].Clean_Result)})`);
+
 
     }
 
@@ -154,10 +188,10 @@ class HighJumpVis {
                 density: 6
             }
         });
-        vis.slider.attr("id","slider-round");
 
         // create listener for sliders
         vis.slider.noUiSlider.on('slide', function (values) {
+            console.log("Hello")
             vis.chosenYear = values[0];
             vis.wrangleData();
         });
