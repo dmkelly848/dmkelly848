@@ -91,7 +91,7 @@ class DashInfo {
             vis.dispCountry = selection.Country;
         else
             vis.dispCountry = selCountry;
-        console.log(vis.dispCountry)
+        //console.log(vis.dispCountry)
 
         // count by medal type and filter on country
         vis.resultsData.forEach(row => {
@@ -116,7 +116,6 @@ class DashInfo {
         vis.goldLab.text(vis.goldCount)
         vis.silverLab.text(vis.silverCount)
         vis.bronzeLab.text(vis.bronzeCount)
-        console.log(vis.dispCountry)
         d3.select('#dashTitle').text(vis.dispCountry)
 
     }

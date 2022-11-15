@@ -69,7 +69,7 @@ class TreeVis {
     wrangleData() {
         let vis = this;
 
-        console.log(vis.resultsData)
+        //console.log(vis.resultsData)
 
         // initialize necessary structure for treemap and d3.stratify()
         vis.displayData = [
@@ -107,7 +107,7 @@ class TreeVis {
         )
 
 
-        console.log(vis.displayData)
+        //console.log(vis.displayData)
         vis.updateVis()
     }
 
@@ -127,7 +127,7 @@ class TreeVis {
             .size([vis.width, vis.height])
             .padding(3)
             (vis.root)
-        console.log(vis.root.leaves())
+        //console.log(vis.root.leaves())
 
         vis.rects = vis.svg.selectAll("rect")
             .data(vis.root.leaves());
@@ -150,6 +150,7 @@ class TreeVis {
                     .style('opacity', 1)
                 selCountry = d.data.country
                 dashInfo.wrangleData()
+                dashBar1.wrangleData()
             })
             // .on('mouseover', function(event, d) {
             //     vis.svg.selectAll('rect')
