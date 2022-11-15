@@ -34,6 +34,7 @@ function initMainPage(data) {
     highJumpVis = new HighJumpVis('hurdleVis', data[0])
     runningVis = new RunningVis('runningVis', data[0])
     treeVis = new TreeVis('treeVis', data[0], data[1])
+    syringeVis = new SyringeVis('syringevis',data[0])
 };
 
 function highJumpGenderChange(){
