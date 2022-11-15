@@ -219,6 +219,11 @@ h2{
     height: 100%;
 }
 
+#dashInfo{
+    margin: auto;
+    height: 100%;
+}
+
 #slider-round {
     height: 1vh;
     margin: auto;
@@ -277,3 +282,4 @@ h2{
 .tree-rect-label{
     fill: white;
 }
+
