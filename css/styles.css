@@ -106,6 +106,16 @@
     border: solid #ffce01;
 }
 
+.dashcontain-2{
+    height: 20%;
+    border: solid #ffce01;
+}
+
+.dashcontain-3{
+    height: 40%;
+    border: solid #ffce01;
+}
+
 .reasonContain{
     border: dashed #ff0000;
     padding: 10px;
