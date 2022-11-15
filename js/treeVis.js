@@ -34,36 +34,33 @@ class TreeVis {
 
         // Define colors
         vis.colors = {
-            'Africa': '#ffce01',
+            'Africa': '#FF5F15',
             'North America': '#ff0000',
             'Europe': '#3e76ec',
             'Asia': '#179a13',
             'Oceania': '#702963',
-            'South America': '#FF5F15',
+            'South America': '#ffce01',
             'N/A': '#888888',
         }
 
-        // vis.x = d3.scaleLinear()
-        //     .range([0, vis.width])
-        //
-        // // using ordinal scale for bar charts, similar to hw 5, with source: https://github.com/d3/d3-scale/blob/main/README.md
-        // vis.y = d3.scaleBand()
-        //     .range([0, vis.height])
-        //     // source: https://www.tutorialsteacher.com/d3js/create-bar-chart-using-d3js for padding
-        //     .padding(.1)
-        //
-        // // creating axes with the scales and appending groups
-        // vis.xAxis = d3.axisBottom()
-        //     .scale(vis.x);
-        // vis.yAxis = d3.axisLeft()
-        //     .scale(vis.y);
-        //
-        // vis.svg.append("g")
-        //     .attr("class", "x-axis axis")
-        //     .attr("transform", "translate(0," + vis.height + ")");
-        //
-        // vis.svg.append("g")
-        //     .attr("class", "y-axis axis");
+        // add tooltip
+        vis.tooltipGroup = vis.svg.append('g')
+            .attr('id', 'treemapTooltip')
+        vis.tooltip = vis.tooltipGroup.append('div')
+
+
+        // vis.legendGroup = vis.svg.append('g')
+        //     .attr('class',"legendgroup")
+        // vis.legendGroup.selectAll('.rect-leg')
+        //     .data(Object.keys(vis.colors))
+        //     .enter().append('rect')
+        //     .attr('class', 'rect-leg')
+        //     .attr('width', 20)
+        //     .attr('height', 20)
+        //     .attr('x', 500)
+        //     .attr('y', function(d,index){return 50+index*30})
+        //     .attr("fill", "blue")
+
 
         vis.wrangleData()
     }
@@ -145,7 +142,36 @@ class TreeVis {
             .attr('y', d=>d.y0)
             .attr("stroke", "black")
             .attr("fill", d=>vis.colors[d.data.continent])
-            //.attr("opacity", d=>Math.sqrt(d.data.medal_count)/6);
+            .on('mouseover', function(event, d) {
+                vis.svg.selectAll('rect')
+                    .style('opacity', '0.4')
+                d3.select(this) // change color or selected country
+                    .style('stroke-width', '2px')
+                    .style('fill', d=>vis.colors[d.data.continent])
+                    .style('opacity', 1)
+                // vis.tooltipGroup
+                //     .attr("transform", `translate(${d.x0+20},${d.y0-20})`)
+                // vis.tooltip
+                //     .attr('font-size', 'medium')
+                //     .style("left", event.pageX + 20 + "px")
+                //     .style("top", event.pageY + "px")
+                //     .style('fill', 'black')
+                //     .html(`
+                //      <div style="border: thin solid grey; border-radius: 5px; background: lightgrey; padding: 20px">
+                //          <h3>${d.data.country}</h3>
+                //          <h4> Medals: ${d.data.medal_count}</h4>
+                //      </div>`);
+            })
+            .on('mouseout', function(event, d) {
+                vis.svg.selectAll('rect')
+                    .style('stroke-width', '1px')
+                    .style('opacity', 1)
+                // vis.tooltip
+                //     .style("opacity", 0)
+                //     .style("left", 0)
+                //     .style("top", 0)
+                //     .html(``);
+            })
         vis.rects.exit();
 
         vis.labels = vis.svg.selectAll("text")
@@ -157,8 +183,9 @@ class TreeVis {
             .attr("x", d=>d.x0+10)
             .attr("y", d=>d.y0+20)
             .text(function(d){
-                if(d.data.medal_count > 15)
+                if(d.data.medal_count > 14)
                     return d.data.country;
             })
+            .attr('font-size', function(d){return (Math.sqrt(d.data.medal_count)+35)+'%'})
     }
 }
