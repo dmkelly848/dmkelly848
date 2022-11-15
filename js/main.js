@@ -20,6 +20,7 @@ d3.csv("data/clean_results.csv", (row) => {
 }).then( (data) => {
     highJumpVis = new HighJumpVis('hurdleVis', data)
     runningVis = new RunningVis('runningVis', data)
+    treeVis = new TreeVis('dashVis', data)
 })
 
 function highJumpGenderChange(){
