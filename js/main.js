@@ -3,7 +3,6 @@
 * * * * * * * * * * * * * */
 
 // init global variables, switches, helper functions
-let selCountry = 'Worldwide';
 
 // load data using promises
 let promises = [
@@ -35,7 +34,6 @@ function initMainPage(data) {
     highJumpVis = new HighJumpVis('hurdleVis', data[0])
     runningVis = new RunningVis('runningVis', data[0])
     treeVis = new TreeVis('treeVis', data[0], data[1])
-    dashInfo = new DashInfo('dashInfo', data[0], data[1])
     syringeVis = new SyringeVis('syringevis',data[0])
 };
 
