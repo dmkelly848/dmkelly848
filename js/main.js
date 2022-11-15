@@ -45,3 +45,13 @@ function runningGenderChange(){
     runningVis.wrangleData()
 }
 
+function syringeUp(){
+    syringeVis.fillUp();
+    syringeVis.updateVis();
+}
+
+function syringeDown(){
+    syringeVis.emptyDown();
+    syringeVis.updateVis();
+}
+

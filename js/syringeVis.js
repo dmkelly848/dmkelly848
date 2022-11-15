@@ -9,6 +9,7 @@ class SyringeVis {
         this.resultsData = resultsData;
         this.formatDate = d3.timeFormat("%Y");
         this.parseDate = d3.timeParse("%Y");
+        this.state = 0;
 
         this.initVis()
     }
@@ -36,6 +37,15 @@ class SyringeVis {
             .attr("stroke-width",5)
             .attr("fill","none");
 
+
+        vis.tipFill = vis.svg.append("path")
+            .attr("d","M 200 626 L 269 626 L 235 757 L 202 626")
+            .attr("fill","gray");
+
+        let BUFFER = vis.width/20
+
+
+
         vis.wrangleData()
     }
 
@@ -51,5 +61,21 @@ class SyringeVis {
 
     updateVis() {
         let vis = this;
+    }
+
+
+    fillUp(){
+        let vis = this;
+        if(vis.state!==4){
+            vis.state++;
+        }
+
+    }
+
+    emptyDown(){
+        let vis = this;
+        if(vis.state !== 0){
+            vis.state--;
+        }
     }
 }
