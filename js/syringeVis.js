@@ -42,8 +42,6 @@ class SyringeVis {
             .attr("d","M 200 626 L 269 626 L 235 757 L 202 626")
             .attr("fill","gray");
 
-        let BUFFER = vis.width/20
-
 
 
         vis.wrangleData()
@@ -63,7 +61,7 @@ class SyringeVis {
         let vis = this;
         console.log(vis.state)
         vis.fill = vis.svg.selectAll(".fillLiquid")
-        vis.fill = vis.svg.append("path").merge("vis.fill").transition().duration(1000)
+        vis.fill = vis.svg.append("path").transition().duration(1000)
             .attr("class","fillLiquid")
             .attr("d", function(d, index) {
                 if(vis.state === 0){

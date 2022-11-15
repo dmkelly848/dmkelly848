@@ -3,6 +3,7 @@
 * * * * * * * * * * * * * */
 
 // init global variables, switches, helper functions
+let syringeVis;
 
 // load data using promises
 let promises = [
