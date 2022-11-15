@@ -103,17 +103,17 @@
 
 .dashcontain{
     height: 800px;
-    border: solid #ffce01;
+    /*border: solid #ffce01;*/
 }
 
 .dashcontain-2{
     height: 20%;
-    border: solid #ffce01;
+    border-bottom: solid #ffce01;
 }
 
 .dashcontain-3{
     height: 40%;
-    border: solid #ffce01;
+    /*border: solid #ffce01;*/
 }
 
 .reasonContain{
@@ -292,4 +292,15 @@ h2{
 .tree-rect-label{
     fill: white;
 }
+
+#dashTitle{
+    border-top: solid #ffce01;
+    border-bottom: solid #ffce01;
+}
+
+#treeVis{
+    border-top: solid #ffce01;
+    border-bottom: solid #ffce01;
+}
+
 

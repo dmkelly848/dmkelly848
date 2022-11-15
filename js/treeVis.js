@@ -18,7 +18,7 @@ class TreeVis {
         let vis = this;
 
         // margin convention with static height and responsive/variable width
-        vis.margin = {top: 20, right: 20, bottom: 20, left: 20};
+        vis.margin = {top: 20, right:20, bottom: 20, left: 20};
         vis.width = document.getElementById(vis.parentElement).getBoundingClientRect().width - vis.margin.left - vis.margin.right;
         vis.height = document.getElementById(vis.parentElement).getBoundingClientRect().height - vis.margin.top - vis.margin.bottom;
 
@@ -141,26 +141,36 @@ class TreeVis {
             .attr('y', d=>d.y0)
             .attr("stroke", "black")
             .attr("fill", d=>vis.colors[d.data.continent])
-            .on('mouseover', function(event, d) {
+            .on('click', function(event, d) {
                 vis.svg.selectAll('rect')
                     .style('opacity', '0.4')
                 d3.select(this) // change color or selected country
                     .style('stroke-width', '2px')
                     .style('fill', d=>vis.colors[d.data.continent])
                     .style('opacity', 1)
-                // vis.tooltipGroup
-                //     .attr("transform", `translate(${d.x0+20},${d.y0-20})`)
-                // vis.tooltip
-                //     .attr('font-size', 'medium')
-                //     .style("left", event.pageX + 20 + "px")
-                //     .style("top", event.pageY + "px")
-                //     .style('fill', 'black')
-                //     .html(`
-                //      <div style="border: thin solid grey; border-radius: 5px; background: lightgrey; padding: 20px">
-                //          <h3>${d.data.country}</h3>
-                //          <h4> Medals: ${d.data.medal_count}</h4>
-                //      </div>`);
+                selCountry = d.data.country
+                dashInfo.wrangleData()
             })
+            // .on('mouseover', function(event, d) {
+            //     vis.svg.selectAll('rect')
+            //         .style('opacity', '0.4')
+            //     d3.select(this) // change color or selected country
+            //         .style('stroke-width', '2px')
+            //         .style('fill', d=>vis.colors[d.data.continent])
+            //         .style('opacity', 1)
+            //     // vis.tooltipGroup
+            //     //     .attr("transform", `translate(${d.x0+20},${d.y0-20})`)
+            //     // vis.tooltip
+            //     //     .attr('font-size', 'medium')
+            //     //     .style("left", event.pageX + 20 + "px")
+            //     //     .style("top", event.pageY + "px")
+            //     //     .style('fill', 'black')
+            //     //     .html(`
+            //     //      <div style="border: thin solid grey; border-radius: 5px; background: lightgrey; padding: 20px">
+            //     //          <h3>${d.data.country}</h3>
+            //     //          <h4> Medals: ${d.data.medal_count}</h4>
+            //     //      </div>`);
+            // })
             .on('mouseout', function(event, d) {
                 vis.svg.selectAll('rect')
                     .style('stroke-width', '1px')
