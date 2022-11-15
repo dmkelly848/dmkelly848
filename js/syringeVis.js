@@ -61,6 +61,20 @@ class SyringeVis {
 
     updateVis() {
         let vis = this;
+        console.log(vis.state)
+        vis.fill = vis.svg.selectAll(".fillLiquid")
+        vis.fill = vis.svg.append("path").merge("vis.fill").transition().duration(1000)
+            .attr("class","fillLiquid")
+            .attr("d", function(d, index) {
+                if(vis.state === 0){
+                    return '';
+                }else if (vis.state === 1){
+                    console.log("yes")
+                    return ' M 132 626 L 334 627 L 335 501 C 235 467 203 533 137 500 L 136 624'
+                }
+            })
+            .attr("fill", "green");
+
     }
 
 
