@@ -6,22 +6,35 @@
 
 // load data using promises
 let promises = [
-    d3.csv('data/clean_results.csv')
+    d3.csv('data/clean_results.csv', (row) => {
+        // convert string to numerical and date data types
+        row.Clean_Result = +row.Clean_Result;
+
+        let parseTime = d3.timeParse("%Y");
+        row.Year = parseTime(row.Year);
+
+        return row;
+    }),
+    d3.csv('data/continent_mapping.csv')
 ];
 
-d3.csv("data/clean_results.csv", (row) => {
-    // convert string to numerical and date data types
-    row.Clean_Result = +row.Clean_Result;
+// data loadiing
+Promise.all(promises)
+    .then(function (data) {
+        initMainPage(data)
+    })
+    .catch(function (err) {
+        console.log(err)
+    });
 
-    let parseTime = d3.timeParse("%Y");
-    row.Year = parseTime(row.Year);
+// initialize Main Page
+function initMainPage(data) {
+    console.log(data)
 
-    return row;
-}).then( (data) => {
-    highJumpVis = new HighJumpVis('hurdleVis', data)
-    runningVis = new RunningVis('runningVis', data)
-    treeVis = new TreeVis('dashVis', data)
-})
+    highJumpVis = new HighJumpVis('hurdleVis', data[0])
+    runningVis = new RunningVis('runningVis', data[0])
+    treeVis = new TreeVis('treeVis', data[0], data[1])
+};
 
 function highJumpGenderChange(){
     highJumpVis.updateSlider();

@@ -1,13 +1,14 @@
 /* * * * * * * * * * * * * *
-*      Bubble Vis          *
+*      Tree Vis          *
 * * * * * * * * * * * * * */
 // based on https://bl.ocks.org/officeofjane/a70f4b44013d06b9c0a973f163d8ab7a
 
 class TreeVis {
 
-    constructor(parentElement, resultsData) {
+    constructor(parentElement, resultsData, continentData) {
         this.parentElement = parentElement;
         this.resultsData = resultsData;
+        this.continentData = continentData;
         this.formatDate = d3.timeFormat("%Y");
 
         this.initVis()
@@ -62,6 +63,27 @@ class TreeVis {
 
         console.log(vis.resultsData)
 
+        vis.displayData = []
+        // loop through results and count by country
+        vis.resultsData.forEach(row => {
+                let nat = row.Nationality;
+                let countryObj = {};
+                let existing = vis.displayData.map(d => d.country);
+
+                if (!(existing.includes(nat))) {
+                    countryObj['country'] = nat;
+                    console.log(vis.continentData.find(d => d.Code === nat).Continent)
+                    countryObj['continent'] = 'A';
+                    countryObj['medal_count'] = 1;
+                    vis.displayData.push(countryObj)
+                } else {
+                    vis.displayData.find(d => d.country === nat).medal_count += 1;
+                }
+            }
+        )
+
+
+        console.log(vis.displayData)
         vis.updateVis()
     }
 

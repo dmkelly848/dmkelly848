@@ -61,7 +61,7 @@ class RunningVis {
         let vis = this;
 
         vis.selectedgender = d3.select("#running-gender").property("value")
-        console.log(vis.selectedgender)
+        //console.log(vis.selectedgender)
 
         vis.displayData = vis.resultsData.filter((d) => {
             return (d.Event === '100M' && d.Medal === 'G' && d.Gender === vis.selectedgender);
@@ -69,7 +69,7 @@ class RunningVis {
 
         vis.displayData.sort((a,b)=> a.Year - b.Year);
 
-        console.log(vis.displayData)
+        //console.log(vis.displayData)
 
         vis.updateVis()
     }
@@ -80,10 +80,10 @@ class RunningVis {
         let vis = this;
 
         vis.x.domain([0,vis.width])
-        vis.y.domain(vis.displayData.map(function(d) {console.log(d[""])
+        vis.y.domain(vis.displayData.map(function(d) {//console.log(d[""])
             return d[""]; }))
 
-        console.log(vis.y)
+        //console.log(vis.y)
 
         let bars = vis.svg.selectAll("rect")
             .data(vis.displayData);

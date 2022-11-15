@@ -126,7 +126,7 @@ class HighJumpVis {
         vis.jumpData = vis.filtData();
 
         vis.baseYear = d3.min(vis.jumpData, d=>d.Year)
-        console.log(vis.unchanged)
+        //console.log(vis.unchanged)
         if(vis.unchanged){
             vis.chosenYear = vis.baseYear;
         }
