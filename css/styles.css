@@ -293,12 +293,7 @@ h2{
     fill: white;
 }
 
-#dashTitle{
-    border-top: solid #ffce01;
-    border-bottom: solid #ffce01;
-}
-
-#treeVis{
+#dashTitle, #treeVis, #dashBar2{
     border-top: solid #ffce01;
     border-bottom: solid #ffce01;
 }
