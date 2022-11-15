@@ -1,7 +1,7 @@
 /* * * * * * * * * * * * * *
 *      Tree Vis          *
 * * * * * * * * * * * * * */
-// based on https://bl.ocks.org/officeofjane/a70f4b44013d06b9c0a973f163d8ab7a
+// based on https://d3-graph-gallery.com/graph/treemap_basic.html
 
 class TreeVis {
 
@@ -24,13 +24,25 @@ class TreeVis {
         vis.center = {'x': vis.width/2, 'y': vis.height/2};
 
         // // SVG drawing area
-        // vis.svg = d3.select("#" + vis.parentElement).append("svg")
-        //     .attr("width", vis.width + vis.margin.left + vis.margin.right)
-        //     .attr("height", vis.height + vis.margin.top + vis.margin.bottom)
-        //     .append("g")
-        //     .attr("transform", "translate(" + vis.margin.left + "," + vis.margin.top + ")");
-        //
-        // // Scales and axes
+        vis.svg = d3.select("#" + vis.parentElement).append("svg")
+            .attr("width", vis.width + vis.margin.left + vis.margin.right)
+            .attr("height", vis.height + vis.margin.top + vis.margin.bottom)
+            .append("g")
+            .attr("transform", "translate(" + vis.margin.left + "," + vis.margin.top + ")");
+
+
+
+        // Define colors
+        vis.colors = {
+            'Africa': '#ffce01',
+            'North America': '#ff0000',
+            'Europe': '#3e76ec',
+            'Asia': '#179a13',
+            'Oceania': '#702963',
+            'South America': '#FF5F15',
+            'N/A': '#888888',
+        }
+
         // vis.x = d3.scaleLinear()
         //     .range([0, vis.width])
         //
@@ -63,8 +75,19 @@ class TreeVis {
 
         console.log(vis.resultsData)
 
-        vis.displayData = []
-        // loop through results and count by country
+        // initialize necessary structure for treemap and d3.stratify()
+        vis.displayData = [
+            {country: 'Origin', continent: '', medal_count: ''},
+            {country: 'Europe', continent: 'Origin', medal_count: ''},
+            {country: 'North America', continent: 'Origin', medal_count: ''},
+            {country: 'N/A', continent: 'Origin', medal_count: ''},
+            {country: 'Africa', continent: 'Origin', medal_count: ''},
+            {country: 'Oceania', continent: 'Origin', medal_count: ''},
+            {country: 'Asia', continent: 'Origin', medal_count: ''},
+            {country: 'South America', continent: 'Origin', medal_count: ''},
+        ]
+
+        // loop through results and count by country, also map to continent
         vis.resultsData.forEach(row => {
                 let nat = row.Nationality;
                 let countryObj = {};
@@ -72,8 +95,13 @@ class TreeVis {
 
                 if (!(existing.includes(nat))) {
                     countryObj['country'] = nat;
-                    console.log(vis.continentData.find(d => d.Code === nat).Continent)
-                    countryObj['continent'] = 'A';
+                    let sel = vis.continentData.find(d => d.Code === nat)
+                    let cont = ''
+                    if(sel===undefined)
+                        cont = 'N/A';
+                    else
+                        cont = sel.Continent;
+                    countryObj['continent'] = cont
                     countryObj['medal_count'] = 1;
                     vis.displayData.push(countryObj)
                 } else {
@@ -92,85 +120,45 @@ class TreeVis {
     updateVis() {
         let vis = this;
 
-        // vis.x.domain([0,vis.width])
-        // vis.y.domain(vis.displayData.map(function(d) {console.log(d[""])
-        //     return d[""]; }))
-        //
-        // console.log(vis.y)
-        //
-        // let bars = vis.svg.selectAll("rect")
-        //     .data(vis.displayData);
-        //
-        // bars.exit().remove()
-        //
-        // bars.enter().append("rect")
-        //     .attr("class", "running-bar")
-        //     .merge(bars)
-        //     .attr("x", 35)
-        //     .attr("y", d => vis.y(d[""]))
-        //     .attr("width", 0)
-        //     .attr("height", vis.y.bandwidth())
-        //     .transition()
-        //     // https://www.d3indepth.com/transitions/
-        //     .ease(d3.easeLinear)
-        //     .duration(function(d) {
-        //         return 1000 * d.Clean_Result;
-        //     })
-        //     .attr("width", d => vis.width - 135)
-        //     .attr("fill", "blue")
-        //
-        // let year_labels = vis.svg.selectAll(".year-label")
-        //     .data(vis.displayData)
-        //
-        // year_labels.exit().remove()
-        //
-        // year_labels.enter().append("text")
-        //     .attr("class","year-label")
-        //     .merge(year_labels)
-        //     .attr("fill", "black")
-        //     .attr("y", d => vis.y(d[""]) + 12)
-        //     .attr("x", 0)
-        //     .attr("text-anchor","begin")
-        //     .text(d => vis.formatDate(d.Year))
-        //
-        // let time_labels = vis.svg.selectAll(".time-label")
-        //     .data(vis.displayData)
-        //
-        // time_labels.exit().remove()
-        //
-        // time_labels.enter().append("text")
-        //     .attr("class","time-label")
-        //     .merge(time_labels)
-        //     .attr("fill", "black")
-        //     .attr("y", d => vis.y(d[""]) + 12)
-        //     .attr("x", vis.width - 95)
-        //     .attr("text-anchor","begin")
-        //     .text("")
-        //     .transition()
-        //     // https://www.d3indepth.com/transitions/
-        //     .delay(function(d) {
-        //         return 1000 * d.Clean_Result;
-        //     })
-        //     .text(d => d.Clean_Result)
-        //
-        // let player_labels = vis.svg.selectAll(".player-label")
-        //     .data(vis.displayData)
-        //
-        // player_labels.exit().remove()
-        //
-        // player_labels.enter().append("text")
-        //     .attr("class","player-label")
-        //     .merge(player_labels)
-        //     .attr("fill", "black")
-        //     .attr("y", d => vis.y(d[""]) + 12)
-        //     .attr("x", vis.width - 60)
-        //     .attr("text-anchor","begin")
-        //     .text("")
-        //     .transition()
-        //     // https://www.d3indepth.com/transitions/
-        //     .delay(function(d) {
-        //         return 1000 * d.Clean_Result;
-        //     })
-        //     .text(d => d.Name)
+        // credit to https://d3-graph-gallery.com/graph/treemap_basic.html
+        vis.root = d3.stratify()
+            .id(d=>d.country)
+            .parentId(d=>d.continent)
+            (vis.displayData)
+            .sum(d => d.medal_count);
+
+        d3.treemap()
+            .size([vis.width, vis.height])
+            .padding(3)
+            (vis.root)
+        console.log(vis.root.leaves())
+
+        vis.rects = vis.svg.selectAll("rect")
+            .data(vis.root.leaves());
+        vis.rects.enter()
+            .append("rect")
+            .attr('class', 'tree-rect')
+            .merge(vis.rects)
+            .attr('width', d=>d.x1-d.x0)
+            .attr('height', d=>d.y1-d.y0)
+            .attr('x', d=>d.x0)
+            .attr('y', d=>d.y0)
+            .attr("stroke", "black")
+            .attr("fill", d=>vis.colors[d.data.continent])
+            //.attr("opacity", d=>Math.sqrt(d.data.medal_count)/6);
+        vis.rects.exit();
+
+        vis.labels = vis.svg.selectAll("text")
+            .data(vis.root.leaves());
+        vis.labels.enter()
+            .append("text")
+            .attr('class', 'label tree-rect-label')
+            .merge(vis.labels)
+            .attr("x", d=>d.x0+10)
+            .attr("y", d=>d.y0+20)
+            .text(function(d){
+                if(d.data.medal_count > 15)
+                    return d.data.country;
+            })
     }
 }

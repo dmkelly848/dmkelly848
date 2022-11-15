@@ -15,7 +15,8 @@ let promises = [
 
         return row;
     }),
-    d3.csv('data/continent_mapping.csv')
+    d3.csv('data/continent_mapping.csv'),
+    d3.csv('data/test.csv')
 ];
 
 // data loadiing
