@@ -132,11 +132,16 @@ class DashBar {
         vis.xAxisGroup
             .transition()
             .duration(300)
-            .call(vis.xAxis);
+            .call(vis.xAxis)
+            .selectAll('text')
+            .attr('x', '-1.7em')
+            .attr('y', '0.2em')
+            .attr('transform', 'rotate(-45)');
         vis.yAxisGroup
             .transition()
             .duration(300)
             .call(vis.yAxis);
+
 
     }
 }
