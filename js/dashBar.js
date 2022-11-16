@@ -4,10 +4,10 @@
 
 class DashBar {
 
-    constructor(parentElement, resultsData, continentData) {
+    constructor(parentElement, resultsData, selectedCategory) {
         this.parentElement = parentElement;
         this.resultsData = resultsData;
-        this.continentData = continentData;
+        this.selectedCategory = selectedCategory;
         this.formatDate = d3.timeFormat("%Y");
         this.parseDate = d3.timeParse("%Y");
 
@@ -29,11 +29,12 @@ class DashBar {
             .append("g")
             .attr("transform", "translate(" + vis.margin.left + "," + vis.margin.top + ")");
 
+
         // add title
         vis.svg.append('g')
             .attr('class', 'title bar-title')
             .append('text')
-            .text('Medals Won by Year')
+            .text(`Medals Won by ${vis.selectedCategory}`)
             .attr('font-size', 'smaller')
             .attr('transform', `translate(${vis.width / 2}, ${vis.height / 10})`)
             .attr('text-anchor', 'middle');
@@ -58,7 +59,12 @@ class DashBar {
         // add xaxis
         vis.xAxis = d3.axisBottom()
             .scale(vis.x)
-            .tickFormat(d=>vis.formatDate(d))
+            .tickFormat(function(d){
+                if(vis.selectedCategory=='Year')
+                    return vis.formatDate(d);
+                else
+                    return d
+            })
             .ticks()
 
         // add y axis
@@ -80,28 +86,31 @@ class DashBar {
     wrangleData() {
         let vis = this;
 
-
         vis.filtData = []
         vis.resultsData.forEach(row => {
             if (row.Nationality === selCountry || selCountry === 'Worldwide')
                 vis.filtData.push(row)
         })
-        console.log(vis.filtData)
+
         vis.displayData = []
         vis.filtData.forEach(row => {
-                let year = vis.formatDate(row.Year);
-                let yearObj = {};
-                let existing = vis.displayData.map(d => d.year);
-                if (!(existing.includes(year))) {
-                    yearObj['year'] = year;
-                    yearObj['medal_count'] = 1;
-                    vis.displayData.push(yearObj)
+                let val = '';
+                if (vis.selectedCategory === 'Year')
+                    val = vis.formatDate(row[vis.selectedCategory]);
+                else
+                    val = row[vis.selectedCategory]
+                let valObj = {};
+                let existing = vis.displayData.map(d => d[vis.selectedCategory]);
+                if (!(existing.includes(val))) {
+                    valObj[vis.selectedCategory] = val;
+                    valObj['medal_count'] = 1;
+                    vis.displayData.push(valObj)
                 } else {
-                    vis.displayData.find(d => d.year === year).medal_count += 1;
+                    vis.displayData.find(d => d[vis.selectedCategory] === val).medal_count += 1;
                 }
             }
         )
-        vis.displayData.sort((a,b)=> a.year - b.year);
+        vis.displayData.sort((a,b)=> a[vis.selectedCategory] - b[vis.selectedCategory]);
         console.log(vis.displayData)
         vis.updateVis()
     }
@@ -113,7 +122,12 @@ class DashBar {
 
         // update domains
         vis.y.domain([0, d3.max(vis.displayData, d=>d.medal_count)]);
-        vis.x.domain(vis.displayData.map(d=>vis.parseDate(d.year)))
+        vis.x.domain(vis.displayData.map(function(d){
+            if(vis.selectedCategory === 'Year')
+                return vis.parseDate(d[vis.selectedCategory]);
+            else
+                return d[vis.selectedCategory];
+        }))
         // add bars using enter, update, exit methods
         vis.bars = vis.svg.selectAll(".bar")
             .data(vis.displayData)
@@ -122,7 +136,12 @@ class DashBar {
         vis.bars.enter().append("rect")
             .attr("class", "bar")
             .merge(vis.bars)
-            .attr("x", d=> vis.x(vis.parseDate(d.year)))
+            .attr("x", function(d){
+                if(vis.selectedCategory === 'Year')
+                    return vis.x(vis.parseDate(d[vis.selectedCategory]));
+                else
+                    return vis.x(d[vis.selectedCategory])
+            })
             .attr("y", d=> vis.y(d.medal_count))
             .attr("width", vis.x.bandwidth())
             .attr("height", d=> vis.height - vis.y(d.medal_count))

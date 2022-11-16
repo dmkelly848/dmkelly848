@@ -172,16 +172,16 @@ class TreeVis {
             //     //          <h4> Medals: ${d.data.medal_count}</h4>
             //     //      </div>`);
             // })
-            .on('mouseout', function(event, d) {
-                vis.svg.selectAll('rect')
-                    .style('stroke-width', '1px')
-                    .style('opacity', 1)
-                // vis.tooltip
-                //     .style("opacity", 0)
-                //     .style("left", 0)
-                //     .style("top", 0)
-                //     .html(``);
-            })
+            // .on('mouseout', function(event, d) {
+            //     vis.svg.selectAll('rect')
+            //         .style('stroke-width', '1px')
+            //         .style('opacity', 1)
+            //     // vis.tooltip
+            //     //     .style("opacity", 0)
+            //     //     .style("left", 0)
+            //     //     .style("top", 0)
+            //     //     .html(``);
+            // })
         vis.rects.exit();
 
         vis.labels = vis.svg.selectAll("text")

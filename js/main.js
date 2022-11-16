@@ -36,7 +36,8 @@ function initMainPage(data) {
     runningVis = new RunningVis('runningVis', data[0])
     treeVis = new TreeVis('treeVis', data[0], data[1])
     dashInfo = new DashInfo('dashInfo', data[0], data[1])
-    dashBar1 = new DashBar('dashBar1',data[0])
+    dashBar1 = new DashBar('dashBar1',data[0], 'Year')
+    dashBar2 = new DashBar('dashBar2',data[0], 'Event')
     syringeVis = new SyringeVis('syringevis',data[0])
 };
 
