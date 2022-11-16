@@ -153,7 +153,7 @@ class DashBar {
                     .style('fill', '#ffce01')
                 vis.tooltip // adds tooltip
                     .style("opacity", 1)
-                    .style("left", event.pageX + 20 + "px")
+                    .style("left", event.pageX + 10 + "px")
                     .style("top", event.pageY + "px")
                     .html(`
                      <div style="text-align: left; border: thin solid grey; border-radius: 5px; background: lightgrey; padding-top: 10px; padding-right: 10px; padding-left: 10px">

@@ -18,7 +18,7 @@ class TreeVis {
         let vis = this;
 
         // margin convention with static height and responsive/variable width
-        vis.margin = {top: 20, right:20, bottom: 20, left: 20};
+        vis.margin = {top: 20, right:20, bottom: 100, left: 20};
         vis.width = document.getElementById(vis.parentElement).getBoundingClientRect().width - vis.margin.left - vis.margin.right;
         vis.height = document.getElementById(vis.parentElement).getBoundingClientRect().height - vis.margin.top - vis.margin.bottom;
 
@@ -30,13 +30,12 @@ class TreeVis {
             .attr("transform", "translate(" + vis.margin.left + "," + vis.margin.top + ")");
 
 
-
         // Define colors
         vis.colors = {
             'Africa': '#FF5F15',
-            'North America': '#ff0000',
-            'Europe': '#3e76ec',
             'Asia': '#179a13',
+            'Europe': '#3e76ec',
+            'North America': '#ff0000',
             'Oceania': '#702963',
             'South America': '#ffce01',
             'N/A': '#888888',
@@ -47,18 +46,9 @@ class TreeVis {
             .attr('id', 'treemapTooltip')
         vis.tooltip = vis.tooltipGroup.append('div')
 
-
-        // vis.legendGroup = vis.svg.append('g')
-        //     .attr('class',"legendgroup")
-        // vis.legendGroup.selectAll('.rect-leg')
-        //     .data(Object.keys(vis.colors))
-        //     .enter().append('rect')
-        //     .attr('class', 'rect-leg')
-        //     .attr('width', 20)
-        //     .attr('height', 20)
-        //     .attr('x', 500)
-        //     .attr('y', function(d,index){return 50+index*30})
-        //     .attr("fill", "blue")
+        vis.legendGroup = vis.svg.append('g')
+            .attr('class',"legendgroup")
+            .attr('transform', `translate(${vis.width/2}, ${vis.height+40})`)
 
 
         vis.wrangleData()
@@ -199,6 +189,38 @@ class TreeVis {
                     return d.data.country;
             })
             .attr('font-size', function(d){return (Math.sqrt(d.data.medal_count)+35)+'%'})
+
+        vis.legendRects = vis.legendGroup.selectAll('.legend-rect')
+            .data(Object.keys(vis.colors))
+            .enter().append('rect')
+            .attr('class', 'legend-rect')
+            .attr('width', vis.width/50)
+            .attr('height',vis.width/50)
+            .attr('y', 0)
+            .attr('x', function(d,index){return -3.1*vis.width/7+index*vis.width/7})
+            .attr("fill", d=>vis.colors[d])
+            .attr('stroke', 'black')
+            // .on('click', function(event, d) {
+            //     vis.svg.selectAll('rect')
+            //         .style('opacity', '0.4')
+            //     d3.select(this) // change color or selected country
+            //         .style('stroke-width', '2px')
+            //         .style('fill', d=>vis.colors[d.data.continent])
+            //         .style('opacity', 1)
+            //     selCountry = d.data.country
+            //     document.getElementById("resetbutton").disabled = false;
+            //     dashMedals.wrangleData()
+            //     dashBar1.wrangleData()
+            //     dashBar2.wrangleData()
+            // })
+        vis.legendText = vis.legendGroup.selectAll('.legend-label')
+            .data(Object.keys(vis.colors))
+            .enter().append('text')
+            .attr('class', 'legend-label')
+            .attr('font-size', 'small')
+            .attr('y', vis.width/75)
+            .attr('x', function(d,index){return -3.1*vis.width/7+index*vis.width/7+vis.width/40})
+            .text(d=>d)
     }
 
     resetColors() {

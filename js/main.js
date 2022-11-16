@@ -66,5 +66,7 @@ function resetToWorld(){
     dashBar1.wrangleData();
     dashBar2.wrangleData();
     treeVis.resetColors();
+    document.getElementById("resetbutton").disabled = true;
+
 }
 
