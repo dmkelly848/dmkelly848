@@ -149,8 +149,9 @@ class TreeVis {
                     .style('fill', d=>vis.colors[d.data.continent])
                     .style('opacity', 1)
                 selCountry = d.data.country
-                dashInfo.wrangleData()
+                dashMedals.wrangleData()
                 dashBar1.wrangleData()
+                dashBar2.wrangleData()
             })
             // .on('mouseover', function(event, d) {
             //     vis.svg.selectAll('rect')

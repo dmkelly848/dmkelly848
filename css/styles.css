@@ -107,12 +107,21 @@
 }
 
 .dashcontain-2{
-    height: 20%;
-    border-bottom: solid #ffce01;
+    height: 10%;
 }
 
 .dashcontain-3{
-    height: 40%;
+    height: 15%;
+    border-bottom: solid #ffce01;
+}
+
+.dashcontain-4{
+    height: 30%;
+    /*border: solid #ffce01;*/
+}
+
+.dashcontain-5{
+    height: 45%;
     /*border: solid #ffce01;*/
 }
 

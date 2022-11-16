@@ -18,7 +18,11 @@ class DashBar {
         let vis = this;
 
         // margin convention with static height and responsive/variable width
-        vis.margin = {top: 20, right: 30, bottom: 40, left: 30};
+        vis.margin = {}
+        if(vis.selectedCategory==='Year')
+            vis.margin = {top: 20, right: 30, bottom: 40, left: 30};
+        else
+            vis.margin = {top: 20, right: 30, bottom: 100, left: 30};
         vis.width = document.getElementById(vis.parentElement).getBoundingClientRect().width - vis.margin.left - vis.margin.right;
         vis.height = document.getElementById(vis.parentElement).getBoundingClientRect().height - vis.margin.top - vis.margin.bottom;
 
@@ -148,17 +152,19 @@ class DashBar {
             .style("fill", '#555555')
 
         // Call axis functions with the new domain
+
         vis.xAxisGroup
             .transition()
-            .duration(300)
+            .duration(1000)
             .call(vis.xAxis)
             .selectAll('text')
-            .attr('x', '-1.7em')
+            .attr('x', '-0.5em')
             .attr('y', '0.2em')
+            .attr('text-anchor', 'end')
             .attr('transform', 'rotate(-45)');
         vis.yAxisGroup
             .transition()
-            .duration(300)
+            .duration(1000)
             .call(vis.yAxis);
 
 
