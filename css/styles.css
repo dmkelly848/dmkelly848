@@ -84,7 +84,7 @@
 }
 
 .phase5{
-    height: 1100px;
+    height: 1200px;
     border-top: solid #ff0000;
     border-bottom: solid #ff0000;
     padding-bottom: 50px;
@@ -142,6 +142,11 @@
 .underline{
     height: 10px;
     margin-bottom: 30px;
+}
+
+.syringeText{
+    color: black;
+    font-size: 20px;
 }
 
 h1{

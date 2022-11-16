@@ -68,6 +68,7 @@ class SyringeVis {
             .attr("d", '')
             .attr("fill", "green");
 
+        document.getElementById("text0").innerHTML= "1962: Athletes begin using stimulants that gained prevalence during WWII.";
 
         vis.wrangleData()
     }
@@ -84,14 +85,11 @@ class SyringeVis {
 
     updateVis() {
         let vis = this;
-        console.log(vis.state)
-
         vis.fillVial.transition().ease(d3.easeLinear).duration(800)
             .attr("d", function(d, index) {
                 if(vis.state === 0){
                     return 'M 132 626 L 334 627 L 338 612 C 198 620 224 608 132 612 L 136 624';
                 }else if (vis.state === 1){
-                    console.log("yes")
                     return ' M 132 626 L 334 627 L 335 501 C 235 467 203 533 137 500 L 136 624';
                 }else if(vis.state === 2){
                     return 'M 132 626 L 334 627 L 337 403 C 235 467 244 320 136 393 L 136 624';
@@ -109,7 +107,15 @@ class SyringeVis {
         let vis = this;
         if(vis.state!==3){
             vis.state++;
+            if(vis.state ===1){
+                document.getElementById("text1").innerHTML= "1972: First large-scale testing of stimulants at the Olympics.\n";
+            }else if(vis.state ===2){
+                document.getElementById("text2").innerHTML= "1988: Sprinter Ben Johnson is caught doping in the most “infamous” case of Olympics drug usage.\n";
+            }else if(vis.state ===3){
+                document.getElementById("text3").innerHTML= "2014: Russian scandal makes doping a national issue.\n";
+            }
         }
+
 
     }
 
@@ -117,6 +123,14 @@ class SyringeVis {
         let vis = this;
         if(vis.state !== 0){
             vis.state--;
+            if(vis.state === 0){
+                document.getElementById("text1").innerHTML= "";
+            }else if(vis.state ===1){
+                document.getElementById("text2").innerHTML= "";
+            }else if(vis.state ===2) {
+                document.getElementById("text3").innerHTML = "";
+            }
         }
     }
+
 }

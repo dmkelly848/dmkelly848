@@ -40,6 +40,7 @@ function initMainPage(data) {
     dashBar1 = new DashBar('dashBar1',data[0], 'Year')
     dashBar2 = new DashBar('dashBar2',data[0], 'Event')
     syringeVis = new SyringeVis('syringevis',data[0])
+    lineGraph = new LineGraph('lineGraph',data[0])
 };
 
 function highJumpGenderChange(){
