@@ -172,16 +172,16 @@ class DashBar {
                     .style("top", 0)
                     .html(``);
             })
-            .on('click', function(event, d) {
-                d3.select(this) // changes color of selected bar
-                    .attr('stroke-width', '2px')
-                    .attr('stroke', 'black')
-                    .style("opacity", 1)
-                    .style('fill', '#ffce01')
-                selYear = d.Year
-                console.log(selYear)
-                treeVis.wrangleData()
-            })
+            // .on('click', function(event, d) {
+            //     d3.select(this) // changes color of selected bar
+            //         .attr('stroke-width', '2px')
+            //         .attr('stroke', 'black')
+            //         .style("opacity", 1)
+            //         .style('fill', '#ffce01')
+            //     selYear = d.Year
+            //     console.log(selYear)
+            //     treeVis.wrangleData()
+            // })
             .transition()
             .duration(1000)
             .attr("x", function(d){

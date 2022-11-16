@@ -4,7 +4,6 @@
 
 // init global variables, switches, helper functions
 let selCountry = 'Worldwide';
-let selYear = 'All'
 
 // load data using promises
 let promises = [
