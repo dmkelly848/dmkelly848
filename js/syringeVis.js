@@ -38,10 +38,35 @@ class SyringeVis {
             .attr("fill","none");
 
 
+        vis.svg.append("path")
+            .attr("d","M 337 500 L 289 500")
+            .attr("stroke","black")
+            .attr("stroke-width",5)
+
+        vis.svg.append("path")
+            .attr("d","M 337 400 L 289 400")
+            .attr("stroke","black")
+            .attr("stroke-width",5)
+
+        vis.svg.append("path")
+            .attr("d","M 337 300 L 289 300")
+            .attr("stroke","black")
+            .attr("stroke-width",5)
+
+        vis.svg.append("path")
+            .attr("d","M 337 600 L 289 600")
+            .attr("stroke","black")
+            .attr("stroke-width",5)
+
         vis.tipFill = vis.svg.append("path")
             .attr("d","M 200 626 L 269 626 L 235 757 L 202 626")
             .attr("fill","gray");
 
+
+        vis.fillVial = vis.svg.append("path")
+            .attr("class","fillLiquid")
+            .attr("d", '')
+            .attr("fill", "green");
 
 
         vis.wrangleData()
@@ -60,25 +85,29 @@ class SyringeVis {
     updateVis() {
         let vis = this;
         console.log(vis.state)
-        vis.fill = vis.svg.selectAll(".fillLiquid")
-        vis.fill = vis.svg.append("path").transition().duration(1000)
-            .attr("class","fillLiquid")
+
+        vis.fillVial.transition().ease(d3.easeLinear).duration(800)
             .attr("d", function(d, index) {
                 if(vis.state === 0){
-                    return '';
+                    return 'M 132 626 L 334 627 L 338 612 C 198 620 224 608 132 612 L 136 624';
                 }else if (vis.state === 1){
                     console.log("yes")
-                    return ' M 132 626 L 334 627 L 335 501 C 235 467 203 533 137 500 L 136 624'
+                    return ' M 132 626 L 334 627 L 335 501 C 235 467 203 533 137 500 L 136 624';
+                }else if(vis.state === 2){
+                    return 'M 132 626 L 334 627 L 337 403 C 235 467 244 320 136 393 L 136 624';
+                }else if(vis.state === 3){
+                    return 'M 132 626 L 334 627 L 337 228 C 265 243 198 222 133 232 L 136 624';
                 }
             })
-            .attr("fill", "green");
+            .attr("fill", "green")
+            .attr("fill-opacity",0.5)
 
     }
 
 
     fillUp(){
         let vis = this;
-        if(vis.state!==4){
+        if(vis.state!==3){
             vis.state++;
         }
 
