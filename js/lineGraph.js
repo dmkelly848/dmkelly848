@@ -34,11 +34,12 @@ class LineGraph {
         // add scale + axis
         vis.y = d3.scaleLinear()
             .range([vis.height,0]);
+
         vis.yAxis = d3.axisLeft()
             .scale(vis.y)
 
         // add scale + axis
-        vis.x = d3.scaleLinear()
+        vis.x = d3.scaleTime()
             .range([0,vis.width]);
 
         vis.xAxis = d3.axisBottom()
@@ -82,6 +83,19 @@ class LineGraph {
         })
 
 
+        d3.group(vis.javelinData ,d=>d["Year"])
+        d3.group(vis.discusData ,d=>d["Year"])
+        // d3.group(vis.hammerData ,d=>d["Year"])
+        let javTemp = d3.rollup(vis.javelinData, v => d3.mean(v, d => d.Clean_Result), d => d.Year)
+        let disTemp = d3.rollup(vis.discusData, v => d3.mean(v, d => d.Clean_Result), d => d.Year)
+        let hamTemp = d3.rollup(vis.hammerData, v => d3.mean(v, d => d.Clean_Result), d => d.Year)
+        vis.javelinData = Array.from(javTemp).map(([key, value]) => ({key, value}));
+        vis.discusData = Array.from(disTemp).map(([key, value]) => ({key, value}));
+        vis.hammerData = Array.from(hamTemp).map(([key, value]) => ({key, value}))
+
+
+
+
 
         vis.updateVis()
     }
@@ -91,19 +105,44 @@ class LineGraph {
     updateVis() {
         let vis = this;
 
-        function calculate(array) {
-            return array.reduce((a, b) => a + b) / array.length;
-        }
+        let max = Math.max(d3.max(vis.javelinData, d => d.value))
+        vis.y.domain([0, max+0.5]);
 
-        vis.line = vis.svg.append("path")
-            .data(vis.javelinData)
+        vis.x.domain([d3.min(vis.discusData, d=>d.key),d3.max(vis.discusData, d=>d.key)])
+
+        vis.line1 = vis.svg.append("path")
+            .datum(vis.javelinData)
             .attr("d", d3.line()
-                .x(function(d) { return vis.x(d.Year)  })
-                .y(function(d) { return vis.y(calculate(d.Clean_Result)) })
+                .x(function(d) { return vis.x(d.key)  })
+                .y(function(d) { return vis.y((d.value))})
             )
-            .attr("fill", "none")
+            .attr("fill","none")
             .attr("stroke", "red")
             .attr("stroke-width", 3.0);
+
+        vis.line2 = vis.svg.append("path")
+            .datum(vis.discusData)
+            .attr("d", d3.line()
+                .x(function(d) { return vis.x(d.key)  })
+                .y(function(d) { return vis.y((d.value))})
+            )
+            .attr("fill","none")
+            .attr("stroke", "green")
+            .attr("stroke-width", 3.0);
+
+        vis.line3 = vis.svg.append("path")
+            .datum(vis.hammerData)
+            .attr("d", d3.line()
+                .x(function(d) { return vis.x(d.key)  })
+                .y(function(d) { return vis.y((d.value))})
+            )
+            .attr("fill","none")
+            .attr("stroke", "blue")
+            .attr("stroke-width", 3.0);
+
+
+        vis.svg.select(".y-axis").call(vis.yAxis);
+        vis.svg.select(".x-axis").call(vis.xAxis);
 
     }
 
