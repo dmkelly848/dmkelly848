@@ -82,6 +82,11 @@ class DashBar {
         vis.yAxisGroup = vis.svg.append("g")
             .attr("class", "y-axis axis");
 
+        // add tooltip area
+        vis.tooltip = d3.select("body").append('div')
+            .attr('class', "tooltip")
+            .attr('id', 'barTooltip')
+
         vis.wrangleData()
     }
 
@@ -134,12 +139,41 @@ class DashBar {
         }))
         // add bars using enter, update, exit methods
         vis.bars = vis.svg.selectAll(".bar")
-            .data(vis.displayData)
+            .data(vis.displayData, d=>d[vis.selectedCategory])
         vis.bars.exit().remove();
 
         vis.bars.enter().append("rect")
             .attr("class", "bar")
             .merge(vis.bars)
+            .on('mouseover', function(event, d) {
+                d3.select(this) // changes color of selected bar
+                    .attr('stroke-width', '2px')
+                    .attr('stroke', 'black')
+                    .style("opacity", 1)
+                    .style('fill', '#ffce01')
+                vis.tooltip // adds tooltip
+                    .style("opacity", 1)
+                    .style("left", event.pageX + 20 + "px")
+                    .style("top", event.pageY + "px")
+                    .html(`
+                     <div style="text-align: left; border: thin solid grey; border-radius: 5px; background: lightgrey; padding-top: 10px; padding-right: 10px; padding-left: 10px">
+                         <h4>${vis.selectedCategory}: ${d[vis.selectedCategory]}</h4>
+                         <p> Medals: ${d.medal_count}</p>
+                     </div>`);
+            })
+            .on('mouseout', function(event, d) {
+                d3.select(this)
+                    .attr('stroke-width', '0px')
+                    .style("fill", '#555555')
+                    .style("opacity", 1)
+                vis.tooltip
+                    .style("opacity", 0)
+                    .style("left", 0)
+                    .style("top", 0)
+                    .html(``);
+            })
+            .transition()
+            .duration(1000)
             .attr("x", function(d){
                 if(vis.selectedCategory === 'Year')
                     return vis.x(vis.parseDate(d[vis.selectedCategory]));
@@ -150,6 +184,7 @@ class DashBar {
             .attr("width", vis.x.bandwidth())
             .attr("height", d=> vis.height - vis.y(d.medal_count))
             .style("fill", '#555555')
+
 
         // Call axis functions with the new domain
 

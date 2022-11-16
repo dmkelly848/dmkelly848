@@ -116,12 +116,12 @@
 }
 
 .dashcontain-4{
-    height: 30%;
+    height: 35%;
     /*border: solid #ffce01;*/
 }
 
 .dashcontain-5{
-    height: 45%;
+    height: 40%;
     /*border: solid #ffce01;*/
 }
 
@@ -190,7 +190,7 @@ h2{
 
 h3{
     font-size: 38px;
-    padding-top: 20px;
+    display: inline;
 }
 
 .center {
@@ -283,7 +283,18 @@ h3{
     background: grey;
     color: white;
     font-size: small;
+}
 
+#resetbutton{
+    float: right;
+    border-radius: 1vh;
+    /*padding-left: 0.5vh;*/
+    /*padding-bottom: 0.5vh;*/
+    /*padding-top: 0.5vh;*/
+    /*padding-right: 1vh;*/
+    background: grey;
+    color: white;
+    font-size: small;
 }
 
 .year-label, .player-label, .time-label{
@@ -308,13 +319,17 @@ h3{
     fill: white;
 }
 
-#dashTitle, #treeVis, #dashBar2{
+#dashTitleRow, #treeVis, #dashBar2{
     border-top: solid #ffce01;
     border-bottom: solid #ffce01;
 }
 
 #treeVis{
     width:95%
+}
+
+#dashTitleRow{
+    padding-top: 20px;
 }
 
 

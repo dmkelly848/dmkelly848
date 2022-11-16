@@ -60,3 +60,11 @@ function syringeDown(){
     syringeVis.updateVis();
 }
 
+function resetToWorld(){
+    selCountry = 'Worldwide';
+    dashMedals.wrangleData();
+    dashBar1.wrangleData();
+    dashBar2.wrangleData();
+    treeVis.resetColors();
+}
+

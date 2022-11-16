@@ -149,6 +149,7 @@ class TreeVis {
                     .style('fill', d=>vis.colors[d.data.continent])
                     .style('opacity', 1)
                 selCountry = d.data.country
+                document.getElementById("resetbutton").disabled = false;
                 dashMedals.wrangleData()
                 dashBar1.wrangleData()
                 dashBar2.wrangleData()
@@ -198,5 +199,12 @@ class TreeVis {
                     return d.data.country;
             })
             .attr('font-size', function(d){return (Math.sqrt(d.data.medal_count)+35)+'%'})
+    }
+
+    resetColors() {
+        let vis = this;
+        vis.svg.selectAll('rect')
+            .style('stroke-width', '1px')
+            .style('opacity', 1)
     }
 }

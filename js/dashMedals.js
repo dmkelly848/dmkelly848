@@ -16,7 +16,7 @@ class DashMedals {
         let vis = this;
 
         // margin convention with static height and responsive/variable width
-        vis.margin = {top: 20, right: 20, bottom: 30, left: 20};
+        vis.margin = {top: 25, right: 20, bottom: 25, left: 20};
         vis.width = document.getElementById(vis.parentElement).getBoundingClientRect().width - vis.margin.left - vis.margin.right;
         vis.height = document.getElementById(vis.parentElement).getBoundingClientRect().height - vis.margin.top - vis.margin.bottom;
 
