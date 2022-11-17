@@ -54,11 +54,15 @@ function runningGenderChange(){
 function syringeUp(){
     syringeVis.fillUp();
     syringeVis.updateVis();
+    lineGraph.fillUp();
+    lineGraph.updateVis();
 }
 
 function syringeDown(){
     syringeVis.emptyDown();
     syringeVis.updateVis();
+    lineGraph.emptyDown();
+    lineGraph.updateVis();
 }
 
 function resetToWorld(){

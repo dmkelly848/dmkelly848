@@ -52,8 +52,6 @@ class LineGraph {
             .attr("class", "x-axis axis axisText")
             .attr("transform", "translate(0," + vis.height+ ")");
 
-        vis.area = vis.svg.append("rect")
-
         vis.group = vis.svg.append("g")
             .attr("x",0)
             .attr("y",0)
@@ -72,7 +70,7 @@ class LineGraph {
             .attr("stroke-dasharray","4 1 2 3")
             .attr("x1", 0).attr("x2", 0)
             .attr("y1", 0).attr("y2", vis.height);
-
+        vis.area = vis.svg.append("rect")
 
         vis.wrangleData()
     }
@@ -130,14 +128,17 @@ class LineGraph {
 
         vis.x.domain([d3.min(vis.discusData, d=>d.key),d3.max(vis.discusData, d=>d.key)])
 
-        let p1 = vis.x(new Date(1898,1,1))
-        let p2 = vis.x(new Date(1952,1,1))
-        let p3 = vis.x(new Date(1972,1,1))
-        let p4 = vis.x(new Date(1988,1,1))
-        let p5 = vis.x(new Date(2014),1,1)
-        console.log(p3)
-        vis.hoverR.attr("x1",p1).attr("x2",p1)
-        vis.hoverR.attr("x1",p2).attr("x2",p2)
+        vis.p1 = vis.x(new Date(1898,1,1))
+        vis.p2 = vis.x(new Date(1952,1,1))
+        vis.p3 = vis.x(new Date(1972,1,1))
+        vis.p4 = vis.x(new Date(1988,1,1))
+        vis.p5 = vis.x(new Date(2014,1,1))
+        if(vis.state ===0){
+            vis.hoverR.transition().duration(800).attr("x1",vis.p2).attr("x2",vis.p2)
+            vis.hoverL.transition().duration(800).attr("x1",vis.p1).attr("x2",vis.p1)
+            vis.area.transition().duration(800).attr("width",vis.p2-vis.p1).attr("height",vis.height)
+                .attr("x",vis.p1).attr("y",0).attr("fill","#ffce01").attr("fill-opacity",0.2)
+        }
 
 
         vis.line1 = vis.svg.append("path")
@@ -180,6 +181,31 @@ class LineGraph {
         let vis = this;
         if(vis.state!==3){
             vis.state++;
+            let hLx = vis.p1
+            let hRx = vis.p2
+
+            if(vis.state ===1){
+                hLx = vis.p2;
+                hRx = vis.p3;
+            }else if (vis.state === 2 ){
+                hLx = vis.p3;
+                hRx = vis.p4;
+            }else if (vis.state === 3){
+                hLx = vis.p4;
+                hRx = vis.p5;
+            }
+            vis.hoverL.transition().duration(800)
+                .attr("x1",function(){return hLx;})
+                .attr("x2",function(){return hLx;})
+
+            vis.hoverR.transition().duration(800)
+                .attr("x1",function(){return hRx;})
+                .attr("x2",function(){return hRx;})
+
+            vis.area.transition().duration(800)
+                .attr("width",hRx-hLx)
+                .attr("x",hLx)
+
         }
 
     }
@@ -188,6 +214,28 @@ class LineGraph {
         let vis = this;
         if(vis.state !== 0){
             vis.state--;
+
+            let hLx = vis.p1
+            let hRx = vis.p2
+
+            if(vis.state ===1){
+                hLx = vis.p2;
+                hRx = vis.p3;
+            }else if (vis.state === 2 ) {
+                hLx = vis.p3;
+                hRx = vis.p4;
+            }
+            vis.hoverL.transition().duration(800)
+                .attr("x1",function(){return hLx;})
+                .attr("x2",function(){return hLx;})
+
+            vis.hoverR.transition().duration(800)
+                .attr("x1",function(){return hRx;})
+                .attr("x2",function(){return hRx;})
+
+            vis.area.transition().duration(800)
+                .attr("width",hRx-hLx)
+                .attr("x",hLx)
         }
     }
 
