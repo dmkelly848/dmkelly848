@@ -131,12 +131,13 @@ class DashBar {
 
         // update domains
         vis.y.domain([0, d3.max(vis.displayData, d=>d.medal_count)]);
-        vis.x.domain(vis.displayData.map(function(d){
-            if(vis.selectedCategory === 'Year')
-                return vis.parseDate(d[vis.selectedCategory]);
-            else
-                return d[vis.selectedCategory];
-        }))
+        if(vis.selectedCategory === 'Year')
+            vis.x.domain(d3.range(1896,2020,4).map(d=>vis.parseDate(d)))
+            // vis.x.domain(vis.displayData.map(d=> vis.parseDate(d[vis.selectedCategory])));
+        else
+            vis.x.domain(vis.displayData.map(d=> d[vis.selectedCategory]))
+
+
         // add bars using enter, update, exit methods
         vis.bars = vis.svg.selectAll(".bar")
             .data(vis.displayData, d=>d[vis.selectedCategory])
