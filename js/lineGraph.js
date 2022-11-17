@@ -10,6 +10,7 @@ class LineGraph {
         this.formatDate = d3.timeFormat("%Y");
         this.parseDate = d3.timeParse("%Y");
         this.state = 0;
+        this.colorScale = ["#ff0000","#179a13","#3e76ec"]
 
         this.initVis()
     }
@@ -18,7 +19,7 @@ class LineGraph {
         let vis = this;
 
         // margin convention with static height and responsive/variable width
-        vis.margin = {top: 20, right: 20, bottom: 30, left: 40};
+        vis.margin = {top: 30, right: 20, bottom: 30, left: 40};
         vis.width = document.getElementById(vis.parentElement).getBoundingClientRect().width - vis.margin.left - vis.margin.right;
         vis.height = document.getElementById(vis.parentElement).getBoundingClientRect().height - vis.margin.top - vis.margin.bottom;
         vis.center = {'x': vis.width/2, 'y': vis.height/2};
@@ -31,9 +32,11 @@ class LineGraph {
             .attr("transform", "translate(" + vis.margin.left + "," + vis.margin.top + ")");
 
 
+        vis.VERTSHIFT = 70;
+        // vis.height = vis.height-VERTSHIFT
         // add scale + axis
         vis.y = d3.scaleLinear()
-            .range([vis.height,0]);
+            .range([vis.height,vis.VERTSHIFT]);
 
         vis.yAxis = d3.axisLeft()
             .scale(vis.y)
@@ -62,15 +65,22 @@ class LineGraph {
             .attr("stroke", "#000000")
             .attr("stroke-dasharray","4 1 2 3")
             .attr("x1", 0).attr("x2", 0)
-            .attr("y1", 0).attr("y2", vis.height);
+            .attr("y1", vis.VERTSHIFT).attr("y2", vis.height);
 
         vis.hoverR = vis.group
             .append("line")
             .attr("stroke", "#000000")
-            .attr("stroke-dasharray","4 1 2 3")
+            .attr("stroke-dasharray","3")
+            .attr("stroke-width",5)
             .attr("x1", 0).attr("x2", 0)
-            .attr("y1", 0).attr("y2", vis.height);
+            .attr("y1", vis.VERTSHIFT).attr("y2", vis.height);
         vis.area = vis.svg.append("rect")
+        vis.svg.append("text")
+            .attr("x",0)
+            .text("Average Throwing Distances (m) of Male Olympians by Year")
+            .attr("class","olympicHeadText chartTitle")
+
+
 
         vis.wrangleData()
     }
@@ -89,6 +99,8 @@ class LineGraph {
         vis.discusData = [];
         vis.javelinData = [];
         vis.hammerData = [];
+
+        vis.legendKeys = ["Javelin Throw",'Discus Throw','Hammer Throw']
 
         // get only  jump results
         filterGenderDat.forEach((element) => {
@@ -136,9 +148,26 @@ class LineGraph {
         if(vis.state ===0){
             vis.hoverR.transition().duration(800).attr("x1",vis.p2).attr("x2",vis.p2)
             vis.hoverL.transition().duration(800).attr("x1",vis.p1).attr("x2",vis.p1)
-            vis.area.transition().duration(800).attr("width",vis.p2-vis.p1).attr("height",vis.height)
-                .attr("x",vis.p1).attr("y",0).attr("fill","#ffce01").attr("fill-opacity",0.2)
+            vis.area.transition().duration(800).attr("width",vis.p2-vis.p1).attr("height",vis.height-vis.VERTSHIFT)
+                .attr("x",vis.p1).attr("y",vis.VERTSHIFT).attr("fill","#ffce01").attr("fill-opacity",0.2)
         }
+
+
+        let lineLegend = vis.svg.selectAll(".lineLegend").data(vis.legendKeys)
+            .enter().append("g")
+            .attr("class","lineLegend")
+            .attr("transform", function (d,i) {
+                let shift =i*20 +4*vis.height/5
+                return "translate(" + vis.width*4/5 + "," + shift+")";
+            });
+
+        lineLegend.append("text").text(function (d) {return d;})
+            .attr("transform", "translate(15,9)")
+            .attr("class","axisText"); //align texts with boxes
+
+        lineLegend.append("rect")
+            .attr("fill", function (d, i) {return vis.colorScale[i]; })
+            .attr("width", 10).attr("height", 10);
 
 
         vis.line1 = vis.svg.append("path")
