@@ -84,21 +84,24 @@
 }
 
 .phase5{
-    height: 1200px;
+    height: 2100px;
     border-top: solid #ff0000;
     border-bottom: solid #ff0000;
     padding-bottom: 50px;
     padding-top: 30px;
 }
 
-.phase5b{
-    height: 850px;
-    padding-top: 30px;
+.phase5a{
+    height: 1000px;
 }
 
-.ringscontain{
+.phase5b{
+    height: 900px;
+    padding-top: 100px;
+}
+
+.circlesContain{
     height: 800px;
-    border: solid #179a13;
 }
 
 .dashcontain{

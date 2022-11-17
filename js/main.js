@@ -40,6 +40,7 @@ function initMainPage(data) {
     dashBar2 = new DashBar('dashBar2',data[0], 'Event')
     syringeVis = new SyringeVis('syringevis',data[0])
     lineGraph = new LineGraph('lineGraph',data[0])
+    circleVis = new CircleVis('circlesVis',data[0],["Doping","Equipment","Training","Diet","Coaching","Global Access"])
 };
 
 function highJumpGenderChange(){
