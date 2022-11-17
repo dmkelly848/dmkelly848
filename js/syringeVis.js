@@ -68,7 +68,7 @@ class SyringeVis {
             .attr("d", '')
             .attr("fill", "green");
 
-        document.getElementById("text0").innerHTML= "1962: Athletes begin using stimulants that gained prevalence during WWII.";
+        document.getElementById("text0").innerHTML= "1952: Athletes begin using stimulants that gained prevalence during WWII.";
 
         vis.wrangleData()
     }
