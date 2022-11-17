@@ -121,8 +121,8 @@ class LineGraph {
         vis.discusData = Array.from(disTemp).map(([key, value]) => ({key, value}));
         vis.hammerData = Array.from(hamTemp).map(([key, value]) => ({key, value}))
 
-
-
+        vis.displayData = [vis.javelinData,vis.discusData,vis.hammerData]
+        console.log(vis.displayData)
 
 
         vis.updateVis()
@@ -170,35 +170,22 @@ class LineGraph {
             .attr("width", 10).attr("height", 10);
 
 
-        vis.line1 = vis.svg.append("path")
-            .datum(vis.javelinData)
-            .attr("d", d3.line()
-                .x(function(d) { return vis.x(d.key)  })
-                .y(function(d) { return vis.y((d.value))})
-            )
-            .attr("fill","none")
-            .attr("stroke", "#ff0000")
-            .attr("stroke-width", 5.0);
+        console.log(vis.displayData)
 
-        vis.line2 = vis.svg.append("path")
-            .datum(vis.discusData)
-            .attr("d", d3.line()
-                .x(function(d) { return vis.x(d.key)  })
-                .y(function(d) { return vis.y((d.value))})
-            )
-            .attr("fill","none")
-            .attr("stroke", "#179a13")
-            .attr("stroke-width", 5.0);
+        vis.line = vis.svg.selectAll(".lin").data(vis.displayData)
 
-        vis.line3 = vis.svg.append("path")
-            .datum(vis.hammerData)
-            .attr("d", d3.line()
+        vis.line.enter().append("path")
+            .attr("class","lin")
+            .attr("d",d3.line()
                 .x(function(d) { return vis.x(d.key)  })
                 .y(function(d) { return vis.y((d.value))})
-            )
+             )
             .attr("fill","none")
-            .attr("stroke", "#3e76ec")
-            .attr("stroke-width", 5.0);
+            .attr("stroke", function(d,i){
+                return vis.colorScale[i]
+            })
+             .attr("stroke-width", 5.0);
+
 
 
         vis.svg.select(".y-axis").call(vis.yAxis);
