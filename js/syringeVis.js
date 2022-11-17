@@ -68,7 +68,7 @@ class SyringeVis {
             .attr("d", '')
             .attr("fill", "green");
 
-        document.getElementById("text0").innerHTML= "1952: Athletes begin using stimulants that gained prevalence during WWII.";
+        document.getElementById("text0").innerHTML= "<span class = \"olympicHeadText chartTitle\">1952:</span> Athletes begin using stimulants that gained prevalence during WWII.";
 
         vis.wrangleData()
     }
@@ -108,11 +108,11 @@ class SyringeVis {
         if(vis.state!==3){
             vis.state++;
             if(vis.state ===1){
-                document.getElementById("text1").innerHTML= "1972: First large-scale testing of stimulants at the Olympics.\n";
+                document.getElementById("text1").innerHTML= "<span class = \"olympicHeadText chartTitle\">1972:</span> First large-scale testing of stimulants at the Olympics.\n";
             }else if(vis.state ===2){
-                document.getElementById("text2").innerHTML= "1988: Sprinter Ben Johnson is caught doping in the most “infamous” case of Olympics drug usage.\n";
+                document.getElementById("text2").innerHTML= "<span class = \"olympicHeadText chartTitle\">1988:</span> Sprinter Ben Johnson is caught doping in the most “infamous” case of Olympics drug usage.\n";
             }else if(vis.state ===3){
-                document.getElementById("text3").innerHTML= "2014: Russian scandal makes doping a national issue.\n";
+                document.getElementById("text3").innerHTML= "<span class = \"olympicHeadText chartTitle\">2014:</span> Russian scandal makes doping a national issue.\n";
             }
         }
 
