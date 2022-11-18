@@ -96,6 +96,38 @@ class CircleVis {
                 .attr('height', 1.5*r)
                 .attr('width', 1.5*r);
 
+            vis.divider = vis.svg.append('line')
+                .style("stroke", "white")
+                .style("stroke-width", 2)
+                .attr("x1", 0)
+                .attr("y1", vis.height*0.7)
+                .attr("x2", vis.width)
+                .attr("y2", vis.height*0.7);
+
+            vis.bigCircle = vis.svg.append('circle')
+                .style("fill", "#3e76ec")
+                .style('opacity', 0)
+                .attr("r", r*2.5)
+                .attr("cy", vis.height*0.7+3.5*r)
+                .attr("cx", 3*r)
+
+            vis.bigPicture = vis.svg.append('svg:image')
+                .attr("class","icon")
+                .attr("y", vis.height*0.7+3.5*r-1.6875*r)
+                .attr('x', 3*r-1.6875*r)
+                .attr('height', 3.375*r)
+                .attr('width', 3.375*r);
+
+            vis.eventTitlePopup = vis.svg.append('text')
+                .attr("class","olympicHeadText")
+                .attr("x", vis.width/3.5)
+                .attr('y', vis.height*0.79)
+
+            vis.eventDescPopup = vis.svg.append('text')
+                .attr("x", vis.width/3.5)
+                .attr('y', vis.width*0.83)
+                .attr('font-size', 'medium')
+
             vis.overlays = vis.svg.selectAll(".overlay").data(vis.circleData)
             vis.overlays.enter().append("circle")
                 .attr("cx",function(d,i){
@@ -109,23 +141,37 @@ class CircleVis {
                 .attr("fill",'#FFFFFF')
                 .on('click', function(event, d){
                     let circ = d3.select(`#circ-${d.split(' ').join('')}`);
-                    if(circ.attr('fill')==='#3e76ec') { // condition on first or second click on object
+                    if(circ.attr('fill')==='#3e76ec' || circ.attr('fill')==='grey') { // condition on first or second click on object
                         d3.selectAll(`.circle${vis.type}`)
                             .style('opacity', opacity-0.1)
-                            .attr('fill', '#3e76ec')
+                            .attr('fill', 'grey')
                             .attr('stroke', undefined)
                         circ.attr('stroke-width', '3px')
                             .attr('stroke', 'black')
                             .style("opacity", 1)
                             .attr('fill', '#ffce01')
+
+                        vis.divider.style('stroke', '#3e76ec')
+                        vis.bigCircle.style('opacity', opacity);
+                        vis.bigPicture.attr("xlink:href", `img/icons/${d}.png`);
+                        vis.bigPicture.style('opacity', 1)
+                        vis.eventTitlePopup.text(d);
+                        vis.eventDescPopup.text("Sample description goes here");
+
                     }
                     else{
                         d3.selectAll(`.circle${vis.type}`)
                             .style('opacity', opacity)
+                            .attr('fill', '#3e76ec')
                         circ.attr('stroke-width', '0px')
                             .attr('stroke', undefined)
                             .style("opacity", opacity)
                             .attr('fill', color)
+                        vis.divider.style('stroke', 'white')
+                        vis.bigCircle.style('opacity', 0);
+                        vis.bigPicture.style("opacity", 0);
+                        vis.eventTitlePopup.text('');
+                        vis.eventDescPopup.text("");
                     }
 
                 });
