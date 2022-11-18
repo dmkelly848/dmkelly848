@@ -4,9 +4,11 @@
 
 class CircleVis {
 
-    constructor(parentElement, circleData) {
+    constructor(parentElement, resultsData, circleData, type) {
         this.parentElement = parentElement;
         this.circleData = circleData;
+        this.resultsData = resultsData;
+        this.type = type;
         this.initVis()
     }
 
@@ -30,28 +32,28 @@ class CircleVis {
             .append("g")
             .attr("transform", "translate(" + vis.margin.left + "," + vis.margin.top + ")");
 
-        vis.circles = vis.svg.selectAll(".reason").data(vis.circleData)
-        vis.circles.enter().append("circle")
-            .attr("cx",function(d,i){
-                return (i%circsPerRow * vis.width/circsPerRow) + 2*r;
-            })
-            .attr("cy",function (d,i){
-                return (Math.floor(i/circsPerRow) * 3 * r) + r;
-            })
-            .attr("r",r)
-            .attr("fill","red")
-
-        vis.labels = vis.svg.selectAll(".labs").data(vis.circleData)
-        vis.labels.enter().append("text")
-            .attr("class","olympicHeadText")
-            .attr("x",function (d,i){
-                return (i%circsPerRow * vis.width/circsPerRow) + 2*r;
-            })
-            .attr("y", function(d,i){
-                return (Math.floor(i/circsPerRow) * 3 * r) + r;
-            })
-            .attr("text-anchor","middle")
-            .text(d=> d);
+        // vis.circles = vis.svg.selectAll(".reason").data(vis.circleData)
+        // vis.circles.enter().append("circle")
+        //     .attr("cx",function(d,i){
+        //         return (i%circsPerRow * vis.width/circsPerRow) + 2*r;
+        //     })
+        //     .attr("cy",function (d,i){
+        //         return (Math.floor(i/circsPerRow) * 3 * r) + r;
+        //     })
+        //     .attr("r",r)
+        //     .attr("fill","red")
+        //
+        // vis.labels = vis.svg.selectAll(".labs").data(vis.circleData)
+        // vis.labels.enter().append("text")
+        //     .attr("class","olympicHeadText")
+        //     .attr("x",function (d,i){
+        //         return (i%circsPerRow * vis.width/circsPerRow) + 2*r;
+        //     })
+        //     .attr("y", function(d,i){
+        //         return (Math.floor(i/circsPerRow) * 3 * r) + r;
+        //     })
+        //     .attr("text-anchor","middle")
+        //     .text(d=> d);
 
 
         vis.wrangleData()
