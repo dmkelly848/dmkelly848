@@ -95,6 +95,52 @@ class CircleVis {
                 .attr('height', 1.3*r)
                 .attr('width', 1.3*r);
 
+            vis.tooltip = d3.select("body").append('div')
+                .attr('class', "tooltip")
+                .attr('id', 'reasonsTooltip')
+
+
+            vis.overlays = vis.svg.selectAll(".overlay").data(vis.circleData)
+            vis.overlays.enter().append("circle")
+                .attr("cx",function(d,i){
+                    return (i%circsPerRow * vis.width/circsPerRow) + padfact*r;
+                })
+                .attr("cy",function (d,i){
+                    return (Math.floor(i/circsPerRow) * (padfact+1) * r) + r;
+                })
+                .attr("r",r*rfact)
+                .style('opacity', 0)
+                .attr("fill",'#ff0000')
+                .on("mouseover",function(event,d){
+                    d3.select(this) // changes color of selected bar
+                        .attr('stroke-width', '2px')
+                        .attr('stroke', 'black')
+                        .style("opacity", 0.5)
+                    vis.tooltip // adds tooltip
+                        .style("opacity", 1)
+                        .style("left", event.pageX + 10 + "px")
+                        .style("top", event.pageY + "px")
+                        .html(`
+                     <div style="font-size: 30px;text-align: left; border: thin solid grey; border-radius: 5px; background: lightgrey; padding-top: 10px; padding-right: 10px; padding-left: 10px">
+                         <p class = "olympicHeadText" >${d}: </p>
+                         <p class = "olympicBodyText"> Test: ${d.describe}</p>
+                     </div>`);
+                })
+                .on('mouseout', function(event, d) {
+                    d3.select(this)
+                        .attr('stroke-width', '0px')
+                        .style("opacity", 0)
+                    vis.tooltip
+                        .style("opacity", 0)
+                        .style("left", 0)
+                        .style("top", 0)
+                        .html(``);
+                })
+
+
+
+
+
 
         }
         else{
