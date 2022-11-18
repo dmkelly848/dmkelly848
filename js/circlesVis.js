@@ -39,9 +39,9 @@ class CircleVis {
             circsPerRow = 3;
             padfact = 2;
             rfact = 1;
-            opacity = 1;
+            opacity = 0.35;
             fontsize = 'normal'
-            color = 'red'
+            color = '#ff0000'
         }
         let r = vis.width/(circsPerRow*4)
 
@@ -76,11 +76,26 @@ class CircleVis {
                     return (i%circsPerRow * vis.width/circsPerRow) + padfact*r;
                 })
                 .attr("y", function(d,i){
-                    return (Math.floor(i/circsPerRow) * (padfact+1) * r) + r;
+                    return (Math.floor(i/circsPerRow) * (padfact+1) * r) + 2.5*r;
                 })
                 .attr("text-anchor","middle")
-                .attr('font-size', fontsize)
+                .attr('font-size', 40)
                 .text(d=> d);
+
+            vis.icons = vis.svg.selectAll(".icon").data(vis.circleData)
+            vis.icons.enter().append("svg:image")
+                .attr("class","icon")
+                .attr("xlink:href", d=>`img/icons/${d}.png`)
+                .attr("x",function (d,i){
+                    return (i%circsPerRow * vis.width/circsPerRow) + padfact*r - r*2/3;
+                })
+                .attr("y", function(d,i){
+                    return (Math.floor(i/circsPerRow) * (padfact+1) * r+r/3) ;
+                })
+                .attr('height', 1.3*r)
+                .attr('width', 1.3*r);
+
+
         }
         else{
             vis.icons = vis.svg.selectAll(".icon").data(vis.circleData)
