@@ -31,7 +31,7 @@ Promise.all(promises)
 // initialize Main Page
 function initMainPage(data) {
     console.log(data)
-    circleVis = new CircleVis('reasonsVis', data[0], undefined, 1)
+    circleVis = new CircleVis('eventsVis', data[0], undefined, 1)
 
     highJumpVis = new HighJumpVis('hurdleVis', data[0])
     runningVis = new RunningVis('runningVis', data[0])
