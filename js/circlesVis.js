@@ -23,19 +23,21 @@ class CircleVis {
 
         //define type-dependent variables
         let circsPerRow;
-        let color;
+        let color, fontsize;
         if(vis.type===1) {
-            circsPerRow = 9;
+            circsPerRow = 5;
             color = 'lightblue'
+            fontsize = 'small';
             // credit to: https://stackoverflow.com/questions/28572015/how-to-select-unique-values-in-d3-js-from-data
             vis.circleData = [...new Set(vis.resultsData.map(d => d.Event))];
             console.log(vis.circleData)
         }
         else{
             circsPerRow = 3;
+            fontsize = 'normal'
             color = 'red'
         }
-        let r = vis.width/(circsPerRow*2*2)
+        let r = vis.width/(circsPerRow*4)
 
 
         // // SVG drawing area
@@ -66,6 +68,7 @@ class CircleVis {
                 return (Math.floor(i/circsPerRow) * 3 * r) + r;
             })
             .attr("text-anchor","middle")
+            .attr('font-size', fontsize)
             .text(d=> d);
 
 
