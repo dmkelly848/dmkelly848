@@ -23,17 +23,23 @@ class CircleVis {
 
         //define type-dependent variables
         let circsPerRow;
-        let color, fontsize;
+        let color, fontsize, padfact, rfact, opacity;
         if(vis.type===1) {
-            circsPerRow = 5;
-            color = 'lightblue'
+            circsPerRow = 6;
+            padfact = 2.2;
+            color = '#3e76ec'
+            opacity = 0.35;
             fontsize = 'small';
+            rfact = 1.3;
             // credit to: https://stackoverflow.com/questions/28572015/how-to-select-unique-values-in-d3-js-from-data
             vis.circleData = [...new Set(vis.resultsData.map(d => d.Event))];
             console.log(vis.circleData)
         }
         else{
             circsPerRow = 3;
+            padfact = 2;
+            rfact = 1;
+            opacity = 1;
             fontsize = 'normal'
             color = 'red'
         }
@@ -47,29 +53,84 @@ class CircleVis {
             .append("g")
             .attr("transform", "translate(" + vis.margin.left + "," + vis.margin.top + ")");
 
-        vis.circles = vis.svg.selectAll(".reason").data(vis.circleData)
+        vis.circles = vis.svg.selectAll(`circle${vis.type}`).data(vis.circleData)
         vis.circles.enter().append("circle")
+            .attr('class', `circle${vis.type}`)
+            .attr('id', d=>`circ-${d.split(' ').join('')}`)
             .attr("cx",function(d,i){
-                return (i%circsPerRow * vis.width/circsPerRow) + 2*r;
+                return (i%circsPerRow * vis.width/circsPerRow) + padfact*r;
             })
             .attr("cy",function (d,i){
-                return (Math.floor(i/circsPerRow) * 3 * r) + r;
+                return (Math.floor(i/circsPerRow) * (padfact+1) * r) + r;
             })
-            .attr("r",r)
-            .attr("fill",color)
+            .attr("r",r*rfact)
+            .style('opacity', opacity)
+            .attr("fill",color);
 
-        vis.labels = vis.svg.selectAll(".labs").data(vis.circleData)
-        vis.labels.enter().append("text")
-            .attr("class","olympicHeadText")
-            .attr("x",function (d,i){
-                return (i%circsPerRow * vis.width/circsPerRow) + 2*r;
-            })
-            .attr("y", function(d,i){
-                return (Math.floor(i/circsPerRow) * 3 * r) + r;
-            })
-            .attr("text-anchor","middle")
-            .attr('font-size', fontsize)
-            .text(d=> d);
+
+        if(vis.type === 2){
+            vis.labels = vis.svg.selectAll(".labs").data(vis.circleData)
+            vis.labels.enter().append("text")
+                .attr("class","olympicHeadText")
+                .attr("x",function (d,i){
+                    return (i%circsPerRow * vis.width/circsPerRow) + padfact*r;
+                })
+                .attr("y", function(d,i){
+                    return (Math.floor(i/circsPerRow) * (padfact+1) * r) + r;
+                })
+                .attr("text-anchor","middle")
+                .attr('font-size', fontsize)
+                .text(d=> d);
+        }
+        else{
+            vis.icons = vis.svg.selectAll(".icon").data(vis.circleData)
+            vis.icons.enter().append("svg:image")
+                .attr("class","icon")
+                .attr("xlink:href", d=>`img/icons/${d}.png`)
+                .attr("x",function (d,i){
+                    return (i%circsPerRow * vis.width/circsPerRow) + padfact*r-20;
+                })
+                .attr("y", function(d,i){
+                    return (Math.floor(i/circsPerRow) * (padfact+1) * r) + r-20;
+                })
+                .attr('height', 1.5*r)
+                .attr('width', 1.5*r);
+
+            vis.overlays = vis.svg.selectAll(".overlay").data(vis.circleData)
+            vis.overlays.enter().append("circle")
+                .attr("cx",function(d,i){
+                    return (i%circsPerRow * vis.width/circsPerRow) + padfact*r;
+                })
+                .attr("cy",function (d,i){
+                    return (Math.floor(i/circsPerRow) * (padfact+1) * r) + r;
+                })
+                .attr("r",r*rfact)
+                .style('opacity', 0)
+                .attr("fill",'#FFFFFF')
+                .on('click', function(event, d){
+                    let circ = d3.select(`#circ-${d.split(' ').join('')}`);
+                    if(circ.attr('fill')==='#3e76ec') { // condition on first or second click on object
+                        d3.selectAll(`.circle${vis.type}`)
+                            .style('opacity', opacity-0.1)
+                            .attr('fill', '#3e76ec')
+                            .attr('stroke', undefined)
+                        circ.attr('stroke-width', '3px')
+                            .attr('stroke', 'black')
+                            .style("opacity", 1)
+                            .attr('fill', '#ffce01')
+                    }
+                    else{
+                        d3.selectAll(`.circle${vis.type}`)
+                            .style('opacity', opacity)
+                        circ.attr('stroke-width', '0px')
+                            .attr('stroke', undefined)
+                            .style("opacity", opacity)
+                            .attr('fill', color)
+                    }
+
+                });
+        }
+
 
 
         vis.wrangleData()
