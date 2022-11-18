@@ -4,12 +4,9 @@
 
 class CircleVis {
 
-    constructor(parentElement, resultsData, reasons) {
+    constructor(parentElement, circleData) {
         this.parentElement = parentElement;
-        this.resultsData = resultsData;
-        this.reasons = reasons;
-        this.formatDate = d3.timeFormat("%Y");
-        this.parseDate = d3.timeParse("%Y")
+        this.circleData = circleData;
         this.initVis()
     }
 
@@ -33,7 +30,7 @@ class CircleVis {
             .append("g")
             .attr("transform", "translate(" + vis.margin.left + "," + vis.margin.top + ")");
 
-        vis.circles = vis.svg.selectAll(".reason").data(vis.reasons)
+        vis.circles = vis.svg.selectAll(".reason").data(vis.circleData)
         vis.circles.enter().append("circle")
             .attr("cx",function(d,i){
                 return (i%circsPerRow * vis.width/circsPerRow) + 2*r;
@@ -44,7 +41,7 @@ class CircleVis {
             .attr("r",r)
             .attr("fill","red")
 
-        vis.labels = vis.svg.selectAll(".labs").data(vis.reasons)
+        vis.labels = vis.svg.selectAll(".labs").data(vis.circleData)
         vis.labels.enter().append("text")
             .attr("class","olympicHeadText")
             .attr("x",function (d,i){
