@@ -123,7 +123,7 @@ class CircleVis {
                         .html(`
                      <div style="font-size: 30px;text-align: left; border: thin solid grey; border-radius: 5px; background: lightgrey; padding-top: 10px; padding-right: 10px; padding-left: 10px">
                          <p class = "olympicHeadText" >${d}: </p>
-                         <p class = "olympicBodyText"> Test: ${d.describe}</p>
+                         <p class = "olympicBodyText"> Click to learn more!</p>
                      </div>`);
                 })
                 .on('mouseout', function(event, d) {
@@ -135,6 +135,10 @@ class CircleVis {
                         .style("left", 0)
                         .style("top", 0)
                         .html(``);
+                })
+                .on('click', function(event, d) {
+                    console.log(d)
+                    expandReason(d);
                 })
 
 

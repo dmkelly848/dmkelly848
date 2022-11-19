@@ -77,3 +77,8 @@ function resetToWorld(){
 
 }
 
+function expandReason(reason){
+    reasonVis = new ReasonVis('reasonsVis', reason);
+}
+
+
