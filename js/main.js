@@ -5,6 +5,8 @@
 // init global variables, switches, helper functions
 let selCountry = 'Worldwide';
 
+let dataStar;
+
 // load data using promises
 let promises = [
     d3.csv('data/clean_results.csv', (row) => {
@@ -22,6 +24,7 @@ let promises = [
 // data loadiing
 Promise.all(promises)
     .then(function (data) {
+        dataStar = data
         initMainPage(data)
     })
     .catch(function (err) {
@@ -39,8 +42,8 @@ function initMainPage(data) {
     dashMedals = new DashMedals('dashMedals', data[0], data[1])
     dashBar1 = new DashBar('dashBar1',data[0], 'Year')
     dashBar2 = new DashBar('dashBar2',data[0], 'Event')
-    syringeVis = new SyringeVis('syringevis',data[0])
-    lineGraph = new LineGraph('lineGraph',data[0])
+    // syringeVis = new SyringeVis('syringevis',data[0])
+    // lineGraph = new LineGraph('lineGraph',data[0])
     circleVis = new CircleVis('reasonsVis',data[0],["Doping","Equipment","Training","Diet","Coaching","Global Access"], 2)
 };
 
@@ -77,8 +80,27 @@ function resetToWorld(){
 
 }
 
-function expandReason(reason){
-    reasonVis = new ReasonVis('reasonsVis', reason);
+function expandReason(reason, data){
+    console.log(reason)
+    console.log(data)
+    reasonVis = new ReasonVis('reasonsVis', dataStar,reason);
+    syringeVis = new SyringeVis('syringevis',dataStar[0])
+    lineGraph = new LineGraph('lineGraph',dataStar[0])
 }
 
+
+function mainPage(data){
+    let div = document.getElementById('original');
+    while(div.firstChild){
+        div.removeChild(div.firstChild);
+    }
+    document.getElementById("original").innerHTML="<div class=\"row phase 5a\">\n" +
+        "                    <div class = \"row center olympicBodyText\" style = \"padding-top: 30px;\">\n" +
+        "                        <div class  = \"col circlesContain\" id=\"reasonsVis\">\n" +
+        "                        </div>\n" +
+        "                    </div>\n" +
+        "                </div>"
+    circleVis = new CircleVis('reasonsVis',data,["Doping","Equipment","Training","Diet","Coaching","Global Access"], 2)
+
+}
 

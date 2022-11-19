@@ -138,7 +138,12 @@ class CircleVis {
                 })
                 .on('click', function(event, d) {
                     console.log(d)
-                    expandReason(d);
+                    let div = document.getElementById('original');
+                    while(div.firstChild){
+                        div.removeChild(div.firstChild);
+                    }
+                    vis.tooltip.style("opacity",0)
+                    expandReason(d, vis.resultsData);
                 })
 
 

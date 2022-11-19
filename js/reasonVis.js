@@ -4,10 +4,10 @@
 
 class ReasonVis {
 
-    constructor(parentElement, resultsData,reason) {
+    constructor(parentElement , data, reason) {
         this.parentElement = parentElement;
-        this.resultsData = resultsData;
         this.reason = reason;
+        this.data = data;
         this.formatDate = d3.timeFormat("%Y");
         this.parseDate = d3.timeParse("%Y");
 
@@ -16,20 +16,47 @@ class ReasonVis {
 
     initVis() {
         let vis = this;
+        console.log(vis.reason)
 
-        // margin convention with static height and responsive/variable width
-        vis.margin = {top: 30, right: 20, bottom: 30, left: 40};
-        vis.width = document.getElementById(vis.parentElement).getBoundingClientRect().width - vis.margin.left - vis.margin.right;
-        vis.height = document.getElementById(vis.parentElement).getBoundingClientRect().height - vis.margin.top - vis.margin.bottom;
-        vis.center = {'x': vis.width/2, 'y': vis.height/2};
+        if(vis.reason === "Doping"){
 
-        // // SVG drawing area
-        vis.svg = d3.select("#" + vis.parentElement).append("svg")
-            .attr("width", vis.width + vis.margin.left + vis.margin.right)
-            .attr("height", vis.height + vis.margin.top + vis.margin.bottom)
-            .append("g")
-            .attr("transform", "translate(" + vis.margin.left + "," + vis.margin.top + ")");
-
+            console.log("doping chosen")
+            document.getElementById("original").innerHTML = "            <div class=\"container-fluid\">\n" +
+                "                <div class = \"col-12 center\">\n" +
+                "                <button type=\"button\" onclick = mainPage()>Back</button>\n" +
+                "            </div>\n" +
+                "                <div class=\"row phase5b redText olympicBodyText\">\n" +
+                "                    <div class=\"col-3\">\n" +
+                "                        <div class = \"row center\" style = \"padding-left: 50px\">\n" +
+                "                            <div class = \"col-6\">\n" +
+                "                                <button type=\"button\" onclick = syringeDown()>Back</button>\n" +
+                "                            </div>\n" +
+                "                            <div class = \"col-6\">\n" +
+                "                                <button type=\"button\" onclick = syringeUp()>Next</button>\n" +
+                "                            </div>\n" +
+                "                        </div>\n" +
+                "                        <div id = \"syringevis\" style=\"height:800px;\"></div>\n" +
+                "                    </div>\n" +
+                "                    <div class = \"col-9 olympicBodyText syringeText\">\n" +
+                "                        <div class=\"container-fluid\">\n" +
+                "                            <div class=\"row\">\n" +
+                "                                <div class=\"col-4\">\n" +
+                "                                   <div style = \"height:200px\"></div>\n" +
+                "                                    <div id = \"text3\" class=\" \" style = \"height:130px\"></div>\n" +
+                "                                    <div id = \"text2\" class=\" \" style = \"height:190px\"></div>\n" +
+                "                                    <div id = \"text1\" class=\" \" style = \"height:130px\"></div>\n" +
+                "                                    <div id = \"text0\" class=\" \" style = \"height:130px\"></div>\n" +
+                "                                </div>\n" +
+                "                                <div class=\"col-8\">\n" +
+                "                                    <div id = \"lineGraph\" style=\"height:800px;\"></div>\n" +
+                "                                </div>\n" +
+                "                            </div>\n" +
+                "                        </div>\n" +
+                "\n" +
+                "                    </div>\n" +
+                "                </div>\n" +
+                "            </div>"
+        }
 
         vis.wrangleData()
     }
