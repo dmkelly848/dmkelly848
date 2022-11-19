@@ -22,8 +22,8 @@ class ReasonVis {
 
             console.log("doping chosen")
             document.getElementById("original").innerHTML = "            <div class=\"container-fluid\">\n" +
-                "                <div class = \"col-12 center\">\n" +
-                "                <button type=\"button\" onclick = mainPage()>Back</button>\n" +
+                "                <div class = \"col-12 center\" style = \"height: 100px\">\n" +
+                "                <button type=\"button\" onclick = mainPage() style = \"font-size = 30px\" >Back to Reasons</button>\n" +
                 "            </div>\n" +
                 "                <div class=\"row phase5b redText olympicBodyText\">\n" +
                 "                    <div class=\"col-3\">\n" +
