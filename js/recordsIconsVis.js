@@ -96,6 +96,23 @@ class RecordsIconsVis {
             .style('opacity', vis.opacity)
             .attr("fill", vis.color);
 
+        vis.icons = vis.svg.selectAll(".icon").data(vis.circleData)
+
+        vis.icons.exit().remove()
+
+        vis.icons.enter().append("svg:image")
+            .merge(vis.icons)
+            .attr("xlink:href", d=>`img/icons/${d.Event}.png`)
+            .attr("x",function (d,i){
+                return (i%vis.circsPerRow * vis.width/vis.circsPerRow) + vis.padfact*vis.r - vis.r*2/3;
+            })
+            .attr("y", function(d,i){
+                return (Math.floor(i/vis.circsPerRow) * (vis.padfact+1) * vis.r+vis.r/3) ;
+            })
+            .attr('height', 1.3*vis.r)
+            .attr('width', 1.3*vis.r)
+            .attr('class','icon')
+
     }
 
     createSlider() {
