@@ -1,6 +1,4 @@
-// adapted from lab 9 globe visualization code
-
-class MapVis {
+class RecordsVis {
 
     constructor(parentElement, data, geoData) {
         this.parentElement = parentElement;
@@ -25,6 +23,8 @@ class MapVis {
 
         // create projection
         vis.projection = d3.geoOrthographic()
+            // vis.projection = d3.geoStereographic() was interesting - but probably less intuitive than geoOrthographic
+            // guess-and-check to scale size
             .scale(vis.height * .42)
             .translate([vis.width / 2, vis.height / 2])
 
@@ -109,20 +109,21 @@ class MapVis {
 
         // based off example from pie chart earlier, using countryInfo data above
         vis.countries.on('mouseover', function(event, d){
-                d3.select(this)
-                    .attr('stroke-width', '2px')
-                    .attr('stroke', 'black')
-                    .style('fill', 'rgba(173,222,255,0.62)')
+            d3.select(this)
+                .attr('stroke-width', '2px')
+                .attr('stroke', 'black')
+                .style('fill', 'rgba(173,222,255,0.62)')
 
-                vis.tooltip
-                    .style("opacity", 1)
-                    .style("left", event.pageX + 20 + "px")
-                    .style("top", event.pageY + "px")
-                    .html(`
+            vis.tooltip
+                .style("opacity", 1)
+                .style("left", event.pageX + 20 + "px")
+                .style("top", event.pageY + "px")
+                // going off example from screenshot
+                .html(`
                         <div style="border: thin solid grey; border-radius: 5px; background: lightgrey; padding: 20px">
                         <h3>${d.properties.name}<h3>                       
                         </div>`);
-            })
+        })
             // mouseout code following lab page instructions
             .on('mouseout', function(event, d){
                 d3.select(this)
