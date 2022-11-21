@@ -19,7 +19,7 @@ let promises = [
         return row;
     }),
     d3.csv('data/continent_mapping.csv'),
-    d3.json("https://cdn.jsdelivr.net/npm/world-atlas@2/countries-50m.json")
+    d3.csv('data/event_descriptions.csv')
 ];
 
 // data loadiing
@@ -34,8 +34,8 @@ Promise.all(promises)
 
 // initialize Main Page
 function initMainPage(data) {
-    console.log(data)
-    circleVis = new CircleVis('eventsVis', data[0], undefined, 1)
+    console.log(data[2])
+    circleVis = new CircleVis('eventsVis', data[0], undefined, data[2], 1)
 
     highJumpVis = new HighJumpVis('hurdleVis', data[0])
     runningVis = new RunningVis('runningVis', data[0])
@@ -45,8 +45,8 @@ function initMainPage(data) {
     dashBar2 = new DashBar('dashBar2',data[0], 'Event')
     // syringeVis = new SyringeVis('syringevis',data[0])
     // lineGraph = new LineGraph('lineGraph',data[0])
-    circleVis = new CircleVis('reasonsVis',data[0],["Doping","Equipment","Training","Diet","Coaching","Global Access"], 2)
-    mapVis = new MapVis('mapVis', data[0], data[2])
+    circleVis = new CircleVis('reasonsVis',data[0],["Doping","Equipment","Training","Diet","Coaching","Global Access"], undefined, 2)
+    mapVis = new MapVis('mapVis', data[0])
 };
 
 function highJumpGenderChange(){

@@ -2,10 +2,10 @@
 
 class MapVis {
 
-    constructor(parentElement, data, geoData) {
+    constructor(parentElement, data) {
         this.parentElement = parentElement;
         this.data = data;
-        this.geoData = geoData;
+        this.geoData = d3.json("https://cdn.jsdelivr.net/npm/world-atlas@2/countries-50m.json")
 
         this.colors = ['#fddbc7', '#f4a582', '#d6604d', '#b2182b']
 
@@ -17,8 +17,7 @@ class MapVis {
 
         vis.margin = {top: 20, right: 20, bottom: 20, left: 20};
         vis.width = document.getElementById(vis.parentElement).getBoundingClientRect().width - vis.margin.left - vis.margin.right;
-        //vis.height = document.getElementById(vis.parentElement).getBoundingClientRect().height - vis.margin.top - vis.margin.bottom;
-        vis.height = 400 - vis.margin.top - vis.margin.bottom;
+        vis.height = document.getElementById(vis.parentElement).getBoundingClientRect().height - vis.margin.top - vis.margin.bottom;
 
         vis.svg = d3.select("#" + vis.parentElement).append("svg")
             .attr("width", vis.width)

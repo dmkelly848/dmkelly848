@@ -4,10 +4,11 @@
 
 class CircleVis {
 
-    constructor(parentElement, resultsData, circleData, type) {
+    constructor(parentElement, resultsData, circleData, descData, type) {
         this.parentElement = parentElement;
         this.circleData = circleData;
         this.resultsData = resultsData;
+        this.descData = descData;
         this.type = type;
         this.initVis()
     }
@@ -166,7 +167,7 @@ class CircleVis {
                 .attr('height', 1.5*r)
                 .attr('width', 1.5*r);
 
-            let placement = 0.56;
+            let placement = 0.5;
 
             vis.divider = vis.svg.append('line')
                 .style("stroke", "white")
@@ -204,7 +205,7 @@ class CircleVis {
                 .attr('width', vis.width-vis.width/3.5)
                 .attr('height', vis.height-vis.height*(placement*1.12)-20)
                 .attr('font-size', 'small')
-                .append("xhtml:div")
+                .append("xhtml:p")
 
 
 
@@ -236,7 +237,7 @@ class CircleVis {
                         vis.bigPicture.attr("xlink:href", `img/icons/${d}.png`);
                         vis.bigPicture.style('opacity', 1)
                         vis.eventTitlePopup.text(d);
-                        vis.eventDescPopup.html("<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eu enim quam.</p>");
+                        vis.eventDescPopup.text(vis.descData.find(datum => datum['event'] === d).description);
 
                     }
                     else{
