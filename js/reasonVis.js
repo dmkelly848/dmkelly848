@@ -56,7 +56,45 @@ class ReasonVis {
                 "                    </div>\n" +
                 "                </div>\n" +
                 "            </div>"
+        }else if(vis.reason === "Equipment"){
+            //Insert HTML Code
+            document.getElementById("original").innerHTML= "<div class=\"container-fluid\">\n" +
+                "                <div class = \"col-12 center\">\n" +
+                "                <button type=\"button\" onclick = mainPage()>Back to Reasons</button>\n" +
+                "            </div>"
+
+        }else if(vis.reason === "Training"){
+            //Insert HTML code
+            document.getElementById("original").innerHTML= "<div class=\"container-fluid\">\n" +
+                "                <div class = \"col-12 center\">\n" +
+                "                <button type=\"button\" onclick = mainPage()>Back to Reasons</button>\n" +
+                "            </div>"
+
+
+        }else if(vis.reason === "Diet"){
+            //Insert HTML code
+            document.getElementById("original").innerHTML= "<div class=\"container-fluid\">\n" +
+                "                <div class = \"col-12 center\">\n" +
+                "                <button type=\"button\" onclick = mainPage()>Back to Reasons</button>\n" +
+                "            </div>"
+
+
+        }else if(vis.reason === "Coaching"){
+            //Insert HTML code
+            document.getElementById("original").innerHTML= "<div class=\"container-fluid\">\n" +
+                "                <div class = \"col-12 center\">\n" +
+                "                <button type=\"button\" onclick = mainPage()>Back to Reasons</button>\n" +
+                "            </div>"
+
+        }else{
+            //Insert HTML code
+            document.getElementById("original").innerHTML= "<div class=\"container-fluid\">\n" +
+                "                <div class = \"col-12 center\">\n" +
+                "                <button type=\"button\" onclick = mainPage()>Back to Reasons</button>\n" +
+                "            </div>"
         }
+
+
 
         vis.wrangleData()
     }
