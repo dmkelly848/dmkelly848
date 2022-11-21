@@ -80,7 +80,7 @@
 }
 
 .phase4{
-    height: 1000px;
+    height: 1200px;
     border-top: solid #179a13;
     border-bottom: solid #179a13;
     padding-bottom: 50px;
@@ -364,6 +364,10 @@ h3{
 
 #eventListRow{
     margin-left:1em;
+}
+
+.record-label {
+    font-size: 12px;
 }
 
 
