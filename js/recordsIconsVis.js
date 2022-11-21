@@ -80,8 +80,12 @@ class RecordsIconsVis {
         console.log(vis.circleData)
 
         vis.circles = vis.svg.selectAll(`circle`).data(vis.circleData)
+
+        vis.circles.exit().remove()
+
         vis.circles.enter().append("circle")
             .attr('class', `circle`)
+            .merge(vis.circles)
             .attr("cx", function (d, i) {
                 return (i % vis.circsPerRow * vis.width / vis.circsPerRow) + vis.padfact * vis.r;
             })
