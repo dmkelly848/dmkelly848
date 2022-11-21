@@ -131,12 +131,16 @@
                         <div class="row">
                             <div class="col-1"></div>
                             <div class="col-11 hookText">
+                                WATCH the 100M Gold Medalists from across the years race each other - in real time!
                                 TO-DO: Insert key takeaways from moving bars visualization
                             </div>
                         </div>
                     </div>
                 </div>
                 <div class="col-6 olympicBodyText phase31R">
+                    <button class="btn btn-outline-secondary align-self-center" type="button"
+                            onclick="runningGenderChange()" style="border: thin solid grey;">Watch Again!
+                    </button>
                     <select class='dropdown' id="running-gender" onchange="runningGenderChange()">
                         <option value="M" selected>Men</option>
                         <option value="W">Women</option>
@@ -186,7 +190,9 @@
             <div class = "col-2"></div>
             <div class = "row center olympicBodyText">
                 <div class  = "col greenText">
+                    Host Countries:
                     <div id = "mapVis" ></div>
+                    Broken olympic records, by event, over the years:
                     <select class='dropdown' id="records-gender" onchange="recordsGenderChange()">
                         <option value="M" selected>Men</option>
                         <option value="W">Women</option>

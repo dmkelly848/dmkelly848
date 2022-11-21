@@ -23,16 +23,13 @@ class MapVis {
             .attr("height", vis.height)
             .attr('transform', `translate (${vis.margin.left}, ${vis.margin.top})`);
 
-        // create projection
         vis.projection = d3.geoOrthographic()
             .scale(vis.height * .42)
             .translate([vis.width / 2, vis.height / 2])
 
-        // pass projection to geogenerator
         vis.path = d3.geoPath()
             .projection(vis.projection);
 
-        // code for building sphere
         vis.svg.append("path")
             .datum({type: "Sphere"})
             .attr("class", "graticule")
@@ -40,27 +37,20 @@ class MapVis {
             .attr("stroke","rgba(129,129,129,0.35)")
             .attr("d", vis.path);
 
-        // convert topoJSON to GeoJSON
         vis.world = topojson.feature(vis.geoData, vis.geoData.objects.countries).features
 
-        // draw countries
         vis.countries = vis.svg.selectAll(".country")
             .data(vis.world)
             .enter().append("path")
             .attr('class', 'country')
             .attr("d", vis.path)
 
-        // append tooltip (Same as pie chart)
         vis.tooltip = d3.select("body").append('div')
             .attr('class', "tooltip")
             .attr('id', 'pieTooltip')
 
-        // creating legend
-        vis.legend = vis.svg.append("g")
-            .attr('class', 'legend')
-            .attr('transform', `translate(${vis.width * 2.7 / 4}, ${vis.height - 40})`)
 
-        // step 10, free code: making map draggable
+        //free code: making map draggable
         let m0,
             o0;
 
@@ -79,7 +69,6 @@ class MapVis {
                         vis.projection.rotate([-o1[0], -o1[1]]);
                     }
 
-                    // Update the map
                     vis.path = d3.geoPath().projection(vis.projection);
                     d3.selectAll(".country").attr("d", vis.path)
                     d3.selectAll(".graticule").attr("d", vis.path)
@@ -107,7 +96,6 @@ class MapVis {
     updateVis() {
         let vis = this;
 
-        // based off example from pie chart earlier, using countryInfo data above
         vis.countries.on('mouseover', function(event, d){
                 d3.select(this)
                     .attr('stroke-width', '2px')
