@@ -86,7 +86,36 @@ class ReasonVis {
             document.getElementById("original").innerHTML= "<div class=\"container-fluid\">\n" +
                 "                <div class = \"col-12 center\">\n" +
                 "                <button type=\"button\" onclick = mainPage()>Back to Reasons</button>\n" +
-                "            </div>"
+                "            </div><div class=\"container-fluid\" style = \"padding-left: 100px; padding-right:100px\">\n" +
+                "        <h3 class = \"olympicHeadText chartTitle\">Training:</h3>\n" +
+                "        <div class=\"row olympicBodyText\" style = \"font-size: 28\">\n" +
+                "            <div class=\"col \" style=\"padding: 70px 0;\" >\n" +
+                "                <ul>\n" +
+                "                    <li> Modern-day Olympic athletes are able to undergo training regimines that couldn't have been dreamed of in the 19th century.\n" +
+                "                    </li>\n" +
+                "                    <li> Prior to the advent of technology, Olympic athletes gauged their performances in numbers: race times, meters jumped, etc.</li>\n" +
+                "                    <li>Now, Olympic contenders regularly undergo physical testing to measure their heart rates, lactic acid, and more, which enables them to more precisely record their athletic progress.</li>\n" +
+                "                    <li>New suits are being developed that sense sweat content in real time to provide hydration guidelines.</li>\n" +
+                "                </ul>\n" +
+                "            </div>\n" +
+                "            <div class=\"col\">\n" +
+                "                <img src=\"img/img1.webp\" width = \"90%\">\n" +
+                "            </div>\n" +
+                "        </div>\n" +
+                "        <div class=\"row olympicBodyText\" style = \"font-size: 28; height: 400px\">\n" +
+                "            <div class=\"col-5\">\n" +
+                "                <img src=\"img/img2.webp\" width = \"80%\">\n" +
+                "            </div>\n" +
+                "\n" +
+                "            <div class=\"col-7\" style=\"padding: 70px 0;\" >\n" +
+                "                <ul>\n" +
+                "                    <li>Historically, many athletes were amateur and practiced part-time. With the advent of corporate sponsorships, prospective Olympians are prepared to make athletics their full-time endeavor.</li>\n" +
+                "                    <li> Children are also being recruited at successively younger ages to train as athletes.\n" +
+                "                    </li>\n" +
+                "                </ul>\n" +
+                "            </div>\n" +
+                "        </div>\n" +
+                "    </div>"
 
 
         }else if(vis.reason === "Diet"){
