@@ -1,4 +1,4 @@
-class RecordsVis {
+class RecordsIconsVis {
 
     constructor(parentElement, data, mensRecords, womensRecords) {
         this.parentElement = parentElement;
@@ -21,6 +21,30 @@ class RecordsVis {
             .attr("width", vis.width)
             .attr("height", vis.height)
             .attr('transform', `translate (${vis.margin.left}, ${vis.margin.top})`);
+
+        let circsPerRow = 6;
+        let color = '#3e76ec';
+        let opacity = .35;
+        let padfact = 2.2;
+        let fontsize = 'small';
+        let rfact = 1.3;
+        // credit to: https://stackoverflow.com/questions/28572015/how-to-select-unique-values-in-d3-js-from-data
+        vis.circleData = [...new Set(vis.data.map(d => d.Event))];
+
+        vis.circles = vis.svg.selectAll(`circle${vis.type}`).data(vis.circleData)
+        vis.circles.enter().append("circle")
+            .attr('class', `circle${vis.type}`)
+            .attr('id', d=>`circ-${d.split(' ').join('')}`)
+            .attr("cx",function(d,i){
+                return (i%circsPerRow * vis.width/circsPerRow) + padfact*r;
+            })
+            .attr("cy",function (d,i){
+                return (Math.floor(i/circsPerRow) * (padfact+1) * r) + r;
+            })
+            .attr("r",r*rfact)
+            .style('opacity', opacity)
+            .attr("fill",color);
+
 
         vis.wrangleData()
 
@@ -56,84 +80,7 @@ class RecordsVis {
     updateVis() {
         let vis = this;
 
-        console.log(vis.displayData)
 
-        // labels acting up - will revisit TODO
-        // vis.labels = vis.svg.selectAll(".record-year-label")
-        //     .data(vis.displayData.years)
-        //
-        // vis.labels.exit().remove()
-        //
-        // vis.labelsGroup = vis.labels.enter()
-        //     .append("g")
-        //     .merge(vis.labels)
-        //     .attr('transform', function(d,index) {return `translate(${ index * (15 + vis.cellPadding)}, 0)`})
-        //
-        // //vis.labelsGroup.selectAll('.record-year-label').exit().remove()
-        //
-        // vis.labelsGroup.append("text")
-        //     .attr("class", "record-year-label")
-        //     .attr('transform', 'rotate(-90)')
-        //     .attr('x', -30)
-        //     .attr('y', 135)
-        //     .attr('text-anchor', 'beginning')
-        //     .style('fill','black')
-        //     .text(d=>d)
-
-        vis.rows = vis.svg.selectAll(".matrix-row")
-            .data(vis.displayData, function (d) {
-                return d.Event;
-            })
-
-        vis.rows.exit().remove()
-
-        vis.rowGroups = vis.rows.enter()
-            .append("g")
-            .merge(vis.rows)
-            .attr("class", "matrix-row")
-            .attr('transform', function (d, index) {
-                return `translate(0, ${index * (15 + vis.cellPadding)})`
-            })
-
-        vis.rowGroups.selectAll(".record-label").exit().remove()
-
-        vis.rowGroups.append("text")
-            .attr('x', 10)
-            .attr('y', 15)
-            .attr('class', 'record-label')
-            .style('fill', 'black')
-            .text(d => d.Event)
-
-        vis.rowGroups.data(vis.displayData, function (d) {
-            return d.Event;
-        })
-            .merge(vis.rows)
-            .attr('transform', function (d, index) {
-                return `translate(0, ${ 40 + index * (15 + vis.cellPadding)})`
-            })
-
-        vis.recordSquare = vis.rowGroups.selectAll(".record-square")
-            .data(d=>d.Records);
-
-        vis.recordSquare.exit().remove()
-
-        vis.recordSquare.enter().append("rect")
-            .merge(vis.recordSquare)
-            .attr("class", "record-square")
-            .attr('transform', 'translate(125,0)')
-            .attr("x", function (d, index) {
-                return (vis.cellWidth + vis.cellPadding) * index
-            })
-            .attr("y", 0)
-            .attr('width',vis.cellWidth)
-            .attr('height',vis.cellHeight)
-            .style("fill", function (d, index) {
-                if (d === 1) {
-                    return "green"
-                } else {
-                    return "grey"
-                }
-            })
 
     }
 }

@@ -95,6 +95,7 @@ class MapVis {
                 host: 0
             }
 
+            // source: https://www.w3schools.com/jsref/jsref_includes_array.asp
             if (vis.hosts.includes(d.properties.name)) {
                 vis.countryInfo[d.properties.name].host = 1
             }
