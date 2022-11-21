@@ -7,7 +7,6 @@ class MapVis {
         this.data = data;
         this.geoData = geoData;
 
-        // define colors
         this.colors = ['#fddbc7', '#f4a582', '#d6604d', '#b2182b']
 
         this.initVis()
@@ -25,15 +24,6 @@ class MapVis {
             .attr("width", vis.width)
             .attr("height", vis.height)
             .attr('transform', `translate (${vis.margin.left}, ${vis.margin.top})`);
-
-        // add title
-        vis.svg.append('g')
-            .attr('class', 'title')
-            .attr('id', 'map-title')
-            .append('text')
-            .text('Host Cities')
-            .attr('transform', `translate(${vis.width / 2}, 20)`)
-            .attr('text-anchor', 'middle');
 
         // create projection
         vis.projection = d3.geoOrthographic()
@@ -100,19 +90,6 @@ class MapVis {
                 })
         )
 
-        // adapting hw 8 code to make axis for legend
-        vis.x = d3.scaleLinear()
-            .domain([0,100])
-            .range([0,160]);
-
-        vis.xAxis = d3.axisBottom()
-            .scale(vis.x)
-            .tickValues([0,25,50,75,100])
-
-        vis.svg.append("g")
-            .attr("class", "x-axis axis")
-            .attr('transform', `translate(${vis.width * 2.7 / 4}, ${vis.height - 20})`)
-
         vis.wrangleData()
 
     }
@@ -123,12 +100,8 @@ class MapVis {
         // create random data structure with information for each land
         vis.countryInfo = {};
         vis.geoData.objects.countries.geometries.forEach(d => {
-            let randomCountryValue = Math.random() * 4
             vis.countryInfo[d.properties.name] = {
                 name: d.properties.name,
-                category: 'category_' + Math.floor(randomCountryValue),
-                color: vis.colors[Math.floor(randomCountryValue)],
-                value: randomCountryValue / 4 * 100
             }
         })
 
@@ -139,9 +112,7 @@ class MapVis {
         let vis = this;
 
         // based off example from pie chart earlier, using countryInfo data above
-        vis.countries.style("fill", function(d) { return vis.countryInfo[d.properties.name].color; })
-            // creating event listener to create tooltip, same as piechart activity
-            .on('mouseover', function(event, d){
+        vis.countries.on('mouseover', function(event, d){
                 d3.select(this)
                     .attr('stroke-width', '2px')
                     .attr('stroke', 'black')
@@ -154,11 +125,7 @@ class MapVis {
                     // going off example from screenshot
                     .html(`
                         <div style="border: thin solid grey; border-radius: 5px; background: lightgrey; padding: 20px">
-                        <h3>${d.properties.name}<h3> 
-                        <h4> name: ${d.properties.name}</h4>      
-                        <h4> category: ${vis.countryInfo[d.properties.name].category}</h4>
-                        <h4> color: ${vis.countryInfo[d.properties.name].color}</h4>   
-                        <h4> value: ${vis.countryInfo[d.properties.name].value}</h4>                      
+                        <h3>${d.properties.name}<h3>                       
                         </div>`);
             })
             // mouseout code following lab page instructions
@@ -173,19 +140,5 @@ class MapVis {
                     .style("top", 0)
                     .html(``);
             })
-
-        // provided code to make/format legend
-        vis.legend.selectAll(".legend-rect").data(vis.colors)
-            .enter()
-            .append("rect")
-            .style("fill", (d,index)=>vis.colors[index])
-            .attr("class", "legend-rect")
-            .attr("x", (d,index)=>index*40)
-            .attr("y", 0)
-            .attr("height", 20)
-            .attr("width", 40)
-
-        // code from HW8 to call x axis
-        vis.svg.select(".x-axis").call(vis.xAxis);
     }
 }
