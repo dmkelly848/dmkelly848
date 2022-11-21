@@ -286,6 +286,17 @@ h3{
     border: grey;
 }
 
+#slider-round-record {
+    height: .75vh;
+    margin: auto;
+    width: 60%;
+    margin-top: 3vh;
+    margin-bottom: 4vh;
+    font-size: small;
+    background: grey;
+    border: grey;
+}
+
 #slider-round .noUi-handle {
     height: 2vh;
     width: 2vh;
