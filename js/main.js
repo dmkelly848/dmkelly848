@@ -84,8 +84,14 @@ function expandReason(reason, data){
     console.log(reason)
     console.log(data)
     reasonVis = new ReasonVis('reasonsVis', dataStar,reason);
-    syringeVis = new SyringeVis('syringevis',dataStar[0])
-    lineGraph = new LineGraph('lineGraph',dataStar[0])
+    if(reason==="Doping"){
+        syringeVis = new SyringeVis('syringevis',dataStar[0])
+        lineGraph = new LineGraph('lineGraph',dataStar[0])
+    }else if(reason==="Equipment"){
+        equipVis = new EquipmentVis('equip');
+    }
+
+
 }
 
 
