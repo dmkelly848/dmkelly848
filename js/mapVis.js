@@ -7,11 +7,16 @@ class MapVis {
         this.data = data;
         this.geoData = geoData
 
+        this.colors = ['#000000', '#aaffaa']
+
         this.initVis()
     }
 
     initVis() {
         let vis = this;
+
+        //TODO: modify list as needed/make responsive
+        vis.hosts = ['Greece', 'France', 'United States of America', 'United Kingdom', 'Sweden', 'Belgium', 'Switzerland', 'Netherlands', 'Germany', 'Norway', 'Finland', 'Australia','Italy','Japan','Mexico','Canada','Russia','South Korea','Spain','China','Brazil']
 
         vis.margin = {top: 0, right: 20, bottom: 20, left: 20};
         vis.width = document.getElementById(vis.parentElement).getBoundingClientRect().width - vis.margin.left - vis.margin.right;
@@ -87,7 +92,14 @@ class MapVis {
         vis.geoData.objects.countries.geometries.forEach(d => {
             vis.countryInfo[d.properties.name] = {
                 name: d.properties.name,
+                host: 0
             }
+
+            if (vis.hosts.includes(d.properties.name)) {
+                vis.countryInfo[d.properties.name].host = 1
+            }
+
+            vis.countryInfo[d.properties.name]['color'] = vis.colors[vis.countryInfo[d.properties.name].host]
         })
 
         vis.updateVis()
@@ -96,7 +108,8 @@ class MapVis {
     updateVis() {
         let vis = this;
 
-        vis.countries.on('mouseover', function(event, d){
+        vis.countries.style("fill", function(d) { return vis.countryInfo[d.properties.name].color; })
+            .on('mouseover', function(event, d){
                 d3.select(this)
                     .attr('stroke-width', '2px')
                     .attr('stroke', 'black')
