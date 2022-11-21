@@ -91,12 +91,10 @@ class RecordsVis {
             .attr("x", function (d, index) {
                 return (vis.cellWidth + vis.cellPadding) * index
             })
-            .attr("y", function (d, index) {
-                return (vis.cellHeight + vis.cellPadding) * index
-            })
+            .attr("y", 0)
             .attr('width',vis.cellWidth)
             .attr('height',vis.cellHeight)
-            .style("fill", function (d) {
+            .style("fill", function (d, index) {
             if (d === 1) {
                 return "red"
             } else {
