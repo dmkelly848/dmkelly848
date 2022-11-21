@@ -20,6 +20,9 @@ class RecordsVis {
             .attr("height", vis.height)
             .attr('transform', `translate (${vis.margin.left}, ${vis.margin.top})`);
 
+        this.data.forEach(function(d){
+            console.log(d)
+        })
 
         vis.wrangleData()
 
