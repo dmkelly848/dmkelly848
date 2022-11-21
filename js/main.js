@@ -119,6 +119,7 @@ function runningGenderChange(){
 function recordsGenderChange(){
     recordsVis.wrangleData()
     recordsIconsVis.wrangleData()
+    recordsIconsVis.updateSlider()
 }
 
 function recordsYearChange(){
