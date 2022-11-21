@@ -19,6 +19,7 @@ let promises = [
         return row;
     }),
     d3.csv('data/continent_mapping.csv'),
+    d3.json("https://cdn.jsdelivr.net/npm/world-atlas@2/countries-50m.json")
 ];
 
 // data loadiing
@@ -45,7 +46,7 @@ function initMainPage(data) {
     // syringeVis = new SyringeVis('syringevis',data[0])
     // lineGraph = new LineGraph('lineGraph',data[0])
     circleVis = new CircleVis('reasonsVis',data[0],["Doping","Equipment","Training","Diet","Coaching","Global Access"], 2)
-    mapVis = new MapVis('mapVis', data[0])
+    mapVis = new MapVis('mapVis', data[0], data[2])
 };
 
 function highJumpGenderChange(){
