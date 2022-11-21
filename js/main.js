@@ -62,6 +62,10 @@ function runningGenderChange(){
     runningVis.wrangleData()
 }
 
+function recordsGenderChange(){
+    recordsVis.wrangleData()
+}
+
 function syringeUp(){
     syringeVis.fillUp();
     syringeVis.updateVis();
