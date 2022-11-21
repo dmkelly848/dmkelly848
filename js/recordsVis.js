@@ -39,7 +39,6 @@ class RecordsVis {
 
         console.log(vis.gender)
 
-        // if not by index, sort greatest to least
         if (vis.gender === 'M') {
             vis.displayData = vis.mensRecords
             vis.displayData.forEach((row,index) => {

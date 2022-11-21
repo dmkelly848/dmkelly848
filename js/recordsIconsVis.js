@@ -12,10 +12,10 @@ class RecordsIconsVis {
     initVis() {
         let vis = this;
 
-        vis.margin = {top: 20, right: 20, bottom: 20, left: 20};
+        vis.margin = {top: 50, right: 20, bottom: 20, left: 20};
         vis.width = document.getElementById(vis.parentElement).getBoundingClientRect().width - vis.margin.left - vis.margin.right;
         //vis.height = document.getElementById(vis.parentElement).getBoundingClientRect().height - vis.margin.top - vis.margin.bottom;
-        vis.height = 700 - vis.margin.top - vis.margin.bottom;
+        vis.height = 800 - vis.margin.top - vis.margin.bottom;
 
         vis.svg = d3.select("#" + vis.parentElement).append("svg")
             .attr("width", vis.width)
@@ -29,24 +29,16 @@ class RecordsIconsVis {
         let fontsize = 'small';
         let rfact = 1.3;
         // credit to: https://stackoverflow.com/questions/28572015/how-to-select-unique-values-in-d3-js-from-data
-        vis.circleData = [...new Set(vis.data.map(d => d.Event))];
+        let r = 40
 
-        vis.circles = vis.svg.selectAll(`circle${vis.type}`).data(vis.circleData)
-        vis.circles.enter().append("circle")
-            .attr('class', `circle${vis.type}`)
-            .attr('id', d=>`circ-${d.split(' ').join('')}`)
-            .attr("cx",function(d,i){
-                return (i%circsPerRow * vis.width/circsPerRow) + padfact*r;
-            })
-            .attr("cy",function (d,i){
-                return (Math.floor(i/circsPerRow) * (padfact+1) * r) + r;
-            })
-            .attr("r",r*rfact)
-            .style('opacity', opacity)
-            .attr("fill",color);
+
 
 
         vis.wrangleData()
+
+        let vis = this;
+
+        vis.circleData = [...new Set(vis.data.map(d => d.Event))];
 
     }
 
@@ -57,7 +49,6 @@ class RecordsIconsVis {
 
         console.log(vis.gender)
 
-        // if not by index, sort greatest to least
         if (vis.gender === 'M') {
             vis.displayData = vis.mensRecords
             vis.displayData.forEach((row,index) => {
@@ -80,7 +71,19 @@ class RecordsIconsVis {
     updateVis() {
         let vis = this;
 
-
+        vis.circles = vis.svg.selectAll(`circle${vis.type}`).data(vis.circleData)
+        vis.circles.enter().append("circle")
+            .attr('class', `circle${vis.type}`)
+            .attr('id', d=>`circ-${d.split(' ').join('')}`)
+            .attr("cx",function(d,i){
+                return (i%circsPerRow * vis.width/circsPerRow) + padfact*r;
+            })
+            .attr("cy",function (d,i){
+                return (Math.floor(i/circsPerRow) * (padfact+1) * r) + r;
+            })
+            .attr("r",r)
+            .style('opacity', opacity)
+            .attr("fill",color);
 
     }
 }
