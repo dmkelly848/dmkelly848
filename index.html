@@ -59,6 +59,11 @@
                 </div>
             </div>
             <div class="col-5 olympicBodyText">
+                <div class="row" id="eventListRow">
+                    <h2 class="olympicHeadText">Track and Field Events</h2>
+                    <div class = "col-6 blueBlock underline"></div>
+                    <h4 style="font-style: italic">Click on an event to learn more about it!</h4>
+                </div>
                <div id="eventsVis"></div>
             </div>
         </div>
@@ -181,8 +186,7 @@
             <div class = "col-2"></div>
             <div class = "row center olympicBodyText" style = "padding-top: 30px;">
                 <div class  = "col ringscontain greenText">
-                    <div id = "ringVis" ></div>
-                    TO-DO: INSERT OLYMPIC RINGS VISUALIZATION
+                    <div id = "mapVis" ></div>
                 </div>
             </div>
         </div>
@@ -304,6 +308,12 @@
 
 <!-- d3 -->
 <script src="https://d3js.org/d3.v7.min.js"></script>
+
+<!-- d3 added from lab 9 for geojson -->
+<!-- source: https://stackoverflow.com/questions/69237683/uncaught-in-promise-referenceerror-topojson-is-not-defined -->
+<script src="https://d3js.org/d3-scale-chromatic.v1.min.js"></script>
+<script src="https://d3js.org/topojson.v2.min.js"></script>
+<script src="https://d3js.org/d3-geo.v1.min.js"></script>
 
 <!-- OWN JS -->
 <script src="js/highJumpVis.js"></script>

@@ -4,10 +4,11 @@
 
 class CircleVis {
 
-    constructor(parentElement, resultsData, circleData, type) {
+    constructor(parentElement, resultsData, circleData, descData, type) {
         this.parentElement = parentElement;
         this.circleData = circleData;
         this.resultsData = resultsData;
+        this.descData = descData;
         this.type = type;
         this.initVis()
     }
@@ -166,37 +167,47 @@ class CircleVis {
                 .attr('height', 1.5*r)
                 .attr('width', 1.5*r);
 
+            let placement = 0.5;
+
             vis.divider = vis.svg.append('line')
                 .style("stroke", "white")
                 .style("stroke-width", 2)
                 .attr("x1", 0)
-                .attr("y1", vis.height*0.7)
+                .attr("y1", vis.height*placement)
                 .attr("x2", vis.width)
-                .attr("y2", vis.height*0.7);
+                .attr("y2", vis.height*placement);
 
             vis.bigCircle = vis.svg.append('circle')
                 .style("fill", "#3e76ec")
                 .style('opacity', 0)
                 .attr("r", r*2.5)
-                .attr("cy", vis.height*0.7+3.5*r)
+                .attr("cy", vis.height*placement+3.5*r)
                 .attr("cx", 3*r)
 
             vis.bigPicture = vis.svg.append('svg:image')
                 .attr("class","icon")
-                .attr("y", vis.height*0.7+3.5*r-1.6875*r)
+                .attr("y", vis.height*placement+3.5*r-1.6875*r)
                 .attr('x', 3*r-1.6875*r)
                 .attr('height', 3.375*r)
                 .attr('width', 3.375*r);
 
-            vis.eventTitlePopup = vis.svg.append('text')
-                .attr("class","olympicHeadText")
-                .attr("x", vis.width/3.5)
-                .attr('y', vis.height*0.79)
+            vis.eventTextGroup = vis.svg.append('g')
+                .attr('transform', `translate(${vis.width/3.5}, ${vis.height*(placement*1.12)})`)
 
-            vis.eventDescPopup = vis.svg.append('text')
-                .attr("x", vis.width/3.5)
-                .attr('y', vis.width*0.83)
-                .attr('font-size', 'medium')
+            vis.eventTitlePopup = vis.eventTextGroup.append('text')
+                .attr("class","olympicHeadText")
+                .attr("x", 0)
+                .attr('y', 0)
+
+            vis.eventDescPopup = vis.eventTextGroup.append('foreignObject')
+                .attr('x',0)
+                .attr('y', 15)
+                .attr('width', vis.width-vis.width/3.5)
+                .attr('height', vis.height-vis.height*(placement*1.12)-20)
+                .attr('font-size', 'small')
+                .append("xhtml:p")
+
+
 
             vis.overlays = vis.svg.selectAll(".overlay").data(vis.circleData)
             vis.overlays.enter().append("circle")
@@ -226,7 +237,7 @@ class CircleVis {
                         vis.bigPicture.attr("xlink:href", `img/icons/${d}.png`);
                         vis.bigPicture.style('opacity', 1)
                         vis.eventTitlePopup.text(d);
-                        vis.eventDescPopup.text("Sample description goes here");
+                        vis.eventDescPopup.text(vis.descData.find(datum => datum['event'] === d).description);
 
                     }
                     else{

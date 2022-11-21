@@ -48,7 +48,7 @@
 }
 
 .phase1{
-    height: 700px;
+    height: 1000px;
     border-top: solid #3e76ec;
     border-bottom: solid #3e76ec;
 }
@@ -143,6 +143,7 @@
 }
 
 .phase1Left{
+    height:100%;
     border-right: dashed #3e76ec;
 }
 
@@ -355,6 +356,10 @@ h3{
 
 #eventsVis{
     height:100%;
+}
+
+#eventListRow{
+    margin-left:1em;
 }
 
 
