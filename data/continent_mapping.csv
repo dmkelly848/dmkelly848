@@ -86,10 +86,10 @@ French Southern Territories,ATF,260,Eastern Africa,Sub-Saharan Africa,Africa
 Gabon,GAB,266,Middle Africa,Sub-Saharan Africa,Africa
 Gambia,GMB,270,Western Africa,Sub-Saharan Africa,Africa
 Georgia,GEO,268,Western Asia,,Asia
-Germany,DEU,276,Western Europe,,Europe
+Germany,GER,276,Western Europe,,Europe
 Ghana,GHA,288,Western Africa,Sub-Saharan Africa,Africa
 Gibraltar,GIB,292,Southern Europe,,Europe
-Greece,GRC,300,Southern Europe,,Europe
+Greece,GRE,300,Southern Europe,,Europe
 Greenland,GRL,304,Northern America,,North America
 Grenada,GRD,308,Caribbean,Latin America and the Caribbean,North America
 Guadeloupe,GLP,312,Caribbean,Latin America and the Caribbean,North America
@@ -206,7 +206,7 @@ Slovakia,SVK,703,Eastern Europe,,Europe
 Slovenia,SVN,705,Southern Europe,,Europe
 Solomon Islands,SLB,90,Melanesia,,Oceania
 Somalia,SOM,706,Eastern Africa,Sub-Saharan Africa,Africa
-South Africa,ZAF,710,Southern Africa,Sub-Saharan Africa,Africa
+South Africa,RSA,710,Southern Africa,Sub-Saharan Africa,Africa
 South Georgia and the South Sandwich Islands,SGS,239,South America,Latin America and the Caribbean,South America
 South Sudan,SSD,728,Eastern Africa,Sub-Saharan Africa,Africa
 Spain,ESP,724,Southern Europe,,Europe
@@ -233,7 +233,7 @@ Tuvalu,TUV,798,Polynesia,,Oceania
 Uganda,UGA,800,Eastern Africa,Sub-Saharan Africa,Africa
 Ukraine,UKR,804,Eastern Europe,,Europe
 United Arab Emirates,ARE,784,Western Asia,,Asia
-United Kingdom of Great Britain and Northern Ireland,GBR,826,Northern Europe,,Europe
+United Kingdom,GBR,826,Northern Europe,,Europe
 United Republic of Tanzania,TZA,834,Eastern Africa,Sub-Saharan Africa,Africa
 United States Minor Outlying Islands,UMI,581,Micronesia,,Oceania
 United States of America,USA,840,Northern America,,North America
@@ -248,3 +248,8 @@ Western Sahara,ESH,732,Northern Africa,,Africa
 Yemen,YEM,887,Western Asia,,Asia
 Zambia,ZMB,894,Eastern Africa,Sub-Saharan Africa,Africa
 Zimbabwe,ZWE,716,Eastern Africa,Sub-Saharan Africa,Africa
+East Germany,GDR,,,,Europe
+Soviet Union,URS,,,,Europe
+West Germnay,FRG,,,,Europe
+United Team of Germany,EUA,,,,Europe
+Czechoslovakia,TCH,,,,Europe
