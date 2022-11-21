@@ -366,8 +366,9 @@ h3{
     margin-left:1em;
 }
 
-.record-label {
+.record-label, .record-year-label {
     font-size: 12px;
 }
+
 
 
