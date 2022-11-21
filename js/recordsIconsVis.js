@@ -35,15 +35,12 @@ class RecordsIconsVis {
 
 
         vis.wrangleData()
-
-        let vis = this;
-
-        vis.circleData = [...new Set(vis.data.map(d => d.Event))];
-
     }
 
     wrangleData() {
         let vis = this;
+
+        vis.circleData = [...new Set(vis.data.map(d => d.Event))];
 
         vis.gender = d3.select("#records-gender").property("value")
 
