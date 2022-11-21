@@ -85,7 +85,6 @@ class CircleVis {
 
             vis.icons = vis.svg.selectAll(".icon").data(vis.circleData)
             vis.icons.enter().append("svg:image")
-                .attr("class","icon")
                 .attr("xlink:href", d=>`img/icons/${d}.png`)
                 .attr("x",function (d,i){
                     return (i%circsPerRow * vis.width/circsPerRow) + padfact*r - r*2/3;
@@ -149,11 +148,8 @@ class CircleVis {
 
 
 
-
-
-
         }
-        else{
+        else if (vis.type ===1){
             vis.icons = vis.svg.selectAll(".icon").data(vis.circleData)
             vis.icons.enter().append("svg:image")
                 .attr("class","icon")

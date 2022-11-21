@@ -45,7 +45,7 @@ function initMainPage(data) {
     dashBar2 = new DashBar('dashBar2',data[0], 'Event')
     // syringeVis = new SyringeVis('syringevis',data[0])
     // lineGraph = new LineGraph('lineGraph',data[0])
-    circleVis = new CircleVis('reasonsVis',data[0],["Doping","Equipment","Training","Diet","Coaching","Global Access"], undefined, 2)
+    circleVis2 = new CircleVis('reasonsVis',data[0],["Doping","Equipment","Training","Diet","Coaching","Global Access"], undefined, 2)
     mapVis = new MapVis('mapVis', data[0])
 };
 
@@ -108,7 +108,6 @@ function mainPage(data){
         "                        </div>\n" +
         "                    </div>\n" +
         "                </div>"
-    circleVis = new CircleVis('reasonsVis',data,["Doping","Equipment","Training","Diet","Coaching","Global Access"], 2)
-
+    circleVis2 = new CircleVis('reasonsVis',data,["Doping","Equipment","Training","Diet","Coaching","Global Access"], undefined, 2)
 }
 
