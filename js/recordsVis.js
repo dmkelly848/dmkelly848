@@ -1,8 +1,10 @@
 class RecordsVis {
 
-    constructor(parentElement, data) {
+    constructor(parentElement, data, mensRecords, womensRecords) {
         this.parentElement = parentElement;
         this.data = data;
+        this.mensRecords = mensRecords;
+        this.womensRecords = womensRecords;
 
         this.initVis()
     }
