@@ -48,8 +48,11 @@ class TreeVis {
 
         vis.legendGroup = vis.svg.append('g')
             .attr('class',"legendgroup")
-            .attr('transform', `translate(${vis.width/2}, ${vis.height+40})`)
+            .attr('transform', `translate(${vis.width/2}, 10)`)
 
+        vis.rectGroup = vis.svg.append('g')
+            .attr('class',"rectgroup")
+            .attr('transform', `translate(0,${vis.height/12})`)
 
         vis.wrangleData()
     }
@@ -119,7 +122,7 @@ class TreeVis {
             (vis.root)
         //console.log(vis.root.leaves())
 
-        vis.rects = vis.svg.selectAll("rect")
+        vis.rects = vis.rectGroup.selectAll("rect")
             .data(vis.root.leaves());
         vis.rects.enter()
             .append("rect")
@@ -181,19 +184,19 @@ class TreeVis {
             // })
         vis.rects.exit();
 
-        vis.labels = vis.svg.selectAll("text")
+        vis.labels = vis.rectGroup.selectAll("text")
             .data(vis.root.leaves());
         vis.labels.enter()
             .append("text")
             .attr('class', 'label tree-rect-label')
             .merge(vis.labels)
             .attr("x", d=>d.x0+10)
-            .attr("y", d=>d.y0+20)
+            .attr("y", d=>d.y0+25)
             .text(function(d){
-                if(d.data.medal_count > 14)
+                if(d.data.medal_count > 15)
                     return d.data.country;
             })
-            .attr('font-size', function(d){return (Math.sqrt(d.data.medal_count)+35)+'%'})
+            .attr('font-size', function(d){return (Math.sqrt(d.data.medal_count)+40)+'%'})
 
         vis.legendRects = vis.legendGroup.selectAll('.legend-rect')
             .data(Object.keys(vis.colors))

@@ -155,10 +155,10 @@ class CircleVis {
                 .attr("class","icon")
                 .attr("xlink:href", d=>`img/icons/${d}.png`)
                 .attr("x",function (d,i){
-                    return (i%circsPerRow * vis.width/circsPerRow) + padfact*r-20;
+                    return (i%circsPerRow * vis.width/circsPerRow) + padfact*r-1.5*r/2;
                 })
                 .attr("y", function(d,i){
-                    return (Math.floor(i/circsPerRow) * (padfact+1) * r) + r-20;
+                    return (Math.floor(i/circsPerRow) * (padfact+1) * r+r/4);
                 })
                 .attr('height', 1.5*r)
                 .attr('width', 1.5*r);
