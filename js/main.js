@@ -118,6 +118,11 @@ function runningGenderChange(){
 
 function recordsGenderChange(){
     recordsVis.wrangleData()
+    recordsIconsVis.wrangleData()
+}
+
+function recordsYearChange(){
+    recordsIconsVis.wrangleData()
 }
 
 function syringeUp(){

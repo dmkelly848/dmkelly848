@@ -6,6 +6,9 @@ class RecordsIconsVis {
         this.mensRecords = mensRecords;
         this.womensRecords = womensRecords;
 
+        this.formatDate = d3.timeFormat("%Y");
+        this.parseDate = d3.timeParse("%Y");
+
         this.initVis()
     }
 
@@ -22,24 +25,22 @@ class RecordsIconsVis {
             .attr("height", vis.height)
             .attr('transform', `translate (${vis.margin.left}, ${vis.margin.top})`);
 
-        let circsPerRow = 6;
-        let color = '#3e76ec';
-        let opacity = .35;
-        let padfact = 2.2;
-        let fontsize = 'small';
-        let rfact = 1.3;
-        // credit to: https://stackoverflow.com/questions/28572015/how-to-select-unique-values-in-d3-js-from-data
-        let r = 40
-
-
-
+        vis.circsPerRow = 6;
+        vis.color = '#3e76ec';
+        vis.opacity = .35;
+        vis.padfact = 2.2;
+        vis.fontsize = 'small';
+        vis.rfact = 1.3;
+        vis.r = 40
 
         vis.wrangleData()
+        vis.createSlider()
     }
 
     wrangleData() {
         let vis = this;
 
+        // credit to: https://stackoverflow.com/questions/28572015/how-to-select-unique-values-in-d3-js-from-data
         vis.circleData = [...new Set(vis.data.map(d => d.Event))];
 
         vis.gender = d3.select("#records-gender").property("value")
@@ -73,14 +74,76 @@ class RecordsIconsVis {
             .attr('class', `circle${vis.type}`)
             .attr('id', d=>`circ-${d.split(' ').join('')}`)
             .attr("cx",function(d,i){
-                return (i%circsPerRow * vis.width/circsPerRow) + padfact*r;
+                return (i%vis.circsPerRow * vis.width/vis.circsPerRow) + vis.padfact*vis.r;
             })
             .attr("cy",function (d,i){
-                return (Math.floor(i/circsPerRow) * (padfact+1) * r) + r;
+                return (Math.floor(i/vis.circsPerRow) * (vis.padfact+1) * vis.r) + vis.r;
             })
-            .attr("r",r)
-            .style('opacity', opacity)
-            .attr("fill",color);
+            .attr("r",vis.r)
+            .style('opacity', vis.opacity)
+            .attr("fill",vis.color);
 
+    }
+
+    createSlider(){
+        let vis = this;
+        //slider code
+        vis.slidData = vis.filtData();
+
+        vis.slider = document.getElementById("slider-round-record");
+        noUiSlider.create(vis.slider, {
+            start: [d3.min(vis.slidData, (d) => +vis.formatDate(d.Year))],
+            step: 4,
+            margin: 4,
+            range: {
+                'min': d3.min(vis.slidData, (d) => +vis.formatDate(d.Year)),
+                'max': d3.max(vis.slidData, (d) => +vis.formatDate(d.Year))
+            },
+            tooltips: [true],
+            format: {
+                from: d => d,
+                to: d => d
+            },
+            pips: {
+                mode: 'count',
+                values: 6,
+                density: 6
+            }
+        });
+
+        // create listener for sliders
+        vis.slider.noUiSlider.on('slide', function (values) {
+            vis.chosenYear = vis.parseDate(values[0]);
+            vis.unchanged = false;
+            vis.wrangleData();
+        });
+    }
+
+    updateSlider(){
+        let vis = this;
+        console.log('slide')
+        vis.unchanged = true;
+        vis.slider.noUiSlider.destroy()
+        vis.createSlider();
+    }
+
+    filtData(){
+        let vis = this;
+        let data = [];
+        let selectedGender = document.getElementById('high-jump-gender').value;
+        let selectedEvent = document.getElementById('pole-vault-select').value;
+
+        // get only high jump results
+        vis.resultsData.forEach((element) => {
+            if(element.Event === selectedEvent){
+                data.push(element);
+            }})
+        // filter and sort data
+        data = data.filter(function (d){
+            return (d.Medal === 'G') && (d.Gender === selectedGender)
+        });
+        data.sort((a,b) => {return a.Year - b.Year})
+
+        return data;
     }
 }
