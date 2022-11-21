@@ -45,6 +45,7 @@ function initMainPage(data) {
     // syringeVis = new SyringeVis('syringevis',data[0])
     // lineGraph = new LineGraph('lineGraph',data[0])
     circleVis = new CircleVis('reasonsVis',data[0],["Doping","Equipment","Training","Diet","Coaching","Global Access"], 2)
+    mapVis = new MapVis('mapVis', data[0])
 };
 
 function highJumpGenderChange(){

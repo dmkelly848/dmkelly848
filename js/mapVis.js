@@ -2,10 +2,10 @@
 
 class MapVis {
 
-    constructor(parentElement, airportData, geoData) {
+    constructor(parentElement, data) {
         this.parentElement = parentElement;
-        this.geoData = geoData;
-        this.airportData = airportData;
+        this.data = data;
+        this.geoData = d3.json("https://cdn.jsdelivr.net/npm/world-atlas@2/countries-50m.json")
 
         // define colors
         this.colors = ['#fddbc7', '#f4a582', '#d6604d', '#b2182b']
