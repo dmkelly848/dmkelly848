@@ -44,7 +44,7 @@
 }
 
 .headDesign{
-    height: 30px;
+    height: 3vh;
 }
 
 .hookText{
@@ -52,19 +52,19 @@
 }
 
 .phase1{
-    height: 1000px;
+    height: 100%;
     border-top: solid #3e76ec;
     border-bottom: solid #3e76ec;
 }
 .phase2{
-    height: 1000px;
+    height: 100%;
     border-top: solid #ffce01;
     border-bottom: solid #ffce01;
     padding-bottom: 50px;
 }
 
 .phase3{
-    height: 1350px;
+    height: 170vh;
     border-top: solid #000000;
     border-bottom: solid #000000;
     padding-bottom: 10px;
@@ -72,7 +72,7 @@
 }
 
 .phase31{
-    height: 500px;
+    /*height:100vh;*/
 }
 
 .phase31R{
@@ -80,7 +80,7 @@
 }
 
 .phase4{
-    height: 2000px;
+    height: 250vh;
     border-top: solid #179a13;
     border-bottom: solid #179a13;
     padding-bottom: 50px;
@@ -88,7 +88,7 @@
 }
 
 .phase5{
-    height: 1250px;
+    height: 120vh;
     border-top: solid #ff0000;
     border-bottom: solid #ff0000;
     padding-bottom: 50px;
@@ -96,7 +96,7 @@
 }
 
 #original{
-    height: 950px;
+    height: 100vh;
 }
 
 /*.phase5b{*/
@@ -105,7 +105,7 @@
 /*}*/
 
 .circlesContain{
-    height: 800px;
+    height: 100vh;
 }
 
 .ringscontain{
