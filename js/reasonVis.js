@@ -21,11 +21,11 @@ class ReasonVis {
         if(vis.reason === "Doping"){
 
             console.log("doping chosen")
-            document.getElementById("original").innerHTML = "            <div class=\"container-fluid \"> <h3 class = \"olympicHeadText chartTitle\">Doping:</h3> \n" +
-                "                <div class = \"col-12 center\" style = \"height: 100px\"> \n" +
+            document.getElementById("original").innerHTML = "            <div class=\"container-fluid\"> <h3 class = \"olympicHeadText chartTitle\">Doping:</h3> \n" +
+                "                <div class = \"col-12 center\" style = \"height: 10vh\"> \n" +
                 "                <button type=\"button\" onclick = mainPage() style = \"font-size = 30px\" >Back to Reasons</button>\n" +
                 "            </div>\n" +
-                "                <div class=\"row phase5b redText olympicBodyText\">\n" +
+                "                <div class=\"row phase5b redText olympicBodyFont\">\n" +
                 "                    <div class=\"col-3\">\n" +
                 "                        <div class = \"row center\" style = \"padding-left: 50px\">\n" +
                 "                            <div class = \"col-6\">\n" +
@@ -35,20 +35,20 @@ class ReasonVis {
                 "                                <button type=\"button\" onclick = syringeUp()>Next</button>\n" +
                 "                            </div>\n" +
                 "                        </div>\n" +
-                "                        <div id = \"syringevis\" style=\"height:60vh;\"></div>\n" +
+                "                        <div id = \"syringevis\" style=\"height:80vh;\"></div>\n" +
                 "                    </div>\n" +
-                "                    <div class = \"col-9 olympicBodyText syringeText\">\n" +
+                "                    <div class = \"col-9 olympicBodyFont syringeText\">\n" +
                 "                        <div class=\"container-fluid\">\n" +
                 "                            <div class=\"row\">\n" +
                 "                                <div class=\"col-4\">\n" +
-                "                                   <div style = \"height:200px\"></div>\n" +
-                "                                    <div id = \"text3\" class=\" \" style = \"height:130px\"></div>\n" +
-                "                                    <div id = \"text2\" class=\" \" style = \"height:190px\"></div>\n" +
-                "                                    <div id = \"text1\" class=\" \" style = \"height:130px\"></div>\n" +
-                "                                    <div id = \"text0\" class=\" \" style = \"height:130px\"></div>\n" +
+                "                                   <div style = \"height:20vh\"></div>\n" +
+                "                                    <div id = \"text3\" class=\" \" style = \"height:12vh\"></div>\n" +
+                "                                    <div id = \"text2\" class=\" \" style = \"height:19vh\"></div>\n" +
+                "                                    <div id = \"text1\" class=\" \" style = \"height:13vh\"></div>\n" +
+                "                                    <div id = \"text0\" class=\" \" style = \"height:13vh\"></div>\n" +
                 "                                </div>\n" +
                 "                                <div class=\"col-8\">\n" +
-                "                                    <div id = \"lineGraph\" style=\"height:800px;\"></div>\n" +
+                "                                    <div id = \"lineGraph\" style=\"height:80vh;\"></div>\n" +
                 "                                </div>\n" +
                 "                            </div>\n" +
                 "                        </div>\n" +

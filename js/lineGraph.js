@@ -77,8 +77,16 @@ class LineGraph {
         vis.area = vis.svg.append("rect")
         vis.svg.append("text")
             .attr("x",0)
-            .text("Average Throwing Distances (m) of Male Olympians by Year")
+            .attr("y",0)
+            .text("Average Throwing Distances (m) of Male")
             .attr("class","olympicHeadText chartTitle")
+
+        vis.svg.append("text")
+            .attr("x",vis.width/4)
+            .attr("y",40)
+            .text("Olympians by Year")
+            .attr("class","olympicHeadText chartTitle")
+
 
 
 
@@ -158,7 +166,7 @@ class LineGraph {
             .attr("class","lineLegend")
             .attr("transform", function (d,i) {
                 let shift =i*20 +4*vis.height/5
-                return "translate(" + vis.width*4/5 + "," + shift+")";
+                return "translate(" + vis.width*2/3 + "," + shift+")";
             });
 
         lineLegend.append("text").text(function (d) {return d;})
