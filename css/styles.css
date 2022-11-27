@@ -347,9 +347,10 @@ h3{
 }
 
 #slider-caption{
-    font-size: medium;
     margin-top: 3vh;
     margin-left:5vh;
+    margin-bottom: 5vh;
+    font-style: italic;
 }
 
 .tree-rect-label{
@@ -381,6 +382,10 @@ h3{
 
 .record-label, .record-year-label {
     font-size: 12px;
+}
+
+li{
+    margin-bottom: 2vh;
 }
 
 
