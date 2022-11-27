@@ -32,9 +32,20 @@
 
 <div class="container-fluid">
     <!-- HEADING -->
-    <div class="row">
+    <div class="row" style = "height: 100vh;">
         <h1>Olympics Track and Field throughout History</h1>
-        <img id = "header_image" src = "img/rings.png">
+        <div class='row' id="header-image-row">
+            <img id = "header_image" src = "img/rings.png">
+        </div>
+        <div class="row" id="icon-bottom-bar"></div>
+    </div>
+
+    <div class="row headDesign">
+        <div class="col blueBlock"></div>
+        <div class="col yellowBlock"></div>
+        <div class="col blackBlock"></div>
+        <div class="col greenBlock"></div>
+        <div class="col redBlock"></div>
     </div>
 
     <div class="container-fluid">
@@ -69,7 +80,7 @@
         <div class="col redBlock"></div>
     </div>
 
-    <div style = "height: 100vh;">
+    <div class='row' style = "height: 100vh;">
         <div class="col olympicBodyText">
             <div class="row" id="eventListRow">
                 <h2 class="olympicHeadText">Track and Field Events</h2>
@@ -186,7 +197,7 @@
                     <ul>
                         <li>Gold medal high jump and pole vault heights have steadily increased over time</li>
                         <li>For instance, William Hoyt's 1896 pole vault of 3.3 meters was nearly doubled by Thiago Da Silva's 2016 vault of 6.03 meters.</li>
-                        <li>The incraese in jumping/vaulting height persists across both men and women</li>
+                        <li>The increase in jumping/vaulting height persists across both men and women</li>
                         <li>Perhaps the rate of improvement is slowing down</li>
                     </ul>
                 </div>
@@ -375,6 +386,7 @@
 <script src="js/dashBar.js"></script>
 <script src="js/lineGraph.js"></script>
 <script src="js/circlesVis.js"></script>
+<script src="js/bandVis.js"></script>
 <script src="js/reasonVis.js"></script>
 <script src="js/mapVis.js"></script>
 <script src="js/recordsVis.js"></script>

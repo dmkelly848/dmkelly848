@@ -2,14 +2,11 @@
 *      CIRCLES Vis          *
 * * * * * * * * * * * * * */
 
-class CircleVis {
+class BandVis {
 
-    constructor(parentElement, resultsData, circleData, descData, type) {
+    constructor(parentElement, circleData) {
         this.parentElement = parentElement;
         this.circleData = circleData;
-        this.resultsData = resultsData;
-        this.descData = descData;
-        this.type = type;
         this.initVis()
     }
 
@@ -23,27 +20,16 @@ class CircleVis {
         vis.center = {'x': vis.width/2, 'y': vis.height/2};
 
         //define type-dependent variables
-        let circsPerRow;
-        let color, fontsize, padfact, rfact, opacity;
-        if(vis.type===1) {
-            circsPerRow = 9;
-            padfact = 2.2;
-            color = '#3e76ec'
-            opacity = 0.35;
-            fontsize = 'small';
-            rfact = 1.3;
-            // credit to: https://stackoverflow.com/questions/28572015/how-to-select-unique-values-in-d3-js-from-data
-            vis.circleData = [...new Set(vis.resultsData.map(d => d.Event))];
-        }
-        else{
-            circsPerRow = 3;
-            padfact = 2;
-            rfact = 1;
-            opacity = 0.35;
-            fontsize = 'normal'
-            color = '#ff0000'
-        }
-        let r = vis.width/(circsPerRow*4)
+        let circsPerRow = 10;
+        let padfact = 2.2;
+        let color = '#3e76ec'
+        let opacity = 0.35;
+        let fontsize = 'small';
+        let rfact = 1.3;
+        // credit to: https://stackoverflow.com/questions/28572015/how-to-select-unique-values-in-d3-js-from-data
+        vis.circleData = [...new Set(vis.circleData.map(d => d.Event))];
+
+        let r = vis.width/(circsPerRow*4);
 
 
         // // SVG drawing area
@@ -136,6 +122,7 @@ class CircleVis {
                         .html(``);
                 })
                 .on('click', function(event, d) {
+                    console.log(d)
                     let div = document.getElementById('original');
                     while(div.firstChild){
                         div.removeChild(div.firstChild);
