@@ -92,7 +92,7 @@ Promise.all(promises)
 function initMainPage(data) {
     console.log(data[2])
     console.log(data[0])
-    bandVis = new BandVis('icon-bottom-bar', data[0])
+    // bandVis = new BandVis('icon-bottom-bar', data[0])
 
     circleVis = new CircleVis('eventsVis', data[0], undefined, data[2], 1)
 

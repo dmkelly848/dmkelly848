@@ -182,7 +182,7 @@ h1{
 #icon-bottom-bar{
     height: 30%;
     width: 100%;
-    border: red solid 2px;
+    /*border: red solid 2px;*/
 }
 
 .body{
