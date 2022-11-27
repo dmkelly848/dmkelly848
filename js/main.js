@@ -92,7 +92,7 @@ Promise.all(promises)
 function initMainPage(data) {
     console.log(data[2])
     console.log(data[0])
-    // bandVis = new BandVis('icon-bottom-bar', data[0])
+    bandVis = new BandVis('icon-bottom-bar', data[0])
 
     circleVis = new CircleVis('eventsVis', data[0], undefined, data[2], 1)
 
@@ -182,3 +182,7 @@ function mainPage(data){
     circleVis2 = new CircleVis('reasonsVis',data,["Doping","Equipment","Training","Diet","Coaching","Global Access"], undefined, 2)
 }
 
+d3.interval(slide, 2000)
+function slide(elapsed){
+    bandVis.wrangleData()
+}

@@ -167,8 +167,8 @@ h1{
     padding-bottom: 0;
 }
 #header-image-row{
-    height: 30%;
-    margin-bottom: 10vh;
+    height: 35%;
+    margin-bottom: 8vh;
 }
 
 #header_image{
@@ -182,7 +182,6 @@ h1{
 #icon-bottom-bar{
     height: 30%;
     width: 100%;
-    /*border: red solid 2px;*/
 }
 
 .body{
