@@ -26,7 +26,7 @@ class CircleVis {
         let circsPerRow;
         let color, fontsize, padfact, rfact, opacity;
         if(vis.type===1) {
-            circsPerRow = 6;
+            circsPerRow = 9;
             padfact = 2.2;
             color = '#3e76ec'
             opacity = 0.35;
@@ -163,7 +163,7 @@ class CircleVis {
                 .attr('height', 1.5*r)
                 .attr('width', 1.5*r);
 
-            let placement = 0.5;
+            let placement = 0.58;
 
             vis.divider = vis.svg.append('line')
                 .style("stroke", "white")
@@ -188,10 +188,11 @@ class CircleVis {
                 .attr('width', 3.375*r);
 
             vis.eventTextGroup = vis.svg.append('g')
-                .attr('transform', `translate(${vis.width/3.5}, ${vis.height*(placement*1.12)})`)
+                .attr('transform', `translate(${vis.width/5}, ${vis.height*(placement*1.15)})`)
 
             vis.eventTitlePopup = vis.eventTextGroup.append('text')
                 .attr("class","olympicHeadText")
+                .attr('font-size', 'larger')
                 .attr("x", 0)
                 .attr('y', 0)
 
@@ -200,7 +201,7 @@ class CircleVis {
                 .attr('y', 15)
                 .attr('width', vis.width-vis.width/3.5)
                 .attr('height', vis.height-vis.height*(placement*1.12)-20)
-                .attr('font-size', 'small')
+                .attr('font-size', '60%')
                 .append("xhtml:p")
 
 
