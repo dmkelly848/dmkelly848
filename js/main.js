@@ -183,6 +183,6 @@ function mainPage(data){
 }
 
 d3.interval(slide, 2000)
-function slide(elapsed){
+function slide(){
     bandVis.wrangleData()
 }
