@@ -111,6 +111,7 @@ class MapVis {
 
         vis.countries.style("fill", function(d) { return vis.countryInfo[d.properties.name].color; })
             // source: https://bl.ocks.org/austinczarnecki/fe80afa64724c9630930
+            // source: https://github.com/d3/d3-geo
             .on('click', function(event, d){
 
                 d3.select(this).transition()
