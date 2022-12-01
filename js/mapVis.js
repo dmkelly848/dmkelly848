@@ -18,7 +18,7 @@ class MapVis {
         //TODO: modify list as needed/make responsive
         vis.hosts = ['Greece', 'France', 'United States of America', 'United Kingdom', 'Sweden', 'Belgium', 'Switzerland', 'Netherlands', 'Germany', 'Norway', 'Finland', 'Australia','Italy','Japan','Mexico','Canada','Russia','South Korea','Spain','China','Brazil']
 
-        vis.margin = {top: 0, right: 20, bottom: 20, left: 20};
+        vis.margin = {top: 20, right: 20, bottom: 20, left: 20};
         vis.width = document.getElementById(vis.parentElement).getBoundingClientRect().width - vis.margin.left - vis.margin.right;
         //vis.height = document.getElementById(vis.parentElement).getBoundingClientRect().height - vis.margin.top - vis.margin.bottom;
         vis.height = 400 - vis.margin.top - vis.margin.bottom;
@@ -110,11 +110,26 @@ class MapVis {
         let vis = this;
 
         vis.countries.style("fill", function(d) { return vis.countryInfo[d.properties.name].color; })
+            // source: https://bl.ocks.org/austinczarnecki/fe80afa64724c9630930
+            .on('click', function(event, d){
+
+                d3.select(this).transition()
+                    .duration(1250)
+                    .tween("rotate", function() {
+                        // find source array.find
+                        var p = d3.geoCentroid(vis.world.find((e) => e.id === d.id)),
+                            r = d3.geoInterpolate(vis.projection.rotate(), [-p[0], -p[1]]);
+                        return function (t) {
+                            vis.projection.rotate(r(t));
+                            vis.svg.selectAll("path").attr("d", vis.path);
+                        }
+                    });
+            })
             .on('mouseover', function(event, d){
                 d3.select(this)
                     .attr('stroke-width', '2px')
                     .attr('stroke', 'black')
-                    .style('fill', 'rgba(173,222,255,0.62)')
+                    .style('fill', 'red')
 
                 vis.tooltip
                     .style("opacity", 1)
