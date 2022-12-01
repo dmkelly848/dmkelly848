@@ -6,7 +6,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/noUiSlider/15.4.0/nouislider.css" integrity="sha512-DGB74Gyw93qON+V0QxSRs1er6sqoPyFoy23HBL5LN7MRJBcjeCU22zega+vOEGE0XQLoVrv4ExcaesSTwZQA2w==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
     <link rel="stylesheet" href="css/styles.css">
-    <link rel="stylesheet" type="text/css" href="fullPage.js-master/fullpage.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/4.0.15/fullpage.css" />
 
     <!-- Custom font from Google fonts to resemble Olympics website-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -20,348 +20,408 @@
 </head>
 
 <body>
-<div class="container-fluid">
+<div id="fullpage">
 
-    <!-- COLOR BAR DIVIDER -->
-    <div class="row colorDivider">
-        <div class="col blueBlock"></div>
-        <div class="col yellowBlock"></div>
-        <div class="col blackBlock"></div>
-        <div class="col greenBlock"></div>
-        <div class="col redBlock"></div>
-    </div>
-
-    <!-- TITLE SLIDE -->
-    <div class="row slide" id="title-slide">
-        <h1 id="title">Olympic Track and Field Throughout History</h1>
-        <div class='row' id="title-image-row">
-            <img id = "title-image" src = "img/rings.png">
+    <div class="section">
+        <!-- COLOR BAR DIVIDER -->
+        <div class="row colorDivider">
+            <div class="col blueBlock"></div>
+            <div class="col yellowBlock"></div>
+            <div class="col blackBlock"></div>
+            <div class="col greenBlock"></div>
+            <div class="col redBlock"></div>
         </div>
-        <div id="icon-bottom-bar"></div>
-    </div>
 
-    <!-- COLOR BAR DIVIDER -->
-    <div class="row colorDivider">
-        <div class="col blueBlock"></div>
-        <div class="col yellowBlock"></div>
-        <div class="col blackBlock"></div>
-        <div class="col greenBlock"></div>
-        <div class="col redBlock"></div>
-    </div>
-
-    <!-- USAIN BOLT HOOK SLIDE -->
-    <div class="container-fluid">
-        <div class="row slide" id="bolt-slide">
-            <div class="col-7 olympicBodyText" id="bolt-slide-left">
-                <h2 class = "olympicHeadText">Usain Bolt has...</h2>
-                <div class = "col-6 blueBlock underline"></div>
-                <div class="row" id="bolt-facts">
-                    <div class="col-1"></div>
-                    <div class="col-10">
-                        <ul>
-                            <li>Received gold in the 100m and 200m in three consecutive Olympics - in 2008, 2012, and 2016</li>
-                            <li>Won the 200m by a 0.66 second margin - the largest in Olympic history</li>
-                            <li>Earned 8 Olympics and 11 World Champion golden medals</li>
-                        </ul>
-                    </div>
-                </div>
+        <!-- TITLE SLIDE -->
+        <div class="row slide" id="title-slide">
+            <h1 id="title">Olympic Track and Field Throughout History</h1>
+            <div class='row' id="title-image-row">
+                <img id = "title-image" src = "img/rings.png">
             </div>
-            <div class="col-5 olympicBodyText" id="bolt-slide-right">
-                TODO: ADD IMAGE OR OTHER CONTENT
-            </div>
+            <div id="icon-bottom-bar"></div>
         </div>
-    </div>
 
-    <!-- COLOR BAR DIVIDER -->
-    <div class="row colorDivider">
-        <div class="col blueBlock"></div>
-        <div class="col yellowBlock"></div>
-        <div class="col blackBlock"></div>
-        <div class="col greenBlock"></div>
-        <div class="col redBlock"></div>
-    </div>
-
-    <!-- EVENT DESCRIPTION SLIDE -->
-    <div class='row slide' id="events-slide">
-        <div class="col olympicBodyText">
-            <div class="row" id="eventListRow">
-                <h2 class="olympicHeadText">Track and Field Events</h2>
-                <div class = "col-6 blueBlock underline"></div>
-                <h4 class="italic">Click on an event to learn more about it!</h4>
-            </div>
-            <div class="row">
-                <div class="col-1"></div>
-                <div class="col-10" id="eventsVis"></div>
-                <div class="col-1"></div>
-            </div>
+        <!-- COLOR BAR DIVIDER -->
+        <div class="row colorDivider">
+            <div class="col blueBlock"></div>
+            <div class="col yellowBlock"></div>
+            <div class="col blackBlock"></div>
+            <div class="col greenBlock"></div>
+            <div class="col redBlock"></div>
         </div>
     </div>
 
 
-    <!-- COLOR BAR DIVIDER -->
-    <div class="row colorDivider">
-        <div class="col blueBlock"></div>
-        <div class="col yellowBlock"></div>
-        <div class="col blackBlock"></div>
-        <div class="col greenBlock"></div>
-        <div class="col redBlock"></div>
-    </div>
 
-
-    <!-- MEDAL BREAKDOWN SLIDE -->
-    <div class="row slide" id="medal-slide">
-        <h2 class = "olympicHeadText center">Countries and their Medals</h2>
-            <div class = "col-4"></div>
-            <div class = "col-4 yellowBlock underline"></div>
-            <div class = "col-4"></div>
-        <div class = "row olympicBodyText">
-            <div class = "col-8" id="tree-vis-container">
-                <div id = "treeVis"></div>
-            </div>
-            <div class='col-4' id='medal-info-container'>
-                <div class="row" id="medal-info-title">
-                    <div id="medalTitleRow">
-                        <h3 id = "dashTitle" class="olympicHeadText"></h3>
-                        <button id="resetbutton" onclick=resetToWorld() disabled>Reset to World</button>
-                    </div>
-                </div>
-                <div class="row" id="medal-info-type">
-                    <div id = "dashMedals" ></div>
-                </div>
-                <div class="row" id="medal-info-yearbar">
-                    <div id = "dashBar1" ></div>
-                </div>
-                <div class="row" id="medal-info-eventbar">
-                    <div id = "dashBar2" ></div>
-                </div>
-            </div>
+    <div class="section">
+        <!-- COLOR BAR DIVIDER -->
+        <div class="row colorDivider">
+            <div class="col blueBlock"></div>
+            <div class="col yellowBlock"></div>
+            <div class="col blackBlock"></div>
+            <div class="col greenBlock"></div>
+            <div class="col redBlock"></div>
         </div>
-    </div>
-
-
-    <!-- COLOR BAR DIVIDER -->
-    <div class="row colorDivider">
-        <div class="col blueBlock"></div>
-        <div class="col yellowBlock"></div>
-        <div class="col blackBlock"></div>
-        <div class="col greenBlock"></div>
-        <div class="col redBlock"></div>
-    </div>
-
-
-    <!-- TRENDS SLIDE #1 -->
-    <div class="row slide trend-slide" id="trends-slide1">
-        <div class = "row phase31">
-            <div class="col-6 olympicBodyText">
-                <h2 class = "olympicHeadText">Trends: Athletes are Running Faster</h2>
-                <div class = "col-12 blackBlock underline"></div>
-                <div class="container" style = "padding-top: 2vh">
-                    <div class="row">
+        <!-- USAIN BOLT HOOK SLIDE -->
+        <div class="container-fluid">
+            <div class="row slide" id="bolt-slide">
+                <div class="col-7 olympicBodyText" id="bolt-slide-left">
+                    <h2 class = "olympicHeadText">Usain Bolt has...</h2>
+                    <div class = "col-6 blueBlock underline"></div>
+                    <div class="row" id="bolt-facts">
                         <div class="col-1"></div>
-                        <div class="col-11 hookText">
-                            WATCH the 100M Gold Medalists from across the years race each other - in real time!
-                            TO-DO: Insert key takeaways from moving bars visualization
+                        <div class="col-10">
+                            <ul>
+                                <li>Received gold in the 100m and 200m in three consecutive Olympics - in 2008, 2012, and 2016</li>
+                                <li>Won the 200m by a 0.66 second margin - the largest in Olympic history</li>
+                                <li>Earned 8 Olympics and 11 World Champion golden medals</li>
+                            </ul>
                         </div>
                     </div>
                 </div>
-            </div>
-            <div class="col-6 olympicBodyText phase31R">
-                <!-- code very similar to lab 9 button -->
-                <button class="btn btn-outline-secondary align-self-center" type="button"
-                        onclick="runningGenderChange()" style="border: thin solid grey;">Watch Again
-                </button>
-                <select class='dropdown' id="running-gender" onchange="runningGenderChange()">
-                    <option value="M" selected>Men</option>
-                    <option value="W">Women</option>
-                </select>
-                <div id = "runningVis"></div>
+                <div class="col-5 olympicBodyText" id="bolt-slide-right">
+                    TODO: ADD IMAGE OR OTHER CONTENT
+                </div>
             </div>
         </div>
-    </div>
 
-    <!-- TRENDS SLIDE #2 -->
-    <div class="row slide trend-slide" id="trends-slide2">
-        <div class = "row phase31" style = "padding-top: 20px">
-            <div class="col-6 olympicBodyText">
-                <div><h4 class='italic' id="slider-instructions1">Drag the slider to see the evolution of jumping in the Olympics...</h4>
-                    <h4 class='italic' id="slider-instructions2">Use the filters to toggle between events and genders</h4></div>
-                <select class='dropdown' id="high-jump-gender" onchange="highJumpGenderChange()">
-                    <option value="M" selected>Men</option>
-                    <option value="W">Women</option>
-                </select>
-                <select class='dropdown' id="pole-vault-select" onchange="highJumpGenderChange()">
-                    <option value="High Jump" selected>High Jump</option>
-                    <option value="Pole Vault">Pole Vault</option>
-                </select>
-                <div id = "hurdleVis"></div>
-                <div id="slider-round"></div>
-            </div>
-            <div class="col-6 olympicBodyText">
-                <h2 class = "olympicHeadText">... and Jumping Higher</h2>
-                <div class = "col-12 blackBlock underline"></div>
-                <ul>
-                    <li>Gold medal high jump and pole vault heights have steadily increased over time</li>
-                    <li>For instance, William Hoyt's 1896 pole vault of 3.3 meters was nearly doubled by Thiago Da Silva's 2016 vault of 6.03 meters.</li>
-                    <li>The increase in jumping/vaulting height persists across both men and women</li>
-                    <li>Perhaps the rate of improvement is slowing down</li>
-                </ul>
-            </div>
+        <!-- COLOR BAR DIVIDER -->
+        <div class="row colorDivider">
+            <div class="col blueBlock"></div>
+            <div class="col yellowBlock"></div>
+            <div class="col blackBlock"></div>
+            <div class="col greenBlock"></div>
+            <div class="col redBlock"></div>
         </div>
     </div>
 
 
-    <!-- COLOR BAR DIVIDER -->
-    <div class="row colorDivider">
-        <div class="col blueBlock"></div>
-        <div class="col yellowBlock"></div>
-        <div class="col blackBlock"></div>
-        <div class="col greenBlock"></div>
-        <div class="col redBlock"></div>
+
+    <div class="section">
+        <!-- COLOR BAR DIVIDER -->
+        <div class="row colorDivider">
+            <div class="col blueBlock"></div>
+            <div class="col yellowBlock"></div>
+            <div class="col blackBlock"></div>
+            <div class="col greenBlock"></div>
+            <div class="col redBlock"></div>
+        </div>
+
+        <!-- EVENT DESCRIPTION SLIDE -->
+        <div class='row slide' id="events-slide">
+            <div class="col olympicBodyText">
+                <div class="row" id="eventListRow">
+                    <h2 class="olympicHeadText">Track and Field Events</h2>
+                    <div class = "col-6 blueBlock underline"></div>
+                    <h4 class="italic">Click on an event to learn more about it!</h4>
+                </div>
+                <div class="row">
+                    <div class="col-1"></div>
+                    <div class="col-10" id="eventsVis"></div>
+                    <div class="col-1"></div>
+                </div>
+            </div>
+        </div>
+
+        <!-- COLOR BAR DIVIDER -->
+        <div class="row colorDivider">
+            <div class="col blueBlock"></div>
+            <div class="col yellowBlock"></div>
+            <div class="col blackBlock"></div>
+            <div class="col greenBlock"></div>
+            <div class="col redBlock"></div>
+        </div>
     </div>
 
 
-    <!--GLOBE SLIDE -->
-    <div class="container-fluid">
-        <div class="row slide" id="globe-slide">
-            <h2 class = "olympicHeadText center">Olympics track and field records keep getting broken</h2>
-            <div class = "col-2"></div>
-            <div class = "col-8 greenBlock underline"></div>
-            <div class = "col-2"></div>
-            <div class = "row center olympicBodyText">
-                <div class  = "col greenText">
-                    Host Countries:
-                    <div id = "mapVis" ></div>
-                    Broken olympic records, by event, over the years:
-                    <select class='dropdown' id="records-gender" onchange="recordsGenderChange()">
+
+    <div class="section">
+        <!-- COLOR BAR DIVIDER -->
+        <div class="row colorDivider">
+            <div class="col blueBlock"></div>
+            <div class="col yellowBlock"></div>
+            <div class="col blackBlock"></div>
+            <div class="col greenBlock"></div>
+            <div class="col redBlock"></div>
+        </div>
+
+        <!-- MEDAL BREAKDOWN SLIDE -->
+        <div class="row slide" id="medal-slide">
+            <h2 class = "olympicHeadText center">Countries and their Medals</h2>
+                <div class = "col-4"></div>
+                <div class = "col-4 yellowBlock underline"></div>
+                <div class = "col-4"></div>
+            <div class = "row olympicBodyText">
+                <div class = "col-8" id="tree-vis-container">
+                    <div id = "treeVis"></div>
+                </div>
+                <div class='col-4' id='medal-info-container'>
+                    <div class="row" id="medal-info-title">
+                        <div id="medalTitleRow">
+                            <h3 id = "dashTitle" class="olympicHeadText"></h3>
+                            <button id="resetbutton" onclick=resetToWorld() disabled>Reset to World</button>
+                        </div>
+                    </div>
+                    <div class="row" id="medal-info-type">
+                        <div id = "dashMedals" ></div>
+                    </div>
+                    <div class="row" id="medal-info-yearbar">
+                        <div id = "dashBar1" ></div>
+                    </div>
+                    <div class="row" id="medal-info-eventbar">
+                        <div id = "dashBar2" ></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- COLOR BAR DIVIDER -->
+        <div class="row colorDivider">
+            <div class="col blueBlock"></div>
+            <div class="col yellowBlock"></div>
+            <div class="col blackBlock"></div>
+            <div class="col greenBlock"></div>
+            <div class="col redBlock"></div>
+        </div>
+    </div>
+
+
+
+    <div class="section">
+        <!-- COLOR BAR DIVIDER -->
+        <div class="row colorDivider">
+            <div class="col blueBlock"></div>
+            <div class="col yellowBlock"></div>
+            <div class="col blackBlock"></div>
+            <div class="col greenBlock"></div>
+            <div class="col redBlock"></div>
+        </div>
+
+        <!-- TRENDS SLIDE #1 -->
+        <div class="row slide trend-slide" id="trends-slide1">
+            <div class = "row phase31">
+                <div class="col-6 olympicBodyText">
+                    <h2 class = "olympicHeadText">Trends: Athletes are Running Faster</h2>
+                    <div class = "col-12 blackBlock underline"></div>
+                    <div class="container" style = "padding-top: 2vh">
+                        <div class="row">
+                            <div class="col-1"></div>
+                            <div class="col-11 hookText">
+                                WATCH the 100M Gold Medalists from across the years race each other - in real time!
+                                TO-DO: Insert key takeaways from moving bars visualization
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 olympicBodyText phase31R">
+                    <!-- code very similar to lab 9 button -->
+                    <button class="btn btn-outline-secondary align-self-center" type="button"
+                            onclick="runningGenderChange()" style="border: thin solid grey;">Watch Again
+                    </button>
+                    <select class='dropdown' id="running-gender" onchange="runningGenderChange()">
                         <option value="M" selected>Men</option>
                         <option value="W">Women</option>
                     </select>
-                    <div id = "recordsVis" ></div>
-
-                    Olympic records broken:
-                    <div id="slider-round-record"></div>
-                    <div id ="recordsIconsVis" style = "height: 50vh;" ></div>
+                    <div id = "runningVis"></div>
                 </div>
             </div>
         </div>
     </div>
 
 
-    <!-- COLOR BAR DIVIDER -->
-    <div class="row colorDivider">
-        <div class="col blueBlock"></div>
-        <div class="col yellowBlock"></div>
-        <div class="col blackBlock"></div>
-        <div class="col greenBlock"></div>
-        <div class="col redBlock"></div>
+
+    <div class="section">
+        <!-- TRENDS SLIDE #2 -->
+        <div class="row slide trend-slide" id="trends-slide2">
+            <div class = "row phase31" style = "padding-top: 20px">
+                <div class="col-6 olympicBodyText">
+                    <div><h4 class='italic' id="slider-instructions1">Drag the slider to see the evolution of jumping in the Olympics...</h4>
+                        <h4 class='italic' id="slider-instructions2">Use the filters to toggle between events and genders</h4></div>
+                    <select class='dropdown' id="high-jump-gender" onchange="highJumpGenderChange()">
+                        <option value="M" selected>Men</option>
+                        <option value="W">Women</option>
+                    </select>
+                    <select class='dropdown' id="pole-vault-select" onchange="highJumpGenderChange()">
+                        <option value="High Jump" selected>High Jump</option>
+                        <option value="Pole Vault">Pole Vault</option>
+                    </select>
+                    <div id = "hurdleVis"></div>
+                    <div id="slider-round"></div>
+                </div>
+                <div class="col-6 olympicBodyText">
+                    <h2 class = "olympicHeadText">... and Jumping Higher</h2>
+                    <div class = "col-12 blackBlock underline"></div>
+                    <ul>
+                        <li>Gold medal high jump and pole vault heights have steadily increased over time</li>
+                        <li>For instance, William Hoyt's 1896 pole vault of 3.3 meters was nearly doubled by Thiago Da Silva's 2016 vault of 6.03 meters.</li>
+                        <li>The increase in jumping/vaulting height persists across both men and women</li>
+                        <li>Perhaps the rate of improvement is slowing down</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- COLOR BAR DIVIDER -->
+        <div class="row colorDivider">
+            <div class="col blueBlock"></div>
+            <div class="col yellowBlock"></div>
+            <div class="col blackBlock"></div>
+            <div class="col greenBlock"></div>
+            <div class="col redBlock"></div>
+        </div>
     </div>
 
 
 
-    <!--Part 5-->
-    <div class="container-fluid">
-        <div class="row slide" id="reasons-slide">
-            <h2 class = "olympicHeadText center">Why is this the case?</h2>
-            <div class = "row underline">
-                <div class = "col-4"></div>
-                <div class = "col-4 redBlock underline"></div>
-                <div class = "col-4"></div>
-            </div>
+    <div class="section">
+        <!-- COLOR BAR DIVIDER -->
+        <div class="row colorDivider">
+            <div class="col blueBlock"></div>
+            <div class="col yellowBlock"></div>
+            <div class="col blackBlock"></div>
+            <div class="col greenBlock"></div>
+            <div class="col redBlock"></div>
+        </div>
 
+        <!--GLOBE SLIDE -->
+        <div class="container-fluid">
+            <div class="row slide" id="globe-slide">
+                <h2 class = "olympicHeadText center">Olympics track and field records keep getting broken</h2>
+                <div class = "col-2"></div>
+                <div class = "col-8 greenBlock underline"></div>
+                <div class = "col-2"></div>
+                <div class = "row center olympicBodyText">
+                    <div class  = "col greenText">
+                        Host Countries:
+                        <div id = "mapVis" ></div>
+                        Broken olympic records, by event, over the years:
+                        <select class='dropdown' id="records-gender" onchange="recordsGenderChange()">
+                            <option value="M" selected>Men</option>
+                            <option value="W">Women</option>
+                        </select>
+                        <div id = "recordsVis" ></div>
 
-            <!--Part 4.5-->
-            <div class="container-fluid"  id = "original">
-                <div class="row phase 5a">
-                    <div class = "row center olympicBodyText" style = "padding-top: 30px;">
-                        <div class  = "col circlesContain" id="reasonsVis">
-                        </div>
+                        Olympic records broken:
+                        <div id="slider-round-record"></div>
+                        <div id ="recordsIconsVis" style = "height: 50vh;" ></div>
                     </div>
                 </div>
             </div>
+        </div>
 
-
-<!--            <div class="container-fluid">-->
-<!--                <div class = "col-12 center">-->
-<!--                <button type="button" onclick = syringeUp()>Next</button>-->
-<!--            </div>-->
-<!--                <div class="row phase5b redText olympicBodyText">-->
-<!--                    <div class="col-3">-->
-<!--                        <div class = "row center" style = "padding-left: 50px">-->
-<!--                            <div class = "col-6">-->
-<!--                                <button type="button" onclick = syringeDown()>Back</button>-->
-<!--                            </div>-->
-<!--                            <div class = "col-6">-->
-<!--                                <button type="button" onclick = syringeUp()>Next</button>-->
-<!--                            </div>-->
-<!--                        </div>-->
-<!--                        <div id = "syringevis" style="height:800px;"></div>-->
-<!--                    </div>-->
-<!--                    <div class = "col-9 olympicBodyText syringeText">-->
-<!--                        <div class="container-fluid">-->
-<!--                            <div class="row">-->
-<!--                                <div class="col-4">-->
-<!--                                   <div style = "height:200px"></div>-->
-<!--                                    <div id = "text3" class=" " style = "height:130px"></div>-->
-<!--                                    <div id = "text2" class=" " style = "height:190px"></div>-->
-<!--                                    <div id = "text1" class=" " style = "height:130px"></div>-->
-<!--                                    <div id = "text0" class=" " style = "height:130px"></div>-->
-<!--                                </div>-->
-<!--                                <div class="col-8">-->
-<!--                                    <div id = "lineGraph" style="height:800px;"></div>-->
-<!--                                </div>-->
-<!--                            </div>-->
-<!--                        </div>-->
-
-<!--                    </div>-->
-<!--                </div>-->
-<!--            </div>-->
-
-
-
+        <!-- COLOR BAR DIVIDER -->
+        <div class="row colorDivider">
+            <div class="col blueBlock"></div>
+            <div class="col yellowBlock"></div>
+            <div class="col blackBlock"></div>
+            <div class="col greenBlock"></div>
+            <div class="col redBlock"></div>
         </div>
     </div>
 
 
-<!--    <div class="container-fluid" style = "padding-left: 100px; padding-right:100px">-->
-<!--        <h3 class = "olympicHeadText chartTitle">Training:</h3>-->
-<!--        <div class="row olympicBodyText" style = "font-size: 30">-->
-<!--            <div class="col " style="padding: 70px 0;" >-->
-<!--                <ul>-->
-<!--                    <li> Modern-day Olympic athletes are able to undergo training regimines that couldn't have been dreamed of in the 19th century.-->
-<!--                    </li>-->
-<!--                    <li> Prior to the advent of technology, Olympic athletes gauged their performances in numbers: race times, meters jumped, etc.</li>-->
-<!--                    <li>Now, Olympic contenders regularly undergo physical testing to measure their heart rates, lactic acid, and more, which enables them to more precisely record their athletic progress.</li>-->
-<!--                    <li>New suits are being developed that sense sweat content in real time to provide hydration guidelines.</li>-->
-<!--                </ul>-->
-<!--            </div>-->
-<!--            <div class="col">-->
-<!--                <img src="img/img1.webp" width = "100%">-->
-<!--            </div>-->
-<!--        </div>-->
-<!--        <div class="row olympicBodyText" style = "font-size: 30">-->
-<!--            <div class="col-5">-->
-<!--                <img src="img/img2.webp" width = "80%">-->
-<!--            </div>-->
-
-<!--            <div class="col-7" style="padding: 70px 0;" >-->
-<!--                <ul>-->
-<!--                    <li>Historically, many athletes were amateur and practiced part-time. With the advent of corporate sponsorships, prospective Olympians are prepared to make athletics their full-time endeavor.</li>-->
-<!--                    <li> Children are also being recruited at successively younger ages to train as athletes.-->
-<!--                    </li>-->
-<!--                </ul>-->
-<!--            </div>-->
-<!--        </div>-->
-<!--    </div>-->
-</div>
+    <div class="section">
+        <!--Part 5-->
+        <div class="container-fluid">
+            <div class="row slide" id="reasons-slide">
+                <h2 class = "olympicHeadText center">Why is this the case?</h2>
+                <div class = "row underline">
+                    <div class = "col-4"></div>
+                    <div class = "col-4 redBlock underline"></div>
+                    <div class = "col-4"></div>
+                </div>
 
 
-<!-- COLOR BAR DIVIDER -->
-<div class="row colorDivider">
-    <div class="col blueBlock"></div>
-    <div class="col yellowBlock"></div>
-    <div class="col blackBlock"></div>
-    <div class="col greenBlock"></div>
-    <div class="col redBlock"></div>
+                <!--Part 4.5-->
+                <div class="container-fluid"  id = "original">
+                    <div class="row phase 5a">
+                        <div class = "row center olympicBodyText" style = "padding-top: 30px;">
+                            <div class  = "col circlesContain" id="reasonsVis">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+    <!--            <div class="container-fluid">-->
+    <!--                <div class = "col-12 center">-->
+    <!--                <button type="button" onclick = syringeUp()>Next</button>-->
+    <!--            </div>-->
+    <!--                <div class="row phase5b redText olympicBodyText">-->
+    <!--                    <div class="col-3">-->
+    <!--                        <div class = "row center" style = "padding-left: 50px">-->
+    <!--                            <div class = "col-6">-->
+    <!--                                <button type="button" onclick = syringeDown()>Back</button>-->
+    <!--                            </div>-->
+    <!--                            <div class = "col-6">-->
+    <!--                                <button type="button" onclick = syringeUp()>Next</button>-->
+    <!--                            </div>-->
+    <!--                        </div>-->
+    <!--                        <div id = "syringevis" style="height:800px;"></div>-->
+    <!--                    </div>-->
+    <!--                    <div class = "col-9 olympicBodyText syringeText">-->
+    <!--                        <div class="container-fluid">-->
+    <!--                            <div class="row">-->
+    <!--                                <div class="col-4">-->
+    <!--                                   <div style = "height:200px"></div>-->
+    <!--                                    <div id = "text3" class=" " style = "height:130px"></div>-->
+    <!--                                    <div id = "text2" class=" " style = "height:190px"></div>-->
+    <!--                                    <div id = "text1" class=" " style = "height:130px"></div>-->
+    <!--                                    <div id = "text0" class=" " style = "height:130px"></div>-->
+    <!--                                </div>-->
+    <!--                                <div class="col-8">-->
+    <!--                                    <div id = "lineGraph" style="height:800px;"></div>-->
+    <!--                                </div>-->
+    <!--                            </div>-->
+    <!--                        </div>-->
+
+    <!--                    </div>-->
+    <!--                </div>-->
+    <!--            </div>-->
+            </div>
+        </div>
+
+
+    <!--    <div class="container-fluid" style = "padding-left: 100px; padding-right:100px">-->
+    <!--        <h3 class = "olympicHeadText chartTitle">Training:</h3>-->
+    <!--        <div class="row olympicBodyText" style = "font-size: 30">-->
+    <!--            <div class="col " style="padding: 70px 0;" >-->
+    <!--                <ul>-->
+    <!--                    <li> Modern-day Olympic athletes are able to undergo training regimines that couldn't have been dreamed of in the 19th century.-->
+    <!--                    </li>-->
+    <!--                    <li> Prior to the advent of technology, Olympic athletes gauged their performances in numbers: race times, meters jumped, etc.</li>-->
+    <!--                    <li>Now, Olympic contenders regularly undergo physical testing to measure their heart rates, lactic acid, and more, which enables them to more precisely record their athletic progress.</li>-->
+    <!--                    <li>New suits are being developed that sense sweat content in real time to provide hydration guidelines.</li>-->
+    <!--                </ul>-->
+    <!--            </div>-->
+    <!--            <div class="col">-->
+    <!--                <img src="img/img1.webp" width = "100%">-->
+    <!--            </div>-->
+    <!--        </div>-->
+    <!--        <div class="row olympicBodyText" style = "font-size: 30">-->
+    <!--            <div class="col-5">-->
+    <!--                <img src="img/img2.webp" width = "80%">-->
+    <!--            </div>-->
+
+    <!--            <div class="col-7" style="padding: 70px 0;" >-->
+    <!--                <ul>-->
+    <!--                    <li>Historically, many athletes were amateur and practiced part-time. With the advent of corporate sponsorships, prospective Olympians are prepared to make athletics their full-time endeavor.</li>-->
+    <!--                    <li> Children are also being recruited at successively younger ages to train as athletes.-->
+    <!--                    </li>-->
+    <!--                </ul>-->
+    <!--            </div>-->
+    <!--        </div>-->
+    <!--    </div>-->
+        <!-- COLOR BAR DIVIDER -->
+        <div class="row colorDivider">
+            <div class="col blueBlock"></div>
+            <div class="col yellowBlock"></div>
+            <div class="col blackBlock"></div>
+            <div class="col greenBlock"></div>
+            <div class="col redBlock"></div>
+        </div>
+    </div>
 </div>
 
 
@@ -378,6 +438,17 @@
 <!-- BOOTSTRAP -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/noUiSlider/15.4.0/nouislider.js"></script>
+
+
+<!-- FULLPAGE.JS -->
+<!--<script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/4.0.15/fullpage.min.js"></script>-->
+<!--<script>-->
+<!--    new fullpage('#fullpage', {-->
+<!--    //options here-->
+<!--    autoScrolling:true,-->
+<!--    scrollHorizontally: true-->
+<!--    });-->
+<!--</script>-->
 
 <!-- d3 -->
 <script src="https://d3js.org/d3.v7.min.js"></script>
@@ -405,7 +476,6 @@
 <script src="js/recordsVis.js"></script>
 <script src="js/recordsIconsVis.js"></script>
 <script src="js/equipment.js"></script>
-<script type="text/javascript" src="fullPage.js-master/fullpage.js"></script>
 
 </body>
 </html>
