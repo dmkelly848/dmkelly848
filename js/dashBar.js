@@ -39,7 +39,7 @@ class DashBar {
             .attr('class', 'title bar-title')
             .append('text')
             .text(`Medals Won by ${vis.selectedCategory}`)
-            .attr('font-size', 'smaller')
+            .attr('font-size', '70%')
             .attr('transform', `translate(${vis.width / 2}, ${vis.height / 10})`)
             .attr('text-anchor', 'middle');
 

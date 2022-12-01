@@ -17,8 +17,21 @@ h1{
 }
 
 h2{
-    font-size : clamp(2vw, 6vw, 4vw);
+    font-size : clamp(2vw, 6vw, 3.5vw);
     padding-top: 4vh;
+}
+
+h3{
+    font-size: clamp(1.5vw, 5vw, 2.5vw);
+    display: inline;
+}
+
+h4{
+    font-size : clamp(1vw, 2vw, 1.5vw);
+}
+
+li{
+    margin-bottom: 2vh;
 }
 
 .olympicHeadText{
@@ -33,9 +46,21 @@ h2{
     font-family: 'Lato', sans-serif;
 }
 
+.center{
+    text-align: center;
+}
+
 .underline{
     height: 1.5vh;
-    margin-bottom: 6vh;
+    margin-bottom: 4vh;
+}
+
+.italic{
+    font-style: italic;
+}
+
+.bolded{
+    font-weight: bold;
 }
 
 .yellowText {
@@ -92,7 +117,74 @@ h2{
 
 
 /***************
- Color Band Dividers / Blocks
+ D3 Graph Styles
+***************/
+.axis{
+    color: black;
+}
+
+.legend{
+    font-size: small;
+}
+
+.axisText{
+    font-family: 'Lato', sans-serif;
+    font-size: 3vh;
+}
+
+.tick{
+    font-size: 1vh;
+}
+
+.chartTitle{
+    font-size: 4vh;
+}
+
+.tooltip {
+    position: absolute;
+    text-align: center;
+    font: 1.2vh sans-serif;
+}
+.tooltip h3,h4 {
+    text-align: left;
+}
+.tooltip h4 {
+    font: 1.4vh sans-serif;
+}
+
+.name-label{
+    font-size: small;
+    text-anchor: end;
+}
+
+.xlab{
+    text-anchor: start;
+}
+
+.year-label, .player-label, .time-label, .record-label, .record-year-label {
+    font-size: 1.2vh;
+}
+
+
+/***************
+ Button Styling
+***************/
+.dropdown{
+    float: right;
+    margin-right: 6vh;
+    border-radius: 1vh;
+    padding-left: 0.5vh;
+    padding-bottom: 0.5vh;
+    padding-top: 0.5vh;
+    padding-right: 1vh;
+    background: grey;
+    color: white;
+    font-size: small;
+}
+
+
+/***************
+ Overall Slide Attributes
 ***************/
 .slide{
     height: 94vh;
@@ -100,8 +192,12 @@ h2{
 
 
 
+
 /****************************************************/
+/*      Individual Slide-Specific Styles            */
 /****************************************************/
+
+
 
 
 /***************
@@ -137,164 +233,101 @@ h2{
 }
 
 
+/***************
+ Event Descriptions Slide
+***************/
+#events-slide{
+    border-top: solid #3e76ec;
+    border-bottom: solid #3e76ec;
+}
+
+#eventListRow{
+    margin-left:1em;
+}
+
+#eventsVis{
+    margin-top: 2vh;
+    height: 68vh;
+}
 
 
-
-.phase2{
-    height: 100%;
+/***************
+ Medal Breakdown Slide
+***************/
+#medal-slide{
     border-top: solid #ffce01;
     border-bottom: solid #ffce01;
-    padding-bottom: 50px;
+    padding-bottom: 10vh;
 }
 
-.phase3{
-    height: 170vh;
-    border-top: solid #000000;
-    border-bottom: solid #000000;
-    padding-bottom: 10px;
-    padding-top: 50px;
-}
-
-.phase31{
-    /*height:100vh;*/
-}
-
-.phase31R{
-    border: none;
-}
-
-.phase4{
-    height: 250vh;
-    border-top: solid #179a13;
-    border-bottom: solid #179a13;
-    padding-bottom: 50px;
-    padding-top: 30px;
-}
-
-.phase5{
-    height: 120vh;
-    border-top: solid #ff0000;
-    border-bottom: solid #ff0000;
-    padding-bottom: 50px;
-    padding-top: 30px;
-}
-
-#original{
-    height: 100vh;
-}
-
-.circlesContain{
-    height: 100vh;
-}
-
-.ringscontain{
-    height: 800px;
-}
-
-.dashcontain{
+#tree-vis-container{
     height: 75vh;
-    /*border: solid #ffce01;*/
+
 }
 
-.dashcontain-2{
-    height: 10%;
+#treeVis{
+    margin: auto;
+    height: 100.4%;
 }
 
-.dashcontain-3{
-    height: 15%;
+#medal-info-container{
+    height: 75vh;
+}
+
+#medal-info-title{
+    height: 7vh;
+}
+
+#medal-info-type{
+    height: 12.5vh;
     border-bottom: solid #ffce01;
 }
 
-.dashcontain-4{
-    height: 35%;
-    /*border: solid #ffce01;*/
+#medal-info-yearbar{
+    height: 24vh;
 }
 
-.dashcontain-5{
-    height: 40%;
-    /*border: solid #ffce01;*/
+#medal-info-eventbar{
+    height: 31.5vh;
 }
 
-.reasonContain{
-    border: dashed #ff0000;
-    padding: 10px;
+#medalTitleRow, #treeVis, #dashBar2{
+    border-top: solid #ffce01;
+    border-bottom: solid #ffce01;
 }
 
-.phaseHeader{
-    text-align: center;
-    /*height: 100px;*/
+#medalTitleRow{
+    padding-top: 1vh;
 }
 
-
-
-.syringeText{
-    color: black;
-    font-size: 18px;
-}
-
-
-
-.axisText{
-    font-family: 'Lato', sans-serif;
-    font-size: 20px;
-}
-
-.bolded{
-    font-weight: bold;
-}
-
-.centerText{
-    text-align: center;
-}
-
-
-.chartTitle{
-    font-size: 40px;
-}
-
-h3{
-    font-size: 38px;
-    display: inline;
-}
-
-.center {
-    margin: auto;
-    width: 70%;
-    padding: 10px;
-    text-align: center;
-}
-
-.tooltip {
-    position: absolute;
-    text-align: center;
-    font: 12px sans-serif;
-    /*  pointer-events: none;	This line needs to be removed */
-}
-.tooltip h3,h4 {
-    text-align: left;
-}
-.tooltip h4 {
-    font: 14px sans-serif;
-}
-
-.connection {
-    stroke: black;
-    stroke-dasharray: 5;
-    stroke-width: 3px;
-    opacity: 0.7;
-}
-
-.name-label{
+#resetbutton{
+    float: right;
+    border-radius: 1vh;
+    background: grey;
+    color: white;
     font-size: small;
-    text-anchor: end;
 }
 
-.xlab{
-    text-anchor: start;
+.tree-rect-label{
+    fill: white;
 }
 
-.legend{
-    font-size: small;
+
+/***************
+ Trend Slides
+***************/
+.trend-slide{
+    height: 97vh;
+    padding-bottom: 1vh;
+    padding-top: 5vh;
+}
+
+#trends-slide1{
+    border-top: solid #000000;
+}
+
+#trends-slide2{
+    border-bottom: solid #000000;
 }
 
 #hurdleVis{
@@ -303,16 +336,18 @@ h3{
     height: 40vh;
 }
 
-#treeVis{
-    margin: auto;
-    height: 100.5%;
+#slider-instructions1{
+    margin-top: 4vh;
+    margin-left: 5vh;
 }
 
-#dashInfo{
-    margin: auto;
-    height: 100%;
+#slider-instructions2{
+    margin-top: 0vh;
+    margin-left: 5vh;
+    margin-bottom: 5vh;
 }
 
+/* slider from High Jump visualiztion */
 #slider-round {
     height: 1vh;
     margin: auto;
@@ -322,6 +357,31 @@ h3{
     font-size: small;
     background: grey;
     border: grey;
+}
+
+#slider-round .noUi-handle {
+    height: 2vh;
+    width: 2vh;
+    top: -0.5vh;
+    right: -1vh;
+    border-radius: 1vh;
+}
+
+/* button for selecting event */
+#pole-vault-select{
+    margin-right:3vh;
+}
+
+
+/***************
+ Globe Slide
+***************/
+#globe-slide{
+    height: 250vh; /* MAYBE CHANGE TO FIT INTO SLIDE??*/
+    border-top: solid #179a13;
+    border-bottom: solid #179a13;
+    padding-bottom: 50px;
+    padding-top: 30px;
 }
 
 #slider-round-record {
@@ -335,101 +395,63 @@ h3{
     border: grey;
 }
 
-#slider-round .noUi-handle {
-    height: 2vh;
-    width: 2vh;
-    top: -0.5vh;
-    right: -1vh; /* half the width */
-    border-radius: 1vh;
+
+/***************
+  Reasons Slide
+***************/
+#reasons-slide{
+    height: 120vh;
+    border-top: solid #ff0000;
+    border-bottom: solid #ff0000;
+    padding-bottom: 50px;
+    padding-top: 30px;
+}
+#original{
+    height: 100vh;
 }
 
-.axis{
+
+
+
+
+
+.circlesContain{
+    height: 100vh;
+}
+
+.ringscontain{
+    height: 800px;
+}
+
+
+
+.reasonContain{
+    border: dashed #ff0000;
+    padding: 10px;
+}
+
+
+.syringeText{
     color: black;
+    font-size: 18px;
 }
 
-.dropdown{
-    float: right;
-    margin-right: 6vh;
-    border-radius: 1vh;
-    padding-left: 0.5vh;
-    padding-bottom: 0.5vh;
-    padding-top: 0.5vh;
-    padding-right: 1vh;
-    background: grey;
-    color: white;
-    font-size: small;
+
+
+
+.connection {
+    stroke: black;
+    stroke-dasharray: 5;
+    stroke-width: 3px;
+    opacity: 0.7;
 }
 
-#resetbutton{
-    float: right;
-    border-radius: 1vh;
-    /*padding-left: 0.5vh;*/
-    /*padding-bottom: 0.5vh;*/
-    /*padding-top: 0.5vh;*/
-    /*padding-right: 1vh;*/
-    background: grey;
-    color: white;
-    font-size: small;
-}
 
-.year-label, .player-label, .time-label{
-    font-size: 12px
-}
 
 .running-bar{
     fill: indianred;
 }
 
-#pole-vault-select{
-    margin-right:3vh;
-}
-
-#slider-caption, #slider-caption2{
-    margin-top: 3vh;
-    margin-left:5vh;
-    font-style: italic;
-}
-
-#slider-caption2{
-    margin-top: 0vh;
-    margin-bottom: 5vh;
-}
-
-.tree-rect-label{
-    fill: white;
-}
-
-#dashTitleRow, #treeVis, #dashBar2{
-    border-top: solid #ffce01;
-    border-bottom: solid #ffce01;
-}
-
-#treeVis{
-    width:95%
-}
-
-#dashTitleRow{
-    padding-top: 20px;
-}
-
-#eventsVis{
-    margin-top: 3vh;
-    margin-bottom: 3vh;
-    height:80vh;
-}
-
-#eventListRow{
-    height: 14vh;
-    margin-left:1em;
-}
-
-.record-label, .record-year-label {
-    font-size: 12px;
-}
-
-li{
-    margin-bottom: 2vh;
-}
 
 
 

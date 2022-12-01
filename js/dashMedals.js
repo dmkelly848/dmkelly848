@@ -40,7 +40,7 @@ class DashMedals {
             .attr('dominant-baseline',"middle")
             .attr('text-anchor', 'middle')
             .attr('fill', 'black')
-            .attr('font-size', 'smaller');
+            .attr('font-size', '2.5vh');
 
         vis.silverCircleGroup = vis.svg.append('g')
             .attr('transform', `translate(${2*vis.width/4}, ${vis.height/2})`);
@@ -54,7 +54,7 @@ class DashMedals {
             .attr('dominant-baseline',"middle")
             .attr('text-anchor', 'middle')
             .attr('fill', 'black')
-            .attr('font-size', 'smaller')
+            .attr('font-size', '2.5vh')
 
         vis.bronzeCircleGroup = vis.svg.append('g')
             .attr('transform', `translate(${3*vis.width/4}, ${vis.height/2})`);
@@ -68,7 +68,7 @@ class DashMedals {
             .attr('dominant-baseline',"middle")
             .attr('text-anchor', 'middle')
             .attr('fill', 'black')
-            .attr('font-size', 'smaller')
+            .attr('font-size', '2.5vh')
 
 
         vis.wrangleData()

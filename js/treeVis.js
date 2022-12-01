@@ -18,7 +18,7 @@ class TreeVis {
         let vis = this;
 
         // margin convention with static height and responsive/variable width
-        vis.margin = {top: 20, right:20, bottom: 100, left: 20};
+        vis.margin = {top: 20, right:20, bottom: 80, left: 20};
         vis.width = document.getElementById(vis.parentElement).getBoundingClientRect().width - vis.margin.left - vis.margin.right;
         vis.height = document.getElementById(vis.parentElement).getBoundingClientRect().height - vis.margin.top - vis.margin.bottom;
 
@@ -41,10 +41,10 @@ class TreeVis {
             'N/A': '#888888',
         }
 
-        // add tooltip
-        vis.tooltipGroup = vis.svg.append('g')
-            .attr('id', 'treemapTooltip')
-        vis.tooltip = vis.tooltipGroup.append('div')
+        // // add tooltip
+        // vis.tooltipGroup = vis.svg.append('g')
+        //     .attr('id', 'treemapTooltip')
+        // vis.tooltip = vis.tooltipGroup.append('div')
 
         vis.legendGroup = vis.svg.append('g')
             .attr('class',"legendgroup")
@@ -193,10 +193,10 @@ class TreeVis {
             .attr("x", d=>d.x0+10)
             .attr("y", d=>d.y0+25)
             .text(function(d){
-                if(d.data.medal_count > 15)
+                if(d.data.medal_count > 18)
                     return d.data.country;
             })
-            .attr('font-size', function(d){return (Math.sqrt(d.data.medal_count)+40)+'%'})
+            .attr('font-size', function(d){return Math.sqrt((Math.sqrt(d.data.medal_count)))/3.5+"vw"})
 
         vis.legendRects = vis.legendGroup.selectAll('.legend-rect')
             .data(Object.keys(vis.colors))
@@ -225,7 +225,7 @@ class TreeVis {
             .data(Object.keys(vis.colors))
             .enter().append('text')
             .attr('class', 'legend-label')
-            .attr('font-size', 'small')
+            .attr('font-size', '0.9vw')
             .attr('y', vis.width/75)
             .attr('x', function(d,index){return -3.1*vis.width/7+index*vis.width/7+vis.width/40})
             .text(d=>d)

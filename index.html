@@ -81,14 +81,13 @@
         <div class="col redBlock"></div>
     </div>
 
-
-
-    <div class='row' style = "height: 94vh;">
+    <!-- EVENT DESCRIPTION SLIDE -->
+    <div class='row slide' id="events-slide">
         <div class="col olympicBodyText">
             <div class="row" id="eventListRow">
                 <h2 class="olympicHeadText">Track and Field Events</h2>
                 <div class = "col-6 blueBlock underline"></div>
-                <h4 style="font-style: italic">Click on an event to learn more about it!</h4>
+                <h4 class="italic">Click on an event to learn more about it!</h4>
             </div>
             <div class="row">
                 <div class="col-1"></div>
@@ -109,106 +108,31 @@
     </div>
 
 
-
-
-    <div class="container-fluid">
-        <div class="row phase2" style="height: 94vh;">
-            <h2 class = "olympicHeadText phaseHeader">Countries and their Medals</h2>
-                <div class = "col-4"></div>
-                <div class = "col-4 colorDivider yellowBlock underline"></div>
-                <div class = "col-4"></div>
-            <div class = "row olympicBodyText">
-                <div class = "col-8 dashcontain">
-                    <div id = "treeVis"></div>
-                </div>
-                <div class='col-4 dashcontain'>
-                    <div class="row dashcontain-2">
-                        <div id="dashTitleRow">
-                            <h3 id = "dashTitle" class="olympicHeadText"></h3>
-                            <button id="resetbutton" onclick=resetToWorld() disabled>Reset to World</button>
-                        </div>
-                    </div>
-                    <div class="row dashcontain-3">
-                        <div id = "dashMedals" ></div>
-                    </div>
-                    <div class="row dashcontain-4">
-                        <div id = "dashBar1" ></div>
-                    </div>
-                    <div class="row dashcontain-5">
-                        <div id = "dashBar2" ></div>
-                    </div>
-                </div>
+    <!-- MEDAL BREAKDOWN SLIDE -->
+    <div class="row slide" id="medal-slide">
+        <h2 class = "olympicHeadText center">Countries and their Medals</h2>
+            <div class = "col-4"></div>
+            <div class = "col-4 yellowBlock underline"></div>
+            <div class = "col-4"></div>
+        <div class = "row olympicBodyText">
+            <div class = "col-8" id="tree-vis-container">
+                <div id = "treeVis"></div>
             </div>
-
-
-        </div>
-    </div>
-
-
-    <!-- COLOR BAR DIVIDER -->
-    <div class="row colorDivider">
-        <div class="col blueBlock"></div>
-        <div class="col yellowBlock"></div>
-        <div class="col blackBlock"></div>
-        <div class="col greenBlock"></div>
-        <div class="col redBlock"></div>
-    </div>
-
-
-    <div class="container-fluid">
-        <div class="row phase3">
-            <div class = "row phase31">
-                <div class="col-6 olympicBodyText">
-                    <h2 class = "olympicHeadText">Trends: Athletes are Running Faster</h2>
-                    <div class = "col-12 blackBlock underline"></div>
-                    <div class="container" style = "padding-top: 20px">
-                        <div class="row">
-                            <div class="col-1"></div>
-                            <div class="col-11 hookText">
-                                WATCH the 100M Gold Medalists from across the years race each other - in real time!
-                                TO-DO: Insert key takeaways from moving bars visualization
-                            </div>
-                        </div>
+            <div class='col-4' id='medal-info-container'>
+                <div class="row" id="medal-info-title">
+                    <div id="medalTitleRow">
+                        <h3 id = "dashTitle" class="olympicHeadText"></h3>
+                        <button id="resetbutton" onclick=resetToWorld() disabled>Reset to World</button>
                     </div>
                 </div>
-                <div class="col-6 olympicBodyText phase31R">
-                    <!-- code very similar to lab 9 button -->
-                    <button class="btn btn-outline-secondary align-self-center" type="button"
-                            onclick="runningGenderChange()" style="border: thin solid grey;">Watch Again
-                    </button>
-                    <select class='dropdown' id="running-gender" onchange="runningGenderChange()">
-                        <option value="M" selected>Men</option>
-                        <option value="W">Women</option>
-                    </select>
-                    <div id = "runningVis"></div>
+                <div class="row" id="medal-info-type">
+                    <div id = "dashMedals" ></div>
                 </div>
-            </div>
-
-            <!-- second phase 3 visual-->
-            <div class = "row phase31" style = "padding-top: 20px">
-                <div class="col-6 olympicBodyText phase31R">
-                    <div><h4 id="slider-caption">Drag the slider to see the evolution of jumping in the Olympics...</h4>
-                        <h4 id="slider-caption2">Use the filters to toggle between events and genders</h4></div>
-                    <select class='dropdown' id="high-jump-gender" onchange="highJumpGenderChange()">
-                        <option value="M" selected>Men</option>
-                        <option value="W">Women</option>
-                    </select>
-                    <select class='dropdown' id="pole-vault-select" onchange="highJumpGenderChange()">
-                        <option value="High Jump" selected>High Jump</option>
-                        <option value="Pole Vault">Pole Vault</option>
-                    </select>
-                    <div id = "hurdleVis"></div>
-                    <div id="slider-round"></div>
+                <div class="row" id="medal-info-yearbar">
+                    <div id = "dashBar1" ></div>
                 </div>
-                <div class="col-6 olympicBodyText phase32R">
-                    <h2 class = "olympicHeadText">... and Jumping Higher</h2>
-                    <div class = "col-12 blackBlock underline"></div>
-                    <ul>
-                        <li>Gold medal high jump and pole vault heights have steadily increased over time</li>
-                        <li>For instance, William Hoyt's 1896 pole vault of 3.3 meters was nearly doubled by Thiago Da Silva's 2016 vault of 6.03 meters.</li>
-                        <li>The increase in jumping/vaulting height persists across both men and women</li>
-                        <li>Perhaps the rate of improvement is slowing down</li>
-                    </ul>
+                <div class="row" id="medal-info-eventbar">
+                    <div id = "dashBar2" ></div>
                 </div>
             </div>
         </div>
@@ -224,12 +148,84 @@
         <div class="col redBlock"></div>
     </div>
 
-    <!--Part 4-->
+
+    <!-- TRENDS SLIDE #1 -->
+    <div class="row slide trend-slide" id="trends-slide1">
+        <div class = "row phase31">
+            <div class="col-6 olympicBodyText">
+                <h2 class = "olympicHeadText">Trends: Athletes are Running Faster</h2>
+                <div class = "col-12 blackBlock underline"></div>
+                <div class="container" style = "padding-top: 2vh">
+                    <div class="row">
+                        <div class="col-1"></div>
+                        <div class="col-11 hookText">
+                            WATCH the 100M Gold Medalists from across the years race each other - in real time!
+                            TO-DO: Insert key takeaways from moving bars visualization
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-6 olympicBodyText phase31R">
+                <!-- code very similar to lab 9 button -->
+                <button class="btn btn-outline-secondary align-self-center" type="button"
+                        onclick="runningGenderChange()" style="border: thin solid grey;">Watch Again
+                </button>
+                <select class='dropdown' id="running-gender" onchange="runningGenderChange()">
+                    <option value="M" selected>Men</option>
+                    <option value="W">Women</option>
+                </select>
+                <div id = "runningVis"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- TRENDS SLIDE #2 -->
+    <div class="row slide trend-slide" id="trends-slide2">
+        <div class = "row phase31" style = "padding-top: 20px">
+            <div class="col-6 olympicBodyText">
+                <div><h4 class='italic' id="slider-instructions1">Drag the slider to see the evolution of jumping in the Olympics...</h4>
+                    <h4 class='italic' id="slider-instructions2">Use the filters to toggle between events and genders</h4></div>
+                <select class='dropdown' id="high-jump-gender" onchange="highJumpGenderChange()">
+                    <option value="M" selected>Men</option>
+                    <option value="W">Women</option>
+                </select>
+                <select class='dropdown' id="pole-vault-select" onchange="highJumpGenderChange()">
+                    <option value="High Jump" selected>High Jump</option>
+                    <option value="Pole Vault">Pole Vault</option>
+                </select>
+                <div id = "hurdleVis"></div>
+                <div id="slider-round"></div>
+            </div>
+            <div class="col-6 olympicBodyText">
+                <h2 class = "olympicHeadText">... and Jumping Higher</h2>
+                <div class = "col-12 blackBlock underline"></div>
+                <ul>
+                    <li>Gold medal high jump and pole vault heights have steadily increased over time</li>
+                    <li>For instance, William Hoyt's 1896 pole vault of 3.3 meters was nearly doubled by Thiago Da Silva's 2016 vault of 6.03 meters.</li>
+                    <li>The increase in jumping/vaulting height persists across both men and women</li>
+                    <li>Perhaps the rate of improvement is slowing down</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- COLOR BAR DIVIDER -->
+    <div class="row colorDivider">
+        <div class="col blueBlock"></div>
+        <div class="col yellowBlock"></div>
+        <div class="col blackBlock"></div>
+        <div class="col greenBlock"></div>
+        <div class="col redBlock"></div>
+    </div>
+
+
+    <!--GLOBE SLIDE -->
     <div class="container-fluid">
-        <div class="row phase4">
-            <h2 class = "olympicHeadText phaseHeader">Olympics track and field records keep getting broken TODO: interactivity</h2>
+        <div class="row slide" id="globe-slide">
+            <h2 class = "olympicHeadText center">Olympics track and field records keep getting broken</h2>
             <div class = "col-2"></div>
-            <div class = "col-8 colorDivider greenBlock underline"></div>
+            <div class = "col-8 greenBlock underline"></div>
             <div class = "col-2"></div>
             <div class = "row center olympicBodyText">
                 <div class  = "col greenText">
@@ -244,10 +240,7 @@
 
                     Olympic records broken:
                     <div id="slider-round-record"></div>
-                    <div id = "recordsIconsVis" style = "height: 50vh;" ></div>
-
-
-
+                    <div id ="recordsIconsVis" style = "height: 50vh;" ></div>
                 </div>
             </div>
         </div>
@@ -267,11 +260,11 @@
 
     <!--Part 5-->
     <div class="container-fluid">
-        <div class="row phase5">
-            <h2 class = "olympicHeadText phaseHeader" style = "height: 30vp">Why is this the case?</h2>
+        <div class="row slide" id="reasons-slide">
+            <h2 class = "olympicHeadText center">Why is this the case?</h2>
             <div class = "row underline">
                 <div class = "col-4"></div>
-                <div class = "col-4 colorDivider redBlock underline"></div>
+                <div class = "col-4 redBlock underline"></div>
                 <div class = "col-4"></div>
             </div>
 
