@@ -143,13 +143,13 @@ li{
 .tooltip {
     position: absolute;
     text-align: center;
-    font: 1.2vh sans-serif;
+    font: 1.8vh sans-serif;
 }
 .tooltip h3,h4 {
     text-align: left;
 }
 .tooltip h4 {
-    font: 1.4vh sans-serif;
+    font: 2vh sans-serif;
 }
 
 .name-label{
@@ -162,7 +162,7 @@ li{
 }
 
 .year-label, .player-label, .time-label, .record-label, .record-year-label {
-    font-size: 1.2vh;
+    font-size: 1.3vh;
 }
 
 
