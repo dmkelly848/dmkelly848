@@ -24,7 +24,7 @@ class CircleVis {
 
         //define type-dependent variables
         let circsPerRow;
-        let color, fontsize, padfact, rfact, opacity;
+        let color, fontsize, padfact, rfact, opacity, r;
         if(vis.type===1) {
             circsPerRow = 9;
             padfact = 2.2;
@@ -32,18 +32,21 @@ class CircleVis {
             opacity = 0.35;
             fontsize = 'small';
             rfact = 1.3;
-            // credit to: https://stackoverflow.com/questions/28572015/how-to-select-unique-values-in-d3-js-from-data
             vis.circleData = [...new Set(vis.resultsData.map(d => d.Event))];
+
+            r = Math.min(vis.width/(circsPerRow*4), vis.height/((vis.circleData.length/circsPerRow)*6));
+            // credit to: https://stackoverflow.com/questions/28572015/how-to-select-unique-values-in-d3-js-from-data
         }
         else{
             circsPerRow = 3;
             padfact = 2;
             rfact = 1;
+            r = vis.width/(circsPerRow*4)
             opacity = 0.35;
             fontsize = 'normal'
             color = '#ff0000'
         }
-        let r = Math.min(vis.width/(circsPerRow*4), vis.height/((vis.circleData.length/circsPerRow)*6));
+
         console.log(vis.parentElement)
         console.log(vis.width/(circsPerRow*4))
         console.log(vis.height/((vis.circleData.length/circsPerRow)*4))
