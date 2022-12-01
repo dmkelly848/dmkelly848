@@ -1,13 +1,69 @@
+/***************
+  Font Colors + Sizes
+***************/
+body{
+    font-family: OlympicSans,Arial,Helvetica,sans-serif;
+    font-size : clamp(1vw, 3vw, 2vw);
+}
+
+h1{
+    display: block;
+    font-family: 'Bebas Neue', cursive;
+    font-size : clamp(3vw, 9vw, 6vw);
+    font-weight: 400;
+    text-align: center;
+    padding-top: 18vh;
+    padding-bottom: 0;
+}
+
+h2{
+    font-size : clamp(2vw, 6vw, 4vw);
+    padding-top: 4vh;
+}
+
+.olympicHeadText{
+    font-family: 'Bebas Neue', cursive;
+}
+
+.olympicBodyText{
+    font-family: 'Lato', sans-serif;
+}
+
+.olympicBodyFont{
+    font-family: 'Lato', sans-serif;
+}
+
+.underline{
+    height: 1.5vh;
+    margin-bottom: 6vh;
+}
+
 .yellowText {
     color: #ffce01;
 }
 
-.yellowBlock{
-    background-color: #ffce01;
-}
-
 .redText {
     color: #ff0000;
+}
+
+.blueText {
+    color: #3e76ec;
+}
+
+.greenText {
+    color: #179a13;
+}
+
+
+/***************
+ Color Band Dividers / Blocks
+***************/
+.colorDivider{
+    height: 3vh;
+}
+
+.yellowBlock{
+    background-color: #ffce01;
 }
 
 .lightRedBlock{
@@ -18,45 +74,72 @@
     background-color: #ff0000;
 }
 
-.blueText {
-    color: #3e76ec;
-}
-
 .blueBlock{
     background-color: #3e76ec;
-}
-
-.lightBlueBlock{
-    background-color: #d8e3fb;
-}
-
-
-.greenText {
-    color: #179a13;
 }
 
 .greenBlock{
     background-color: #179a13;
 }
 
-.blackBlock{
+.lightBlueBlock {
+    background-color: #d8e3fb;
+}
+
+.blackBlock {
     background-color: black;
 }
 
-.headDesign{
-    height: 3vh;
+
+/***************
+ Color Band Dividers / Blocks
+***************/
+.slide{
+    height: 94vh;
 }
 
-.hookText{
-    height: 300px;
+
+
+/****************************************************/
+/****************************************************/
+
+
+/***************
+ Title Slide
+***************/
+#icon-bottom-bar{
+    height: 27%;
 }
 
-.phase1{
+#title-image-row{
+    height: 35%;
+}
+
+#title-image{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
     height: 100%;
-    height: 100%;
+    width: auto;
+}
+
+
+/***************
+ Usain Bolt Slide
+***************/
+#bolt-slide{
     border-top: solid #3e76ec;
     border-bottom: solid #3e76ec;
 }
+
+#bolt-slide-left{
+    border-right: dashed #3e76ec;
+}
+
+
+
+
+
 .phase2{
     height: 100%;
     border-top: solid #ffce01;
@@ -142,69 +225,18 @@
     /*height: 100px;*/
 }
 
-.phase1Left{
-    height:100%;
-    border-right: dashed #3e76ec;
-}
 
-.underline{
-    height: 10px;
-    margin-bottom: 30px;
-}
 
 .syringeText{
     color: black;
     font-size: 18px;
 }
 
-h1{
-    display: block;
-    font-family: 'Bebas Neue', cursive;
-    font-size: 90px;
-    font-weight: 400;
-    text-align: center;
-    padding-top: 100px;
-    padding-bottom: 0;
-}
-#header-image-row{
-    height: 35%;
-    margin-bottom: 8vh;
-    border: 3px solid blue;
-}
 
-#header_image{
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    height: 100%;
-    width: auto;
-}
-
-#icon-bottom-bar{
-    height: 27%;
-    border: red solid 2px;
-}
-
-.body{
-    font-family: OlympicSans,Arial,Helvetica,sans-serif;
-}
-
-.olympicBodyText{
-    font-family: 'Lato', sans-serif;
-    font-size: 30px;
-}
-
-.olympicBodyFont{
-    font-family: 'Lato', sans-serif;
-}
 
 .axisText{
     font-family: 'Lato', sans-serif;
     font-size: 20px;
-}
-
-.olympicHeadText{
-    font-family: 'Bebas Neue', cursive;
 }
 
 .bolded{
@@ -215,10 +247,6 @@ h1{
     text-align: center;
 }
 
-h2{
-    font-size: 52px;
-    padding-top: 20px;
-}
 
 .chartTitle{
     font-size: 40px;

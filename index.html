@@ -18,29 +18,30 @@
     <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
 
 </head>
+
 <body>
-
-<!-- WRAPPER -->
-
-<div class="row headDesign">
-    <div class="col blueBlock"></div>
-    <div class="col yellowBlock"></div>
-    <div class="col blackBlock"></div>
-    <div class="col greenBlock"></div>
-    <div class="col redBlock"></div>
-</div>
-
 <div class="container-fluid">
-    <!-- HEADING -->
-    <div class="row" style = "height: 94vh;">
-        <h1>Olympic Track and Field Throughout History</h1>
-        <div class='row' id="header-image-row">
-            <img id = "header_image" src = "img/rings.png">
+
+    <!-- COLOR BAR DIVIDER -->
+    <div class="row colorDivider">
+        <div class="col blueBlock"></div>
+        <div class="col yellowBlock"></div>
+        <div class="col blackBlock"></div>
+        <div class="col greenBlock"></div>
+        <div class="col redBlock"></div>
+    </div>
+
+    <!-- TITLE SLIDE -->
+    <div class="row slide" id="title-slide">
+        <h1 id="title">Olympic Track and Field Throughout History</h1>
+        <div class='row' id="title-image-row">
+            <img id = "title-image" src = "img/rings.png">
         </div>
         <div id="icon-bottom-bar"></div>
     </div>
 
-    <div class="row headDesign">
+    <!-- COLOR BAR DIVIDER -->
+    <div class="row colorDivider">
         <div class="col blueBlock"></div>
         <div class="col yellowBlock"></div>
         <div class="col blackBlock"></div>
@@ -48,37 +49,39 @@
         <div class="col redBlock"></div>
     </div>
 
+    <!-- USAIN BOLT HOOK SLIDE -->
     <div class="container-fluid">
-        <div class="row phase1">
-            <div class="col-7 olympicBodyText phase1Left">
+        <div class="row slide" id="bolt-slide">
+            <div class="col-7 olympicBodyText" id="bolt-slide-left">
                 <h2 class = "olympicHeadText">Usain Bolt has...</h2>
                 <div class = "col-6 blueBlock underline"></div>
-                <div class="container" style = "padding-top: 20px">
-                    <div class="row">
-                        <div class="col-2"></div>
-                        <div class="col-10 hookText">
-                            <ul>
-                                <li>Received gold in the 100m and 200m in three consecutive Olympics - in 2008, 2012, and 2016</li>
-                                <li>Won the 200m by a 0.66 second margin - the largest in Olympic history</li>
-                                <li>Earned 8 Olympics and 11 World Champion golden medals</li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class = "row blueText center">
-                        TO-DO: Click on track and field events to learn more!
+                <div class="row" id="bolt-facts">
+                    <div class="col-1"></div>
+                    <div class="col-10">
+                        <ul>
+                            <li>Received gold in the 100m and 200m in three consecutive Olympics - in 2008, 2012, and 2016</li>
+                            <li>Won the 200m by a 0.66 second margin - the largest in Olympic history</li>
+                            <li>Earned 8 Olympics and 11 World Champion golden medals</li>
+                        </ul>
                     </div>
                 </div>
+            </div>
+            <div class="col-5 olympicBodyText" id="bolt-slide-right">
+                TODO: ADD IMAGE OR OTHER CONTENT
             </div>
         </div>
     </div>
 
-    <div class="row headDesign">
+    <!-- COLOR BAR DIVIDER -->
+    <div class="row colorDivider">
         <div class="col blueBlock"></div>
         <div class="col yellowBlock"></div>
         <div class="col blackBlock"></div>
         <div class="col greenBlock"></div>
         <div class="col redBlock"></div>
     </div>
+
+
 
     <div class='row' style = "height: 94vh;">
         <div class="col olympicBodyText">
@@ -95,7 +98,9 @@
         </div>
     </div>
 
-    <div class="row headDesign">
+
+    <!-- COLOR BAR DIVIDER -->
+    <div class="row colorDivider">
         <div class="col blueBlock"></div>
         <div class="col yellowBlock"></div>
         <div class="col blackBlock"></div>
@@ -103,12 +108,14 @@
         <div class="col redBlock"></div>
     </div>
 
-    <!--Part 2-->
+
+
+
     <div class="container-fluid">
         <div class="row phase2" style="height: 94vh;">
             <h2 class = "olympicHeadText phaseHeader">Countries and their Medals</h2>
                 <div class = "col-4"></div>
-                <div class = "col-4 headDesign yellowBlock underline"></div>
+                <div class = "col-4 colorDivider yellowBlock underline"></div>
                 <div class = "col-4"></div>
             <div class = "row olympicBodyText">
                 <div class = "col-8 dashcontain">
@@ -137,7 +144,9 @@
         </div>
     </div>
 
-    <div class="row headDesign">
+
+    <!-- COLOR BAR DIVIDER -->
+    <div class="row colorDivider">
         <div class="col blueBlock"></div>
         <div class="col yellowBlock"></div>
         <div class="col blackBlock"></div>
@@ -145,7 +154,6 @@
         <div class="col redBlock"></div>
     </div>
 
-    <!--Part 3-->
 
     <div class="container-fluid">
         <div class="row phase3">
@@ -206,7 +214,9 @@
         </div>
     </div>
 
-    <div class="row headDesign">
+
+    <!-- COLOR BAR DIVIDER -->
+    <div class="row colorDivider">
         <div class="col blueBlock"></div>
         <div class="col yellowBlock"></div>
         <div class="col blackBlock"></div>
@@ -219,7 +229,7 @@
         <div class="row phase4">
             <h2 class = "olympicHeadText phaseHeader">Olympics track and field records keep getting broken TODO: interactivity</h2>
             <div class = "col-2"></div>
-            <div class = "col-8 headDesign greenBlock underline"></div>
+            <div class = "col-8 colorDivider greenBlock underline"></div>
             <div class = "col-2"></div>
             <div class = "row center olympicBodyText">
                 <div class  = "col greenText">
@@ -243,7 +253,9 @@
         </div>
     </div>
 
-    <div class="row headDesign">
+
+    <!-- COLOR BAR DIVIDER -->
+    <div class="row colorDivider">
         <div class="col blueBlock"></div>
         <div class="col yellowBlock"></div>
         <div class="col blackBlock"></div>
@@ -259,7 +271,7 @@
             <h2 class = "olympicHeadText phaseHeader" style = "height: 30vp">Why is this the case?</h2>
             <div class = "row underline">
                 <div class = "col-4"></div>
-                <div class = "col-4 headDesign redBlock underline"></div>
+                <div class = "col-4 colorDivider redBlock underline"></div>
                 <div class = "col-4"></div>
             </div>
 
@@ -347,17 +359,23 @@
 <!--            </div>-->
 <!--        </div>-->
 <!--    </div>-->
-
-
-
 </div>
-<div class="row headDesign">
+
+
+<!-- COLOR BAR DIVIDER -->
+<div class="row colorDivider">
     <div class="col blueBlock"></div>
     <div class="col yellowBlock"></div>
     <div class="col blackBlock"></div>
     <div class="col greenBlock"></div>
     <div class="col redBlock"></div>
 </div>
+
+
+
+
+
+
 
 
 <!-- - - - - - - - - - - - >
