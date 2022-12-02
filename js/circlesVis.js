@@ -218,6 +218,7 @@ class CircleVis {
                 .attr("cy",function (d,i){
                     return (Math.floor(i/circsPerRow) * (padfact+1) * r) + r;
                 })
+                .attr('class', 'overlay')
                 .attr("r",r*rfact)
                 .style('opacity', 0)
                 .attr("fill",'#FFFFFF')

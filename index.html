@@ -6,7 +6,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/noUiSlider/15.4.0/nouislider.css" integrity="sha512-DGB74Gyw93qON+V0QxSRs1er6sqoPyFoy23HBL5LN7MRJBcjeCU22zega+vOEGE0XQLoVrv4ExcaesSTwZQA2w==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
     <link rel="stylesheet" href="css/styles.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/4.0.15/fullpage.css" />
+    <link rel="stylesheet" href="css/fullpage.css" />
 
     <!-- Custom font from Google fonts to resemble Olympics website-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -33,7 +33,7 @@
         </div>
 
         <!-- TITLE SLIDE -->
-        <div class="row slide" id="title-slide">
+        <div class="row slide-area" id="title-slide">
             <h1 id="title">Olympic Track and Field Throughout History</h1>
             <div class='row' id="title-image-row">
                 <img id = "title-image" src = "img/rings.png">
@@ -64,7 +64,7 @@
         </div>
         <!-- USAIN BOLT HOOK SLIDE -->
         <div class="container-fluid">
-            <div class="row slide" id="bolt-slide">
+            <div class="row slide-area" id="bolt-slide">
                 <div class="col-7 olympicBodyText" id="bolt-slide-left">
                     <h2 class = "olympicHeadText">Usain Bolt has...</h2>
                     <div class = "col-6 blueBlock underline"></div>
@@ -108,7 +108,7 @@
         </div>
 
         <!-- EVENT DESCRIPTION SLIDE -->
-        <div class='row slide' id="events-slide">
+        <div class='row slide-area' id="events-slide">
             <div class="col olympicBodyText">
                 <div class="row" id="eventListRow">
                     <h2 class="olympicHeadText">Track and Field Events</h2>
@@ -146,7 +146,7 @@
         </div>
 
         <!-- MEDAL BREAKDOWN SLIDE -->
-        <div class="row slide" id="medal-slide">
+        <div class="row slide-area" id="medal-slide">
             <h2 class = "olympicHeadText center">Countries and their Medals</h2>
                 <div class = "col-4"></div>
                 <div class = "col-4 yellowBlock underline"></div>
@@ -199,7 +199,7 @@
         </div>
 
         <!-- TRENDS SLIDE #1 -->
-        <div class="row slide trend-slide" id="trends-slide1">
+        <div class="row slide-area trend-slide" id="trends-slide1">
             <div class = "row phase31">
                 <div class="col-6 olympicBodyText">
                     <h2 class = "olympicHeadText">Trends: Athletes are Running Faster</h2>
@@ -233,7 +233,7 @@
 
     <div class="section">
         <!-- TRENDS SLIDE #2 -->
-        <div class="row slide trend-slide" id="trends-slide2">
+        <div class="row slide-area trend-slide" id="trends-slide2">
             <div class = "row phase31" style = "padding-top: 20px">
                 <div class="col-6 olympicBodyText">
                     <div><h4 class='italic' id="slider-instructions1">Drag the slider to see the evolution of jumping in the Olympics...</h4>
@@ -252,11 +252,11 @@
                 <div class="col-6 olympicBodyText">
                     <h2 class = "olympicHeadText">... and Jumping Higher</h2>
                     <div class = "col-12 blackBlock underline"></div>
-                    <ul>
+                    <ul id="high-jump-takeaways">
                         <li>Gold medal high jump and pole vault heights have steadily increased over time</li>
                         <li>For instance, William Hoyt's 1896 pole vault of 3.3 meters was nearly doubled by Thiago Da Silva's 2016 vault of 6.03 meters.</li>
                         <li>The increase in jumping/vaulting height persists across both men and women</li>
-                        <li>Perhaps the rate of improvement is slowing down</li>
+                        <li>Seemingly, the rate of improvement is slowing down</li>
                     </ul>
                 </div>
             </div>
@@ -286,7 +286,7 @@
 
         <!--GLOBE SLIDE -->
         <div class="container-fluid">
-            <div class="row slide" id="globe-slide">
+            <div class="row slide-area" id="globe-slide">
                 <h2 class = "olympicHeadText center">Olympics track and field records keep getting broken</h2>
                 <div class = "col-2"></div>
                 <div class = "col-8 greenBlock underline"></div>
@@ -324,7 +324,7 @@
     <div class="section">
         <!--Part 5-->
         <div class="container-fluid">
-            <div class="row slide" id="reasons-slide">
+            <div class="row slide-area" id="reasons-slide">
                 <h2 class = "olympicHeadText center">Why is this the case?</h2>
                 <div class = "row underline">
                     <div class = "col-4"></div>
@@ -441,14 +441,7 @@
 
 
 <!-- FULLPAGE.JS -->
-<!--<script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/4.0.15/fullpage.min.js"></script>-->
-<!--<script>-->
-<!--    new fullpage('#fullpage', {-->
-<!--    //options here-->
-<!--    autoScrolling:true,-->
-<!--    scrollHorizontally: true-->
-<!--    });-->
-<!--</script>-->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/4.0.15/fullpage.min.js"></script>
 
 <!-- d3 -->
 <script src="https://d3js.org/d3.v7.min.js"></script>

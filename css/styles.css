@@ -3,7 +3,7 @@
 ***************/
 body{
     font-family: OlympicSans,Arial,Helvetica,sans-serif;
-    font-size : clamp(1vw, 3vw, 2vw);
+    font-size : clamp(1vw, 3vw, 1.8vw);
 }
 
 h1{
@@ -186,7 +186,7 @@ li{
 /***************
  Overall Slide Attributes
 ***************/
-.slide{
+.slide-area{
     height: 94vh;
 }
 
@@ -250,6 +250,10 @@ li{
     height: 68vh;
 }
 
+.overlay{
+    cursor: pointer;
+}
+
 
 /***************
  Medal Breakdown Slide
@@ -261,8 +265,8 @@ li{
 }
 
 #tree-vis-container{
+    margin-left: 1vw;
     height: 75vh;
-
 }
 
 #treeVis{
@@ -272,6 +276,7 @@ li{
 
 #medal-info-container{
     height: 75vh;
+    width: 30vw;
 }
 
 #medal-info-title{
@@ -301,11 +306,16 @@ li{
 }
 
 #resetbutton{
+    cursor: pointer;
     float: right;
     border-radius: 1vh;
     background: grey;
     color: white;
     font-size: small;
+}
+
+.tree-rect{
+    cursor: pointer;
 }
 
 .tree-rect-label{
@@ -370,6 +380,10 @@ li{
 /* button for selecting event */
 #pole-vault-select{
     margin-right:3vh;
+}
+
+#high-jump-takeaways{
+    padding-right: 3vw;
 }
 
 

@@ -1,10 +1,31 @@
 /* * * * * * * * * * * * * *
 *           MAIN           *
 * * * * * * * * * * * * * */
+// set up fullpage.js
+new fullpage('#fullpage', {
+    //options here
+    autoScrolling:true,
+    scrollHorizontally: true,
+    fitToSection: true,
+    easing: 'easeInOutCubic',
+
+    // Navigation
+    navigation: true,
+    navigationPosition: 'right',
+    navigationTooltips: [
+        'Intro',
+        'Usain Bolt',
+        'Event Descriptions',
+        'Medal Breakdown ',
+        'Running Faster',
+        'Jumping Higher',
+        'Breaking Records',
+        'Reasons Why'],
+    showActiveTooltip: false,
+});
 
 // init global variables, switches, helper functions
 let selCountry = 'Worldwide';
-
 let dataStar;
 
 // load data using promises
