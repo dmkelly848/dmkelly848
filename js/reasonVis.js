@@ -127,7 +127,7 @@ class ReasonVis {
                 "            <div class=\"row olympicBodyText\" style = \"font-size: 2.5vh; \">\n" +
                 "                <div id= \"dietVis\" class=\"col-6\" style=\"padding: 20px;\" >\n" +
                 "                </div>\n" +
-                "                <div class=\"col-6 olympicBodyText\" style = \"padding: 100px\">\n" +
+                "                <div class=\"col-6 olympicBodyText\" style = \"padding-top: 100px; padding-left: 100px\">\n" +
                 "                    <ul>\n" +
                 "                        <li>The first nutritional vitamin was discovered and defined in 1926... 30 years after the first\n" +
                 "                        modern Olympic Games.</li>\n" +

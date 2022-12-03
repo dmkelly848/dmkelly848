@@ -35,14 +35,14 @@ class DietVis {
             .attr("transform", "translate(" + vis.margin.left + "," + vis.margin.top + ")");
 
         vis.innerCirc = vis.svg.append("circle")
-            .attr("r",0.9*vis.width/2)
+            .attr("r",0.8*vis.width/2)
             .attr("cx",vis.center.x)
             .attr("cy",vis.center.y)
             .attr("fill","none")
             .attr("stroke","black")
 
         vis.outerCirc = vis.svg.append("circle")
-            .attr("r",vis.width/2)
+            .attr("r",0.9*vis.width/2)
             .attr("cx",vis.center.x)
             .attr("cy",vis.center.y)
             .attr("fill","none")
@@ -69,7 +69,7 @@ class DietVis {
             .attr('class', "tooltip")
             .attr('id', 'pieTooltip')
         // Pie chart settings
-        vis.outerRadius = 0.9*vis.width / 2;
+        vis.outerRadius = 0.8*vis.width / 2;
         vis.innerRadius = 0;
 
 
