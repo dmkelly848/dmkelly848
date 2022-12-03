@@ -41,11 +41,6 @@ class RecordsIconsVis {
 
         // gender
         vis.gender = d3.select("#records-gender").property("value")
-        if (vis.gender === 'M') {
-            vis.chosenYear = vis.parseDate(1896)
-        } else {
-            vis.chosenYear = vis.parseDate(1928)
-        }
 
         console.log(vis.chosenYear)
 
