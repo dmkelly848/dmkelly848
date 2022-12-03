@@ -129,7 +129,7 @@ function initMainPage(data) {
     circleVis2 = new CircleVis('reasonsVis',data[0],["Doping","Equipment","Training","Diet","Coaching","Global Access"], undefined, 2)
     mapVis = new MapVis('mapVis', data[0], data[3], data[6])
     recordsVis = new RecordsVis('recordsVis', data[0], data[4], data[5])
-    recordsIconsVis = new RecordsIconsVis('recordsIconsVis', data[0], data[4], data[5])
+    recordsIconsVis = new RecordsIconsVis('recordsIconsVis', data[0], data[4], data[5], data[6])
 };
 
 function highJumpGenderChange(){
@@ -212,6 +212,7 @@ function previousGames(){
     document.getElementById('hostCountryText').innerHTML = dataStar[6][mapYearIndex].Host
 
     mapVis.spinVis()
+    recordsIconsVis.updateVis()
 }
 
 function nextGames(){
@@ -237,6 +238,7 @@ function nextGames(){
     document.getElementById('hostCountryText').innerHTML = dataStar[6][mapYearIndex].Host
 
     mapVis.spinVis()
+    recordsIconsVis.updateVis()
 }
 
 

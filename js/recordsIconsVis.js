@@ -1,10 +1,11 @@
 class RecordsIconsVis {
 
-    constructor(parentElement, data, mensRecords, womensRecords) {
+    constructor(parentElement, data, mensRecords, womensRecords, hostData) {
         this.parentElement = parentElement;
         this.data = data;
         this.mensRecords = mensRecords;
         this.womensRecords = womensRecords;
+        this.hostData = hostData;
 
         this.formatDate = d3.timeFormat("%Y");
         this.parseDate = d3.timeParse("%Y");
@@ -18,7 +19,6 @@ class RecordsIconsVis {
         vis.margin = {top: 50, right: 20, bottom: 20, left: 20};
         vis.width = document.getElementById(vis.parentElement).getBoundingClientRect().width - vis.margin.left - vis.margin.right;
         vis.height = document.getElementById(vis.parentElement).getBoundingClientRect().height - vis.margin.top - vis.margin.bottom;
-        // vis.height = 800 - vis.margin.top - vis.margin.bottom;
 
         vis.svg = d3.select("#" + vis.parentElement).append("svg")
             .attr("width", vis.width)
@@ -33,7 +33,13 @@ class RecordsIconsVis {
         vis.rfact = 1.3;
         vis.r = 40
 
-        // starting value
+        vis.wrangleData()
+    }
+
+    wrangleData() {
+        let vis = this;
+
+        // gender
         vis.gender = d3.select("#records-gender").property("value")
         if (vis.gender === 'M') {
             vis.chosenYear = vis.parseDate(1896)
@@ -41,14 +47,7 @@ class RecordsIconsVis {
             vis.chosenYear = vis.parseDate(1928)
         }
 
-        vis.wrangleData()
-        vis.createSlider()
-    }
-
-    wrangleData() {
-        let vis = this;
-
-        console.log(vis.gender)
+        console.log(vis.chosenYear)
 
         if (vis.gender === 'M') {
             vis.displayData = vis.mensRecords
@@ -71,7 +70,9 @@ class RecordsIconsVis {
     updateVis() {
         let vis = this;
 
-        console.log(vis.chosenYear)
+        vis.chosenYear = vis.parseDate(vis.hostData[mapYearIndex].Year)
+
+        console.log(vis.displayData)
 
         vis.circleData = vis.displayData.filter(function (d) {
             return (d[vis.formatDate(vis.chosenYear)] === '1')
@@ -113,49 +114,6 @@ class RecordsIconsVis {
             .attr('width', 1.3*vis.r)
             .attr('class','icon')
 
-    }
-
-    createSlider() {
-        let vis = this;
-
-        vis.slidData = vis.displayData;
-
-        vis.slider = document.getElementById("slider-round-record");
-        noUiSlider.create(vis.slider, {
-            start: [d3.min(vis.slidData.years)],
-            step: 4,
-            margin: 4,
-            range: {
-                'min': d3.min(vis.slidData.years),
-                'max': d3.max(vis.slidData.years)
-            },
-            tooltips: [true],
-            format: {
-                from: d => d,
-                to: d => d
-            },
-            pips: {
-                mode: 'count',
-                values: 6,
-                density: 6
-            }
-        });
-
-        // create listener for sliders
-        vis.slider.noUiSlider.on('slide', function (values) {
-            vis.chosenYear = vis.parseDate(values[0]);
-            console.log(vis.chosenYear)
-            vis.wrangleData();
-        });
-    }
-
-    updateSlider() {
-        let vis = this;
-        vis.gender = d3.select("#records-gender").property("value")
-
-        console.log('here')
-        vis.slider.noUiSlider.destroy()
-        vis.createSlider();
     }
 
 }

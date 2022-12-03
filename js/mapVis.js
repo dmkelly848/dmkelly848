@@ -196,7 +196,6 @@ class MapVis {
                 });
 
         vis.countryInfo[vis.hostData[mapYearIndex].Host]['color'] = vis.colors[1]
-        console.log(vis.countryInfo)
         vis.countries.style("fill", function(d) { return vis.countryInfo[d.properties.name].color; })
     }
 }
