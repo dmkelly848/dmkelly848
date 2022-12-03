@@ -27,6 +27,7 @@ new fullpage('#fullpage', {
 // init global variables, switches, helper functions
 let selCountry = 'Worldwide';
 let dataStar;
+let mapYearIndex = 0;
 
 // load data using promises
 let promises = [
@@ -43,7 +44,8 @@ let promises = [
     d3.csv('data/event_descriptions.csv'),
     d3.json("https://cdn.jsdelivr.net/npm/world-atlas@2/countries-50m.json"),
     d3.csv('data/mens_records.csv'),
-    d3.csv('data/womens_records.csv')
+    d3.csv('data/womens_records.csv'),
+    d3.csv('data/hosts.csv')
 ];
 
 let mensRecordMatrix = [
@@ -126,7 +128,7 @@ function initMainPage(data) {
     // syringeVis = new SyringeVis('syringevis',data[0])
     // lineGraph = new LineGraph('lineGraph',data[0])
     circleVis2 = new CircleVis('reasonsVis',data[0],["Doping","Equipment","Training","Diet","Coaching","Global Access"], undefined, 2)
-    mapVis = new MapVis('mapVis', data[0], data[3])
+    mapVis = new MapVis('mapVis', data[0], data[3], data[6])
     recordsVis = new RecordsVis('recordsVis', data[0], data[4], data[5])
     recordsIconsVis = new RecordsIconsVis('recordsIconsVis', data[0], data[4], data[5])
 };
@@ -189,13 +191,53 @@ function expandReason(reason, data){
 }
 
 function previousGames(){
-    console.log('previous')
-    let yearData = dataStar[0]
-    console.log(yearData)
+
+    // https://stackoverflow.com/questions/8685107/hiding-a-button-in-javascript
+    if (mapYearIndex !== 0){
+        mapYearIndex -= 1;
+        document.getElementById('previousGames').style.visibility = 'visible'
+    }
+
+    // https://stackoverflow.com/questions/8685107/hiding-a-button-in-javascript
+    if (mapYearIndex === 0){
+        document.getElementById('previousGames').style.visibility = 'hidden'
+    }
+
+    // https://stackoverflow.com/questions/8685107/hiding-a-button-in-javascript
+    if (mapYearIndex !== 27){
+        document.getElementById('nextGames').style.visibility = 'visible'
+
+    }
+
+    document.getElementById('gamesYear').innerHTML = dataStar[6][mapYearIndex].Year
+    document.getElementById('hostCountryText').innerHTML = dataStar[6][mapYearIndex].Host
+
+    mapVis.spinVis()
 }
 
 function nextGames(){
-    console.log('next')
+
+    // https://stackoverflow.com/questions/8685107/hiding-a-button-in-javascript
+    if (mapYearIndex !== 27){
+        mapYearIndex += 1;
+        document.getElementById('nextGames').style.visibility = 'visible'
+
+    }
+
+    // https://stackoverflow.com/questions/8685107/hiding-a-button-in-javascript
+    if (mapYearIndex === 27){
+        document.getElementById('nextGames').style.visibility = 'hidden'
+    }
+
+    // https://stackoverflow.com/questions/8685107/hiding-a-button-in-javascript
+    if (mapYearIndex !== 0){
+        document.getElementById('previousGames').style.visibility = 'visible'
+    }
+
+    document.getElementById('gamesYear').innerHTML = dataStar[6][mapYearIndex].Year
+    document.getElementById('hostCountryText').innerHTML = dataStar[6][mapYearIndex].Host
+
+    mapVis.spinVis()
 }
 
 

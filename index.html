@@ -297,7 +297,7 @@
                         <button class="btn btn-outline-secondary align-self-center" type="button"
                                 onclick="previousGames()" id="previousGames">Previous</button>
                     </div>
-                    <div class="col-2 greenText">YEAR</div>
+                    <div class="col-2 greenText" id="gamesYear">1896</div>
                     <div class  = "col-1">
                         <button class="btn btn-outline-secondary align-self-center" type="button"
                                 onclick="nextGames()" id="nextGames">Next</button>
@@ -305,8 +305,15 @@
                     <div class="col-4"></div>
                 </div>
                 <div class = "row center olympicBodyText">
-                    <div class  = "col-12 greenText">
+                    <div class="col-4"></div>
+                    <div class="col-4 greenText" id="hostCountryText">Greece</div>
+                    <div class="col-4"></div>
+                </div>
+                <div class = "row center olympicBodyText">
+                    <div class  = "col-4">
                         <div id = "mapVis" ></div>
+                    </div>
+                    <div class  = "col-8 greenText">
                         Broken olympic records, by event, over the years:
                         <select class='dropdown' id="records-gender" onchange="recordsGenderChange()">
                             <option value="M" selected>Men</option>

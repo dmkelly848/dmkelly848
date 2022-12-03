@@ -2,12 +2,14 @@
 
 class MapVis {
 
-    constructor(parentElement, data, geoData) {
+    constructor(parentElement, data, geoData, hostData) {
         this.parentElement = parentElement;
         this.data = data;
         this.geoData = geoData
+        this.hostData = hostData
 
-        this.colors = ['#000000', '#aaffaa']
+        // this.colors = ['#000000', '#aaffaa']
+        this.colors = ['#000000', '#ff0000']
 
         this.initVis()
     }
@@ -15,8 +17,7 @@ class MapVis {
     initVis() {
         let vis = this;
 
-        //TODO: modify list as needed/make responsive
-        vis.hosts = ['Greece', 'France', 'United States of America', 'United Kingdom', 'Sweden', 'Belgium', 'Switzerland', 'Netherlands', 'Germany', 'Norway', 'Finland', 'Australia','Italy','Japan','Mexico','Canada','Russia','South Korea','Spain','China','Brazil']
+        console.log(vis.hostData)
 
         vis.margin = {top: 20, right: 20, bottom: 20, left: 20};
         vis.width = document.getElementById(vis.parentElement).getBoundingClientRect().width - vis.margin.left - vis.margin.right;
@@ -87,20 +88,18 @@ class MapVis {
     wrangleData() {
         let vis = this;
 
-        // create random data structure with information for each land
+        // create data structure with information for each land
+
+        console.log(vis.geoData.objects.countries.geometries)
+
         vis.countryInfo = {};
         vis.geoData.objects.countries.geometries.forEach(d => {
+
             vis.countryInfo[d.properties.name] = {
                 name: d.properties.name,
-                host: 0
             }
 
-            // source: https://www.w3schools.com/jsref/jsref_includes_array.asp
-            if (vis.hosts.includes(d.properties.name)) {
-                vis.countryInfo[d.properties.name].host = 1
-            }
-
-            vis.countryInfo[d.properties.name]['color'] = vis.colors[vis.countryInfo[d.properties.name].host]
+            vis.countryInfo[d.properties.name]['color'] = vis.colors[0]
         })
 
         vis.updateVis()
@@ -110,26 +109,22 @@ class MapVis {
         let vis = this;
 
         vis.countries.style("fill", function(d) { return vis.countryInfo[d.properties.name].color; })
-            // source: https://bl.ocks.org/austinczarnecki/fe80afa64724c9630930
-            // source: https://github.com/d3/d3-geo
-            .on('click', function(event, d){
-
-                console.log(d)
-                console.log(vis.countries)
-                console.log(vis.world)
-
-                d3.select(this).transition()
-                    .duration(1250)
-                    .tween("rotate", function() {
-                        // find source array.find
-                        var p = d3.geoCentroid(vis.world.find((e) => e.id === d.id)),
-                            r = d3.geoInterpolate(vis.projection.rotate(), [-p[0], -p[1]]);
-                        return function (t) {
-                            vis.projection.rotate(r(t));
-                            vis.svg.selectAll("path").attr("d", vis.path);
-                        }
-                    });
-            })
+            // // source: https://bl.ocks.org/austinczarnecki/fe80afa64724c9630930
+            // // source: https://github.com/d3/d3-geo
+            // .on('click', function(event, d){
+            //
+            //     d3.select(this).transition()
+            //         .duration(1250)
+            //         .tween("rotate", function() {
+            //             // find source array.find
+            //             var p = d3.geoCentroid(vis.world.find((e) => e.id === d.id)),
+            //                 r = d3.geoInterpolate(vis.projection.rotate(), [-p[0], -p[1]]);
+            //             return function (t) {
+            //                 vis.projection.rotate(r(t));
+            //                 vis.svg.selectAll("path").attr("d", vis.path);
+            //             }
+            //         });
+            // })
             .on('mouseover', function(event, d){
                 d3.select(this)
                     .attr('stroke-width', '2px')
@@ -157,24 +152,51 @@ class MapVis {
                     .style("top", 0)
                     .html(``);
             })
+
+        d3.select(vis).transition()
+            .duration(50)
+            .tween("rotate", function() {
+                // find source array.find
+                var p = d3.geoCentroid(vis.world.find((e) => e.properties.name === 'Greece')),
+                    r = d3.geoInterpolate(vis.projection.rotate(), [-p[0], -p[1]]);
+                return function (t) {
+                    vis.projection.rotate(r(t));
+                    vis.svg.selectAll("path").attr("d", vis.path);
+                }
+            });
+
+        document.getElementById('previousGames').style.visibility = 'hidden'
+        vis.countryInfo['Greece']['color'] = vis.colors[1]
+        vis.countries.style("fill", function(d) { return vis.countryInfo[d.properties.name].color; })
+
+
+
     }
 
     spinVis() {
+        let vis = this;
+
+        vis.hostData.forEach(d => {
+            vis.countryInfo[d.Host]['color'] = vis.colors[0]
+        })
+
+
         // source: https://bl.ocks.org/austinczarnecki/fe80afa64724c9630930
         // source: https://github.com/d3/d3-geo
-        // .on('click', function(event, d){
-        //
-        //     d3.select(this).transition()
-        //         .duration(1250)
-        //         .tween("rotate", function() {
-        //             // find source array.find
-        //             var p = d3.geoCentroid(vis.world.find((e) => e.id === d.id)),
-        //                 r = d3.geoInterpolate(vis.projection.rotate(), [-p[0], -p[1]]);
-        //             return function (t) {
-        //                 vis.projection.rotate(r(t));
-        //                 vis.svg.selectAll("path").attr("d", vis.path);
-        //             }
-        //         });
-        // })
+            d3.select(vis).transition()
+                .duration(1250)
+                .tween("rotate", function() {
+                    // find source array.find
+                    var p = d3.geoCentroid(vis.world.find((e) => e.properties.name === vis.hostData[mapYearIndex].Host)),
+                        r = d3.geoInterpolate(vis.projection.rotate(), [-p[0], -p[1]]);
+                    return function (t) {
+                        vis.projection.rotate(r(t));
+                        vis.svg.selectAll("path").attr("d", vis.path);
+                    }
+                });
+
+        vis.countryInfo[vis.hostData[mapYearIndex].Host]['color'] = vis.colors[1]
+        console.log(vis.countryInfo)
+        vis.countries.style("fill", function(d) { return vis.countryInfo[d.properties.name].color; })
     }
 }
