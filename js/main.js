@@ -188,6 +188,16 @@ function expandReason(reason, data){
 
 }
 
+function previousGames(){
+    console.log('previous')
+    let yearData = dataStar[0]
+    console.log(yearData)
+}
+
+function nextGames(){
+    console.log('next')
+}
+
 
 function mainPage(data){
     let div = document.getElementById('original');

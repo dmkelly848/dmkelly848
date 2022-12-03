@@ -114,6 +114,10 @@ class MapVis {
             // source: https://github.com/d3/d3-geo
             .on('click', function(event, d){
 
+                console.log(d)
+                console.log(vis.countries)
+                console.log(vis.world)
+
                 d3.select(this).transition()
                     .duration(1250)
                     .tween("rotate", function() {
@@ -153,5 +157,24 @@ class MapVis {
                     .style("top", 0)
                     .html(``);
             })
+    }
+
+    spinVis() {
+        // source: https://bl.ocks.org/austinczarnecki/fe80afa64724c9630930
+        // source: https://github.com/d3/d3-geo
+        // .on('click', function(event, d){
+        //
+        //     d3.select(this).transition()
+        //         .duration(1250)
+        //         .tween("rotate", function() {
+        //             // find source array.find
+        //             var p = d3.geoCentroid(vis.world.find((e) => e.id === d.id)),
+        //                 r = d3.geoInterpolate(vis.projection.rotate(), [-p[0], -p[1]]);
+        //             return function (t) {
+        //                 vis.projection.rotate(r(t));
+        //                 vis.svg.selectAll("path").attr("d", vis.path);
+        //             }
+        //         });
+        // })
     }
 }
