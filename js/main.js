@@ -7,7 +7,6 @@ new fullpage('#fullpage', {
     autoScrolling:true,
     scrollHorizontally: true,
     fitToSection: true,
-    easing: 'easeOutBounce',
 
     // Navigation
     navigation: true,
