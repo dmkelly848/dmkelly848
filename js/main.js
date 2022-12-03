@@ -183,9 +183,9 @@ function expandReason(reason, data){
         lineGraph = new LineGraph('lineGraph',dataStar[0])
     }else if(reason==="Equipment"){
         equipVis = new EquipmentVis('equip');
+    }else if(reason ==="Diet"){
+        dietVis = new DietVis('dietVis')
     }
-
-
 }
 
 function previousGames(){

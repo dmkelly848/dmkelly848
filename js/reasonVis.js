@@ -87,7 +87,7 @@ class ReasonVis {
                 "                <button type=\"button\" onclick = mainPage()>Back to Reasons</button>\n" +
                 "            </div><div class=\"container-fluid\" style = \"padding-left: 100px; padding-right:100px\">\n" +
                 "        <h3 class = \"olympicHeadText chartTitle\">Training:</h3>\n" +
-                "        <div class=\"row olympicBodyText\" style = \"font-size: 20px\">\n" +
+                "        <div class=\"row olympicBodyText\" style = \"font-size: 2.5vh\">\n" +
                 "            <div class=\"col \">\n" +
                 "                <ul>\n" +
                 "                    <li> Modern-day Olympic athletes are able to undergo training regimines that couldn't have been dreamed of in the 19th century.\n" +
@@ -101,7 +101,7 @@ class ReasonVis {
                 "                <img src=\"img/img1.webp\" width = \"100%\">\n" +
                 "            </div>\n" +
                 "        </div>\n" +
-                "        <div class=\"row olympicBodyText\" style = \"font-size: 20px; \">\n" +
+                "        <div class=\"row olympicBodyText\" style = \"font-size: 2.5vh; \">\n" +
                 "            <div class=\"col-5\">\n" +
                 "                <img src=\"img/img2.webp\" width = \"100%\">\n" +
                 "            </div>\n" +
@@ -122,7 +122,26 @@ class ReasonVis {
             document.getElementById("original").innerHTML= "<div class=\"container-fluid\">\n" +
                 "                <div class = \"col-12 center\">\n" +
                 "                <button type=\"button\" onclick = mainPage()>Back to Reasons</button>\n" +
-                "            </div>"
+                "            </div> <div class=\"container-fluid\" style = \"padding-left: 100px; padding-right:100px;\">\n" +
+                "            <h3 class = \"olympicHeadText chartTitle\">Diet:</h3>\n" +
+                "            <div class=\"row olympicBodyText\" style = \"font-size: 2.5vh; \">\n" +
+                "                <div id= \"dietVis\" class=\"col-6\" style=\"padding: 20px;\" >\n" +
+                "                </div>\n" +
+                "                <div class=\"col-6 olympicBodyText\" style = \"padding: 100px\">\n" +
+                "                    <ul>\n" +
+                "                        <li>The first nutritional vitamin was discovered and defined in 1926... 30 years after the first\n" +
+                "                        modern Olympic Games.</li>\n" +
+                "                        <li>The \"era of vitamin discovery\" continued through the 1950s. </li>\n" +
+                "                        <li>It was not until the 1970s that vitamin supplements became commonplace.</li>\n" +
+                "                        <li>Nutritional science has stagnated since the 1990s, but there are universal takeaways.</li>\n" +
+                "                        <li>Olympians typically: Eat a lean, protein-filled breakfast; consume frequent small meals throughout\n" +
+                "                        the day; hydrate often; and use vitamins to supplement their diets.</li>\n" +
+                "                        <li>Fun Fact: Olympic Swimmer Michael Phelps aims to eat 8,000-10,000 calories per day. Depending on the event they compete in, athletes\n" +
+                "                        have various diet plans to maximize performance.</li>\n" +
+                "                    </ul>\n" +
+                "                </div>\n" +
+                "            </div>\n" +
+                "        </div>"
 
 
         }else if(vis.reason === "Coaching"){

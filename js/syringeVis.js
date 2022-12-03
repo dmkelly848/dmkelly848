@@ -30,7 +30,7 @@ class SyringeVis {
             .append("g")
             .attr("transform", "translate(" + vis.margin.left + "," + vis.margin.top + ")");
 
-        let sF = 140000/(vis.width*vis.height);
+        let sF = (vis.width*vis.height)/280000;
         let pathMain = "M " + 201.6*sF + " " + 627*sF + " L " + 235.2*sF + " "+ 759*sF + " L " + 268.8*sF + " " + 627*sF + " L "+
             336*sF + " " + 627*sF + " V " + 209*sF + " H " + 134.4*sF + " V " + 627*sF + " M " + 201.6*sF + " " + 209*sF + " V " +
             165*sF + " H " + 268.8*sF + " V " + 209*sF + " Z M " + 201.6*sF + " " + 165*sF + " C " + 168*sF + " " + 143*sF + " " +
@@ -98,7 +98,7 @@ class SyringeVis {
 
     updateVis() {
         let vis = this;
-        let sF = 140000/(vis.width*vis.height);
+        let sF = (vis.width*vis.height)/280000;
         vis.fillVial.transition().ease(d3.easeLinear).duration(800)
             .attr("d", function(d, index) {
                 if(vis.state === 0){
