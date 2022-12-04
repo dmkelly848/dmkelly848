@@ -4,9 +4,10 @@
 
 class DashBar {
 
-    constructor(parentElement, resultsData, selectedCategory) {
+    constructor(parentElement, resultsData, continentData, selectedCategory) {
         this.parentElement = parentElement;
         this.resultsData = resultsData;
+        this.continentData = continentData;
         this.selectedCategory = selectedCategory;
         this.formatDate = d3.timeFormat("%Y");
         this.parseDate = d3.timeParse("%Y");
@@ -16,6 +17,16 @@ class DashBar {
 
     initVis() {
         let vis = this;
+
+        vis.colors = {
+            'Africa': '#FF5F15',
+            'Asia': '#179a13',
+            'Europe': '#3e76ec',
+            'North America': '#ff0000',
+            'Oceania': '#702963',
+            'South America': '#ffce01',
+        }
+
 
         // margin convention with static height and responsive/variable width
         vis.margin = {}
@@ -165,7 +176,13 @@ class DashBar {
             .on('mouseout', function(event, d) {
                 d3.select(this)
                     .attr('stroke-width', '0px')
-                    .style("fill", '#555555')
+                    .style("fill", function(){
+                        if(selCountry != 'Worldwide') {
+                            return vis.colors[vis.continentData.find(d => d.Code === selCountry).Continent];
+                        }
+                        else
+                            return '#555555';
+                    })
                     .style("opacity", 1)
                 vis.tooltip
                     .style("opacity", 0)
@@ -194,7 +211,13 @@ class DashBar {
             .attr("y", d=> vis.y(d.medal_count))
             .attr("width", vis.x.bandwidth())
             .attr("height", d=> vis.height - vis.y(d.medal_count))
-            .style("fill", '#555555')
+            .style("fill", function(){
+                if(selCountry != 'Worldwide') {
+                    return vis.colors[vis.continentData.find(d => d.Code === selCountry).Continent];
+                }
+                else
+                    return '#555555';
+            });
 
 
         // Call axis functions with the new domain
