@@ -8,8 +8,7 @@ class MapVis {
         this.geoData = geoData
         this.hostData = hostData
 
-        // this.colors = ['#000000', '#aaffaa']
-        this.colors = ['#000000', '#ff0000']
+        this.colors = ['#888888', '#ff0000']
 
         this.initVis()
     }
@@ -33,6 +32,15 @@ class MapVis {
 
         vis.path = d3.geoPath()
             .projection(vis.projection);
+
+        // source: https://map-projections.net/d3-customizable-wagner/static.php?v=7&x=3
+        vis.graticule = d3.geoGraticule();
+        vis.svg.append("path")
+            .datum(vis.graticule)
+            .attr("class", "graticule")
+            .attr("stroke","rgba(129,129,129,0.35)")
+            .attr("fill", "rgba(0,0,0,0)")
+            .attr("d", vis.path);
 
         vis.svg.append("path")
             .datum({type: "Sphere"})

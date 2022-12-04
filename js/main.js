@@ -212,7 +212,7 @@ function previousGames(){
     document.getElementById('hostCountryText').innerHTML = dataStar[4][mapYearIndex].Host
 
     mapVis.spinVis()
-    recordsIconsVis.wrangleData()
+    recordsLineVis.wrangleData()
 }
 
 function nextGames(){
@@ -238,7 +238,7 @@ function nextGames(){
     document.getElementById('hostCountryText').innerHTML = dataStar[4][mapYearIndex].Host
 
     mapVis.spinVis()
-    recordsIconsVis.wrangleData()
+    recordsLineVis.wrangleData()
 }
 
 

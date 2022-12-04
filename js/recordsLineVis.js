@@ -24,38 +24,44 @@ class RecordsLineVis {
             .attr("height", vis.height)
             .attr('transform', `translate (${vis.margin.left}, ${vis.margin.top})`);
 
-        vis.circsPerRow = 30;
-        vis.padfact = 1.2;
-        vis.color = ['#3e76ec','#78ff44']
-        vis.opacity = 0.35;
-        vis.fontsize = 'small';
-        vis.rfact = 1.3;
-        vis.r = 10
-
         vis.x = d3.scaleLinear()
-            .domain([1896,2017])
-            .range([0, vis.width])
+            .domain([1896,2016])
+            .range([.1 * vis.width, vis.width * .95])
 
         vis.xAxis = d3.axisBottom()
             .scale(vis.x)
-            .ticks(30)
+            .tickValues(d3.range(1896,2020,4))
+            //https://stackoverflow.com/questions/16549868/d3-remove-comma-delimiters-for-thousands
+            .tickFormat(d3.format("d"))
+            .ticks()
 
         vis.xAxisGroup = vis.svg.append("g")
             .attr("class", "x-axis axis")
-            .attr("transform", "translate(0," + vis.height * .90 + ")");
+            .attr("transform", "translate(0," + vis.height * .92 + ")");
 
         vis.xAxisGroup
             .call(vis.xAxis)
             .selectAll('text')
-            .attr('x', '-0.5em')
-            .attr('y', '0.2em')
-            .attr('text-anchor', 'end')
-            .attr('transform', 'rotate(-45)')
+            .attr('text-anchor', 'middle')
+            .attr("transform", "translate(0," + 1 + ")");
 
-        console.log("vis height")
-        console.log(vis.height)
+        vis.y = d3.scaleBand()
+            .domain(vis.records.map(d => d.Competition))
+            .range([.02 * vis.height,.92 * vis.height])
+            .paddingInner(.8)
 
-        vis.displayData = vis.records
+        vis.yAxis = d3.axisLeft()
+            .scale(vis.y)
+            // https://stackoverflow.com/questions/19787925/create-a-d3-axis-without-tick-labels
+            .tickSize(0)
+            .ticks();
+
+        vis.yAxisGroup = vis.svg.append("g")
+            .attr("class", "y-axis axis")
+            .attr("transform", "translate(" + vis.width * .1 + ", 0)");
+
+        vis.yAxisGroup
+            .call(vis.yAxis)
 
         vis.wrangleData()
     }
@@ -63,12 +69,13 @@ class RecordsLineVis {
     wrangleData() {
         let vis = this;
 
+        vis.displayData = vis.records
+
         vis.chosenYear = vis.parseDate(vis.hostData[mapYearIndex].Year)
 
-        vis.circleData = vis.displayData.filter(function (d) {
-            return (d['Set'] === vis.formatDate(vis.chosenYear))
+        vis.displayData = vis.displayData.filter(function (d) {
+            return (d['Set'] <= vis.formatDate(vis.chosenYear) && d['Broken'] > vis.formatDate(vis.chosenYear) )
         });
-
 
         vis.updateVis()
     }
@@ -76,46 +83,51 @@ class RecordsLineVis {
     updateVis() {
         let vis = this;
 
-        vis.circles = vis.svg.selectAll(`circle`).data(vis.circleData)
+        vis.lines = vis.svg.selectAll('rect').data(vis.displayData)
+
+        vis.lines.exit().remove()
+
+        vis.lines.enter().append("rect")
+            .merge(vis.lines)
+            .attr('class','record-line')
+            .attr("y", d=> vis.y(d.Competition))
+            .attr("x", d=> vis.x(d.Set))
+            .attr('height', vis.y.bandwidth())
+            .attr('width', d=> vis.x(vis.hostData[mapYearIndex].Year) - vis.x(d.Set))
+            .attr("fill", function(d){
+                if (d.Gender === 'M'){
+                    return '#ADDEFF'
+                }
+                if (d.Gender === 'W'){
+                    return '#ffc0af'
+                }
+            });
+
+        vis.circles = vis.svg.selectAll(`circle`).data(vis.displayData)
 
         vis.circles.exit().remove()
 
         vis.circles.enter().append("circle")
             .attr('class', `circle`)
             .merge(vis.circles)
-            .attr("cx", function (d, i) {
-                return (i % vis.circsPerRow * vis.width / vis.circsPerRow) + vis.padfact * vis.r;
-            })
-            .attr("cy", function (d, i) {
-                return (Math.floor(i / vis.circsPerRow) * (vis.padfact + 1) * vis.r) + vis.r;
-            })
-            .attr("r", vis.r)
-            .style('opacity', vis.opacity)
+            .attr("cx", d=> vis.x(d.Set))
+            //.attr("cx", vis.x(vis.hostData[mapYearIndex].Year))
+            .attr("cy", d=> vis.y(d.Competition) + vis.y.bandwidth()/2)
+            .attr("r", 2 * vis.y.bandwidth())
             .attr("fill", function(d){
-                if (d.Gender === 'M'){
-                    return vis.color[0]
+                if (d.Gender === 'M' && d.Set !== vis.hostData[mapYearIndex].Year){
+                    return '#ADDEFF'
                 }
-                if (d.Gender === 'W'){
-                    return vis.color[1]
+                if (d.Gender === 'W' && d.Set !== vis.hostData[mapYearIndex].Year){
+                    return '#ffc0af'
+                }
+                if (d.Gender === 'M' && d.Set === vis.hostData[mapYearIndex].Year){
+                    return '#3e76ec'
+                }
+                if (d.Gender === 'W' && d.Set === vis.hostData[mapYearIndex].Year){
+                    return '#ff4500'
                 }
             });
-
-        vis.icons = vis.svg.selectAll(".icon").data(vis.circleData)
-
-        vis.icons.exit().remove()
-
-        vis.icons.enter().append("svg:image")
-            .merge(vis.icons)
-            .attr("xlink:href", d=>`img/icons/${d.Event}.png`)
-            .attr("x",function (d,i){
-                return (i%vis.circsPerRow * vis.width/vis.circsPerRow) + vis.padfact*vis.r - vis.r*2/3;
-            })
-            .attr("y", function(d,i){
-                return (Math.floor(i/vis.circsPerRow) * (vis.padfact+1) * vis.r+vis.r/3) ;
-            })
-            .attr('height', 1.3*vis.r)
-            .attr('width', 1.3*vis.r)
-            .attr('class','icon')
     }
 
 }
