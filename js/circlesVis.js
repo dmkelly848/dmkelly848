@@ -1,6 +1,8 @@
 /* * * * * * * * * * * * * *
 *      CIRCLES Vis          *
 * * * * * * * * * * * * * */
+/*This contains code for the circular visualizations we use in several cases. It spaces out the circles dynamically
+ and is used for our "events" and "reason" visualizationns*/
 
 class CircleVis {
 
@@ -9,6 +11,8 @@ class CircleVis {
         this.circleData = circleData;
         this.resultsData = resultsData;
         this.descData = descData;
+
+        //Type 1 is our track and fields events vis; Type 2 is our reasons vis,
         this.type = type;
         this.initVis()
     }
@@ -47,11 +51,6 @@ class CircleVis {
             color = '#ff0000'
         }
 
-        console.log(vis.parentElement)
-        console.log(vis.width/(circsPerRow*4))
-        console.log(vis.height/((vis.circleData.length/circsPerRow)*4))
-
-
         // // SVG drawing area
         vis.svg = d3.select("#" + vis.parentElement).append("svg")
             .attr("width", vis.width + vis.margin.left + vis.margin.right)
@@ -72,7 +71,6 @@ class CircleVis {
             .attr("r",r*rfact)
             .style('opacity', opacity)
             .attr("fill",color);
-
 
         if(vis.type === 2){
             vis.labels = vis.svg.selectAll(".labs").data(vis.circleData)
@@ -117,7 +115,7 @@ class CircleVis {
                 .style('opacity', 0)
                 .attr("fill",'#ff0000')
                 .on("mouseover",function(event,d){
-                    d3.select(this) // changes color of selected bar
+                    d3.select(this)
                         .attr('stroke-width', '2px')
                         .attr('stroke', 'black')
                         .style("opacity", 0.5)
@@ -209,7 +207,6 @@ class CircleVis {
                 .append("xhtml:p")
 
 
-
             vis.overlays = vis.svg.selectAll(".overlay").data(vis.circleData)
             vis.overlays.enter().append("circle")
                 .attr("cx",function(d,i){
@@ -256,32 +253,16 @@ class CircleVis {
                         vis.eventTitlePopup.text('');
                         vis.eventDescPopup.text("");
                     }
-
                 });
         }
-
-
-
         vis.wrangleData()
     }
-
-
-
+    //Following functions are not necessary, keeping pipeline if we make future changes
     wrangleData() {
         let vis = this;
-
         vis.updateVis()
     }
-
-
-
     updateVis() {
         let vis = this;
-
-
     }
-
-
-
-
 }

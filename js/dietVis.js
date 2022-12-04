@@ -2,18 +2,18 @@
 *      Diet Vis          *
 * * * * * * * * * * * * * */
 
-
+//Data taken from University of Utah research. See sources on website for more
 dietData = [{type: "Carbohydrates",percent:55,color:"#ff0000",examples:"Vegetables, fruits, and whole grains"},
     {type: "Lean Proteins",percent:20,color:"#3e76ec",examples: "Fish, poultry, beans, and low-fat dairy"},
     {type:"High-Quality Fats",percent:25,color:"#ffce01",examples: "Olive oil, nuts, seeds, and avocados"}]
 
-class DietVis {
 
+//This visualization is a pie chart showing daily caloric breakdown of Olympic athletes
+class DietVis {
     constructor(parentElement) {
         this.parentElement = parentElement;
         this.resultsData = dietData;
         this.formatDate = d3.timeFormat("%Y");
-        this.parseDate = d3.timeParse("%Y");
 
         this.initVis()
     }
@@ -34,6 +34,7 @@ class DietVis {
             .append("g")
             .attr("transform", "translate(" + vis.margin.left + "," + vis.margin.top + ")");
 
+        //Circles to create loose impression of a plate
         vis.innerCirc = vis.svg.append("circle")
             .attr("r",0.8*vis.width/2)
             .attr("cx",vis.center.x)
@@ -48,7 +49,6 @@ class DietVis {
             .attr("fill","none")
             .attr("stroke","gray")
 
-
         // add title
         vis.svg.append('g')
             .attr('class', 'h3 olympicHeadText')
@@ -58,8 +58,6 @@ class DietVis {
             .attr('text-anchor', 'middle')
             .attr('font-size','4vh');
 
-
-        // TODO
         vis.pieChartGroup = vis.svg
             .append('g')
             .attr('class', 'pie-chart')
@@ -68,19 +66,17 @@ class DietVis {
         vis.tooltip = d3.select("body").append('div')
             .attr('class', "tooltip")
             .attr('id', 'pieTooltip')
+
         // Pie chart settings
         vis.outerRadius = 0.8*vis.width / 2;
         vis.innerRadius = 0;
 
-
         vis.wrangleData()
     }
 
-
-
+    //Not necessary since data comes formatted
     wrangleData() {
         let vis = this;
-
         vis.updateVis()
     }
 
@@ -97,11 +93,11 @@ class DietVis {
             .innerRadius(vis.innerRadius)
             .outerRadius(vis.outerRadius);
 
-// Bind data
+        // Bind data
         let arcs = vis.pieChartGroup.selectAll(".arc")
             .data(pie(vis.resultsData.map(d=>d.percent)));
 
-// Append paths
+        // Append paths and add interactivity
         arcs.enter()
             .append("path").merge(arcs)
             .attr("d", arc)
@@ -135,9 +131,6 @@ class DietVis {
                     .style("top", 0)
                     .html(``);
             });
-
     }
-
-
 
 }
