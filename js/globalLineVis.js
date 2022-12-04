@@ -2,13 +2,13 @@
 *      Global Access Line Vis          *
 * * * * * * * * * * * * * */
 
-
+//Concept: This is a bar chart in the "global access" reasons tab
+//It shows how diversity on Olympic teams has changed since 1960
 class GlobalLineVis {
 
     constructor(parentElement) {
         this.parentElement = parentElement;
         this.formatDate = d3.timeFormat("%Y");
-        this.parseDate = d3.timeParse("%Y");
         this.state = 0;
         this.colorScale = ['#ff0000','#3e76ec']
 
@@ -33,17 +33,20 @@ class GlobalLineVis {
 
         vis.groups = ["Argentina","Canada","France","Great Britain","Sweden","United States"]
         vis.subgroups = ["Yr1960","Yr2012"]
+
+
         vis.VERTSHIFT = 70;
-        // add scale + axis
+
+        // Scales and Axes
         vis.y = d3.scaleLinear().domain([0,1])
             .range([vis.height,vis.VERTSHIFT]);
 
-        // add scale + axis
         vis.x0 = d3.scaleBand()
             .domain(vis.groups)
             .range([0,vis.width])
             .padding([0.2]);
 
+        //Second x-scale used to place bars within the same category
         vis.x1 = d3.scaleBand().domain(["Yr1960","Yr2012"])
             .range([0, vis.x0.bandwidth()])
             .padding([0.05])
@@ -53,6 +56,7 @@ class GlobalLineVis {
 
         vis.yAxis = d3.axisLeft()
             .scale(vis.y)
+
         vis.svg.append("g")
             .attr("class", "y-axis axis axisText olympicBodyText");
 
@@ -64,6 +68,7 @@ class GlobalLineVis {
             .domain(vis.subgroups)
             .range(['#ff0000','#3e76ec'])
 
+        //Labels
         vis.svg.append("text").text("Diversity among Foreign-Born Athletes")
             .attr("class","olympicHeadText")
             .attr("x",vis.width/4).attr("font-size","4vh")
@@ -71,6 +76,7 @@ class GlobalLineVis {
             .attr("class","olympicBodyText")
             .attr("x",vis.width/3).attr("y","4vh").attr("font-size","3vh")
 
+        //Tooltip for interactivity
         vis.tooltip = d3.select("body").append('div')
             .attr('class', "tooltip")
             .attr('id', 'pieTooltip')
@@ -78,19 +84,21 @@ class GlobalLineVis {
         vis.wrangleData()
     }
 
-
+    //Data is hard coded, see below
     wrangleData() {
         let vis = this;
         vis.updateVis();
-
     }
 
     updateVis() {
         let vis = this;
+
+        //Hard-coded data used for paired bars
         vis.data = [{group:"Argentina",Yr1960: 0.444, Yr2012:0.625},{group:"Canada",Yr1960: 0.898, Yr2012:0.924},
             {group:"France",Yr1960: 0.730, Yr2012:0.911},{group:"Great Britain",Yr1960: 0.898, Yr2012:0.949},
             {group:"Sweden",Yr1960: 0.667, Yr2012:0.750},{group:"United States",Yr1960: 0.860, Yr2012:0.962}]
 
+        //Interactive bar visualization
         vis.svg.append("g")
             .selectAll("g")
             .data(vis.data)
@@ -110,7 +118,6 @@ class GlobalLineVis {
                     .attr('stroke-width', '2px')
                     .attr('stroke', 'black')
                     .attr("opacity",0.5)
-
                 vis.tooltip
                     .style("opacity", 1)
                     .style("left", event.pageX + 20 + "px")
@@ -134,6 +141,7 @@ class GlobalLineVis {
                     .html(``);
             });
 
+        //Legend info
         vis.legendKeys = ["1960","2012"]
         let lineLegend = vis.svg.selectAll(".lineLegend").data(vis.legendKeys)
             .enter().append("g")
@@ -151,13 +159,8 @@ class GlobalLineVis {
             .attr("fill", function (d, i) {return vis.colorScale[i]; })
             .attr("width", 10).attr("height", 10);
 
+        //Calling axes
         vis.svg.select(".y-axis").call(vis.yAxis);
         vis.svg.select(".x-axis").call(vis.xAxis);
-
-
-
     }
-
-
-
 }

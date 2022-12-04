@@ -1,12 +1,14 @@
 /* * * * * * * * * * * * * *
-*      EQUIP Vis          *
+*      Equipment Vis          *
 * * * * * * * * * * * * * */
 
+
+//Concept: Clickable icons display info on Olympics equipment
+//Note that this has no data, the text is hard-coded
 class EquipmentVis {
 
     constructor(parentElement) {
         this.parentElement = parentElement;
-
         this.initVis()
     }
 
@@ -25,6 +27,8 @@ class EquipmentVis {
             .attr("height", vis.height + vis.margin.top + vis.margin.bottom)
             .append("g")
             .attr("transform", "translate(" + vis.margin.left + "," + vis.margin.top + ")");
+
+        //"e1","e2",and "e3" correspond to running shoes, track material, and tracksuits, respectively
 
         vis.e1 = vis.svg.append("svg:image")
             .attr("xlink:href", `img/e1.png`)
@@ -85,12 +89,6 @@ class EquipmentVis {
             }).on("click",function(event,d){
                 document.getElementById("texte3b").innerHTML="Sprinters and marathon runners commonly wore baggy (and non-aerodynamic!) track and field uniforms. Hemlines rose and fell as the style of the times changed"
                 document.getElementById("texte3a").innerHTML="The modern tracksuit made of synthetic material gained popularity in the 1970s. At this point, sprinters focused on tight, aerodynamic clothing while marathon runners prioritized breathability."
-
-
             })
-
     }
-
-
-
 }

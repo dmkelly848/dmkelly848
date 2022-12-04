@@ -2,13 +2,15 @@
 *      LineGraph Vis          *
 * * * * * * * * * * * * * */
 
+//This is the line graph visual in the syringe visualizations
 class LineGraph {
 
     constructor(parentElement, resultsData) {
         this.parentElement = parentElement;
         this.resultsData = resultsData;
         this.formatDate = d3.timeFormat("%Y");
-        this.parseDate = d3.timeParse("%Y");
+
+        //States represent various full states of visualization. There is an identical var in "syringeVis"
         this.state = 0;
         this.colorScale = ["#ff0000","#179a13","#3e76ec"]
 
@@ -31,15 +33,14 @@ class LineGraph {
             .append("g")
             .attr("transform", "translate(" + vis.margin.left + "," + vis.margin.top + ")");
 
+        // Scales and axes
         vis.VERTSHIFT = 70;
-        // add scale + axis
         vis.y = d3.scaleLinear()
             .range([vis.height,vis.VERTSHIFT]);
 
         vis.yAxis = d3.axisLeft()
             .scale(vis.y)
 
-        // add scale + axis
         vis.x = d3.scaleTime()
             .range([0,vis.width]);
 
@@ -53,6 +54,7 @@ class LineGraph {
             .attr("class", "x-axis axis axisText")
             .attr("transform", "translate(0," + vis.height+ ")");
 
+        //Lines and highlighted region to show designated time period
         vis.group = vis.svg.append("g")
             .attr("x",0)
             .attr("y",0)
@@ -72,11 +74,14 @@ class LineGraph {
             .attr("stroke-width",5)
             .attr("x1", 0).attr("x2", 0)
             .attr("y1", vis.VERTSHIFT).attr("y2", vis.height);
+
         vis.area = vis.svg.append("rect")
+
+        //Chart title
         vis.svg.append("text")
             .attr("x",0)
             .attr("y",0)
-            .text("Average Throwing Distances (m) of Male")
+            .text("Average Throwing Distances (m.) of Male")
             .attr("class","olympicHeadText chartTitle")
 
         vis.svg.append("text")
@@ -85,12 +90,11 @@ class LineGraph {
             .text("Olympians by Year")
             .attr("class","olympicHeadText chartTitle")
 
-
         vis.wrangleData()
     }
 
 
-
+    //Collects data for throwing events
     wrangleData() {
         let vis = this;
 
@@ -115,6 +119,7 @@ class LineGraph {
             }
         })
 
+        //Format data for line graph
         let javTemp = d3.rollup(vis.javelinData, v => d3.mean(v, d => d.Clean_Result), d => d.Year)
         let disTemp = d3.rollup(vis.discusData, v => d3.mean(v, d => d.Clean_Result), d => d.Year)
         let hamTemp = d3.rollup(vis.hammerData, v => d3.mean(v, d => d.Clean_Result), d => d.Year)
@@ -124,7 +129,6 @@ class LineGraph {
 
         vis.displayData = [vis.javelinData,vis.discusData,vis.hammerData]
 
-
         vis.updateVis()
     }
 
@@ -133,16 +137,17 @@ class LineGraph {
         let vis = this;
 
         let max = Math.max(d3.max(vis.javelinData, d => d.value))
-
+        vis.x.domain([d3.min(vis.discusData, d=>d.key),d3.max(vis.discusData, d=>d.key)])
         vis.y.domain([0, max+0.5]);
 
-        vis.x.domain([d3.min(vis.discusData, d=>d.key),d3.max(vis.discusData, d=>d.key)])
-
+        //The following p's correspond to various points in the doping timeline that we wish to represent
         vis.p1 = vis.x(new Date(1898,1,1))
         vis.p2 = vis.x(new Date(1952,1,1))
         vis.p3 = vis.x(new Date(1972,1,1))
         vis.p4 = vis.x(new Date(1988,1,1))
         vis.p5 = vis.x(new Date(2014,1,1))
+
+        //Initial state
         if(vis.state ===0){
             vis.hoverR.transition().duration(800).attr("x1",vis.p2).attr("x2",vis.p2)
             vis.hoverL.transition().duration(800).attr("x1",vis.p1).attr("x2",vis.p1)
@@ -150,6 +155,7 @@ class LineGraph {
                 .attr("x",vis.p1).attr("y",vis.VERTSHIFT).attr("fill","#ffce01").attr("fill-opacity",0.2)
         }
 
+        //Color legend
         let lineLegend = vis.svg.selectAll(".lineLegend").data(vis.legendKeys)
             .enter().append("g")
             .attr("class","lineLegend")
@@ -166,6 +172,8 @@ class LineGraph {
             .attr("fill", function (d, i) {return vis.colorScale[i]; })
             .attr("width", 10).attr("height", 10);
 
+
+        //Line graph
         vis.line = vis.svg.selectAll(".lin").data(vis.displayData)
 
         vis.line.enter().append("path")
@@ -180,10 +188,13 @@ class LineGraph {
             })
              .attr("stroke-width", 5.0);
 
+        //Calling axes
         vis.svg.select(".y-axis").call(vis.yAxis);
         vis.svg.select(".x-axis").call(vis.xAxis);
     }
 
+
+    //Moves hover bars rightward when you click "next"
     fillUp(){
         let vis = this;
         if(vis.state!==3){
@@ -216,7 +227,7 @@ class LineGraph {
         }
 
     }
-
+    //Moves hover bars leftward when you click "back"
     emptyDown(){
         let vis = this;
         if(vis.state !== 0){
@@ -245,8 +256,4 @@ class LineGraph {
                 .attr("x",hLx)
         }
     }
-
-
-
-
 }
