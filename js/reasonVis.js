@@ -21,16 +21,16 @@ class ReasonVis {
         if(vis.reason === "Doping"){
             document.getElementById("original").innerHTML = "            <div class=\"container-fluid\"> <h3 class = \"olympicHeadText chartTitle\">Doping:</h3> \n" +
                 "                <div class = \"col-12 center\" style = \"height: 10vh\"> \n" +
-                "                <button type=\"button\" onclick = mainPage() style = \"font-size = 30px\" >Back to Reasons</button>\n" +
+                "                <button type=\"button\" onclick = mainPage() class=\"btn btn-primary\"  style = \"font-size = 30px\" >Back to Reasons</button>\n" +
                 "            </div>\n" +
                 "                <div class=\"row phase5b redText olympicBodyFont\">\n" +
                 "                    <div class=\"col-3\">\n" +
                 "                        <div class = \"row center\" style = \"padding-left: 50px\">\n" +
                 "                            <div class = \"col-6\">\n" +
-                "                                <button type=\"button\" onclick = syringeDown()>Back</button>\n" +
+                "                                <button type=\"button\" class=\"btn btn-primary\" onclick = syringeDown()>Back</button>\n" +
                 "                            </div>\n" +
                 "                            <div class = \"col-6\">\n" +
-                "                                <button type=\"button\" onclick = syringeUp()>Next</button>\n" +
+                "                                <button type=\"button\" class=\"btn btn-primary\" onclick = syringeUp()>Next</button>\n" +
                 "                            </div>\n" +
                 "                        </div>\n" +
                 "                        <div id = \"syringevis\" style=\"height:80vh;\"></div>\n" +
@@ -57,7 +57,7 @@ class ReasonVis {
         }else if(vis.reason === "Equipment"){
             //Insert HTML Code
             document.getElementById("original").innerHTML= "<div class = \"col-12 center\">\n" +
-                "                <button type=\"button\" onclick = mainPage()>Back to Reasons</button>\n" +
+                "                <button type=\"button\" class=\"btn btn-primary\" onclick = mainPage()>Back to Reasons</button>\n" +
                 "            </div><div class=\"container-fluid\" style = \"padding-left: 100px; padding-right: 100px;height:100vh\">\n" +
                 "        <div class=\"row\">\n" +
                 "            <h3 class = \"olympicHeadText chartTitle\">Equipment:</h3>\n" +
@@ -82,7 +82,7 @@ class ReasonVis {
             //Insert HTML code
             document.getElementById("original").innerHTML= "<div class=\"container-fluid\">\n" +
                 "                <div class = \"col-12 center\">\n" +
-                "                <button type=\"button\" onclick = mainPage()>Back to Reasons</button>\n" +
+                "                <button type=\"button\" class=\"btn btn-primary\"  onclick = mainPage()>Back to Reasons</button>\n" +
                 "            </div><div class=\"container-fluid\" style = \"padding-left: 100px; padding-right:100px\">\n" +
                 "        <h3 class = \"olympicHeadText chartTitle\">Training:</h3>\n" +
                 "        <div class=\"row olympicBodyText\" style = \"font-size: 2.5vh\">\n" +
@@ -119,7 +119,7 @@ class ReasonVis {
             //Insert HTML code
             document.getElementById("original").innerHTML= "<div class=\"container-fluid\">\n" +
                 "                <div class = \"col-12 center\">\n" +
-                "                <button type=\"button\" onclick = mainPage()>Back to Reasons</button>\n" +
+                "                <button type=\"button\" class=\"btn btn-primary\" onclick = mainPage()>Back to Reasons</button>\n" +
                 "            </div> <div class=\"container-fluid\" style = \"padding-left: 100px; padding-right:100px;\">\n" +
                 "            <h3 class = \"olympicHeadText chartTitle\">Diet:</h3>\n" +
                 "            <div class=\"row olympicBodyText\" style = \"font-size: 2.5vh; \">\n" +
@@ -146,14 +146,14 @@ class ReasonVis {
             //Insert HTML code
             document.getElementById("original").innerHTML= "<div class=\"container-fluid\">\n" +
                 "                <div class = \"col-12 center\">\n" +
-                "                <button type=\"button\" onclick = mainPage()>Back to Reasons</button>\n" +
+                "                <button type=\"button\" class=\"btn btn-primary\" onclick = mainPage()>Back to Reasons</button>\n" +
                 "            </div>"
 
         }else{
             //Insert HTML code
             document.getElementById("original").innerHTML= "<div class=\"container-fluid\">\n" +
                 "                <div class = \"col-12 center\">\n" +
-                "                <button type=\"button\" onclick = mainPage()>Back to Reasons</button>\n" +
+                "                <button type=\"button\" class=\"btn btn-primary\" onclick = mainPage()>Back to Reasons</button>\n" +
                 "            </div><div class=\"container-fluid\" style = \"padding-left: 100px; padding-right:100px;\">\n" +
                 "            <h3 class = \"olympicHeadText chartTitle\">Global Access:</h3>\n" +
                 "            <div class=\"row olympicBodyText\" style = \"font-size: 2.5vh;height: 90vh;\">\n" +
