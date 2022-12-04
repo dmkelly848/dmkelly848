@@ -21,7 +21,8 @@ new fullpage('#fullpage', {
         'Running Faster',
         'Jumping Higher',
         'Breaking Records',
-        'Reasons Why',
+        'Why',
+        'Reasons',
     'Our Team',
     'Acknowledgements and Sources'],
     showActiveTooltip: false
