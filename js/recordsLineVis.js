@@ -15,7 +15,7 @@ class RecordsLineVis {
     initVis() {
         let vis = this;
 
-        vis.margin = {top: 20, right: 5, bottom: 20, left: 5};
+        vis.margin = {top: 20, right: 10, bottom: 20, left: 10};
         vis.width = document.getElementById(vis.parentElement).getBoundingClientRect().width - vis.margin.left - vis.margin.right;
         vis.height = document.getElementById(vis.parentElement).getBoundingClientRect().height - vis.margin.top - vis.margin.bottom;
 
@@ -32,18 +32,17 @@ class RecordsLineVis {
         vis.rfact = 1.3;
         vis.r = 10
 
-        vis.x = d3.scaleBand()
-            .domain(d3.range(1896,2020,4).map(d=>vis.parseDate(d)))
+        vis.x = d3.scaleLinear()
+            .domain([1896,2017])
             .range([0, vis.width])
-            .paddingInner(vis.width/500)
-            .paddingOuter(vis.width/500);
 
         vis.xAxis = d3.axisBottom()
             .scale(vis.x)
+            .ticks(30)
 
         vis.xAxisGroup = vis.svg.append("g")
             .attr("class", "x-axis axis")
-            .attr("transform", "translate(0," + vis.height + ")");
+            .attr("transform", "translate(0," + vis.height * .90 + ")");
 
         vis.xAxisGroup
             .call(vis.xAxis)
@@ -51,7 +50,10 @@ class RecordsLineVis {
             .attr('x', '-0.5em')
             .attr('y', '0.2em')
             .attr('text-anchor', 'end')
-            .attr('transform', 'rotate(-45)');
+            .attr('transform', 'rotate(-45)')
+
+        console.log("vis height")
+        console.log(vis.height)
 
         vis.displayData = vis.records
 
