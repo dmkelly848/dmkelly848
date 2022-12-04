@@ -1,4 +1,4 @@
-class RecordsIconsVis {
+class RecordsLineVis {
 
     constructor(parentElement, data, records, hostData) {
         this.parentElement = parentElement;
