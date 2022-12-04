@@ -21,9 +21,11 @@ new fullpage('#fullpage', {
         'Running Faster',
         'Jumping Higher',
         'Breaking Records',
-        'Reasons Why',
-    'Our Team'],
-    showActiveTooltip: false,
+        'Why',
+        'Reasons',
+    'Our Team',
+    'Acknowledgements and Sources'],
+    showActiveTooltip: false
 });
 
 // init global variables, switches, helper functions

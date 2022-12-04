@@ -12,7 +12,6 @@ h1{
     font-size : clamp(3vw, 9vw, 6vw);
     font-weight: 400;
     text-align: center;
-    padding-top: 18vh;
     padding-bottom: 0;
 }
 
@@ -190,7 +189,21 @@ li{
  Overall Slide Attributes
 ***************/
 .slide-area{
-    height: 94vh;
+    height: 100vh;
+}
+
+.background{
+    background-color: #ffffff;
+    background: radial-gradient(circle, transparent 20%, #ffffff 20%, #ffffff 80%, transparent 80%, transparent), radial-gradient(circle, transparent 20%, #ffffff 20%, #ffffff 80%, transparent 80%, transparent) 10px 10px, linear-gradient(rgba(169, 169, 169, 0.2) 0.8px, transparent 0.8px) 0 -0.4px, linear-gradient(90deg, rgba(169, 169, 169, 0.2) 0.8px, #ffffff 0.8px) -0.4px 0;
+    background-size: 20px 20px, 20px 20px, 10px 10px, 10px 10px;
+}
+
+.textbox{
+    background-color: white;
+    border: solid black 5px;
+    border-radius: 50px;
+    padding-top: 5vh;
+    padding-bottom: 5vh;
 }
 
 
@@ -206,29 +219,66 @@ li{
 /***************
  Title Slide
 ***************/
+#title-slide{
+    height: 97vh;
+}
+
 #icon-bottom-bar{
-    height: 27%;
+    height: 15%;
+    margin-bottom: 2vh;
 }
 
 #title-image-row{
-    height: 35%;
+    height: 30%;
 }
 
 #title-image{
+    background: white;
+    border: solid black 5px;
+    border-radius: 50px;
     display: block;
     margin-left: auto;
     margin-right: auto;
     height: 100%;
+    padding: 2vh;
     width: auto;
 }
+
+#title-box{
+    margin: auto;
+    width: 90%;
+    align-self: center;
+    margin-top: 10vh;
+    margin-bottom: 3vh;
+}
+
+.arrow {
+    border: solid black;
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    padding: 5px;
+}
+
+.down {
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+}
+
+#scroll-text{
+    padding-top: 5vh;
+    font-size: 50%;
+    margin-bottom: 0px;
+}
+
+
 
 
 /***************
  Usain Bolt Slide
 ***************/
 #bolt-slide{
-    border-top: solid #3e76ec;
-    border-bottom: solid #3e76ec;
+    /*border-top: solid #3e76ec;*/
+    /*border-bottom: solid #3e76ec;*/
 }
 
 #bolt-slide-left{
@@ -240,8 +290,8 @@ li{
  Event Descriptions Slide
 ***************/
 #events-slide{
-    border-top: solid #3e76ec;
-    border-bottom: solid #3e76ec;
+    /*border-top: solid #3e76ec;*/
+    /*border-bottom: solid #3e76ec;*/
 }
 
 #eventListRow{
@@ -251,7 +301,12 @@ li{
 #eventsVis{
     margin-top: 2vh;
     height: 68vh;
-    font-size: 4vh;
+    font-size: 3.5vh;
+}
+
+.italicSty{
+    font-style:italic;
+    font-family: 'Lato', sans-serif;
 }
 
 .overlay{
@@ -263,8 +318,8 @@ li{
  Medal Breakdown Slide
 ***************/
 #medal-slide{
-    border-top: solid #ffce01;
-    border-bottom: solid #ffce01;
+    /*border-top: solid #ffce01;*/
+    /*border-bottom: solid #ffce01;*/
     padding-bottom: 10vh;
 }
 
@@ -337,11 +392,11 @@ li{
 }
 
 #trends-slide1{
-    border-top: solid #000000;
+    /*border-top: solid #000000;*/
 }
 
 #trends-slide2{
-    border-bottom: solid #000000;
+    /*border-bottom: solid #000000;*/
 }
 
 #hurdleVis{
@@ -396,8 +451,8 @@ li{
 ***************/
 #globe-slide{
     height: 94vh;
-    border-top: solid #179a13;
-    border-bottom: solid #179a13;
+    /*border-top: solid #179a13;*/
+    /*border-bottom: solid #179a13;*/
     padding-bottom: 50px;
     padding-top: 30px;
 }
@@ -420,13 +475,13 @@ li{
 ***************/
 #reasons-slide{
     height: 120vh;
-    border-top: solid #ff0000;
-    border-bottom: solid #ff0000;
+    /*border-top: solid #ff0000;*/
+    /*border-bottom: solid #ff0000;*/
     padding-bottom: 50px;
     padding-top: 30px;
 }
 #original{
-    height: 100vh;
+    height: 90vh;
 }
 
 

@@ -60,7 +60,7 @@ class ReasonVis {
                 "                <button type=\"button\" class=\"btn btn-light\" onclick = mainPage()>Back to Reasons</button>\n" +
                 "            </div><div class=\"container-fluid\" style = \"padding-left: 100px; padding-right: 100px;height:100vh\">\n" +
                 "        <div class=\"row\">\n" +
-                "            <h3 class = \"olympicHeadText chartTitle\">Equipment:</h3>\n" +
+                "            <h3 class = \"olympicHeadText chartTitle\">Equipment:<span class = \"italicSty\"> Click on Icons to Learn More! </span></h3>\n" +
                 "            <div class = \"col-4 centerText chartTitle\"> <span class = \"olympicHeadText\">1896 Athens Olympics</span>\n" +
                 "                <div style= \"height: 10vh\"></div>\n" +
                 "                <div id = \"texte1b\" class=\"olympicBodyText\" style = \"height:24vh; font-size: 18px\"> </div>\n" +

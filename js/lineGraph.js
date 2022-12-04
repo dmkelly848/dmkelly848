@@ -149,7 +149,6 @@ class LineGraph {
             vis.area.transition().duration(800).attr("width",vis.p2-vis.p1).attr("height",vis.height-vis.VERTSHIFT)
                 .attr("x",vis.p1).attr("y",vis.VERTSHIFT).attr("fill","#ffce01").attr("fill-opacity",0.2)
         }
-        console.log(vis.displayData)
 
         let lineLegend = vis.svg.selectAll(".lineLegend").data(vis.legendKeys)
             .enter().append("g")
