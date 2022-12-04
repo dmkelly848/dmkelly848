@@ -15,15 +15,18 @@ class RecordsLineVis {
     initVis() {
         let vis = this;
 
+        // margin convention
         vis.margin = {top: 20, right: 10, bottom: 20, left: 10};
         vis.width = document.getElementById(vis.parentElement).getBoundingClientRect().width - vis.margin.left - vis.margin.right;
         vis.height = document.getElementById(vis.parentElement).getBoundingClientRect().height - vis.margin.top - vis.margin.bottom;
 
+        // SVG drawing area
         vis.svg = d3.select("#" + vis.parentElement).append("svg")
             .attr("width", vis.width)
             .attr("height", vis.height)
             .attr('transform', `translate (${vis.margin.left}, ${vis.margin.top})`);
 
+        // creating scales for barplot: scalelinear and scaleband, and creating axes
         vis.x = d3.scaleLinear()
             .domain([1896,2016])
             .range([.1 * vis.width, vis.width * .95])
@@ -69,6 +72,7 @@ class RecordsLineVis {
     wrangleData() {
         let vis = this;
 
+        // filtering data to only show current records
         vis.displayData = vis.records
 
         vis.chosenYear = vis.parseDate(vis.hostData[mapYearIndex].Year)
@@ -83,6 +87,7 @@ class RecordsLineVis {
     updateVis() {
         let vis = this;
 
+        // enter-update-exit on bars
         vis.lines = vis.svg.selectAll('rect').data(vis.displayData)
 
         vis.lines.exit().remove()
@@ -103,6 +108,7 @@ class RecordsLineVis {
                 }
             });
 
+        // enter-update-exit on circles
         vis.circles = vis.svg.selectAll(`circle`).data(vis.displayData)
 
         vis.circles.exit().remove()
