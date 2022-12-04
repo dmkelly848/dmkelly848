@@ -14,12 +14,15 @@ new fullpage('#fullpage', {
     navigationTooltips: [
         'Intro',
         'Usain Bolt',
+        'Overview',
         'Event Descriptions',
         'Medal Breakdown ',
+        'Trends',
         'Running Faster',
         'Jumping Higher',
         'Breaking Records',
-        'Reasons Why'],
+        'Reasons Why',
+    'Our Team'],
     showActiveTooltip: false,
 });
 
