@@ -21,8 +21,10 @@ new fullpage('#fullpage', {
         'Running Faster',
         'Jumping Higher',
         'Breaking Records',
-        'Reasons Why',
-    'Our Team'],
+        'Why',
+        'Reasons',
+    'Our Team',
+    'Acknowledgements and Sources'],
     showActiveTooltip: false
 });
 
