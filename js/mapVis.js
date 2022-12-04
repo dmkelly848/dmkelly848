@@ -19,8 +19,6 @@ class MapVis {
         vis.margin = {top: 10, right: 20, bottom: 10, left: 20};
         vis.width = document.getElementById(vis.parentElement).getBoundingClientRect().width - vis.margin.left - vis.margin.right;
 
-        console.log(vis.width)
-
         vis.svg = d3.select("#" + vis.parentElement).append("svg")
             .attr("width", vis.width)
             .attr("height", vis.width)
@@ -95,9 +93,6 @@ class MapVis {
         let vis = this;
 
         // create data structure with information for each land
-
-        console.log(vis.geoData.objects.countries.geometries)
-
         vis.countryInfo = {};
         vis.geoData.objects.countries.geometries.forEach(d => {
 
@@ -142,7 +137,6 @@ class MapVis {
         vis.hostData.forEach(d => {
             vis.countryInfo[d.Host]['color'] = vis.colors[0]
         })
-
 
         // source: https://bl.ocks.org/austinczarnecki/fe80afa64724c9630930
         // source: https://github.com/d3/d3-geo
