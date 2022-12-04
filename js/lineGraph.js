@@ -31,9 +31,7 @@ class LineGraph {
             .append("g")
             .attr("transform", "translate(" + vis.margin.left + "," + vis.margin.top + ")");
 
-
         vis.VERTSHIFT = 70;
-        // vis.height = vis.height-VERTSHIFT
         // add scale + axis
         vis.y = d3.scaleLinear()
             .range([vis.height,vis.VERTSHIFT]);
@@ -88,8 +86,6 @@ class LineGraph {
             .attr("class","olympicHeadText chartTitle")
 
 
-
-
         vis.wrangleData()
     }
 
@@ -97,12 +93,10 @@ class LineGraph {
 
     wrangleData() {
         let vis = this;
-        console.log(vis.resultsData)
 
         let filterGenderDat = vis.resultsData.filter(function (d){
             return (d.Gender === 'M')
         });
-
 
         vis.discusData = [];
         vis.javelinData = [];
@@ -121,7 +115,6 @@ class LineGraph {
             }
         })
 
-
         let javTemp = d3.rollup(vis.javelinData, v => d3.mean(v, d => d.Clean_Result), d => d.Year)
         let disTemp = d3.rollup(vis.discusData, v => d3.mean(v, d => d.Clean_Result), d => d.Year)
         let hamTemp = d3.rollup(vis.hammerData, v => d3.mean(v, d => d.Clean_Result), d => d.Year)
@@ -130,19 +123,16 @@ class LineGraph {
         vis.hammerData = Array.from(hamTemp).map(([key, value]) => ({key, value}))
 
         vis.displayData = [vis.javelinData,vis.discusData,vis.hammerData]
-        console.log(vis.displayData)
 
 
         vis.updateVis()
     }
 
 
-
     updateVis() {
         let vis = this;
 
         let max = Math.max(d3.max(vis.javelinData, d => d.value))
-
 
         vis.y.domain([0, max+0.5]);
 
@@ -159,7 +149,7 @@ class LineGraph {
             vis.area.transition().duration(800).attr("width",vis.p2-vis.p1).attr("height",vis.height-vis.VERTSHIFT)
                 .attr("x",vis.p1).attr("y",vis.VERTSHIFT).attr("fill","#ffce01").attr("fill-opacity",0.2)
         }
-
+        console.log(vis.displayData)
 
         let lineLegend = vis.svg.selectAll(".lineLegend").data(vis.legendKeys)
             .enter().append("g")
@@ -177,9 +167,6 @@ class LineGraph {
             .attr("fill", function (d, i) {return vis.colorScale[i]; })
             .attr("width", 10).attr("height", 10);
 
-
-        console.log(vis.displayData)
-
         vis.line = vis.svg.selectAll(".lin").data(vis.displayData)
 
         vis.line.enter().append("path")
@@ -194,11 +181,8 @@ class LineGraph {
             })
              .attr("stroke-width", 5.0);
 
-
-
         vis.svg.select(".y-axis").call(vis.yAxis);
         vis.svg.select(".x-axis").call(vis.xAxis);
-
     }
 
     fillUp(){

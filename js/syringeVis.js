@@ -18,7 +18,7 @@ class SyringeVis {
         let vis = this;
 
         // margin convention with static height and responsive/variable width
-        vis.margin = {top: 20, right: 20, bottom: 20, left: 20};
+        vis.margin = {top: 10, right: 20, bottom: 60, left: 20};
         vis.width = document.getElementById(vis.parentElement).getBoundingClientRect().width - vis.margin.left - vis.margin.right;
         vis.height = document.getElementById(vis.parentElement).getBoundingClientRect().height - vis.margin.top - vis.margin.bottom;
         vis.center = {'x': vis.width/2, 'y': vis.height/2};

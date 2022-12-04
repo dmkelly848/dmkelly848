@@ -186,6 +186,8 @@ function expandReason(reason, data){
         equipVis = new EquipmentVis('equip');
     }else if(reason ==="Diet"){
         dietVis = new DietVis('dietVis')
+    }else if(reason === 'Global Access'){
+        globalAccessVis = new GlobalLineVis("globLinVis")
     }
 }
 

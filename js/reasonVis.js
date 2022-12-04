@@ -19,8 +19,6 @@ class ReasonVis {
         console.log(vis.reason)
 
         if(vis.reason === "Doping"){
-
-            console.log("doping chosen")
             document.getElementById("original").innerHTML = "            <div class=\"container-fluid\"> <h3 class = \"olympicHeadText chartTitle\">Doping:</h3> \n" +
                 "                <div class = \"col-12 center\" style = \"height: 10vh\"> \n" +
                 "                <button type=\"button\" onclick = mainPage() style = \"font-size = 30px\" >Back to Reasons</button>\n" +
@@ -156,7 +154,22 @@ class ReasonVis {
             document.getElementById("original").innerHTML= "<div class=\"container-fluid\">\n" +
                 "                <div class = \"col-12 center\">\n" +
                 "                <button type=\"button\" onclick = mainPage()>Back to Reasons</button>\n" +
-                "            </div>"
+                "            </div><div class=\"container-fluid\" style = \"padding-left: 100px; padding-right:100px;\">\n" +
+                "            <h3 class = \"olympicHeadText chartTitle\">Global Access:</h3>\n" +
+                "            <div class=\"row olympicBodyText\" style = \"font-size: 2.5vh;height: 90vh;\">\n" +
+                "                <div id= \"globLinVis\" class=\"col-8\" style=\"padding: 20px; \" >\n" +
+                "                </div>\n" +
+                "                <div class=\"col-4 olympicBodyText\" style=\"padding: 20px;\" >\n" +
+                "                <ul>\n" +
+                "                        <li>Studies show that foreign-born athletes comprised 8.1% of the USA's 2012 Summer Olympics Team. This is up from 7.0% in 1948.</li>\n" +
+                "                        <li>Just as notable is the diversity of these foreign-born athletes; the graph to the left shows that athletes are\n" +
+                "                        consistently being recruited from more countries than ever before.</li>\n" +
+                "                        <li>This change can be attributed to globalization. People born anywhere can train and aspire to join\n" +
+                "                        a first-world nation's team.</li><li>In 2016, for example, 4 Kenyan-born runners were granted citizenship through working\n" +
+                "                        in the US army; they were permitted to compete for the USA Olympic team.</li>\n" +
+                "                    </ul></div>\n" +
+                "            </div>\n" +
+                "        </div>"
         }
 
 
