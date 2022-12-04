@@ -8,7 +8,7 @@ class MapVis {
         this.geoData = geoData
         this.hostData = hostData
 
-        this.colors = ['#888888', '#ff0000']
+        this.colors = ['#888888', '#1e5e1e']
 
         this.initVis()
     }
@@ -33,6 +33,13 @@ class MapVis {
         vis.path = d3.geoPath()
             .projection(vis.projection);
 
+        vis.svg.append("path")
+            .datum({type: "Sphere"})
+            .attr("class", "graticule")
+            .attr('fill', '#E6F6FF')
+            .attr("stroke","rgba(129,129,129,0.35)")
+            .attr("d", vis.path);
+
         // source: https://map-projections.net/d3-customizable-wagner/static.php?v=7&x=3
         vis.graticule = d3.geoGraticule();
         vis.svg.append("path")
@@ -40,13 +47,6 @@ class MapVis {
             .attr("class", "graticule")
             .attr("stroke","rgba(129,129,129,0.35)")
             .attr("fill", "rgba(0,0,0,0)")
-            .attr("d", vis.path);
-
-        vis.svg.append("path")
-            .datum({type: "Sphere"})
-            .attr("class", "graticule")
-            .attr('fill', '#ADDEFF')
-            .attr("stroke","rgba(129,129,129,0.35)")
             .attr("d", vis.path);
 
         vis.world = topojson.feature(vis.geoData, vis.geoData.objects.countries).features
@@ -62,7 +62,7 @@ class MapVis {
             .attr('id', 'pieTooltip')
 
 
-        //free code: making map draggable
+        //provided code to make it draggable
         let m0,
             o0;
 
@@ -115,54 +115,11 @@ class MapVis {
         let vis = this;
 
         vis.countries.style("fill", function(d) { return vis.countryInfo[d.properties.name].color; })
-            // // source: https://bl.ocks.org/austinczarnecki/fe80afa64724c9630930
-            // // source: https://github.com/d3/d3-geo
-            // .on('click', function(event, d){
-            //
-            //     d3.select(this).transition()
-            //         .duration(1250)
-            //         .tween("rotate", function() {
-            //             // find source array.find
-            //             var p = d3.geoCentroid(vis.world.find((e) => e.id === d.id)),
-            //                 r = d3.geoInterpolate(vis.projection.rotate(), [-p[0], -p[1]]);
-            //             return function (t) {
-            //                 vis.projection.rotate(r(t));
-            //                 vis.svg.selectAll("path").attr("d", vis.path);
-            //             }
-            //         });
-            // })
-            .on('mouseover', function(event, d){
-                d3.select(this)
-                    .attr('stroke-width', '2px')
-                    .attr('stroke', 'black')
-                    .style('fill', 'red')
-
-                vis.tooltip
-                    .style("opacity", 1)
-                    .style("left", event.pageX + 20 + "px")
-                    .style("top", event.pageY + "px")
-                    .html(`
-                        <div class = "olympicBodyText" style="border: thin solid grey; border-radius: 5px; background: lightgrey; padding: 20px">
-                        <h3>${d.properties.name}<h3>                       
-                        </div>`);
-            })
-            // mouseout code following lab page instructions
-            .on('mouseout', function(event, d){
-                d3.select(this)
-                    .attr('stroke-width', '0px')
-                    .style("fill", vis.countryInfo[d.properties.name].color)
-
-                vis.tooltip
-                    .style("opacity", 0)
-                    .style("left", 0)
-                    .style("top", 0)
-                    .html(``);
-            })
 
         d3.select(vis).transition()
             .duration(50)
             .tween("rotate", function() {
-                // find source array.find
+                // source: https://www.w3schools.com/jsref/jsref_find.asp
                 var p = d3.geoCentroid(vis.world.find((e) => e.properties.name === 'Greece')),
                     r = d3.geoInterpolate(vis.projection.rotate(), [-p[0], -p[1]]);
                 return function (t) {
