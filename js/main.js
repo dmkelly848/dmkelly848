@@ -131,7 +131,7 @@ function initMainPage(data) {
     dashBar2 = new DashBar('dashBar2',data[0], data[1], 'Event')
     circleVis2 = new CircleVis('reasonsVis',data[0],["Doping","Equipment","Training","Diet","Coaching","Global Access"], undefined, 2)
     mapVis = new MapVis('mapVis', data[0], data[3], data[4])
-    recordsLineVis = new RecordsLineVis('recordsIconsVis', data[0], data[5], data[4])
+    recordsLineVis = new RecordsLineVis('recordsLinesVis', data[0], data[5], data[4])
 };
 
 //Called when user changes gender in high jump vis
@@ -143,10 +143,6 @@ function highJumpGenderChange(){
 //Called when user changes gender in 100 m dash vis
 function runningGenderChange(){
     runningVis.wrangleData()
-}
-
-function recordsGenderChange(){
-    recordsIconsVis.wrangleData()
 }
 
 //Called when user "fills" the syringe in doping vis

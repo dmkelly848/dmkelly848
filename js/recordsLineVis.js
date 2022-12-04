@@ -91,9 +91,9 @@ class RecordsLineVis {
             .merge(vis.lines)
             .attr('class','record-line')
             .attr("y", d=> vis.y(d.Competition))
-            .attr("x", d=> vis.x(d.Set))
             .attr('height', vis.y.bandwidth())
             .attr('width', d=> vis.x(vis.hostData[mapYearIndex].Year) - vis.x(d.Set))
+            .attr("x", d=> vis.x(d.Set))
             .attr("fill", function(d){
                 if (d.Gender === 'M'){
                     return '#ADDEFF'
@@ -111,7 +111,6 @@ class RecordsLineVis {
             .attr('class', `circle`)
             .merge(vis.circles)
             .attr("cx", d=> vis.x(d.Set))
-            //.attr("cx", vis.x(vis.hostData[mapYearIndex].Year))
             .attr("cy", d=> vis.y(d.Competition) + vis.y.bandwidth()/2)
             .attr("r", 2 * vis.y.bandwidth())
             .attr("fill", function(d){
