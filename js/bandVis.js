@@ -1,7 +1,8 @@
 /* * * * * * * * * * * * * *
-*      CIRCLES Vis          *
+*      Band Vis          *
 * * * * * * * * * * * * * */
 
+//This is the carousel of icons that decorates the weeebsitee's title page
 class BandVis {
 
     constructor(parentElement, resultsData) {
@@ -21,7 +22,7 @@ class BandVis {
 
         //define type-dependent variables
         vis.circs = 10;
-        vis.padfact = 2.2;
+        vis.padfact = 1;
         vis.opacity = 0.4;
         vis.rfact = 1.3;
         // credit to: https://stackoverflow.com/questions/28572015/how-to-select-unique-values-in-d3-js-from-data
@@ -42,9 +43,8 @@ class BandVis {
                 temp['color'] = '#ff0000';
             vis.circleData.push(temp);
         })
-        console.log(vis.circleData)
 
-        vis.r = vis.width / (vis.circs * 4);
+        vis.r = vis.width / (vis.circs * 5);
 
 
         // // SVG drawing area
@@ -67,7 +67,6 @@ class BandVis {
     }
 
 
-
     wrangleData() {
         let vis = this;
         vis.circleData.unshift(vis.circleData.pop())
@@ -77,10 +76,10 @@ class BandVis {
     }
 
 
-
     updateVis() {
         let vis = this;
 
+        //Circlse behind icons
         vis.circles = vis.svg.selectAll(`.circle-band`).data(vis.displayData, d=>d.event)
         vis.circles.exit().remove()
         vis.circles.enter().append("circle")
@@ -101,6 +100,7 @@ class BandVis {
                 return vis.width/vis.circs * (i-1)
             });
 
+        //Icons themselves
         vis.icons = vis.svg.selectAll(".icon").data(vis.displayData, d=>d.event)
         vis.icons.exit().remove()
         vis.icons.enter().append("svg:image")

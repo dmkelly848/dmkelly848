@@ -131,8 +131,6 @@ class MapVis {
         vis.countryInfo['Greece']['color'] = vis.colors[1]
         vis.countries.style("fill", function(d) { return vis.countryInfo[d.properties.name].color; })
 
-
-
     }
 
     spinVis() {
