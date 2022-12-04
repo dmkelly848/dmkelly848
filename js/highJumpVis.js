@@ -3,6 +3,7 @@
 * * * * * * * * * * * * * */
 
 
+//Visualization that resembles a high jump and shows changing performance
 class HighJumpVis {
 
     constructor(parentElement, resultsData) {
@@ -24,7 +25,6 @@ class HighJumpVis {
 
         vis.width = document.getElementById(vis.parentElement).getBoundingClientRect().width - vis.margin.left - vis.margin.right;
         vis.height = document.getElementById(vis.parentElement).getBoundingClientRect().height - vis.margin.top - vis.margin.bottom;
-
 
         // init drawing area
         vis.draw = d3.select("#" + vis.parentElement).append("svg")
@@ -119,14 +119,12 @@ class HighJumpVis {
     }
 
 
-
     wrangleData() {
         let vis = this;
 
         vis.jumpData = vis.filtData();
 
         vis.baseYear = d3.min(vis.jumpData, d=>d.Year)
-        //console.log(vis.unchanged)
         if(vis.unchanged){
             vis.chosenYear = vis.baseYear;
         }
@@ -194,12 +192,12 @@ class HighJumpVis {
 
     updateSlider(){
         let vis = this;
-        console.log('slide')
         vis.unchanged = true;
         vis.slider.noUiSlider.destroy()
         vis.createSlider();
     }
 
+    //Filter data by event type - high jump or pole vault
     filtData(){
         let vis = this;
         let data = [];
