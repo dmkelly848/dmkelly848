@@ -251,7 +251,12 @@ li{
 #eventsVis{
     margin-top: 2vh;
     height: 68vh;
-    font-size: 4vh;
+    font-size: 3.5vh;
+}
+
+.italicSty{
+    font-style:italic;
+    font-family: 'Lato', sans-serif;
 }
 
 .overlay{

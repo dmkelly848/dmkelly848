@@ -23,7 +23,7 @@ new fullpage('#fullpage', {
         'Breaking Records',
         'Reasons Why',
     'Our Team'],
-    showActiveTooltip: false,
+    showActiveTooltip: false
 });
 
 // init global variables, switches, helper functions
