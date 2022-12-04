@@ -38,7 +38,6 @@ class TreeVis {
             'North America': '#ff0000',
             'Oceania': '#702963',
             'South America': '#ffce01',
-            'N/A': '#888888',
         }
 
         // // add tooltip
@@ -69,7 +68,6 @@ class TreeVis {
             {country: 'Origin', continent: '', medal_count: ''},
             {country: 'Europe', continent: 'Origin', medal_count: ''},
             {country: 'North America', continent: 'Origin', medal_count: ''},
-            {country: 'N/A', continent: 'Origin', medal_count: ''},
             {country: 'Africa', continent: 'Origin', medal_count: ''},
             {country: 'Oceania', continent: 'Origin', medal_count: ''},
             {country: 'Asia', continent: 'Origin', medal_count: ''},
@@ -205,7 +203,7 @@ class TreeVis {
             .attr('width', vis.width/50)
             .attr('height',vis.width/50)
             .attr('y', 0)
-            .attr('x', function(d,index){return -3.1*vis.width/7+index*vis.width/7})
+            .attr('x', function(d,index){return -3.1*vis.width/7.5+index*vis.width/7})
             .attr("fill", d=>vis.colors[d])
             .attr('stroke', 'black')
             // .on('click', function(event, d) {
@@ -226,8 +224,8 @@ class TreeVis {
             .enter().append('text')
             .attr('class', 'legend-label')
             .attr('font-size', '0.9vw')
-            .attr('y', vis.width/75)
-            .attr('x', function(d,index){return -3.1*vis.width/7+index*vis.width/7+vis.width/40})
+            .attr('y', vis.width/75+2)
+            .attr('x', function(d,index){return -3.1*vis.width/7.5+index*vis.width/7+vis.width/40})
             .text(d=>d)
     }
 
