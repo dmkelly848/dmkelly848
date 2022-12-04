@@ -53,6 +53,8 @@ let promises = [
     d3.csv('data/womens_records.csv'),
 ];
 
+/*This data was pulled from our main dataset (using Python). A 1 at (i,j) means that the record for event i was broken
+in year j*/
 let mensRecordMatrix = [
     [0, 0, 0, 0, 1, 0, 1, 1, 1, 0, 1, 1, 1, 1, 1, 0, 1, 0, 0, 0, 0, 0, 1, 0, 1, 1, 0, 1],
     [1, 1, 0, 1, 0, 0, 1, 0, 1, 0, 0, 0, 0, 1, 1, 1, 0, 0, 0, 0, 0, 0, 1, 0, 0, 1, 1, 0],
@@ -118,31 +120,27 @@ Promise.all(promises)
 
 // initialize Main Page
 function initMainPage(data) {
-    console.log(data[2])
-    console.log(data[0])
+
     bandVis = new BandVis('icon-bottom-bar', data[0])
-
     circleVis = new CircleVis('eventsVis', data[0], undefined, data[2], 1)
-
     highJumpVis = new HighJumpVis('hurdleVis', data[0])
     runningVis = new RunningVis('runningVis', data[0])
     treeVis = new TreeVis('treeVis', data[0], data[1])
     dashMedals = new DashMedals('dashMedals', data[0], data[1])
-    dashBar1 = new DashBar('dashBar1',data[0], data[1],'Year')
-    dashBar2 = new DashBar('dashBar2',data[0], data[1],'Event')
-    // syringeVis = new SyringeVis('syringevis',data[0])
-    // lineGraph = new LineGraph('lineGraph',data[0])
+    dashBar1 = new DashBar('dashBar1',data[0], 'Year')
+    dashBar2 = new DashBar('dashBar2',data[0], 'Event')
     circleVis2 = new CircleVis('reasonsVis',data[0],["Doping","Equipment","Training","Diet","Coaching","Global Access"], undefined, 2)
     mapVis = new MapVis('mapVis', data[0], data[3], data[4])
-    //recordsVis = new RecordsVis('recordsVis', data[0], data[6], data[7])
     recordsLineVis = new RecordsLineVis('recordsIconsVis', data[0], data[5], data[4])
 };
 
+//Called when user changes gender in high jump vis
 function highJumpGenderChange(){
     highJumpVis.updateSlider();
     highJumpVis.wrangleData();
 }
 
+//Called when user changes gender in 100 m dash vis
 function runningGenderChange(){
     runningVis.wrangleData()
 }
@@ -151,6 +149,7 @@ function recordsGenderChange(){
     recordsIconsVis.wrangleData()
 }
 
+//Called when user "fills" the syringe in doping vis
 function syringeUp(){
     syringeVis.fillUp();
     syringeVis.updateVis();
@@ -158,6 +157,7 @@ function syringeUp(){
     lineGraph.updateVis();
 }
 
+//Called when user "empties" the syringe in doping vis
 function syringeDown(){
     syringeVis.emptyDown();
     syringeVis.updateVis();
@@ -165,6 +165,7 @@ function syringeDown(){
     lineGraph.updateVis();
 }
 
+//Called when unselects country in tree visual to look at the world
 function resetToWorld(){
     selCountry = 'Worldwide';
     dashMedals.wrangleData();
@@ -175,9 +176,9 @@ function resetToWorld(){
 
 }
 
+//Called when user selects a reason in the "why is this the case" panel
+//Changes html and javascript code that is called
 function expandReason(reason, data){
-    console.log(reason)
-    console.log(data)
     reasonVis = new ReasonVis('reasonsVis', dataStar,reason);
     if(reason==="Doping"){
         syringeVis = new SyringeVis('syringevis',dataStar[0])
@@ -191,8 +192,8 @@ function expandReason(reason, data){
     }
 }
 
+//Called when user moves to previous Olympic games in globe visual
 function previousGames(){
-
     // https://stackoverflow.com/questions/8685107/hiding-a-button-in-javascript
     if (mapYearIndex !== 0){
         mapYearIndex -= 1;
@@ -207,7 +208,6 @@ function previousGames(){
     // https://stackoverflow.com/questions/8685107/hiding-a-button-in-javascript
     if (mapYearIndex !== 27){
         document.getElementById('nextGames').style.visibility = 'visible'
-
     }
 
     document.getElementById('gamesYear').innerHTML = dataStar[4][mapYearIndex].Year
@@ -217,13 +217,13 @@ function previousGames(){
     recordsLineVis.wrangleData()
 }
 
+//Called when user moves to next Olympic games in globe visual
 function nextGames(){
 
     // https://stackoverflow.com/questions/8685107/hiding-a-button-in-javascript
     if (mapYearIndex !== 27){
         mapYearIndex += 1;
         document.getElementById('nextGames').style.visibility = 'visible'
-
     }
 
     // https://stackoverflow.com/questions/8685107/hiding-a-button-in-javascript
@@ -244,6 +244,7 @@ function nextGames(){
 }
 
 
+//Called when a user gose "back to reasons" and views all 6 once more
 function mainPage(data){
     let div = document.getElementById('original');
     while(div.firstChild){

@@ -1,7 +1,8 @@
 /* * * * * * * * * * * * * *
-*      CIRCLES Vis          *
+*      Band Vis          *
 * * * * * * * * * * * * * */
 
+//This is the carousel of icons that decorates the weeebsitee's title page
 class BandVis {
 
     constructor(parentElement, resultsData) {
@@ -42,7 +43,6 @@ class BandVis {
                 temp['color'] = '#ff0000';
             vis.circleData.push(temp);
         })
-        console.log(vis.circleData)
 
         vis.r = vis.width / (vis.circs * 4);
 
@@ -67,7 +67,6 @@ class BandVis {
     }
 
 
-
     wrangleData() {
         let vis = this;
         vis.circleData.unshift(vis.circleData.pop())
@@ -77,10 +76,10 @@ class BandVis {
     }
 
 
-
     updateVis() {
         let vis = this;
 
+        //Circlse behind icons
         vis.circles = vis.svg.selectAll(`.circle-band`).data(vis.displayData, d=>d.event)
         vis.circles.exit().remove()
         vis.circles.enter().append("circle")
@@ -101,6 +100,7 @@ class BandVis {
                 return vis.width/vis.circs * (i-1)
             });
 
+        //Icons themselves
         vis.icons = vis.svg.selectAll(".icon").data(vis.displayData, d=>d.event)
         vis.icons.exit().remove()
         vis.icons.enter().append("svg:image")

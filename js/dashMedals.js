@@ -2,13 +2,13 @@
 *      Dash Info          *
 * * * * * * * * * * * * * */
 
+//These are the circles that display the number of gold, silver, and bronze medals in the country dashbaord
 class DashMedals {
 
     constructor(parentElement, resultsData, continentData) {
         this.parentElement = parentElement;
         this.resultsData = resultsData;
         this.continentData = continentData;
-
         this.initVis()
     }
 
@@ -28,6 +28,7 @@ class DashMedals {
             .attr("transform", "translate(" + vis.margin.left + "," + vis.margin.top + ")");
 
 
+        //Gold medals
         vis.goldCircleGroup = vis.svg.append('g')
             .attr('transform', `translate(${1*vis.width/4}, ${vis.height/2})`);
         vis.goldCircleGroup.append('circle')
@@ -42,6 +43,7 @@ class DashMedals {
             .attr('fill', 'black')
             .attr('font-size', '2.5vh');
 
+        //Silver medals
         vis.silverCircleGroup = vis.svg.append('g')
             .attr('transform', `translate(${2*vis.width/4}, ${vis.height/2})`);
         vis.silverCircleGroup.append('circle')
@@ -56,6 +58,7 @@ class DashMedals {
             .attr('fill', 'black')
             .attr('font-size', '2.5vh')
 
+        //Bronze medals
         vis.bronzeCircleGroup = vis.svg.append('g')
             .attr('transform', `translate(${3*vis.width/4}, ${vis.height/2})`);
         vis.bronzeCircleGroup.append('circle')
@@ -70,12 +73,11 @@ class DashMedals {
             .attr('fill', 'black')
             .attr('font-size', '2.5vh')
 
-
         vis.wrangleData()
     }
 
 
-
+    //Counts for each country
     wrangleData() {
         let vis = this;
 
@@ -91,7 +93,6 @@ class DashMedals {
             vis.dispCountry = selection.Country;
         else
             vis.dispCountry = selCountry;
-        //console.log(vis.dispCountry)
 
         // count by medal type and filter on country
         vis.resultsData.forEach(row => {
@@ -110,6 +111,7 @@ class DashMedals {
 
 
 
+    //Updating only requires changing text on corresponding medal element
     updateVis() {
         let vis = this;
 

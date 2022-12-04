@@ -2,6 +2,7 @@
 *      Dash Bar          *
 * * * * * * * * * * * * * */
 
+//Bars showing number of medals per year and event for selected country in dashboard
 class DashBar {
 
     constructor(parentElement, resultsData, continentData, selectedCategory) {
@@ -54,12 +55,6 @@ class DashBar {
             .attr('transform', `translate(${vis.width / 2}, ${vis.height / 10})`)
             .attr('text-anchor', 'middle');
 
-        // // add tooltip area
-        // vis.tooltip = d3.select("body").append('div')
-        //     .attr('class', "tooltip")
-        //     .attr('id', 'barTooltip')
-
-
         // Create scales and axes
         // add x scale
         vis.x = d3.scaleBand()
@@ -102,7 +97,7 @@ class DashBar {
     }
 
 
-
+    //Collect data for number of medals by year and event for country
     wrangleData() {
         let vis = this;
 
@@ -131,10 +126,8 @@ class DashBar {
             }
         )
         vis.displayData.sort((a,b)=> a[vis.selectedCategory] - b[vis.selectedCategory]);
-        console.log(vis.displayData)
         vis.updateVis()
     }
-
 
 
     updateVis() {
@@ -144,10 +137,8 @@ class DashBar {
         vis.y.domain([0, d3.max(vis.displayData, d=>d.medal_count)]);
         if(vis.selectedCategory === 'Year')
             vis.x.domain(d3.range(1896,2020,4).map(d=>vis.parseDate(d)))
-            // vis.x.domain(vis.displayData.map(d=> vis.parseDate(d[vis.selectedCategory])));
         else
             vis.x.domain(vis.displayData.map(d=> d[vis.selectedCategory]))
-
 
         // add bars using enter, update, exit methods
         vis.bars = vis.svg.selectAll(".bar")
@@ -177,7 +168,7 @@ class DashBar {
                 d3.select(this)
                     .attr('stroke-width', '0px')
                     .style("fill", function(){
-                        if(selCountry != 'Worldwide') {
+                        if(selCountry !== 'Worldwide') {
                             return vis.colors[vis.continentData.find(d => d.Code === selCountry).Continent];
                         }
                         else
@@ -190,16 +181,6 @@ class DashBar {
                     .style("top", 0)
                     .html(``);
             })
-            // .on('click', function(event, d) {
-            //     d3.select(this) // changes color of selected bar
-            //         .attr('stroke-width', '2px')
-            //         .attr('stroke', 'black')
-            //         .style("opacity", 1)
-            //         .style('fill', '#ffce01')
-            //     selYear = d.Year
-            //     console.log(selYear)
-            //     treeVis.wrangleData()
-            // })
             .transition()
             .duration(1000)
             .attr("x", function(d){
@@ -221,7 +202,6 @@ class DashBar {
 
 
         // Call axis functions with the new domain
-
         vis.xAxisGroup
             .transition()
             .duration(1000)
