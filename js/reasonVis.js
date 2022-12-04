@@ -2,6 +2,8 @@
 *      ReasonVis Vis          *
 * * * * * * * * * * * * * */
 
+
+//Used to switch betweeen reasons in "why is this the case" panel
 class ReasonVis {
 
     constructor(parentElement , data, reason) {
@@ -9,14 +11,12 @@ class ReasonVis {
         this.reason = reason;
         this.data = data;
         this.formatDate = d3.timeFormat("%Y");
-        this.parseDate = d3.timeParse("%Y");
 
         this.initVis()
     }
 
     initVis() {
         let vis = this;
-        console.log(vis.reason)
 
         if(vis.reason === "Doping"){
             document.getElementById("original").innerHTML = "            <div class=\"container-fluid\"> <h3 class = \"olympicHeadText chartTitle\">Doping:</h3> \n" +
@@ -203,34 +203,6 @@ class ReasonVis {
                 "            </div>\n" +
                 "        </div>"
         }
-
-
-
-        vis.wrangleData()
     }
-
-
-
-    wrangleData() {
-        let vis = this;
-
-
-        vis.updateVis()
-    }
-
-
-
-    updateVis() {
-        let vis = this;
-
-
-
-    }
-
-
-
-
-
-
 
 }
