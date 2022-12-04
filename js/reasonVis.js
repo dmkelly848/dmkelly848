@@ -147,7 +147,39 @@ class ReasonVis {
             document.getElementById("original").innerHTML= "<div class=\"container-fluid\">\n" +
                 "                <div class = \"col-12 center\">\n" +
                 "                <button type=\"button\" class=\"btn btn-light\" onclick = mainPage()>Back to Reasons</button>\n" +
-                "            </div>"
+                "            </div><div class=\"container-fluid\" style = \"padding-left: 100px; padding-right:100px;\">\n" +
+                "            <h3 class = \"olympicHeadText chartTitle\">Coaching:</h3>\n" +
+                "            <div class=\"row olympicBodyText\" style = \"font-size: 3vh; height: 50vh; \">\n" +
+                "                <div id= \"globLinVis\" class=\"col-7\" style=\"padding: 20px;\" >\n" +
+                "                    <ul>\n" +
+                "                        <li>Coaching blossomed as an official profession in the 1970s. </li>\n" +
+                "                        <li>With coaching now a full-time career path, Olympics coaches can dedicate themselves\n" +
+                "                        wholeheartedly towards learning the needs and limits of their athletes.</li>\n" +
+                "                        <li>During the Cold War,the Soviets introduced a new, intensive style of Olympic coaching.\n" +
+                "                        They made the training process technical, looking at speed, strength, endurance, and more,\n" +
+                "                        breaking these skills down into their physical components.</li>\n" +
+                "                    </ul>\n" +
+                "                </div>\n" +
+                "                <div class=\"col-5 olympicBodyText\" style=\"padding: 20px;\" >\n" +
+                "                    <img src=\"img/coach1.png\" width = \"90%\">\n" +
+                "                </div>\n" +
+                "            </div>\n" +
+                "            <div class=\"row olympicBodyText\" style = \"font-size: 3vh; \">\n" +
+                "                <div id= \"globLinVis\" class=\"col-7\" style=\"padding: 20px;\" >\n" +
+                "                    <ul>\n" +
+                "                        <li>One notable Soviet field of study included plyometrics, which\n" +
+                "                        involves a series of techniques to train the muscles to\n" +
+                "                        increase jumping or \"explosive\" strength.</li>\n" +
+                "                        <li>More recently, Western coaching guidelines underscore the importance of\n" +
+                "                        communication skills, getting to know your athletes, and creating a\n" +
+                "                        supportive atmosphere.</li>\n" +
+                "                    </ul>\n" +
+                "                </div>\n" +
+                "                <div class=\"col-5 olympicBodyText\" style=\"padding-left: 20px; padding-right: 20px;\" >\n" +
+                "                    <img src=\"img/coach2.png\" width = \"90%\">\n" +
+                "                </div>\n" +
+                "            </div>\n" +
+                "        </div>"
 
         }else{
             //Insert HTML code
