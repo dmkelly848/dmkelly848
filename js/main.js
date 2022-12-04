@@ -22,7 +22,8 @@ new fullpage('#fullpage', {
         'Jumping Higher',
         'Breaking Records',
         'Reasons Why',
-    'Our Team'],
+    'Our Team',
+    'Acknowledgements and Sources'],
     showActiveTooltip: false
 });
 
