@@ -8,7 +8,7 @@ class MapVis {
         this.geoData = geoData
         this.hostData = hostData
 
-        this.colors = ['#888888', '#1e5e1e']
+        this.colors = ['#888888', '#179a13']
 
         this.initVis()
     }

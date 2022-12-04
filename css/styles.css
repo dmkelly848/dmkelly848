@@ -453,12 +453,12 @@ li{
     height: 94vh;
     /*border-top: solid #179a13;*/
     /*border-bottom: solid #179a13;*/
-    padding-bottom: 50px;
-    padding-top: 30px;
+    /*padding-bottom: 50px;*/
+    /*padding-top: 30px;*/
 }
 
 #globe-vis-header{
-    height: 19vh;
+    height: 15%;
 }
 
 #globe-vis-container{
