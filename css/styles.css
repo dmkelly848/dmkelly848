@@ -224,7 +224,7 @@ li{
 }
 
 #icon-bottom-bar{
-    height: 27%;
+    height: 15%;
     margin-bottom: 2vh;
 }
 
@@ -240,6 +240,7 @@ li{
     margin-left: auto;
     margin-right: auto;
     height: 100%;
+    padding: 2vh;
     width: auto;
 }
 
@@ -247,8 +248,26 @@ li{
     margin: auto;
     width: 90%;
     align-self: center;
-    margin-top: 13vh;
+    margin-top: 10vh;
     margin-bottom: 3vh;
+}
+
+.arrow {
+    border: solid black;
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    padding: 5px;
+}
+
+.down {
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+}
+
+#scroll-text{
+    padding-top: 5vh;
+    font-size: 50%;
+    margin-bottom: 0px;
 }
 
 
