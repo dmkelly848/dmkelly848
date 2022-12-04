@@ -22,7 +22,7 @@ class BandVis {
 
         //define type-dependent variables
         vis.circs = 10;
-        vis.padfact = 2.2;
+        vis.padfact = 1;
         vis.opacity = 0.4;
         vis.rfact = 1.3;
         // credit to: https://stackoverflow.com/questions/28572015/how-to-select-unique-values-in-d3-js-from-data
@@ -44,7 +44,7 @@ class BandVis {
             vis.circleData.push(temp);
         })
 
-        vis.r = vis.width / (vis.circs * 4);
+        vis.r = vis.width / (vis.circs * 5);
 
 
         // // SVG drawing area
