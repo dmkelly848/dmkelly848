@@ -392,22 +392,19 @@ li{
  Globe Slide
 ***************/
 #globe-slide{
-    height: 250vh; /* MAYBE CHANGE TO FIT INTO SLIDE??*/
+    height: 94vh;
     border-top: solid #179a13;
     border-bottom: solid #179a13;
     padding-bottom: 50px;
     padding-top: 30px;
 }
 
-#slider-round-record {
-    height: .75vh;
-    margin: auto;
-    width: 60%;
-    margin-top: 3vh;
-    margin-bottom: 4vh;
-    font-size: small;
-    background: grey;
-    border: grey;
+#globe-vis-header{
+    height: 19vh;
+}
+
+#globe-vis-container{
+    height: 75vh;
 }
 
 

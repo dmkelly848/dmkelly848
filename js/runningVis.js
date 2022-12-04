@@ -52,7 +52,7 @@ class RunningVis {
         vis.svg.append("g")
             .attr("class", "y-axis axis");
 
-        vis.wrangleData()
+        //vis.wrangleData()
     }
 
 

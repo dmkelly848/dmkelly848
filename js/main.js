@@ -42,9 +42,10 @@ let promises = [
     d3.csv('data/continent_mapping.csv'),
     d3.csv('data/event_descriptions.csv'),
     d3.json("https://cdn.jsdelivr.net/npm/world-atlas@2/countries-50m.json"),
+    d3.csv('data/hosts.csv'),
+    d3.csv('data/records.csv'),
     d3.csv('data/mens_records.csv'),
     d3.csv('data/womens_records.csv'),
-    d3.csv('data/hosts.csv')
 ];
 
 let mensRecordMatrix = [
@@ -127,9 +128,9 @@ function initMainPage(data) {
     // syringeVis = new SyringeVis('syringevis',data[0])
     // lineGraph = new LineGraph('lineGraph',data[0])
     circleVis2 = new CircleVis('reasonsVis',data[0],["Doping","Equipment","Training","Diet","Coaching","Global Access"], undefined, 2)
-    mapVis = new MapVis('mapVis', data[0], data[3], data[6])
-    recordsVis = new RecordsVis('recordsVis', data[0], data[4], data[5])
-    recordsIconsVis = new RecordsIconsVis('recordsIconsVis', data[0], data[4], data[5], data[6])
+    mapVis = new MapVis('mapVis', data[0], data[3], data[4])
+    //recordsVis = new RecordsVis('recordsVis', data[0], data[6], data[7])
+    recordsIconsVis = new RecordsIconsVis('recordsIconsVis', data[0], data[5], data[4])
 };
 
 function highJumpGenderChange(){
@@ -142,12 +143,6 @@ function runningGenderChange(){
 }
 
 function recordsGenderChange(){
-    recordsVis.wrangleData()
-    recordsIconsVis.wrangleData()
-    recordsIconsVis.updateSlider()
-}
-
-function recordsYearChange(){
     recordsIconsVis.wrangleData()
 }
 
@@ -210,8 +205,8 @@ function previousGames(){
 
     }
 
-    document.getElementById('gamesYear').innerHTML = dataStar[6][mapYearIndex].Year
-    document.getElementById('hostCountryText').innerHTML = dataStar[6][mapYearIndex].Host
+    document.getElementById('gamesYear').innerHTML = dataStar[4][mapYearIndex].Year
+    document.getElementById('hostCountryText').innerHTML = dataStar[4][mapYearIndex].Host
 
     mapVis.spinVis()
     recordsIconsVis.updateVis()
@@ -236,8 +231,8 @@ function nextGames(){
         document.getElementById('previousGames').style.visibility = 'visible'
     }
 
-    document.getElementById('gamesYear').innerHTML = dataStar[6][mapYearIndex].Year
-    document.getElementById('hostCountryText').innerHTML = dataStar[6][mapYearIndex].Host
+    document.getElementById('gamesYear').innerHTML = dataStar[4][mapYearIndex].Year
+    document.getElementById('hostCountryText').innerHTML = dataStar[4][mapYearIndex].Host
 
     mapVis.spinVis()
     recordsIconsVis.updateVis()

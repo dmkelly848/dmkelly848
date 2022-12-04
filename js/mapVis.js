@@ -17,21 +17,19 @@ class MapVis {
     initVis() {
         let vis = this;
 
-        console.log(vis.hostData)
-
-        vis.margin = {top: 20, right: 20, bottom: 20, left: 20};
+        vis.margin = {top: 10, right: 20, bottom: 10, left: 20};
         vis.width = document.getElementById(vis.parentElement).getBoundingClientRect().width - vis.margin.left - vis.margin.right;
-        //vis.height = document.getElementById(vis.parentElement).getBoundingClientRect().height - vis.margin.top - vis.margin.bottom;
-        vis.height = 400 - vis.margin.top - vis.margin.bottom;
+
+        console.log(vis.width)
 
         vis.svg = d3.select("#" + vis.parentElement).append("svg")
             .attr("width", vis.width)
-            .attr("height", vis.height)
+            .attr("height", vis.width)
             .attr('transform', `translate (${vis.margin.left}, ${vis.margin.top})`);
 
         vis.projection = d3.geoOrthographic()
-            .scale(vis.height * .42)
-            .translate([vis.width / 2, vis.height / 2])
+            .scale(vis.width * .40)
+            .translate([vis.width / 2, vis.width / 2])
 
         vis.path = d3.geoPath()
             .projection(vis.projection);

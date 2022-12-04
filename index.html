@@ -219,7 +219,7 @@
                 <div class="col-6 olympicBodyText phase31R">
                     <!-- code very similar to lab 9 button -->
                     <button class="btn btn-outline-secondary align-self-center" type="button"
-                            onclick="runningGenderChange()" style="border: thin solid grey;">Watch Again
+                            onclick="runningGenderChange()" style="border: thin solid grey;">Watch Race
                     </button>
                     <select class='dropdown' id="running-gender" onchange="runningGenderChange()">
                         <option value="M" selected>Men</option>
@@ -289,44 +289,43 @@
         <!--GLOBE SLIDE -->
         <div class="container-fluid">
             <div class="row slide-area" id="globe-slide">
-                <h2 class = "olympicHeadText center">Olympics track and field records keep getting broken</h2>
-                <div class = "col-2"></div>
-                <div class = "col-8 greenBlock underline"></div>
-                <div class = "col-2"></div>
-                <div class = "row center olympicBodyText">
-                    <div class="col-4"></div>
-                    <div class  = "col-1">
-                        <button class="btn btn-outline-secondary align-self-center" type="button"
-                                onclick="previousGames()" id="previousGames">Previous</button>
+                <div id="globe-vis-header">
+                    <div class="row center olympicBodyText">
+                        <h2 class = "olympicHeadText center">Olympics track and field records keep getting broken</h2>
+                        <div class = "col-2"></div>
+                        <div class = "col-8 greenBlock underline"></div>
+                        <div class = "col-2"></div>
                     </div>
-                    <div class="col-2 greenText" id="gamesYear">1896</div>
-                    <div class  = "col-1">
-                        <button class="btn btn-outline-secondary align-self-center" type="button"
-                                onclick="nextGames()" id="nextGames">Next</button>
-                    </div>
-                    <div class="col-4"></div>
                 </div>
-                <div class = "row center olympicBodyText">
-                    <div class="col-4"></div>
-                    <div class="col-4 greenText" id="hostCountryText">Greece</div>
-                    <div class="col-4"></div>
-                </div>
-                <div class = "row center olympicBodyText">
+                <div class = "row center olympicBodyText" id="globe-vis-container">
                     <div class  = "col-4">
+                        <div class = "row center olympicBodyText">
+                            <div class  = "col-4">
+                                <button class="btn btn-outline-secondary align-self-center" type="button"
+                                        onclick="previousGames()" id="previousGames">Previous</button>
+                            </div>
+                            <div class="col-4 greenText" id="gamesYear">1896</div>
+                            <div class  = "col-4">
+                                <button class="btn btn-outline-secondary align-self-center" type="button"
+                                        onclick="nextGames()" id="nextGames">Next</button>
+                            </div>
+                        </div>
+                        <div class = "row center olympicBodyText">
+                            <div class="col-12 greenText" id="hostCountryText">Greece</div>
+                        </div>
                         <div id = "mapVis" ></div>
                     </div>
                     <div class  = "col-8 greenText">
+<!--                        <select class='dropdown' id="records-gender" onchange="recordsGenderChange()">-->
+<!--                            <option value="M" selected>Men</option>-->
+<!--                            <option value="W">Women</option>-->
+<!--                        </select>-->
                         Olympic records broken:
                         <div id ="recordsIconsVis" style = "height: 50vh;" ></div>
                     </div>
                 </div>
                 <div class="row center olympicBodyText">
                     <div class="col-12">
-                        Broken olympic records, by event, over the years:
-                        <select class='dropdown' id="records-gender" onchange="recordsGenderChange()">
-                            <option value="M" selected>Men</option>
-                            <option value="W">Women</option>
-                        </select>
                         <div id = "recordsVis" ></div>
                     </div>
                 </div>

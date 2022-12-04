@@ -1,10 +1,9 @@
 class RecordsIconsVis {
 
-    constructor(parentElement, data, mensRecords, womensRecords, hostData) {
+    constructor(parentElement, data, records, hostData) {
         this.parentElement = parentElement;
         this.data = data;
-        this.mensRecords = mensRecords;
-        this.womensRecords = womensRecords;
+        this.records = records;
         this.hostData = hostData;
 
         this.formatDate = d3.timeFormat("%Y");
@@ -16,7 +15,7 @@ class RecordsIconsVis {
     initVis() {
         let vis = this;
 
-        vis.margin = {top: 50, right: 20, bottom: 20, left: 20};
+        vis.margin = {top: 20, right: 20, bottom: 20, left: 20};
         vis.width = document.getElementById(vis.parentElement).getBoundingClientRect().width - vis.margin.left - vis.margin.right;
         vis.height = document.getElementById(vis.parentElement).getBoundingClientRect().height - vis.margin.top - vis.margin.bottom;
 
@@ -26,12 +25,33 @@ class RecordsIconsVis {
             .attr('transform', `translate (${vis.margin.left}, ${vis.margin.top})`);
 
         vis.circsPerRow = 6;
-        vis.color = '#3e76ec';
+        vis.color = ['#3e76ec','#66ffaa'];
         vis.opacity = .35;
         vis.padfact = 2.2;
         vis.fontsize = 'small';
         vis.rfact = 1.3;
         vis.r = 40
+
+        vis.x = d3.scaleBand()
+            .domain(d3.range(1896,2020,4).map(d=>vis.parseDate(d)))
+            .range([0, vis.width])
+            .paddingInner(vis.width/500)
+            .paddingOuter(vis.width/500);
+
+        vis.xAxis = d3.axisBottom()
+            .scale(vis.x)
+
+        vis.xAxisGroup = vis.svg.append("g")
+            .attr("class", "x-axis axis")
+            .attr("transform", "translate(0," + vis.height + ")");
+
+        vis.xAxisGroup
+            .call(vis.xAxis)
+            .selectAll('text')
+            .attr('x', '-0.5em')
+            .attr('y', '0.2em')
+            .attr('text-anchor', 'end')
+            .attr('transform', 'rotate(-45)');
 
         vis.wrangleData()
     }
@@ -39,25 +59,7 @@ class RecordsIconsVis {
     wrangleData() {
         let vis = this;
 
-        // gender
-        vis.gender = d3.select("#records-gender").property("value")
-
-        console.log(vis.chosenYear)
-
-        if (vis.gender === 'M') {
-            vis.displayData = vis.mensRecords
-            vis.displayData.forEach((row, index) => {
-                vis.displayData[index]['Records'] = mensRecordMatrix[index]
-            })
-            vis.displayData['years'] = [1896, 1900, 1904, 1908, 1912, 1920, 1924, 1928, 1932, 1936, 1948, 1952, 1956, 1960, 1964, 1968, 1972, 1976, 1980, 1984, 1988, 1992, 1996, 2000, 2004, 2008, 2012, 2016]
-        } else if (vis.gender === 'W') {
-            vis.displayData = vis.womensRecords
-            vis.displayData.forEach((row, index) => {
-                vis.displayData[index]['Records'] = womensRecordMatrix[index]
-                vis.displayData['years'] = [1928, 1932, 1936, 1948, 1952, 1956, 1960, 1964, 1968, 1972, 1976, 1980, 1984, 1988, 1992, 1996, 2000, 2004, 2008, 2012, 2016]
-
-            })
-        }
+        vis.displayData = vis.records
 
         vis.updateVis()
     }
@@ -67,13 +69,9 @@ class RecordsIconsVis {
 
         vis.chosenYear = vis.parseDate(vis.hostData[mapYearIndex].Year)
 
-        console.log(vis.displayData)
-
         vis.circleData = vis.displayData.filter(function (d) {
-            return (d[vis.formatDate(vis.chosenYear)] === '1')
+            return (d['Set'] === vis.formatDate(vis.chosenYear))
         });
-
-        console.log(vis.circleData)
 
         vis.circles = vis.svg.selectAll(`circle`).data(vis.circleData)
 
@@ -90,7 +88,14 @@ class RecordsIconsVis {
             })
             .attr("r", vis.r)
             .style('opacity', vis.opacity)
-            .attr("fill", vis.color);
+            .attr("fill", function(d){
+                if (d.Gender === 'M'){
+                    return vis.color[0]
+                }
+                if (d.Gender === 'W'){
+                    return vis.color[1]
+                }
+            });
 
         vis.icons = vis.svg.selectAll(".icon").data(vis.circleData)
 
