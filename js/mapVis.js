@@ -16,14 +16,17 @@ class MapVis {
     initVis() {
         let vis = this;
 
+        // creating margin convention
         vis.margin = {top: 10, right: 20, bottom: 10, left: 20};
         vis.width = document.getElementById(vis.parentElement).getBoundingClientRect().width - vis.margin.left - vis.margin.right;
 
+        // SVG drawing area
         vis.svg = d3.select("#" + vis.parentElement).append("svg")
             .attr("width", vis.width)
             .attr("height", vis.width)
             .attr('transform', `translate (${vis.margin.left}, ${vis.margin.top})`);
 
+        // creating projection, path, background, lat/long lines
         vis.projection = d3.geoOrthographic()
             .scale(vis.width * .40)
             .translate([vis.width / 2, vis.width / 2])
@@ -47,17 +50,15 @@ class MapVis {
             .attr("fill", "rgba(0,0,0,0)")
             .attr("d", vis.path);
 
+        // getting features
         vis.world = topojson.feature(vis.geoData, vis.geoData.objects.countries).features
 
+        // appending paths
         vis.countries = vis.svg.selectAll(".country")
             .data(vis.world)
             .enter().append("path")
             .attr('class', 'country')
             .attr("d", vis.path)
-
-        vis.tooltip = d3.select("body").append('div')
-            .attr('class', "tooltip")
-            .attr('id', 'pieTooltip')
 
 
         //provided code to make it draggable
@@ -109,8 +110,10 @@ class MapVis {
     updateVis() {
         let vis = this;
 
+        // style countries with base color
         vis.countries.style("fill", function(d) { return vis.countryInfo[d.properties.name].color; })
 
+        // creating starting position for globe
         d3.select(vis).transition()
             .duration(50)
             .tween("rotate", function() {
@@ -123,6 +126,7 @@ class MapVis {
                 }
             });
 
+        // edge case for previous/next buttons, set Greece color
         document.getElementById('previousGames').style.visibility = 'hidden'
         vis.countryInfo['Greece']['color'] = vis.colors[1]
         vis.countries.style("fill", function(d) { return vis.countryInfo[d.properties.name].color; })
@@ -134,12 +138,14 @@ class MapVis {
     spinVis() {
         let vis = this;
 
+        // set colors back to base
         vis.hostData.forEach(d => {
             vis.countryInfo[d.Host]['color'] = vis.colors[0]
         })
 
         // source: https://bl.ocks.org/austinczarnecki/fe80afa64724c9630930
         // source: https://github.com/d3/d3-geo
+        // spin world using selected year
             d3.select(vis).transition()
                 .duration(1250)
                 .tween("rotate", function() {
@@ -152,6 +158,7 @@ class MapVis {
                     }
                 });
 
+        // color host country with right color
         vis.countryInfo[vis.hostData[mapYearIndex].Host]['color'] = vis.colors[1]
         vis.countries.style("fill", function(d) { return vis.countryInfo[d.properties.name].color; })
     }

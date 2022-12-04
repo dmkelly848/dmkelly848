@@ -211,7 +211,7 @@ function previousGames(){
     }
 
     document.getElementById('gamesYear').innerHTML = dataStar[4][mapYearIndex].Year
-    document.getElementById('hostCountryText').innerHTML = dataStar[4][mapYearIndex].Host
+    document.getElementById('hostCountryText').innerHTML = 'Host: ' + dataStar[4][mapYearIndex].Host
 
     mapVis.spinVis()
     recordsLineVis.wrangleData()
@@ -237,7 +237,7 @@ function nextGames(){
     }
 
     document.getElementById('gamesYear').innerHTML = dataStar[4][mapYearIndex].Year
-    document.getElementById('hostCountryText').innerHTML = dataStar[4][mapYearIndex].Host
+    document.getElementById('hostCountryText').innerHTML = 'Host: ' + dataStar[4][mapYearIndex].Host
 
     mapVis.spinVis()
     recordsLineVis.wrangleData()
