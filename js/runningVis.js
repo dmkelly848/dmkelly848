@@ -52,7 +52,92 @@ class RunningVis {
         vis.svg.append("g")
             .attr("class", "y-axis axis");
 
-        //vis.wrangleData()
+        vis.svg.append('line')
+            .attr('x1',35)
+            .attr('x2',35)
+            .attr('y1',0)
+            .attr('y2',vis.height)
+            .attr('class','meter-line')
+            .attr('stroke','black')
+            .attr('stroke-width', 3)
+
+        vis.svg.append('line')
+            .attr('x1',vis.width - 100)
+            .attr('x2',vis.width - 100)
+            .attr('y1',0)
+            .attr('y2',vis.height)
+            .attr('class','meter-line')
+            .attr('stroke','black')
+            .attr('stroke-width', 3)
+
+        vis.svg.append('line')
+            .attr('x1',35 + .25 * (vis.width - 135))
+            .attr('x2',35 + .25 * (vis.width - 135))
+            .attr('y1',0)
+            .attr('y2',vis.height)
+            .attr('class','meter-line')
+            .attr('stroke','white')
+            .attr('stroke-width', 1)
+
+        vis.svg.append('line')
+            .attr('x1',35 + .5 * (vis.width - 135))
+            .attr('x2',35 + .5 * (vis.width - 135))
+            .attr('y1',0)
+            .attr('y2',vis.height)
+            .attr('class','meter-line')
+            .attr('stroke','white')
+            .attr('stroke-width', 1)
+
+        vis.svg.append('line')
+            .attr('x1',35 + .75 * (vis.width - 135))
+            .attr('x2',35 + .75 * (vis.width - 135))
+            .attr('y1',0)
+            .attr('y2',vis.height)
+            .attr('class','meter-line')
+            .attr('stroke','white')
+            .attr('stroke-width', 1)
+
+        vis.svg.append('text')
+            .attr('class', 'meter-label')
+            .attr('x',35)
+            .attr('y',-10)
+            .attr('fill','black')
+            .attr("text-anchor","middle")
+            .text('START')
+
+        // vis.svg.append('text')
+        //     .attr('class', 'meter-label')
+        //     .attr('x',35 + .25 * (vis.width - 135))
+        //     .attr('y',-10)
+        //     .attr('fill','black')
+        //     .attr("text-anchor","middle")
+        //     .text('25')
+        //
+        // vis.svg.append('text')
+        //     .attr('class', 'meter-label')
+        //     .attr('x',35 + .5 * (vis.width - 135))
+        //     .attr('y',-10)
+        //     .attr('fill','black')
+        //     .attr("text-anchor","middle")
+        //     .text('50')
+        //
+        // vis.svg.append('text')
+        //     .attr('class', 'meter-label')
+        //     .attr('x',35 + .75 * (vis.width - 135))
+        //     .attr('y',-10)
+        //     .attr('fill','black')
+        //     .attr("text-anchor","middle")
+        //     .text('75')
+
+        vis.svg.append('text')
+            .attr('class', 'meter-label')
+            .attr('x',vis.width - 100)
+            .attr('y', -10)
+            .attr('fill','black')
+            .attr("text-anchor","middle")
+            .text('FINISH')
+
+        vis.wrangleData()
     }
 
 
@@ -61,7 +146,6 @@ class RunningVis {
         let vis = this;
 
         vis.selectedgender = d3.select("#running-gender").property("value")
-        //console.log(vis.selectedgender)
 
         vis.displayData = vis.resultsData.filter((d) => {
             return (d.Event === '100M' && d.Medal === 'G' && d.Gender === vis.selectedgender);
@@ -69,9 +153,7 @@ class RunningVis {
 
         vis.displayData.sort((a,b)=> a.Year - b.Year);
 
-        //console.log(vis.displayData)
-
-        vis.updateVis()
+        //vis.updateVis()
     }
 
 
@@ -83,9 +165,7 @@ class RunningVis {
         vis.y.domain(vis.displayData.map(function(d) {//console.log(d[""])
             return d[""]; }))
 
-        //console.log(vis.y)
-
-        let bars = vis.svg.selectAll("rect")
+        let bars = vis.svg.selectAll(".running-bar")
             .data(vis.displayData);
 
         bars.exit().remove()
@@ -106,6 +186,20 @@ class RunningVis {
             .attr("width", d => vis.width - 135)
             .attr("fill", "blue")
 
+        let startgates = vis.svg.selectAll(".gate")
+            .data(vis.displayData);
+
+        startgates.exit().remove()
+
+        startgates.enter().append("rect")
+            .attr("class", "gate")
+            .merge(startgates)
+            .attr("x", 0)
+            .attr("y", d => vis.y(d[""]))
+            .attr("width", 35)
+            .attr("height", vis.y.bandwidth())
+            .attr("fill", "blue")
+
         let year_labels = vis.svg.selectAll(".year-label")
             .data(vis.displayData)
 
@@ -114,9 +208,16 @@ class RunningVis {
         year_labels.enter().append("text")
             .attr("class","year-label")
             .merge(year_labels)
-            .attr("fill", "black")
-            .attr("y", d => vis.y(d[""]) + 12)
-            .attr("x", 0)
+            .attr("fill", "white")
+            .attr("y", function(d) {
+                if (d.Gender ==='M'){
+                    return vis.y(d[""]) + 10
+                }
+                if (d.Gender === 'W'){
+                    return vis.y(d[""]) + 12
+                }
+            })
+            .attr("x", 5)
             .attr("text-anchor","begin")
             .text(d => vis.formatDate(d.Year))
 
@@ -159,5 +260,94 @@ class RunningVis {
                 return 1000 * d.Clean_Result;
             })
             .text(d => d.Name)
+
+
+        vis.svg.selectAll('text').exit().remove()
+        vis.svg.selectAll('.meter-line').remove()
+
+        vis.svg.append('line')
+            .attr('x1',35)
+            .attr('x2',35)
+            .attr('y1',0)
+            .attr('y2',vis.height)
+            .attr('class','meter-line')
+            .attr('stroke','black')
+            .attr('stroke-width', 3)
+
+        vis.svg.append('line')
+            .attr('x1',vis.width - 100)
+            .attr('x2',vis.width - 100)
+            .attr('y1',0)
+            .attr('y2',vis.height)
+            .attr('class','meter-line')
+            .attr('stroke','black')
+            .attr('stroke-width', 3)
+
+        vis.svg.append('line')
+            .attr('x1',35 + .25 * (vis.width - 135))
+            .attr('x2',35 + .25 * (vis.width - 135))
+            .attr('y1',0)
+            .attr('y2',vis.height)
+            .attr('class','meter-line')
+            .attr('stroke','white')
+            .attr('stroke-width', 1)
+
+        vis.svg.append('line')
+            .attr('x1',35 + .5 * (vis.width - 135))
+            .attr('x2',35 + .5 * (vis.width - 135))
+            .attr('y1',0)
+            .attr('y2',vis.height)
+            .attr('class','meter-line')
+            .attr('stroke','white')
+            .attr('stroke-width', 1)
+
+        vis.svg.append('line')
+            .attr('x1',35 + .75 * (vis.width - 135))
+            .attr('x2',35 + .75 * (vis.width - 135))
+            .attr('y1',0)
+            .attr('y2',vis.height)
+            .attr('class','meter-line')
+            .attr('stroke','white')
+            .attr('stroke-width', 1)
+
+        vis.svg.append('text')
+            .attr('class', 'meter-label')
+            .attr('x',35)
+            .attr('y',-10)
+            .attr('fill','black')
+            .attr("text-anchor","middle")
+            .text('START')
+
+        vis.svg.append('text')
+            .attr('class', 'meter-label')
+            .attr('x',35 + .25 * (vis.width - 135))
+            .attr('y',-10)
+            .attr('fill','black')
+            .attr("text-anchor","middle")
+            .text('25')
+
+        vis.svg.append('text')
+            .attr('class', 'meter-label')
+            .attr('x',35 + .5 * (vis.width - 135))
+            .attr('y',-10)
+            .attr('fill','black')
+            .attr("text-anchor","middle")
+            .text('50')
+
+        vis.svg.append('text')
+            .attr('class', 'meter-label')
+            .attr('x',35 + .75 * (vis.width - 135))
+            .attr('y',-10)
+            .attr('fill','black')
+            .attr("text-anchor","middle")
+            .text('75')
+
+        vis.svg.append('text')
+            .attr('class', 'meter-label')
+            .attr('x',vis.width - 100)
+            .attr('y', -10)
+            .attr('fill','black')
+            .attr("text-anchor","middle")
+            .text('FINISH')
     }
 }

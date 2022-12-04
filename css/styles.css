@@ -165,6 +165,9 @@ li{
     font-size: 1.3vh;
 }
 
+.meter-label{
+    font-size: 2.3vh;
+}
 
 /***************
  Button Styling
@@ -456,7 +459,7 @@ li{
 
 
 
-.running-bar{
+.running-bar, .gate{
     fill: indianred;
 }
 
