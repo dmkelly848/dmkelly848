@@ -2,13 +2,12 @@
 *      Syringe Vis          *
 * * * * * * * * * * * * * */
 
+//This is a custom svg visualization used in the doping panel
 class SyringeVis {
 
-    constructor(parentElement, resultsData) {
+    constructor(parentElement) {
         this.parentElement = parentElement;
-        this.resultsData = resultsData;
-        this.formatDate = d3.timeFormat("%Y");
-        this.parseDate = d3.timeParse("%Y");
+        //Represents place in the timeline, matches that in lineGraph.js
         this.state = 0;
 
         this.initVis()
@@ -30,6 +29,7 @@ class SyringeVis {
             .append("g")
             .attr("transform", "translate(" + vis.margin.left + "," + vis.margin.top + ")");
 
+        //Custom paths, sf is a scaling factor that will adjust based on screen size
         let sF = (vis.width*vis.height)/280000;
         let pathMain = "M " + 201.6*sF + " " + 627*sF + " L " + 235.2*sF + " "+ 759*sF + " L " + 268.8*sF + " " + 627*sF + " L "+
             336*sF + " " + 627*sF + " V " + 209*sF + " H " + 134.4*sF + " V " + 627*sF + " M " + 201.6*sF + " " + 209*sF + " V " +
@@ -37,7 +37,6 @@ class SyringeVis {
             100.8*sF + " " + 165*sF + " " + 100.8*sF + " " + 121*sF + " C " + 134.4*sF + " " + 99*sF + " " + 201.6*sF + " " + 99*sF + " " + 235.2*sF + " " + 99*sF +
             " C " + 268.8*sF + " " + 99*sF + " " + 336*sF + " " + 99*sF + " " + 369.6*sF + " " + 121*sF + " C " + 369.6*sF + " " +
             165*sF + " " + 302.4*sF + " " + 143*sF + " " + 268.8*sF + " " + 165*sF + " M " + 134*sF + " " + 626*sF + " L " + 200*sF + " " + 625*sF;
-
 
         vis.outline = vis.svg.append("path")
             .attr("d",pathMain)
@@ -81,6 +80,8 @@ class SyringeVis {
             .attr("d", '')
             .attr("fill", "green");
 
+
+        //First text element
         document.getElementById("text0").innerHTML= "<span class = \"olympicHeadText chartTitle\">1952:</span> Athletes begin using stimulants that gained prevalence during WWII.";
 
         vis.wrangleData()
@@ -95,7 +96,7 @@ class SyringeVis {
     }
 
 
-
+    //Updates state of syringe
     updateVis() {
         let vis = this;
         let sF = (vis.width*vis.height)/280000;
@@ -127,7 +128,7 @@ class SyringeVis {
 
     }
 
-
+    //Changes state and text when user clicks "next"
     fillUp(){
         let vis = this;
         if(vis.state!==3){
@@ -144,6 +145,7 @@ class SyringeVis {
 
     }
 
+    //Changes state and text when user clicks "back"
     emptyDown(){
         let vis = this;
         if(vis.state !== 0){

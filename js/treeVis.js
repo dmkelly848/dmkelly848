@@ -3,13 +3,13 @@
 * * * * * * * * * * * * * */
 // based on https://d3-graph-gallery.com/graph/treemap_basic.html
 
+//Shows countries sized based on number of medals earned
 class TreeVis {
 
     constructor(parentElement, resultsData, continentData) {
         this.parentElement = parentElement;
         this.resultsData = resultsData;
         this.continentData = continentData;
-        this.formatDate = d3.timeFormat("%Y");
 
         this.initVis()
     }
@@ -40,10 +40,6 @@ class TreeVis {
             'South America': '#ffce01',
         }
 
-        // // add tooltip
-        // vis.tooltipGroup = vis.svg.append('g')
-        //     .attr('id', 'treemapTooltip')
-        // vis.tooltip = vis.tooltipGroup.append('div')
 
         vis.legendGroup = vis.svg.append('g')
             .attr('class',"legendgroup")
@@ -60,8 +56,6 @@ class TreeVis {
 
     wrangleData() {
         let vis = this;
-
-        //console.log(vis.resultsData)
 
         // initialize necessary structure for treemap and d3.stratify()
         vis.displayData = [
@@ -98,7 +92,6 @@ class TreeVis {
         )
 
 
-        //console.log(vis.displayData)
         vis.updateVis()
     }
 
@@ -118,7 +111,6 @@ class TreeVis {
             .size([vis.width, vis.height])
             .padding(3)
             (vis.root)
-        //console.log(vis.root.leaves())
 
         vis.rects = vis.rectGroup.selectAll("rect")
             .data(vis.root.leaves());
@@ -150,36 +142,6 @@ class TreeVis {
                     resetToWorld();
                 }
             })
-            // .on('mouseover', function(event, d) {
-            //     vis.svg.selectAll('rect')
-            //         .style('opacity', '0.4')
-            //     d3.select(this) // change color or selected country
-            //         .style('stroke-width', '2px')
-            //         .style('fill', d=>vis.colors[d.data.continent])
-            //         .style('opacity', 1)
-            //     // vis.tooltipGroup
-            //     //     .attr("transform", `translate(${d.x0+20},${d.y0-20})`)
-            //     // vis.tooltip
-            //     //     .attr('font-size', 'medium')
-            //     //     .style("left", event.pageX + 20 + "px")
-            //     //     .style("top", event.pageY + "px")
-            //     //     .style('fill', 'black')
-            //     //     .html(`
-            //     //      <div style="border: thin solid grey; border-radius: 5px; background: lightgrey; padding: 20px">
-            //     //          <h3>${d.data.country}</h3>
-            //     //          <h4> Medals: ${d.data.medal_count}</h4>
-            //     //      </div>`);
-            // })
-            // .on('mouseout', function(event, d) {
-            //     vis.svg.selectAll('rect')
-            //         .style('stroke-width', '1px')
-            //         .style('opacity', 1)
-            //     // vis.tooltip
-            //     //     .style("opacity", 0)
-            //     //     .style("left", 0)
-            //     //     .style("top", 0)
-            //     //     .html(``);
-            // })
         vis.rects.exit();
 
         vis.labels = vis.rectGroup.selectAll("text")
@@ -205,20 +167,8 @@ class TreeVis {
             .attr('y', 0)
             .attr('x', function(d,index){return -3.1*vis.width/7.5+index*vis.width/7})
             .attr("fill", d=>vis.colors[d])
-            .attr('stroke', 'black')
-            // .on('click', function(event, d) {
-            //     vis.svg.selectAll('rect')
-            //         .style('opacity', '0.4')
-            //     d3.select(this) // change color or selected country
-            //         .style('stroke-width', '2px')
-            //         .style('fill', d=>vis.colors[d.data.continent])
-            //         .style('opacity', 1)
-            //     selCountry = d.data.country
-            //     document.getElementById("resetbutton").disabled = false;
-            //     dashMedals.wrangleData()
-            //     dashBar1.wrangleData()
-            //     dashBar2.wrangleData()
-            // })
+            .attr('stroke', 'black');
+
         vis.legendText = vis.legendGroup.selectAll('.legend-label')
             .data(Object.keys(vis.colors))
             .enter().append('text')

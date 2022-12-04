@@ -177,7 +177,7 @@ function resetToWorld(){
 function expandReason(reason, data){
     reasonVis = new ReasonVis('reasonsVis', dataStar,reason);
     if(reason==="Doping"){
-        syringeVis = new SyringeVis('syringevis',dataStar[0])
+        syringeVis = new SyringeVis('syringevis')
         lineGraph = new LineGraph('lineGraph',dataStar[0])
     }else if(reason==="Equipment"){
         equipVis = new EquipmentVis('equip');
