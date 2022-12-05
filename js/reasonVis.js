@@ -122,10 +122,10 @@ class ReasonVis {
                 "                <button type=\"button\" class=\"btn btn-light\" onclick = mainPage()>Back to Reasons</button>\n" +
                 "            </div> <div class=\"container-fluid\" style = \"padding-left: 100px; padding-right:100px;\">\n" +
                 "            <h3 class = \"olympicHeadText chartTitle\">Diet:</h3>\n" +
-                "            <div class=\"row olympicBodyText\" style = \"font-size: 2vh; \">\n" +
+                "            <div class=\"row olympicBodyText\" style = \"font-size: 2.2vh; \">\n" +
                 "                <div id= \"dietVis\" class=\"col-6\"  >\n" +
                 "                </div>\n" +
-                "                <div class=\"col-6 olympicBodyText\" style = \"padding-top: 120px; padding-left: 100px\">\n" +
+                "                <div class=\"col-6 olympicBodyText textbox\" >\n" +
                 "                    <ul style = \"list-style-image: url('img/laurel.png')\">\n" +
                 "                        <li>The first nutritional vitamin was discovered and defined in 1926... 30 years after the first\n" +
                 "                        modern Olympic Games.</li>\n" +
@@ -149,7 +149,7 @@ class ReasonVis {
                 "                <button type=\"button\" class=\"btn btn-light\" onclick = mainPage()>Back to Reasons</button>\n" +
                 "            </div><div class=\"container-fluid\" style = \"padding-left: 100px; padding-right:100px;\">\n" +
                 "            <h3 class = \"olympicHeadText chartTitle\">Coaching:</h3>\n" +
-                "            <div class=\"row olympicBodyText\" style = \"font-size: 2.5vh; height: 35vh; \">\n" +
+                "            <div class=\"row olympicBodyText\" style = \"font-size: 2.5vh; height: 37vh; \">\n" +
                 "                <div id= \"globLinVis\" class=\"col-7\"  >\n" +
                 "                    <ul style = \"list-style-image: url('img/laurel.png')\">\n" +
                 "                        <li>Coaching blossomed as an official profession in the 1970s. </li>\n" +
@@ -188,10 +188,10 @@ class ReasonVis {
                 "                <button type=\"button\" class=\"btn btn-light\" onclick = mainPage()>Back to Reasons</button>\n" +
                 "            </div><div class=\"container-fluid\" style = \"padding-left: 100px; padding-right:100px;\">\n" +
                 "            <h3 class = \"olympicHeadText chartTitle\">Global Access:</h3>\n" +
-                "            <div class=\"row olympicBodyText\" style = \"font-size: 2.2vh;height: 72vh;\">\n" +
+                "            <div class=\"row olympicBodyText\" style = \"font-size: 2.0vh;height: 72vh;\">\n" +
                 "                <div id= \"globLinVis\" class=\"col-8\">\n" +
                 "                </div>\n" +
-                "                <div class=\"col-4 olympicBodyText\" >\n" +
+                "                <div class=\"col-4 olympicBodyText textbox\" >\n" +
                 "                <ul style = \"list-style-image: url('img/laurel.png')\">\n" +
                 "                        <li>Studies show that foreign-born athletes comprised 8.1% of the USA's 2012 Summer Olympics Team. This is up from 7.0% in 1948.</li>\n" +
                 "                        <li>Just as notable is the diversity of these foreign-born athletes; the graph to the left shows that athletes are\n" +
@@ -199,7 +199,7 @@ class ReasonVis {
                 "                        <li>This change can be attributed to globalization. People born anywhere can train and aspire to join\n" +
                 "                        a first-world nation's team.</li><li>In 2016, for example, 4 Kenyan-born runners were granted citizenship through working\n" +
                 "                        in the US army; they were permitted to compete for the USA Olympic team.</li>\n" +
-                "                    </ul></div>\n" +
+                "                    </ul></div>\n <div style = \"height: 5vh;\"></div>" +
                 "            </div>\n" +
                 "        </div>"
         }
