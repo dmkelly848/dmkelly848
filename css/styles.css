@@ -201,16 +201,22 @@ li{
 }
 
 .background-2{
-    background: rgba(155,155,155,0.1);
+    /*background: black;rgba(155,155,155,0.2);*/
+    background: black;
+}
+
+.background-3{
+    background: rgba(155,155,155,0.2)
 }
 
 .textbox{
     background-color: white;
     border: solid black 5px;
-    border-radius: 50px;
+    border-radius: 20px;
     padding-top: 5vh;
     padding-bottom: 5vh;
 }
+
 
 
 
@@ -235,13 +241,10 @@ li{
 }
 
 #title-image-row{
-    height: 30%;
+    height: 30vh;
 }
 
 #title-image{
-    background: white;
-    border: solid black 5px;
-    border-radius: 50px;
     display: block;
     margin-left: auto;
     margin-right: auto;
@@ -252,9 +255,10 @@ li{
 
 #title-box{
     margin: auto;
-    width: 90%;
+    width: 85%;
     align-self: center;
-    margin-top: 10vh;
+    margin-top: 7vh;
+    padding-bottom: 5vh;
     margin-bottom: 3vh;
 }
 
@@ -270,8 +274,8 @@ li{
     -webkit-transform: rotate(45deg);
 }
 
-#scroll-text{
-    padding-top: 5vh;
+.scroll-text{
+    padding-top: 4vh;
     font-size: 50%;
     margin-bottom: 0px;
 }
@@ -282,6 +286,9 @@ li{
 /***************
  Usain Bolt Slide
 ***************/
+#bolt-slide{
+    /*border-top: 1px solid black;*/
+}
 #bolt-slide-right{
     text-align: center;
     padding-top: 15vh;
@@ -291,43 +298,51 @@ li{
 }
 
 #bolt-image{
-    max-height: 70%;
+    max-height: 80%;
     width: auto;
     border: #3e76ec solid 5px;
     border-radius: 50px;
 }
 
 .bolt-question{
-    font-size:4.5vh;
-    text-align: center;
+    text-align: left;
     padding: 3vh;
     margin-bottom: 3vh;
     margin-left: auto;
     margin-right: auto;
     width: 80%;
     border-color: #3e76ec;
-    box-shadow: 10px 10px lightgray;
+    box-shadow: 10px 10px #b2b2b2;
+    margin-top: 3vh;
 }
 
-#bolt-question1{
-    margin-top: 6vh;
-    width:40%;
+.bolt-question li{
+    font-size: smaller;
+    margin-top:1vh;
+}
+
+#bolt-question0{
+    margin-top: 0vh;
 }
 
 
 /***************
  Overview Slide
 ***************/
-#overview-text{
-    margin-left: auto;
-    margin-right: auto;
-    font-size: 5vh;
-    width: 80%;
+#overview-text1 {
+    width: 120%;
     height: 50%;
+    background: rgb(188, 205, 243)
+}
+
+.solo-text{
+    border: none;
+    border-radius: 0;
+    padding: 2vh 5vw 10vh 5vw;
+    font-size: 2.8vh;
+    font-weight: light;
     margin-top: auto;
     margin-bottom: auto;
-    font-style: italic;
-    background: rgb(188, 205, 243)
 }
 
 
@@ -346,8 +361,13 @@ li{
 
 #eventsVis{
     margin-top: 2vh;
+    width: 80%;
     height: 68vh;
     font-size: 3.5vh;
+    padding-top: 2vh;
+    background: white;
+    border: 5px #3e76ec solid;
+    border-radius: 50px;
 }
 
 .italicSty{
@@ -367,6 +387,7 @@ li{
     /*border-top: solid #ffce01;*/
     /*border-bottom: solid #ffce01;*/
     padding-bottom: 10vh;
+    color: white;
 }
 
 #tree-vis-container{
@@ -382,6 +403,7 @@ li{
 #medal-info-container{
     height: 75vh;
     width: 30vw;
+    fill: white;
 }
 
 #medal-info-title{
@@ -427,6 +449,34 @@ li{
     fill: white;
 }
 
+.axisWhite line{
+    stroke: white;
+}
+
+.axisWhite path{
+    stroke: white;
+}
+
+.axisWhite text{
+    fill: white;
+}
+
+#treemap-instructions{
+    font-size: 50%;
+    margin-bottom: 2vh;
+    margin-top: 0vh;
+    margin-left: 1vw;
+}
+
+
+/***************
+ Trend Intro Slide
+***************/
+#trends-intro-text{
+    background: #c5c5c5;
+
+}
+
 
 /***************
  Trend Slides
@@ -434,7 +484,7 @@ li{
 .trend-slide{
     height: 97vh;
     padding-bottom: 1vh;
-    padding-top: 5vh;
+    padding-top: 3vh;
 }
 
 #trends-slide1{
@@ -445,6 +495,18 @@ li{
     /*border-bottom: solid #000000;*/
 }
 
+#phase31L{
+    padding-top: 10vh;
+}
+.trend-text{
+    text-align: left;
+    padding: 3vh;
+    margin-bottom: 3vh;
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: 10px 10px #b2b2b2;
+}
+
 #hurdleVis{
     margin-left: 5vh;
     margin-right: 5vh;
@@ -452,13 +514,17 @@ li{
 }
 
 #slider-instructions1{
-    margin-top: 4vh;
-    margin-left: 5vh;
+    margin-top: 5vh;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 #slider-instructions2{
-    margin-top: 0vh;
-    margin-left: 5vh;
+    margin-top: 1vh;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
     margin-bottom: 5vh;
 }
 

@@ -23,7 +23,7 @@ class BandVis {
         //define type-dependent variables
         vis.circs = 10;
         vis.padfact = 1;
-        vis.opacity = 0.4;
+        vis.opacity = 1;
         vis.rfact = 1.3;
         // credit to: https://stackoverflow.com/questions/28572015/how-to-select-unique-values-in-d3-js-from-data
         vis.tempData = [...new Set(vis.resultsData.map(d => d.Event))];
@@ -32,19 +32,19 @@ class BandVis {
             let temp = {}
             temp['event'] = event;
             if(idx % 5 === 0)
-                temp['color'] = '#3e76ec';
+                temp['color'] = '#BCCDF3';
             else if(idx % 5 === 1)
-                temp['color'] = '#ffce01';
+                temp['color'] = '#fce6ab';
             else if(idx % 5 === 2)
-                temp['color'] = '#000000';
+                temp['color'] = '#c0c0c0';
             else if(idx % 5 === 3)
-                temp['color'] = '#179a13';
+                temp['color'] = '#b7d9b5';
             else
-                temp['color'] = '#ff0000';
+                temp['color'] = '#ffb5b5';
             vis.circleData.push(temp);
         })
 
-        vis.r = vis.width / (vis.circs * 5);
+        vis.r = vis.width / (vis.circs * 4.5);
 
 
         // // SVG drawing area

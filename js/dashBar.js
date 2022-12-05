@@ -79,14 +79,14 @@ class DashBar {
 
         // add y axis
         vis.yAxis = d3.axisLeft()
-            .scale(vis.y);
+            .scale(vis.y)
 
         // create axis groups
         vis.xAxisGroup = vis.svg.append("g")
-            .attr("class", "x-axis axis")
+            .attr("class", "x-axis axis axisWhite")
             .attr("transform", "translate(0," + vis.height + ")");
         vis.yAxisGroup = vis.svg.append("g")
-            .attr("class", "y-axis axis");
+            .attr("class", "y-axis axis axisWhite");
 
         // add tooltip area
         vis.tooltip = d3.select("body").append('div')
@@ -151,9 +151,9 @@ class DashBar {
             .on('mouseover', function(event, d) {
                 d3.select(this) // changes color of selected bar
                     .attr('stroke-width', '2px')
-                    .attr('stroke', 'black')
+                    .attr('stroke', 'white')
                     .style("opacity", 1)
-                    .style('fill', '#ffce01')
+                    .style('fill', '#f6a1d4')
                 vis.tooltip // adds tooltip
                     .style("opacity", 1)
                     .style("left", event.pageX + 10 + "px")
@@ -172,7 +172,7 @@ class DashBar {
                             return vis.colors[vis.continentData.find(d => d.Code === selCountry).Continent];
                         }
                         else
-                            return '#555555';
+                            return '#676767';
                     })
                     .style("opacity", 1)
                 vis.tooltip
@@ -197,7 +197,7 @@ class DashBar {
                     return vis.colors[vis.continentData.find(d => d.Code === selCountry).Continent];
                 }
                 else
-                    return '#555555';
+                    return '#676767';
             });
 
 
@@ -210,7 +210,8 @@ class DashBar {
             .attr('x', '-0.5em')
             .attr('y', '0.2em')
             .attr('text-anchor', 'end')
-            .attr('transform', 'rotate(-45)');
+            .attr('transform', 'rotate(-45)')
+            .attr('fill', 'white');
         vis.yAxisGroup
             .transition()
             .duration(1000)

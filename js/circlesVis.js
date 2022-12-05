@@ -32,10 +32,11 @@ class CircleVis {
         if(vis.type===1) {
             circsPerRow = 9;
             padfact = 2.2;
-            color = '#3e76ec'
-            opacity = 0.35;
+            color = '#BCCDF3';
+            opacity = 0.95;
             fontsize = 'small';
             rfact = 1.3;
+            vis.margin = {top: 20, right: 20, bottom: 30, left: 20};
             vis.circleData = [...new Set(vis.resultsData.map(d => d.Event))];
 
             r = Math.min(vis.width/(circsPerRow*4), vis.height/((vis.circleData.length/circsPerRow)*6));
@@ -46,9 +47,9 @@ class CircleVis {
             padfact = 2;
             rfact = 1;
             r = vis.width/(circsPerRow*4)
-            opacity = 0.35;
+            opacity = 1;
             fontsize = 'normal'
-            color = '#ff0000'
+            color = '#ffb5b5'
         }
 
         // // SVG drawing area
@@ -175,7 +176,7 @@ class CircleVis {
                 .attr("y2", vis.height*placement);
 
             vis.bigCircle = vis.svg.append('circle')
-                .style("fill", "#3e76ec")
+                .style("fill", "#BCCDF3")
                 .style('opacity', 0)
                 .attr("r", r*2.5)
                 .attr("cy", vis.height*placement+3.5*r)
@@ -220,9 +221,9 @@ class CircleVis {
                 .attr("fill",'#FFFFFF')
                 .on('click', function(event, d){
                     let circ = d3.select(`#circ-${d.split(' ').join('')}`);
-                    if(circ.attr('fill')==='#3e76ec' || circ.attr('fill')==='grey') { // condition on first or second click on object
+                    if(circ.attr('fill')==='#BCCDF3' || circ.attr('fill')==='grey') { // condition on first or second click on object
                         d3.selectAll(`.circle${vis.type}`)
-                            .style('opacity', opacity-0.1)
+                            .style('opacity', opacity-0.5)
                             .attr('fill', 'grey')
                             .attr('stroke', undefined)
                         circ.attr('stroke-width', '3px')
@@ -241,7 +242,7 @@ class CircleVis {
                     else{
                         d3.selectAll(`.circle${vis.type}`)
                             .style('opacity', opacity)
-                            .attr('fill', '#3e76ec')
+                            .attr('fill', '#BCCDF3')
                         circ.attr('stroke-width', '0px')
                             .attr('stroke', undefined)
                             .style("opacity", opacity)
