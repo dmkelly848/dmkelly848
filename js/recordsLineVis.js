@@ -26,7 +26,7 @@ class RecordsLineVis {
             .attr("height", vis.height)
             .attr('transform', `translate (${vis.margin.left}, ${vis.margin.top})`);
 
-        // creating scales for barplot: scalelinear and scaleband, and creating axes
+        // creating scales for barplot: scalelinear and scaleband, and creating axis
         vis.x = d3.scaleLinear()
             .domain([1896,2016])
             .range([.01 * vis.width, vis.width * .9])
@@ -39,7 +39,7 @@ class RecordsLineVis {
             .ticks()
 
         vis.xAxisGroup = vis.svg.append("g")
-            .attr("class", "x-axis axis")
+            .attr("class", "x-axis axis axisWhite")
             .attr("transform", "translate(0," + vis.height * .95 + ")");
 
         vis.xAxisGroup
@@ -52,20 +52,6 @@ class RecordsLineVis {
             .domain(vis.records.map(d => d.Competition))
             .range([.02 * vis.height,.92 * vis.height])
             .paddingInner(.8)
-
-        // vis.yAxis = d3.axisLeft()
-        //     .scale(vis.y)
-        //     // https://stackoverflow.com/questions/19787925/create-a-d3-axis-without-tick-labels
-        //     .tickSize(0)
-        //     .tickValues([])
-        //     .ticks();
-        //
-        // vis.yAxisGroup = vis.svg.append("g")
-        //     .attr("class", "y-axis axis")
-        //     .attr("transform", "translate(" + vis.width * .01 + ", 0)");
-        //
-        // vis.yAxisGroup
-        //     .call(vis.yAxis)
 
         // creating tooltip
         vis.tooltip = d3.select("body").append('div')
@@ -173,13 +159,13 @@ class RecordsLineVis {
                     return '#ADDEFF'
                 }
                 if (d.Gender === 'W' && d.Set !== vis.hostData[mapYearIndex].Year){
-                    return '#ffc0af'
+                    return '#ffb0af'
                 }
                 if (d.Gender === 'M' && d.Set === vis.hostData[mapYearIndex].Year){
                     return '#3e76ec'
                 }
                 if (d.Gender === 'W' && d.Set === vis.hostData[mapYearIndex].Year){
-                    return '#ff4500'
+                    return '#FF5F15'
                 }
             })
             // adding tooltip to circles
@@ -233,9 +219,9 @@ class RecordsLineVis {
         vis.eventnames.enter().append("text")
             .attr('class', `event-name`)
             .merge(vis.eventnames)
-            .attr("x", vis.x(vis.hostData[mapYearIndex].Year) + 3)
+            .attr("x", vis.x(vis.hostData[mapYearIndex].Year) + 5)
             .attr("y", d=> vis.y(d.Competition) + 2.5 * vis.y.bandwidth())
-            .attr('fill','black')
+            .attr('fill','white')
             .text(d=>d.Competition)
     }
 

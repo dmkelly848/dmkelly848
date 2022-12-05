@@ -568,15 +568,12 @@ li{
  Globe Slide
 ***************/
 #globe-slide{
-    height: 94vh;
-    /*border-top: solid #179a13;*/
-    /*border-bottom: solid #179a13;*/
-    /*padding-bottom: 50px;*/
-    /*padding-top: 30px;*/
+    height: 100vh;
 }
 
 #globe-vis-header{
     height: 15%;
+    color: white;
 }
 
 #globe-vis-container{
@@ -584,10 +581,17 @@ li{
 }
 
 #recordsLinesVis{
-    height: 85%;
+    height: 100%;
 }
 
-
+#previousGames, #nextGames{
+    cursor: pointer;
+    float: right;
+    border-radius: 1vh;
+    background: grey;
+    color: white;
+    font-size: small;
+}
 
 #why-text{
     width: 120%;
