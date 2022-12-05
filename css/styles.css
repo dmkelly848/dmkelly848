@@ -31,6 +31,7 @@ h4{
 
 li{
     margin-bottom: 2vh;
+
 }
 
 .olympicHeadText{
@@ -168,6 +169,7 @@ li{
     font-size: 2.3vh;
 }
 
+
 /***************
  Button Styling
 ***************/
@@ -276,13 +278,36 @@ li{
 /***************
  Usain Bolt Slide
 ***************/
-#bolt-slide{
-    /*border-top: solid #3e76ec;*/
-    /*border-bottom: solid #3e76ec;*/
+#bolt-slide-right{
+    text-align: center;
+    padding-top: 15vh;
+    display: flex;
+    justify-content: center;
+    max-height: 100%;
 }
 
-#bolt-slide-left{
-    border-right: dashed #3e76ec;
+#bolt-image{
+    max-height: 70%;
+    width: auto;
+    border: #3e76ec solid 5px;
+    border-radius: 50px;
+}
+
+.bolt-question{
+    font-size:5vh;
+    text-align: center;
+    padding: 3vh;
+    margin-bottom: 3vh;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+    border-color: #3e76ec;
+    box-shadow: 10px 10px lightgray;
+}
+
+#bolt-question1{
+    margin-top: 6vh;
+    width:40%;
 }
 
 
