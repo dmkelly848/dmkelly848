@@ -218,7 +218,7 @@ function mainPage(data){
         div.removeChild(div.firstChild);
     }
     document.getElementById("original").innerHTML="<div class=\"row phase 5a\">\n" +
-        "                    <div class = \"row center olympicBodyText\" style = \"padding-top: 30px;\">\n" +
+        "                    <div class = \"row center olympicBodyText\">\n" +
         "                        <div class  = \"col circlesContain\" id=\"reasonsVis\">\n" +
         "                        </div>\n" +
         "                    </div>\n" +

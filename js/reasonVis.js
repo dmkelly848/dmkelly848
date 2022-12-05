@@ -21,11 +21,11 @@ class ReasonVis {
         if(vis.reason === "Doping"){
             document.getElementById("original").innerHTML = "            <div class=\"container-fluid\"> <h3 class = \"olympicHeadText chartTitle\">Doping:</h3> \n" +
                 "                <div class = \"col-12 center\" style = \"height: 10vh\"> \n" +
-                "                <button type=\"button\" onclick = mainPage() class=\"btn btn-light\"  style = \"font-size = 30px\" >Back to Reasons</button>\n" +
+                "                <button type=\"button\" onclick = mainPage() class=\"btn btn-dark\"  style = \"font-size = 30px\" >Back to Reasons</button>\n" +
                 "            </div>\n" +
                 "                <div class=\"row phase5b redText olympicBodyFont\">\n" +
                 "                    <div class=\"col-3\">\n" +
-                "                        <div class = \"row center\" style = \"padding-left: 50px\">\n" +
+                "                        <div class = \"row center\" style = \"padding-left: 0.5vw\">\n" +
                 "                            <div class = \"col-6\">\n" +
                 "                                <button type=\"button\" class=\"btn btn-primary\" onclick = syringeDown()>Back</button>\n" +
                 "                            </div>\n" +
@@ -41,7 +41,7 @@ class ReasonVis {
                 "                                <div class=\"col-4\">\n" +
                 "                                   <div style = \"height:10vh\"></div>\n" +
                 "                                    <div id = \"text3\" class=\" \" style = \"height:12vh\"></div>\n" +
-                "                                    <div id = \"text2\" class=\" \" style = \"height:17vh\"></div>\n" +
+                "                                    <div id = \"text2\" class=\" \" style = \"height:15vh\"></div>\n" +
                 "                                    <div id = \"text1\" class=\" \" style = \"height:13vh\"></div>\n" +
                 "                                    <div id = \"text0\" class=\" \" style = \"height:13vh\"></div>\n" +
                 "                                </div>\n" +
@@ -57,22 +57,22 @@ class ReasonVis {
         }else if(vis.reason === "Equipment"){
             //Insert HTML Code
             document.getElementById("original").innerHTML= "<div class = \"col-12 center\">\n" +
-                "                <button type=\"button\" class=\"btn btn-light\" onclick = mainPage()>Back to Reasons</button>\n" +
+                "                <button type=\"button\" class=\"btn btn-dark\" onclick = mainPage()>Back to Reasons</button>\n" +
                 "            </div><div class=\"container-fluid\" style = \"padding-left: 100px; padding-right: 100px;\">\n" +
                 "        <div class=\"row\">\n" +
-                "            <h3 class = \"olympicHeadText chartTitle\">Equipment:<span class = \"italicSty\"> Click on Icons to Learn More! </span></h3>\n" +
+                "            <h3 class = \"olympicHeadText chartTitle\">Equipment:<span class = \"italicSty\" style = \"font-size:2vh\"> Click on Icons to Learn More! </span></h3>\n" +
                 "            <div class = \"col-4 centerText chartTitle\"> <span class = \"olympicHeadText\">1896 Athens Olympics</span>\n" +
                 "                <div style= \"height: 3vh\"></div>\n" +
-                "                <div id = \"texte1b\" class=\"olympicBodyText\" style = \"height:24vh; font-size: 2vh\"> </div>\n" +
-                "                <div id = \"texte2b\" class=\"olympicBodyText\" style = \"height:20vh; font-size: 2vh\"></div>\n" +
-                "                <div id = \"texte3b\" class=\"olympicBodyText\" style = \"height:19vh; font-size: 2vh\"></div>\n" +
+                "                <div id = \"texte1b\" class=\"olympicBodyText\" style = \"height:22vh; font-size: 2vh\"> </div>\n" +
+                "                <div id = \"texte2b\" class=\"olympicBodyText\" style = \"height:18vh; font-size: 2vh\"></div>\n" +
+                "                <div id = \"texte3b\" class=\"olympicBodyText\" style = \"height:17vh; font-size: 2vh\"></div>\n" +
                 "            </div>\n" +
                 "            <div class = \"col-4\" id =\"equip\"></div>\n" +
                 "            <div class = \"col-4 centerText chartTitle\"> <span class = \"olympicHeadText\">Modern Olympics</span>\n" +
                 "                <div style= \"height: 3vh\"></div>\n" +
-                "               <div id = \"texte1a\" class=\"olympicBodyText\" style = \"height:24vh; font-size: 2vh\"></div>\n" +
-                "                <div id = \"texte2a\" class=\"olympicBodyText\" style = \"height:20vh; font-size: 2vh\"></div>\n" +
-                "                <div id = \"texte3a\" class=\"olympicBodyText\" style = \"height:19vh; font-size: 2vh\"></div>\n" +
+                "               <div id = \"texte1a\" class=\"olympicBodyText\" style = \"height:22vh; font-size: 2vh\"></div>\n" +
+                "                <div id = \"texte2a\" class=\"olympicBodyText\" style = \"height:18vh; font-size: 2vh\"></div>\n" +
+                "                <div id = \"texte3a\" class=\"olympicBodyText\" style = \"height:17vh; font-size: 2vh\"></div>\n" +
                 "            </div>\n" +
                 "            </div>\n" +
                 "        </div>\n" +
@@ -82,33 +82,32 @@ class ReasonVis {
             //Insert HTML code
             document.getElementById("original").innerHTML= "<div class=\"container-fluid\">\n" +
                 "                <div class = \"col-12 center\">\n" +
-                "                <button type=\"button\" class=\"btn btn-light\"  onclick = mainPage()>Back to Reasons</button>\n" +
+                "                <button type=\"button\" class=\"btn btn-dark\"  onclick = mainPage()>Back to Reasons</button>\n" +
                 "            </div><div class=\"container-fluid\" style = \"padding-left: 100px; padding-right:100px\">\n" +
                 "        <h3 class = \"olympicHeadText chartTitle\">Training:</h3>\n" +
-                "        <div class=\"row olympicBodyText\" style = \"font-size: 2vh\">\n" +
+                "        <div class=\"row olympicBodyText\" style = \"font-size: 2.3vh\">\n" +
                 "            <div class=\"col \">\n" +
                 "                <ul style = \"list-style-image: url('img/laurel.png')\">\n" +
                 "                    <li> Modern-day Olympic athletes are able to undergo training regimines that couldn't have been dreamed of in the 19th century.\n" +
                 "                    </li>\n" +
                 "                    <li> Prior to the advent of technology, Olympic athletes gauged their performances in numbers: race times, meters jumped, etc.</li>\n" +
                 "                    <li>Now, Olympic contenders regularly undergo physical testing to measure their heart rates, lactic acid, and more, which enables them to more precisely record their athletic progress.</li>\n" +
-                "                    <li>New suits are being developed that sense sweat content in real time to provide hydration guidelines.</li>\n" +
                 "                </ul>\n" +
                 "            </div>\n" +
-                "            <div class=\"col\">\n" +
-                "                <img src=\"img/img1.webp\" width = \"100%\">\n" +
+                "            <div class=\"col center\">\n" +
+                "                <img src=\"img/img1.webp\" width = \"90%\" >\n" +
                 "            </div>\n" +
                 "        </div>\n" +
-                "        <div class=\"row olympicBodyText\" style = \"font-size: 2.4vh; \">\n" +
-                "            <div class=\"col-5\">\n" +
-                "                <img src=\"img/img2.webp\" width = \"80%\">\n" +
+                "        <div class=\"row olympicBodyText\" style = \"font-size: 2.2vh; \">\n" +
+                "            <div class=\"col-5 center\" >\n" +
+                "                <img src=\"img/img2.webp\" width = \"70%\" >\n" +
                 "            </div>\n" +
                 "\n" +
-                "            <div class=\"col-7\" style=\"padding-top: 70px;\" >\n" +
+                "            <div class=\"col-7\" style=\"padding-top: 3vh;\" >\n" +
                 "                <ul style = \"list-style-image: url('img/laurel.png')\">\n" +
                 "                    <li>Historically, many athletes were amateur and practiced part-time. With the advent of corporate sponsorships, prospective Olympians are prepared to make athletics their full-time endeavor.</li>\n" +
                 "                    <li> Children are also being recruited at successively younger ages to train as athletes.\n" +
-                "                    </li>\n" +
+                "                    </li><li>New suits are being developed that sense sweat content in real time to provide hydration guidelines.</li>\n" +
                 "                </ul>\n" +
                 "            </div>\n" +
                 "        </div>\n" +
@@ -119,7 +118,7 @@ class ReasonVis {
             //Insert HTML code
             document.getElementById("original").innerHTML= "<div class=\"container-fluid\">\n" +
                 "                <div class = \"col-12 center\">\n" +
-                "                <button type=\"button\" class=\"btn btn-light\" onclick = mainPage()>Back to Reasons</button>\n" +
+                "                <button type=\"button\" class=\"btn btn-dark\" onclick = mainPage()>Back to Reasons</button>\n" +
                 "            </div> <div class=\"container-fluid\" style = \"padding-left: 100px; padding-right:100px;\">\n" +
                 "            <h3 class = \"olympicHeadText chartTitle\">Diet:</h3>\n" +
                 "            <div class=\"row olympicBodyText\" style = \"font-size: 2.2vh; \">\n" +
@@ -146,10 +145,10 @@ class ReasonVis {
             //Insert HTML code
             document.getElementById("original").innerHTML= "<div class=\"container-fluid\">\n" +
                 "                <div class = \"col-12 center\">\n" +
-                "                <button type=\"button\" class=\"btn btn-light\" onclick = mainPage()>Back to Reasons</button>\n" +
+                "                <button type=\"button\" class=\"btn btn-dark\" onclick = mainPage()>Back to Reasons</button>\n" +
                 "            </div><div class=\"container-fluid\" style = \"padding-left: 100px; padding-right:100px;\">\n" +
-                "            <h3 class = \"olympicHeadText chartTitle\">Coaching:</h3>\n" +
-                "            <div class=\"row olympicBodyText\" style = \"font-size: 2.5vh; height: 37vh; \">\n" +
+                "            <h3 class = \"olympicHeadText chartTitle\">Coaching:</h3>\n" +                "            <div class=\"row olympicBodyText\" style = \"font-size: 2.5vh; height: 37vh; \">\n" +
+
                 "                <div id= \"globLinVis\" class=\"col-7\"  >\n" +
                 "                    <ul style = \"list-style-image: url('img/laurel.png')\">\n" +
                 "                        <li>Coaching blossomed as an official profession in the 1970s. </li>\n" +
@@ -175,17 +174,17 @@ class ReasonVis {
                 "                        supportive atmosphere.</li>\n" +
                 "                    </ul>\n" +
                 "                </div>\n" +
-                "                <div class=\"col-5 olympicBodyText\" style=\"padding-left: 20px; padding-right: 20px;\" >\n" +
-                "                    <img src=\"img/coach2.png\" width = \"80%\">\n" +
+                "                <div class=\"col-5 olympicBodyText\" style=\"padding-left: 40px; padding-right: 20px;\" >\n" +
+                "                    <img src=\"img/coach2.png\" width = \"70%\">\n" +
                 "                </div>\n" +
-                "            </div>\n" +
+                "            </div><div style = \"height: 5vh;\"></div>\n" +
                 "        </div>"
 
         }else{
             //Insert HTML code
             document.getElementById("original").innerHTML= "<div class=\"container-fluid\">\n" +
                 "                <div class = \"col-12 center\">\n" +
-                "                <button type=\"button\" class=\"btn btn-light\" onclick = mainPage()>Back to Reasons</button>\n" +
+                "                <button type=\"button\" class=\"btn btn-dark\" onclick = mainPage()>Back to Reasons</button>\n" +
                 "            </div><div class=\"container-fluid\" style = \"padding-left: 100px; padding-right:100px;\">\n" +
                 "            <h3 class = \"olympicHeadText chartTitle\">Global Access:</h3>\n" +
                 "            <div class=\"row olympicBodyText\" style = \"font-size: 2.0vh;height: 72vh;\">\n" +

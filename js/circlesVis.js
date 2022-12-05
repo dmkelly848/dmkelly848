@@ -74,6 +74,7 @@ class CircleVis {
             .attr("fill",color);
 
         if(vis.type === 2){
+            vis.margin.top = 0;
             vis.labels = vis.svg.selectAll(".labs").data(vis.circleData)
             vis.labels.enter().append("text")
                 .attr("class","olympicHeadText")

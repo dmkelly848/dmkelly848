@@ -30,7 +30,7 @@ class SyringeVis {
             .attr("transform", "translate(" + vis.margin.left + "," + vis.margin.top + ")");
 
         //Custom paths, sf is a scaling factor that will adjust based on screen size
-        let sF = (vis.width*vis.height)/195000;
+        let sF = (vis.width)/500;
         let pathMain = "M " + 201.6*sF + " " + 627*sF + " L " + 235.2*sF + " "+ 759*sF + " L " + 268.8*sF + " " + 627*sF + " L "+
             336*sF + " " + 627*sF + " V " + 209*sF + " H " + 134.4*sF + " V " + 627*sF + " M " + 201.6*sF + " " + 209*sF + " V " +
             165*sF + " H " + 268.8*sF + " V " + 209*sF + " Z M " + 201.6*sF + " " + 165*sF + " C " + 168*sF + " " + 143*sF + " " +
@@ -99,7 +99,7 @@ class SyringeVis {
     //Updates state of syringe
     updateVis() {
         let vis = this;
-        let sF = (vis.width*vis.height)/195000;
+        let sF = (vis.width)/500;
         vis.fillVial.transition().ease(d3.easeLinear).duration(800)
             .attr("d", function(d, index) {
                 if(vis.state === 0){

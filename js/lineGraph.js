@@ -129,6 +129,112 @@ class LineGraph {
 
         vis.displayData = [vis.javelinData,vis.discusData,vis.hammerData]
 
+        let max = Math.max(d3.max(vis.javelinData, d => d.value))
+        vis.x.domain([d3.min(vis.discusData, d=>d.key),d3.max(vis.discusData, d=>d.key)])
+        vis.y.domain([0, max+0.5]);
+
+        //Line graph
+        vis.line = vis.svg.selectAll(".lin").data(vis.displayData)
+
+        vis.line.enter().append("path")
+            .attr("class","lin")
+            .attr("d",d3.line()
+                .x(function(d) { return vis.x(d.key)  })
+                .y(function(d) { return vis.y((d.value))})
+            )
+            .attr("fill","none")
+            .attr("stroke", function(d,i){
+                return vis.colorScale[i]
+            })
+            .attr("stroke-width", 5.0);
+
+        //Dynamic tooltips
+        vis.group2 = vis.svg.append("g")
+            .attr("x",0)
+            .attr("y",0)
+            .attr("id", "tools55");
+
+        let hover = vis.group2
+            .append("line")
+            .attr("stroke", "#5b5b5b")
+            .attr("stroke-dasharray","4 1 2 3")
+            .attr("x1", 0).attr("x2", 0)
+            .attr("y1", 0).attr("y2", vis.height);
+
+        vis.javCirc = vis.group2
+            .append("circle")
+            .attr("class","tools")
+            .attr("cx",20)
+            .attr("cy",-20).style('fill','white').style("stroke","black")
+            .attr('r',vis.width/40)
+            .attr('opacity',0);
+
+        vis.discCirc = vis.group2
+            .append("circle")
+            .attr("class","tools")
+            .attr("cx",20)
+            .attr("cy",-5).style('fill','white').style("stroke","black")
+            .attr('r',vis.width/40)
+            .attr('opacity',0);
+
+        vis.hamCirc = vis.group2
+            .append("circle")
+            .attr("class","tools")
+            .attr("cx",20)
+            .attr("cy",-15).style('fill','white').style("stroke","black")
+            .attr('r',vis.width/40)
+            .attr('opacity',0);
+
+        vis.javText = vis.group2
+            .append("text")
+            .attr("class","tools")
+            .attr("class","olympicBodyText")
+            .attr("id","jav")
+            .attr("x",10)
+            .attr("y",-15).style('fill','red');
+        vis.discText = vis.group2
+            .append("text")
+            .attr("class","tools")
+            .attr("class","olympicBodyText")
+            .attr("id","disc")
+            .attr("x",10)
+            .attr("y",0).style('fill','green');
+        vis.hamText = vis.group2
+            .append("text")
+            .attr("class","tools")
+            .attr("class","olympicBodyText")
+            .attr("id","ham")
+            .attr("x",10)
+            .attr("y",-10).style('fill','blue')
+
+        let dateText = vis.group2
+            .append("text")
+            .attr("class","tools")
+            .attr("class","labelfont")
+            .attr("id","date")
+            .attr("x",10)
+            .attr("y",vis.height-10);
+
+        let temp = vis.svg.append("rect")
+            .attr("x",0)
+            .attr("y",0)
+            .attr("class","listener")
+            .attr("width",vis.width)
+            .attr("height",vis.height)
+            .attr("fill-opacity","0%");
+
+        temp.on("mouseover", function(event, d){
+            document.getElementById("tools55").style.display = null;
+        });
+
+        temp.on("mouseout", function(event, d){
+            document.getElementById("tools55").style.display = "none";
+        });
+
+        temp.on("mousemove", function(event, d){
+            vis.mouseMove(event,vis.displayData);
+        });
+
         vis.updateVis()
     }
 
@@ -136,9 +242,7 @@ class LineGraph {
     updateVis() {
         let vis = this;
 
-        let max = Math.max(d3.max(vis.javelinData, d => d.value))
-        vis.x.domain([d3.min(vis.discusData, d=>d.key),d3.max(vis.discusData, d=>d.key)])
-        vis.y.domain([0, max+0.5]);
+
 
         //The following p's correspond to various points in the doping timeline that we wish to represent
         vis.p1 = vis.x(new Date(1898,1,1))
@@ -173,20 +277,6 @@ class LineGraph {
             .attr("width", 10).attr("height", 10);
 
 
-        //Line graph
-        vis.line = vis.svg.selectAll(".lin").data(vis.displayData)
-
-        vis.line.enter().append("path")
-            .attr("class","lin")
-            .attr("d",d3.line()
-                .x(function(d) { return vis.x(d.key)  })
-                .y(function(d) { return vis.y((d.value))})
-             )
-            .attr("fill","none")
-            .attr("stroke", function(d,i){
-                return vis.colorScale[i]
-            })
-             .attr("stroke-width", 5.0);
 
         //Calling axes
         vis.svg.select(".y-axis").call(vis.yAxis);
@@ -255,5 +345,41 @@ class LineGraph {
                 .attr("width",hRx-hLx)
                 .attr("x",hLx)
         }
+    }
+
+
+    mouseMove(event,data){
+        let vis = this;
+        let bisectDate = d3.bisector(d=>d.key).left;
+        let xval = d3.pointer(event)[0];
+        let xdescale =new Date(vis.x.invert(xval));
+        let ind = bisectDate(data[0], xdescale);
+        let datPoint = data[0][ind];
+        let datPoint2 = data[1][ind];
+        let datPoint3 = data[2][ind];
+
+        function vw(percent) {
+            var w = Math.max(document.documentElement.clientWidth, window.innerWidth || 0);
+            return (percent * w) / 100;
+        }
+
+        let xcoord = event.clientX - vw(54);
+       vis.group2.attr("transform", "translate(" +xcoord + ", 0)")
+        vis.javCirc.attr('opacity',1)
+        vis.discCirc.attr('opacity',1)
+        vis.hamCirc.attr('opacity',1)
+        vis.javCirc.attr("transform", "translate( 0, "+ vis.y(datPoint.value) +" )")
+        vis.javText.attr("transform", "translate( 0, "+ vis.y(datPoint.value) +" )")
+        vis.discCirc.attr("transform", "translate( 0, "+ vis.y(datPoint2.value) +" )")
+        vis.discText.attr("transform", "translate( 0, "+ vis.y(datPoint2.value) +" )")
+        vis.hamCirc.attr("transform", "translate( 0, "+ vis.y(datPoint3.value) +" )")
+        vis.hamText.attr("transform", "translate( 0, "+ vis.y(datPoint3.value) +" )")
+        document.getElementById("jav").textContent = Math.round(datPoint.value);
+        document.getElementById("disc").textContent = Math.round(datPoint2.value);
+        document.getElementById("ham").textContent = Math.round(datPoint3.value);
+        let dat = d3.timeFormat("%Y")
+        document.getElementById("date").textContent=dat(datPoint.key);
+
+
     }
 }

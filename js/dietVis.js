@@ -131,6 +131,28 @@ class DietVis {
                     .style("top", 0)
                     .html(``);
             });
+
+        //Color legend
+
+        vis.legendKeys = vis.resultsData.map(d=>d.type)
+        vis.colorScale = vis.resultsData.map(d=>d.color)
+
+        let lineLegend = vis.svg.selectAll(".lineLegend").data(vis.legendKeys)
+            .enter().append("g")
+            .attr("class","lineLegend")
+            .attr("transform", function (d,i) {
+                let shift =i*20 +4*vis.height/5
+                return "translate(0," + shift+")";
+            });
+
+        lineLegend.append("text").text(function (d) {return d;})
+            .attr("transform", "translate(15,9)")
+            .attr("class","axisText"); //align texts with boxes
+
+        lineLegend.append("rect")
+            .attr("fill", function (d, i) {return vis.colorScale[i]; })
+            .attr("width", 10).attr("height", 10);
+
     }
 
 }
