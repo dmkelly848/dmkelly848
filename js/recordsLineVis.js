@@ -66,6 +66,11 @@ class RecordsLineVis {
         vis.yAxisGroup
             .call(vis.yAxis)
 
+        // creating tooltip
+        vis.tooltip = d3.select("body").append('div')
+            .attr('class', "tooltip")
+            .attr('id', 'recordsTooltip')
+
         vis.wrangleData()
     }
 
@@ -106,7 +111,45 @@ class RecordsLineVis {
                 if (d.Gender === 'W'){
                     return '#ffc0af'
                 }
-            });
+            })
+            // adding tooltip to lines
+            .on('mouseover', function(event, d){
+
+                console.log(d)
+
+                // https://www.digitalocean.com/community/tutorials/how-to-work-with-strings-in-javascript
+                if (d.Gender === 'M'){
+                    vis.tooltipGender = 'Men\'s'
+                }
+                if (d.Gender === 'W'){
+                    vis.tooltipGender = 'Women\'s'
+                }
+
+                vis.recordEvent = vis.data.filter(function (e) {
+                    return (e.Event === d.Event && e.Medal === 'G' && e.Gender === d.Gender)
+                });
+                //d.Set == vis.formatDate(e.Year) &&
+                console.log(vis.recordEvent)
+
+                vis.tooltip
+                    .style("opacity", 1)
+                    .style("left", event.pageX + 20 + "px")
+                    .style("top", event.pageY + "px")
+                    .html(`
+                        <div style="border: thin solid grey; border-radius: 5px; background: lightgrey; padding: 20px">
+                        <h4>${vis.tooltipGender + ' ' + d.Event}<h3>
+                        <h4>${'Record Set: ' + d.Set}</h4>    
+                        <h4></h4>             
+                        </div>`);
+            }).on('mouseout', function(event, d){
+
+                vis.tooltip
+                    .style("opacity", 0)
+                    .style("left", 0)
+                    .style("top", 0)
+                    .html(``);
+            })
+
 
         // enter-update-exit on circles
         vis.circles = vis.svg.selectAll(`circle`).data(vis.displayData)
@@ -132,7 +175,44 @@ class RecordsLineVis {
                 if (d.Gender === 'W' && d.Set === vis.hostData[mapYearIndex].Year){
                     return '#ff4500'
                 }
-            });
+            })
+            // addint tooltip to circles
+            .on('mouseover', function(event, d){
+
+                console.log(d)
+
+                // https://www.digitalocean.com/community/tutorials/how-to-work-with-strings-in-javascript
+                if (d.Gender === 'M'){
+                    vis.tooltipGender = 'Men\'s'
+                }
+                if (d.Gender === 'W'){
+                    vis.tooltipGender = 'Women\'s'
+                }
+
+                vis.recordEvent = vis.data.filter(function (e) {
+                    return (e.Event === d.Event && e.Medal === 'G' && e.Gender === d.Gender)
+                });
+                //d.Set == vis.formatDate(e.Year) &&
+                console.log(vis.recordEvent)
+
+                vis.tooltip
+                    .style("opacity", 1)
+                    .style("left", event.pageX + 20 + "px")
+                    .style("top", event.pageY + "px")
+                    .html(`
+                        <div style="border: thin solid grey; border-radius: 5px; background: lightgrey; padding: 20px">
+                        <h4>${vis.tooltipGender + ' ' + d.Event}<h3>
+                        <h4>${'Record Set: ' + d.Set}</h4>    
+                        <h4></h4>             
+                        </div>`);
+            }).on('mouseout', function(event, d){
+
+            vis.tooltip
+                .style("opacity", 0)
+                .style("left", 0)
+                .style("top", 0)
+                .html(``);
+        })
     }
 
 }
