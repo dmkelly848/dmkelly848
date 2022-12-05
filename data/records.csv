@@ -172,79 +172,79 @@
 170,800M,M,1984,1996,800M M
 171,800M,M,1996,2012,800M M
 172,800M,M,2012,2020,800M M
-173,Decathlon,M,1896,1908,Decathlon M
-174,Decathlon,M,1908,1912,Decathlon M
-175,Decathlon,M,1912,1920,Decathlon M
-176,Decathlon,M,1920,1932,Decathlon M
-177,Decathlon,M,1932,1936,Decathlon M
-178,Decathlon,M,1936,1952,Decathlon M
-179,Decathlon,M,1952,1960,Decathlon M
-180,Decathlon,M,1960,1964,Decathlon M
-181,Decathlon,M,1964,1976,Decathlon M
-182,Decathlon,M,1976,1984,Decathlon M
-183,Decathlon,M,1984,2008,Decathlon M
-184,Decathlon,M,2008,2020,Decathlon M
-185,Discus Throw,M,1904,1912,Discus Throw M
-186,Discus Throw,M,1912,1924,Discus Throw M
-187,Discus Throw,M,1924,1928,Discus Throw M
-188,Discus Throw,M,1928,1932,Discus Throw M
-189,Discus Throw,M,1932,1976,Discus Throw M
-190,Discus Throw,M,1976,1984,Discus Throw M
-191,Discus Throw,M,1984,1996,Discus Throw M
-192,Discus Throw,M,1996,2004,Discus Throw M
-193,Discus Throw,M,2004,2020,Discus Throw M
-194,Hammer Throw,M,1896,1904,Hammer Throw M
-195,Hammer Throw,M,1904,1908,Hammer Throw M
-196,Hammer Throw,M,1908,1912,Hammer Throw M
-197,Hammer Throw,M,1912,1924,Hammer Throw M
-198,Hammer Throw,M,1924,1932,Hammer Throw M
-199,Hammer Throw,M,1932,1952,Hammer Throw M
-200,Hammer Throw,M,1952,1960,Hammer Throw M
-201,Hammer Throw,M,1960,1964,Hammer Throw M
-202,Hammer Throw,M,1964,1968,Hammer Throw M
-203,Hammer Throw,M,1968,1976,Hammer Throw M
-204,Hammer Throw,M,1976,1996,Hammer Throw M
-205,Hammer Throw,M,1996,2004,Hammer Throw M
-206,Hammer Throw,M,2004,2020,Hammer Throw M
-207,High Jump,M,1900,1904,High Jump M
-208,High Jump,M,1904,1908,High Jump M
-209,High Jump,M,1908,1912,High Jump M
-210,High Jump,M,1912,1952,High Jump M
-211,High Jump,M,1952,1960,High Jump M
-212,High Jump,M,1960,1964,High Jump M
-213,High Jump,M,1964,1976,High Jump M
-214,High Jump,M,1976,1980,High Jump M
-215,High Jump,M,1980,1992,High Jump M
-216,High Jump,M,1992,2004,High Jump M
-217,High Jump,M,2004,2020,High Jump M
-218,Javelin Throw,M,1896,1900,Javelin Throw M
-219,Javelin Throw,M,1900,1912,Javelin Throw M
-220,Javelin Throw,M,1912,1924,Javelin Throw M
-221,Javelin Throw,M,1924,1952,Javelin Throw M
-222,Javelin Throw,M,1952,1960,Javelin Throw M
-223,Javelin Throw,M,1960,1964,Javelin Throw M
-224,Javelin Throw,M,1964,1976,Javelin Throw M
-225,Javelin Throw,M,1976,1980,Javelin Throw M
-226,Javelin Throw,M,1980,1996,Javelin Throw M
-227,Javelin Throw,M,1996,2020,Javelin Throw M
-228,Long Jump,M,1908,1912,Long Jump M
-229,Long Jump,M,1912,1924,Long Jump M
-230,Long Jump,M,1924,1932,Long Jump M
-231,Long Jump,M,1932,1952,Long Jump M
-232,Long Jump,M,1952,1960,Long Jump M
-233,Long Jump,M,1960,1976,Long Jump M
-234,Long Jump,M,1976,2020,Long Jump M
-235,Marathon,M,1896,1900,Marathon M
-236,Marathon,M,1900,1904,Marathon M
-237,Marathon,M,1904,1908,Marathon M
-238,Marathon,M,1908,1912,Marathon M
-239,Marathon,M,1912,1928,Marathon M
-240,Marathon,M,1928,1936,Marathon M
-241,Marathon,M,1936,1960,Marathon M
-242,Marathon,M,1960,1976,Marathon M
-243,Marathon,M,1976,1980,Marathon M
-244,Marathon,M,1980,1992,Marathon M
-245,Marathon,M,1992,2020,Marathon M
+173,Marathon,M,1896,1908,Marathon M
+174,Marathon,M,1908,1912,Marathon M
+175,Marathon,M,1912,1920,Marathon M
+176,Marathon,M,1920,1932,Marathon M
+177,Marathon,M,1932,1936,Marathon M
+178,Marathon,M,1936,1952,Marathon M
+179,Marathon,M,1952,1960,Marathon M
+180,Marathon,M,1960,1964,Marathon M
+181,Marathon,M,1964,1976,Marathon M
+182,Marathon,M,1976,1984,Marathon M
+183,Marathon,M,1984,2008,Marathon M
+184,Marathon,M,2008,2020,Marathon M
+185,Decathlon,M,1904,1912,Decathlon M
+186,Decathlon,M,1912,1924,Decathlon M
+187,Decathlon,M,1924,1928,Decathlon M
+188,Decathlon,M,1928,1932,Decathlon M
+189,Decathlon,M,1932,1976,Decathlon M
+190,Decathlon,M,1976,1984,Decathlon M
+191,Decathlon,M,1984,1996,Decathlon M
+192,Decathlon,M,1996,2004,Decathlon M
+193,Decathlon,M,2004,2020,Decathlon M
+194,Discus Throw,M,1896,1904,Discus Throw M
+195,Discus Throw,M,1904,1908,Discus Throw M
+196,Discus Throw,M,1908,1912,Discus Throw M
+197,Discus Throw,M,1912,1924,Discus Throw M
+198,Discus Throw,M,1924,1932,Discus Throw M
+199,Discus Throw,M,1932,1952,Discus Throw M
+200,Discus Throw,M,1952,1960,Discus Throw M
+201,Discus Throw,M,1960,1964,Discus Throw M
+202,Discus Throw,M,1964,1968,Discus Throw M
+203,Discus Throw,M,1968,1976,Discus Throw M
+204,Discus Throw,M,1976,1996,Discus Throw M
+205,Discus Throw,M,1996,2004,Discus Throw M
+206,Discus Throw,M,2004,2020,Discus Throw M
+207,Hammer Throw,M,1900,1904,Hammer Throw M
+208,Hammer Throw,M,1904,1908,Hammer Throw M
+209,Hammer Throw,M,1908,1912,Hammer Throw M
+210,Hammer Throw,M,1912,1952,Hammer Throw M
+211,Hammer Throw,M,1952,1960,Hammer Throw M
+212,Hammer Throw,M,1960,1964,Hammer Throw M
+213,Hammer Throw,M,1964,1976,Hammer Throw M
+214,Hammer Throw,M,1976,1980,Hammer Throw M
+215,Hammer Throw,M,1980,1992,Hammer Throw M
+216,Hammer Throw,M,1992,2004,Hammer Throw M
+217,Hammer Throw,M,2004,2020,Hammer Throw M
+218,High Jump,M,1896,1900,High Jump M
+219,High Jump,M,1900,1912,High Jump M
+220,High Jump,M,1912,1924,High Jump M
+221,High Jump,M,1924,1952,High Jump M
+222,High Jump,M,1952,1960,High Jump M
+223,High Jump,M,1960,1964,High Jump M
+224,High Jump,M,1964,1976,High Jump M
+225,High Jump,M,1976,1980,High Jump M
+226,High Jump,M,1980,1996,High Jump M
+227,High Jump,M,1996,2020,High Jump M
+228,Javelin Throw,M,1908,1912,Javelin Throw M
+229,Javelin Throw,M,1912,1924,Javelin Throw M
+230,Javelin Throw,M,1924,1932,Javelin Throw M
+231,Javelin Throw,M,1932,1952,Javelin Throw M
+232,Javelin Throw,M,1952,1960,Javelin Throw M
+233,Javelin Throw,M,1960,1976,Javelin Throw M
+234,Javelin Throw,M,1976,2020,Javelin Throw M
+235,Long Jump,M,1896,1900,Long Jump M
+236,Long Jump,M,1900,1904,Long Jump M
+237,Long Jump,M,1904,1908,Long Jump M
+238,Long Jump,M,1908,1912,Long Jump M
+239,Long Jump,M,1912,1928,Long Jump M
+240,Long Jump,M,1928,1936,Long Jump M
+241,Long Jump,M,1936,1960,Long Jump M
+242,Long Jump,M,1960,1976,Long Jump M
+243,Long Jump,M,1976,1980,Long Jump M
+244,Long Jump,M,1980,1992,Long Jump M
+245,Long Jump,M,1992,2020,Long Jump M
 246,Pole Vault,M,1896,1904,Pole Vault M
 247,Pole Vault,M,1904,1908,Pole Vault M
 248,Pole Vault,M,1908,1912,Pole Vault M
@@ -297,105 +297,105 @@
 295,100M,W,2008,2012,100M W
 296,100M,W,2012,2016,100M W
 297,100M,W,2016,2020,100M W
-298,100M Hurdles,W,1972,1980,100M Hurdles W
-299,100M Hurdles,W,1980,1992,100M Hurdles W
-300,100M Hurdles,W,1992,2020,100M Hurdles W
-301,1500M,W,1948,1952,1500M W
-302,1500M,W,1952,1956,1500M W
-303,1500M,W,1956,1964,1500M W
-304,1500M,W,1964,1968,1500M W
-305,1500M,W,1968,1972,1500M W
-306,1500M,W,1972,1976,1500M W
-307,1500M,W,1976,1980,1500M W
-308,1500M,W,1980,1984,1500M W
-309,1500M,W,1984,2008,1500M W
-310,1500M,W,2008,2020,1500M W
-311,200M,W,2000,2008,200M W
-312,200M,W,2008,2012,200M W
-313,200M,W,2012,2020,200M W
-314,20Km Race Walk,W,2008,2020,20Km Race Walk W
-315,3000M Steeplechase,W,1964,1972,3000M Steeplechase W
-316,3000M Steeplechase,W,1972,1976,3000M Steeplechase W
-317,3000M Steeplechase,W,1976,1980,3000M Steeplechase W
-318,3000M Steeplechase,W,1980,1984,3000M Steeplechase W
-319,3000M Steeplechase,W,1984,1996,3000M Steeplechase W
-320,3000M Steeplechase,W,1996,2020,3000M Steeplechase W
-321,400M,W,1984,1992,400M W
-322,400M,W,1992,1996,400M W
-323,400M,W,1996,2008,400M W
-324,400M,W,2008,2020,400M W
-325,400M Hurdles,W,1928,1932,400M Hurdles W
-326,400M Hurdles,W,1932,1936,400M Hurdles W
-327,400M Hurdles,W,1936,1952,400M Hurdles W
-328,400M Hurdles,W,1952,1956,400M Hurdles W
-329,400M Hurdles,W,1956,1964,400M Hurdles W
-330,400M Hurdles,W,1964,1968,400M Hurdles W
-331,400M Hurdles,W,1968,1976,400M Hurdles W
-332,400M Hurdles,W,1976,1980,400M Hurdles W
-333,400M Hurdles,W,1980,2012,400M Hurdles W
-334,400M Hurdles,W,2012,2020,400M Hurdles W
-335,4X100M Relay,W,1972,1976,4X100M Relay W
-336,4X100M Relay,W,1976,1984,4X100M Relay W
-337,4X100M Relay,W,1984,2012,4X100M Relay W
-338,4X100M Relay,W,2012,2020,4X100M Relay W
-339,4X400M Relay,W,1996,2000,4X400M Relay W
-340,4X400M Relay,W,2000,2016,4X400M Relay W
-341,4X400M Relay,W,2016,2020,4X400M Relay W
-342,5000M,W,1928,1960,5000M W
-343,5000M,W,1960,1964,5000M W
-344,5000M,W,1964,1968,5000M W
-345,5000M,W,1968,1972,5000M W
-346,5000M,W,1972,1976,5000M W
-347,5000M,W,1976,1980,5000M W
-348,5000M,W,1980,2020,5000M W
-349,800M,W,1984,2000,800M W
-350,800M,W,2000,2012,800M W
-351,800M,W,2012,2020,800M W
-352,Discus Throw,W,1972,1976,Discus Throw W
-353,Discus Throw,W,1976,1984,Discus Throw W
-354,Discus Throw,W,1984,2020,Discus Throw W
-355,Hammer Throw,W,1928,1932,Hammer Throw W
-356,Hammer Throw,W,1932,1936,Hammer Throw W
-357,Hammer Throw,W,1936,1952,Hammer Throw W
-358,Hammer Throw,W,1952,1960,Hammer Throw W
-359,Hammer Throw,W,1960,1964,Hammer Throw W
-360,Hammer Throw,W,1964,1968,Hammer Throw W
-361,Hammer Throw,W,1968,1972,Hammer Throw W
-362,Hammer Throw,W,1972,1980,Hammer Throw W
-363,Hammer Throw,W,1980,1992,Hammer Throw W
-364,Hammer Throw,W,1992,2020,Hammer Throw W
-365,Heptathlon,W,2000,2004,Heptathlon W
-366,Heptathlon,W,2004,2008,Heptathlon W
-367,Heptathlon,W,2008,2016,Heptathlon W
-368,Heptathlon,W,2016,2020,Heptathlon W
-369,High Jump,W,1984,1988,High Jump W
-370,High Jump,W,1988,2020,High Jump W
-371,Javelin Throw,W,1932,1948,Javelin Throw W
-372,Javelin Throw,W,1948,1960,Javelin Throw W
-373,Javelin Throw,W,1960,1964,Javelin Throw W
-374,Javelin Throw,W,1964,1976,Javelin Throw W
-375,Javelin Throw,W,1976,1980,Javelin Throw W
-376,Javelin Throw,W,1980,1992,Javelin Throw W
-377,Javelin Throw,W,1992,1996,Javelin Throw W
-378,Javelin Throw,W,1996,2004,Javelin Throw W
-379,Javelin Throw,W,2004,2020,Javelin Throw W
-380,Long Jump,W,1932,1936,Long Jump W
-381,Long Jump,W,1936,1948,Long Jump W
-382,Long Jump,W,1948,1952,Long Jump W
-383,Long Jump,W,1952,1960,Long Jump W
-384,Long Jump,W,1960,1964,Long Jump W
-385,Long Jump,W,1964,1972,Long Jump W
-386,Long Jump,W,1972,1976,Long Jump W
-387,Long Jump,W,1976,1980,Long Jump W
-388,Long Jump,W,1980,2000,Long Jump W
-389,Long Jump,W,2000,2004,Long Jump W
-390,Long Jump,W,2004,2020,Long Jump W
-391,Marathon,W,1952,1960,Marathon W
-392,Marathon,W,1960,1964,Marathon W
-393,Marathon,W,1964,1980,Marathon W
-394,Marathon,W,1980,1992,Marathon W
-395,Marathon,W,1992,2016,Marathon W
-396,Marathon,W,2016,2020,Marathon W
+298,1500M,W,1972,1980,1500M W
+299,1500M,W,1980,1992,1500M W
+300,1500M,W,1992,2020,1500M W
+301,200M,W,1948,1952,200M W
+302,200M,W,1952,1956,200M W
+303,200M,W,1956,1964,200M W
+304,200M,W,1964,1968,200M W
+305,200M,W,1968,1972,200M W
+306,200M,W,1972,1976,200M W
+307,200M,W,1976,1980,200M W
+308,200M,W,1980,1984,200M W
+309,200M,W,1984,2008,200M W
+310,200M,W,2008,2020,200M W
+311,20Km Race Walk,W,2000,2008,20Km Race Walk W
+312,20Km Race Walk,W,2008,2012,20Km Race Walk W
+313,20Km Race Walk,W,2012,2020,20Km Race Walk W
+314,3000M Steeplechase,W,2008,2020,3000M Steeplechase W
+315,400M,W,1964,1972,400M W
+316,400M,W,1972,1976,400M W
+317,400M,W,1976,1980,400M W
+318,400M,W,1980,1984,400M W
+319,400M,W,1984,1996,400M W
+320,400M,W,1996,2020,400M W
+321,400M Hurdles,W,1984,1992,400M Hurdles W
+322,400M Hurdles,W,1992,1996,400M Hurdles W
+323,400M Hurdles,W,1996,2008,400M Hurdles W
+324,400M Hurdles,W,2008,2020,400M Hurdles W
+325,4X100M Relay,W,1928,1932,4X100M Relay W
+326,4X100M Relay,W,1932,1936,4X100M Relay W
+327,4X100M Relay,W,1936,1952,4X100M Relay W
+328,4X100M Relay,W,1952,1956,4X100M Relay W
+329,4X100M Relay,W,1956,1964,4X100M Relay W
+330,4X100M Relay,W,1964,1968,4X100M Relay W
+331,4X100M Relay,W,1968,1976,4X100M Relay W
+332,4X100M Relay,W,1976,1980,4X100M Relay W
+333,4X100M Relay,W,1980,2012,4X100M Relay W
+334,4X100M Relay,W,2012,2020,4X100M Relay W
+335,4X400M Relay,W,1972,1976,4X400M Relay W
+336,4X400M Relay,W,1976,1984,4X400M Relay W
+337,4X400M Relay,W,1984,2012,4X400M Relay W
+338,4X400M Relay,W,2012,2020,4X400M Relay W
+339,5000M,W,1996,2000,5000M W
+340,5000M,W,2000,2016,5000M W
+341,5000M,W,2016,2020,5000M W
+342,800M,W,1928,1960,800M W
+343,800M,W,1960,1964,800M W
+344,800M,W,1964,1968,800M W
+345,800M,W,1968,1972,800M W
+346,800M,W,1972,1976,800M W
+347,800M,W,1976,1980,800M W
+348,800M,W,1980,2020,800M W
+349,Marathon,W,1984,2000,Marathon W
+350,Marathon,W,2000,2012,Marathon W
+351,Marathon,W,2012,2020,Marathon W
+352,100M Hurdles,W,1972,1976,100M Hurdles W
+353,100M Hurdles,W,1976,1984,100M Hurdles W
+354,100M Hurdles,W,1984,2020,100M Hurdles W
+355,Discus Throw,W,1928,1932,Discus Throw W
+356,Discus Throw,W,1932,1936,Discus Throw W
+357,Discus Throw,W,1936,1952,Discus Throw W
+358,Discus Throw,W,1952,1960,Discus Throw W
+359,Discus Throw,W,1960,1964,Discus Throw W
+360,Discus Throw,W,1964,1968,Discus Throw W
+361,Discus Throw,W,1968,1972,Discus Throw W
+362,Discus Throw,W,1972,1980,Discus Throw W
+363,Discus Throw,W,1980,1992,Discus Throw W
+364,Discus Throw,W,1992,2020,Discus Throw W
+365,Hammer Throw,W,2000,2004,Hammer Throw W
+366,Hammer Throw,W,2004,2008,Hammer Throw W
+367,Hammer Throw,W,2008,2016,Hammer Throw W
+368,Hammer Throw,W,2016,2020,Hammer Throw W
+369,Heptathlon,W,1984,1988,Heptathlon W
+370,Heptathlon,W,1988,2020,Heptathlon W
+371,High Jump,W,1932,1948,High Jump W
+372,High Jump,W,1948,1960,High Jump W
+373,High Jump,W,1960,1964,High Jump W
+374,High Jump,W,1964,1976,High Jump W
+375,High Jump,W,1976,1980,High Jump W
+376,High Jump,W,1980,1992,High Jump W
+377,High Jump,W,1992,1996,High Jump W
+378,High Jump,W,1996,2004,High Jump W
+379,High Jump,W,2004,2020,High Jump W
+380,Javelin Throw,W,1932,1936,Javelin Throw W
+381,Javelin Throw,W,1936,1948,Javelin Throw W
+382,Javelin Throw,W,1948,1952,Javelin Throw W
+383,Javelin Throw,W,1952,1960,Javelin Throw W
+384,Javelin Throw,W,1960,1964,Javelin Throw W
+385,Javelin Throw,W,1964,1972,Javelin Throw W
+386,Javelin Throw,W,1972,1976,Javelin Throw W
+387,Javelin Throw,W,1976,1980,Javelin Throw W
+388,Javelin Throw,W,1980,2000,Javelin Throw W
+389,Javelin Throw,W,2000,2004,Javelin Throw W
+390,Javelin Throw,W,2004,2020,Javelin Throw W
+391,Long Jump,W,1952,1960,Long Jump W
+392,Long Jump,W,1960,1964,Long Jump W
+393,Long Jump,W,1964,1980,Long Jump W
+394,Long Jump,W,1980,1992,Long Jump W
+395,Long Jump,W,1992,2016,Long Jump W
+396,Long Jump,W,2016,2020,Long Jump W
 397,Pole Vault,W,2000,2004,Pole Vault W
 398,Pole Vault,W,2004,2008,Pole Vault W
 399,Pole Vault,W,2008,2020,Pole Vault W
