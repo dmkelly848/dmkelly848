@@ -87,7 +87,7 @@ class ReasonVis {
                 "        <h3 class = \"olympicHeadText chartTitle\">Training:</h3>\n" +
                 "        <div class=\"row olympicBodyText\" style = \"font-size: 2.5vh\">\n" +
                 "            <div class=\"col \">\n" +
-                "                <ul>\n" +
+                "                <ul style = \"list-style-image: url('img/laurel.png')\">\n" +
                 "                    <li> Modern-day Olympic athletes are able to undergo training regimines that couldn't have been dreamed of in the 19th century.\n" +
                 "                    </li>\n" +
                 "                    <li> Prior to the advent of technology, Olympic athletes gauged their performances in numbers: race times, meters jumped, etc.</li>\n" +
@@ -105,7 +105,7 @@ class ReasonVis {
                 "            </div>\n" +
                 "\n" +
                 "            <div class=\"col-7\" style=\"padding: 70px 0;\" >\n" +
-                "                <ul>\n" +
+                "                <ul style = \"list-style-image: url('img/laurel.png')\">\n" +
                 "                    <li>Historically, many athletes were amateur and practiced part-time. With the advent of corporate sponsorships, prospective Olympians are prepared to make athletics their full-time endeavor.</li>\n" +
                 "                    <li> Children are also being recruited at successively younger ages to train as athletes.\n" +
                 "                    </li>\n" +
@@ -126,7 +126,7 @@ class ReasonVis {
                 "                <div id= \"dietVis\" class=\"col-6\" style=\"padding: 20px;\" >\n" +
                 "                </div>\n" +
                 "                <div class=\"col-6 olympicBodyText\" style = \"padding-top: 100px; padding-left: 100px\">\n" +
-                "                    <ul>\n" +
+                "                    <ul style = \"list-style-image: url('img/laurel.png')\">\n" +
                 "                        <li>The first nutritional vitamin was discovered and defined in 1926... 30 years after the first\n" +
                 "                        modern Olympic Games.</li>\n" +
                 "                        <li>The \"era of vitamin discovery\" continued through the 1950s. </li>\n" +
@@ -151,7 +151,7 @@ class ReasonVis {
                 "            <h3 class = \"olympicHeadText chartTitle\">Coaching:</h3>\n" +
                 "            <div class=\"row olympicBodyText\" style = \"font-size: 3vh; height: 50vh; \">\n" +
                 "                <div id= \"globLinVis\" class=\"col-7\" style=\"padding: 20px;\" >\n" +
-                "                    <ul>\n" +
+                "                    <ul style = \"list-style-image: url('img/laurel.png')\">\n" +
                 "                        <li>Coaching blossomed as an official profession in the 1970s. </li>\n" +
                 "                        <li>With coaching now a full-time career path, Olympics coaches can dedicate themselves\n" +
                 "                        wholeheartedly towards learning the needs and limits of their athletes.</li>\n" +
@@ -166,7 +166,7 @@ class ReasonVis {
                 "            </div>\n" +
                 "            <div class=\"row olympicBodyText\" style = \"font-size: 3vh; \">\n" +
                 "                <div id= \"globLinVis\" class=\"col-7\" style=\"padding: 20px;\" >\n" +
-                "                    <ul>\n" +
+                "                    <ul style = \"list-style-image: url('img/laurel.png')\">\n" +
                 "                        <li>One notable Soviet field of study included plyometrics, which\n" +
                 "                        involves a series of techniques to train the muscles to\n" +
                 "                        increase jumping or \"explosive\" strength.</li>\n" +
@@ -192,7 +192,7 @@ class ReasonVis {
                 "                <div id= \"globLinVis\" class=\"col-8\" style=\"padding: 20px; \" >\n" +
                 "                </div>\n" +
                 "                <div class=\"col-4 olympicBodyText\" style=\"padding: 20px;\" >\n" +
-                "                <ul>\n" +
+                "                <ul style = \"list-style-image: url('img/laurel.png')\">\n" +
                 "                        <li>Studies show that foreign-born athletes comprised 8.1% of the USA's 2012 Summer Olympics Team. This is up from 7.0% in 1948.</li>\n" +
                 "                        <li>Just as notable is the diversity of these foreign-born athletes; the graph to the left shows that athletes are\n" +
                 "                        consistently being recruited from more countries than ever before.</li>\n" +
