@@ -55,8 +55,8 @@ let promises = [
     d3.json("https://cdn.jsdelivr.net/npm/world-atlas@2/countries-50m.json"),
     d3.csv('data/hosts.csv'),
     d3.csv('data/records.csv'),
-    d3.csv('data/mens_records.csv'),
-    d3.csv('data/womens_records.csv'),
+    // d3.csv('data/mens_records.csv'),
+    // d3.csv('data/womens_records.csv'),
 ];
 
 // data loadiing
