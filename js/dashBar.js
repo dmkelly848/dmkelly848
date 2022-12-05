@@ -172,7 +172,7 @@ class DashBar {
                             return vis.colors[vis.continentData.find(d => d.Code === selCountry).Continent];
                         }
                         else
-                            return '#676767';
+                            return '#707070';
                     })
                     .style("opacity", 1)
                 vis.tooltip
@@ -197,7 +197,7 @@ class DashBar {
                     return vis.colors[vis.continentData.find(d => d.Code === selCountry).Continent];
                 }
                 else
-                    return '#676767';
+                    return '#707070';
             });
 
 
