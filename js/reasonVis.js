@@ -65,14 +65,14 @@ class ReasonVis {
                 "                <div style= \"height: 3vh\"></div>\n" +
                 "                <div id = \"texte1b\" class=\"olympicBodyText\" style = \"height:22vh; font-size: 2vh\"> </div>\n" +
                 "                <div id = \"texte2b\" class=\"olympicBodyText\" style = \"height:18vh; font-size: 2vh\"></div>\n" +
-                "                <div id = \"texte3b\" class=\"olympicBodyText\" style = \"height:17vh; font-size: 2vh\"></div>\n" +
+                "                <div id = \"texte3b\" class=\"olympicBodyText\" style = \"height:21vh; font-size: 2vh\"></div>\n" +
                 "            </div>\n" +
                 "            <div class = \"col-4\" id =\"equip\"></div>\n" +
                 "            <div class = \"col-4 centerText chartTitle\"> <span class = \"olympicHeadText\">Modern Olympics</span>\n" +
                 "                <div style= \"height: 3vh\"></div>\n" +
                 "               <div id = \"texte1a\" class=\"olympicBodyText\" style = \"height:22vh; font-size: 2vh\"></div>\n" +
                 "                <div id = \"texte2a\" class=\"olympicBodyText\" style = \"height:18vh; font-size: 2vh\"></div>\n" +
-                "                <div id = \"texte3a\" class=\"olympicBodyText\" style = \"height:17vh; font-size: 2vh\"></div>\n" +
+                "                <div id = \"texte3a\" class=\"olympicBodyText\" style = \"height:21vh; font-size: 2vh\"></div>\n" +
                 "            </div>\n" +
                 "            </div>\n" +
                 "        </div>\n" +
@@ -98,7 +98,7 @@ class ReasonVis {
                 "                <img src=\"img/img1.webp\" width = \"90%\" >\n" +
                 "            </div>\n" +
                 "        </div>\n" +
-                "        <div class=\"row olympicBodyText\" style = \"font-size: 2.2vh; \">\n" +
+                "        <div class=\"row olympicBodyText\" style = \"font-size: 2.2vh; height:35vh\">\n" +
                 "            <div class=\"col-5 center\" >\n" +
                 "                <img src=\"img/img2.webp\" width = \"70%\" >\n" +
                 "            </div>\n" +
@@ -119,7 +119,7 @@ class ReasonVis {
             document.getElementById("original").innerHTML= "<div class=\"container-fluid\">\n" +
                 "                <div class = \"col-12 center\">\n" +
                 "                <button type=\"button\" class=\"btn btn-dark\" onclick = mainPage()>Back to Reasons</button>\n" +
-                "            </div> <div class=\"container-fluid\" style = \"padding-left: 100px; padding-right:100px;\">\n" +
+                "            </div> <div class=\"container-fluid\" style = \"padding-left: 100px; padding-right:100px; height:76vh\">\n" +
                 "            <h3 class = \"olympicHeadText chartTitle\">Diet:</h3>\n" +
                 "            <div class=\"row olympicBodyText\" style = \"font-size: 2.2vh; \">\n" +
                 "                <div id= \"dietVis\" class=\"col-6\"  >\n" +
