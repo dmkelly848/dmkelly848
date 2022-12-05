@@ -10,6 +10,10 @@ new fullpage('#fullpage', {
     parallax: true,
 
     // Navigation
+    anchors: [
+        'intro', 'usain', 'overview', 'events',
+        'medals', 'trends', 'running', 'jumping',
+        'records', 'why', 'reasons', 'team', 'sources'],
     navigation: true,
     navigationPosition: 'right',
     navigationTooltips: [
