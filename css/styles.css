@@ -576,7 +576,7 @@ li{
 }
 
 #globe-vis-header{
-    height: 15%;
+    height: 10%;
     color: white;
 }
 
@@ -594,6 +594,7 @@ li{
     background: grey;
     color: white;
     font-size: small;
+    vertical-align: middle;
 }
 
 #previousGames:hover, #nextGames:hover{
@@ -602,6 +603,7 @@ li{
     background: darkgrey;
     color: white;
     font-size: small;
+    vertical-align: middle;
 }
 
 #mapVis{
@@ -611,6 +613,18 @@ li{
 
 #linesVisHeader{
     border-bottom: solid #179a13;
+}
+
+#gamesYear, #linesVisHeader{
+    font-size: 5vh
+}
+
+#hostCountryText{
+    font-size: 4vh
+}
+
+#mensRecordCount, #womensRecordCount{
+    font-size: 2.7vh
 }
 
 #why-text{

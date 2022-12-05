@@ -10,6 +10,8 @@ class RecordsLineVis {
         this.formatDate = d3.timeFormat("%Y");
         this.parseDate = d3.timeParse("%Y");
 
+        this.colors = ['#ADDEFF','#ffb0af','#3e76ec','#FF5F15']
+
         this.initVis()
     }
 
@@ -166,16 +168,16 @@ class RecordsLineVis {
             .attr("r", 2 * vis.y.bandwidth())
             .attr("fill", function(d){
                 if (d.Gender === 'M' && d.Set !== vis.hostData[mapYearIndex].Year){
-                    return '#ADDEFF'
+                    return vis.colors[0]
                 }
                 if (d.Gender === 'W' && d.Set !== vis.hostData[mapYearIndex].Year){
-                    return '#ffb0af'
+                    return vis.colors[1]
                 }
                 if (d.Gender === 'M' && d.Set === vis.hostData[mapYearIndex].Year){
-                    return '#3e76ec'
+                    return vis.colors[2]
                 }
                 if (d.Gender === 'W' && d.Set === vis.hostData[mapYearIndex].Year){
-                    return '#FF5F15'
+                    return vis.colors[3]
                 }
             })
             // adding tooltip to circles

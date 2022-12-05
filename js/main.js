@@ -156,8 +156,19 @@ function previousGames(){
         document.getElementById('nextGames').style.visibility = 'visible'
     }
 
+    let mensRecords = dataStar[5].filter(function (d) {
+        return (d.Set === dataStar[4][mapYearIndex].Year && d.Gender === 'M')
+    });
+
+    let womensRecords = dataStar[5].filter(function (d) {
+        return (d.Set === dataStar[4][mapYearIndex].Year && d.Gender === 'W')
+    });
+
     document.getElementById('gamesYear').innerHTML = dataStar[4][mapYearIndex].Year
     document.getElementById('hostCountryText').innerHTML = 'Host: ' + dataStar[4][mapYearIndex].Host
+    document.getElementById('mensRecordCount').innerHTML = 'Men\'s Records Set: ' + mensRecords.length
+    document.getElementById('womensRecordCount').innerHTML = 'Women\'s Records Set: ' + womensRecords.length
+
 
     mapVis.spinVis()
     recordsLineVis.wrangleData()
@@ -182,8 +193,18 @@ function nextGames(){
         document.getElementById('previousGames').style.visibility = 'visible'
     }
 
+    let mensRecords = dataStar[5].filter(function (d) {
+        return (d.Set === dataStar[4][mapYearIndex].Year && d.Gender === 'M')
+    });
+
+    let womensRecords = dataStar[5].filter(function (d) {
+        return (d.Set === dataStar[4][mapYearIndex].Year && d.Gender === 'W')
+    });
+
     document.getElementById('gamesYear').innerHTML = dataStar[4][mapYearIndex].Year
     document.getElementById('hostCountryText').innerHTML = 'Host: ' + dataStar[4][mapYearIndex].Host
+    document.getElementById('mensRecordCount').innerHTML = 'Men\'s Records Set: ' + mensRecords.length
+    document.getElementById('womensRecordCount').innerHTML = 'Women\'s Records Set: ' + womensRecords.length
 
     mapVis.spinVis()
     recordsLineVis.wrangleData()
