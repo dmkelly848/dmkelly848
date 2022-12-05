@@ -7,8 +7,8 @@ Screencast Video:
 ## dmkelly848: code for website
 
 ### css
--fullpage.css: Library downloaded from fullpage.js to enable scrolling
--styles.css: Contains custom styling for website
+-fullpage.css: from fullpage.js to enable scrolling
+-styles.css: Contains our custom styling for website
 
 ### data
 -clean_results.csv: Data from Kaggle (https://www.kaggle.com/datasets/jayrav13/olympic-track-field-results),
@@ -16,20 +16,24 @@ after cleaning/preprocessing in Python
 
 -continent_mapping.csv: 
 
--event_descriptions.csv: Custom descriptions for each track and field event, from https://www.momsteam.com/sports/track-and-field-events
--event_descriptions.xlsx: Excel document used to modify descriptions, which are then saved and pulled as a csv (above)
+-event_descriptions.csv: Custom descriptions for each track and field event, generated off of https://www.momsteam.com/sports/track-and-field-events
+-event_descriptions.xlsx: Excel document used to modify descriptions, which are then saved and pulled as a csv (above), also from source above
 
 -hosts.csv: Contains Summer Olympic Years and hosts for globe vis (created manually using main dataset and wikipedia)
 
--records.csv: Contains all record marks, made using Python with main kaggle dataset
+-records.csv: Contains all record-setting marks, made using Python with main kaggle dataset
 
 ### img
 
--icons: a folder with icons representing each of the events in our dataset, from: 
+-icons: a folder with icons representing each of the events in our dataset, edited from: https://www.vectorstock.com/royalty-free-vector/sport-pictograph-icon-set-02-track-and-field-vector-1000098
 
--other images used elsewhere in our project
+-other images used elsewhere in our project, courtesy of Google Image search
 
-## full-page
+-jpeg images of our team
+
+## fullPage.js-master
+
+Courtesy of fullpage, to provide template for webpage
 
 ### js
 
@@ -39,4 +43,4 @@ after cleaning/preprocessing in Python
 
 ### html
 
--index.html: central webpage liked to other files which is the hompage for the project
+-index.html: central webpage liked to other files which is the homepage for the entire project
