@@ -37,6 +37,7 @@ new fullpage('#fullpage', {
 let selCountry = 'Worldwide';
 let dataStar;
 let mapYearIndex = 0;
+let selectedgender;
 
 // load data using promises
 let promises = [
@@ -54,8 +55,8 @@ let promises = [
     d3.json("https://cdn.jsdelivr.net/npm/world-atlas@2/countries-50m.json"),
     d3.csv('data/hosts.csv'),
     d3.csv('data/records.csv'),
-    d3.csv('data/mens_records.csv'),
-    d3.csv('data/womens_records.csv'),
+    // d3.csv('data/mens_records.csv'),
+    // d3.csv('data/womens_records.csv'),
 ];
 
 // data loadiing
@@ -90,8 +91,9 @@ function highJumpGenderChange(){
     highJumpVis.wrangleData();
 }
 
-//Called when user changes gender in 100 m dash vis
-function runningGenderChange(){
+//Called when user starts 100m race
+function run100meters(gender){
+    selectedgender = gender
     runningVis.wrangleData()
 }
 

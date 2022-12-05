@@ -141,7 +141,7 @@ class HighJumpVis {
         let vis = this;
 
         // Update y scale domain
-        vis.y.domain([0, d3.max(vis.jumpData, d => d.Clean_Result)+0.6]);
+        vis.y.domain([0, d3.max(vis.jumpData, d => d.Clean_Result)+0.8]);
         vis.svg.select(".y-axis").call(vis.yAxis);
 
         // update text
