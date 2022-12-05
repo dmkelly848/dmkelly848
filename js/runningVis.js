@@ -284,12 +284,14 @@ class RunningVis {
             .text('FINISH')
 
         document.getElementById('watchMens').style.visibility = 'hidden'
+        // source: https://stackoverflow.com/questions/48610654/how-to-make-a-button-disappear-and-reappear-after-x-seconds
         setTimeout(function(){
                 document.getElementById('watchMens').style.visibility ='visible';
             }
             ,12500);
 
         document.getElementById('watchWomens').style.visibility = 'hidden'
+        // source: https://stackoverflow.com/questions/48610654/how-to-make-a-button-disappear-and-reappear-after-x-seconds
         setTimeout(function(){
                 document.getElementById('watchWomens').style.visibility ='visible';
             }
