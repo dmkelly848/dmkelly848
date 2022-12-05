@@ -585,27 +585,25 @@ li{
 /***************
   Reasons Slide
 ***************/
-#reasons-slide{
-    height: 120vh;
-    /*border-top: solid #ff0000;*/
-    /*border-bottom: solid #ff0000;*/
-    padding-bottom: 50px;
-    padding-top: 30px;
-}
-#original{
-    height: 90vh;
-}
+/*#reasons-slide{*/
+/*    height: 100vh;*/
+/*    !*border-top: solid #ff0000;*!*/
+/*    !*border-bottom: solid #ff0000;*!*/
+/*    padding-bottom: 50px;*/
+/*    padding-top: 30px;*/
+/*}*/
+/*#original{*/
+/*    height: 100vh;*/
+/*}*/
 
 
 .circlesContain{
-    height: 100vh;
+    height: 81vh;
 }
 
 .ringscontain{
-    height: 800px;
+    height: 80vh;
 }
-
-
 
 .reasonContain{
     border: dashed #ff0000;
