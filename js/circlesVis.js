@@ -168,7 +168,6 @@ class CircleVis {
             let placement = 0.6;
 
             vis.divider = vis.svg.append('line')
-                .style("stroke", "white")
                 .style("stroke-width", 2)
                 .attr("x1", 0)
                 .attr("y1", vis.height*placement)
@@ -247,7 +246,7 @@ class CircleVis {
                             .attr('stroke', undefined)
                             .style("opacity", opacity)
                             .attr('fill', color)
-                        vis.divider.style('stroke', 'white')
+                        vis.divider.style('stroke', 'none')
                         vis.bigCircle.style('opacity', 0);
                         vis.bigPicture.style("opacity", 0);
                         vis.eventTitlePopup.text('');
