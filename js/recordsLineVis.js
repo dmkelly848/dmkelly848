@@ -61,6 +61,7 @@ class RecordsLineVis {
             .attr('class', "tooltip")
             .attr('id', 'recordsTooltip')
 
+        // constructing legend
         vis.svg.append('circle')
             .attr('cy',vis.height * .85)
             .attr('cx',vis.width * .02)
