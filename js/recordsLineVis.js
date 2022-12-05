@@ -61,6 +61,62 @@ class RecordsLineVis {
             .attr('class', "tooltip")
             .attr('id', 'recordsTooltip')
 
+        vis.svg.append('circle')
+            .attr('cy',vis.height * .85)
+            .attr('cx',vis.width * .02)
+            .attr('r', 5)
+            .attr('fill', vis.colors[0])
+
+        vis.svg.append('circle')
+            .attr('cy',vis.height * .85 + 15)
+            .attr('cx',vis.width * .02)
+            .attr('r', 5)
+            .attr('fill', vis.colors[2])
+
+        vis.svg.append('circle')
+            .attr('cy',vis.height * .85 + 30)
+            .attr('cx',vis.width * .02)
+            .attr('r', 5)
+            .attr('fill', vis.colors[1])
+
+        vis.svg.append('circle')
+            .attr('cy',vis.height * .85 + 45)
+            .attr('cx',vis.width * .02)
+            .attr('r', 5)
+            .attr('fill', vis.colors[3])
+
+        vis.svg.append('text')
+            .attr('class', 'legend-text')
+            .attr('y',vis.height * .85 + 4)
+            .attr('x',vis.width * .02 + 7)
+            .attr('r', 5)
+            .attr('fill', vis.colors[0])
+            .text('Existing Men\'s Record')
+
+        vis.svg.append('text')
+            .attr('class', 'legend-text')
+            .attr('y',vis.height * .85 + 19)
+            .attr('x',vis.width * .02 + 7)
+            .attr('r', 5)
+            .attr('fill', vis.colors[2])
+            .text('New Men\'s Record')
+
+        vis.svg.append('text')
+            .attr('class', 'legend-text')
+            .attr('y',vis.height * .85 + 34)
+            .attr('x',vis.width * .02 + 7)
+            .attr('r', 5)
+            .attr('fill', vis.colors[1])
+            .text('Existing Women\'s Record')
+
+        vis.svg.append('text')
+            .attr('class', 'legend-text')
+            .attr('y',vis.height * .85 + 49)
+            .attr('x',vis.width * .02 + 7)
+            .attr('r', 5)
+            .attr('fill', vis.colors[3])
+            .text('New Women\'s Record')
+
         vis.wrangleData()
     }
 
@@ -83,7 +139,7 @@ class RecordsLineVis {
         let vis = this;
 
         // enter-update-exit on bars
-        vis.lines = vis.svg.selectAll('rect').data(vis.displayData)
+        vis.lines = vis.svg.selectAll('.record-line').data(vis.displayData)
 
         vis.lines.exit().remove()
 
@@ -156,7 +212,7 @@ class RecordsLineVis {
 
 
         // enter-update-exit on circles
-        vis.circles = vis.svg.selectAll(`circle`).data(vis.displayData)
+        vis.circles = vis.svg.selectAll(`.circle`).data(vis.displayData)
 
         vis.circles.exit().remove()
 

@@ -627,6 +627,10 @@ li{
     font-size: 2.7vh
 }
 
+.legend-text{
+    font-size: 1.5vh;
+}
+
 #why-text{
     width: 120%;
     height: 47%;
