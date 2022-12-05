@@ -179,7 +179,8 @@ class HighJumpVis {
                 mode: 'count',
                 values: 6,
                 density: 6
-            }
+            },
+            behavior: 'snap'
         });
 
         // create listener for sliders
