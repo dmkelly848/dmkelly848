@@ -610,12 +610,12 @@ li{
     vertical-align: middle;
 }
 
-#mapVis{
-    border-top: solid #179a13;
+#linesVisHeader, #yearToggle{
     border-bottom: solid #179a13;
+    border-top: solid #179a13;
 }
 
-#linesVisHeader{
+#mapVis{
     border-bottom: solid #179a13;
 }
 
@@ -634,6 +634,11 @@ li{
 .legend-text{
     font-size: 1.5vh;
 }
+
+
+/*************
+  Why Slide
+*************/
 
 #why-text{
     width: 120%;

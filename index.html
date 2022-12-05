@@ -231,11 +231,11 @@
                     </div>
                     <div class="row" id="runningButtons">
                         <div class="col-6">
-                            <button class="btn btn-outline-secondary" type="button" id="watchMens"
+                            <button class="btn btn-secondary" type="button" id="watchMens"
                                     onclick="run100meters('M')" style="border: thin solid grey;">Watch Men's</button>
                         </div>
                         <div class="col-6">
-                            <button class="btn btn-outline-secondary" type="button" id="watchWomens"
+                            <button class="btn btn-secondary" type="button" id="watchWomens"
                                     onclick="run100meters('W')" style="border: thin solid grey;">Watch Women's</button>
                         </div>
                     </div>
@@ -312,7 +312,7 @@
                     </div>
                 </div>
                 <div class = "row center olympicBodyText" id="globe-vis-container">
-                    <div class  = "col-4">
+                    <div class  = "col-4 mapcol" id="mapcol1">
                         <div class = "row center olympicBodyText" id="yearToggle">
                             <div class  = "col-4">
                                 <button class="btn btn-outline-secondary align-self-center" type="button"
@@ -325,13 +325,13 @@
                             </div>
                         </div>
                         <div id = "mapVis" ></div>
-                        <div class = "row center olympicBodyText">
+                        <div class = "row center olympicBodyText" id="host-location-text">
                             <div class="col-12  olympicBodyText" id="hostCountryText">Host: Greece</div>
                             <div class="col-12  olympicBodyText" id="mensRecordCount">Men's Records Set: 12</div>
                             <div class="col-12  olympicBodyText" id="womensRecordCount">Women's Record Set: 0</div>
                         </div>
                     </div>
-                    <div class  = "col-7">
+                    <div class  = "col-7 mapcol">
                         <div id="linesVisHeader">Standing Olympic Records:</div>
                         <div id ="recordsLinesVis" ></div>
                     </div>
