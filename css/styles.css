@@ -330,15 +330,15 @@ li{
  Overview Slide
 ***************/
 #overview-text1 {
+    background: rgb(188, 205, 243);
     width: 120%;
     height: 50%;
-    background: rgb(188, 205, 243)
 }
 
 .solo-text{
     border: none;
     border-radius: 0;
-    padding: 2vh 5vw 10vh 5vw;
+    padding: 2vh 5vw 12vh 5vw;
     font-size: 2.8vh;
     font-weight: light;
     margin-top: auto;
@@ -474,6 +474,8 @@ li{
 ***************/
 #trends-intro-text{
     background: #c5c5c5;
+    width: 120%;
+    height: 43%;
 
 }
 
@@ -584,6 +586,8 @@ li{
 
 
 #why-text{
+    width: 120%;
+    height: 47%;
     background: #f6a6a6;
 }
 
