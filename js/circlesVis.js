@@ -49,7 +49,7 @@ class CircleVis {
             r = vis.width/(circsPerRow*4)
             opacity = 1;
             fontsize = 'normal'
-            color = '#ffb5b5'
+            color = '#f6a6a6'
         }
 
         // // SVG drawing area
