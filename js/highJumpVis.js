@@ -183,7 +183,7 @@ class HighJumpVis {
         });
 
         // create listener for sliders
-        vis.slider.noUiSlider.on('slide', function (values) {
+        vis.slider.noUiSlider.on('update', function (values) {
             vis.chosenYear = vis.parseDate(values[0]);
             vis.unchanged = false;
             vis.wrangleData();

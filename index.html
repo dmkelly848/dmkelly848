@@ -36,11 +36,11 @@
         <div class="row slide-area background" id="title-slide">
             <div class="textbox" id="title-box">
                 <h1 id="title">Olympic Track and Field Throughout History</h1>
+                <div class='row' id="title-image-row">
+                    <img id = "title-image" src = "img/rings.png">
+                </div>
             </div>
-            <div class='row' id="title-image-row">
-                <img id = "title-image" src = "img/rings.png">
-            </div>
-            <p class="center italic" id="scroll-text">Scroll to Begin</p>
+            <p class="center italic scroll-text">Scroll to Begin</p>
             <p class="center"><i class="arrow down"></i></p>
             <div id="icon-bottom-bar"></div>
         </div>
@@ -52,24 +52,26 @@
     <div class="section">
         <!-- USAIN BOLT HOOK SLIDE -->
         <div class="container-fluid">
-            <div class="row slide-area background" id="bolt-slide">
+            <div class="row slide-area background-3" id="bolt-slide">
                 <div class="col-7 olympicBodyText" id="bolt-slide-left">
-                    <h2 class = "olympicHeadText">Usain Bolt has...</h2>
-                    <div class = "col-6 blueBlock underline"></div>
+                    <h2 class = "olympicHeadText">Usain Bolt's Dominance</h2>
+                    <div class = "col-7 blueBlock underline"></div>
                     <div class="row" id="bolt-facts">
-                        <div class="col-1"></div>
-                        <div class="col-10">
+                        <div class = "textbox olympicBodyText bolt-question" id="bolt-question0">
+                            <h3 class="olympicHeadText">Over the course of his career, usain bolt has...</h3>
                             <ul style = "list-style-image: url('img/laurel.png')">
                                 <li>Received gold in the 100m and 200m in three consecutive Olympics - in 2008, 2012, and 2016</li>
                                 <li>Won the 200m by a 0.66 second margin - the largest in Olympic history</li>
-                                <li>Earned 8 Olympics and 11 World Champion golden medals</li>
+                                <li>Earned 8 Olympics and 11 World Champion gold medals</li>
                             </ul>
                         </div>
-                        <div class = "textbox olympicHeadText bolt-question" id="bolt-question1">
-                            So, is he the G.O.A.T.?
-                        </div>
-                        <div class = "textbox olympicHeadText bolt-question">
-                            Or are records being broken everywhere?
+                        <div class = "textbox olympicBodyText bolt-question" id="bolt-question1">
+                            <h3 class="olympicHeadText">But This Raises Some Questions...</h3>
+                            <ul style="list-style-image: url('img/laurel.png')">
+                                <li>Why is it that people, like Bolt, are breaking records?</li>
+                                <li>Will he always be the fastest man to ever run the 100M?</li>
+                                <li>Or will his record inevitably be shattered?</li>
+                            </ul>
                         </div>
                     </div>
                 </div>
@@ -82,14 +84,18 @@
     </div>
     <div class="section">
 
-        <!-- TITLE SLIDE -->
+        <!-- OVERVIEW SLIDE -->
         <div class="row slide-area background">
-            <h3 class = "center vertCenter olympicBodyText">
-                <ul style = "list-style-image: url('img/laurel.png')">
-                    <li> To answer this question, first consider Olympics track and field as a sport</li>
-                    <li>With 44 events between men and women, it dominates the Olympics by number of athletes and medals rewarded</li>
-                </ul>
-            </h3>
+            <div class = "textbox center olympicBodyText solo-text" id="overview-text1">
+                <h2 class="olympicHeadText">A Little More on Track and Field</h2>
+                    <p>Before answering questions like the one's raised about Bolt, it's important to know a bit about track and field.
+                        Time to take a deeper dive into the sport! With 44 events between men and women, track and field dominates the Olympics. Not only do track and field
+                        competitors make up the largest share of athletes at the games, but they also vie for the most medals of any sport.
+                        Events span a wide array of skill sets — from running fast to throwing far. Millions of eyes tune in to watch the best athletes in the world
+                        run, jump, and throw every four years. It truly is a centerpiece of the Olympics! </p>
+                <p class="center italic scroll-text">Read on for more on Track and Field events</p>
+                <p class="center"><i class="arrow down"></i></p>
+            </div>
 
         </div>
 
@@ -109,7 +115,7 @@
                 </div>
                 <div class="row">
                     <div class="col-1"></div>
-                    <div class="col-10" id="eventsVis" ></div>
+                    <div class="col-10" id="eventsVis"></div>
                     <div class="col-1"></div>
                 </div>
             </div>
@@ -122,12 +128,13 @@
     <div class="section">
 
         <!-- MEDAL BREAKDOWN SLIDE -->
-        <div class="row slide-area" id="medal-slide">
+        <div class="row slide-area background-2" id="medal-slide">
             <h2 class = "olympicHeadText center">Countries and their Medals</h2>
                 <div class = "col-4"></div>
                 <div class = "col-4 yellowBlock underline"></div>
                 <div class = "col-4"></div>
-            <div class = "row olympicBodyText">
+            <p class="italic" id="treemap-instructions">Explore the treemap below showing how many track and field medals each country has won. Click on the rectangles to get a more detailed view for that country.</p>
+            <div class = "row olympicBodyText" id="dash-container">
                 <div class = "col-8" id="tree-vis-container">
                     <div id = "treeVis"></div>
                 </div>
@@ -155,12 +162,15 @@
 
     <div class="section">
 
-        <!-- TITLE SLIDE -->
-        <div class="row slide-area">
-            <h2 class = "center vertCenter olympicBodyText">
-                Looking at event performances, it is clear that athletes are running faster and
-                jumping higher than ever
-            </h2>
+        <!-- TRENDS INTRO SLIDE -->
+        <div class="row slide-area background">
+            <div class = "textbox center olympicBodyText solo-text" id="trends-intro-text">
+                <h2 class="olympicHeadText">Faster, Better, Stronger?</h2>
+                <p> TODO: ADD MORE DESCRIPTION. Looking at event performances, it is clear that athletes are running faster and
+                    jumping higher than ever.  </p>
+                <p class="center italic scroll-text">Explore some of these trends in the visualizations below</p>
+                <p class="center"><i class="arrow down"></i></p>
+            </div>
 
         </div>
     </div>
@@ -170,16 +180,17 @@
     <div class="section">
 
         <!-- TRENDS SLIDE #1 -->
-        <div class="row slide-area trend-slide" id="trends-slide1">
+        <div class="row slide-area trend-slide background" id="trends-slide1">
             <div class = "row phase31">
                 <div class="col-6 olympicBodyText" style = "padding-left: 4vw;">
-                    <h2 class = "olympicHeadText">Trends: Athletes are Running Faster</h2>
-                    <div class = "col-12 blackBlock underline"></div>
+                    <h2 class = "olympicHeadText">Athletes are Running Faster...</h2>
+                    <div class = "col-11 blackBlock underline"></div>
+                    <div class="col-1"></div>
                     <div class="container" style = "padding-top: 2vh">
                         <div class="row">
                             <div class="col-1"></div>
-                            <div class="col-11 hookText">
-                                <h5 class="italic">WATCH the 100M Gold Medalists from across the years race each other - in real time!</h5>
+                            <div class="col-10 textbox trend-text">
+                                <h3 class="olympicHeadText">What do we see?</h3>
                                 <ul id="running-takeaways" style = "list-style-image: url('img/laurel.png')">
                                     <li>Even against other gold medalist winners, Usain Bolt dominates.</li>
                                     <li>However, this seems to be part of a broader trend where more recent winners are running faster times. Sprinters seem to be getting faster!</li>
@@ -187,6 +198,7 @@
                                     <li>Do we see similar patterns across other disciplines?</li>
                                 </ul>
                             </div>
+                            <div class="col-1"></div>
                         </div>
                     </div>
                 </div>
@@ -200,6 +212,7 @@
                         <option value="W">Women</option>
                     </select>
                     <div id = "runningVis"></div>
+                    <h5 class="italic">WATCH the 100M Gold Medalists from across the years race each other - in real time!</h5>
                 </div>
             </div>
         </div>
@@ -209,11 +222,11 @@
 
     <div class="section">
         <!-- TRENDS SLIDE #2 -->
-        <div class="row slide-area trend-slide" id="trends-slide2">
-            <div class = "row phase31" style = "padding-top: 20px">
-                <div class="col-6 olympicBodyText">
-                    <div><h4 class='italic' id="slider-instructions1">Drag the slider to see the evolution of jumping in the Olympics...</h4>
-                        <h4 class='italic' id="slider-instructions2">Use the filters to toggle between events and genders</h4></div>
+        <div class="row slide-area trend-slide background" id="trends-slide2">
+            <div class = "row phase31">
+                <div class="col-6 olympicBodyText" id="phase31L">
+                    <div><h5 class='italic' id="slider-instructions1">Drag the slider to see the evolution of jumping in the Olympics...</h5>
+                        <h5 class='italic' id="slider-instructions2">Use the filters to toggle between events and genders</h5></div>
                     <select class='dropdown' id="high-jump-gender" onchange="highJumpGenderChange()">
                         <option value="M" selected>Men</option>
                         <option value="W">Women</option>
@@ -226,14 +239,27 @@
                     <div id="slider-round"></div>
                 </div>
                 <div class="col-6 olympicBodyText">
-                    <h2 class = "olympicHeadText">... and Jumping Higher</h2>
-                    <div class = "col-12 blackBlock underline"></div>
-                    <ul id="high-jump-takeaways" style = "list-style-image: url('img/laurel.png')">
-                        <li>Gold medal high jump and pole vault heights have steadily increased over time</li>
-                        <li>For instance, William Hoyt's 1896 pole vault of 3.3 meters was nearly doubled by Thiago Da Silva's 2016 vault of 6.03 meters.</li>
-                        <li>The increase in jumping/vaulting height persists across both men and women</li>
-                        <li>Seemingly, the rate of improvement is slowing down</li>
-                    </ul>
+                    <div class="col-1"></div>
+                    <div class = "col-11">
+                        <h2 class = "olympicHeadText" style="text-align: right">... and Jumping Higher</h2>
+                        <div class="blackBlock underline"></div>
+                    </div>
+                    <div class="col-1"></div>
+                    <div class="container" style = "padding-top: 2vh">
+                        <div class="row">
+                            <div class="col-1"></div>
+                            <div class="col-10 textbox trend-text" style="padding-right:0">
+                                <h3 class="olympicHeadText">What do we see?</h3>
+                                <ul id="high-jump-takeaways" style = "list-style-image: url('img/laurel.png')">
+                                    <li>Gold medal high jump and pole vault heights have steadily increased over time</li>
+                                    <li>For instance, William Hoyt's 1896 pole vault of 3.3 meters was nearly doubled by Thiago Da Silva's 2016 vault of 6.03 meters.</li>
+                                    <li>The increase in jumping/vaulting height persists across both men and women</li>
+                                    <li>Seemingly, the rate of improvement is slowing down</li>
+                                </ul>
+                            </div>
+                            <div class="col-1"></div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -246,7 +272,7 @@
 
         <!--GLOBE SLIDE -->
         <div class="container-fluid">
-            <div class="row slide-area" id="globe-slide">
+            <div class="row slide-area background" id="globe-slide">
                 <div id="globe-vis-header">
                     <div class="row center olympicBodyText">
                         <h2 class = "olympicHeadText center">Olympics track and field records keep getting broken</h2>
@@ -278,7 +304,11 @@
                         <div id ="recordsLinesVis" ></div>
                     </div>
                 </div>
-
+<!--                <div class="row center olympicBodyText">-->
+<!--                    <div class="col-12">-->
+<!--                        <div id = "recordsVis" ></div>-->
+<!--                    </div>-->
+<!--                </div>-->
             </div>
         </div>
 
@@ -287,7 +317,7 @@
     <div class="section">
 
         <!-- TITLE SLIDE -->
-        <div class="row slide-area">
+        <div class="row slide-area background">
             <h2 class = "center vertCenter olympicBodyText">
                 What has changed to enable all of this record breaking?<br><br>
                 Here are some possibilities:
@@ -300,7 +330,7 @@
     <div class="section">
         <!--Part 5-->
         <div class="container-fluid">
-            <div class="row slide-area" id="reasons-slide">
+            <div class="row slide-area background" id="reasons-slide">
                 <h2 class = "olympicHeadText center">Why is this the case?</h2>
                 <div class = "row underline">
                     <div class = "col-4"></div>
@@ -328,7 +358,7 @@
 
     <div class="section">
 
-        <div class="row slide-area">
+        <div class="row slide-area background-3">
             <div class="container-fluid">
                 <div class="row center">
                     <div class = "col">
@@ -360,7 +390,7 @@
 
     <div class="section">
 
-        <div class="row slide-area">
+        <div class="row slide-area background-3">
             <div class="container-fluid">
                 <div class="row center">
                     <div class = "col">
@@ -393,7 +423,7 @@
                         </ul>
                     </div>
                     <div class = "col">
-                        <ul style = "text-align: left; padding-left: 10vw; font-size: 2vh; list-style-image: url('img/laurel.png')">
+                        <ul style = "text-align: left; padding-left: 10vw; font-size: 2vh;list-style-image: url('img/laurel.png')">
                             <li>Diet: <a href = "https://healthcare.utah.edu/healthfeed/postings/2016/08/olympian_diet.php">University of Utah</a>,
                             <a href = "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5998735/">NIH</a></li>
                             <li>Coaching: <a href = "https://www.nytimes.com/1964/05/05/archives/intensive-training-key-to-soviet-sports-success-heavy-competition.html">NY Times</a>

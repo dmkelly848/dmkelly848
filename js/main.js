@@ -7,6 +7,7 @@ new fullpage('#fullpage', {
     autoScrolling:true,
     scrollHorizontally: true,
     fitToSection: true,
+    parallax: true,
 
     // Navigation
     navigation: true,

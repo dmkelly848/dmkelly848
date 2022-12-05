@@ -174,6 +174,7 @@ class TreeVis {
             .enter().append('text')
             .attr('class', 'legend-label')
             .attr('font-size', '0.9vw')
+            .attr('fill', 'white')
             .attr('y', vis.width/75+2)
             .attr('x', function(d,index){return -3.1*vis.width/7.5+index*vis.width/7+vis.width/40})
             .text(d=>d)
