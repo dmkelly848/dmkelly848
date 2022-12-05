@@ -497,7 +497,7 @@ li{
 }
 
 #trends-slide1{
-    /*border-top: solid #000000;*/
+    height: 100vh;
 }
 
 #trends-slide2{
@@ -589,7 +589,7 @@ li{
 }
 
 #recordsLinesVis{
-    height: 100%;
+    height: 95%;
 }
 
 #previousGames, #nextGames{
