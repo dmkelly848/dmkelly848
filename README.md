@@ -39,4 +39,4 @@ after cleaning/preprocessing in Python
 
 ### html
 
--index.html: central webpage liked to other files and with  
+-index.html: central webpage liked to other files which is the hompage for the project
