@@ -157,6 +157,10 @@ li{
     text-anchor: end;
 }
 
+.event-name{
+    font-size: 1vh;
+}
+
 .xlab{
     text-anchor: start;
 }

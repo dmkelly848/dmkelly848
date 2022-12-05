@@ -29,7 +29,7 @@ class RecordsLineVis {
         // creating scales for barplot: scalelinear and scaleband, and creating axes
         vis.x = d3.scaleLinear()
             .domain([1896,2016])
-            .range([.1 * vis.width, vis.width * .95])
+            .range([.01 * vis.width, vis.width * .9])
 
         vis.xAxis = d3.axisBottom()
             .scale(vis.x)
@@ -40,7 +40,7 @@ class RecordsLineVis {
 
         vis.xAxisGroup = vis.svg.append("g")
             .attr("class", "x-axis axis")
-            .attr("transform", "translate(0," + vis.height * .92 + ")");
+            .attr("transform", "translate(0," + vis.height * .95 + ")");
 
         vis.xAxisGroup
             .call(vis.xAxis)
@@ -53,18 +53,19 @@ class RecordsLineVis {
             .range([.02 * vis.height,.92 * vis.height])
             .paddingInner(.8)
 
-        vis.yAxis = d3.axisLeft()
-            .scale(vis.y)
-            // https://stackoverflow.com/questions/19787925/create-a-d3-axis-without-tick-labels
-            .tickSize(0)
-            .ticks();
-
-        vis.yAxisGroup = vis.svg.append("g")
-            .attr("class", "y-axis axis")
-            .attr("transform", "translate(" + vis.width * .1 + ", 0)");
-
-        vis.yAxisGroup
-            .call(vis.yAxis)
+        // vis.yAxis = d3.axisLeft()
+        //     .scale(vis.y)
+        //     // https://stackoverflow.com/questions/19787925/create-a-d3-axis-without-tick-labels
+        //     .tickSize(0)
+        //     .tickValues([])
+        //     .ticks();
+        //
+        // vis.yAxisGroup = vis.svg.append("g")
+        //     .attr("class", "y-axis axis")
+        //     .attr("transform", "translate(" + vis.width * .01 + ", 0)");
+        //
+        // vis.yAxisGroup
+        //     .call(vis.yAxis)
 
         // creating tooltip
         vis.tooltip = d3.select("body").append('div')
@@ -126,10 +127,14 @@ class RecordsLineVis {
                 }
 
                 vis.recordEvent = vis.data.filter(function (e) {
-                    return (e.Event === d.Event && e.Medal === 'G' && e.Gender === d.Gender)
+                    return (d.Set === vis.formatDate(e.Year) && e.Event === d.Event && e.Medal === 'G' && e.Gender === d.Gender)
                 });
-                //d.Set == vis.formatDate(e.Year) &&
+
                 console.log(vis.recordEvent)
+
+                vis.recordBreakerName = vis.recordEvent[0].Name
+                vis.recordBreakerMark = vis.recordEvent[0].Result
+                console.log(vis.recordBreakerName)
 
                 vis.tooltip
                     .style("opacity", 1)
@@ -139,16 +144,17 @@ class RecordsLineVis {
                         <div style="border: thin solid grey; border-radius: 5px; background: lightgrey; padding: 20px">
                         <h4>${vis.tooltipGender + ' ' + d.Event}<h3>
                         <h4>${'Record Set: ' + d.Set}</h4>    
-                        <h4></h4>             
+                        <h4>${'By: ' + vis.recordBreakerName}</h4>
+                        <h4>${'Mark: ' + vis.recordBreakerMark}</h4>               
                         </div>`);
             }).on('mouseout', function(event, d){
 
-                vis.tooltip
-                    .style("opacity", 0)
-                    .style("left", 0)
-                    .style("top", 0)
-                    .html(``);
-            })
+            vis.tooltip
+                .style("opacity", 0)
+                .style("left", 0)
+                .style("top", 0)
+                .html(``);
+        })
 
 
         // enter-update-exit on circles
@@ -176,7 +182,7 @@ class RecordsLineVis {
                     return '#ff4500'
                 }
             })
-            // addint tooltip to circles
+            // adding tooltip to circles
             .on('mouseover', function(event, d){
 
                 console.log(d)
@@ -190,10 +196,14 @@ class RecordsLineVis {
                 }
 
                 vis.recordEvent = vis.data.filter(function (e) {
-                    return (e.Event === d.Event && e.Medal === 'G' && e.Gender === d.Gender)
+                    return (d.Set === vis.formatDate(e.Year) && e.Event === d.Event && e.Medal === 'G' && e.Gender === d.Gender)
                 });
-                //d.Set == vis.formatDate(e.Year) &&
+
                 console.log(vis.recordEvent)
+
+                vis.recordBreakerName = vis.recordEvent[0].Name
+                vis.recordBreakerMark = vis.recordEvent[0].Result
+                console.log(vis.recordBreakerName)
 
                 vis.tooltip
                     .style("opacity", 1)
@@ -203,7 +213,8 @@ class RecordsLineVis {
                         <div style="border: thin solid grey; border-radius: 5px; background: lightgrey; padding: 20px">
                         <h4>${vis.tooltipGender + ' ' + d.Event}<h3>
                         <h4>${'Record Set: ' + d.Set}</h4>    
-                        <h4></h4>             
+                        <h4>${'By: ' + vis.recordBreakerName}</h4>
+                        <h4>${'Mark: ' + vis.recordBreakerMark}</h4>               
                         </div>`);
             }).on('mouseout', function(event, d){
 
@@ -213,6 +224,19 @@ class RecordsLineVis {
                 .style("top", 0)
                 .html(``);
         })
+
+        // enter-update-exit on event names
+        vis.eventnames = vis.svg.selectAll(`.event-name`).data(vis.displayData)
+
+        vis.eventnames.exit().remove()
+
+        vis.eventnames.enter().append("text")
+            .attr('class', `event-name`)
+            .merge(vis.eventnames)
+            .attr("x", vis.x(vis.hostData[mapYearIndex].Year) + 3)
+            .attr("y", d=> vis.y(d.Competition) + 2.5 * vis.y.bandwidth())
+            .attr('fill','black')
+            .text(d=>d.Competition)
     }
 
 }
