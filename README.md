@@ -2,7 +2,7 @@
 
 ## URLs:
 Website: https://dmkelly848.github.io/dmkelly848/
-Screencast Video:
+Screencast Video: https://www.youtube.com/watch?v=OkIzvpPLrf0
 
 ## How To:
 
@@ -42,16 +42,21 @@ changes in Olympic performance!
 
 ### data
 -clean_results.csv: Data from Kaggle (https://www.kaggle.com/datasets/jayrav13/olympic-track-field-results),
-after cleaning/preprocessing in Python
+after cleaning/preprocessing in Python. Fields here are event, athlete, gender, year, games host, athlete nationality, medal, and result, which are all of
+the fields we need. In cleaning, we added a clean result field to get into common units (seconds, meters, etc.)
 
 -continent_mapping.csv: Data to map the country codes to their names and continents, from: https://statisticstimes.com/geography/countries-by-continents.php
+The fields here were country code, name, continent, and some regional information as well.
 
 -event_descriptions.csv: Custom descriptions for each track and field event, generated off of https://www.momsteam.com/sports/track-and-field-events
--event_descriptions.xlsx: Excel document used to modify descriptions, which are then saved and pulled as a csv (above), also from source above
+-event_descriptions.xlsx: Excel document used to modify descriptions, which are then saved and pulled as a csv (above), also from source above. These files were simply
+2 columns mapping an event to a description
 
 -hosts.csv: Contains Summer Olympic Years and hosts for globe vis (created manually using main dataset and wikipedia)
+This simply mapped the year to the host country for each games.
 
 -records.csv: Contains all record-setting marks, made using Python with main kaggle dataset
+This had 5 fields, namely the competition (event/gender), the gender, the event, the year the record was set, and the year the record was broken
 
 ### img
 
@@ -61,7 +66,7 @@ after cleaning/preprocessing in Python
 
 -jpeg images of our team
 
-## fullPage.js-master
+### fullPage.js-master
 
 Code courtesy of fullpage, to provide template for webpage
 
