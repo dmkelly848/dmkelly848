@@ -581,7 +581,7 @@ li{
 }
 
 #globe-vis-container{
-    height: 75vh;
+    height: 75%;
 }
 
 #recordsLinesVis{
@@ -602,6 +602,15 @@ li{
     background: darkgrey;
     color: white;
     font-size: small;
+}
+
+#mapVis{
+    border-top: solid #179a13;
+    border-bottom: solid #179a13;
+}
+
+#linesVisHeader{
+    border-bottom: solid #179a13;
 }
 
 #why-text{

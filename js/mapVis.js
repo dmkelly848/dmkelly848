@@ -23,13 +23,13 @@ class MapVis {
         // SVG drawing area
         vis.svg = d3.select("#" + vis.parentElement).append("svg")
             .attr("width", vis.width)
-            .attr("height", vis.width)
+            .attr("height", vis.width*.95)
             .attr('transform', `translate (${vis.margin.left}, ${vis.margin.top})`);
 
         // creating projection, path, background, lat/long lines
         vis.projection = d3.geoOrthographic()
             .scale(vis.width * .40)
-            .translate([vis.width / 2, vis.width / 2])
+            .translate([vis.width *.45, vis.width *.45])
 
         vis.path = d3.geoPath()
             .projection(vis.projection);

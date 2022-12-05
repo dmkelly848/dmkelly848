@@ -32,7 +32,7 @@ class RecordsLineVis {
             .domain([1896,2016])
             .range([.02 * vis.width, vis.width * .9])
 
-        vis.xAxis = d3.axisBottom()
+        vis.xAxis = d3.axisTop()
             .scale(vis.x)
             .tickValues(d3.range(1896,2020,4))
             //https://stackoverflow.com/questions/16549868/d3-remove-comma-delimiters-for-thousands
@@ -41,7 +41,7 @@ class RecordsLineVis {
 
         vis.xAxisGroup = vis.svg.append("g")
             .attr("class", "x-axis axis axisWhite")
-            .attr("transform", "translate(0," + vis.height * .95 + ")");
+            .attr("transform", "translate(0," + vis.height * .05 + ")");
 
         vis.xAxisGroup
             .call(vis.xAxis)
@@ -51,7 +51,7 @@ class RecordsLineVis {
 
         vis.y = d3.scaleBand()
             .domain(vis.records.map(d => d.Competition))
-            .range([.02 * vis.height,.92 * vis.height])
+            .range([.08 * vis.height,.98 * vis.height])
             .paddingInner(.8)
 
         // creating tooltip
