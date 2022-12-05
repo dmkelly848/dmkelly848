@@ -40,7 +40,7 @@ class BandVis {
             else if(idx % 5 === 3)
                 temp['color'] = '#b7d9b5';
             else
-                temp['color'] = '#ffb5b5';
+                temp['color'] = '#f6a6a6';
             vis.circleData.push(temp);
         })
 
