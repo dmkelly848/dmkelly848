@@ -194,21 +194,29 @@
 
         <!-- TRENDS SLIDE #1 -->
         <div class="row slide-area trend-slide background" id="trends-slide1">
+            <div class="row">
+                <div class="col-6">
+                    <div class = 'row'>
+                        <div class="col-1"></div>
+                        <div class="col-11">
+                            <h2 class = "olympicHeadText">Athletes are Running Faster...</h2>
+                            <div class = "blackBlock underline"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
             <div class = "row phase31">
                 <div class="col-6 olympicBodyText" style = "padding-left: 4vw;">
-                    <h2 class = "olympicHeadText">Athletes are Running Faster...</h2>
-                    <div class = "col-11 blackBlock underline"></div>
-                    <div class="col-1"></div>
                     <div class="container" style = "padding-top: 2vh">
                         <div class="row">
                             <div class="col-1"></div>
                             <div class="col-10 textbox trend-text">
                                 <h3 class="olympicHeadText">What do we see?</h3>
                                 <ul id="running-takeaways" style = "list-style-image: url('img/laurel.png')">
-                                    <li>Even against other gold medalist winners, Usain Bolt dominates.</li>
-                                    <li>However, this seems to be part of a broader trend where more recent winners are running faster times. Sprinters seem to be getting faster!</li>
-                                    <li>This same trend can be seen across men and women.</li>
-                                    <li>Do we see similar patterns across other disciplines?</li>
+                                    <li>Even against other gold medalists, Usain Bolt dominates</li>
+                                    <li>However, this seems to be part of a broader trend where more recent winners are running faster times - sprinters seem to be getting faster</li>
+                                    <li>This same trend can be seen across men and women</li>
+                                    <li>Do we see similar patterns across other disciplines (throws, jumps, long-distance)?</li>
                                 </ul>
                             </div>
                             <div class="col-1"></div>
@@ -216,16 +224,26 @@
                     </div>
                 </div>
                 <div class="col-6 olympicBodyText phase31R">
-                    <!-- code very similar to lab 9 button -->
-                    <button class="btn btn-outline-secondary align-self-center" type="button"
-                            onclick="runningVis.updateVis()" style="border: thin solid grey;">Watch Race
-                    </button>
-                    <select class='dropdown' id="running-gender" onchange="runningGenderChange()">
-                        <option value="M" selected>Men</option>
-                        <option value="W">Women</option>
-                    </select>
-                    <div id = "runningVis"></div>
-                    <h5 class="italic">WATCH the 100M Gold Medalists from across the years race each other - in real time!</h5>
+                    <div class="row">
+                        <div class="col-10">
+                            <h5 class="italic">Watch the 100M Gold Medalists from across the years race each other - in real time!</h5>
+                        </div>
+                    </div>
+                    <div class="row" id="runningButtons">
+                        <div class="col-6">
+                            <button class="btn btn-outline-secondary" type="button" id="watchMens"
+                                    onclick="run100meters('M')" style="border: thin solid grey;">Watch Men's</button>
+                        </div>
+                        <div class="col-6">
+                            <button class="btn btn-outline-secondary" type="button" id="watchWomens"
+                                    onclick="run100meters('W')" style="border: thin solid grey;">Watch Women's</button>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-12">
+                            <div id = "runningVis"></div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -386,17 +404,17 @@
                     <div class="col-sm">
                         <img src="img/NL.jpeg" width = "50%"><br>
                         <p>Nick Lauer</p>
-                        <p class="italic" style="font-size: 60%">B.A. in Applied Math</p>
+                        <p class="italic" style="font-size: 60%">B.A. in Applied Mathematics, '23</p>
                     </div>
                     <div class="col-sm">
                         <img src="img/DK.jpeg" width = "50%"><br>
                         <p>Danielle Kelly</p>
-                        <p class="italic" style="font-size: 60%">B.A. in Applied Math</p>
+                        <p class="italic" style="font-size: 60%">B.A. in Applied Mathematics, '23</p>
                     </div>
                     <div class="col-sm">
                         <img src="img/RS.jpeg" width = "50%"><br>
                         <p>Rohan Sheth</p>
-                        <p class="italic" style="font-size: 60%">B.A. in Applied Math</p>
+                        <p class="italic" style="font-size: 60%">B.A. in Applied Mathematics, '23</p>
                     </div>
                 </div>
             </div>

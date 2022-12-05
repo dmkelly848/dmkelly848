@@ -566,6 +566,10 @@ li{
     padding-right: 3vw;
 }
 
+#watchMens, #watchWomens{
+    display: inline-block;
+}
+
 
 /***************
  Globe Slide

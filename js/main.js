@@ -37,6 +37,7 @@ new fullpage('#fullpage', {
 let selCountry = 'Worldwide';
 let dataStar;
 let mapYearIndex = 0;
+let selectedgender;
 
 // load data using promises
 let promises = [
@@ -90,8 +91,9 @@ function highJumpGenderChange(){
     highJumpVis.wrangleData();
 }
 
-//Called when user changes gender in 100 m dash vis
-function runningGenderChange(){
+//Called when user starts 100m race
+function run100meters(gender){
+    selectedgender = gender
     runningVis.wrangleData()
 }
 
