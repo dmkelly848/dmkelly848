@@ -149,7 +149,7 @@ class ReasonVis {
                 "                <button type=\"button\" class=\"btn btn-light\" onclick = mainPage()>Back to Reasons</button>\n" +
                 "            </div><div class=\"container-fluid\" style = \"padding-left: 100px; padding-right:100px;\">\n" +
                 "            <h3 class = \"olympicHeadText chartTitle\">Coaching:</h3>\n" +
-                "            <div class=\"row olympicBodyText\" style = \"font-size: 2.5vh; height: 40vh; \">\n" +
+                "            <div class=\"row olympicBodyText\" style = \"font-size: 2.5vh; height: 35vh; \">\n" +
                 "                <div id= \"globLinVis\" class=\"col-7\"  >\n" +
                 "                    <ul style = \"list-style-image: url('img/laurel.png')\">\n" +
                 "                        <li>Coaching blossomed as an official profession in the 1970s. </li>\n" +
