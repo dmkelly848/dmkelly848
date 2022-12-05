@@ -126,7 +126,7 @@ class TreeVis {
             .attr("fill", d=>vis.colors[d.data.continent])
             .on('click', function(event, d) {
                 if(d3.select(this).style('stroke-width') !== '2px') {
-                    vis.svg.selectAll('rect')
+                    vis.svg.selectAll('.tree-rect')
                         .style('opacity', '0.4')
                     d3.select(this) // change color or selected country
                         .style('stroke-width', '2px')
