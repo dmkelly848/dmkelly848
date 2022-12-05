@@ -1,10 +1,11 @@
 class RecordsLineVis {
 
-    constructor(parentElement, data, records, hostData) {
+    constructor(parentElement, data, records, hostData, countryData) {
         this.parentElement = parentElement;
         this.data = data;
         this.records = records;
         this.hostData = hostData;
+        this.countryData= countryData;
 
         this.formatDate = d3.timeFormat("%Y");
         this.parseDate = d3.timeParse("%Y");
@@ -29,7 +30,7 @@ class RecordsLineVis {
         // creating scales for barplot: scalelinear and scaleband, and creating axis
         vis.x = d3.scaleLinear()
             .domain([1896,2016])
-            .range([.01 * vis.width, vis.width * .9])
+            .range([.02 * vis.width, vis.width * .9])
 
         vis.xAxis = d3.axisBottom()
             .scale(vis.x)
@@ -116,11 +117,19 @@ class RecordsLineVis {
                     return (d.Set === vis.formatDate(e.Year) && e.Event === d.Event && e.Medal === 'G' && e.Gender === d.Gender)
                 });
 
-                console.log(vis.recordEvent)
-
+                //read in additional attributes of record
                 vis.recordBreakerName = vis.recordEvent[0].Name
+                vis.recordBreakerNationality = vis.countryData.find(d => d.Code === vis.recordEvent[0].Nationality).Country
+
+                if (vis.recordEvent[0].Event === '4X100M Relay'){
+                    vis.recordBreakerName = 'Team ' +  vis.recordBreakerNationality
+                }
+
+                if (vis.recordEvent[0].Event === '4X400M Relay'){
+                    vis.recordBreakerName = 'Team ' +  vis.recordBreakerNationality
+                }
+
                 vis.recordBreakerMark = vis.recordEvent[0].Result
-                console.log(vis.recordBreakerName)
 
                 vis.tooltip
                     .style("opacity", 1)
@@ -128,10 +137,11 @@ class RecordsLineVis {
                     .style("top", event.pageY + "px")
                     .html(`
                         <div style="border: thin solid grey; border-radius: 5px; background: lightgrey; padding: 20px">
-                        <h4>${vis.tooltipGender + ' ' + d.Event}<h3>
-                        <h4>${'Record Set: ' + d.Set}</h4>    
+                        <h4><b><u>${vis.tooltipGender + ' ' + d.Event}</u></b><h4>
+                        <h4>${'Mark: ' + vis.recordBreakerMark}</h4>         
                         <h4>${'By: ' + vis.recordBreakerName}</h4>
-                        <h4>${'Mark: ' + vis.recordBreakerMark}</h4>               
+                        <h4>${'Nationality: ' + vis.recordBreakerNationality}</h4>
+                        <h4>${'Record Set: ' + d.Set}</h4>                  
                         </div>`);
             }).on('mouseout', function(event, d){
 
@@ -185,11 +195,19 @@ class RecordsLineVis {
                     return (d.Set === vis.formatDate(e.Year) && e.Event === d.Event && e.Medal === 'G' && e.Gender === d.Gender)
                 });
 
-                console.log(vis.recordEvent)
-
+                //read in additional attributes of record
                 vis.recordBreakerName = vis.recordEvent[0].Name
+                vis.recordBreakerNationality = vis.countryData.find(d => d.Code === vis.recordEvent[0].Nationality).Country
+
+                if (vis.recordEvent[0].Event === '4X100M Relay'){
+                    vis.recordBreakerName = 'Team ' +  vis.recordBreakerNationality
+                }
+
+                if (vis.recordEvent[0].Event === '4X400M Relay'){
+                    vis.recordBreakerName = 'Team ' +  vis.recordBreakerNationality
+                }
+
                 vis.recordBreakerMark = vis.recordEvent[0].Result
-                console.log(vis.recordBreakerName)
 
                 vis.tooltip
                     .style("opacity", 1)
@@ -197,10 +215,11 @@ class RecordsLineVis {
                     .style("top", event.pageY + "px")
                     .html(`
                         <div style="border: thin solid grey; border-radius: 5px; background: lightgrey; padding: 20px">
-                        <h4>${vis.tooltipGender + ' ' + d.Event}<h3>
-                        <h4>${'Record Set: ' + d.Set}</h4>    
+                        <h4><b><u>${vis.tooltipGender + ' ' + d.Event}</u></b><h4>
+                        <h4>${'Mark: ' + vis.recordBreakerMark}</h4>         
                         <h4>${'By: ' + vis.recordBreakerName}</h4>
-                        <h4>${'Mark: ' + vis.recordBreakerMark}</h4>               
+                        <h4>${'Nationality: ' + vis.recordBreakerNationality}</h4>
+                        <h4>${'Record Set: ' + d.Set}</h4>                  
                         </div>`);
             }).on('mouseout', function(event, d){
 

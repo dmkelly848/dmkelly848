@@ -572,6 +572,7 @@ li{
 ***************/
 #globe-slide{
     height: 100vh;
+    color: white;
 }
 
 #globe-vis-header{
@@ -589,9 +590,16 @@ li{
 
 #previousGames, #nextGames{
     cursor: pointer;
-    float: right;
     border-radius: 1vh;
     background: grey;
+    color: white;
+    font-size: small;
+}
+
+#previousGames:hover, #nextGames:hover{
+    cursor: pointer;
+    border-radius: 1vh;
+    background: darkgrey;
     color: white;
     font-size: small;
 }

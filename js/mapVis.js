@@ -37,7 +37,7 @@ class MapVis {
         vis.svg.append("path")
             .datum({type: "Sphere"})
             .attr("class", "graticule")
-            .attr('fill', '#E6F6FF')
+            .attr('fill', '#FFFFFF')
             .attr("stroke","rgba(129,129,129,0.35)")
             .attr("d", vis.path);
 
